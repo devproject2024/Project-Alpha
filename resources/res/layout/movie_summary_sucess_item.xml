@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wallet_10_dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginBottom="@dimen/dimen_5dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/movie_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                <RelativeLayout android:id="@+id/content_thumbnail_layout_movie" android:layout_width="118dp" android:layout_height="140dp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+                    <ProgressBar android:layout_gravity="center" android:id="@+id/loading_movie" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_large_holo" android:layout_centerInParent="true"/>
+                    <ImageView android:id="@+id/content_thumbnail_movie" android:layout_width="118dp" android:layout_height="140dp" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/row_product_image"/>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@+id/movie_success_desc_lyt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/content_thumbnail_layout_movie">
+                    <com.paytm.utility.RoboTextView android:textSize="10sp" android:textColor="@color/payment_success_text_grey" android:id="@+id/booking_id_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+                    <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/movie_name_color" android:id="@+id/movie_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/booking_id_value" android:layout_alignParentLeft="true" app:fontType="2"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/movie_date_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_below="@+id/movie_name">
+                        <RelativeLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/payment_success_text_black" android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/movie_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fontType="3"/>
+                            <com.paytm.utility.RoboTextView android:textSize="9sp" android:textColor="@color/payment_success_text_black" android:gravity="top" android:layout_gravity="top" android:id="@+id/movie_date_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/movie_date" app:fontType="3"/>
+                            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/payment_success_text_black" android:ellipsize="end" android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/movie_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/movie_date_suffix" android:layout_centerVertical="true" app:fontType="3"/>
+                        </RelativeLayout>
+                        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/payment_success_text_black" android:ellipsize="end" android:gravity="left" android:layout_gravity="left" android:id="@+id/movie_time" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:layout_alignParentLeft="true" app:fontType="3"/>
+                    </LinearLayout>
+                    <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:layout_below="@+id/movie_date_lyt">
+                        <ImageView android:id="@+id/cancel_booking_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/availble_click_image"/>
+                        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/color_09ac63" android:layout_gravity="center" android:id="@+id/cancelled_protect_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6dp" android:text="@string/movies_cancel_protect_booking" android:layout_toRightOf="@+id/cancel_booking_icon" app:fontType="3"/>
+                        <ImageView android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_outline_18_dp_skyblue" android:layout_toRightOf="@+id/cancelled_protect_text"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/movie_audi_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3" android:layout_below="@+id/movie_description">
+                <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/payment_success_text_black" android:id="@+id/movie_audi" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_alignParentLeft="true" app:fontType="2"/>
+                <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/payment_success_text_black" android:id="@+id/movie_seats" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:layout_alignParentLeft="true" app:fontType="2"/>
+            </LinearLayout>
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/payment_success_text_black" android:id="@+id/cinema_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/movie_audi_lyt" android:layout_alignParentLeft="true" app:fontType="3"/>
+            <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/color_000000" android:id="@+id/cinema_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/cinema_name" android:layout_alignParentLeft="true" app:fontType="2"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/directions_and_uber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/cinema_address">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp" android:layout_marginRight="@dimen/dimen_8dp" android:src="@drawable/ic_directions_24dp_black"/>
+                    <com.paytm.utility.RoboTextView android:textSize="14dp" android:textColor="@color/color_666666" android:id="@+id/direct_to_map" android:paddingLeft="@dimen/dimen_8dp" android:paddingTop="@dimen/dimen_8dp" android:paddingRight="@dimen/dimen_16dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/movie_get_directions" app:fontType="2"/>
+                </LinearLayout>
+                <View android:background="@color/wallet_separator_bg" android:layout_width="@dimen/dimen_1dp" android:layout_height="@dimen/dimen_56dp" android:layout_centerInParent="true"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp" android:layout_marginRight="@dimen/dimen_8dp" android:src="@drawable/ic_uber_24dp_black"/>
+                    <com.paytm.utility.RoboTextView android:textSize="14dp" android:textColor="@color/color_666666" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/movie_book_uber" app:fontType="2"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/movie_qr_code_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/directions_and_uber" android:layout_alignParentLeft="true">
+                <RelativeLayout android:id="@+id/content_thumbnail_layout_qr" android:padding="3dp" android:layout_width="84dp" android:layout_height="84dp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+                    <ProgressBar android:layout_gravity="center" android:id="@+id/loading_qr" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_large_holo" android:layout_centerInParent="true"/>
+                    <ImageView android:id="@+id/content_thumbnail_qr" android:layout_width="84dp" android:layout_height="84dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/row_product_image"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/movie_qr_lyt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/content_thumbnail_layout_qr">
+                    <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/color_de000000" android:id="@+id/qr_desc_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/scan_qr_code" android:layout_below="@+id/cinema_address" android:layout_alignParentLeft="true" app:fontType="2"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/sep_1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/wallet_separator_bg" android:contentDescription="@string/app_name"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/qr_desc_txt">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/order_failure_color" android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_10dp" app:fontType="3"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#333333" android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp" app:fontType="3"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/blue_dot" android:gravity="center" android:visibility="visible" android:layout_width="0dp" android:layout_height="48dp" android:text="@string/movies_cancel_ticket" android:layout_weight="1" app:fontType="3"/>
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/more_flights_available" android:gravity="center" android:id="@+id/download_ticket" android:clickable="true" android:layout_width="0dp" android:layout_height="48dp" android:text="@string/download_ticket" android:layout_weight="1" app:fontType="3"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+    <LinearLayout android:gravity="center" android:id="@+id/ll_bankLogo" android:background="@drawable/native_circle_bg" android:layout_width="64dp" android:layout_height="64dp">
+        <ImageView android:id="@+id/iv_bankLogo" android:layout_width="34dp" android:layout_height="34dp" android:contentDescription="@null"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dimen_15sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_offerTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_toRightOf="@+id/ll_bankLogo"/>
+    <TextView android:textSize="@dimen/dimen_12sp" android:textColor="#444444" android:id="@+id/tv_offerInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_below="@+id/tv_offerTitle" android:layout_alignLeft="@+id/tv_offerTitle"/>
+    <TextView android:textColor="@color/paytm_blue" android:id="@+id/tv_offerTerms" android:paddingTop="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Offer T&amp;C" android:layout_toRightOf="@+id/iv_bankLogo" android:layout_below="@+id/tv_offerInfo" android:layout_alignLeft="@+id/tv_offerTitle"/>
+    <View android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/dimen_50dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_below="@+id/tv_offerTerms"/>
+</RelativeLayout>

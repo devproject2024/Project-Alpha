@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dimen_28dp">
+    <RelativeLayout android:layout_width="@dimen/dimen_30dp" android:layout_height="match_parent">
+        <View android:id="@+id/side_view" android:background="@color/bright_yellow" android:layout_width="@dimen/dimen_17dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/metro_icon_imageview" android:layout_width="@dimen/dimen_12dp" android:layout_height="@dimen/dimen_12dp" android:src="@drawable/pre_t_metro_rail_white" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/station_name_in_station_model_layout" android:paddingLeft="@dimen/dimen_29dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Lajpat Nagar" android:fontFamily="sans-serif-light"/>
+</LinearLayout>

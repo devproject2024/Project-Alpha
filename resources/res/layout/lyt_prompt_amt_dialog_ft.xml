@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lyt_title" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_title" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_paytm_cash" app:fontType="4"/>
+        <View android:background="@color/paytm_blue" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+    <EditText android:textSize="16sp" android:gravity="center_vertical" android:id="@+id/edit_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:singleLine="true" android:layout_centerVertical="true" android:inputType="numberDecimal"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/lyt_two_buttons" android:background="@color/light_grey" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:weightSum="1">
+        <Button android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_left" android:background="@drawable/bg_square_btn_blue_fastag" android:padding="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="0.1dp" android:text="@string/cancel" android:layout_weight="0.5" android:textAllCaps="false"/>
+        <Button android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_right" android:background="@drawable/bg_square_btn_blue_fastag" android:padding="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/submit" android:layout_weight="0.5" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

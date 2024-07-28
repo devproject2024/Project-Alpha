@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/tab_container" android:background="@drawable/pre_tp_bg_btn_coupon_add" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_30dp" android:layout_marginLeft="@dimen/dimen_7dp" android:layout_marginRight="@dimen/dimen_7dp" android:minWidth="@dimen/dimen_120dp">
+    <TextView android:textSize="@dimen/cart_13sp" android:textStyle="bold" android:textColor="@color/theme_accent_color" android:id="@+id/tab_text" android:paddingLeft="@dimen/dimen_5dp" android:paddingRight="@dimen/dimen_5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

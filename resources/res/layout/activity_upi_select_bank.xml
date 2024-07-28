@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rv_bottom_sheet" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_hideable="true" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_upi_toolbar" android:background="@color/upi_header_blue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/iv_back" android:padding="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/upi_ic_back" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_payments_bank_logo" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/fl_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/i_bottom_strip" android:layout_below="@+id/ll_upi_toolbar" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="375" android:viewportHeight="220">
+    <path android:fillColor="#fff" android:pathData="M0,0h375v220H0z" android:fillType="1"/>
+    <path android:fillColor="#fff" android:pathData="M6,0h397a6,6 0,0 1,6 6v208a6,6 0,0 1,-6 6H6a6,6 0,0 1,-6 -6V6a6,6 0,0 1,6 -6z" android:fillType="1"/>
+    <path android:fillColor="@drawable/$card_visa__0" android:pathData="M119.72,152H-3.286L-4,157.236C91.634,182.513 154.734,244.588 181,318l-26.73,-140.331c-4.588,-19.256 -17.984,-24.98 -34.55,-25.669" android:strokeAlpha="0.1" android:fillAlpha="0.1" android:fillType="1"/>
+    <path android:fillColor="@drawable/$card_visa__1" android:pathData="M352.496,-9H194.913L194,-2.25C316.515,30.336 397.351,110.36 431,205L396.756,24.091C390.88,-0.732 373.718,-8.112 352.496,-9" android:strokeAlpha="0.1" android:fillAlpha="0.1" android:fillType="1"/>
+    <path android:fillColor="@drawable/$card_visa__2" android:pathData="M33.5,225.5m-29.5,0a29.5,29.5 0,1 1,59 0a29.5,29.5 0,1 1,-59 0" android:strokeAlpha="0.393" android:fillAlpha="0.393" android:fillType="1"/>
+</vector>

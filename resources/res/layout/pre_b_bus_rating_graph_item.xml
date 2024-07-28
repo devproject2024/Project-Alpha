@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="120dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="100dp" android:layout_height="match_parent">
+                <FrameLayout android:layout_gravity="center" android:id="@+id/frame_lyt" android:layout_width="90dp" android:layout_height="90dp" android:layout_centerHorizontal="true">
+                    <com.paytm.utility.RoboTextView android:textSize="18sp" android:textColor="@color/color_666666" android:layout_gravity="center" android:id="@+id/avg_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4.7" android:layout_centerInParent="true" android:fontFamily="@string/font_family_roboto_medium"/>
+                    <com.travel.bus.busticket.widgets.BusRatingProgress android:id="@+id/rating_bar_circular" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" app:backgroundColor="#e2ebee" app:primaryCapVisibility="false" app:progress="23" app:progressColor="#09ac63" app:showProgressText="true" app:strokeWidth="10dp"/>
+                </FrameLayout>
+                <com.paytm.utility.RoboTextView android:textSize="10sp" android:textColor="@color/color_999999" android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@+id/rating_bar_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Based on 234 ratings" android:layout_below="@+id/frame_lyt" android:fontFamily="@string/font_family_roboto_medium"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:layout_gravity="center" android:layout_width="2dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_8dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_8dp"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rating_graph_lyt" android:paddingTop="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/excellent" layout="@layout/pre_b_bus_rating_horizontal_graph_lyt"/>
+            <include android:id="@+id/good" layout="@layout/pre_b_bus_rating_horizontal_graph_lyt"/>
+            <include android:id="@+id/average" layout="@layout/pre_b_bus_rating_horizontal_graph_lyt"/>
+            <include android:id="@+id/below_avg" layout="@layout/pre_b_bus_rating_horizontal_graph_lyt"/>
+            <include android:id="@+id/poor" layout="@layout/pre_b_bus_rating_horizontal_graph_lyt"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

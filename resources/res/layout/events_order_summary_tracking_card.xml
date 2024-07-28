@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="27dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/black" android:paddingLeft="@dimen/dimen_movie_left_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="21dp" android:text="Tracking Details" app:fontType="3"/>
+    <net.one97.paytm.o2o.events.view.EventTrackingView android:id="@+id/vertical_tl_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/color_e8f1f4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp"/>
+</LinearLayout>

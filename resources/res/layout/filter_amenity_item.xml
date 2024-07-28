@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/amenityFilterItem" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_18dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/filterAmenityIcon" android:layout_width="19dp" android:layout_height="19dp" android:scaleType="fitCenter"/>
+    <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/black" android:id="@+id/amenityLable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="Roboto-Medium" android:layout_marginStart="@dimen/dimen_15dp" android:layout_marginEnd="@dimen/dimen_4dp" android:layout_toStartOf="@+id/tickMark" android:layout_toEndOf="@+id/filterAmenityIcon"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/tickMark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" app:srcCompat="@drawable/travel_res_bus_checkbox_button"/>
+</RelativeLayout>

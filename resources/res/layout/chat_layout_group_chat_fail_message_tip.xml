@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="end" android:id="@+id/ll_group_chat_message_fail" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="15dp" android:layout_below="@+id/slide_view_group_chat" android:layout_marginEnd="15dp">
+        <TextView android:textSize="12sp" android:textColor="@color/chat_msg_failure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_module_message_not_delivered"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_4A90E2" android:id="@+id/text_group_chat_try_again" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_module_send_again"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_808080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_module_or"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_4A90E2" android:id="@+id/text_group_chat_message_delete" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_module_delete"/>
+    </LinearLayout>
+</merge>

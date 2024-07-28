@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_vs_variant_bottom_sheet_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/bottom_sheet_cross"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/varianrIV" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_100dp" android:src="@drawable/picasso_default_placeholder" android:scaleType="fitCenter"/>
+    <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/clp_color_2222222" android:layout_gravity="center_horizontal" android:id="@+id/variantNameTV" android:padding="@dimen/dimen_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/variantRV" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar" android:padding="@dimen/dimen_16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="@color/primaryBlue"/>
+    </FrameLayout>
+    <Button android:textSize="@dimen/dimen_16sp" android:textColor="@color/clp_white" android:id="@+id/doneBtn" android:background="@color/primaryBlue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16dp" android:text="@string/done" android:textAllCaps="false"/>
+</LinearLayout>

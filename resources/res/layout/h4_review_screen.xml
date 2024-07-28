@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:tag="layout/h4_review_screen_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/view_rb_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/h4_rb_header"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/root_scroll" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/h4_process_to_pay" android:layout_below="@+id/view_rb_header">
+        <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_2" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/view_rb_hotel_details" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/h4_rb_hotel_detailes"/>
+            <include android:id="@+id/view_rb_cin_cout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/view_rb_hotel_details" layout="@layout/h4_rb_cin_cout"/>
+            <include android:id="@+id/view_rb_guest_detail" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/view_rb_cin_cout" layout="@layout/h4_rb_guest_details"/>
+            <include android:id="@+id/view_rb_room_detail" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/view_rb_guest_detail" layout="@layout/h4_rb_room_detailes"/>
+            <include android:id="@+id/view_rb_promocode" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/view_rb_room_detail" layout="@layout/h4_rb_promo_code"/>
+            <include android:id="@+id/view_rb_gst_enable_disable" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/view_rb_promocode" layout="@layout/h4_rb_gst"/>
+            <include android:id="@+id/view_fare_breakup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" app:layout_constraintTop_toBottomOf="@+id/view_rb_gst_enable_disable" layout="@layout/h4_rb_payment_summenry"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@+id/h4_process_to_pay" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp" android:layout_alignParentBottom="true" layout="@layout/h4_rb_process_pay"/>
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/lottieAnim" android:visibility="invisible" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_25dp" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:elevation="@dimen/dimen_50dp" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime"/>
+</RelativeLayout>

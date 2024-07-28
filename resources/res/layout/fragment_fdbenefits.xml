@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#1d252d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_fixed_deposit_offering" android:lineSpacingExtra="8sp" android:textAllCaps="true" android:fontFamily="sans-serif"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+        <ImageView android:id="@+id/iv_tick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_blue_tick_mark_icon_copy_5"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/tv_earn_risk_free" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/iv_tick" android:lineSpacingExtra="10sp"/>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#1d252d" android:id="@+id/tv_view_interest_table" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/view_interest_table" android:layout_toRightOf="@+id/iv_tick" android:layout_below="@+id/tv_earn_risk_free" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif" android:letterSpacing="0.04"/>
+    </RelativeLayout>
+    <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+        <ImageView android:id="@+id/iv_tick_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_blue_tick_mark_icon_copy_5"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/pb_check_your_interest" android:layout_toRightOf="@+id/iv_tick_1" android:lineSpacingExtra="10sp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+        <ImageView android:id="@+id/iv_tick_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_blue_tick_mark_icon_copy_5"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/fd_create_benefit_2" android:layout_toRightOf="@+id/iv_tick_2" android:lineSpacingExtra="10sp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+        <ImageView android:id="@+id/iv_tick_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_blue_tick_mark_icon_copy_5"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/fd_create_benefit_3" android:layout_toRightOf="@+id/iv_tick_3" android:lineSpacingExtra="10sp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+        <ImageView android:id="@+id/iv_tick_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_blue_tick_mark_icon_copy_5"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/fd_benefit_five_new" android:layout_toRightOf="@+id/iv_tick_5" android:lineSpacingExtra="10sp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+        <ImageView android:id="@+id/iv_tick_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_blue_tick_mark_icon_copy_5"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/fd_benefit_four_new" android:layout_toRightOf="@+id/iv_tick_4" android:lineSpacingExtra="10sp"/>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="#00b9f5" android:gravity="center" android:id="@+id/tv_know_more" android:paddingLeft="2dp" android:paddingTop="3dp" android:paddingRight="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="37dp" android:layout_marginTop="8dp" android:text="@string/pb_know_more" android:drawableRight="@drawable/pb_fd_right_arrow" android:drawablePadding="5dp" android:letterSpacing="0.07"/>
+    <TextView android:textSize="11sp" android:textStyle="normal" android:textColor="#8ba6c1" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_terms_and_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_48dp" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif"/>
+    <Button android:textSize="@dimen/dimen_17sp" android:textColor="@color/white" android:id="@+id/btn_proceed" android:background="@drawable/bg_btn_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:minHeight="@dimen/dimen_56dp" android:text="@string/open_fixed_deposit_account" android:textAllCaps="false" android:fontFamily="@string/font_family_roboto_medium"/>
+</LinearLayout>

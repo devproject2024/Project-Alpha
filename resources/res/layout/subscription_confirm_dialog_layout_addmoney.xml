@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableRow android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/header_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:lineSpacingExtra="-12sp" android:fontFamily="sans-serif"/>
+        <ImageView android:id="@+id/cancel_iv" android:padding="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pdp_close_icon_addmoney"/>
+    </TableRow>
+    <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/message_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/auto_card_confirm_msg" android:fontFamily="sans-serif"/>
+    <Button android:textSize="@dimen/dimen_17sp" android:textColor="@color/white" android:id="@+id/proceed_btn" android:background="@drawable/bkg_view_card_button_addmoney" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55dp" android:layout_marginTop="@dimen/dimen_30dp" android:layout_marginBottom="@dimen/dimen_20dp" android:text="@string/addcard_proceed" android:layout_alignParentBottom="true" android:textAllCaps="false"/>
+</LinearLayout>

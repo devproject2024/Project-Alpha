@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_12dp">
+    <RelativeLayout android:id="@+id/info_container" android:background="@drawable/button_gradient" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/next_button" android:background="@drawable/oval_white_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="19dp" android:layout_marginBottom="@dimen/dimen_10dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_10dp" android:text="Get Started" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/white" android:id="@+id/info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="19dp" android:text="Travel More, Save More" android:layout_toLeftOf="@+id/next_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/pre_t_train_grey_border_with_fill_color" android:paddingLeft="@dimen/dimen_8_5dp" android:paddingTop="@dimen/dimen_21dp" android:paddingRight="@dimen/dimen_19dp" android:paddingBottom="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_25dp">
+        <ImageView android:id="@+id/disclaimer_icon" android:paddingTop="@dimen/dimen_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/dimen_13sp" android:textStyle="normal" android:textColor="@color/color_ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_7_5dp" android:text="@string/train_tentative_disclaimer_msg" android:layout_toRightOf="@+id/disclaimer_icon" android:lineSpacingExtra="@dimen/dimen_9sp" android:fontFamily="sans-serif"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-115dp">
+        <ImageView android:layout_gravity="right" android:id="@+id/remove_tentative" android:paddingRight="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_cross_disclaimer"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingBottom="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/color_506d85" android:id="@+id/tv_header" android:background="@color/color_f5f8fa" android:paddingLeft="@dimen/dimen_16dp" android:paddingTop="@dimen/dimen_8dp" android:paddingRight="@dimen/dimen_16dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAllCaps="true"/>
+</FrameLayout>

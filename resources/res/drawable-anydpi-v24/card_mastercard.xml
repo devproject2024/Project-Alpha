@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="375" android:viewportHeight="220">
+    <path android:fillColor="#fff" android:pathData="M0,0h375v220H0z" android:fillType="1"/>
+    <path android:fillColor="#fff0e8" android:pathData="M275.576,150.119h52.519v96.456h-52.519z" android:fillType="0"/>
+    <path android:fillColor="@drawable/$card_mastercard__0" android:pathData="M278.91,198.355c-0.02,-18.825 8.435,-36.613 22.925,-48.236C277.226,130.354 241.887,133.233 220.652,156.732c-21.234,23.5 -21.234,59.73 0,83.23 21.235,23.499 56.574,26.378 81.183,6.613 -14.485,-11.62 -22.939,-29.4 -22.924,-48.22z" android:fillType="0"/>
+    <path android:fillColor="@drawable/$card_mastercard__1" android:pathData="M398.954,198.355c-0.001,23.486 -13.123,44.909 -33.793,55.172 -20.67,10.262 -45.26,7.563 -63.326,-6.952 14.48,-11.63 22.934,-29.408 22.934,-48.228s-8.454,-36.599 -22.934,-48.228c18.066,-14.515 42.656,-17.215 63.326,-6.952s33.792,31.686 33.793,55.171v0.017z" android:fillType="0"/>
+    <path android:fillColor="@drawable/$card_mastercard__2" android:pathData="M-0.5,-0.5m-58.5,0a58.5,58.5 0,1 1,117 0a58.5,58.5 0,1 1,-117 0" android:fillType="1"/>
+</vector>

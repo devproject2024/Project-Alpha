@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/detail_close" android:background="@drawable/pre_t_train_close" android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" android:layout_marginBottom="20dp" android:layout_above="@+id/class_container_layout" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/class_container_layout" android:background="@drawable/pre_t_train_train_fare_fragment_round_corner" android:paddingTop="20dp" android:paddingBottom="@dimen/dimen_8dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pre_t_flight_review_fare_icon"/>
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="#012b72" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/fare_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="Fare Breakup" android:lineSpacingExtra="2.5sp"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+                <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1dp" android:layout_centerVertical="true"/>
+                <View android:background="#00b9f5" android:layout_width="71dp" android:layout_height="2dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/fare_details_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/back_button" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp" android:layout_marginTop="@dimen/dimen_8dp" android:src="@drawable/back_icon_shape"/>
+    <ImageView android:id="@+id/iocl_paytm_logo" android:background="@drawable/iocl_paytm_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/iocl_motif_image" android:background="@drawable/iocl_ic_motif_classic" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_108dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    <ImageView android:id="@+id/iv_share_icon" android:background="@drawable/ic_share" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:layout_marginRight="30dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="30dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

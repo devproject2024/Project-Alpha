@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <net.one97.paytm.common.views.ShimmerFrameLayout android:id="@+id/shimmer_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/pre_t_train_avlblty_list_item_placeholder"/>
+            <include layout="@layout/pre_t_train_avlblty_list_item_placeholder"/>
+            <include layout="@layout/pre_t_train_avlblty_list_item_placeholder"/>
+            <include layout="@layout/pre_t_train_avlblty_list_item_placeholder"/>
+            <include layout="@layout/pre_t_train_avlblty_list_item_placeholder"/>
+            <include layout="@layout/pre_t_train_avlblty_list_item_placeholder"/>
+            <include layout="@layout/pre_t_train_avlblty_list_item_placeholder"/>
+        </LinearLayout>
+    </net.one97.paytm.common.views.ShimmerFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/train_detail_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_1dp" android:layout_marginRight="@dimen/dimen_1dp"/>
+    <TextView android:textColor="@color/gray" android:gravity="center" android:id="@+id/error_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="150dp"/>
+</RelativeLayout>

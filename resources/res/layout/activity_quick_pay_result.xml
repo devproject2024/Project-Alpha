@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_motif_classic" android:layout_alignParentRight="true"/>
+                <ImageView android:id="@+id/qp_back_iv" android:padding="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:src="@drawable/back_arrow"/>
+                <RelativeLayout android:gravity="center" android:background="#21c17a" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_60dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_10dp" android:src="@drawable/ic_quick_verified" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#ffffff" android:id="@+id/quick_succcess_txt" android:padding="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="@string/quick_pay_saved_message" android:lineSpacingExtra="3sp" android:fontFamily="sans-serif-medium"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30dp">
+                    <LinearLayout android:orientation="vertical" android:padding="@dimen/dimen_20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#444444" android:id="@+id/account_header_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quick_pay_header_success_screen" android:lineSpacingExtra="3sp" android:fontFamily="sans-serif"/>
+                        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/qpr_account_holder_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif" android:letterSpacing="0.03"/>
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/qpr_account_no_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_11dp" android:fontFamily="sans-serif"/>
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/qpr_ifsc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:fontFamily="sans-serif"/>
+                        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/qpr_amount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:lineSpacingExtra="7sp" android:letterSpacing="0.03"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_40dp">
+                        <LinearLayout android:gravity="center" android:background="@drawable/uam_grey_circle_border" android:layout_width="@dimen/dimen_48dp" android:layout_height="@dimen/dimen_48dp">
+                            <ImageView android:id="@+id/qpr_bank_icon_iv" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp"/>
+                        </LinearLayout>
+                        <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#999999" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/qpr_bank_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:maxWidth="100dp" android:singleLine="true" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_20dp"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/qpr_pay_now_ll" android:background="@drawable/rectangle_grey_stroke_rounded_corner" android:padding="@dimen/dimen_20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="108dp" android:layout_marginTop="@dimen/dimen_30dp">
+                    <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/qp_paynow_icon"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_weight="1">
+                        <TextView android:textSize="17sp" android:textStyle="normal" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qpr_pay_now" android:fontFamily="sans-serif-medium"/>
+                        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#444444" android:id="@+id/qpr_pay_now_message_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                    <ImageView android:padding="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/card_forward"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/date_tym_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp"/>
+                <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/qp_add_tv" android:background="@drawable/rounded_rectangle_paytmblue" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_40dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_30dp" android:text="Set Payment Reminder" android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@+id/rel_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@+id/lyt_bottom_tab_bar" android:layout_width="match_parent" android:layout_height="60dp" android:layout_below="@+id/paytm_strip" layout="@layout/lyt_main_bottom_tab_bar_new"/>
+    </RelativeLayout>
+</LinearLayout>

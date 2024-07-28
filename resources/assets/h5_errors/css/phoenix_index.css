@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"),
+    url(https://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"),
+    url(https://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff)
+      format("woff");
+}
+
+body {
+  background: #fff;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+}
+main header {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #ffffff;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+main section img {
+  width: 114px;
+  height: 115px;
+}
+
+main section h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+main section p {
+  margin: 25px 10px;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main section a {
+  display: inline-block;
+  background: #00b9f5;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 15px 36px;
+  margin: 9px 0 0;
+  display: none;
+}

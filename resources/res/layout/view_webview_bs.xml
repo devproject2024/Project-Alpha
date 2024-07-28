@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:background="@drawable/fnb_dialog_bg" android:paddingTop="20dp" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/btn_close" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@+id/txt_title" app:srcCompat="@drawable/movie_ic_close"/>
+    <net.one97.paytm.o2o.movies.widget.ObservableWebView android:id="@+id/web_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="21dp" android:layout_below="@+id/btn_close"/>
+    <ProgressBar android:id="@+id/loader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:indeterminateTint="@color/paytm_blue" android:indeterminateTintMode="src_atop"/>
+</RelativeLayout>

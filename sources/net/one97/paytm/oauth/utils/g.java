@@ -1,0 +1,12 @@
+package net.one97.paytm.oauth.utils;
+
+public enum g {
+    VERIFYING_NUMBER,
+    VERIFICATION_SUCCESS,
+    SELECT_SIM_CARD,
+    SMS_SEND_FAILED,
+    VERIFICATION_FAILED,
+    SINGLE_SIM_MISMATCH,
+    DUAL_SIM_MISMATCH,
+    DONT_HAVE_SIM
+}

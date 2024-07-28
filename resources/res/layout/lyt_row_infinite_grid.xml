@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.01">
+    <RelativeLayout android:id="@+id/product_1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/inf_grid_product">
+        <ImageView android:id="@+id/item_image1" style="@style/inf_grid_image"/>
+        <TextView android:id="@+id/item_name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/item_image1" style="@style/inf_grid_name"/>
+        <LinearLayout android:id="@+id/ll_price" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/item_name1" style="@style/inf_grid_price_lyt">
+            <TextView android:textSize="@dimen/cart_15sp" android:textColor="@color/color_222222" android:id="@+id/product1_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="#666666" android:id="@+id/product1_old_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4dp" android:lineSpacingExtra="0.4sp" android:fontFamily="sans-serif-light"/>
+            <TextView android:textSize="@dimen/cart_13sp" android:textColor="@color/green" android:id="@+id/product1_discount_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4dp"/>
+        </LinearLayout>
+        <TextView android:id="@+id/product1_cashback_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ll_price" style="@style/inf_grid_offer_tag"/>
+    </RelativeLayout>
+    <View android:background="@color/light_grey_border" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.01"/>
+    <RelativeLayout android:id="@+id/product_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/inf_grid_product">
+        <ImageView android:id="@+id/item_image2" style="@style/inf_grid_image"/>
+        <TextView android:id="@+id/item_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/item_image2" style="@style/inf_grid_name"/>
+        <LinearLayout android:id="@+id/ll_price2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/item_name2" style="@style/inf_grid_price_lyt">
+            <TextView android:textSize="@dimen/cart_15sp" android:textColor="@color/color_222222" android:id="@+id/product2_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="#666666" android:id="@+id/product2_old_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4dp" android:lineSpacingExtra="0.4sp" android:fontFamily="sans-serif-light"/>
+            <TextView android:textSize="@dimen/cart_13sp" android:textColor="@color/green" android:id="@+id/product2_discount_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4dp"/>
+        </LinearLayout>
+        <TextView android:id="@+id/product2_cashback_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ll_price2" style="@style/inf_grid_offer_tag"/>
+    </RelativeLayout>
+</LinearLayout>

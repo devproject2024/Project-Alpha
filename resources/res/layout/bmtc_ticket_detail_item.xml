@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/lyt_adult" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dimen_13sp" android:textStyle="normal" android:textColor="@color/color_666666" android:id="@+id/ticket_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:fontFamily="sans-serif"/>
+        <TextView android:textSize="@dimen/dimen_13sp" android:textStyle="normal" android:textColor="@color/color_999999" android:id="@+id/ticket_pax_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp" android:layout_toRightOf="@+id/ticket_name" android:fontFamily="sans-serif"/>
+        <TextView android:textSize="@dimen/dimen_13sp" android:textStyle="normal" android:textColor="@color/color_666666" android:id="@+id/ticket_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="sans-serif"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/refund_breakup_source_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/refund_breakup_cell_margin">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/item_detail_refund_source_text_font_size" android:textColor="@color/item_detail_refund_source_text_color" android:id="@+id/refund_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="3"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/item_detail_refund_amnt_text_font_size" android:textColor="@android:color/black" android:id="@+id/refund_amnt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/item_detail_refund_amnt_margin_right" app:fontType="3"/>
+    </LinearLayout>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/item_detail_refund_time_text_font_size" android:textColor="@color/item_detail_refund_time_text_color" android:id="@+id/refund_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_detail_refund_time_top_margin" app:fontType="2"/>
+    <View android:id="@+id/seperator" android:background="@color/item_detail_auto_cancel_separator_bg_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_2dp" android:layout_marginTop="@dimen/refund_breakup_cell_margin"/>
+</LinearLayout>

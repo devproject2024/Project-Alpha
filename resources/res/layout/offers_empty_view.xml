@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="false">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/utility_offers_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/show_more_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/utility_offers_list">
+        <Button android:textSize="16sp" android:textColor="@color/color_33b5e5" android:gravity="center" android:id="@+id/show_more_btn" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="70dp" android:text="@string/show_more" android:textAllCaps="false"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/gray" android:gravity="center" android:id="@+id/utility_offer_empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_offer_available" android:layout_centerInParent="true"/>
+</RelativeLayout>

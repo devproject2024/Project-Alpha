@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/upi_link_acc" android:visible="false" android:title="@string/upi_link_bank_account" app:showAsAction="never"/>
+    <item android:id="@+id/upi_set_primary_vpa" android:title="@string/upi_set_primary_vpa" app:showAsAction="never"/>
+    <item android:id="@+id/upi_delete_bank" android:visible="false" android:title="@string/upi_remove_bank" app:showAsAction="never"/>
+    <item android:id="@+id/upi_delete_vpa" android:title="@string/upi_delete_vpa" app:showAsAction="never"/>
+</menu>

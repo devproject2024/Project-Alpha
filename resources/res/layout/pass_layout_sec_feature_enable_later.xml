@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_hideable="true">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="right" android:id="@+id/iv_close_icon" android:background="@drawable/pass_ic_close" android:layout_width="@dimen/dimen_22dp" android:layout_height="@dimen/dimen_22dp" android:layout_marginTop="17dp" android:layout_marginRight="20dp" android:layout_marginBottom="@dimen/dimen_5dp"/>
+            <TextView android:textSize="18sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="@string/enable_applock_later" style="@style/Base.TextAppearance.AppCompat.Body2"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:layout_marginTop="56dp">
+                <ImageView android:background="@drawable/pass_bottom_menu_account_icon_selected" android:layout_width="@dimen/dimen_22dp" android:layout_height="@dimen/dimen_22dp"/>
+                <ImageView android:background="@drawable/pass_ic_security_sec" android:layout_width="@dimen/wallet_18_dp" android:layout_height="20.5dp" android:layout_marginLeft="90dp" android:layout_marginRight="100dp"/>
+                <ImageView android:background="@drawable/pass_ic_app_lock_sec" android:layout_width="@dimen/wallet_15_dp" android:layout_height="@dimen/wallet_21_dp" android:layout_marginLeft="@dimen/dimen_10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/pass_ic_arrow_right_blue" android:layout_width="@dimen/dimen_12dp" android:layout_height="11.5dp" android:layout_marginLeft="107dp" android:layout_marginRight="103dp"/>
+                <ImageView android:background="@drawable/pass_ic_arrow_right_blue" android:layout_width="@dimen/dimen_12dp" android:layout_height="11.5dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_48_dp" android:layout_marginTop="5.5dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="58dp" android:layout_marginRight="50dp" android:text="@string/sec_and_settings"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_5dp" android:text="@string/applock_text"/>
+            </LinearLayout>
+            <TextView android:textSize="16dp" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_got_it" android:background="@color/paytm_blue" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="25dp" android:layout_marginTop="83dp" android:layout_marginRight="25dp" android:layout_marginBottom="@dimen/dimen_76dp" android:text="@string/ok_got_it_text"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

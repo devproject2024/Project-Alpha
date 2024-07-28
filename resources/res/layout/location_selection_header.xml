@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/current_location_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_28dp">
+            <ImageButton android:id="@+id/invisible_back_button" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/movie_crrent_location_img" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/more_flights_available" android:id="@+id/current_location_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/current_location" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@+id/invisible_back_button" android:layout_centerVertical="true" app:fontType="3"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/bg_grid_grey" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

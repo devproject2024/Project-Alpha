@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/wallet_10_dp">
+    <RelativeLayout android:gravity="left" android:id="@+id/toolbar_layout" android:paddingLeft="@dimen/dimen_13dp" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:id="@+id/back_btn" android:layout_width="28dp" android:layout_height="wrap_content" android:src="@drawable/black_back_arrow" android:adjustViewBounds="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/movie_payment_details_lyt" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="24sp" android:textColor="@color/dark_black" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_summary" android:layout_alignParentLeft="true" app:fontType="4"/>
+            <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/grey_phone" android:id="@+id/id_movie_payment_order_id" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_marginBottom="5dp" app:fontType="2"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/paymentItemsLl" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@drawable/line_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="22dp" android:layout_marginBottom="@dimen/dimen_20dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp">
+                <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/black" android:id="@+id/totalLabelTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total" app:fontType="3"/>
+                <View android:layout_width="@dimen/dimen_0dp" android:layout_height="@dimen/dimen_1dp" android:layout_weight="1"/>
+                <com.paytm.utility.RoboTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/totalValueTv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="4"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp">
+                <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/black" android:id="@+id/paymentMethod" android:paddingTop="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_method" app:fontType="3"/>
+                <View android:layout_width="@dimen/dimen_0dp" android:layout_height="@dimen/dimen_1dp" android:layout_weight="1"/>
+                <com.paytm.utility.RoboTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/paymentMethodValue" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="4"/>
+            </LinearLayout>
+            <View android:background="@drawable/line_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/movie_promo_lyt" android:background="@drawable/movie_summary_promo_border" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_marginBottom="15dp">
+                <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/promocode_applied" android:textAllCaps="true" app:fontType="3"/>
+                <include android:id="@+id/success_movie_promo_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" layout="@layout/movie_summary_promo_lyt"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

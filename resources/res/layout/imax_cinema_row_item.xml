@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="16dp">
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/imax_cinema_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_family_roboto_medium"/>
+    <ImageView android:id="@+id/expand_collapse_view" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/down" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/imax_cinema_address" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_below="@+id/imax_cinema_name" android:fontFamily="@string/font_family_roboto_medium"/>
+    <View android:id="@+id/imax_cinema_divider" android:background="#26ffffff" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="16dp" android:layout_below="@+id/imax_cinema_address"/>
+</RelativeLayout>

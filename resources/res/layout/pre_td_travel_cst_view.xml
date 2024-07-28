@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_fafafa" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/journey_layout" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_000000" android:id="@+id/src_dest" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12sp" android:textColor="@color/color_000000" android:ellipsize="end" android:id="@+id/operator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/color_8c8c8c" android:ellipsize="end" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Paytm Order Id" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/color_8c8c8c" android:ellipsize="end" android:id="@+id/bus_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/tp_gray_font" android:ellipsize="end" android:gravity="right" android:id="@+id/paytm_order_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/passenger_layout" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="12sp" android:textColor="@color/color_8c8c8c" android:ellipsize="end" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/passengers" android:layout_weight="1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/color_8c8c8c" android:ellipsize="end" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/seat_no" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/color_000000" android:ellipsize="end" android:id="@+id/bus_passenger_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/color_000000" android:ellipsize="end" android:gravity="right" android:id="@+id/seat_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

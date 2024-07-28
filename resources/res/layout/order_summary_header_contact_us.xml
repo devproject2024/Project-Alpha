@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/contact_us_container" android:background="@color/color_fafafa" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/contact_us_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/bottom_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_10dp">
+            <ImageView android:id="@+id/trust_icon" android:layout_width="@dimen/dimen_70dp" android:layout_height="@dimen/dimen_70dp" android:layout_margin="@dimen/dimen_15dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/paytm_trust_desc_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_toRightOf="@+id/trust_icon" android:layout_centerVertical="true">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_11sp" android:textColor="@color/color_9b9b9b" android:gravity="left" android:id="@+id/paytm_trust_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_00b9f5" android:gravity="left" android:id="@+id/paytm_contact_us" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

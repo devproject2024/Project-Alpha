@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/relative_indurance_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_16dp">
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="#222222" android:id="@+id/txt_insurance_name" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="0.7" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.3">
+            <com.paytm.utility.RoboTextView android:textSize="10sp" android:textColor="#ff20bf7a" android:id="@+id/flight_insurance_status" android:background="@drawable/pre_f_flight_success_order_summary_badge_border" android:paddingLeft="@dimen/dimen_10dp" android:paddingTop="@dimen/dimen_2dp" android:paddingRight="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sucess" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontType="2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/view_divider" android:background="#ffefefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

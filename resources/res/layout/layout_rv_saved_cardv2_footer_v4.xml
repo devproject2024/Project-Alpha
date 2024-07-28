@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:typeface="normal" android:textStyle="normal" android:textColor="@color/color_00B9F5" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/footer_text" android:background="@drawable/v4_bg_pay_another_card_bill" android:paddingTop="@dimen/dimen_18dp" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:maxLines="1" android:fontFamily="sans-serif-medium" app:layout_anchor="@+id/visa_footerlayout"/>
+    <RelativeLayout android:id="@+id/visa_footerlayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_42dp">
+        <include android:id="@+id/footerlayout" layout="@layout/fragment_creditcard_footerlayout_v4"/>
+        <View android:id="@+id/divider_footer" android:background="@color/grey_f5f8fa" android:layout_width="match_parent" android:layout_height="@dimen/dimen_7dp" android:layout_marginTop="@dimen/dimen_41dp" android:layout_below="@+id/footerlayout"/>
+        <net.one97.paytm.recharge.mobile_v3.widget.CJRFooterViewWidgetV3 android:id="@+id/footer_menu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_31dp" android:layout_below="@+id/divider_footer"/>
+        <ImageView android:id="@+id/iv_bottom_strip" android:background="@drawable/splash_bottom_strip" android:layout_width="match_parent" android:layout_height="@dimen/dimen_15dp" android:layout_below="@+id/footer_menu"/>
+    </RelativeLayout>
+</LinearLayout>

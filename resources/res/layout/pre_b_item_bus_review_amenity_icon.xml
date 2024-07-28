@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/reviewAmenityIcon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="30dp" android:layout_marginEnd="32dp" app:srcCompat="@drawable/travel_res_bus_action_button_bg"/>
+</LinearLayout>

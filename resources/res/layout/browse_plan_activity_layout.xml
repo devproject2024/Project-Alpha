@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scroll" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:orientation="vertical" android:background="@color/color_ffffff" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="4dp">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/plan_container" android:background="@color/color_ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <LinearLayout android:id="@+id/search_container_list" android:background="@color/color_ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/browse_plan_search_recycler_view" android:background="#fafbfb" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/no_result_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_240dp">
+            <com.paytm.utility.RoboTextView android:textSize="18sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/no_match_found" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_matching_plan" android:layout_centerHorizontal="true" android:fontFamily="sans-serif"/>
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textStyle="normal" android:textColor="#00b9f5" android:id="@+id/view_all_button" android:background="@drawable/white_background_with_blue_border" android:paddingLeft="@dimen/dimen_18dp" android:paddingTop="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_18dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_22dp" android:text="@string/view_all_plan" android:layout_below="@+id/no_match_found" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-medium"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_70dp">
+            <LinearLayout android:orientation="horizontal" android:paddingRight="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/back_button_layout_metro_search_screen" android:paddingLeft="@dimen/dimen_2dp" android:paddingTop="@dimen/dimen_35dp" android:paddingRight="@dimen/dimen_2dp" android:layout_width="@dimen/dimen_20dp" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/back_button_metro_search_screen" android:padding="@dimen/dimen_1dp" android:paddingTop="@dimen/dimen_2dp" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:adjustViewBounds="true"/>
+                </FrameLayout>
+                <LinearLayout android:paddingLeft="@dimen/dimen_18dp" android:paddingTop="@dimen/dimen_35dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_17sp" android:textStyle="bold" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@+id/source_station_metro_route_search_activity" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rajiv Chowk" android:maxLines="1" android:maxEms="7" android:fontFamily="sans-serif-light"/>
+                    <FrameLayout android:id="@+id/arrow_between_stations" android:paddingLeft="@dimen/dimen_8dp" android:paddingTop="@dimen/dimen_9dp" android:paddingRight="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pre_t_small_right_arrow" android:tint="@color/color_222222"/>
+                    </FrameLayout>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_17sp" android:textStyle="bold" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@+id/destination_station_metro_route_search_activity" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sikandarpur" android:maxLines="1" android:maxEms="7" android:fontFamily="sans-serif-light"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@+id/data_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dimen_28dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/route_recyclerview_in_metro_route_search_layout" android:paddingLeft="@dimen/dimen_20dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/route_info_recyclerview_in_metro_route_search_layout" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_30dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/stations_recyclerview_in_metro_route_search_layout" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <com.airbnb.lottie.LottieAnimationView android:id="@+id/lottie_in_search_route_page" android:visibility="invisible" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_25dp" android:layout_centerInParent="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="12" app:duration="@android:integer/config_mediumAnimTime" app:lottie_autoPlay="true" app:lottie_fileName="Payments-Loader.json" app:lottie_loop="true"/>
+            </RelativeLayout>
+        </ScrollView>
+        <include android:id="@+id/not_found_layout" android:visibility="gone" layout="@layout/pre_t_not_found_layout"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_login_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_header" android:background="@color/title_color" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <TextView android:textSize="@dimen/dimen_18sp" android:textStyle="bold" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/amount_to_pay" android:layout_centerVertical="true" android:fontFamily="sans-serif"/>
+        <TextView android:textSize="@dimen/dimen_18sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/tv_amout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="800" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:fontFamily="sans-serif" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/lyt_bottom_lines" android:layout_below="@+id/rl_header"/>
+    <include android:id="@+id/lyt_selected_instrument" android:visibility="gone" layout="@layout/lyt_instrument_selected_sheet"/>
+</RelativeLayout>

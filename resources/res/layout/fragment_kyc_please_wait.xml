@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fragment_went_wrong_scroll_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/lyt_identification_header" android:visibility="gone" layout="@layout/kyc_processing_title_layout"/>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:src="@drawable/ic_verifying"/>
+            <TextView android:textSize="21sp" android:textStyle="bold" android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/please_wait" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="17sp" android:textStyle="normal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/we_are_verifying_your_details" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:text="@string/it_may_take_upto_24_hours_to_confirm" android:fontFamily="sans-serif"/>
+            <View android:layout_gravity="center" android:background="@color/color_ebebeb" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_3dp" android:layout_marginTop="@dimen/dimen_30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

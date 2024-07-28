@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/event_book_container_scroll_view" android:background="@color/color_fafafa" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/book_summary_main_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/events_booking_summary_venue_details_frame_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="12dp" android:layout_marginRight="10dp"/>
+            <FrameLayout android:id="@+id/events_booking_summary_package_details_frame_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:layout_marginRight="10dp"/>
+            <FrameLayout android:id="@+id/events_booking_summary_traveller_details_venue_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:layout_marginRight="10dp"/>
+            <FrameLayout android:id="@+id/events_booking_summary_review_pay_frame_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:id="@+id/fragment_park_booking_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

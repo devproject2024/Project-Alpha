@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="5">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_012b72" android:id="@+id/events_booking_maximized_seat_title" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3" app:fontType="3"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_F39616" android:id="@+id/events_book_seat_summary_sold_out" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/events_sold_out" android:layout_weight="2"/>
+        <LinearLayout android:id="@+id/events_book_seat_summary_seat_number_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+            <ImageView android:layout_gravity="center" android:id="@+id/events_book_seat_summary_minus_button" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/minus_icon" android:layout_weight="1"/>
+            <TextView android:gravity="center" android:id="@+id/events_book_seat_summary_seat_number_textview" android:background="@drawable/park_square_drawable" android:layout_width="28dp" android:layout_height="match_parent" android:text="@string/_0" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/events_book_seat_summary_plus_button" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plus_icon" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rupee_symbol" android:includeFontPadding="false" app:fontType="4"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_191919" android:id="@+id/events_booking_maximized_seat_price" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" app:fontType="4"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/color_909090" android:id="@+id/events_booking_maximized_seat_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:includeFontPadding="false" app:fontType="3"/>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lytMLVContainer" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#f5f8fa" android:layout_width="match_parent" android:layout_height="5dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lyt_container1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="32dp" android:layout_marginRight="16dp" android:layout_marginBottom="32dp">
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#506d85" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PAYMENT DETAILS" android:fontFamily="sans-serif-medium" android:letterSpacing="0.08"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#1d252d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order Amount" android:fontFamily="sans-serif" android:layout_alignParentStart="true"/>
+                <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#1d252d" android:gravity="end" android:id="@+id/tvTotalOrderAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#1d252d" android:id="@+id/tvPaidUsing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:layout_alignParentStart="true"/>
+                <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#1d252d" android:gravity="end" android:id="@+id/tvAmountPaidByOtherPaymode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#26d07c" android:id="@+id/tvMerchantNameCashbackRedeemed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/tvCashbackRedeemed" android:fontFamily="sans-serif" android:layout_alignParentStart="true"/>
+                <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#26d07c" android:gravity="end" android:id="@+id/tvCashbackRedeemed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:background="#dde5ed" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="12dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#1d252d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/effective_mlv_price" android:fontFamily="sans-serif" android:layout_alignParentStart="true"/>
+                <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#1d252d" android:gravity="end" android:id="@+id/tvEffectiveOrderAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lyt_container2" android:background="@drawable/mlv_container_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="13dp" android:layout_marginBottom="12dp">
+                <ImageView android:id="@+id/icon" android:layout_width="20dp" android:layout_height="20dp" app:srcCompat="@drawable/ic_mlv_2_loyalty_offer"/>
+                <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#1d252d" android:id="@+id/tvMerchantNameLoyaltyCash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/icon" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif-medium"/>
+            </RelativeLayout>
+            <View android:background="#f5f8fa" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="12dp" android:layout_marginRight="8dp" android:layout_marginBottom="16dp">
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#1d252d" android:id="@+id/tvCashbackEarnedDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/mlv_cashback_earned_for_this_payment" android:layout_toLeftOf="@+id/tvCashbackEarned" android:fontFamily="sans-serif" android:layout_alignParentStart="true"/>
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#1d252d" android:gravity="end" android:id="@+id/tvCashbackEarned" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lyt_container3" android:background="@drawable/mlv_container_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="10dp" android:layout_marginRight="8dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="13dp" android:layout_marginBottom="12dp">
+                <ImageView android:id="@+id/icon2" android:layout_width="20dp" android:layout_height="20dp" app:srcCompat="@drawable/ic_mlv_2_loyalty_offer"/>
+                <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#1d252d" android:id="@+id/tvMerchantNameMLoyal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/icon2" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif-medium"/>
+            </RelativeLayout>
+            <View android:background="#f5f8fa" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#1d252d" android:id="@+id/posTransactionDetailMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginBottom="10dp" android:text="Cashback shall be credited to your account within 48 hours" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

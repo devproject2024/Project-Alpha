@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/toolbar_close" android:padding="3dp" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:scaleType="centerInside" app:srcCompat="@drawable/back_arrow"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_17sp" android:textColor="#222222" android:id="@+id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cheque_book_n_dd" android:layout_centerInParent="true" app:fontType="4"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_30dp" android:paddingTop="@dimen/dimen_50dp" android:paddingRight="@dimen/dimen_30dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="173dp" android:layout_height="137.5dp" app:srcCompat="@drawable/pb_il_chequebook"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_21sp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_50dp" android:layout_marginRight="@dimen/wallet_47_dp" android:text="@string/soon_able_req_cheque_book" app:fontType="4"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/color_222222" android:id="@+id/cheque_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_666666" android:id="@+id/cheque_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" app:fontType="2"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/color_666666" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/city_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" app:fontType="1"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2dp" android:layout_marginStart="@dimen/dimen_10dp" app:srcCompat="@drawable/bus_between_arrow_small"/>
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/color_666666" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/destinationText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dimen_150dp" android:maxLines="3" android:layout_marginStart="@dimen/dimen_10dp" app:fontType="1"/>
+    </LinearLayout>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_11dp" android:textColor="@color/color_666666" android:id="@+id/text_view_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2dp" app:fontType="1"/>
+</LinearLayout>

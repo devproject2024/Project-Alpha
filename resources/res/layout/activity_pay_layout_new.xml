@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parent_payActivityNew" android:background="@android:color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:contentDescription="@string/app_name"/>
+    <FrameLayout android:id="@+id/fragment_container" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/easypayBrowserFragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <ProgressBar android:id="@+id/payment_load_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <include layout="@layout/dialog_payment_web_progress_native"/>
+</RelativeLayout>

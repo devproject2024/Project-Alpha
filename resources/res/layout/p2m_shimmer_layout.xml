@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.one97.paytm.utils.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/shimmer_loader" android:paddingLeft="@dimen/dimen_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_5dp" app:base_alpha="0.4" app:shimmer_duration="1300">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/loading_main_lyt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12_8dp">
+            <ImageView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_18dp" android:layout_height="@dimen/dimen_18dp" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_12_8dp" android:contentDescription="TODO" android:layout_marginStart="@dimen/dimen_15dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/linear_lyt_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_55dp" android:layout_marginRight="@dimen/dimen_79dp" android:layout_marginBottom="@dimen/dimen_15dp" android:layout_marginStart="@dimen/dimen_55dp" android:layout_marginEnd="@dimen/dimen_79dp">
+                <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_150dp" android:layout_height="@dimen/dimen_18dp"/>
+                <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_250dp" android:layout_height="@dimen/dimen_18dp" android:layout_marginTop="@dimen/dimen_5dp"/>
+                <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_250dp" android:layout_height="@dimen/dimen_18dp" android:layout_marginTop="@dimen/dimen_5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/loading_main_lyt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12_8dp">
+            <ImageView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_18dp" android:layout_height="@dimen/dimen_18dp" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_12_8dp" android:contentDescription="TODO" android:layout_marginStart="@dimen/dimen_15dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/linear_lyt_one_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_55dp" android:layout_marginRight="@dimen/dimen_79dp" android:layout_marginBottom="@dimen/dimen_15dp" android:layout_marginStart="@dimen/dimen_55dp" android:layout_marginEnd="@dimen/dimen_79dp">
+                <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_150dp" android:layout_height="@dimen/dimen_18dp"/>
+                <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_250dp" android:layout_height="@dimen/dimen_18dp" android:layout_marginTop="@dimen/dimen_5dp"/>
+                <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_250dp" android:layout_height="@dimen/dimen_18dp" android:layout_marginTop="@dimen/dimen_5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginLeft="@dimen/dimen_55dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_5dp" android:layout_below="@+id/loading_main_lyt" android:layout_marginStart="@dimen/dimen_55dp"/>
+    </LinearLayout>
+</net.one97.paytm.utils.ShimmerFrameLayout>

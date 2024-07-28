@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="@dimen/dimen_100dp" app:collapsedSubtitleTextAppearance="@style/MobileCollapsedSubTitleTextAppearance" app:collapsedTitleTextAppearance="@style/MobileCollapsedTitleTextAppearance" app:contentScrim="@color/color_ffffff" app:expandedSubtitleTextAppearance="@style/MobileExpandedSubTitleTextAppearance" app:expandedTitleMarginBottom="@dimen/dimen_16dp" app:expandedTitleMarginEnd="@dimen/dimen_10dp" app:expandedTitleMarginStart="@dimen/dimen_20dp" app:expandedTitleTextAppearance="@style/MobileExpandedTitleTextAppearance" app:layout_scrollFlags="13" app:toolbarId="@+id/toolbar">
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <androidx.appcompat.widget.Toolbar android:id="@+id/temp_toolbar" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/nested_scroll_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/container_lyt" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/automatic_add_new_bill_title" android:paddingTop="@dimen/dimen_2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_18dp" android:layout_marginBottom="@dimen/dimen_30dp" android:text="@string/automatic_add_new_bill_title" android:layout_alignParentLeft="true" android:lineSpacingExtra="8sp" android:drawableEnd="@drawable/ic_add_automatic" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:id="@+id/lyt_loading" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/loading_pb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/paytm_progress" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/no_network_lyt" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

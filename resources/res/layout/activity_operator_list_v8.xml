@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar_layout" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentScrim="@color/color_fafbfb" app:expandedTitleGravity="3" app:expandedTitleMarginStart="18dp" app:expandedTitleMarginTop="@dimen/dimen_60dp" app:expandedTitleTextAppearance="@style/RUToolbarExpandedTitleTextAppearance" app:layout_scrollFlags="13">
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="top" android:id="@+id/toolbar" android:visibility="gone" android:layout_marginBottom="@dimen/dimen_70dp" app:layout_collapseMode="1" style="@style/RUToolbarStyle"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/action_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="2">
+                <ImageView android:id="@+id/back_arrow" android:padding="@dimen/dimen_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_12dp" android:layout_marginBottom="@dimen/dimen_12dp" android:src="@drawable/back_arrow_black"/>
+                <com.paytm.utility.RoboTextView android:textSize="21sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/toolbar_title" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="Select your city" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/custom_toolbar" android:background="@color/transparent" android:paddingTop="@dimen/dimen_12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_8dp" android:layout_marginRight="@dimen/dimen_16dp" android:animateLayoutChanges="true">
+                <include android:layout_width="match_parent" android:layout_height="50dp" android:layout_toLeftOf="@+id/cancel" layout="@layout/search_operator_layout"/>
+                <com.paytm.utility.RoboTextView android:textSize="18sp" android:textColor="#00b9f5" android:gravity="center_vertical" android:id="@+id/cancel" android:background="@color/transparent" android:visibility="gone" android:layout_width="55dp" android:layout_height="50dp" android:layout_marginLeft="@dimen/dimen_11dp" android:text="@string/Cancel" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/fragment_operator_list"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

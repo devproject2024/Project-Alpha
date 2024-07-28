@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/clp_item_progressbar_0" android:padding="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>

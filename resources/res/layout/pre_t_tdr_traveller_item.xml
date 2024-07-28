@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/traveler_icon" android:layout_width="@dimen/dimen_25dp" android:layout_height="25dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:srcCompat="@drawable/pre_t_male_tick"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_toRightOf="@+id/traveler_icon" android:layout_centerVertical="true">
+        <com.paytm.utility.RoboTextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:gravity="center" android:id="@+id/traveller_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif-medium"/>
+        <com.paytm.utility.RoboTextView android:textSize="10sp" android:textStyle="normal" android:textColor="#7a7a7a" android:id="@+id/traveller_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="9sp" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <CheckBox android:enabled="false" android:id="@+id/check_box" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/pre_t_insurance_check_box" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

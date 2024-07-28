@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinatorLayout" android:tag="layout/pr_activity_add_mobile_otp_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/header_outer_most_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_close" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="?android:attr/actionBarSize" android:layout_marginTop="8dp" app:srcCompat="@drawable/pr_back_arrow"/>
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@+id/ll_login_page_outer_container" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/iv_close">
+                <com.business.common_module.view.widget.CustomTextView android:textSize="28sp" android:textColor="#29394f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pr_verify_otp_title" app:custom_tv_font_name="8"/>
+                <com.business.common_module.view.widget.CustomTextView android:textSize="16sp" android:textColor="@color/pr_unselected_tab" android:id="@+id/tv_otp_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                <FrameLayout android:id="@+id/container_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:layout_marginRight="16dp"/>
+                <com.business.common_module.view.widget.CustomTextView android:textSize="14sp" android:textColor="@color/color_00b9f5" android:id="@+id/tv_resend_otp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_20dp" android:text="@string/pr_resend_otp" app:custom_tv_font_name="7" app:srcCompat="@drawable/pr_ic_visibility"/>
+                <com.business.common_module.view.widget.CustomTextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_confirm" android:background="@drawable/pr_rounded_rectangle_blue_filled" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/pr_confirm" android:lineSpacingExtra="4sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

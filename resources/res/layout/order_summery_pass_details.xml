@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/order_summery_pass_details_0" android:background="@android:color/transparent" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_10dp">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/section_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_pass_details" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

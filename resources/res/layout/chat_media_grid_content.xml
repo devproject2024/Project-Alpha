@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ImageView android:id="@+id/media_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/cover" android:background="#55111c2f" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.zhihu.matisse.internal.ui.widget.CheckView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/check_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/gif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:src="@drawable/chat_ic_gif"/>
+    <LinearLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/video_duration_layout" android:background="#99000000" android:layout_width="match_parent" android:layout_height="20dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/video_icon" android:background="@drawable/chat_icon_video" android:layout_width="14dp" android:layout_height="14dp"/>
+        <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@+id/video_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@android:color/white" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/video_duration_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginBottom="5dp"/>
+</merge>

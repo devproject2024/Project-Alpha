@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="60dp">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/mp_border_summary_back_btn" android:padding="15dp" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerVertical="true" app:srcCompat="@drawable/back_arrow"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#09ac63" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="sans-serif" android:letterSpacing="-0.01"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/detail_container" android:background="@drawable/card_like_back" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30dp" android:lineSpacingExtra="2sp" android:fontFamily="sans-serif"/>
+                <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_7dp" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif-light"/>
+            </LinearLayout>
+            <View android:layout_gravity="center_horizontal" android:background="@color/color_e2ebee" android:layout_width="@dimen/dimen_30dp" android:layout_height="2dp" android:layout_margin="@dimen/dimen_20dp"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="20sp" android:textStyle="normal" android:textColor="#012b72" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_marginBottom="30dp" android:lineSpacingExtra="-0.5sp" android:fontFamily="sans-serif-medium"/>
+            <View android:id="@+id/promo_divider" android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:gravity="center_vertical" android:id="@+id/promo_code_container" android:padding="@dimen/padding_normal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11sp" android:textStyle="normal" android:textColor="#222222" android:gravity="center" android:id="@+id/promo_code" android:background="@drawable/ic_deal_promo_tag_selector" android:paddingRight="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dimen_70dp" android:maxLines="1" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium"/>
+                <com.paytm.utility.RoboTextView android:textSize="11sp" android:textStyle="normal" android:textColor="#666666" android:id="@+id/promo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_toRightOf="@+id/promo_code" android:lineSpacingExtra="6dp" android:fontFamily="sans-serif"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <net.one97.paytm.o2o.movies.common.widgets.CJRExpandableTncView android:id="@+id/tnc_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:minVisibleLines="3"/>
+</LinearLayout>

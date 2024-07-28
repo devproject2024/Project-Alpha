@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/time_out" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Set time out value in ms" android:inputType="number"/>
+            <EditText android:id="@+id/retry_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Set retry count" android:inputType="number"/>
+            <EditText android:id="@+id/api_delay_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="API Delay Time value in s"/>
+            <Button android:id="@+id/perform_network_call" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_15dp" android:text="Perform Network Call" android:textAllCaps="false"/>
+            <Button android:id="@+id/perfomr_netwok_http2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_15dp" android:text="performHttp2ImageTest" android:textAllCaps="false"/>
+            <Button android:id="@+id/perform_api_call" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_15dp" android:text="performApiCallForGold" android:textAllCaps="false"/>
+            <Button android:id="@+id/clear_log" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_15dp" android:text="Clear Log" android:textAllCaps="false"/>
+            <TextView android:textColor="@color/black" android:id="@+id/txt_reponse" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Api Response message"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

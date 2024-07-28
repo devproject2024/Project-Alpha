@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1">
+                <RelativeLayout android:id="@+id/rl_toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+                    <ImageView android:layout_gravity="center" android:id="@+id/iv_back_button" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_5dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:onClick="onClick"/>
+                    <TextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/color_222222" android:id="@+id/tv_toolbar_title" android:padding="@dimen/dimen_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nearby_heading_name" android:layout_toRightOf="@+id/iv_back_button" android:layout_centerVertical="true" android:fontFamily="@string/font_family_roboto_medium" android:layout_toEndOf="@+id/iv_back_button"/>
+                    <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_category_list" android:background="@color/white" android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:layout_scrollFlags="1"/>
+            <LinearLayout android:gravity="center_horizontal" android:background="@color/white" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1">
+                <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="normal" android:textColor="@color/color_00b9f5" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tv_more_less_categories" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nearby_more_category_text" android:drawableRight="@drawable/ic_expand" android:drawablePadding="@dimen/dimen_5dp" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/deals_banner_nearby_view_pager_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="168dp" app:layout_scrollFlags="1">
+                <androidx.viewpager.widget.ViewPager android:layout_gravity="center_horizontal" android:id="@+id/deals_banner_nearby_view_pager_event_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <net.one97.paytm.common.widgets.CirclePageIndicator android:layout_gravity="bottom" android:id="@+id/deals_banner_nearby_view_page_indicator" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp"/>
+            </FrameLayout>
+            <com.google.android.material.tabs.TabLayout android:id="@+id/tl_nearby_tabs" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabGravity="0" app:tabIndicatorColor="@color/paytm_blue" app:tabMode="1" app:tabSelectedTextColor="@color/color_222222" app:tabTextAppearance="@style/TabLayoutTextStyleNearby" app:tabTextColor="@color/color_4a4a4a"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/vp_nearby_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

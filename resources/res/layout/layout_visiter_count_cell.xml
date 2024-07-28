@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="@dimen/dimen_35dp" android:layout_height="@dimen/dimen_35dp">
+    <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/park_selector_selected_unselected_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_visitor_count_cell" android:background="@drawable/selector_bg_visitor_count_cell" android:layout_width="@dimen/dimen_35dp" android:layout_height="@dimen/dimen_35dp" app:fontType="3"/>
+</LinearLayout>

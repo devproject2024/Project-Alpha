@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/parent_lyt" android:background="@drawable/pre_t_train_train_date_bg_unselect" android:paddingLeft="8dp" android:paddingTop="5dp" android:paddingRight="7.5dp" android:paddingBottom="5dp" android:layout_width="55dp" android:layout_height="38dp" android:layout_marginLeft="@dimen/dimen_5dp" android:layout_centerInParent="true">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_date_size_11sp" android:textStyle="bold" android:textColor="@color/color_979797" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:fontFamily="sans-serif"/>
+        <com.paytm.utility.RoboTextView android:textSize="9sp" android:textStyle="normal" android:textColor="@color/color_979797" android:id="@+id/day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/date" android:layout_centerHorizontal="true" android:fontFamily="sans-serif"/>
+    </RelativeLayout>
+</RelativeLayout>

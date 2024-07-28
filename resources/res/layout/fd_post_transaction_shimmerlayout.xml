@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/parent_lyt_shimmer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.one97.paytm.common.views.ShimmerFrameLayout android:id="@+id/shimmer_lyt_top" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_31dp" app:layout_constraintLeft_toLeftOf="0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_24dp">
+            <View android:id="@+id/view1" android:background="@drawable/create_fd_shimmer_view" android:layout_width="match_parent" android:layout_height="@dimen/dimen_42dp"/>
+            <View android:id="@+id/view2" android:background="@drawable/create_fd_shimmer_view" android:layout_width="150dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_62dp" app:layout_constraintTop_toBottomOf="@+id/view1"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </net.one97.paytm.common.views.ShimmerFrameLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/dividerView" android:background="@drawable/create_fd_shimmer_view" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_62dp" android:layout_marginBottom="@dimen/dimen_150dp" app:layout_constraintBottom_toBottomOf="0"/>
+    <net.one97.paytm.common.views.ShimmerFrameLayout android:id="@+id/shimmer_lyt_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginTop="@dimen/dimen_40dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/dividerView">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/shimmer_row_frst" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/fd_shimmer_row"/>
+            <include android:id="@+id/shimmer_row_second" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_34dp" app:layout_constraintTop_toBottomOf="@+id/shimmer_row_frst" layout="@layout/fd_shimmer_row"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </net.one97.paytm.common.views.ShimmerFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

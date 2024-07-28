@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/item_reco_collapsed_0" android:background="@drawable/home_rounded_profile" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/imageLL" android:tag="binding_1" android:layout_width="@dimen/dimen_42dp" android:layout_height="@dimen/dimen_42dp"/>
+</FrameLayout>

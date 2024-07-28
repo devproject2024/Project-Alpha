@@ -1,0 +1,163 @@
+{
+  "data": [
+    {
+      "build_variant": "debug",
+      "app_data": [
+        {
+          "app_name": "Paytmmall",
+          "app_package_name": "com.paytmmall",
+          "app_client_id": "mall-app",
+          "sha1_signature": "96:E9:D2:C5:8B:6E:01:61:74:25:AD:1B:57:72:E2:2C:0B:F2:DE:F2"
+        },
+        {
+          "app_name": "Paytmmoney",
+          "app_package_name": "com.paytmmoney.dev",
+          "app_client_id": "paytm-money-staging",
+          "sha1_signature": "BD:E3:BF:20:73:99:19:1B:55:E1:98:BB:B1:94:FB:3A:BE:E1:60:9E"
+        },
+        {
+          "app_name": "Paytm First Games",
+          "app_package_name": "com.paytm.paytmplay",
+          "app_client_id": "gp-pro-android-prod",
+          "sha1_signature": "FC:63:AD:07:E4:A9:27:BD:4A:12:7C:33:DE:FE:5E:D4:CB:6A:4A:2B"
+        },
+        {
+          "app_name": "Paytm First Games Lite",
+          "app_package_name": "com.paytmfirstgames",
+          "app_client_id": "gp-google-android-prod",
+          "sha1_signature": "FC:63:AD:07:E4:A9:27:BD:4A:12:7C:33:DE:FE:5E:D4:CB:6A:4A:2B"
+        },
+        {
+          "app_name": "Paytm Sports",
+          "app_package_name": "com.paytm.sports",
+          "app_client_id": "gp-google-android-prod",
+          "sha1_signature": "FC:63:AD:07:E4:A9:27:BD:4A:12:7C:33:DE:FE:5E:D4:CB:6A:4A:2B"
+        },
+        {
+          "app_name": "Paytm First",
+          "app_package_name": "com.paytmfirst",
+          "app_client_id": "paytm-first-staging",
+          "sha1_signature": "84:BF:4B:1A:5E:DC:E8:0E:CF:DA:63:E1:DC:02:F5:C2:54:54:9C:FA"
+        },
+        {
+          "app_name": "PG Token SDK",
+          "app_package_name": "net.one97.paytm.nativesdk",
+          "app_client_id": "",
+          "sha1_signature": ""
+        },
+        {
+          "app_name": "Paytm for Business",
+          "app_package_name": "com.paytm.business",
+          "app_client_id": "Paytm-Secure-Business-app",
+          "sha1_signature": "F6:BF:13:16:EC:1C:2A:4A:C5:DA:B2:19:DD:C6:40:18:C2:62:34:05"
+        }
+      ]
+    },
+    {
+      "build_variant": "release",
+      "app_data": [
+        {
+          "app_name": "Paytmmall",
+          "app_package_name": "com.paytmmall",
+          "app_client_id": "mall-app",
+          "sha1_signature": "2A:1E:03:7E:DD:07:96:12:4F:81:6D:8B:84:48:9E:75:81:84:51:C0"
+        },
+        {
+          "app_name": "Paytmmoney",
+          "app_package_name": "com.paytmmoney",
+          "app_client_id": "paytm-money",
+          "sha1_signature": "BC:E5:8D:54:44:D5:38:5A:DC:59:26:37:2C:81:3B:9B:30:84:A6:4A"
+        },
+        {
+          "app_name": "Paytm First Games",
+          "app_package_name": "com.paytm.paytmplay",
+          "app_client_id": "gp-pro-android-prod",
+          "sha1_signature": "01:2C:2E:1F:C4:9E:AB:D5:5E:F3:01:11:11:93:6D:6B:A6:1D:FB:7B"
+        },
+        {
+          "app_name": "Paytm First Games Lite",
+          "app_package_name": "com.paytmfirstgames",
+          "app_client_id": "gp-google-android-prod",
+          "sha1_signature": "66:41:B5:E5:08:2E:FC:C9:E0:0C:A0:F2:93:10:5B:25:60:77:22:3A"
+        },
+        {
+          "app_name": "Paytm Sports",
+          "app_package_name": "com.paytm.sports",
+          "app_client_id": "gp-google-android-prod",
+          "sha1_signature": "01:2C:2E:1F:C4:9E:AB:D5:5E:F3:01:11:11:93:6D:6B:A6:1D:FB:7B"
+        },
+        {
+          "app_name": "Paytm First",
+          "app_package_name": "com.paytmfirst",
+          "app_client_id": "paytm-first-prod",
+          "sha1_signature": "C6:95:F3:3D:85:BD:EE:52:04:8A:3D:EE:85:0C:4D:FA:C9:D9:66:6D"
+        },
+        {
+          "app_name": "PG Token SDK",
+          "app_package_name": "net.one97.paytm.nativesdk",
+          "app_client_id": "",
+          "sha1_signature": ""
+        },
+        {
+          "app_name": "Paytm for Business",
+          "app_package_name": "com.paytm.business",
+          "app_client_id": "Paytm-Secure-Business-app",
+          "sha1_signature": "23:42:90:4A:DE:1B:0D:8A:7F:0F:E1:67:A8:B5:A1:58:F6:65:B9:B7"
+        }
+      ]
+    },
+    {
+      "build_variant": "staging",
+      "app_data": [
+        {
+          "app_name": "Paytmmall",
+          "app_package_name": "com.paytmmall",
+          "app_client_id": "paytm-mall-app-staging",
+          "sha1_signature": "96:E9:D2:C5:8B:6E:01:61:74:25:AD:1B:57:72:E2:2C:0B:F2:DE:F2"
+        },
+        {
+          "app_name": "Paytmmoney",
+          "app_package_name": "com.paytmmoney.stage",
+          "app_client_id": "paytm-money-staging",
+          "sha1_signature": "BD:E3:BF:20:73:99:19:1B:55:E1:98:BB:B1:94:FB:3A:BE:E1:60:9E"
+        },
+        {
+          "app_name": "PFG-Staging",
+          "app_package_name": "com.paytm.paytmplay.staging",
+          "app_client_id": "gp-pro-android-staging",
+          "sha1_signature": "FC:63:AD:07:E4:A9:27:BD:4A:12:7C:33:DE:FE:5E:D4:CB:6A:4A:2B"
+        },
+        {
+          "app_name": "PFG-Lite-Staging",
+          "app_package_name": "com.paytmfirstgames.staging",
+          "app_client_id": "gamepind_stg",
+          "sha1_signature": "FC:63:AD:07:E4:A9:27:BD:4A:12:7C:33:DE:FE:5E:D4:CB:6A:4A:2B"
+        },
+        {
+          "app_name": "Paytm-Sports-Staging",
+          "app_package_name": "com.paytm.sports.staging",
+          "app_client_id": "gamepind_stg",
+          "sha1_signature": "FC:63:AD:07:E4:A9:27:BD:4A:12:7C:33:DE:FE:5E:D4:CB:6A:4A:2B"
+        },
+        {
+          "app_name": "Paytm First",
+          "app_package_name": "com.paytmfirst",
+          "app_client_id": "paytm-first-staging",
+          "sha1_signature": "5F:99:9F:DB:61:EC:AA:AD:B5:60:F6:B5:F9:57:80:15:35:41:8D:6F"
+        },
+        {
+          "app_name": "PG Token SDK",
+          "app_package_name": "net.one97.paytm.nativesdk",
+          "app_client_id": "",
+          "sha1_signature": ""
+        },
+        {
+          "app_name": "Paytm for Business",
+          "app_package_name": "com.paytm.business",
+          "app_client_id": "ump-staging",
+          "sha1_signature": "F6:BF:13:16:EC:1C:2A:4A:C5:DA:B2:19:DD:C6:40:18:C2:62:34:05"
+        }
+      ]
+    }
+  ]
+}

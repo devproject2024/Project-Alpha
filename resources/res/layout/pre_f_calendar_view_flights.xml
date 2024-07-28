@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/bus_ticket_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/sep_1" android:background="@color/light_grey" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/header_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/sep_1" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center_horizontal" android:id="@+id/buttonlayout" android:layout_width="match_parent" android:layout_height="60dp">
+            <RelativeLayout android:id="@+id/prevMonthlyt" android:layout_width="90dp" android:layout_height="60dp" android:layout_toLeftOf="@+id/currentMonth">
+                <ImageView android:layout_gravity="center" android:id="@+id/prevMonth" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_centerVertical="true" app:srcCompat="@drawable/pre_f_left_arrow_flight"/>
+            </RelativeLayout>
+            <com.paytm.utility.RoboTextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="19sp" android:textColor="@color/color_000000" android:gravity="center" android:id="@+id/currentMonth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="January" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:inputType="none|text|textCapSentences|textNoSuggestions" app:fontType="2"/>
+            <RelativeLayout android:id="@+id/nextMonthlyt" android:layout_width="90dp" android:layout_height="60dp" android:layout_toRightOf="@+id/currentMonth">
+                <ImageView android:layout_gravity="center" android:id="@+id/nextMonth" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/pre_f_right_arrow_flight"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@+id/sep" android:background="@color/light_grey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/buttonlayout"/>
+    </RelativeLayout>
+    <include android:id="@+id/calendar_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/header_lyt" layout="@layout/pre_f_calender_day_lyt"/>
+    <View android:id="@+id/sep_header" android:background="@color/light_grey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/calendar_header"/>
+    <RelativeLayout android:id="@+id/grid_lyt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer_lyt" android:layout_below="@+id/sep_header">
+        <GridView android:id="@+id/calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:verticalSpacing="5dp" android:numColumns="7"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/footer_lyt" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/sep_2" android:layout_width="match_parent" android:layout_height="1dp" app:srcCompat="@color/separators_flight"/>
+        <RelativeLayout android:id="@+id/adjacent_dates" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/sep_2">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/todays_date_selector" android:background="@drawable/pre_f_flight_calendar_adjacent_button_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/sep_vertical" android:layout_alignParentLeft="true">
+                <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/gray" android:gravity="center" android:id="@+id/label_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Today" android:layout_alignParentLeft="true" app:fontType="2"/>
+                <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_000000" android:gravity="center" android:id="@+id/todays_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/label_today" android:layout_alignParentLeft="true" app:fontType="2"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/sep_vertical" android:layout_width="1dp" android:layout_height="50dp" android:layout_centerInParent="true" app:srcCompat="@color/separators_flight"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/tomorrows_date_selector" android:background="@drawable/pre_f_flight_calendar_adjacent_button_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/sep_vertical" android:layout_alignParentRight="true">
+                <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/gray" android:gravity="center" android:id="@+id/label_tommorrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tomorrow" android:layout_alignParentRight="true" app:fontType="2"/>
+                <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_000000" android:gravity="center" android:id="@+id/tomorrows_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/label_tommorrow" android:layout_alignParentRight="true" app:fontType="2"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

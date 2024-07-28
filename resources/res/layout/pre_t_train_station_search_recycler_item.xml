@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/pre_t_train_train_city_selection" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/item_container" android:layout_width="match_parent" android:layout_height="@dimen/train_station_item_height" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp">
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/train_city_search_value" android:id="@+id/city_name" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+    </LinearLayout>
+    <View android:id="@+id/seperator" android:background="@color/light_grey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp" android:layout_below="@+id/item_container"/>
+</RelativeLayout>

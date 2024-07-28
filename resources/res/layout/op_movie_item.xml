@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="140dp" android:layout_height="wrap_content" android:minHeight="280dp">
+    <ImageView android:id="@+id/featured_image" android:layout_width="140dp" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_op_movies_placeholder"/>
+    <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/black" android:id="@+id/movieNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:layout_marginBottom="4dp" android:lineSpacingMultiplier="1.2" app:fontType="3"/>
+    <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/metalic_blue" android:id="@+id/movieLanguageTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" app:fontType="2"/>
+</LinearLayout>

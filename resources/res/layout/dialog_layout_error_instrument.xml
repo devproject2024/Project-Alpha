@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:padding="@dimen/dimen_20dp" android:layout_width="300dp" android:layout_height="290dp">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/group_two_addmoney"/>
+    <TextView android:textSize="17sp" android:textStyle="normal" android:textColor="#222222" android:gravity="center_horizontal" android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+    <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="#444444" android:gravity="center_horizontal" android:id="@+id/txt_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif"/>
+    <LinearLayout android:id="@+id/btn_okey" android:background="#00b9f5" android:padding="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ok, got it" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+</LinearLayout>

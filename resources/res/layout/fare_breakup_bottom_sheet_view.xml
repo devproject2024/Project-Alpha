@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#33000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/bottom_sheet_background" android:background="#44000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ScrollView android:id="@+id/scrollview_container" android:background="@drawable/gray_rounded_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+                <ImageView android:id="@+id/expanded_imageview" android:layout_width="@dimen/dimen_19dp" android:layout_height="@dimen/dimen_19dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_16sp" android:textStyle="normal" android:textColor="@color/color_323232" android:id="@+id/expanded_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/expanded_imageview" android:layout_centerVertical="true" android:fontFamily="sans-serif" app:fontType="4"/>
+                <ImageView android:id="@+id/cancel_action" android:layout_width="@dimen/dimen_25dp" android:layout_height="@dimen/dimen_25dp" android:layout_toLeftOf="@+id/expanded_title_textview" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:alpha="0.5" app:srcCompat="@drawable/cancel_black"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarThumbVertical="@drawable/pre_f_flight_scollbar_lightgrey" android:id="@+id/recycler_view_fare_rules" android:background="@color/white" android:paddingBottom="@dimen/dimen_12dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="true"/>
+            <View android:background="@color/color_fafafa" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

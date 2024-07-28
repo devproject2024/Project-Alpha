@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/scan_only_parent_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/capture_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.business.merchant_payments.mapqr.vision.camera.CameraSourcePreview android:id="@+id/preview" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.business.merchant_payments.mapqr.vision.camera.GraphicOverlay android:id="@+id/graphicOverlay" android:background="@color/colorAccent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <com.business.merchant_payments.mapqr.vision.ViewFinder android:id="@+id/view_finder" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </com.business.merchant_payments.mapqr.vision.camera.CameraSourcePreview>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_back" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:src="@drawable/mqr_back_arrow"/>
+                    <com.business.common_module.view.widget.CustomTextView android:textSize="28sp" android:textColor="#ffffff" android:id="@+id/tv_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="5dp" android:text="@string/mp_link_your_new_qr_code" android:layout_below="@+id/iv_back" android:lineSpacingExtra="4sp" app:custom_tv_font_name="8"/>
+                    <com.business.common_module.view.widget.CustomTextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/tv_sub_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:text="@string/mp_scan_your_newly_received_qr_code" android:layout_below="@+id/tv_heading" android:lineSpacingExtra="4sp"/>
+                </RelativeLayout>
+                <include android:id="@+id/verifyQrContainer" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/mp_layout_verify_qr_scam"/>
+            </FrameLayout>
+            <View android:id="@+id/framing_rect" android:background="@drawable/mqr_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_flash_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/mqr_flash" android:layout_toRightOf="@+id/framing_rect" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/scanning_line" android:background="@drawable/mqr_scanner_tile_mapqr" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignTop="@+id/framing_rect" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/no_camera_permission_ui" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:src="@drawable/mqr_camera_permission"/>
+            <TextView android:textSize="18sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/camera_access" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/mp_camera_access" android:layout_below="@+id/image"/>
+            <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="#909090" android:gravity="center" android:id="@+id/empty" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/mp_no_camera_permission_message_scan_only" android:layout_below="@+id/camera_access" android:layout_centerHorizontal="true"/>
+            <Button android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/capture_enable_camera_btn" android:background="@color/paytm_blue" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="20dp" android:layout_marginBottom="50dp" android:text="@string/mp_enable_camera" android:layout_below="@+id/empty" android:layout_centerHorizontal="true" android:textAllCaps="false"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/mp_map_qr_error_screen"/>
+</FrameLayout>

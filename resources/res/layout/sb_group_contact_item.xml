@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/parentLayout" android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/mp_initial_name_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:animateLayoutChanges="true">
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/mp_initial_name_tv" android:background="#2cce86" android:layout_width="36dp" android:layout_height="36dp" android:text="A" android:fontFamily="@string/font_family_roboto_medium"/>
+            <RelativeLayout android:id="@+id/mp_initial_name_bg_rl" android:background="@drawable/bg_rounded_corner_acc_page" android:layout_width="36dp" android:layout_height="36dp"/>
+            <net.one97.paytm.CircularImageView android:id="@+id/beneficiary_circle_img" android:background="#012b72" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/cross" android:background="@drawable/sb_ic_close_small" android:visibility="visible" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="2dp"/>
+    </FrameLayout>
+    <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#222222" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvName" android:padding="5dp" android:layout_width="@dimen/dimen_60dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:text="Bipasha" android:maxLines="1" android:layout_alignParentBottom="true" android:fontFamily="sans-serif" android:letterSpacing="0.04"/>
+</LinearLayout>

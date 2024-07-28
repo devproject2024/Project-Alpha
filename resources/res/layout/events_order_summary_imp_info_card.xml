@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/black" android:paddingLeft="@dimen/dimen_movie_left_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Important Information" app:fontType="3"/>
+    <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/color_222222" android:id="@+id/id_event_summary_imp_info" android:paddingLeft="@dimen/dimen_movie_left_space" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+    <View android:background="@color/color_e8f1f4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp"/>
+</LinearLayout>

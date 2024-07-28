@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:tag="layout/layout_edit_cart_0" android:background="@drawable/clp_bg_add_to_cart" android:padding="8dp" android:layout_width="@dimen/dimen_100dp" android:layout_height="wrap_content">
+    <Button android:enabled="true" android:id="@+id/removeItemBtn" android:background="@drawable/clp_ic_remove" android:visibility="visible" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginEnd="12dp"/>
+    <com.paytmmall.clpartifact.customViews.CLPRobotoTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/itemCountTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:singleLine="true" android:includeFontPadding="false"/>
+    <Button android:enabled="true" android:id="@+id/addItemBtn" android:background="@drawable/clp_bg_item_add_btn" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="12dp"/>
+</LinearLayout>

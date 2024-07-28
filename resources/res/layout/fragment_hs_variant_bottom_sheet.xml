@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_hs_variant_bottom_sheet_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/bottom_sheet_cross"/>
+    <TextView android:textSize="@dimen/dimen_24sp" android:textStyle="bold" android:textColor="@color/clp_color_2222222" android:id="@+id/variantNameTV" android:paddingBottom="@dimen/dimen_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="@dimen/dimen_16dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="300dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/variantRV" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar" android:padding="@dimen/dimen_16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="@color/primaryBlue"/>
+    </FrameLayout>
+</LinearLayout>

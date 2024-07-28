@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/nestedScrollView" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <FrameLayout android:id="@+id/container_frame_recharge_item" android:background="@drawable/bg_os_card_storefront" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_9dp" android:layout_marginTop="@dimen/dimen_0dp" android:layout_marginRight="@dimen/dimen_9dp" android:transitionName="container_card_recharge_item" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/container_other_items" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <net.one97.paytm.recharge.ordersummary.widget.CJRBaseRechargeFooterPaytmTrustView android:id="@+id/paytm_trust" android:background="@color/recharge_order_bg_no_color_v8" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

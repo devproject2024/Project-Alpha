@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/abl_select" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar_send_contacts" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_alignParentTop="true" app:contentInsetStartWithNavigation="0dp" app:navigationIcon="@drawable/chat_ic_back_arrow" app:title="@string/chat_module_contacts_title" app:titleTextAppearance="@style/tool_bar_title"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_send_contacts_select_phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/abl_select"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/btn_send_contacts" android:background="@drawable/chat_shape_messages_say_hi_btn_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:layout_marginTop="34dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/chat_module_send" android:layout_marginStart="12dp"/>
+    </LinearLayout>
+</RelativeLayout>

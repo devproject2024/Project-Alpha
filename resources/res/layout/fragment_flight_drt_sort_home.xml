@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/lyt_parent" android:tag="layout/fragment_flight_drt_sort_home_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lyt_background" android:tag="binding_1" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/sort_lyt" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/sort_lyt" android:background="@drawable/pre_f_flight_rounded_top_corner" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="2" app:layout_constraintBottom_toTopOf="@+id/transparent_padding" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_15dp" android:layout_marginEnd="@dimen/dimen_15dp">
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#8c8c8c" android:id="@+id/domestic_onward_sort_title" android:tag="binding_2" android:paddingTop="@dimen/dimen_17dp" android:paddingBottom="@dimen/dimen_21dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+            <RelativeLayout android:tag="binding_3" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cheapest" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_6" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fastest_text" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_9" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_early_take_off" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_12" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_late_take_off" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_15" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_landing_early" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_18" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_landing_late" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:tag="binding_21" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_15dp" android:layout_marginEnd="@dimen/dimen_15dp">
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#8c8c8c" android:id="@+id/domestic_return_sort_title" android:tag="binding_22" android:paddingTop="@dimen/dimen_17dp" android:paddingBottom="@dimen/dimen_21dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+            <RelativeLayout android:tag="binding_23" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cheapest" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_26" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fastest_text" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_29" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_early_take_off" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_32" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_late_take_off" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_34" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_35" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_36" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_landing_early" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_37" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+            <RelativeLayout android:tag="binding_38" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/cart_17sp" android:tag="binding_39" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_landing_late" android:fontFamily="sans-serif-light"/>
+                <ImageView android:tag="binding_40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_3dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/pre_f_ic_flight_sort_item_selected"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/transparent_padding" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

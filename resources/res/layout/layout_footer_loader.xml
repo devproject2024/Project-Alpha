@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/rl_loader_parent" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/loader" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="30dp" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/vertical_line" android:background="@color/color_f3f7f8" android:layout_width="1dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_35dp" android:layout_alignBottom="@+id/view_2"/>
+    <View android:id="@+id/view_1" android:background="#f3f7f8" android:layout_width="100dp" android:layout_height="14dp" android:layout_marginLeft="@dimen/dimen_32dp" android:layout_marginTop="@dimen/dimen_30dp" android:layout_toRightOf="@+id/vertical_line"/>
+    <View android:id="@+id/view_2" android:background="#f3f7f8" android:layout_width="150dp" android:layout_height="18dp" android:layout_marginLeft="@dimen/dimen_32dp" android:layout_marginTop="@dimen/dimen_7dp" android:layout_toRightOf="@+id/vertical_line" android:layout_below="@+id/view_1"/>
+    <View android:id="@+id/view_3" android:background="#f3f7f8" android:layout_width="70dp" android:layout_height="18dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_alignBottom="@+id/view_2" android:layout_alignParentRight="true"/>
+    <View android:id="@+id/circle" android:background="@drawable/mt_user_txn_dot" android:layout_width="@dimen/dimen_8dp" android:layout_height="@dimen/dimen_8dp" android:layout_marginLeft="@dimen/dimen_32dp" android:layout_marginBottom="@dimen/dimen_5dp" android:layout_alignBottom="@+id/view_2"/>
+</RelativeLayout>

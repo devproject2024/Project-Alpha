@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/lyt_merchant_item" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/lyt_image" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.android.volley.toolbox.NetworkImageView android:id="@+id/img_merchant" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/lyt_round_corner_1" android:background="@drawable/bg_rounded_corner" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/lyt_round_corner_2" android:background="@drawable/bg_circle_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/lyt_image" android:layout_centerVertical="true">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_medium" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/gray" android:id="@+id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/title"/>
+    </RelativeLayout>
+</RelativeLayout>

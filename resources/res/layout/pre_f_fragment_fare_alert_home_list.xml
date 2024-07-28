@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lyt_create_alert" android:background="@color/color_fafafa" android:paddingTop="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/bell_alert_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp"/>
+        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:text="@string/create_alert"/>
+        <TextView android:textSize="@dimen/cart_13sp" android:textColor="@color/flight_tab_blue" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp" android:text="@string/add_alert"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_fare_alert_home" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:overScrollMode="never"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/upi_help_card_layout_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.one97.paytm.nativesdk.widget.RoboTextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/tv_upi_help_title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif-light"/>
+    <ImageView android:id="@+id/iv_gif" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_30dp" android:scaleType="fitCenter" android:layout_below="@+id/tv_upi_help_title" android:layout_centerInParent="true" android:contentDescription="@null"/>
+</RelativeLayout>

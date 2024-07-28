@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.one97.paytm.utils.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/shimmer_loader_first_time" android:layout_width="match_parent" android:layout_height="wrap_content" app:base_alpha="0.4" app:shimmer_duration="1300">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_20dp">
+            <ImageView android:background="@drawable/sb_circle_place_holder" android:layout_width="@dimen/dimen_40dp" android:layout_height="@dimen/dimen_40dp" android:maxHeight="@dimen/dimen_200dp" android:text="Get k" android:lineSpacingExtra="4sp"/>
+            <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="match_parent" android:layout_height="@dimen/dimen_30dp" android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_20dp">
+            <ImageView android:background="@drawable/sb_circle_place_holder" android:layout_width="@dimen/dimen_40dp" android:layout_height="@dimen/dimen_40dp" android:maxHeight="@dimen/dimen_200dp" android:text="Get k" android:lineSpacingExtra="4sp"/>
+            <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="match_parent" android:layout_height="@dimen/dimen_30dp" android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_20dp">
+            <ImageView android:background="@drawable/sb_circle_place_holder" android:layout_width="@dimen/dimen_40dp" android:layout_height="@dimen/dimen_40dp" android:maxHeight="@dimen/dimen_200dp" android:text="Get k" android:lineSpacingExtra="4sp"/>
+            <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="match_parent" android:layout_height="@dimen/dimen_30dp" android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <RelativeLayout android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="match_parent" android:layout_height="@dimen/dimen_300dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</net.one97.paytm.utils.ShimmerFrameLayout>

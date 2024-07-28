@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_hideable="true">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="right" android:id="@+id/iv_close_icon" android:background="@drawable/pass_ic_close" android:layout_width="@dimen/dimen_22dp" android:layout_height="@dimen/dimen_22dp" android:layout_marginTop="17dp" android:layout_marginRight="20dp" android:layout_marginBottom="@dimen/dimen_5dp"/>
+            <ImageView android:layout_gravity="center" android:background="@drawable/pass_ic_oops" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            <TextView android:textSize="20sp" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="@string/oops_text"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dp" android:text="@string/sec_lock_not_enabled"/>
+            <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/enable_sec_lock" android:ems="17"/>
+            <TextView android:textSize="16dp" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_goto_settings" android:background="@color/paytm_blue" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/wallet_50_dp" android:layout_marginTop="@dimen/wallet_50_dp" android:layout_marginRight="@dimen/wallet_50_dp" android:layout_marginBottom="67dp" android:text="@string/ok_got_it_text" android:onClick="handleProceed"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

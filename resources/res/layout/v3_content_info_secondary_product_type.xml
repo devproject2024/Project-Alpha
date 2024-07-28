@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/lyt_info_secondary_product_type" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dimen_13sp" android:textStyle="normal" android:textColor="@color/v3_action_active" android:ellipsize="end" android:id="@+id/txt_product_type_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingExtra="@dimen/dimen_6sp" android:fontFamily="sans-serif" android:letterSpacing="0.02"/>
+    <ImageView android:id="@+id/ck_status_action_arrow" android:clickable="false" android:layout_width="@dimen/dimen_10dp" android:layout_height="@dimen/dimen_8dp" android:layout_marginTop="@dimen/dimen_6dp" android:layout_marginStart="@dimen/dimen_19dp" app:srcCompat="@drawable/ic_metro_ticket_downward_arrow"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/travel_res_bus_white_bottom_sheet_two_side_round_rect" android:paddingTop="@dimen/dimen_34dp" android:paddingBottom="@dimen/dimen_40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_18dp" android:paddingEnd="@dimen/dimen_18dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/disc_dpdp_icon" android:layout_width="@dimen/dimen_27dp" android:layout_height="@dimen/dimen_27dp" android:layout_centerVertical="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="18sp" android:textColor="@color/color_222222" android:paddingLeft="@dimen/dimen_11dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pickup_location_text" android:layout_weight="1" app:fontType="4"/>
+            <ImageButton android:id="@+id/ibDiscClose" android:background="@drawable/travel_res_bus_ic_disc_close" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:background="@color/color_efefef" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/dimen_9dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_9dp"/>
+        <com.paytm.utility.RoboTextView android:textSize="15.5sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:text="@string/disc_order_sumaary_text" android:layout_toRightOf="@+id/bus_dropping_icon" android:layout_below="@+id/dropping_point_text" app:fontType="2"/>
+    </LinearLayout>
+</LinearLayout>

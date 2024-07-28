@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_12sp" android:textStyle="bold" android:textColor="@color/color_666666" android:id="@+id/date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="Today, 29 Jan 2017" android:fontFamily="sans-serif" android:letterSpacing="0.06"/>
+</LinearLayout>

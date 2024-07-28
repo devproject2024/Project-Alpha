@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp">
+    <RelativeLayout android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/dark_black" android:ellipsize="end" android:gravity="left" android:id="@+id/cashback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:fontType="4"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/color_3232321" android:ellipsize="end" android:id="@+id/cashback_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_15dp" android:layout_below="@+id/cashback" app:fontType="2"/>
+    </RelativeLayout>
+</LinearLayout>

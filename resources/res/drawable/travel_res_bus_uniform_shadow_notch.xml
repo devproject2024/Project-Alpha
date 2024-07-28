@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <padding android:left="1.3dp" android:top="1.3dp" android:right="1.3dp" android:bottom="1.3dp"/>
+            <solid android:color="#00bcbcbc"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="1.3dp" android:top="1.3dp" android:right="1.3dp" android:bottom="1.3dp"/>
+            <solid android:color="#10bcbcbc"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="1.3dp" android:top="1.3dp" android:right="1.3dp" android:bottom="1.3dp"/>
+            <solid android:color="#20bcbcbc"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="1.3dp" android:top="1.3dp" android:right="1.3dp" android:bottom="1.3dp"/>
+            <solid android:color="#30bcbcbc"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="1.3dp" android:top="1.3dp" android:right="1.3dp" android:bottom="1.3dp"/>
+            <solid android:color="#50bcbcbc"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@android:color/white"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+</layer-list>

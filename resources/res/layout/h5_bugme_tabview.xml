@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.alipay.mobile.nebulacore.dev.bugme.H5TabLayout android:id="@+id/h5_bugme_tabs" android:layout_width="match_parent" android:layout_height="40dp" app:tabIndicatorColor="@color/h5_lite_blue" app:tabIndicatorHeight="2dp" app:tabIndicatorScrollable="true" app:tabMinWidth="60dp" app:tabSelectedTextColor="@color/h5_lite_blue"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/h5_bugme_viewPager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="15"/>
+    <View android:background="@drawable/h5_bugme_divider" android:layout_width="match_parent" android:layout_height="2px"/>
+    <LinearLayout android:orientation="horizontal" android:background="#f7f7f7" android:layout_width="match_parent" android:layout_height="0dp" android:divider="@drawable/h5_bugme_divider" android:layout_weight="1" android:showDividers="none|middle|end">
+        <Button android:textSize="14dp" android:textColor="@color/h5_white" android:id="@+id/h5_bugme_clear_tab" android:background="@drawable/h5_dialog_button" android:layout_width="80dp" android:layout_height="match_parent" android:text="Clear current"/>
+        <Button android:textSize="14dp" android:textColor="@color/h5_white" android:id="@+id/h5_bugme_clear_all" android:background="@drawable/h5_dialog_button" android:layout_width="80dp" android:layout_height="match_parent" android:text="Clear all"/>
+    </LinearLayout>
+</LinearLayout>

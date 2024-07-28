@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:id="@+id/back_btn" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:srcCompat="@drawable/movies_back_arrow_black"/>
+        <com.paytm.utility.RoboTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/listRv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

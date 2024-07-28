@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="#e4e4e4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:gravity="center_horizontal" android:id="@+id/scroll_view" android:paddingLeft="@dimen/margin_left_default" android:paddingTop="10dp" android:paddingRight="@dimen/margin_left_default" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/mall_wishlist_signed_out_image"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="16sp" android:gravity="center" android:layout_gravity="top" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="6dp" android:text="1"/>
+                    <TextView android:textSize="16sp" android:id="@+id/wish_list_info_text1" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wish_list_info_text1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="16sp" android:gravity="center" android:layout_gravity="top" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="6dp" android:text="2"/>
+                    <TextView android:textSize="16sp" android:id="@+id/wish_list_info_text2" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wish_list_info_text2"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="16sp" android:gravity="center" android:layout_gravity="top" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="6dp" android:text="3"/>
+                    <TextView android:textSize="16sp" android:id="@+id/wish_list_info_text3" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wish_list_info_text3"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="16sp" android:gravity="center" android:layout_gravity="top" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="6dp" android:text="4"/>
+                    <TextView android:textSize="16sp" android:id="@+id/wish_list_info_text4" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wish_list_info_text4"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/button_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_below="@+id/scroll_view" android:layout_alignParentBottom="true">
+                <Button android:textSize="18sp" android:textColor="@color/white" android:id="@+id/wishist_button_login" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/updates_log_in" android:layout_weight="1" android:textAllCaps="false"/>
+                <Button android:textSize="18sp" android:textColor="@color/white" android:id="@+id/wishlist_button_sign_up" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:text="@string/updates_sign_up" android:layout_weight="1" android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

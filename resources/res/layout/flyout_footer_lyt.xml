@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@color/color_f4f4f4" android:layout_width="match_parent" android:layout_height="@dimen/dimen_48dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/color_ef4e28" android:gravity="center" android:id="@+id/btn_signout" android:paddingLeft="@dimen/dimen_20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_10dp" android:text="@string/sign_out" app:fontType="3"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@+id/version_number" android:paddingRight="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" app:fontType="3"/>
+    </RelativeLayout>
+</LinearLayout>

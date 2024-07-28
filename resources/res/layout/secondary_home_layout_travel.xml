@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <net.one97.paytm.utils.manager.CJRCustomObservableRecyclerView android:id="@+id/home_list" android:alwaysDrawnWithCache="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@android:color/transparent" android:dividerHeight="8dp" android:layout_above="@+id/progressBar" android:layout_alignParentTop="true" android:overScrollMode="never"/>
+        <ProgressBar android:id="@+id/progress_bar_recycler" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50dp" android:indeterminateDrawable="@drawable/progress_large_holo" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/swpie_down_background" android:paddingLeft="12dp" android:paddingTop="5dp" android:paddingRight="8dp" android:paddingBottom="5dp" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="52dp">
+        <com.android.volley.toolbox.NetworkImageView android:id="@+id/img_overlay_home" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_centerVertical="true"/>
+        <TextView android:textColor="@android:color/white" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swipe_down_for_recharges_bill_payments" android:singleLine="true" android:layout_toRightOf="@+id/img_overlay_home" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rel_homepage_loading" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_large_holo" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <include android:layout_alignParentBottom="true" layout="@layout/slide_menu"/>
+    <ProgressBar android:id="@+id/secondary_home_page_item_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_large_holo" android:layout_centerInParent="true"/>
+    <include layout="@layout/no_network_layout"/>
+    <ImageView android:id="@+id/iv_scroll_to_top" android:background="@drawable/circle_transy_filled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:src="@drawable/ic_scroll_arrow_up" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/transparent" android:paddingLeft="@dimen/horizontal_row_divider_width" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/content_thumbnail_container" android:layout_width="@dimen/small_carousel_width" android:layout_height="@dimen/small_carousel_height" android:layout_margin="1dp">
+        <ImageView android:gravity="center" android:id="@+id/content_thumbnail" android:padding="1dp" android:layout_width="@dimen/small_carousel_width" android:layout_height="@dimen/small_carousel_height" android:layout_centerInParent="true" android:contentDescription="@string/row_product_image"/>
+        <ProgressBar android:id="@+id/image_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress_medium_holo" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:layout_gravity="right|center_vertical|center_horizontal|center" android:background="@color/smart_list_divider_grey" android:visibility="gone" android:layout_width="2dp" android:layout_height="74dp" android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/content_thumbnail_container" android:layout_centerVertical="true"/>
+</RelativeLayout>

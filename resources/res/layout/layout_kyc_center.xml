@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingTop="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/address"/>
+        <TextView android:textColor="@color/color_000000" android:gravity="top" android:id="@+id/kyc_center_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:includeFontPadding="false" android:layout_toRightOf="@+id/icon" android:layout_alignTop="@+id/icon"/>
+        <TextView android:textColor="@color/color_747474" android:id="@+id/kyc_center_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_toRightOf="@+id/icon" android:layout_below="@+id/kyc_center_heading"/>
+        <View android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="@dimen/dimen_2dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_below="@+id/kyc_center_details" android:layout_alignLeft="@+id/kyc_center_details"/>
+    </RelativeLayout>
+</LinearLayout>

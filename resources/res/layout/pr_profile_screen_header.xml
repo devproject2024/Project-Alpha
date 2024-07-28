@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/pr_profile_screen_header_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="146dp" app:srcCompat="@drawable/pr_ic_profile_back_left"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.paytm.business.merchantprofile.widget.CircularImageView android:id="@+id/profile_pic" android:layout_width="124dp" android:layout_height="124dp" android:scaleType="centerCrop" app:civ_border="true" app:civ_border_color="#e1ecfc" app:srcCompat="@drawable/pr_business_placeholder"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#1d2f54" android:id="@+id/user_name" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="146dp" android:layout_alignParentRight="true" android:rotation="180" app:srcCompat="@drawable/pr_ic_profile_back_left"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/merchant_switch_view" android:background="@drawable/pr_border_rounded_grey_6dp" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:foreground="?attr/selectableItemBackground">
+        <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#506d85" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:text="@string/pr_selected_business" android:lineSpacingExtra="0sp" android:fontFamily="sans-serif"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#1d2f54" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/business_display_name" android:tag="binding_1" android:paddingLeft="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:includeFontPadding="false" android:drawablePadding="4dp" android:fontFamily="sans-serif" app:drawableRightCompat="@drawable/pr_ic_drop_down_nevy_blue"/>
+    </LinearLayout>
+</LinearLayout>

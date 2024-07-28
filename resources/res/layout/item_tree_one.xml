@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/item_tree_one_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="binding_1" android:background="@drawable/clp_rounded_corner_radius" android:padding="4dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/dimen_100dp" android:weightSum="3">
+        <ImageView android:layout_gravity="center" android:tag="binding_2" android:background="@drawable/clp_rounded_corner_radius" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_80dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_weight="1"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="2">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/clp_color_2222222" android:gravity="center" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:gravity="center" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/green_text_color" android:gravity="center" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/imageViewArrow" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_weight="3"/>
+    </LinearLayout>
+    <View android:background="#dde5ed" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/tree_expande" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

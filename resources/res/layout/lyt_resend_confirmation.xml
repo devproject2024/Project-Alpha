@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_top_layout" android:paddingLeft="@dimen/dimen_25dp" android:paddingRight="@dimen/dimen_25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_resend_conf" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/tv_resend_payment_conf_to_merchant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_31dp" android:text="@string/resend_payment_confirmation_to_merchant" android:layout_alignParentLeft="true" android:fontFamily="sans-serif"/>
+                <ImageView android:id="@+id/iv_close_resend_sheet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_29dp" android:src="@drawable/ptop_close" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="@dimen/dimen_21sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/tv_resend_payment_conf_to_merchant_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_10dp" android:text="@string/ask_paytm_to_call_sms_merchant" android:layout_below="@+id/tv_resend_payment_conf_to_merchant" android:layout_alignParentLeft="true" android:fontFamily="sans-serif"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_30dp" android:weightSum="2" android:layout_below="@+id/tv_resend_payment_conf_to_merchant_name">
+                    <RelativeLayout android:gravity="center" android:id="@+id/rl_call" android:background="@drawable/button_blue_border" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginRight="5dp" android:layout_weight="1">
+                        <ImageView android:gravity="center" android:id="@+id/iv_call_merchant" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_resend_confirmation_call" android:fontFamily="@string/font_family_roboto_regular" android:textAlignment="center"/>
+                        <TextView android:textSize="15sp" android:textColor="@color/color_00b9f5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/call" android:layout_toRightOf="@+id/iv_call_merchant" android:fontFamily="sans-serif-medium"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center" android:id="@+id/rl_sms" android:background="@drawable/button_blue_border" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="5dp" android:layout_weight="1">
+                        <ImageView android:gravity="center" android:id="@+id/iv_call_merchant" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_resend_confirmation_sms" android:fontFamily="@string/font_family_roboto_regular" android:textAlignment="center"/>
+                        <TextView android:textSize="15sp" android:textColor="@color/color_00b9f5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/sms" android:layout_toRightOf="@+id/iv_call_merchant" android:fontFamily="sans-serif-medium"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_resend_conf_response" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rl_resp_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+                    <ImageView android:id="@+id/iv_conf_resp_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_34dp" android:src="@drawable/resend_conf_failed" android:layout_alignParentLeft="true"/>
+                    <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/color_222222" android:gravity="center_vertical" android:id="@+id/tv_could_not_initiate_call" android:paddingBottom="-4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="@dimen/dimen_30dp" android:layout_marginRight="68dp" android:text="We could not initiate the confirmation call" android:layout_toRightOf="@+id/iv_conf_resp_image" android:lineSpacingExtra="7sp"/>
+                    <ImageView android:id="@+id/iv_close_resend_conf_resp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30dp" android:src="@drawable/ptop_close" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_retry_layout" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="46dp" android:layout_marginBottom="@dimen/dimen_30dp" android:weightSum="2" android:layout_below="@+id/rl_resp_status">
+                    <RelativeLayout android:gravity="center" android:id="@+id/rl_try_again" android:background="@drawable/blue_background_corner" android:clickable="true" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginRight="5dp" android:layout_weight="1">
+                        <TextView android:textSize="15sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/try_again" android:layout_toRightOf="@+id/iv_call_merchant" android:fontFamily="sans-serif-medium"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center" android:id="@+id/rl_call_or_sms" android:background="@drawable/button_blue_border" android:clickable="true" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="5dp" android:layout_weight="1">
+                        <TextView android:textSize="15sp" android:textColor="@color/color_00b9f5" android:gravity="center" android:id="@+id/tv_send_sms_or_call" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/or_send_sms" android:layout_toRightOf="@+id/iv_call_merchant" android:fontFamily="sans-serif-medium"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lyt_bottom_lines" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:layout_below="@+id/rl_top_layout">
+            <View android:background="@color/paytm_blue" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+            <View android:background="@color/paytm_dark_blue" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

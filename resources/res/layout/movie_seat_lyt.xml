@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/row_Id_Lyt" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <net.one97.paytm.o2o.movies.widget.ObservableHorizontalScrollView android:id="@+id/seats_parent_lyt" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/seats_lyt" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </net.one97.paytm.o2o.movies.widget.ObservableHorizontalScrollView>
+</LinearLayout>

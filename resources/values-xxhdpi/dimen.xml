@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="upi_title_font">22sp</dimen>
+    <dimen name="upi_msg_font">12sp</dimen>
+    <dimen name="upi_motif_width">100dp</dimen>
+    <dimen name="upi_motif_height">120dp</dimen>
+    <dimen name="upi_invite_img_top">24dp</dimen>
+    <dimen name="upi_invite_btn_top">36dp</dimen>
+    <dimen name="upi_paytm_logo_top">16dp</dimen>
+
+    <dimen name="upi_title_right_margin">24dp</dimen>
+    <dimen name="upi_invite_img_height">150dp</dimen>
+    <dimen name="upi_invite_img_width">300dp</dimen>
+
+</resources>

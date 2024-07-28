@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/p2p_recent_row_ll" android:background="@android:color/transparent" android:layout_width="@dimen/dimen_80dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_2dp">
+    <RelativeLayout android:id="@+id/p2m_profile_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <FrameLayout android:gravity="center" android:id="@+id/imageLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+            <com.paytm.utility.RoboTextView android:textSize="21sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/p2m_image_name_tv" android:background="@drawable/circle_grey" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:fontFamily="@string/font_family_roboto_medium"/>
+            <net.one97.paytm.common.widgets.CircularImageView android:layout_gravity="center" android:id="@+id/p2m_profile_iv" android:background="@drawable/gold_profile_img" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="normal" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/layer_contact_name" android:layout_width="@dimen/dimen_80dp" android:layout_height="wrap_content" android:text="zxccxcxz zxcxcz " android:singleLine="true" android:fontFamily="sans-serif"/>
+</LinearLayout>

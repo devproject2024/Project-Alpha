@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/shape_rect_white_bg_round_cor_10" android:paddingLeft="15dp" android:paddingTop="@dimen/feed_24" android:paddingRight="15dp" android:paddingBottom="@dimen/feed_24" android:layout_height="wrap_content" style="@style/commonDialogTheme">
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/feed_20dp" style="@style/DialogTitle"/>
+    <View android:layout_width="@dimen/feed_15dp" android:layout_height="@dimen/feed_10dp" android:layout_weight="1"/>
+    <TextView android:layout_gravity="center_horizontal" android:id="@+id/confirmBtn" android:background="@drawable/feed_cta_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="118dp" android:minHeight="40dp" style="@style/DialogCta"/>
+</LinearLayout>

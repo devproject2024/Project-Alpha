@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/sheroes_white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+        <TextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/vector_sheroes_back_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onImageCropBackClick"/>
+        <TextView android:textSize="16sp" android:textColor="@color/sheroes_toolbar_title_text" android:gravity="right" android:layout_gravity="right|center_vertical|center_horizontal|center" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sheroes_ID_OK" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onSelectImageClick" android:textAllCaps="true" android:fontFamily="@string/sheroes_ID_ROBOTO_MEDIUM" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <com.sheroes.final_sdk.appliedlife.pvtltd.SHEROES.views.cutomeviews.CropImageView android:id="@+id/sheroes_cropImageView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/nativesdk_bank_mandate_state_item_0" android:paddingLeft="@dimen/dimen_25dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_75dp">
+    <net.one97.paytm.nativesdk.widget.RoboTextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_222222" android:id="@+id/tv_state_item" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <View android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" app:layout_constraintBottom_toBottomOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

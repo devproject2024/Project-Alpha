@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_motif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_motif_classic" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/iv_payment_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:src="@drawable/pb_ic_payments_bank_logo" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/iv_back_arrow" android:background="?android:attr/selectableItemBackground" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:src="@drawable/pb_ic_back"/>
+    <TextView android:textSize="13sp" android:textColor="#444444" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_fixed_deposit" android:layout_below="@+id/iv_payment_logo" android:layout_centerInParent="true" android:textAllCaps="true" android:letterSpacing="0.23"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@+id/ll_bottom_header" android:layout_below="@+id/iv_motif">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#8f969c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_fixed_deposit_offering" android:lineSpacingExtra="13sp" android:textAllCaps="true" android:letterSpacing="0.08"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+                    <ImageView android:id="@+id/iv_tick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_blue_tick_mark_icon_copy_5"/>
+                    <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/tv_earn_higher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/pb_earn_higher" android:layout_toRightOf="@+id/iv_tick" android:lineSpacingExtra="10sp"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+                    <ImageView android:id="@+id/iv_tick_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_blue_tick_mark_icon_copy_5"/>
+                    <TextView android:textSize="14sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/pb_fd_break_fd_anytime_on_the_click_of_a_button" android:layout_toRightOf="@+id/iv_tick_1" android:lineSpacingExtra="10sp"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+                    <ImageView android:id="@+id/iv_tick_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_blue_tick_mark_icon_copy_5"/>
+                    <TextView android:textSize="14sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/pb_break_your_fixed" android:layout_toRightOf="@+id/iv_tick_2" android:lineSpacingExtra="10sp"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+                    <ImageView android:id="@+id/iv_tick_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_blue_tick_mark_icon_copy_5"/>
+                    <TextView android:textSize="14sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/pb_fd_your_total_balance_above_rs_1_00_000_is_auto_swept_into_fd_at_the_end_of_each_day" android:layout_toRightOf="@+id/iv_tick_3" android:lineSpacingExtra="10sp"/>
+                </RelativeLayout>
+                <TextView android:textSize="14sp" android:textColor="#00b9f5" android:gravity="center" android:id="@+id/tv_know_more" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33dp" android:layout_marginTop="19dp" android:text="@string/pb_know_more" android:drawableRight="@drawable/pb_fd_right_arrow" android:drawablePadding="5dp" android:letterSpacing="0.07"/>
+                <RelativeLayout android:id="@+id/rl_interest_table_wrapper" android:background="@color/color_e0f7ff" android:paddingLeft="15dp" android:paddingTop="18dp" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+                    <TextView android:textSize="20sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/tv_interest_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_interest_rate_charges" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#444444" android:id="@+id/tv_interest_sub_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/pb_identify_maturity" android:layout_below="@+id/tv_interest_rate" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:src="@drawable/pb_icon_fixed_deposit" android:layout_toRightOf="@+id/tv_interest_sub_heading" android:layout_alignParentRight="true"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ill_kyc_success_copy" android:layout_toRightOf="@+id/tv_interest_sub_heading" android:layout_alignParentRight="true"/>
+                    <View android:background="@drawable/ffc800_rounded_18" android:layout_width="9dp" android:layout_height="9dp" android:layout_marginLeft="10dp" android:layout_marginTop="40dp" android:layout_marginRight="22dp" android:layout_toRightOf="@+id/tv_interest_sub_heading"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#8f969c" android:gravity="center" android:background="@color/color_f3f7f8" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pb_total_balance_calculation" android:fontFamily="sans-serif"/>
+        <View android:background="@color/color_00b9f5" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <View android:background="@color/color_012b72" android:layout_width="match_parent" android:layout_height="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

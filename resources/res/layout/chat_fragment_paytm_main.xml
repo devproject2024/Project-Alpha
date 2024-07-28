@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/header" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/btnBack" android:background="?attr/selectableItemBackgroundBorderless" android:padding="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/chat_ic_back_arrow"/>
+        <com.paytm.utility.RoboTextView android:textSize="20sp" android:textColor="@color/black" android:id="@+id/txt_chat" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/chat_module_messages" android:layout_marginStart="15dp" app:fontType="4" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/btnBack" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:orientation="vertical" android:id="@+id/fl_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:id="@+id/layoutLoader" android:visibility="gone" layout="@layout/chat_dialog_loading"/>
+</RelativeLayout>

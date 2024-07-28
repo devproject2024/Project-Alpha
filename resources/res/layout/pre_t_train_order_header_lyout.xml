@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp">
+            <ImageView android:id="@+id/status_image_view" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="19dp" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_222222" android:gravity="center" android:layout_gravity="center" android:id="@+id/booking_confirmation_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:text="@string/booking_confirmed" android:layout_below="@+id/status_image_view" android:layout_centerHorizontal="true" app:fontType="3"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@+id/booking_confirmation_text_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:text="@string/booking_confirmed" android:layout_centerHorizontal="true" app:fontType="3"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lv_action_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

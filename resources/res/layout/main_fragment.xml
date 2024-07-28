@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/my_awesome_toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/cable_addon_toolbar"/>
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/sliding_tabs" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabTextAppearance="@style/MyTabLayoutTextAppearance" style="@style/SlidingTabs"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

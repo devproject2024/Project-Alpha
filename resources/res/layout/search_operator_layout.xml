@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/search_header" android:background="@drawable/operator_rounded_border" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/search_header_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <AutoCompleteTextView android:textSize="14sp" android:textColor="@android:color/black" android:id="@+id/search_operator" android:background="@null" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="43dp" android:singleLine="true" android:layout_toLeftOf="@+id/close_btn"/>
+        <FrameLayout android:id="@+id/dummy_view" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="43dp"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/img_search" android:clickable="true" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginTop="5dp" android:src="@drawable/ic_search"/>
+            <TextView android:textSize="15sp" android:textColor="#8f969c" android:gravity="center_vertical" android:id="@+id/search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/searchlandingtitle" android:layout_toRightOf="@+id/img_search"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/close_btn" android:padding="@dimen/dimen_4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_7dp" android:src="@drawable/ic_close_white_circle" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

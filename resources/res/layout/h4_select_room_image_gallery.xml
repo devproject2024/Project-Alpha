@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/h4_select_room_image_gallery_0" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dimen_5dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/h4_iv_room" android:tag="binding_1" android:background="@color/h4_image_view_bg" android:layout_width="260dp" android:layout_height="@dimen/dimen_140dp"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

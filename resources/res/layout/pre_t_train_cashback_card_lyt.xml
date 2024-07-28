@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/cashback_background_img" android:paddingLeft="15dp" android:paddingTop="18dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/cash_details" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/cashback_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/cashback_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/cashback_value"/>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/cashback_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_11dp" android:layout_below="@+id/cash_details"/>
+    </RelativeLayout>
+    <RelativeLayout android:paddingLeft="15dp" android:paddingTop="@dimen/dimen_15dp" android:paddingRight="25dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:id="@+id/header_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_alignParentLeft="true" android:fontFamily="sans-serif-light"/>
+        <TextView android:textSize="12sp" android:textColor="@color/color_666666" android:gravity="right" android:id="@+id/cashback_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_toRightOf="@+id/cashback_value" android:layout_alignParentRight="true" android:fontFamily="sans-serif-light"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/cashback_details_container" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/color_00b9f5" android:gravity="center" android:id="@+id/view_passbook" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="@dimen/dimen_20dp" android:text="@string/view_passbook" android:layout_weight="1" android:fontFamily="sans-serif-medium"/>
+</LinearLayout>

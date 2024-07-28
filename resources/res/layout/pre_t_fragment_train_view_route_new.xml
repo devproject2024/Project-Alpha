@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/train_route_list_lyt" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/view_route_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/train_route_loader" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/no_station_found_layout" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dimen_15dp">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/cart_grey" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/no_station_found" android:layout_centerHorizontal="true" app:fontType="2"/>
+    </RelativeLayout>
+</RelativeLayout>

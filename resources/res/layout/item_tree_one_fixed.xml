@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/tree_fixed" android:tag="layout/item_tree_one_fixed_0" android:focusableInTouchMode="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:tag="binding_1" android:background="@color/tree_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55">
+        <ImageView android:layout_gravity="center" android:layout_width="22.5dp" android:layout_height="22.5dp" android:src="@drawable/ic_hamburger_45" android:layout_weight="0.5"/>
+        <TextView android:textSize="@dimen/dimen_18sp" android:textStyle="bold" android:textColor="@color/clp_color_2222222" android:gravity="start" android:layout_gravity="center" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="3"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/arrow_fixed" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" app:srcCompat="@drawable/clp_ic_arrow_down"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/tree_recyclerview" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

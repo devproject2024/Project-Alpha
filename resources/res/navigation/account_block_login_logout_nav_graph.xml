@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/account_block_logout_nav_graph" app:startDestination="@+id/accountBlockEnterNumberFragment">
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountBlockEnterNumberFragment" android:id="@+id/accountBlockEnterNumberFragment">
+        <argument android:name="mobileNumber" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/navActionAccountBlockEnterPasscode" app:destination="@+id/accountBlockEnterPasscodeFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+        <action android:id="@+id/navActionAccountBlockTerminal" app:destination="@+id/accountBlockTerminalFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountBlockEnterPasscodeFragment" android:id="@+id/accountBlockEnterPasscodeFragment">
+        <argument android:name="verifierId" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="accountEncryptPublicKey" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="accountEncryptSalt" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="state" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="mobile" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/navActionAccountBlockReason" app:destination="@+id/accountBlockReasonFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+        <action android:id="@+id/navActionAccountBlockTerminal" app:destination="@+id/accountBlockTerminalFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountBlockReasonFragment" android:id="@+id/accountBlockReasonFragment">
+        <argument android:name="meta" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="state" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="logout" android:defaultValue="false" app:argType="boolean" app:nullable="false"/>
+        <argument android:name="mobile" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/navActionAccountBlockConfirmed" app:destination="@+id/accountBlockConfirmedFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+        <action android:id="@+id/navActionAccountBlockTerminal" app:destination="@+id/accountBlockTerminalFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountBlockConfirmedFragment" android:id="@+id/accountBlockConfirmedFragment">
+        <argument android:name="meta" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="logout" android:defaultValue="false" app:argType="boolean" app:nullable="false"/>
+        <argument android:name="mobile" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountBlockUnblockTerminalFragment" android:id="@+id/accountBlockTerminalFragment">
+        <argument android:name="isAccountBlockCase" android:defaultValue="false" app:argType="boolean" app:nullable="false"/>
+        <argument android:name="net.one97.paytm.oauth.utils.TerminalPageState" android:defaultValue="DEFAULT" app:argType="net.one97.paytm.oauth.utils.TerminalPageState" app:nullable="false"/>
+    </fragment>
+</navigation>

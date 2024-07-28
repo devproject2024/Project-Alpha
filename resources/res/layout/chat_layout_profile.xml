@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_theme_profile_bg" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.paytm.android.chat.view.RoundCornerImageView android:id="@+id/profile_pic" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/chat_icon_group_chat_deful_contact_pic" android:scaleType="fitXY" android:minHeight="260dp" android:layout_centerHorizontal="true" app:left_bottom_radius="0dp" app:left_top_radius="15dp" app:right_bottom_radius="0dp" app:right_top_radius="0dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/profile_btn_change_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="@string/chat_module_profile_change_pic" android:layout_alignRight="@+id/profile_pic" android:layout_alignBottom="@+id/profile_pic" android:layout_marginEnd="10dp" android:layout_alignEnd="@+id/profile_pic" style="?attr/color_theme_main_text_style"/>
+    <TextView android:textSize="20sp" android:id="@+id/profile_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_below="@+id/profile_pic" android:lineSpacingExtra="0sp" android:layout_marginStart="20dp" style="?attr/color_theme_name_text_style"/>
+    <TextView android:textSize="12sp" android:id="@+id/profile_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="3dp" android:layout_below="@+id/profile_name" android:lineSpacingExtra="0sp" android:layout_marginStart="20dp" style="?attr/color_theme_main_text_style"/>
+    <ImageView android:id="@+id/profile_qrcode" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_alignBottom="@+id/profile_name" android:layout_alignParentRight="true"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="25dp" android:layout_below="@+id/profile_intro">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:background="@color/split_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/rl_settings_privacy" android:layout_width="match_parent" android:layout_height="60dp">
+                <ImageView android:id="@+id/iv_privacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@mipmap/chat_ic_settings_privacy" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_module_settings_privacy" android:layout_toRightOf="@+id/iv_privacy" android:layout_centerVertical="true" style="?attr/color_theme_main_text_style"/>
+                <ImageView android:layout_width="6dp" android:layout_height="12dp" android:layout_marginRight="20dp" android:src="@mipmap/chat_ic_forward" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/split_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/rl_settings_media" android:layout_width="match_parent" android:layout_height="60dp">
+                <ImageView android:id="@+id/iv_settings_media" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@mipmap/chat_ic_settings_media" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_module_settings_media" android:layout_toRightOf="@+id/iv_settings_media" android:layout_centerVertical="true" style="?attr/color_theme_main_text_style"/>
+                <ImageView android:layout_width="6dp" android:layout_height="12dp" android:layout_marginRight="20dp" android:src="@mipmap/chat_ic_forward" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/split_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RelativeLayout android:id="@+id/rl_settings_notifications" android:layout_width="match_parent" android:layout_height="60dp">
+                <ImageView android:id="@+id/iv_settings_notifications" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@mipmap/chat_ic_settings_notifications" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_module_settings_notifications" android:layout_toRightOf="@+id/iv_settings_notifications" android:layout_centerVertical="true" style="?attr/color_theme_main_text_style"/>
+                <ImageView android:layout_width="6dp" android:layout_height="12dp" android:layout_marginRight="20dp" android:src="@mipmap/chat_ic_forward" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/split_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

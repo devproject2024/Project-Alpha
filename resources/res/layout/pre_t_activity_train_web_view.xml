@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp">
+        <ImageView android:id="@+id/back_action_button" android:padding="@dimen/dimen_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <com.paytm.utility.RoboTextView android:textSize="20sp" android:textColor="#222222" android:ellipsize="end" android:gravity="center" android:id="@+id/hotels_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:layout_toRightOf="@+id/back_action_button"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <WebView android:id="@+id/payment_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:id="@+id/webview_load_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <RelativeLayout android:id="@+id/overlay_lyt" android:background="@drawable/pre_t_train_round_corner_bg_with_stroke" android:padding="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_30dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:elevation="8dp">
+            <ImageView android:id="@+id/info_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pre_t_train_info_image"/>
+            <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="normal" android:textColor="#666666" android:id="@+id/booking_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_toRightOf="@+id/info_img" android:fontFamily="sans-serif-light"/>
+            <ImageView android:id="@+id/close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/pre_t_close_grey" android:layout_toRightOf="@+id/booking_text"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

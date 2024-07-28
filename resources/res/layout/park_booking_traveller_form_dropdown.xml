@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Spinner android:id="@+id/events_traveller_dropdown" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="24dp"/>
+    <View android:id="@+id/divider1" android:background="@color/color_DADADA" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginRight="24dp"/>
+</LinearLayout>

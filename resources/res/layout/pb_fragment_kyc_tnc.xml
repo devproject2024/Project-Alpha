@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:padding="@dimen/wallet_10_dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/dimen_16sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/fragment_kyc_tnc_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/terms_amp_conditions"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/fragment_kyc_tnc_btn_close" android:layout_below="@+id/fragment_kyc_tnc_heading">
+        <WebView android:orientation="vertical" android:id="@+id/fragment_kyc_tnc_webview_message" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+    <TextView android:textSize="@dimen/cart_16sp" android:textStyle="bold" android:textColor="@color/paytm_blue" android:id="@+id/fragment_kyc_tnc_btn_close" android:padding="@dimen/wallet_5_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kyc_accept" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <ProgressBar android:id="@+id/fragment_kyc_tnc_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

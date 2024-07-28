@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/accountSwitch" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/separator1" android:background="#f5f8fa" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+            <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#1d252d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginTop="@dimen/dimen_32dp" android:layout_marginRight="@dimen/dimen_16dp" android:text="@string/upi_add_another_bank_ac" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif-medium" android:letterSpacing="0.04" app:layout_constraintStart_toStartOf="@+id/back"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/favBanksRecycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginTop="@dimen/dimen_8dp"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/accountOpenContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginTop="@dimen/dimen_24dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_48dp">
+                <ImageView android:id="@+id/ppbl_banner" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="H,4:2" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/accountSwitch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" layout="@layout/upi_account_change_bottom_bar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

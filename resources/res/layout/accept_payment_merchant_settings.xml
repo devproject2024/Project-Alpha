@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/accept_payment_merchant_settings_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:tint="@color/color_1d2f54" app:layout_constraintBottom_toBottomOf="@+id/nav_title" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="@+id/nav_title" app:srcCompat="@drawable/back_arrow"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_20sp" android:textStyle="bold" android:textColor="@color/color_1d2f54" android:id="@+id/nav_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_26dp" android:text="@string/mp_nav_title" android:lineSpacingExtra="8sp" android:fontFamily="sans-serif" app:layout_constraintLeft_toRightOf="@+id/iv_back_button" app:layout_constraintTop_toTopOf="0"/>
+            <FrameLayout android:id="@+id/sf_banners" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/nav_title"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/loading_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/loader" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_30dp" app:animationDirectionbundle="-1" app:circleSize="5" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:startColor="@color/light_blue_A700"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

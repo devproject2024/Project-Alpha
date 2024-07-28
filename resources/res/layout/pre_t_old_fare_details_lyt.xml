@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/cancellation_container">
+        <com.paytm.utility.RoboTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/review_iteneray_train_boarding_point" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="12dp" android:text="@string/fare_breakup" app:fontType="3"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/color_323232" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_fare" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@android:color/black" android:id="@+id/review_iteneray_train_ticket_fare" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/irctc_service_fee_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/color_323232" android:id="@+id/review_iteneray_train_irctc_service_fee_txt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@android:color/black" android:id="@+id/review_iteneray_train_irctc_service_fee" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/insurance_fee_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:id="@+id/review_iteneray_train_insurance_fee_txt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@android:color/black" android:id="@+id/review_iteneray_train_insurance_fee" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rv_paytm_fee_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:id="@+id/review_iteneray_train_paytm_fee_txt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@android:color/black" android:id="@+id/review_iteneray_train_paytm_fee" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/cancel_protection_fare_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/train_cancel_protect_charges" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@android:color/black" android:id="@+id/cancellation_protection_fee" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rv_pg_gateway_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="17dp">
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/train_pg_charge" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@android:color/black" android:id="@+id/pg_charges_txt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+        </RelativeLayout>
+        <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="-3dp" android:layout_marginRight="-3dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="13dp">
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/color_323232" android:id="@+id/grand_total_label" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grand_total" app:fontType="4"/>
+            <com.paytm.utility.RoboTextView android:textSize="9sp" android:textColor="@color/color_909090" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_3dp" android:text="@string/inclusive_of_gst_with_star" android:layout_below="@+id/grand_total_label" app:fontType="3"/>
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/grand_total_txt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="4"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

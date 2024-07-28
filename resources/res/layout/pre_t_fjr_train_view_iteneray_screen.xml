@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/review_details" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/train_iternary_timer_layout"/>
+    <include android:id="@+id/review_iteneray_train_proceed_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/pre_t_train_review_itinerary_proceed_lyt"/>
+    <include android:id="@+id/promo_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/review_iteneray_train_proceed_lyt" layout="@layout/promotion_textview"/>
+    <ScrollView android:id="@+id/passenger_detail_scrollview" android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/promo_container" android:layout_below="@+id/timer_lyt">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/train_iternary_alert_layout"/>
+            <include layout="@layout/train_iternary_train_details_layout"/>
+            <include layout="@layout/train_iternary_travellers_layout"/>
+            <include layout="@layout/train_iternary_gateway_charge_layout"/>
+            <include layout="@layout/train_iternary_service_charge_layout"/>
+            <include layout="@layout/train_additional_preferance_view"/>
+            <include layout="@layout/pre_t_trains_cancel_pro_layout"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/additional_offer_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_5dp"/>
+            <include layout="@layout/pre_t_lyt_train_offers_card"/>
+            <include layout="@layout/pre_t_trains_ff_layout"/>
+            <include layout="@layout/train_iternary_contact_us_layout"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/progress_lyt_hide" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/lyt_train_reprice_grey_bg" android:background="@color/color_80000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/fare_rules_anim_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/review_iteneray_train_proceed_lyt">
+        <FrameLayout android:id="@+id/frame_fare_rules" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <include android:id="@+id/payment_tooltip_container" android:visibility="gone" layout="@layout/payment_tooltip_layout"/>
+</RelativeLayout>

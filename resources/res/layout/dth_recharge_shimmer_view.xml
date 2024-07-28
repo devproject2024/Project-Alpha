@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.one97.paytm.common.views.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/shimmer_lyt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <RelativeLayout android:paddingBottom="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_20dp">
+            <ImageView android:id="@+id/operator_image" android:background="@drawable/drawable_bg_circular_gray" android:layout_width="@dimen/dimen_64dp" android:layout_height="@dimen/dimen_64dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_alignParentRight="true"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/header_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_toLeftOf="@+id/operator_image" android:layout_alignTop="@+id/operator_image" android:layout_alignBottom="@+id/operator_image" android:layout_alignParentLeft="true">
+                <TextView android:textSize="@dimen/dimen_21sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/operator_id" android:background="@color/dummy_items_background" android:layout_width="130dp" android:layout_height="15dp" android:fontFamily="sans-serif-medium"/>
+                <TextView android:textSize="@dimen/dimen_15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/operator" android:background="@color/dummy_items_background" android:layout_width="130dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_below="@+id/operator_id" android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@+id/consumer_no" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp"/>
+        <View android:id="@+id/amount" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_40dp" android:layout_marginRight="@dimen/dimen_20dp"/>
+    </LinearLayout>
+</net.one97.paytm.common.views.ShimmerFrameLayout>

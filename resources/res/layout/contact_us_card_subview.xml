@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/contact_us_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/trust_icon" android:layout_width="80dp" android:layout_height="80dp" android:layout_margin="15dp" android:src="@drawable/paytm_trust" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/trust_icon" android:layout_centerVertical="true">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="#9b9b9b" android:gravity="left" android:id="@+id/paytm_trust_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_us_text_card" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="#00b9f5" android:gravity="left" android:id="@+id/paytm_contact_us" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_summary_contact_us" app:fontType="3"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

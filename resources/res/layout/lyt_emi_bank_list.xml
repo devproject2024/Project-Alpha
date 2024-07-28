@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_back_arrow" android:background="?android:attr/selectableItemBackground" android:padding="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_12dp" android:src="@drawable/back_arrow" android:layout_centerVertical="true" android:contentDescription="TODO" android:layout_marginEnd="@dimen/dimen_12dp"/>
+            <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="#222222" android:gravity="left" android:id="@+id/tv_toolbar_title" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_bank_emi" android:layout_toRightOf="@+id/iv_back_arrow" android:fontFamily="sans-serif" android:layout_toEndOf="@+id/iv_back_arrow"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp">
+        <EditText android:textSize="@dimen/dimen_14dp" android:textStyle="normal" android:textColor="@color/black" android:textColorHint="#8f969c" android:id="@+id/edit_search" android:background="@drawable/emi_bank_drawable" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp" android:hint="@string/search" android:maxLines="1" android:drawableLeft="@drawable/search_icon" android:drawablePadding="@dimen/dimen_15dp" android:inputType="text" android:drawableStart="@drawable/search_icon" android:letterSpacing="0"/>
+        <ImageView android:id="@+id/img_clear_search_text" android:visibility="gone" android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_20dp" android:src="@drawable/ic_close_minkyc" android:layout_alignParentRight="true" android:contentDescription="TODO" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <FrameLayout android:background="@drawable/white_selector_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_5dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_bank_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/pb_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <include android:id="@+id/list_empty_layout_container" android:visibility="gone" layout="@layout/list_empty_layout"/>
+    </FrameLayout>
+</LinearLayout>

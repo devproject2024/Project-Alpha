@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_voucher_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/buy_voucher_container" android:background="#f4fbfe" android:paddingTop="@dimen/dimen_24dp" android:paddingBottom="@dimen/dimen_12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16dp" android:paddingEnd="@dimen/dimen_16dp">
+                <TextView android:textSize="@dimen/dimen_20sp" android:textStyle="bold" android:textColor="@color/clp_color_2222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buy_vouchers"/>
+                <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/clp_color_2222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_on_your_shopping"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/voucher_rv" android:background="#f4fbfe" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/dimen_16dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+        <include android:id="@+id/no_voucher_layout" android:visibility="gone" layout="@layout/layout_no_voucher_available"/>
+        <ProgressBar android:layout_gravity="bottom" android:id="@+id/progressBar" android:padding="@dimen/dimen_20dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/CLPProgressBar"/>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

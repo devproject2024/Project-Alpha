@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parent_main" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <RelativeLayout android:id="@+id/lyt_scan_main" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/activity_scan_only_layout_v2"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/mall_scan_only_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

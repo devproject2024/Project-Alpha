@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_action_search" android:id="@+id/action_search" android:title="@string/search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="never|always|collapseActionView"/>
+    <item android:icon="@drawable/ic_cart_dark_smiley" android:id="@+id/action_cart" app:actionViewClass="net.one97.paytm.landingpage.widgets.CartMenuView" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_profile" android:id="@+id/action_profile" app:showAsAction="always"/>
+</menu>

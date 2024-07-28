@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_layout" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/motif_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_motif_classic" android:layout_alignParentRight="true"/>
+    <RelativeLayout android:id="@+id/toolbar_layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_back_button" android:padding="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/upi_ic_back" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/title_layout" android:paddingTop="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_back_button">
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/money_transfer" android:layout_centerVertical="true" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/toolbar_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_back_button" android:layout_below="@+id/toolbar_title" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

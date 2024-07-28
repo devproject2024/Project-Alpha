@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/login_flyout_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/lyt_user" android:padding="@dimen/wallet_5_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="@dimen/wallet_5_dp">
+            <RelativeLayout android:id="@+id/lyt_user_logo" android:visibility="visible" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerHorizontal="true">
+                <TextView android:textSize="25sp" android:textColor="@color/gray" android:gravity="center" android:id="@+id/user_initials" android:background="@drawable/bg_user_initials" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/img_user" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/profile_logout" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerVertical="true"/>
+                <RelativeLayout android:id="@+id/lyt_user_image" android:background="@drawable/bg_flyout_initials" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.paytm.utility.RoboTextView android:textSize="23sp" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/flyout_username" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_10dp" android:maxLines="2" android:drawableRight="@drawable/right_red_arrow" android:drawablePadding="@dimen/dimen_10dp" app:fontType="4"/>
+    </LinearLayout>
+</LinearLayout>

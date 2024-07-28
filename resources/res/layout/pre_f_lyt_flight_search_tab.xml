@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/flight_filter_tabholder_height" android:weightSum="3">
+    <include android:id="@+id/lyt_tab_price" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/pre_f_lyt_flight_search_tab_item_revert"/>
+    <include android:id="@+id/lyt_tab_departure" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/pre_f_lyt_flight_search_tab_item_revert"/>
+    <include android:id="@+id/lyt_tab_duration" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/pre_f_lyt_flight_search_tab_item_revert"/>
+</LinearLayout>

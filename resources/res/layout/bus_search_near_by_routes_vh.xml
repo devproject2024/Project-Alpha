@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/travel_res_bus_uniform_shadow_normal" android:padding="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6dp" android:layout_marginTop="@dimen/dimen_3dp" android:layout_marginRight="@dimen/dimen_6dp" android:weightSum="16">
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_12dp" android:layout_weight="6">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/black_222222" android:id="@+id/txt_from_route_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="@dimen/dimen_5dp"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/gray_666666" android:id="@+id/txt_from_route_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/source" android:singleLine="true" android:layout_below="@+id/txt_from_route_name" android:layout_marginEnd="@dimen/dimen_5dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_weight="4">
+        <View android:background="@color/color_e2e2e2" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_10dp"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_10sp" android:textColor="@color/color_8c8c8c" android:id="@+id/txt_route_distance" android:background="@drawable/travel_res_bus_rounded_rect_with_3dp_grey_radius" android:padding="@dimen/dimen_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/dimen_5dp" app:fontType="2"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_weight="6">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/black_222222" android:id="@+id/txt_to_route_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="@dimen/dimen_5dp"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/gray_666666" android:id="@+id/txt_to_route_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/destination" android:singleLine="true" android:layout_below="@+id/txt_to_route_name" android:layout_marginEnd="@dimen/dimen_5dp"/>
+    </RelativeLayout>
+</LinearLayout>

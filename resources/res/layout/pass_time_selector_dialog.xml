@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/pass_passbook_filter_sheet_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="25dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_21sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_time_period" android:layout_centerVertical="true" android:lineSpacingExtra="-6sp" android:fontFamily="sans-serif" app:fontType="4"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pass_pdp_close_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RadioGroup android:orientation="vertical" android:id="@+id/radioGropFilter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp">
+        <RadioButton android:textSize="@dimen/dimen_17sp" android:textColor="#1d252d" android:id="@+id/last30DaysRbtn" android:padding="@dimen/dimen_14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@drawable/pass_btn_radio_holo_light" android:text="Last 30 days"/>
+        <View android:background="#dde5ed" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginLeft="33dp"/>
+        <RadioButton android:textSize="@dimen/dimen_17sp" android:textColor="#1d252d" android:id="@+id/last60DaysRbtn" android:padding="@dimen/dimen_14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@drawable/pass_btn_radio_holo_light" android:text="Last 60 days"/>
+        <View android:background="#dde5ed" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginLeft="33dp"/>
+        <RadioButton android:textSize="@dimen/dimen_17sp" android:textColor="#1d252d" android:id="@+id/last90DaysRbtn" android:padding="@dimen/dimen_14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@drawable/pass_btn_radio_holo_light" android:text="Last 90 days"/>
+        <View android:background="#dde5ed" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginLeft="33dp"/>
+        <RadioButton android:textSize="@dimen/dimen_17sp" android:textColor="#1d252d" android:id="@+id/lastFYRbtn" android:padding="@dimen/dimen_14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@drawable/pass_btn_radio_holo_light" android:text="FY 2018 - 2019"/>
+        <View android:background="#dde5ed" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginLeft="33dp"/>
+        <RadioButton android:textSize="@dimen/dimen_17sp" android:textColor="#1d252d" android:id="@+id/customRbtn" android:padding="@dimen/dimen_14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@drawable/pass_btn_radio_holo_light" android:text="Custom Date"/>
+    </RadioGroup>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <View android:id="@+id/bottomLineBlue" android:background="#00aced" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+        <View android:id="@+id/bottomLineDarkBlue" android:background="#002f6c" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+    </LinearLayout>
+</LinearLayout>

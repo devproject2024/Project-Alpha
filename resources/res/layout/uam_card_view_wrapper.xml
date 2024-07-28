@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_10dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/dimen_6dp" app:cardUseCompatPadding="false">
+    <include android:id="@+id/layout_card_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/uam_card_view"/>
+</androidx.cardview.widget.CardView>

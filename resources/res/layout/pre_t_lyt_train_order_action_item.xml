@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/item_root_layout" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/item_image" android:layout_width="23dp" android:layout_height="22dp" android:scaleType="centerInside"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:textColor="@color/color_7a7a7a" android:gravity="center" android:layout_gravity="center" android:id="@+id/item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_7dp" android:text="@string/download" app:fontType="2"/>
+    </LinearLayout>
+</LinearLayout>

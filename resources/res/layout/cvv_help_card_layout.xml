@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/cvv_help_card_layout_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/tv_cvv_help_title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/tv_desc" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_9dp" android:lineSpacingExtra="3sp" android:fontFamily="sans-serif-light"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_card_logo" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="@dimen/dimen_20dp"/>
+    </LinearLayout>
+</ScrollView>

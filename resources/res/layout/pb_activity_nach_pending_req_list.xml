@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/co_ordinate_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="0dp" app:contentScrim="?attr/colorPrimary" app:expandedTitleTextAppearance="@android:color/transparent" app:layout_scrollFlags="13">
+            <RelativeLayout android:orientation="horizontal" android:background="@color/white" android:paddingBottom="@dimen/dimen_30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/back_arrow" android:layout_width="@dimen/dimen_16dp" android:layout_height="?attr/actionBarSize" android:layout_marginLeft="@dimen/dimen_15dp" android:src="@drawable/back_arrow"/>
+                <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="#222222" android:gravity="start" android:id="@+id/my_personal_payment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="@string/pb_nach_payment_request" android:layout_below="@+id/back_arrow" android:layout_alignParentRight="true" android:fontFamily="sans-serif"/>
+            </RelativeLayout>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="0dp" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/tool_bar_back" android:padding="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow"/>
+                    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/txt_user_name_toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_13dp" android:text="@string/pb_nach_payment_request" android:layout_toRightOf="@+id/tool_bar_back" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_3dp">
+            <RelativeLayout android:id="@+id/loaderLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/loader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginTop="30dp" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/normalLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="false">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/nachRequestList" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="45dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_16dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <com.paytm.utility.RoboTextView android:textSize="17dp" android:textColor="@color/paytm_blue" android:id="@+id/noItemTv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_nach_no_req" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

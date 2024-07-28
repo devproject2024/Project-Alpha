@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_300dp">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dimen_24dp" android:paddingTop="@dimen/dimen_19dp" android:paddingRight="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_43dp">
+        <com.paytm.utility.RoboTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/header_textview" android:background="@null" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/metro" android:lineSpacingExtra="-8.7sp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="end" android:id="@+id/close_bottomsheetfragment" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/pre_t_cross"/>
+        </FrameLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/metro_list_recyclerview_in_bottomsheet" android:paddingLeft="@dimen/dimen_26dp" android:paddingTop="@dimen/dimen_19dp" android:paddingRight="@dimen/dimen_17dp" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

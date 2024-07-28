@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_fafbfb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlHeaderContainer" android:layout_width="match_parent" android:layout_height="@dimen/ins_dimen_56dp">
+        <ImageView android:id="@+id/ivBackBtn" android:padding="@dimen/ins_dimen_7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ins_dimen_13dp" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ins_dimen_20dp" android:layout_marginRight="@dimen/ins_dimen_20dp" android:layout_above="@+id/ivFooter" android:layout_below="@+id/rlHeaderContainer" android:layout_marginStart="@dimen/ins_dimen_20dp" android:layout_marginEnd="@dimen/ins_dimen_20dp">
+        <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/tvHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/insurance" android:fontFamily="sans-serif" android:letterSpacing="0.03"/>
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/tvSubHeading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ins_dimen_15dp" android:layout_below="@+id/tvHeading" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvBuyPayOptionList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ins_dimen_30dp" android:layout_below="@+id/tvSubHeading"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivFooter" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_il_bg"/>
+</RelativeLayout>

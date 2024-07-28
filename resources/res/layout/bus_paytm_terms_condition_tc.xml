@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/tnc_title_lyt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/tnc_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <TextView android:id="@+id/tnc_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/terms_and_cond" android:layout_below="@+id/tnc_close" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:background="@color/color_fafafa" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp" android:layout_below="@+id/tnc_title_lyt"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/mp_no_settlements_data_view_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16dp">
+    <ImageView android:id="@+id/noSettlementsDataImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_51dp" android:src="@drawable/mp_no_settlements"/>
+    <com.business.merchant_payments.widget.MpRoboTextView android:textSize="12sp" android:textStyle="normal" android:textColor="#1d2f54" android:id="@+id/noSettlementsDataDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_29dp" android:text="@string/mp_label_no_settlemeents_for_30_days_text" android:lineSpacingExtra="8sp" android:textAlignment="center" android:layout_marginStart="@dimen/dimen_35dp" android:layout_marginEnd="@dimen/dimen_35dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/calendarContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/mp_calendar_icon"/>
+        <com.business.merchant_payments.widget.MpRoboTextView android:textSize="@dimen/dimen_10sp" android:textStyle="normal" android:textColor="#00b9f5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mp_label_view_past_settlements"/>
+    </LinearLayout>
+</LinearLayout>

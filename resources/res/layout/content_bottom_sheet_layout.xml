@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_sheet" android:background="@drawable/v8_fragment_rounded_corner" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/dialog_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/recharge_promo_toolbar_height" android:layout_marginTop="@dimen/recharge_promo_toolbar_margin">
+            <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="@color/color_222222" android:layout_gravity="center_vertical" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:layout_weight="1" android:fontFamily="sans-serif"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/close_button" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="24dp" android:layout_marginEnd="24dp" app:srcCompat="@drawable/ic_close_dialog"/>
+        </LinearLayout>
+        <include layout="@layout/bottom_sheet_search_layout"/>
+        <TextView android:textSize="@dimen/dimen_11sp" android:textStyle="normal" android:textColor="#fd5c5c" android:id="@+id/paste_promo_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_22dp" android:layout_marginTop="@dimen/dimen_8dp" android:maxLines="3" android:layout_below="@+id/search_edit_text" android:lineSpacingExtra="3sp" android:fontFamily="sans-serif"/>
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/promo_code_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+        </androidx.core.widget.NestedScrollView>
+        <View android:id="@+id/fullScreen" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="400dp"/>
+    </LinearLayout>
+    <View android:id="@+id/dummy_view" android:layout_width="match_parent" android:layout_height="@dimen/recharge_promo_toolbar_height"/>
+    <FrameLayout android:id="@+id/dummy_container" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/recharge_promo_toolbar_margin" android:layout_below="@+id/dummy_view"/>
+</RelativeLayout>

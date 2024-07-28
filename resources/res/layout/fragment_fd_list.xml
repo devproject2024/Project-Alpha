@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_active_fds" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/pb_progress" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_100dp" android:indeterminateDrawable="@drawable/pb_pb_paytm_progress"/>
+    <RelativeLayout android:id="@+id/rl_no_transaction" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/wallet_17sp" android:textColor="@color/color_222222" android:id="@+id/tv_no_transaction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_100dp" android:text="@string/upi_no_transaction" android:layout_centerHorizontal="true" android:fontFamily="@string/font_family_roboto_regular"/>
+        <ImageView android:id="@+id/iv_no_transaction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24dp" android:layout_below="@+id/tv_no_transaction" android:layout_centerHorizontal="true" app:srcCompat="@drawable/pb_ic_no_transactions"/>
+    </RelativeLayout>
+    <include android:id="@+id/no_fds_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/active_fds_zero_layout"/>
+</FrameLayout>

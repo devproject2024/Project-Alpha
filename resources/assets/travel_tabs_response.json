@@ -1,0 +1,355 @@
+{
+    "page_id": 5370,
+    "page_name": "Travel",
+    "context": {
+        "user": {},
+        "request_id": "a5d9d940-5952-11eb-877c-f16042d83379"
+    },
+    "page": [
+        {
+            "id": 20265,
+            "views": [
+                {
+                    "type": "smart-icon-list",
+                    "id": 20265,
+                    "title": "Book Now on Paytm",
+                    "image_url": "https://assetscdn1.paytm.com/images/catalog/view/20265/1569845402646.png",
+                    "items": [
+                        {
+                            "id": 610215,
+                            "priority": 1,
+                            "name": "Flights",
+                            "title": "Flight Tickets",
+                            "subtitle": "Flight Tickets",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/610215/1603241824632.png",
+                            "url_type": "flightticket",
+                            "url": "https://paytm.com/flights",
+                            "source": "bp-reco-v1",
+                            "item_id": 0,
+                            "ga_category": "Flights",
+                            "group_view_id": {
+                                "icon_view_id": [],
+                                "ticker_view_id": []
+                            },
+                            "layout": {
+                                "label": "Flat 10%"
+                            },
+                            "seourl": "https://paytm.com/flights",
+                            "display_metadata": {
+                                "subtitle": "Flight Tickets",
+                                "name": "Flights",
+                                "url": "https://paytm.com/flights",
+                                "landing_page_type": "flightticket",
+                                "id": 610215,
+                                "created_at": "2020-07-31T11:58:50",
+                                "metadata": {},
+                                "ga_category": "Flights",
+                                "title": "Flight Tickets",
+                                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1601951811490_1589450835157flight.png"
+                            },
+                            "reason": "D:FF"
+                        },
+                        {
+                            "id": 610212,
+                            "priority": 3,
+                            "name": "Bus",
+                            "title": "Bus",
+                            "subtitle": "Bus",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/610212/1610441305372.gif",
+                            "url_type": "busticket",
+                            "url": "https://paytm.com/bus-tickets",
+                            "source": "bp-reco-v1",
+                            "item_id": 0,
+                            "ga_category": "Bus",
+                            "group_view_id": {
+                                "icon_view_id": [],
+                                "ticker_view_id": [],
+                                "search_keywords": []
+                            },
+                            "layout": {},
+                            "seourl": "https://paytm.com/bus-tickets",
+                            "display_metadata": {
+                                "subtitle": "Bus",
+                                "name": "Bus",
+                                "url": "https://paytm.com/bus-tickets",
+                                "landing_page_type": "busticket",
+                                "id": 610212,
+                                "created_at": "2020-07-31T11:48:20",
+                                "metadata": {},
+                                "ga_category": "Bus",
+                                "title": "Bus",
+                                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1610441295693_busicon.gif"
+                            },
+                            "reason": "D:FF"
+                        },
+                        {
+                            "id": 474657,
+                            "priority": 6,
+                            "name": "Trains",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/474657/1594627810886.png",
+                            "url_type": "trainticketv2",
+                            "url": "https://paytm.com/train-tickets",
+                            "source": "bp-reco-v1",
+                            "item_id": 0,
+                            "ga_category": "Trains",
+                            "layout": {},
+                            "seourl": "https://paytm.com/train-tickets",
+                            "display_metadata": {
+                                "name": "Trains",
+                                "url": "https://paytm.com/train-tickets",
+                                "landing_page_type": "trainticketv2",
+                                "id": 474657,
+                                "created_at": "2019-10-24T12:13:46",
+                                "ga_category": "Trains",
+                                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1594627747302_trainsicon.png"
+                            },
+                            "reason": "D:FF"
+                        },
+                        {
+                            "id": 177201,
+                            "priority": 11,
+                            "name": "Offers",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/177201/1578926686374.png",
+                            "url_type": "homepage",
+                            "url": "https://storefront.paytm.com/v2/h/travel-offer?src=store&from=storefront",
+                            "source": "bp-reco-v1",
+                            "item_id": 7207,
+                            "ga_category": "Flights",
+                            "layout": {},
+                            "animation_json": "\"\\\"\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"null\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"\\\\\\\"\\\"\"",
+                            "url_key": "travel-offer",
+                            "seourl": "https://storefront.paytm.com/v2/h/travel-offer?src=store&from=storefront",
+                            "newurl": "https://storefront.paytm.com/travel-offer-clpid-7207?src=store&from=storefront",
+                            "display_metadata": {
+                                "subtitle": "",
+                                "name": "Offers",
+                                "landing_page_type": "homepage1",
+                                "id": 177201,
+                                "created_at": "2019-04-04T03:03:41",
+                                "ga_category": "Flights",
+                                "title": "",
+                                "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/177201/1535984833699.png"
+                            },
+                            "reason": "D:FF"
+                        },
+                        {
+                            "id": 431242,
+                            "priority": 17,
+                            "name": "Intl. Flights",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/431242/1562920888208.jpg",
+                            "url_type": "internationalflights",
+                            "url": "https://storefront.paytm.com/international-flights-clpid-49061?src=store",
+                            "source": "bp-reco-v1",
+                            "item_id": 0,
+                            "ga_category": "Flights",
+                            "layout": {},
+                            "seourl": "https://storefront.paytm.com/international-flights-clpid-49061?src=store",
+                            "display_metadata": {
+                                "name": "Intl. Flights",
+                                "url": "https://storefront.paytm.com/international-flights-clpid-49061?src=store",
+                                "landing_page_type": "internationalflights",
+                                "id": 431242,
+                                "created_at": "2019-07-04T15:23:37",
+                                "ga_category": "Flights",
+                                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1562253610616_jpeg1.jpg"
+                            },
+                            "reason": "D:FF"
+                        },
+                        {
+                            "id": 341859,
+                            "priority": 23,
+                            "name": "Metro",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/341859/1558096924271.png",
+                            "url_type": "travelmetro",
+                            "url": "paytmmp://travel_metro",
+                            "source": "bp-reco-v1",
+                            "item_id": 0,
+                            "ga_category": "Trains",
+                            "layout": {},
+                            "seourl": "paytmmp://travel_metro",
+                            "display_metadata": {
+                                "name": "Metro",
+                                "url": "paytmmp://travel_metro",
+                                "landing_page_type": "travelmetro",
+                                "id": 341859,
+                                "created_at": "2019-04-08T10:02:51",
+                                "ga_category": "Trains",
+                                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1554717751955_metro.png"
+                            },
+                            "reason": "D:FF"
+                        },
+                        {
+                            "id": 610216,
+                            "priority": 33,
+                            "name": "Hotels",
+                            "title": "Hotels",
+                            "subtitle": "Hotels",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/610216/1596196943209.png",
+                            "url_type": "hotel-booking",
+                            "url": "paytmmp://hotel-booking",
+                            "source": "bp-reco-v1",
+                            "item_id": 0,
+                            "ga_category": "Hotel",
+                            "layout": {},
+                            "seourl": "paytmmp://hotel-booking",
+                            "display_metadata": {
+                                "subtitle": "Hotels",
+                                "name": "Hotels",
+                                "url": "paytmmp://hotel-booking",
+                                "landing_page_type": "hotel-booking",
+                                "id": 610216,
+                                "created_at": "2020-07-31T12:01:08",
+                                "metadata": {},
+                                "ga_category": "Hotel",
+                                "title": "Hotels",
+                                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1596196858574_hotelsicon.png"
+                            },
+                            "reason": "D:FF"
+                        },
+                        {
+                            "id": 619727,
+                            "priority": 35,
+                            "name": "City Bus",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/619727/1609234177556.png",
+                            "url_type": "citybus",
+                            "url": "paytmmp://citybus",
+                            "source": "bp-reco-v1",
+                            "item_id": 0,
+                            "ga_category": "Bus",
+                            "group_view_id": {
+                                "icon_view_id": [],
+                                "ticker_view_id": [],
+                                "search_keywords": []
+                            },
+                            "valid_from": "2020-12-28 19:43:00",
+                            "valid_upto": "2022-12-31 23:59:00",
+                            "layout": {},
+                            "seourl": "paytmmp://citybus",
+                            "display_metadata": {
+                                "name": "City Bus",
+                                "url": "paytmmp://citybus",
+                                "landing_page_type": "citybus",
+                                "id": 619727,
+                                "created_at": "2020-08-27T12:27:33",
+                                "metadata": {},
+                                "ga_category": "Bus",
+                                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1598531227328_busiconcitybus.png"
+                            },
+                            "reason": "D:FF"
+                        }
+                    ],
+                    "datasources": [
+                        {
+                            "type": "bp-reco-v1",
+                            "list_id": 20265,
+                            "container_id": 22047262,
+                            "container_instance_id": "00000001357D0C1EFF0FC51333D24FBF85ACF1A3"
+                        }
+                    ],
+                    "meta_layout": {
+                        "bg_image_url": "https://assetscdn1.paytm.com/images/catalog/view/1581416812610.jpg",
+                        "bg_color": "#000000"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 54571,
+            "views": [
+                {
+                    "type": "smart-icon-bottom-nav",
+                    "id": 54571,
+                    "title": "Bottom Navigation",
+                    "items": [
+                        {
+                            "id": 264203,
+                            "priority": 1,
+                            "name": "My Bookings",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/264203/1571383808290.png",
+                            "alt_image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/264203/1571383808162.png",
+                            "url_type": "travelmybookings",
+                            "url": "https://catalog.paytm.comDummyvalue",
+                            "source": "catalog",
+                            "item_id": 0,
+                            "ga_category": "Flights",
+                            "layout": {
+                                "label": "",
+                                "show_bottom_nav": "true"
+                            },
+                            "show_bottom_nav": "true",
+                            "seourl": "https://catalog.paytm.comDummyvalue"
+                        },
+                        {
+                            "id": 264214,
+                            "priority": 2,
+                            "name": "Preferences",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/264214/1571384202455.png",
+                            "alt_image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/264214/1571384202420.png",
+                            "url_type": "travelpreferences",
+                            "url": "https://catalog.paytm.comDummyvalue",
+                            "source": "catalog",
+                            "item_id": 0,
+                            "ga_category": "Flights",
+                            "layout": {
+                                "label": "",
+                                "show_bottom_nav": "true"
+                            },
+                            "show_bottom_nav": "true",
+                            "seourl": "https://catalog.paytm.comDummyvalue"
+                        },
+                        {
+                            "id": 264256,
+                            "priority": 6,
+                            "name": "Offers",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/264256/1571384338053.png",
+                            "alt_image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/264256/1571384337998.png",
+                            "url_type": "homepage",
+                            "url": "https://storefront.paytm.com/v2/h/travel-offer?src=store&from=storefront",
+                            "source": "catalog",
+                            "item_id": 7207,
+                            "ga_category": "Flights",
+                            "layout": {
+                                "label": "Live Now!",
+                                "show_bottom_nav": "true"
+                            },
+                            "show_bottom_nav": "true",
+                            "url_key": "travel-offer",
+                            "seourl": "https://storefront.paytm.com/v2/h/travel-offer?src=store&from=storefront",
+                            "newurl": "https://storefront.paytm.com/travel-offer-clpid-7207?src=store&from=storefront"
+                        },
+                        {
+                            "id": 264228,
+                            "priority": 8,
+                            "name": "Help",
+                            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/264228/1571384547188.png",
+                            "alt_image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/264228/1571384547164.png",
+                            "url_type": "travelhelp",
+                            "url": "paytmmp://cst_flow?featuretype=vertical_detail&verticalId=6&templateid=10",
+                            "source": "catalog",
+                            "item_id": 0,
+                            "ga_category": "Flights",
+                            "layout": {
+                                "label": "",
+                                "show_bottom_nav": "true"
+                            },
+                            "show_bottom_nav": "true",
+                            "seourl": "paytmmp://cst_flow?featuretype=vertical_detail&verticalId=6&templateid=10"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "footer_image_url": "https://assetscdn1.paytm.com/images/catalog/category/5165/footer1.png",
+    "placeholder_image_url": "https://assetscdn1.paytm.com/images/catalog/category/5165/placeholder.png",
+    "ga_key": "/h/travel-clpid-5370",
+    "image_url": "https://assetscdn1.paytm.com/images/catalog/decorator/5370/1548419625669.png",
+    "alt_image_url": "https://assetscdn1.paytm.com/images/catalog/decorator/5370/1572506131470.jpg",
+    "entity_type": "category",
+    "redirect": false,
+    "contextParams": {},
+    "ga_category": "Mall-Others",
+    "layout": {
+        "bg_image_url": "https://assetscdn1.paytm.com/images/catalog/decorator/1610692755950.jpg"
+    }
+}

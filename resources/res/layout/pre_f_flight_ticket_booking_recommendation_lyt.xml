@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/nps_capture_lyt" android:background="@color/color_ffffff" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_10_dp">
+    <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/color_4a4a4a" android:layout_gravity="center" android:id="@+id/nps_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/summary_nps_flight_header" app:fontType="3"/>
+    <FrameLayout android:id="@+id/frame_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/nps_header">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/nps_radiogroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:weightSum="11" android:layout_alignParentLeft="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0.05dp" android:layout_marginRight="0.05dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_10sp" android:textColor="@color/color_909090" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textAlignment="center"/>
+                <RadioButton android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/rating_value_0" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BusNPSCaptureButtonStyle"/>
+                <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:scaleType="fitXY" app:srcCompat="@drawable/pre_f_low_rating"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0.05dp" android:layout_marginRight="0.05dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/color_909090" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textAlignment="center"/>
+                <RadioButton android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/rating_value_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BusNPSCaptureButtonStyle"/>
+                <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:scaleType="fitXY" app:srcCompat="@drawable/pre_f_low_rating"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0.05dp" android:layout_marginRight="0.05dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/color_909090" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" android:textAlignment="center"/>
+                <RadioButton android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/rating_value_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BusNPSCaptureButtonStyle"/>
+                <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:scaleType="fitXY" app:srcCompat="@drawable/pre_f_low_rating"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0.05dp" android:layout_marginRight="0.05dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/color_909090" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:textAlignment="center"/>
+                <RadioButton android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/rating_value_3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BusNPSCaptureButtonStyle"/>
+                <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:scaleType="fitXY" app:srcCompat="@drawable/pre_f_low_rating"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0.05dp" android:layout_marginRight="0.05dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/color_909090" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" android:textAlignment="center"/>
+                <RadioButton android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/rating_value_4" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BusNPSCaptureButtonStyle"/>
+                <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:scaleType="fitXY" app:srcCompat="@drawable/pre_f_low_rating"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0.05dp" android:layout_marginRight="0.05dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/color_909090" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:textAlignment="center"/>
+                <RadioButton android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/rating_value_5" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BusNPSCaptureButtonStyle"/>
+                <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:scaleType="fitXY" app:srcCompat="@drawable/pre_f_low_rating"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0.05dp" android:layout_marginRight="0.05dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/color_909090" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:textAlignment="center"/>
+                <RadioButton android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/rating_value_6" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BusNPSCaptureButtonStyle"/>
+                <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:scaleType="fitXY" app:srcCompat="@drawable/pre_f_low_rating"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0.05dp" android:layout_marginRight="0.05dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/color_909090" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" android:textAlignment="center"/>
+                <RadioButton android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/rating_value_7" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BusNPSCaptureButtonStyle"/>
+                <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:scaleType="fitXY" app:srcCompat="@drawable/pre_f_medium_rating"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0.05dp" android:layout_marginRight="0.05dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/color_909090" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" android:textAlignment="center"/>
+                <RadioButton android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/rating_value_8" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BusNPSCaptureButtonStyle"/>
+                <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:scaleType="fitXY" app:srcCompat="@drawable/pre_f_medium_rating"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0.05dp" android:layout_marginRight="0.05dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/color_909090" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9"/>
+                <RadioButton android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/rating_value_9" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BusNPSCaptureButtonStyle"/>
+                <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:scaleType="fitXY" app:srcCompat="@drawable/pre_f_high_rating"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0.05dp" android:layout_marginRight="0.05dp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_10dp" android:textColor="@color/color_909090" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10"/>
+                <RadioButton android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/rating_value_10" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BusNPSCaptureButtonStyle"/>
+                <ImageView android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:scaleType="fitXY" app:srcCompat="@drawable/pre_f_high_rating"/>
+            </LinearLayout>
+        </RadioGroup>
+        <SeekBar android:id="@+id/nps_seekbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:progressDrawable="@android:color/transparent" android:thumb="@color/transparent" android:thumbTint="@color/transparent"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/text_lyt" android:paddingTop="@dimen/dimen_8dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/frame_lyt">
+        <com.paytm.utility.RoboTextView android:textSize="10sp" android:textColor="@color/color_909090" android:gravity="left" android:id="@+id/nps_header1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/summary_nps_least_value" android:layout_alignParentLeft="true" app:fontType="2"/>
+        <com.paytm.utility.RoboTextView android:textSize="10sp" android:textColor="@color/color_909090" android:gravity="right" android:id="@+id/nps_header2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/summary_nps_highest_value" android:layout_alignParentRight="true" app:fontType="2"/>
+    </RelativeLayout>
+    <Button android:textSize="11.5sp" android:textColor="@color/white" android:id="@+id/submit_recommendation" android:background="@drawable/pre_f_flight_blue_background_rounded_corner_2dp" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_25dp" android:layout_marginTop="@dimen/dimen_20dp" android:text="@string/submit" android:layout_below="@+id/text_lyt" android:layout_alignParentRight="true" android:textAllCaps="false" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="#40000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/travel_res_bus_serch_info_background" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginLeft="@dimen/dimen_5dp" android:layout_marginTop="@dimen/dimen_55dp" android:layout_marginRight="@dimen/dimen_5dp" android:weightSum="5">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="28dp" android:layout_height="28dp" android:layout_marginBottom="4dp" android:contentDescription="@string/app_name" app:srcCompat="@drawable/bus_greyedout_available"/>
+            <com.paytm.utility.RoboTextView android:textSize="9sp" android:textColor="@color/color_666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_seat_available" android:textAlignment="center" app:fontType="3"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="28dp" android:layout_height="28dp" android:layout_marginBottom="4dp" android:contentDescription="@string/app_name" app:srcCompat="@drawable/bus_selected_seat_port"/>
+            <com.paytm.utility.RoboTextView android:textSize="9sp" android:textColor="@color/color_666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_seat_selected" android:textAlignment="center" app:fontType="3"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="28dp" android:layout_height="28dp" android:layout_marginBottom="4dp" android:contentDescription="@string/app_name" app:srcCompat="@drawable/bus_available_seat_ladies_highlited"/>
+            <com.paytm.utility.RoboTextView android:textSize="9sp" android:textColor="@color/color_666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_seat_ladies1" android:textAlignment="center" app:fontType="3"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="28dp" android:layout_height="28dp" android:layout_marginBottom="4dp" android:contentDescription="@string/app_name" app:srcCompat="@drawable/bus_seat_ladies_booked"/>
+            <com.paytm.utility.RoboTextView android:textSize="9sp" android:textColor="@color/color_666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_seat_ladies_booked" android:textAlignment="center" app:fontType="3"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="28dp" android:layout_height="28dp" android:layout_marginBottom="4dp" android:contentDescription="@string/app_name" app:srcCompat="@drawable/bus_booked_port"/>
+            <com.paytm.utility.RoboTextView android:textSize="9sp" android:textColor="@color/color_666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_seat_booked_txt" android:textAlignment="center" app:fontType="3"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

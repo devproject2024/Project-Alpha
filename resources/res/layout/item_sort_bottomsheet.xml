@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/bottom_sheet" android:layout_width="match_parent" android:layout_height="800dp" android:maxHeight="800dp" app:behavior_hideable="true" app:behavior_peekHeight="600dp" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@color/clp_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:weightSum="2">
+        <TextView android:textSize="@dimen/dimen_20sp" android:textStyle="bold" android:textColor="@color/clp_color_2222222" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:text="@string/sort_by" android:layout_weight="1.8"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/closeButton" android:layout_width="25dp" android:layout_height="@dimen/dimen_25dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="0dp" android:src="@drawable/clp_mall_ic_close"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/clp_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/sortRecyclerview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </LinearLayout>
+</LinearLayout>

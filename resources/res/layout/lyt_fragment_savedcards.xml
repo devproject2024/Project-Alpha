@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/lyt_text_saved_cards" android:background="@color/color_f3f7f8" android:paddingLeft="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36dp">
+        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_444444" android:gravity="center" android:id="@+id/tv_saved_cards_label" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cards" android:layout_alignParentLeft="true" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/bright_sky_blue" android:gravity="center" android:id="@+id/tv_add_new_card" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/add_new" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:letterSpacing="0.04"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_view_saved_cards" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/lyt_text_saved_cards" android:nestedScrollingEnabled="false"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lyt_no_saved_cards" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_26dp" android:paddingRight="@dimen/dimen_20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:layout_below="@+id/lyt_text_saved_cards">
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_cards_faster_payment" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+            <ImageView android:layout_width="25dp" android:layout_height="16dp" android:src="@drawable/maestro"/>
+            <ImageView android:layout_width="25dp" android:layout_height="16dp" android:layout_marginLeft="8dp" android:src="@drawable/master_card"/>
+            <ImageView android:layout_width="25dp" android:layout_height="16dp" android:layout_marginLeft="8dp" android:src="@drawable/visa_logo"/>
+            <ImageView android:layout_width="25dp" android:layout_height="16dp" android:layout_marginLeft="8dp" android:src="@drawable/amex_logo"/>
+        </LinearLayout>
+        <View android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="@dimen/dimen_25dp"/>
+        <RelativeLayout android:id="@+id/no_card_add_new" android:layout_width="match_parent" android:layout_height="@dimen/dimen_60dp" android:layout_marginTop="@dimen/dimen_12dp">
+            <TextView android:textSize="15sp" android:textColor="@color/bright_sky_blue" android:gravity="center_vertical" android:id="@+id/tv_add_symbol" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/add_symbol"/>
+            <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/bright_sky_blue" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="20dp" android:text="@string/add_new_card" android:layout_toRightOf="@+id/tv_add_symbol" android:fontFamily="sans-serif"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/separators" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Button android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/add_card_button" android:background="@color/add_cards_btn_color" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@string/add_pay_cards" android:textAllCaps="false" android:stateListAnimator="@null"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/delete_card_error_slider" android:background="@color/custom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/delete_card_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_weight="9" app:fontType="2"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/delete_card_error_remove_icon" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:src="@drawable/error_layout_close" android:layout_alignParentRight="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

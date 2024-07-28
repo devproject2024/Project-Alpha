@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#999999" android:gravity="center_vertical" android:id="@+id/tv_header_msg" android:background="@color/white" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="38dp" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:letterSpacing="0.04"/>
+        <View android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <include android:layout_width="match_parent" android:layout_height="210dp" layout="@layout/mandate_list_item"/>
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/loader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/pb_ba_vdc_round_white_bg" android:layout_width="330dp" android:layout_height="198dp">
+    <RelativeLayout android:id="@+id/root_issue_card" android:layout_width="324dp" android:layout_height="192dp">
+        <ImageView android:id="@+id/iv_payment_bank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/wallet_10_dp" android:src="@drawable/pb_ic_payments_bank_logo"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_payment_bank_motif" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="16dp" android:textColor="@color/payment_bank_dark_grey" android:id="@+id/tv_card_reissue_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="50dp" android:text="@string/pb_pdc_pending_vdc_state" android:layout_below="@+id/iv_payment_bank" android:fontFamily="@string/font_family_roboto_regular"/>
+        <TextView android:textSize="18dp" android:textColor="@color/payment_bank_dark_grey" android:id="@+id/tv_card_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/tv_card_reissue_msg" android:fontFamily="@string/font_family_roboto_regular"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="10dp" android:layout_above="@+id/bottom_strip" android:layout_below="@+id/tv_card_number" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_50_dp" android:src="@drawable/pb_ic_rupay_logo"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/bottom_strip" android:background="@drawable/pb_bottom_border_debit_card" android:layout_width="match_parent" android:layout_height="14dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

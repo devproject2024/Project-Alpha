@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+        <ImageView android:id="@+id/back_arrow_imv" android:padding="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:src="@drawable/back_arrow"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="9dp" android:text="@string/wallet_request_statement" android:layout_centerVertical="true"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp">
+                <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/id_passbook_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginBottom="@dimen/wallet_15_dp" android:text="@string/select_time_period"/>
+                <RadioGroup android:id="@+id/id_passbook_dialog_radio_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/id_passbook_text">
+                    <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/id_passbook_rbtn_1_month" android:layout_marginLeft="20dp" android:text="@string/last_one_month" style="@style/radioButtonStyle"/>
+                    <View style="@style/radioButtonSeparator"/>
+                    <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/id_passbook_rbtn_2_month" android:layout_marginLeft="20dp" android:text="@string/last_two_months" style="@style/radioButtonStyle"/>
+                    <View android:id="@+id/id_2_month_separator" style="@style/radioButtonSeparator"/>
+                    <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/id_passbook_rbtn_3_month" android:layout_marginLeft="20dp" android:text="@string/last_three_months" style="@style/radioButtonStyle"/>
+                    <View android:id="@+id/id_3_month_separator" style="@style/radioButtonSeparator"/>
+                    <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/id_passbook_rbtn_6_month" android:layout_marginLeft="20dp" android:text="@string/last_six_months" style="@style/radioButtonStyle"/>
+                    <View android:id="@+id/id_1_year_separator" style="@style/radioButtonSeparator"/>
+                    <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/id_passbook_rbtn_1_year" android:layout_marginLeft="20dp" android:text="@string/last_one_year" style="@style/radioButtonStyle"/>
+                    <View android:id="@+id/id_6_month_separator" style="@style/radioButtonSeparator"/>
+                    <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/id_last_financial_year" android:visibility="gone" android:layout_marginLeft="20dp" android:text="@string/last_financial_year" style="@style/radioButtonStyle"/>
+                    <View android:id="@+id/id_last_financial_year_separator" android:visibility="gone" style="@style/radioButtonSeparator"/>
+                    <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/id_passbook_rbtn_select_duration" android:layout_marginLeft="20dp" android:text="@string/custom_duration" style="@style/radioButtonStyle"/>
+                </RadioGroup>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/duration_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="27dp" android:layout_marginRight="20dp" android:layout_below="@+id/id_passbook_dialog_radio_group">
+                    <com.google.android.material.textfield.TextInputLayout android:theme="@style/DisabledEditTextTheme" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatEditText android:textSize="17dp" android:textColorHint="#999999" android:id="@+id/fromDateEdt" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/from1" android:editable="false" android:fontFamily="@string/font_family_roboto_medium"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:theme="@style/DisabledEditTextTheme" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatEditText android:textSize="17dp" android:textColorHint="#999999" android:id="@+id/toDateEdt" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/to" android:editable="false" android:fontFamily="@string/font_family_roboto_medium"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <EditText android:theme="@style/PaytmExclusiveEditTextTheme" android:textSize="18dp" android:textColorHint="#999999" android:id="@+id/enterEmailIdEdt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="35dp" android:hint="@string/enter_email_to_receive_statement" android:layout_below="@+id/duration_ll"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/emailIdContainerLl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="35dp" android:layout_marginRight="20dp" android:layout_marginBottom="35dp" android:layout_below="@+id/duration_ll">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="#999999" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/email_id_to_receive_statement" android:layout_weight="1" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif"/>
+                        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#0db9f5" android:gravity="end" android:id="@+id/editEmailIdTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif-medium"/>
+                    </LinearLayout>
+                    <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/emailIdTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="taanvi.chhetri@gmail.com" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/dimen_18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/id_proceed_btn" android:background="@drawable/bg_btn_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:minHeight="52dp" android:text="@string/confirm" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

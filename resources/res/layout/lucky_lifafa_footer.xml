@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/lucky_lifafa_footer" android:background="@color/lucky_lifafa_footer_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:src="@drawable/group_9"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginRight="10dp" android:layout_weight="1">
+            <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:gravity="center_vertical" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/lucky_lifafa_header_string" android:lineSpacingExtra="0sp" android:fontFamily="sans-serif-medium" android:letterSpacing="0.03"/>
+            <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/color_00b9f5" android:ellipsize="end" android:id="@+id/my_postcard_comment" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lucky_lifafa_header_sub_string" android:maxLines="1" android:drawableRight="@drawable/right_arrow_flight" android:drawablePadding="10dp" android:layout_below="@+id/my_postcard_name" android:lineSpacingExtra="1sp" android:fontFamily="sans-serif" android:letterSpacing="0.04"/>
+        </LinearLayout>
+        <View android:background="@color/color_e2ebee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</LinearLayout>

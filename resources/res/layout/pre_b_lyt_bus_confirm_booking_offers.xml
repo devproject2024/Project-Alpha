@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:background="@drawable/white_rr_4dp_radius" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/bus_offers_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/lyt_offer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/color_323232" android:id="@+id/txt_offers_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/offers" app:fontType="2"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/lyt_offers_list_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_11sp" android:textColor="@color/bus_paytm_blue" android:gravity="center" android:id="@+id/have_promo" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.5dp" android:layout_marginBottom="9.5dp" android:text="@string/have_promocode_text_str" android:textAllCaps="false" app:fontType="3"/>
+            </LinearLayout>
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/progress_bar_offers" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_25dp" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="12" app:duration="@android:integer/config_mediumAnimTime" app:lottie_autoPlay="true" app:lottie_fileName="Payments-Loader.json" app:lottie_loop="true"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

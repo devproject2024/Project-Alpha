@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.one97.paytm.games.view.pfg.refresh.KSwipeRefreshLayout android:id="@+id/ksRefresh" android:layout_width="match_parent" android:layout_height="match_parent" app:refreshMode="2" app:refreshView="net.one97.paytm.games.view.pfg.refresh.CustomView">
+        <net.one97.paytm.games.view.pfg.pinnedheader.PinnedHeaderRecyclerView android:id="@+id/mRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </net.one97.paytm.games.view.pfg.refresh.KSwipeRefreshLayout>
+    <RelativeLayout android:id="@+id/loading" android:background="@color/white_ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/animation_view" android:layout_width="120dp" android:layout_height="120dp" android:scaleType="centerCrop" android:layout_centerInParent="true" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/loading"/>
+    </RelativeLayout>
+</FrameLayout>

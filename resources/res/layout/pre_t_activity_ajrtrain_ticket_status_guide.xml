@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/light_grey_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:gravity="top" android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/back_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="30dp" android:layout_marginBottom="5dp" android:layout_centerVertical="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="17sp" android:textColor="@color/color_000000" android:id="@+id/source_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/train_booking_status_guide" android:includeFontPadding="false" android:layout_toRightOf="@+id/back_arrow" app:fontType="3"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@+id/view_separator_bottom_2" android:background="@color/train_tab_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/ticket_status_guide_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/view_separator_bottom_2"/>
+</RelativeLayout>

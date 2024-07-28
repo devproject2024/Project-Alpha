@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TableRow android:gravity="center_vertical" android:paddingRight="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/bene_back_arrow_iv" android:paddingLeft="5dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true"/>
+            <TextView android:textSize="17sp" android:textStyle="normal" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add New Beneficiary" android:fontFamily="sans-serif-medium"/>
+        </TableRow>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:background="#fafbfb" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#565656" android:id="@+id/add_beneficiary_title_text" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@string/pb_mb_add_benef_title_text" android:lineSpacingExtra="8.5sp" android:fontFamily="sans-serif"/>
+                <RadioGroup android:orientation="horizontal" android:id="@+id/bene_select_rg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="5dp" android:weightSum="2">
+                    <RadioButton android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:id="@+id/bene_account_rb" android:padding="@dimen/wallet_5_dp" android:layout_width="0dp" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/btn_radio_holo_light" android:text="@string/pb_mb_bank_account" android:layout_weight="1"/>
+                    <RadioButton android:textSize="@dimen/dimen_14sp" android:id="@+id/bene_paytm_rb" android:padding="@dimen/wallet_5_dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:button="@drawable/btn_radio_holo_light" android:text="@string/pb_mb_paytm_wallet" android:layout_weight="1"/>
+                </RadioGroup>
+            </LinearLayout>
+            <include layout="@layout/add_beneficiary_bank_layout"/>
+            <include layout="@layout/add_beneficiary_wallet_layout"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

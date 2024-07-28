@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/subwallet_summury_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:isScrollContainer="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_no_internet" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/toolbar" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/iv_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/pass_no_internet"/>
+        <TextView android:textSize="16sp" android:textColor="@color/payment_success_text_grey" android:gravity="center" android:padding="20sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/payment_request_net_error_message" android:layout_below="@+id/iv_image" android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    <include android:id="@+id/i_error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/pass_error_layout"/>
+    <include android:id="@+id/sa_nodata_error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/pass_error_saving_acct_psbk"/>
+    <ProgressBar android:id="@+id/pb_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/pass_paytm_progress_blue" android:layout_centerInParent="true" android:foregroundGravity="center"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/loader_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_120dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/wallet_loader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:adjustViewBounds="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+    </LinearLayout>
+</RelativeLayout>

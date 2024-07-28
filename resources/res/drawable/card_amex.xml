@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="375" android:viewportHeight="220">
+    <path android:fillColor="#fff" android:pathData="M0,0h375v220H0z" android:fillType="1"/>
+    <path android:fillColor="@drawable/$card_amex__0" android:pathData="M168.195,227.893l92.206,-115.01L166,-5h73.116l56.22,72.875L351.748,-5H422l-93.16,116.446 92.375,116.447h-73.104l-54.588,-71.726 -53.262,71.726z" android:strokeAlpha="0.076" android:fillAlpha="0.076" android:fillType="0"/>
+    <path android:fillColor="@drawable/$card_amex__1" android:pathData="M49.772,66.852L-6.361,38.25A19,19 50.412,0 1,-14.665 12.696L-7.401,-1.561A19,19 53.142,0 1,18.154 -9.864L74.287,18.738A19,19 78.913,0 1,82.591 44.292L75.327,58.549A19,19 64.639,0 1,49.772 66.852z" android:strokeAlpha="0.106" android:fillAlpha="0.106" android:fillType="0"/>
+</vector>

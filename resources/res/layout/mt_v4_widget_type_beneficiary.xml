@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textStyle="normal" android:id="@+id/titleTV" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_44dp" android:layout_marginBottom="@dimen/dimen_12dp" android:text="@string/mt_recent_and_saved_acc" style="@style/MTHeader"/>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/optionsRv" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/shimmer" android:layout_width="match_parent" android:layout_height="wrap_content" app:base_alpha="0.4" app:shimmer_duration="1300">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <include layout="@layout/mt_beneficiary_shimmer_layout"/>
+            <include layout="@layout/mt_beneficiary_shimmer_layout"/>
+            <include layout="@layout/mt_beneficiary_shimmer_layout"/>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</LinearLayout>

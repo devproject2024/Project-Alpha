@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="35dp" android:layout_marginTop="24dp" android:layout_marginRight="35dp">
+            <TextView android:textSize="16sp" android:textColor="@color/event_order_summary_desc_title_blue_color" android:id="@+id/event_order_summary_pending_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontType="2"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="24dp">
+                <TextView android:textSize="14sp" android:textColor="@color/events_normal_text_color" android:id="@+id/event_order_summary_pending_date" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+                <TextView android:textSize="14sp" android:textColor="@color/events_normal_text_color" android:id="@+id/event_order_summary_pending_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="42dp" app:fontType="2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

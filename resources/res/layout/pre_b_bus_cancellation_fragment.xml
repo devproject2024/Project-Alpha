@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:paddingTop="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_19sp" android:textColor="@color/color_222222" android:id="@+id/cancellation_policy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:text="@string/bus_cancellation_policy_text" android:fontFamily="@string/font_family_roboto_medium"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/cancellation_policy">
+        <LinearLayout android:orientation="vertical" android:id="@+id/cancellation_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/cancellation_recyclerview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#222222" android:id="@+id/cancellation_terms" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_10dp" android:fontFamily="@string/font_family_roboto_regular"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_seat_error"/>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/pre_b_lyt_lottie_progress_bar"/>
+</RelativeLayout>

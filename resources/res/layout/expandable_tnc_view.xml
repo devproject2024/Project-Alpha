@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+        <com.paytm.utility.RoboTextView android:textSize="16sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif" app:fontType="4"/>
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textStyle="normal" android:textColor="#999999" android:id="@+id/title_grey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:letterSpacing="0.08" app:fontType="3"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/description_lin_lay" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/description_lin_lay2" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/view_more_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="#00b9f5" android:id="@+id/view_more" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_more" android:includeFontPadding="false" app:fontType="2"/>
+            <ImageView android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

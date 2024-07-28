@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/white_selector_bg" android:paddingTop="@dimen/dimen_11dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@color/color_ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/total_rev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.paytm.utility.RoboTextView android:textSize="17sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/to_from_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" app:fontType="2"/>
+            <RelativeLayout android:id="@+id/to_from_name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/amount">
+                <com.paytm.utility.RoboTextView android:textSize="14sp" android:textStyle="normal" android:textColor="#444444" android:ellipsize="end" android:id="@+id/to_from_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:text="From Anish" android:maxEms="15" android:singleLine="true" android:layout_below="@+id/amount" android:fontFamily="sans-serif" app:fontType="2"/>
+                <androidx.appcompat.widget.AppCompatImageView android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_9dp" android:layout_marginTop="@dimen/dimen_4dp" android:layout_toRightOf="@+id/to_from_name" android:layout_below="@+id/amount" app:srcCompat="@drawable/sb_ic_arrow_medium"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

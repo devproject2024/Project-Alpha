@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/mp_order_summary_root_lin_lay" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/mp_card_contactus" android:background="#f4f7f8" android:layout_width="match_parent" android:layout_height="127dp" android:layout_marginTop="10dp" android:layout_below="@+id/mp_order_summary_root_lin_lay" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@+id/trust_icon" android:layout_width="80dp" android:layout_height="80dp" android:layout_margin="15dp" android:src="@drawable/paytm_trust" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/paytm_trust_desc_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/trust_icon" android:layout_centerVertical="true">
+                    <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="#9b9b9b" android:gravity="left" android:id="@+id/paytm_trust_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_us_text_card" android:lineSpacingExtra="2dp" app:fontType="2"/>
+                    <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="#00b9f5" android:gravity="left" android:id="@+id/paytm_contact_us" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_summary_contact_us" app:fontType="3"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ProgressBar android:id="@+id/id_moviepass_summary_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/movie_progress_large_holo" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</ScrollView>

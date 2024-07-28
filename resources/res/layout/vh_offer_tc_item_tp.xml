@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/item_container" android:tag="layout/vh_offer_tc_item_tp_0" android:paddingTop="@dimen/dimen_8dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/view_circle" android:background="@drawable/tnc_circular_dot" android:layout_width="@dimen/dimen_8dp" android:layout_height="@dimen/dimen_8dp" android:layout_marginTop="@dimen/dimen_4dp"/>
+    <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="normal" android:textColor="@color/textColor_1d252d" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_toRightOf="@+id/view_circle"/>
+</RelativeLayout>

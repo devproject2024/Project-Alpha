@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="60dp">
+        <LinearLayout android:gravity="center" android:id="@+id/refund_passenger_layout" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="14sp" android:textColor="@color/color_222222" android:gravity="left" android:id="@+id/refund_passenger_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="14sp" android:textColor="@color/color_222222" android:gravity="right" android:id="@+id/refund_passenger_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500" android:layout_weight="1" android:layout_toLeftOf="@+id/refund_breakup_arrow_image"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/refund_breakup_arrow_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:tint="@color/color_909090" android:layout_alignParentRight="true" app:srcCompat="@drawable/arrow_down"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/color_efefef" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="20dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/refund_breakup_per_passenger_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

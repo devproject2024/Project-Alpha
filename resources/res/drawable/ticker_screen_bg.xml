@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <gradient android:startColor="#0488e3" android:endColor="#0488e3" android:angle="270" android:centerColor="#1061cc"/>
+            <stroke android:color="#19000000"/> /&gt; 
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_bg_pattern" android:tileMode="repeat"/>
+    </item>
+</layer-list>

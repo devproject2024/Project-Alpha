@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="@dimen/dimen_10dp" android:paddingStart="15dp">
+        <TextView android:textSize="@dimen/dimen_17sp" android:textStyle="normal" android:textColor="@color/color_323232" android:id="@+id/head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_amenities" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/close_dialog" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="10dp" android:paddingEnd="15dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/bus_close_circle"/>
+    </RelativeLayout>
+    <View android:id="@+id/view" android:background="@color/color_979797" android:layout_width="match_parent" android:layout_height="@dimen/dimens_0_5dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/amenities_grid_list" android:visibility="visible" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginStart="20dp"/>
+</LinearLayout>

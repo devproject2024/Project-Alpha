@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/sheroes_image_container" android:background="@drawable/album_sheroes_image_item_selector" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+    <ImageView android:id="@+id/sheroes_image" android:layout_width="68dp" android:layout_height="68dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

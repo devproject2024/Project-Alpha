@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:elevation="0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_17sp" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@+id/pdc_toolbar_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_5dp" android:maxLines="1" android:includeFontPadding="false" app:fontType="4"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/color_444444" android:ellipsize="end" android:id="@+id/pdc_toolbar_subheading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" app:fontType="3"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

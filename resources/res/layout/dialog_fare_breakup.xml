@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/dimen_15dp" android:paddingEnd="@dimen/dimen_15dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dimen_25dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/rupees_symbol"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/color_222222" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:text="@string/bmtc_fare_break_up" android:layout_weight="1" app:fontType="3"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ibCloseFareBreakup" android:padding="@dimen/dimen_8dp" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/best_close_button"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lnrFareBreakUpContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp"/>
+    <View android:background="#80c4c4c4" android:layout_width="match_parent" android:layout_height="@dimen/dimen_0.5dp" android:layout_marginTop="@dimen/dimen_10dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_64dp">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp">
+                <TextView android:textSize="@dimen/dimen_13sp" android:textColor="@color/black" android:paddingTop="@dimen/dimen_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rupee_symbol"/>
+                <TextView android:textSize="@dimen/dimen_22sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/text_complete_price" android:paddingLeft="@dimen/dimen_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/dimen_10sp" android:textColor="@color/paytm_blue" android:gravity="center" android:id="@+id/total_passenger_no_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawablePadding="5dp" android:drawableEnd="@drawable/blue_filled_up_arrow"/>
+        </LinearLayout>
+        <Button android:textSize="@dimen/dimen_18sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/button_proceed" android:background="@drawable/brts_blue_rounded_corner_2dp" android:layout_width="179dp" android:layout_height="47dp" android:text="@string/proceed_to_pay" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

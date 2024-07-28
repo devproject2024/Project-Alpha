@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/date_range_middle_deep_sky_blue" app:tsquare_state_range_middle="true"/>
+    <item android:drawable="@drawable/date_range_middle_deep_sky_blue" app:tsquare_state_range_extend="true"/>
+    <item android:state_selected="true" android:drawable="@drawable/date_one_day_deep_sky_blue" app:tsquare_state_highlighted="false" app:tsquare_state_range_first="false" app:tsquare_state_range_last="false"/>
+    <item android:drawable="@drawable/date_range_start_deep_sky_blue" app:tsquare_state_range_first="true"/>
+    <item android:drawable="@drawable/date_range_end_deep_sky_blue" app:tsquare_state_range_last="true"/>
+    <item android:drawable="@drawable/state_unavailable" app:tsquare_state_highlighted="true"/>
+    <item app:tsquare_state_current_month="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/date_today_lily_white_border" app:tsquare_state_today="true" app:tsquare_state_unavailable="false"/>
+    <item android:drawable="@drawable/state_range_middle_unavailable" app:tsquare_state_unavailable="true"/>
+</selector>

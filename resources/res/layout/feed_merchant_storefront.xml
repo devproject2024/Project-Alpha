@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/feed_merchant_storefront_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/merchant_name" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_left_right_margin_" android:lineSpacingExtra="1sp" android:layout_marginStart="@dimen/feed_left_right_margin_" style="@style/FeedCardTitle"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/merchant_recyclerview" android:paddingLeft="@dimen/feed_left_right_margin_" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_title_card_margin" android:paddingStart="@dimen/feed_left_right_margin_"/>
+</LinearLayout>

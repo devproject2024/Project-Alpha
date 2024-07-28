@@ -1,0 +1,212 @@
+package net.one97.paytm.paymentsBank.f.c;
+
+import java.util.ArrayList;
+import java.util.List;
+import net.one97.paytm.paymentsBank.R;
+import net.one97.paytm.paymentsBank.f.b.b;
+import net.one97.paytm.paymentsBank.utils.j;
+
+public final class a {
+    public static List<b> a(net.one97.paytm.paymentsBank.fragment.b bVar, boolean z) {
+        if (j.a().equals("ISA")) {
+            return b(bVar, z);
+        }
+        return c(bVar, z);
+    }
+
+    private static List<b> b(net.one97.paytm.paymentsBank.fragment.b bVar, boolean z) {
+        ArrayList arrayList = new ArrayList();
+        b bVar2 = new b();
+        bVar2.f18350a = 1;
+        bVar2.f18351b = 0;
+        bVar2.f18352c = bVar.getString(R.string.drawer_bank_account_services);
+        arrayList.add(bVar2);
+        if (z) {
+            b bVar3 = new b();
+            bVar3.f18350a = 2;
+            bVar3.f18351b = 101;
+            bVar3.f18352c = bVar.getString(R.string.drawer_heading_manage_debit_atm_card);
+            bVar3.f18353d = bVar.getString(R.string.drawer_sub_heading_manage_debit_atm_card);
+            bVar3.f18355f = R.drawable.drawer_manage_debit_card;
+            arrayList.add(bVar3);
+        }
+        b bVar4 = new b();
+        bVar4.f18350a = 2;
+        bVar4.f18351b = 102;
+        bVar4.f18352c = bVar.getString(R.string.drawer_heading_downloads);
+        bVar4.f18353d = bVar.getString(R.string.drawer_sub_heading_downloads);
+        bVar4.f18355f = R.drawable.drawer_downloads;
+        arrayList.add(bVar4);
+        b bVar5 = new b();
+        bVar5.f18350a = 2;
+        bVar5.f18351b = 103;
+        bVar5.f18352c = bVar.getString(R.string.drawer_heading_recurring_payments);
+        bVar5.f18353d = bVar.getString(R.string.drawer_sub_heading_recurring_payments);
+        bVar5.f18355f = R.drawable.drawer_recurring_payments;
+        arrayList.add(bVar5);
+        b bVar6 = new b();
+        bVar6.f18350a = 2;
+        bVar6.f18351b = 104;
+        bVar6.f18352c = bVar.getString(R.string.drawer_heading_rate_and_charges);
+        bVar6.f18353d = bVar.getString(R.string.drawer_sub_heading_rate_and_charges);
+        bVar6.f18355f = R.drawable.drawer_rate_and_charges;
+        arrayList.add(bVar6);
+        b bVar7 = new b();
+        bVar7.f18350a = 2;
+        bVar7.f18351b = 105;
+        bVar7.f18352c = bVar.getString(R.string.drawer_heading_nominee_details);
+        bVar7.f18353d = bVar.getString(R.string.drawer_sub_heading_nominee_details);
+        bVar7.f18355f = R.drawable.drawer_nominee_details;
+        arrayList.add(bVar7);
+        b bVar8 = new b();
+        bVar8.f18350a = 2;
+        bVar8.f18351b = 106;
+        bVar8.f18352c = bVar.getString(R.string.drawer_heading_cheque_book);
+        bVar8.f18353d = bVar.getString(R.string.drawer_sub_heading_cheque_book);
+        bVar8.f18355f = R.drawable.drawer_cheque_book;
+        arrayList.add(bVar8);
+        b bVar9 = new b();
+        bVar9.f18350a = 4;
+        bVar9.f18351b = 0;
+        arrayList.add(bVar9);
+        b bVar10 = new b();
+        bVar10.f18350a = 1;
+        bVar10.f18351b = 0;
+        bVar10.f18352c = bVar.getString(R.string.drawer_bank_account_settings);
+        arrayList.add(bVar10);
+        b bVar11 = new b();
+        bVar11.f18350a = 2;
+        bVar11.f18351b = 109;
+        bVar11.f18352c = bVar.getString(R.string.drawer_heading_change_passcode);
+        bVar11.f18353d = bVar.getString(R.string.drawer_sub_heading_change_passcode);
+        bVar11.f18355f = R.drawable.drawer_pass_code;
+        arrayList.add(bVar11);
+        if (j.d()) {
+            b bVar12 = new b();
+            bVar12.f18350a = 2;
+            bVar12.f18351b = 114;
+            bVar12.f18352c = bVar.getString(R.string.drawer_heading_fingerprint);
+            bVar12.f18353d = bVar.getString(R.string.drawer_sub_heading_fingerprint);
+            bVar12.f18355f = R.drawable.bank_biometric_finger_small;
+            arrayList.add(bVar12);
+        }
+        b bVar13 = new b();
+        bVar13.f18350a = 2;
+        bVar13.f18351b = 111;
+        bVar13.f18352c = bVar.getString(R.string.drawer_heading_change_language);
+        bVar13.f18353d = bVar.getString(R.string.drawer_sub_heading_change_language);
+        bVar13.f18355f = R.drawable.drawer_language;
+        arrayList.add(bVar13);
+        b bVar14 = new b();
+        bVar14.f18350a = 4;
+        bVar14.f18351b = 0;
+        arrayList.add(bVar14);
+        b bVar15 = new b();
+        bVar15.f18350a = 1;
+        bVar15.f18351b = 0;
+        bVar15.f18352c = bVar.getString(R.string.drawer_bank_help_support);
+        arrayList.add(bVar15);
+        b bVar16 = new b();
+        bVar16.f18350a = 2;
+        bVar16.f18351b = 108;
+        bVar16.f18352c = bVar.getString(R.string.drawer_heading_24_7_help);
+        bVar16.f18353d = bVar.getString(R.string.drawer_sub_heading_24_7_help);
+        bVar16.f18355f = R.drawable.drawer_24_7_help;
+        arrayList.add(bVar16);
+        b bVar17 = new b();
+        bVar17.f18350a = 2;
+        bVar17.f18351b = 113;
+        bVar17.f18352c = bVar.getString(R.string.drawer_heading_blog);
+        bVar17.f18353d = bVar.getString(R.string.drawer_sub_heading_blog);
+        bVar17.f18355f = R.drawable.drawer_blog;
+        arrayList.add(bVar17);
+        b bVar18 = new b();
+        bVar18.f18350a = 3;
+        bVar18.f18351b = 112;
+        arrayList.add(bVar18);
+        return arrayList;
+    }
+
+    private static List<b> c(net.one97.paytm.paymentsBank.fragment.b bVar, boolean z) {
+        ArrayList arrayList = new ArrayList();
+        b bVar2 = new b();
+        bVar2.f18350a = 1;
+        bVar2.f18351b = 0;
+        bVar2.f18352c = bVar.getString(R.string.drawer_bank_account_services);
+        arrayList.add(bVar2);
+        if (z) {
+            b bVar3 = new b();
+            bVar3.f18350a = 2;
+            bVar3.f18351b = 101;
+            bVar3.f18352c = bVar.getString(R.string.drawer_heading_manage_debit_atm_card);
+            bVar3.f18353d = bVar.getString(R.string.drawer_sub_heading_manage_debit_atm_card);
+            bVar3.f18355f = R.drawable.drawer_manage_debit_card;
+            arrayList.add(bVar3);
+        }
+        b bVar4 = new b();
+        bVar4.f18350a = 2;
+        bVar4.f18351b = 104;
+        bVar4.f18352c = bVar.getString(R.string.drawer_heading_rate_and_charges);
+        bVar4.f18353d = bVar.getString(R.string.drawer_sub_heading_rate_and_charges);
+        bVar4.f18355f = R.drawable.drawer_rate_and_charges;
+        arrayList.add(bVar4);
+        b bVar5 = new b();
+        bVar5.f18350a = 2;
+        bVar5.f18351b = 105;
+        bVar5.f18352c = bVar.getString(R.string.drawer_heading_nominee_details);
+        bVar5.f18353d = bVar.getString(R.string.drawer_sub_heading_nominee_details);
+        bVar5.f18355f = R.drawable.drawer_nominee_details;
+        arrayList.add(bVar5);
+        b bVar6 = new b();
+        bVar6.f18350a = 4;
+        bVar6.f18351b = 0;
+        arrayList.add(bVar6);
+        b bVar7 = new b();
+        bVar7.f18350a = 1;
+        bVar7.f18351b = 0;
+        bVar7.f18352c = bVar.getString(R.string.drawer_bank_account_settings);
+        arrayList.add(bVar7);
+        b bVar8 = new b();
+        bVar8.f18350a = 2;
+        bVar8.f18351b = 109;
+        bVar8.f18352c = bVar.getString(R.string.drawer_heading_change_passcode);
+        bVar8.f18353d = bVar.getString(R.string.drawer_sub_heading_change_passcode);
+        bVar8.f18355f = R.drawable.drawer_pass_code;
+        arrayList.add(bVar8);
+        b bVar9 = new b();
+        bVar9.f18350a = 2;
+        bVar9.f18351b = 111;
+        bVar9.f18352c = bVar.getString(R.string.drawer_heading_change_language);
+        bVar9.f18353d = bVar.getString(R.string.drawer_sub_heading_change_language);
+        bVar9.f18355f = R.drawable.drawer_language;
+        arrayList.add(bVar9);
+        b bVar10 = new b();
+        bVar10.f18350a = 4;
+        bVar10.f18351b = 0;
+        arrayList.add(bVar10);
+        b bVar11 = new b();
+        bVar11.f18350a = 1;
+        bVar11.f18351b = 0;
+        bVar11.f18352c = bVar.getString(R.string.drawer_bank_help_support);
+        arrayList.add(bVar11);
+        b bVar12 = new b();
+        bVar12.f18350a = 2;
+        bVar12.f18351b = 108;
+        bVar12.f18352c = bVar.getString(R.string.drawer_heading_24_7_help);
+        bVar12.f18353d = bVar.getString(R.string.drawer_sub_heading_24_7_help);
+        bVar12.f18355f = R.drawable.drawer_24_7_help;
+        arrayList.add(bVar12);
+        b bVar13 = new b();
+        bVar13.f18350a = 2;
+        bVar13.f18351b = 113;
+        bVar13.f18352c = bVar.getString(R.string.drawer_heading_blog);
+        bVar13.f18353d = bVar.getString(R.string.drawer_sub_heading_blog);
+        bVar13.f18355f = R.drawable.drawer_blog;
+        arrayList.add(bVar13);
+        b bVar14 = new b();
+        bVar14.f18350a = 3;
+        bVar14.f18351b = 112;
+        arrayList.add(bVar14);
+        return arrayList;
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:right="@dimen/dimen_6dp">
+        <shape android:shape="oval">
+            <solid android:color="#f5f8fa"/>
+            <size android:height="@dimen/dimen_24dp" android:width="@dimen/dimen_24dp"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/dimen_3dp" android:right="@dimen/dimen_3dp">
+        <shape android:shape="oval">
+            <solid android:color="#f5f8fa"/>
+            <size android:height="@dimen/dimen_22dp" android:width="@dimen/dimen_22dp"/>
+            <stroke android:width="1dp" android:color="@color/white"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/dimen_6dp">
+        <shape android:shape="oval">
+            <solid android:color="#f5f8fa"/>
+            <size android:height="@dimen/dimen_22dp" android:width="@dimen/dimen_22dp"/>
+            <stroke android:width="1dp" android:color="@color/white"/>
+        </shape>
+    </item>
+</layer-list>

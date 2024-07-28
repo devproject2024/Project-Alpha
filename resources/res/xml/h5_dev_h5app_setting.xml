@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="Package Management">
+        <CheckBoxPreference android:title="Whether force to use preset package info" android:key="h5_use_preset_pkg_info"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="WebView Settings">
+        <CheckBoxPreference android:title="Whether to read webView settings" android:key="h5_read_use_webview_config" android:summary="No will use online settings"/>
+        <CheckBoxPreference android:title="Whether to use uc kernel" android:key="h5_use_uc_webview" android:summary="No will use system kernel" android:dependency="h5_read_use_webview_config"/>
+        <CheckBoxPreference android:title="Whether to show behavior monitor" android:key="h5_show_log_upload" android:summary="Modify seedId to spm to verify monitor"/>
+        <CheckBoxPreference android:title="No limit for jsapi，for debug apk" android:key="h5_jsapi_permission" android:summary="Close jsapi permission"/>
+        <CheckBoxPreference android:title="Open WebDriver debug，for debug apk" android:key="h5_dev_webDriver" android:summary="open devtool debug tool"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Mini Program settings">
+        <CheckBoxPreference android:key="h5_read_use_dev_app_config" android:summary="whether to skip verify of debug whitelist"/>
+        <CheckBoxPreference android:key="h5_read_use_dev_db" android:summary="Whether use dev database"/>
+        <CheckBoxPreference android:key="h5_not_use_tiny_permission" android:summary="Whether skip permission control"/>
+    </PreferenceCategory>
+</PreferenceScreen>

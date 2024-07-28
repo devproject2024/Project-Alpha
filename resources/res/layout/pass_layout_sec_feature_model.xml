@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_hideable="true">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="right" android:id="@+id/iv_close_icon" android:background="@drawable/pass_ic_close" android:layout_width="@dimen/dimen_22dp" android:layout_height="@dimen/dimen_22dp" android:layout_marginTop="17dp" android:layout_marginRight="20dp" android:layout_marginBottom="@dimen/dimen_5dp" android:contentDescription="@string/tb_close_fr"/>
+            <ImageView android:layout_gravity="center" android:background="@drawable/pass_ic_security_model" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.paytm.utility.RoboTextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:text="@string/security_feature_header" android:contentDescription="@string/tb_security_feature_header"/>
+            <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dp" android:text="@string/security_feature_message" android:ems="14" android:contentDescription="@string/tb_security_feature_message"/>
+            <TextView android:textSize="13sp" android:textColor="@color/excl_color_00b9f5" android:gravity="center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dont_add_security_feature"/>
+            <TextView android:textSize="16dp" android:textColor="#fff" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_add_security_feature" android:background="@color/excl_color_00b9f5" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="25dp" android:text="@string/add_security_feature"/>
+            <TextView android:textSize="13sp" android:textColor="@color/excl_color_00b9f5" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_dont_ask" android:padding="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="37dp" android:text="@string/dont_add_security"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

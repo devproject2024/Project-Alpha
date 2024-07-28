@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+    <ImageView android:id="@+id/cardLogoIV" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_20dp" android:src="@drawable/group9" android:layout_centerHorizontal="true" app:layout_constraintDimensionRatio="1183:96" app:layout_constraintTop_toBottomOf="@+id/footer_top_view"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

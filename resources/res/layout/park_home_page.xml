@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/search_toolabar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/back_arrow" android:background="@drawable/ripple_grey_white_bkgrnd" android:paddingLeft="5dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true"/>
+                <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_de000000" android:ellipsize="end" android:id="@+id/top_title" android:padding="2dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_title_book_tickets" android:singleLine="true" android:layout_toLeftOf="@+id/search_icon_img" android:layout_toRightOf="@+id/back_arrow" android:layout_centerVertical="true" app:fontType="3"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView android:id="@+id/image_devider" android:background="@drawable/ripple_grey_white_bkgrnd" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/divider_color" android:layout_below="@+id/search_toolabar"/>
+        <FrameLayout android:id="@+id/event_home_frame_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/park_home_progress_bar" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:indeterminateDrawable="@drawable/amp_progress_large_holo" android:layout_centerInParent="true"/>
+</RelativeLayout>

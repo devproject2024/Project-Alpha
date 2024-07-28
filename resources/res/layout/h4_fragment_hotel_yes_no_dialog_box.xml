@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/hotel_dimen_32dp" android:layout_marginRight="@dimen/hotel_dimen_32dp" app:cardCornerRadius="2dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/uber_dark_blue" android:layout_width="match_parent" android:layout_height="4dp"/>
+        <ImageView android:id="@+id/dialog_image" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="@dimen/hotel_dimen_32dp" app:srcCompat="@drawable/ic_uber_icon"/>
+        <com.paytm.utility.RoboTextView android:gravity="center" android:id="@+id/dialog_text" android:padding="@dimen/hotel_dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hotel_dimen_32dp" android:text=""/>
+        <com.paytm.utility.RoboTextView android:textColor="@color/hotel_white" android:gravity="center" android:id="@+id/yes_button_dialog_box" android:background="@color/hotel_bright_sky_blue" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="@dimen/hotel_dimen_16dp" android:text=""/>
+        <com.paytm.utility.RoboTextView android:id="@+id/no_button_dialog_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hotel_dimen_16dp" android:layout_marginBottom="16dp" android:text=""/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

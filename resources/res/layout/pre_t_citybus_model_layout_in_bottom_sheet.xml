@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/pre_t_citybus_rounded_corner_citybus_unselected" android:padding="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/metro_city_imageview" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/metro_city_name_textview" android:paddingLeft="@dimen/dimen_14dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/dimen_6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/topLayout" android:paddingRight="@dimen/dimen_23dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/black" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:fontType="2"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_35dp" android:layout_height="@dimen/dimen_35dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_black_full_strength_wifi_symbol"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/middleLayout" android:paddingRight="@dimen/dimen_23dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:layout_below="@+id/topLayout">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/color_999999" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connection_open" app:fontType="2"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/color_999999" android:id="@+id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_in_range" android:layout_alignParentRight="true" app:fontType="2"/>
+    </RelativeLayout>
+    <View android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_16dp" android:layout_below="@+id/middleLayout"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="25dp" android:layout_marginStart="20dp">
+    <ImageView android:id="@+id/thumbnail1" android:layout_width="24dp" android:layout_height="24dp" android:contentDescription="TODO" app:srcCompat="@drawable/ic_classic_theme_p2p_themes"/>
+    <ImageView android:id="@+id/thumbnail2" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="-10dp" android:contentDescription="TODO" android:layout_marginStart="-10dp" app:srcCompat="@drawable/ic_congratulations_p2p_themes"/>
+    <ImageView android:id="@+id/thumbnail3" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="-10dp" android:contentDescription="TODO" android:layout_marginStart="-10dp" app:srcCompat="@drawable/ic_gift_p2p_themes"/>
+    <ImageView android:id="@+id/thumbnail4" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="-10dp" android:contentDescription="TODO" android:layout_marginStart="-10dp" app:srcCompat="@drawable/ic_food_p2p_themes"/>
+    <ImageView android:id="@+id/thumbnail5" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="-10dp" android:contentDescription="TODO" android:layout_marginStart="-10dp" app:srcCompat="@drawable/ic_expand_widget"/>
+</LinearLayout>

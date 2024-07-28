@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="crypto_fingerprint_fallback_prefixes">
+        <item>SM-G95</item>
+        <item>SM-G96</item>
+        <item>SM-G97</item>
+        <item>SM-N95</item>
+        <item>SM-N96</item>
+        <item>SM-N97</item>
+        <item>SM-A20</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </array>
+    <array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-G97</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SM-N97</item>
+        <item>SC-01M</item>
+        <item>SCV45</item>
+    </array>
+    <array name="payment_bank_relationship">
+        <item>Husband</item>
+        <item>Wife</item>
+        <item>Mother</item>
+        <item>Father</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Guardian</item>
+        <item>Other</item>
+    </array>
+    <array name="payment_minor_nominee_relationship">
+        <item>Mother</item>
+        <item>Father</item>
+        <item>Guardian</item>
+        <item>COURT_APPOINTED_DE_FACTO</item>
+        <item>Others</item>
+    </array>
+    <array name="pb_months_in_calender">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+    <array name="colors">
+        <item>#FFFFF0</item>
+        <item>#FFFFE0</item>
+        <item>#FFFF00</item>
+        <item>#FFFAFA</item>
+        <item>#FFFAF0</item>
+    </array>
+    <array name="lorem_ipsum">
+        <item>Violence</item>
+        <item>Political Sensitive</item>
+        <item>Hate Speech</item>
+        <item>Spam</item>
+        <item>Terrorism</item>
+        <item>Nudity</item>
+        <item>Vulgar</item>
+        <item>False News</item>
+        <item>Harassment</item>
+        <item>Racism</item>
+        <item>Religious Sensitive</item>
+        <item>Hatred</item>
+        <item>Suicide</item>
+        <item>Unauthorized Sales</item>
+        <item>Sexual Exploitation</item>
+        <item>Child Exploitation</item>
+        <item>Drug Abuse</item>
+    </array>
+    <array name="emoji_icon">
+        <item>@drawable/pre_t_ic_emoji_bad</item>
+        <item>@drawable/pre_t_ic_emoji_poor</item>
+        <item>@drawable/pre_t_ic_emoji_poor</item>
+        <item>@drawable/pre_t_ic_emoji_poor</item>
+        <item>@drawable/pre_t_ic_emoji_poor</item>
+        <item>@drawable/pre_t_ic_emoji_average</item>
+        <item>@drawable/pre_t_ic_emoji_good</item>
+        <item>@drawable/pre_t_ic_emoji_good</item>
+        <item>@drawable/pre_t_ic_emoji_good</item>
+        <item>@drawable/pre_t_ic_emoji_good</item>
+        <item>@drawable/pre_t_ic_emoji_heart</item>
+    </array>
+    <array name="emoji_title">
+        <item>@string/emoji_bad</item>
+        <item>@string/emoji_poor</item>
+        <item>@string/emoji_poor</item>
+        <item>@string/emoji_poor</item>
+        <item>@string/emoji_poor</item>
+        <item>@string/emoji_average</item>
+        <item>@string/emoji_good</item>
+        <item>@string/emoji_good</item>
+        <item>@string/emoji_good</item>
+        <item>@string/emoji_good</item>
+        <item>@string/emoji_excellent</item>
+    </array>
+    <array name="marital_status_list">
+        <item>Married</item>
+        <item>Unmarried</item>
+    </array>
+    <array name="months_in_calender">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+    <array name="nps_rating">
+        <item>@color/color_ff3c3c</item>
+        <item>@color/color_ff3c3c</item>
+        <item>@color/color_ff3c3c</item>
+        <item>@color/color_ff3c3c</item>
+        <item>@color/color_ff3c3c</item>
+        <item>@color/color_fad062</item>
+        <item>@color/color_7ed321</item>
+        <item>@color/color_7ed321</item>
+        <item>@color/color_7ed321</item>
+        <item>@color/color_7ed321</item>
+        <item>@color/color_7ed321</item>
+        <item>@color/hint_grey</item>
+    </array>
+    <array name="occupation_list">
+        <item>Government</item>
+        <item>Public</item>
+        <item>Private</item>
+        <item>Professional</item>
+        <item>SelfEmployed</item>
+        <item>Student</item>
+        <item>Others</item>
+    </array>
+    <array name="prefred_language">
+        <item>English</item>
+        <item>हिंदी</item>
+    </array>
+    <array name="security_question">
+        <item>What is your pet name?</item>
+        <item>What was the name of your first school?</item>
+        <item>Who was your Childhood hero?</item>
+        <item>What is your favorite past-time?</item>
+        <item>What is your all time favorite sports team?</item>
+        <item>What is your fathers middle name?</item>
+        <item>What make was your first car or bike?</item>
+        <item>Where did you first meet your spouse?</item>
+    </array>
+    <array name="train_gender_list">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="train_sort_by_array_code">
+        <item>Recommended</item>
+        <item>Duration</item>
+        <item>Departure Time</item>
+        <item>Departure Time</item>
+        <item>Arrival Time</item>
+        <item>Arrival Time</item>
+    </array>
+    <array name="train_sort_by_array_values">
+        <item>Recommended</item>
+        <item>Fastest</item>
+        <item>Early departure</item>
+        <item>Late departure</item>
+        <item>Early arrival</item>
+        <item>Late arrival</item>
+    </array>
+    <array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </array>
+    <array name="recharge_summary_moeny_deducted_messages">
+        <item>@string/money_deducted_message_1</item>
+        <item>@string/money_deducted_message_2</item>
+        <item>@string/money_deducted_message_3</item>
+        <item>@string/money_deducted_message_4</item>
+    </array>
+    <array name="Beauty_and_Wellness">
+        <item>Gym &amp; Fitness</item>
+        <item>Spa</item>
+        <item>Salon and Parlour</item>
+    </array>
+    <array name="Food">
+        <item>Restaurant</item>
+        <item>Fast Food &amp; QSR</item>
+        <item>Foodcourt</item>
+        <item>Corporate Cafeteria</item>
+    </array>
+    <array name="Gas_and_Petrol">
+        <item>Petrol-HPCL</item>
+        <item>Petrol-IOCL</item>
+        <item>Petrol-BPCL</item>
+        <item>Petrol-Essar</item>
+        <item>Gas-CNG</item>
+        <item>Gas-HP</item>
+    </array>
+    <array name="Home_Services">
+        <item>Cleaning Services</item>
+        <item>Plumber, Carpenter and Electrician</item>
+        <item>Repair Services</item>
+        <item>Rental Services</item>
+    </array>
+    <array name="Milk_Dairy_and_Cooperative">
+        <item>Mother Dairy</item>
+    </array>
+    <array name="Personal_Services">
+        <item>Laundry &amp; Dry Cleaner</item>
+        <item>Tailor</item>
+        <item>Boutique</item>
+    </array>
+    <array name="Retail_and_Shopping">
+        <item>Apparel</item>
+        <item>Electronics and Home Appliances</item>
+        <item>Cosmetics</item>
+        <item>Mobile Accessories</item>
+        <item>Giftshop</item>
+        <item>Grocery</item>
+        <item>Kirana</item>
+        <item>Optician</item>
+        <item>Pan Shop</item>
+        <item>Stationery</item>
+        <item>Telecom</item>
+        <item>Electrical Shop</item>
+        <item>Hypermarket</item>
+        <item>Supermarket</item>
+    </array>
+    <array name="add_money_native_tabs">
+        <item>Saved Cards</item>
+        <item>Debit/Credit Card</item>
+        <item>NetBanking</item>
+    </array>
+    <array name="age_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </array>
+    <array name="allowance_generic_wallet_how_it_works_points">
+        <item>Allowance Wallet balance will be automatically used when you pay with Paytm at elligible merchants</item>
+        <item>In case of insufficient balance in your Allowance wallet, the remainder would be deducted from your Paytm Wallet</item>
+        <item>While paying your will see the combined balance of your wallets that is available for payment at the merchant</item>
+    </array>
+    <array name="allowance_generic_wallet_know_more_points">
+        <item>Easy offline or online payments at specific merchants</item>
+        <item>Your allowance wallet can hold a maximum of Rs 100000</item>
+    </array>
+    <array name="allowance_xtrarewards_wallet_how_it_works_points">
+        <item>Allowance Wallet balance will be automatically used when you pay with Paytm at Indian Oil fuel pumps</item>
+        <item>In case of insufficient balance in your Allowance wallet, the remainder would be deducted from your Paytm Wallet</item>
+        <item>While paying your will see the combined balance of your wallets that is available for payment at the fuel pump</item>
+        <item>In case you have more than 1 Allowance wallet with available balance, the wallet expiring sooner will be prioritised for payment</item>
+    </array>
+    <array name="allowance_xtrarewards_wallet_know_more_points">
+        <item>Make payments at Indian Oil fuel pumps</item>
+        <item>Tax saving of up to 30% on food purchases</item>
+        <item>Your food wallet can hold a maximum of Rs 100000</item>
+    </array>
+    <array name="alphabet_array">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>#</item>
+    </array>
+    <array name="annual_income_array">
+        <item>0–2.5 lacs</item>
+        <item>2.5–5 lacs</item>
+        <item>5–10 lacs</item>
+        <item>10–50 lacs</item>
+        <item>&gt;50 lacs</item>
+    </array>
+    <array name="automatic_option_list_descriptions">
+        <item>@string/automatic_recharge_option_description</item>
+        <item>@string/automatic_auto_add_money_description</item>
+        <item>@string/automatic_gold_sip_description</item>
+        <item>@string/automatic_active_subscription_description</item>
+        <item>@string/desc_subscription_via_paytm</item>
+    </array>
+    <array name="automatic_option_list_titles">
+        <item>@string/recharge_and_bill_payments</item>
+        <item>@string/auto_add_money</item>
+        <item>@string/gold_sip</item>
+        <item>@string/active_subscriptions</item>
+        <item>@string/subscriptions_via_paytm</item>
+    </array>
+    <array name="automatic_recharge_duration">
+        <item>7 days</item>
+        <item>15 days</item>
+        <item>28 days</item>
+        <item>30 days</item>
+        <item>45 days</item>
+    </array>
+    <array name="bus_gender">
+        <item>Mr</item>
+        <item>Ms</item>
+    </array>
+    <array name="camera_gallery_choice_array">
+        <item>Take Photo</item>
+        <item>Choose from Gallery</item>
+        <item>Upload PDF</item>
+        <item>Cancel</item>
+    </array>
+    <array name="categories_array">
+        <item>Copyright or trademark violations</item>
+        <item>Listing practices</item>
+        <item>Prohibited / banned products</item>
+        <item>Any other concerns</item>
+    </array>
+    <array name="chat_module_alphabet_array">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>#</item>
+    </array>
+    <array name="chat_module_color">
+        <item>#FC5C7E</item>
+        <item>#F1C10E</item>
+        <item>#F36BB4</item>
+        <item>#2ACE86</item>
+        <item>#40CED8</item>
+        <item>#3BB6F4</item>
+        <item>#6C7BFF</item>
+        <item>#B069EC</item>
+        <item>#FFA400</item>
+        <item>#F352A4</item>
+    </array>
+    <array name="chat_module_efp__size_units">
+        <item>B</item>
+        <item>KB</item>
+        <item>MB</item>
+        <item>GB</item>
+        <item>TB</item>
+        <item>PB</item>
+    </array>
+    <array name="chat_module_efp__sorting_types">
+        <item>By name, ascending</item>
+        <item>By name, descending</item>
+        <item>By size, ascending</item>
+        <item>By size, descending</item>
+        <item>By date, ascending</item>
+        <item>By date, descending</item>
+    </array>
+    <array name="chat_module_settings_icon_media">
+        <item>@mipmap/chat_ic_settings_media</item>
+        <item>@mipmap/chat_ic_settings_pic</item>
+        <item>@mipmap/chat_ic_settings_video</item>
+        <item>@mipmap/chat_ic_settings_doc</item>
+        <item>@mipmap/chat_ic_settings_audio</item>
+    </array>
+    <array name="chat_module_settings_icon_notifications">
+        <item>@mipmap/chat_ic_settings_notification_voice</item>
+        <item>@mipmap/chat_ic_settings_notification_vibrate</item>
+        <item>@mipmap/chat_ic_settings_notification_lock_screen</item>
+        <item>@mipmap/chat_ic_settings_notification_lock_screen</item>
+        <item>@mipmap/chat_ic_settings_notification_lock_screen</item>
+    </array>
+    <array name="chat_module_settings_icon_privacy">
+        <item>@mipmap/chat_ic_settings_profile_visiable</item>
+        <item>@mipmap/chat_ic_settings_online_status</item>
+        <item>@mipmap/chat_ic_settings_msg_from</item>
+        <item>@mipmap/chat_ic_settings_discover_me</item>
+        <item>@mipmap/chat_ic_settings_block_users</item>
+    </array>
+    <array name="chat_module_settings_media">
+        <item>@string/chat_module_settings_media_save2camera_roll</item>
+        <item>@string/chat_module_settings_media_photos</item>
+        <item>@string/chat_module_settings_media_videos</item>
+        <item>@string/chat_module_settings_media_documents</item>
+        <item>@string/chat_module_settings_media_audio</item>
+    </array>
+    <array name="chat_module_settings_media_download">
+        <item>@string/chat_module_settings_media_download_wifi</item>
+        <item>@string/chat_module_settings_media_download_wifi_cellular</item>
+        <item>@string/chat_module_settings_media_download_never</item>
+    </array>
+    <array name="chat_module_settings_notifications">
+        <item>@string/chat_module_settings_notifications_sound</item>
+        <item>@string/chat_module_settings_notifications_vibrate</item>
+        <item>@string/chat_module_settings_notifications_lock_screen</item>
+        <item>@string/chat_module_settings_notifications_lock_screen_preview</item>
+        <item>@string/chat_module_settings_notifications_lock_screen_name</item>
+    </array>
+    <array name="chat_module_settings_privacy">
+        <item>@string/chat_module_settings_privacy_profile_pic</item>
+        <item>@string/chat_module_settings_privacy_online_status</item>
+        <item>@string/chat_module_settings_privacy_msg_from</item>
+        <item>@string/chat_module_settings_privacy_discover</item>
+        <item>@string/chat_module_settings_privacy_blocked_users</item>
+    </array>
+    <array name="chat_module_settings_privacy_discover">
+        <item>@string/chat_module_settings_privacy_discover_qr_code</item>
+        <item>@string/chat_module_settings_privacy_discover_email</item>
+        <item>@string/chat_module_settings_privacy_discover_phone</item>
+    </array>
+    <array name="chat_module_settings_privacy_message_from">
+        <item>@string/chat_module_settings_privacy_visible_everyone</item>
+        <item>@string/chat_module_settings_privacy_visible_contacts</item>
+    </array>
+    <array name="chat_module_settings_privacy_visible">
+        <item>@string/chat_module_settings_privacy_visible_everyone</item>
+        <item>@string/chat_module_settings_privacy_visible_contacts</item>
+        <item>@string/chat_module_settings_privacy_visible_none</item>
+    </array>
+    <array name="communication_wallet_how_it_works_points">
+        <item>Communication Wallet balance will be automatically used when you pay with Paytm for recharges, bill payments and DTH</item>
+        <item>In case of insufficient balance in your Fuel wallet, the remainder would be deducted from your Paytm Wallet</item>
+        <item>While paying your will see the combined balance of your wallets that is available for payment at the merchant</item>
+    </array>
+    <array name="communication_wallet_know_more_points">
+        <item>Pay for phone recharges, bill payment and DTH</item>
+        <item>Your Communication wallet can hold a maximum of Rs 100000</item>
+    </array>
+    <array name="contact_us_vertical">
+        <item>My Paytm Account</item>
+        <item>Privacy &amp; Security</item>
+        <item>Adding money to wallet</item>
+        <item>Sending money from wallet to bank account</item>
+        <item>Recharge and Bill Payment</item>
+        <item>Paying with Paytm at a shop</item>
+        <item>Paying with Paytm on other apps/website</item>
+        <item>Tickets Booked/Bought on Paytm</item>
+        <item>Shopping Items/ Products purchased on Paytm</item>
+        <item>Money received in your Paytm Wallet</item>
+        <item>Transfer money from one wallet to another</item>
+        <item>I accept payments via Paytm</item>
+        <item>Deals/Digital Gift Card I bought</item>
+        <item>Digital Gold/Financial Services</item>
+        <item>School/College Fee</item>
+        <item>Paytm KYC (Wallet Upgrade)</item>
+        <item>Paytm Payments Bank</item>
+        <item>Issue with Paytm app/website</item>
+    </array>
+    <array name="contact_us_vertical_deals">
+        <item>Deals</item>
+        <item>Digital Gift Card</item>
+    </array>
+    <array name="contact_us_vertical_loan">
+        <item>Digital Gold</item>
+        <item>Financial Services</item>
+    </array>
+    <array name="contact_us_vertical_shop">
+        <item>Paying with Paytm by Scanning QR code</item>
+        <item>Paying with Paytm using mobile number</item>
+    </array>
+    <array name="contact_us_vertical_ticket">
+        <item>Movie</item>
+        <item>Amusement Park</item>
+        <item>Events</item>
+        <item>Bus</item>
+        <item>Train</item>
+        <item>Flights</item>
+        <item>Hotels</item>
+    </array>
+    <array name="contact_us_vertical_wallet">
+        <item>Sent money from your wallet</item>
+        <item>Received money in your wallet</item>
+    </array>
+    <array name="contacts">
+        <item>#f1c10e</item>
+        <item>#3bb6f4</item>
+        <item>#ffa400</item>
+        <item>#b069ec</item>
+        <item>#40ced8</item>
+    </array>
+    <array name="country_codes">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </array>
+    <array name="custom_cards_color">
+        <item>#ebf8fe</item>
+        <item>#ffefef</item>
+        <item>#fff6e5</item>
+        <item>#fff6e5</item>
+        <item>#ffefef</item>
+        <item>#fff6e5</item>
+        <item>#fff6e5</item>
+        <item>#fff6e5</item>
+        <item>#fff6e5</item>
+        <item>#fff6e5</item>
+        <item>#fff6e5</item>
+        <item>#fff6e5</item>
+    </array>
+    <array name="custom_cards_header_color">
+        <item>@color/color_00b9f5</item>
+        <item>#fd5154</item>
+        <item>@color/color_ff9d00</item>
+        <item>@color/color_ff9d00</item>
+        <item>#fd5154</item>
+        <item>@color/color_ff9d00</item>
+        <item>@color/color_ff9d00</item>
+        <item>@color/color_ff9d00</item>
+        <item>@color/color_ff9d00</item>
+        <item>@color/color_ff9d00</item>
+        <item>@color/color_ff9d00</item>
+        <item>@color/color_ff9d00</item>
+        <item>@color/color_ff9d00</item>
+    </array>
+    <array name="default_destination_list">
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Bangalore</item>
+        <item>Chennai</item>
+        <item>Hyderabad</item>
+        <item>Pune</item>
+        <item>Goa</item>
+        <item>Shimla</item>
+        <item>Srinagar</item>
+        <item>Nainital</item>
+        <item>Jaipur</item>
+        <item>Cochin</item>
+        <item>Ahmedabad</item>
+        <item>Agra</item>
+        <item>Mysore</item>
+        <item>Ooty</item>
+        <item>Lucknow</item>
+        <item>Surat</item>
+        <item>Noida</item>
+        <item>Gurgaon</item>
+    </array>
+    <array name="female_passenger_tittle">
+        <item>Mrs</item>
+        <item>Ms</item>
+    </array>
+    <array name="first_game_wallet_how_it_works_points">
+        <item>Paytm Firstgames.com bonus will be automatically used when you pay with Paytm at PaytmFirstGames.com</item>
+        <item>In case of insufficient balance in your FirstGames bonus wallet, the remainder would be deducted from your Paytm Wallet</item>
+        <item>While paying your will see the combined balance of your wallets that is available for payment at the PaytmFirstGames.com</item>
+        <item>Bonus amounts are priortised for payment on the basis of expiry</item>
+    </array>
+    <array name="first_game_wallet_know_more_points">
+        <item>Paytm First Games Bonus has all the Bonus amount which you get from completing activities like inviting friends &amp; playing exciting fun games on Paytm First Games.</item>
+        <item>Your bonus wallet can hold a maximum of Rs 100000</item>
+    </array>
+    <array name="flight_child_gender">
+        <item>Mstr</item>
+        <item>Ms</item>
+    </array>
+    <array name="flight_domestic_sort_options">
+        <item>Lowest price</item>
+        <item>Highest price</item>
+        <item>Earliest departure</item>
+        <item>Latest departure</item>
+    </array>
+    <array name="flight_sort_options">
+        <item>Lowest price</item>
+        <item>Highest price</item>
+        <item>Earliest departure</item>
+        <item>Latest departure</item>
+        <item>Shortest duration</item>
+        <item>Longest duration</item>
+    </array>
+    <array name="food_wallet_how_it_works_points">
+        <item>Food Wallet balance will be automatically used when you pay with Paytm at any food merchant</item>
+        <item>In case of insufficient balance in your food wallet, the remainder would be deducted from your Paytm Wallet</item>
+        <item>While paying your will see the combined balance of your wallets that is available for payment at the merchant</item>
+        <item>Selects merchants segregate food and non food items during billing, food wallet balance is applicable only on food items for such merchants</item>
+        <item>In case you have more than 1 food wallet with available balance, the wallet expiring sooner will be prioritised for payment</item>
+    </array>
+    <array name="food_wallet_know_more_points">
+        <item>Make payments for any offline or online food merchant</item>
+        <item>Tax saving of up to 30% on food purchases</item>
+        <item>Your food wallet can hold a maximum of Rs 100000</item>
+    </array>
+    <array name="fuel_wallet_how_it_works_points">
+        <item>Fuel Wallet balance will be automatically used when you pay with Paytm at fuel pumps</item>
+        <item>In case of insufficient balance in your Fuel wallet, the remainder would be deducted from your Paytm Wallet</item>
+        <item>While paying your will see the combined balance of your wallets that is available for payment at the fuel pump</item>
+    </array>
+    <array name="fuel_wallet_know_more_points">
+        <item>Make payments at fuel pumps</item>
+        <item>Your Fuel wallet can hold a maximum of Rs 100000</item>
+    </array>
+    <array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="gift_wallet_how_it_works_points">
+        <item>Gift Wallet balance will be automatically used when you pay with Paytm at any merchant</item>
+        <item>In case of insufficient balance in your Gift wallet, the remainder would be deducted from your Paytm Wallet</item>
+        <item>While paying your will see the combined balance of your wallets that is available for payment at the merchant</item>
+        <item>In case you have more than 1 Gift wallet with available balance, the wallet expiring sooner will be prioritised for payment</item>
+    </array>
+    <array name="gift_wallet_know_more_points">
+        <item>Recharge, pay bills, shop online of pay at any store</item>
+        <item>Tax saving of up to 30% on purchases</item>
+        <item>Your gift wallet can hold a maximum of Rs 100000</item>
+    </array>
+    <array name="gold_gram_suggestion">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>8</item>
+        <item>10</item>
+    </array>
+    <array name="gold_price_suggestion">
+        <item>1</item>
+        <item>10</item>
+        <item>50</item>
+        <item>500</item>
+        <item>1000</item>
+    </array>
+    <array name="gst_states">
+        <item>00|Select</item>
+        <item>01|Jammu And Kashmir</item>
+        <item>02|Himachal Pradesh</item>
+        <item>03|Punjab</item>
+        <item>04|Chandigarh</item>
+        <item>05|Uttarakhand</item>
+        <item>06|Haryana</item>
+        <item>07|Delhi</item>
+        <item>08|Rajasthan</item>
+        <item>09|Uttar Pradesh</item>
+        <item>10|Bihar</item>
+        <item>11|Sikkim</item>
+        <item>12|Arunachal Pradesh</item>
+        <item>13|Nagaland</item>
+        <item>14|Manipur</item>
+        <item>15|Mizoram</item>
+        <item>16|Tripura</item>
+        <item>17|Meghalaya</item>
+        <item>18|Assam</item>
+        <item>19|West Bengal</item>
+        <item>20|Jharkhand</item>
+        <item>21|Odisha</item>
+        <item>22|Chhattisgarh</item>
+        <item>23|Madhya Pradesh</item>
+        <item>24|Gujarat</item>
+        <item>25|Daman and Diu</item>
+        <item>26|Dadra and Nagar Haveli</item>
+        <item>27|Maharashtra</item>
+        <item>28|Andhra Pradesh(Before Division)</item>
+        <item>29|Karnataka</item>
+        <item>30|Goa</item>
+        <item>31|Lakshadweep Islands</item>
+        <item>32|Kerala</item>
+        <item>33|Tamil Nadu</item>
+        <item>34|Puducherry</item>
+        <item>35|Andaman and Nicobar Islands</item>
+        <item>36|Telangana</item>
+        <item>37|Andhra Pradesh</item>
+    </array>
+    <array name="home_fragment_array">
+        <item>home</item>
+        <item>mall</item>
+        <item>profile</item>
+        <item>updates</item>
+    </array>
+    <array name="hotel_age_list">
+        <item>0 Yr</item>
+        <item>1 Yr</item>
+        <item>2 Yrs</item>
+        <item>3 Yrs</item>
+        <item>4 Yrs</item>
+        <item>5 Yrs</item>
+        <item>6 Yrs</item>
+        <item>7 Yrs</item>
+        <item>8 Yrs</item>
+        <item>9 Yrs</item>
+        <item>10 Yrs</item>
+        <item>11 Yrs</item>
+        <item>12 Yrs</item>
+    </array>
+    <array name="hotel_gender">
+        <item>Mr</item>
+        <item>Ms</item>
+        <item>Mrs</item>
+    </array>
+    <array name="icons">
+        <item>@drawable/ic_ac_balance_history</item>
+        <item>@drawable/sfs_paytm_bank</item>
+        <item>@drawable/sfs_paytm_wallet</item>
+        <item>@drawable/clp_all_services</item>
+    </array>
+    <array name="id_proof">
+        <item>PAN card</item>
+        <item>Driving licence</item>
+        <item>Passport</item>
+        <item>Passport</item>
+        <item>Adhaar card</item>
+        <item>Voter Id card</item>
+    </array>
+    <array name="inbox_tabs__without_games_heading">
+        <item>Messages</item>
+        <item>Notifications</item>
+        <item>Orders</item>
+        <item>Cricket</item>
+    </array>
+    <array name="inbox_tabs_heading">
+        <item>Messages</item>
+        <item>Notifications</item>
+        <item>Orders</item>
+        <item>Games</item>
+        <item>Cricket</item>
+    </array>
+    <array name="kyc_annual_income_array">
+        <item>@string/kyc_annual_income_1</item>
+        <item>@string/kyc_annual_income_2</item>
+        <item>@string/kyc_annual_income_3</item>
+        <item>@string/kyc_annual_income_4</item>
+        <item>@string/kyc_annual_income_5</item>
+    </array>
+    <array name="kyc_centres_address">
+        <item>Mr. Gaurav Sharma\10One97 Communications Ltd\10F - 1, Sector 6, Noida\10Uttar Pradesh - 201301</item>
+        <item>Mr. Nitesh Singh\10One97 Communications Ltd\10144/533, 150 Feet Ring Road\1022nd Main Road, Sector 1, HSR Layout\10Bangalore - 560102</item>
+        <item>Mr. Soumya Majumdar\10One97 Communications Ltd\106th Floor, Eco Station, BP 07\10Salt Lake, Sector 5\10Kolkata - 700091</item>
+        <item>Ms. Priyanka More\10One97 Communications Ltd\10IV Floor, Enterprise Centre, Domestic Airport\10Next to Orchid Hotel, Vile Parle East\10Mumbai - 400099</item>
+        <item>Ms. Preethi R\10One97 Communications Ltd\10No. 33, 2nd Floor, Balammal Building\10Burkit Road, T.Nagar\10Chennai - 600017</item>
+        <item>Mr. Elluru Manikanta\10One97 Communications Ltd.\10MJR Magnific IT Building, Survey no 75,76,\10Khajaguda Rai Durgam X roads,\10Rangaredd Reddy(Dist), Gachibowli\10Hyderabad - 500008</item>
+    </array>
+    <array name="kyc_centres_spoc">
+        <item>Noida</item>
+        <item>Bangalore</item>
+        <item>Kolkata</item>
+        <item>Mumbai</item>
+        <item>Chennai</item>
+        <item>Hyderabad</item>
+    </array>
+    <array name="kyc_profession_array">
+        <item>@string/profession_professional</item>
+        <item>@string/profession_govt_job</item>
+        <item>@string/profession_private_job</item>
+        <item>@string/profession_public_sec_job</item>
+        <item>@string/profession_business</item>
+        <item>@string/profession_student</item>
+        <item>@string/profession_housewife</item>
+        <item>@string/profession_retired</item>
+        <item>@string/profession_self_employed</item>
+        <item>@string/profession_others</item>
+    </array>
+    <array name="kyc_profession_category_array">
+        <item>@string/kyc_profession_salaried</item>
+        <item>@string/kyc_profession_seob</item>
+        <item>@string/profession_retired</item>
+        <item>@string/kyc_profession_pse</item>
+        <item>@string/profession_student</item>
+        <item>@string/kyc_profession_unemployed</item>
+        <item>@string/housewife</item>
+    </array>
+    <array name="kyc_profession_default_array">
+    </array>
+    <array name="kyc_profession_housewife_array">
+        <item>@string/housewife</item>
+    </array>
+    <array name="kyc_profession_retired_array">
+        <item>@string/profession_govt_job</item>
+        <item>@string/kyc_ngo</item>
+        <item>@string/profession_private_job</item>
+        <item>@string/profession_public_sec_job</item>
+        <item>@string/profession_self_employed</item>
+    </array>
+    <array name="kyc_profession_salaried_array">
+        <item>@string/profession_govt_job</item>
+        <item>@string/profession_private_job</item>
+        <item>@string/profession_public_sec_job</item>
+        <item>@string/kyc_ngo</item>
+    </array>
+    <array name="kyc_profession_self_array">
+        <item>@string/kyc_profession_architect</item>
+        <item>@string/kyc_profession_ca</item>
+        <item>@string/kyc_profession_dr</item>
+        <item>@string/kyc_profession_it</item>
+        <item>@string/kyc_profession_lawyer</item>
+        <item>@string/kyc_profession_reb</item>
+        <item>@string/kyc_profession_sb</item>
+    </array>
+    <array name="kyc_profession_self_own_array">
+        <item>@string/kyc_profession_consultancy</item>
+        <item>@string/kyc_profession_importer</item>
+        <item>@string/kyc_profession_manufacturer</item>
+        <item>@string/kyc_profession_ngo</item>
+        <item>@string/kyc_profession_personal</item>
+        <item>@string/kyc_profession_retailer</item>
+        <item>@string/kyc_profession_trader</item>
+        <item>@string/kyc_profession_wholesaler</item>
+    </array>
+    <array name="kyc_profession_student_array">
+        <item>@string/kyc_profession_college_student</item>
+        <item>@string/kyc_profession_school_student</item>
+    </array>
+    <array name="kyc_profession_unemployed_array">
+        <item>@string/kyc_profession_unemployed</item>
+    </array>
+    <array name="loyalty_wallet_generic_how_it_works_points">
+        <item>Loyalty Wallet balance will be automatically used when you pay with Paytm at the issuing merchant</item>
+        <item>In case of insufficient balance in your Loaylty wallet, the remainder would be deducted from your Paytm Wallet</item>
+        <item>While paying your will see the combined balance of your wallets that is available for payment at the merchant</item>
+    </array>
+    <array name="loyalty_wallet_generic_know_more_points">
+        <item>Make payments for any offline or online food merchant</item>
+        <item>Receive exclusive bonus from merchants</item>
+        <item>Your Loyalty wallet can hold a maximum of Rs 100000</item>
+    </array>
+    <array name="marital_status_list">
+        <item>Married</item>
+        <item>Unmarried</item>
+    </array>
+    <array name="month_array">
+        <item>MM</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </array>
+    <array name="months_in_calender">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+    <array name="months_in_calender_short">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </array>
+    <array name="movie_review_filters">
+        <item>All Reviews</item>
+        <item>Recent Reviews</item>
+        <item>High To Low</item>
+        <item>Low To High</item>
+    </array>
+    <array name="nearbyCatggory">
+        <item>Gas and Petrol</item>
+        <item>Food</item>
+        <item>Retail &amp; Shopping</item>
+        <item>Personal Services</item>
+        <item>Home Services</item>
+        <item>Beauty &amp; Wellness</item>
+        <item>Milk Dairy &amp; Cooperative</item>
+    </array>
+    <array name="new_automatic_emandate_know_more">
+        <item>@string/emandate_automatic_payment_know_more_1</item>
+        <item>@string/emandate_automatic_payment_know_more_2</item>
+        <item>@string/emandate_automatic_payment_know_more_3</item>
+        <item>@string/emandate_automatic_payment_know_more_4</item>
+        <item>@string/emandate_automatic_payment_know_more_5</item>
+        <item>@string/emandate_automatic_payment_know_more_6</item>
+        <item>@string/emandate_automatic_payment_know_more_7</item>
+    </array>
+    <array name="new_automatic_payment_know_more">
+        <item>@string/new_automatic_payment_know_more_1</item>
+        <item>@string/new_automatic_payment_know_more_2</item>
+        <item>@string/new_automatic_payment_know_more_3</item>
+        <item>@string/new_automatic_payment_know_more_5</item>
+        <item>@string/new_automatic_payment_know_more_6</item>
+        <item>@string/new_automatic_payment_know_more_7</item>
+        <item>@string/new_automatic_payment_know_more_8</item>
+        <item>@string/new_automatic_payment_know_more_9</item>
+    </array>
+    <array name="occupation_list">
+        <item>Government</item>
+        <item>Public</item>
+        <item>Private</item>
+        <item>Professional</item>
+        <item>SelfEmployed</item>
+        <item>Student</item>
+        <item>Others</item>
+    </array>
+    <array name="pass_payment_hist_filter_items">
+        <item>All</item>
+        <item>Paid</item>
+        <item>Received</item>
+        <item>Added</item>
+        <item>Cashback</item>
+    </array>
+    <array name="pass_paytm_coins_know_more_points">
+    </array>
+    <array name="passbook_cards">
+        <item>All</item>
+        <item>Paid</item>
+        <item>Received</item>
+    </array>
+    <array name="passbook_cst_tabs">
+        <item>All</item>
+        <item>Paid</item>
+        <item>Received</item>
+        <item>Added</item>
+    </array>
+    <array name="passbook_merchant_tabs">
+        <item>All</item>
+        <item>Paid</item>
+        <item>Refunded</item>
+    </array>
+    <array name="passbook_saving_account_tabs">
+        <item>All</item>
+        <item>Withdrawals</item>
+        <item>Deposits</item>
+    </array>
+    <array name="passbook_search_tabs">
+        <item>All</item>
+    </array>
+    <array name="passbook_tabs">
+        <item>All</item>
+        <item>Paid</item>
+        <item>Received</item>
+        <item>Added</item>
+        <item>On Hold</item>
+    </array>
+    <array name="passbook_tabs_gift_voucher">
+        <item>All</item>
+        <item>Paid</item>
+        <item>Added</item>
+    </array>
+    <array name="passbook_tabs_withoutonhold">
+        <item>All</item>
+        <item>Paid</item>
+        <item>Received</item>
+        <item>Added</item>
+    </array>
+    <array name="passbooksendtobank_tabs">
+        <item>All</item>
+    </array>
+    <array name="payment_bank_relationship">
+        <item>Husband</item>
+        <item>Wife</item>
+        <item>Mother</item>
+        <item>Father</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Guardian</item>
+        <item>Other</item>
+    </array>
+    <array name="pr_gst_states">
+        <item>00|Select</item>
+        <item>01|Andaman and Nicobar Islands</item>
+        <item>02|Andhra Pradesh</item>
+        <item>03|Andhra Pradesh(Before Division)</item>
+        <item>04|Arunachal Pradesh</item>
+        <item>05|Assam</item>
+        <item>06|Bihar</item>
+        <item>07|Chandigarh</item>
+        <item>08|Chhattisgarh</item>
+        <item>09|Dadra and Nagar Haveli</item>
+        <item>10|Daman and Diu</item>
+        <item>11|Delhi</item>
+        <item>12|Goa</item>
+        <item>13|Gujarat</item>
+        <item>14|Haryana</item>
+        <item>15|Himachal Pradesh</item>
+        <item>16|Jammu And Kashmir</item>
+        <item>17|Jharkhand</item>
+        <item>18|Karnataka</item>
+        <item>19|Kerala</item>
+        <item>20|Lakshadweep Islands</item>
+        <item>21|Madhya Pradesh</item>
+        <item>22|Maharashtra</item>
+        <item>23|Manipur</item>
+        <item>24|Meghalaya</item>
+        <item>25|Mizoram</item>
+        <item>26|Nagaland</item>
+        <item>27|Odisha</item>
+        <item>28|Puducherry</item>
+        <item>29|Punjab</item>
+        <item>30|Rajasthan</item>
+        <item>31|Sikkim</item>
+        <item>32|Tamil Nadu</item>
+        <item>33|Telangana</item>
+        <item>34|Tripura</item>
+        <item>35|Uttar Pradesh</item>
+        <item>36|Uttarakhand</item>
+        <item>37|West Bengal</item>
+    </array>
+    <array name="preferences_front_light_options">
+        <item>@string/preferences_front_light_on</item>
+        <item>@string/preferences_front_light_auto</item>
+        <item>@string/preferences_front_light_off</item>
+    </array>
+    <array name="preferences_front_light_values">
+        <item>ON</item>
+        <item>AUTO</item>
+        <item>OFF</item>
+    </array>
+    <array name="prefred_language">
+        <item>English</item>
+        <item>हिंदी</item>
+    </array>
+    <array name="profession_category_array">
+        <item>Salaried</item>
+        <item>Self Employed/Own Business</item>
+        <item>@string/profession_retired</item>
+        <item>Professional Self Employed</item>
+        <item>@string/profession_student</item>
+        <item>Unemployed</item>
+        <item>House Wife</item>
+    </array>
+    <array name="profession_housewife_array">
+        <item>House Wife</item>
+    </array>
+    <array name="profession_retired_array">
+        <item>@string/profession_govt_job</item>
+        <item>NGO</item>
+        <item>@string/profession_private_job</item>
+        <item>@string/profession_public_sec_job</item>
+        <item>@string/profession_self_employed</item>
+    </array>
+    <array name="profession_salaried_array">
+        <item>@string/profession_govt_job</item>
+        <item>@string/profession_private_job</item>
+        <item>@string/profession_public_sec_job</item>
+        <item>NGO</item>
+    </array>
+    <array name="profession_self_array">
+        <item>Architect</item>
+        <item>Chartered Accountant</item>
+        <item>Doctor</item>
+        <item>IT Consultant</item>
+        <item>Lawyer</item>
+        <item>Real Estate Broking</item>
+        <item>Share Broking</item>
+        <item>Wholesaler</item>
+    </array>
+    <array name="profession_self_own_array">
+        <item>Consultany</item>
+        <item>Importer</item>
+        <item>Manufacturer</item>
+        <item>NGO</item>
+        <item>Personal</item>
+        <item>Retailer</item>
+        <item>Trader</item>
+        <item>Wholesaler</item>
+    </array>
+    <array name="profession_student_array">
+        <item>College Student</item>
+        <item>School Student</item>
+    </array>
+    <array name="profession_unemployed_array">
+        <item>Unemployed</item>
+    </array>
+    <array name="recharge_summary_cancel_messages">
+        <item>@string/cancel_recharge_message_1</item>
+        <item>@string/cancel_recharge_message_2</item>
+    </array>
+    <array name="recharge_summary_imps_cancel_messages">
+        <item>@string/cancel_recharge_imps_message_1</item>
+    </array>
+    <array name="recharge_summary_moeny_deducted_messages">
+        <item>@string/money_deducted_message_1</item>
+        <item>@string/money_deducted_message_2</item>
+        <item>@string/money_deducted_message_3</item>
+        <item>@string/money_deducted_message_4</item>
+    </array>
+    <array name="security_question">
+        <item>What is your pet name?</item>
+        <item>What was the name of your first school?</item>
+        <item>Who was your Childhood hero?</item>
+        <item>What is your favorite past-time?</item>
+        <item>What is your all time favorite sports team?</item>
+        <item>What is your fathers middle name?</item>
+        <item>What make was your first car or bike?</item>
+        <item>Where did you first meet your spouse?</item>
+    </array>
+    <array name="smart_icon_hindi">
+        <item>Mobile \10 Prepaid</item>
+        <item>Mobile \10 Postpaid</item>
+        <item>Electricity</item>
+        <item>DTH</item>
+        <item>Fee</item>
+        <item>Metro</item>
+        <item>Broadband</item>
+        <item>Landline</item>
+        <item>Datacard</item>
+        <item>Gas</item>
+        <item>Insurance</item>
+        <item>Water</item>
+        <item>Petrol</item>
+    </array>
+    <array name="sub_categories_array_banned">
+        <item>Alcohol, tobacco or drugs</item>
+        <item>Firearms or weapons</item>
+        <item>Medical or prescription items</item>
+        <item>Duplicate listings</item>
+        <item>This product is offensive</item>
+        <item>Other prohibited or banned items</item>
+    </array>
+    <array name="sub_categories_array_copy">
+        <item>This item is counterfeit</item>
+        <item>This listing infringes your copyright, trademark or intellectual property rights</item>
+        <item>The description encourages infringement</item>
+        <item>Other copyright or trademark concerns</item>
+    </array>
+    <array name="sub_categories_array_listing">
+        <item>I&apos;m a seller and this is copied from my listing</item>
+        <item>My images or description are used without permission</item>
+        <item>Pricing issues</item>
+        <item>Duplicate listings</item>
+        <item>Inappropriate links / credits</item>
+        <item>Misleading title or description</item>
+        <item>Other concerns with this listing</item>
+    </array>
+    <array name="sub_categories_array_other">
+        <item>Other concerns</item>
+    </array>
+    <array name="tittle">
+        <item>Mr</item>
+        <item>Mrs</item>
+        <item>Ms</item>
+    </array>
+    <array name="toll_wallet_how_it_works_points">
+        <item>Your toll wallet needs to maintain a balance of Rs 150</item>
+        <item>Direct debits from your Paytm Wallet</item>
+        <item>Incase of insufficient balance in your Paytm Wallet, payment would be deducted from your Toll wallet.</item>
+    </array>
+    <array name="toll_wallet_know_more_points">
+        <item>Easy payments at more than 450 toll plazas on national highways</item>
+        <item>Direct debits from your Paytm Wallet</item>
+        <item>Your toll wallet needs to maintain a minimum balance to remain active</item>
+    </array>
+    <array name="train_meals">
+        <item>Veg</item>
+        <item>Non-Veg</item>
+        <item>No food</item>
+    </array>
+    <array name="train_sort_by_array">
+        <item>Availability - Show Available first</item>
+        <item>Duration - Shortest to Longest</item>
+        <item>Departure Time - Earliest to Late</item>
+        <item>Departure Time - Late to Earliest</item>
+        <item>Arrival Time - Earliest to Late</item>
+        <item>Arrival Time - Late to Earliest</item>
+    </array>
+    <array name="travel_wallet_how_it_works_points">
+        <item>Make payments for movie tickets on Paytm</item>
+        <item>Earn exclusive cashbacks and bonus</item>
+        <item>Your Paytm Travel Loyalty wallet can hold a maximum of Rs 100000</item>
+        <item>Paytm Travel Loyalty wallet balance is non transferrable and can only be used to book movie tickets on Paytm</item>
+    </array>
+    <array name="travel_wallet_know_more_points">
+        <item>Make payments for movie tickets on Paytm</item>
+        <item>Earn exclusive cashbacks and bonus</item>
+        <item>Your Paytm Travel Loyalty wallet can hold a maximum of Rs 100000</item>
+    </array>
+    <array name="updatestab_withNews">
+        <item>For You</item>
+        <item>Games</item>
+        <item>Nearby Stores</item>
+        <item>Following</item>
+    </array>
+    <array name="upi_mandate_frequency_array">
+        <item>@string/upi_monthly</item>
+        <item>@string/upi_daily</item>
+        <item>@string/upi_weekly</item>
+        <item>@string/upi_fortnightly</item>
+        <item>@string/upi_bimonthly</item>
+        <item>@string/upi_quarterly</item>
+        <item>@string/upi_half_yearly</item>
+        <item>@string/upi_yearly</item>
+    </array>
+    <array name="upi_mandate_schedule_payment_array">
+        <item>@string/upi_mandate_on_scheduled_date</item>
+        <item>@string/upi_mandate_before_scheduled_date</item>
+        <item>@string/upi_mandate_after_scheduled_date</item>
+    </array>
+    <array name="upi_mandate_weekly_array">
+        <item>@string/upi_monday</item>
+        <item>@string/upi_tuesday</item>
+        <item>@string/upi_wednesday</item>
+        <item>@string/upi_thursday</item>
+        <item>@string/upi_friday</item>
+        <item>@string/upi_saturday</item>
+        <item>@string/upi_sunday</item>
+    </array>
+    <array name="upi_months_array">
+        <item>@string/upi_january</item>
+        <item>@string/upi_february</item>
+        <item>@string/upi_march</item>
+        <item>@string/upi_april</item>
+        <item>@string/upi_may</item>
+        <item>@string/upi_june</item>
+        <item>@string/upi_july</item>
+        <item>@string/upi_august</item>
+        <item>@string/upi_september</item>
+        <item>@string/upi_october</item>
+        <item>@string/upi_november</item>
+        <item>@string/upi_december</item>
+    </array>
+    <array name="v8_os_cc_why_processing_messages">
+        <item>@string/v8_os_why_processing_message_new_1</item>
+        <item>@string/v8_os_why_processing_message_new_2</item>
+    </array>
+    <array name="v8_os_money_deducted_messages">
+        <item>@string/v8_os_money_deducted_message_1</item>
+        <item>@string/v8_os_money_deducted_message_2</item>
+        <item>@string/v8_os_money_deducted_message_3</item>
+    </array>
+    <array name="v8_os_money_deducted_messages_emandate">
+        <item>@string/v8_os_money_deducted_message_emandate_1</item>
+        <item>@string/v8_os_money_deducted_message_emandate_2</item>
+        <item>@string/v8_os_money_deducted_message_emandate_3</item>
+    </array>
+    <array name="view_all_issues">
+        <item>All</item>
+        <item>Open</item>
+        <item>Resolved</item>
+    </array>
+</resources>

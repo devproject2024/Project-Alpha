@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="26dp">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/event_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/event_payment_details" app:fontType="3"/>
+            <TextView android:textSize="10sp" android:textColor="#909090" android:id="@+id/event_paytm_order_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/event_payment_details" app:fontType="2"/>
+            <View android:background="@color/event_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/event_payment_type_paytm_cash_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/event_text_order_summary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_summary" android:layout_alignParentLeft="true" app:fontType="2"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/event_text_order_summary_color" android:id="@+id/event_paytm_cash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="@color/event_text_order_summary_color" android:id="@+id/event_paytm_cash_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/event_payment_type_netbanking_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/event_text_order_summary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" app:fontType="2"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/event_text_order_summary_color" android:id="@+id/event_paytm_netbanking_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+                </RelativeLayout>
+                <TextView android:textSize="12sp" android:textColor="@color/event_text_order_summary_color" android:id="@+id/event_order_summary_netbanking_txn" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="16dp">
+                <TextView android:textSize="14sp" android:textColor="@color/event_text_gray_color" android:id="@+id/event_num_of_tickets_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" app:fontType="2"/>
+                <TextView android:textSize="14sp" android:textColor="@color/event_text_gray_color" android:id="@+id/event_num_of_tickets_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="16dp">
+                <TextView android:textSize="14sp" android:textColor="@color/event_text_gray_color" android:id="@+id/conv_fee_taxes_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_taxes_and_convenience_fee" android:maxLines="2" android:layout_alignParentLeft="true" app:fontType="2"/>
+                <TextView android:textSize="14sp" android:textColor="@color/event_text_gray_color" android:id="@+id/event_taxes_and_fees_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+            </RelativeLayout>
+            <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="16dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/event_text_gray_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_convenience_charges" android:layout_alignParentLeft="true" app:fontType="2"/>
+                    <ImageView android:id="@+id/img_convenience_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/tax_info"/>
+                </LinearLayout>
+                <TextView android:textSize="14sp" android:textColor="@color/event_text_gray_color" android:id="@+id/event_convenience_charges_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+            </RelativeLayout>
+            <View android:background="@color/event_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="14dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <TextView android:textSize="14sp" android:textColor="@color/event_text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_order_total" android:layout_alignParentLeft="true" app:fontType="2"/>
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/event_text_order_summary_color" android:id="@+id/event_order_total_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="3"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/event_summary_payment_details_promo_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/event_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="15dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                    <com.paytm.utility.RoboTextView android:textSize="10sp" android:textColor="@color/event_seat_type_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/txt_events_applied_promo" android:background="@drawable/movie_promo_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="3"/>
+                    <com.paytm.utility.RoboTextView android:textSize="10sp" android:textColor="@color/event_text_gray_color" android:gravity="top" android:id="@+id/txt_events_applied_promo_desc" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_centerVertical="true" app:fontType="3"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

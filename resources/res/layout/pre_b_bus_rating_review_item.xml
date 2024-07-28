@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="5dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_reviews_lyt" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/no_review" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40dp"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_15sp" android:textStyle="normal" android:textColor="@color/color_FF666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_no_review_found_new" app:fontType="2"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/review_lyt" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/grid_sort_item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp" android:text="@string/bus_review" android:fontFamily="@string/font_family_roboto_medium"/>
+            <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/color_gray" android:id="@+id/bus_review_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(1055)" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

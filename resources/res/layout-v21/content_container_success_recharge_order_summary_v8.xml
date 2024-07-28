@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container_card_recharge_item" android:layout_width="match_parent" android:layout_height="match_parent" android:transitionName="container_card_recharge_item" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="@dimen/dimen_8dp" app:cardElevation="2dp" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="false">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_card_recharge_order_details" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/content_success_recharge_order_summary_v8"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/floating_nav_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_30dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.one97.paytm.upi.util.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/swipe_layout_2" android:layout_width="match_parent" android:layout_height="wrap_content" app:dragEdge="2" app:mode="oneLine">
+    <FrameLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="@dimen/dimen_180dp" android:layout_height="match_parent">
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/tv_history" android:background="@drawable/beneficiary_history_rounded_002f6c" android:visibility="visible" android:layout_width="100dp" android:layout_height="match_parent" android:text="History" android:fontFamily="sans-serif" android:letterSpacing="0.06"/>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/tv_remove" android:background="@drawable/beneficiary_remove_rounded_ff585d" android:layout_width="95dp" android:layout_height="match_parent" android:text="Remove" android:fontFamily="sans-serif" android:letterSpacing="0.06"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/contact_child_row_lyt"/>
+    </FrameLayout>
+</net.one97.paytm.upi.util.SwipeRevealLayout>

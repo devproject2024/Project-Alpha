@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/top_bar" android:background="@android:color/white" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/back_key" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/mall_back_arrow"/>
+        <com.paytmmall.artifact.widget.RoboTextView android:textSize="19sp" android:textColor="@android:color/black" android:id="@+id/tv_cart_header" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_weight="1" app:fontType="4"/>
+    </LinearLayout>
+    <View android:id="@+id/top_bar_separater" android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/top_bar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/wish_list_recyclerview" android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_bar_separater"/>
+    <RelativeLayout android:id="@+id/wish_list_loading_progress_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ProgressBar android:id="@+id/progress_bar" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/lyt_filter_overlay_container" android:background="@color/translucent_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_bar_separater">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/mall_fly_out_filter_lyt_in_pdp"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/empty_wishlist_lyt" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_bar_separater" android:layout_centerInParent="true">
+        <com.paytmmall.artifact.widget.RoboTextView android:textSize="18sp" android:textColor="@color/cart_black" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/nothing_here" app:fontType="2"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" app:srcCompat="@drawable/mall_empty_wishlist_image"/>
+        <com.paytmmall.artifact.widget.RoboTextView android:textSize="16sp" android:textColor="@color/cart_grey" android:gravity="center" android:layout_gravity="center" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/wishlist_info_message" app:fontType="2"/>
+        <Button android:textSize="16sp" android:textColor="@color/mall_orange" android:layout_gravity="center_horizontal" android:id="@+id/shop_now_buton" android:background="@drawable/mall_action_button_bg" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="5dp" android:text="@string/start_shop" android:textAllCaps="false"/>
+    </LinearLayout>
+    <include android:id="@+id/wishlist_sign_out_screen" android:layout_below="@+id/top_bar_separater" layout="@layout/mall_wish_list_signedout_page"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_15dp">
+    <View android:background="@color/color_f4f4f4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_15dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_444444" android:gravity="left" android:id="@+id/detail_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_444444" android:gravity="right" android:id="@+id/detail_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <TextView android:textSize="@dimen/dimen_10sp" android:textColor="@color/color_444444" android:gravity="left" android:id="@+id/sub_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_3dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_03b8f5" android:gravity="right" android:layout_gravity="center_vertical" android:id="@+id/wallet_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0"/>
+    </LinearLayout>
+</LinearLayout>

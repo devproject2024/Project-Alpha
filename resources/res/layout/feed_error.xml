@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/feed_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/FeedItemBackground">
+    <TextView android:textSize="16sp" android:gravity="center" android:id="@+id/feed_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_server_error" android:maxEms="15" android:drawableTop="@drawable/feed_no_data" android:layout_centerInParent="true" style="@style/NoInternet"/>
+</RelativeLayout>

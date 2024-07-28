@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/list_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/mypostcards_recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <include android:layout_gravity="bottom" android:visibility="gone" layout="@layout/lucky_lifafa_footer"/>
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/id_noPostCardLayout" android:padding="@dimen/dimen_10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dimen_10dp">
+            <include android:id="@+id/empty_outbox_lyt_outer" android:visibility="gone" layout="@layout/postcard_empty_outbox_layout"/>
+            <ImageView android:id="@+id/no_postcard_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp" android:src="@drawable/empty_letterbox" android:contentDescription="TODO"/>
+            <TextView android:textSize="17sp" android:textStyle="normal" android:textColor="#222222" android:gravity="center_horizontal" android:id="@+id/no_postcard_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_20dp" android:text="@string/no_received_postcard" android:lineSpacingExtra="9sp" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="@dimen/dimen_15sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/send_postcard_button" android:background="@drawable/postcard_send_horsetrack_blue" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/send_a_post_card"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_wallet_loader"/>
+</LinearLayout>

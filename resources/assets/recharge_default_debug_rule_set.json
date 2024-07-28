@@ -1,0 +1,79 @@
+[
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "deviceBindingVersionName",
+    "replacement_pattern": "8.12.2",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "mobileFlowV3VersionMap",
+    "replacement_pattern": "{'isMobileNewFlowEnabled':'8.12.2'}",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "ru_skip_deal_version",
+    "replacement_pattern": "{'6':'8.12.2','7':'8.12.2','9':'8.12.2','11':'8.12.2','17':'8.12.2','18':'8.12.2','19':'8.12.2','21':'8.12.2','23':'8.12.2','75505':'8.12.2','101975':'8.12.2','156705':'8.12.2', '26':'8.12.2','68869':'8.12.2','78640':'8.12.2','166690':'8.12.2','131865':'8.12.2','64739':'8.12.2','37217':'8.12.2','106022':'8.12.2','132935':'8.12.2','127781':'8.12.2','204854':'8.12.2','207075':'8.12.2', '219876':'8.12.2', '262072':'8.12.2', '101950':'8.12.0'}",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "SFOffersVersionMap",
+    "replacement_pattern": "{'6':'8.12.2','7':'8.12.2','9':'8.12.2','11':'8.12.2','17':'8.12.2','18':'8.12.2','19':'8.12.2','21':'8.12.2','23':'8.12.2','75505':'8.12.2','101975':'8.12.2','156705':'8.12.2', '26':'8.12.2','68869':'8.12.2','78640':'8.12.2','166690':'8.12.2','131865':'8.12.2','64739':'8.12.2','37217':'8.12.2','106022':'8.12.2','132935':'8.12.2','127781':'8.12.2','204854':'8.12.2','207075':'8.12.2', '219876':'8.12.2', '262072':'8.12.2', '101950':'8.12.0'}",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "isStoreFrontEnabledFromGTM",
+    "replacement_pattern": "true",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "recharge_os_versionNewKey",
+    "replacement_pattern": "{'6':'8.12.2','7':'8.12.2','9':'8.12.2','11':'8.12.2','17':'8.12.2','18':'8.12.2','19':'8.12.2','21':'8.12.2','23':'8.12.2','75505':'8.12.2','101975':'8.12.2','156705':'8.12.2','26':'8.12.2','68869':'8.12.2','78640':'8.12.2','166690':'8.12.2','131865':'8.12.2','64739':'8.12.2','37217':'8.12.2','106022':'8.12.2','132935':'8.12.2','127781':'8.12.2','204854':'8.12.2','207075':'8.12.2','219876':'8.12.2','262072':'8.14.2'}",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "recharge_os_v8_deal_verticalsNewKey",
+    "replacement_pattern": "{'66':'8.12.2'}",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "recharge_os_v8_insurance_verticalsNewKey",
+    "replacement_pattern": "{'79':'8.12.2'}",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "recharge_os_ignore_verticals",
+    "replacement_pattern": "{'175': '8.12.2'}",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "category_menu_ignore_verticals",
+    "replacement_pattern": "{'21': '8.12.2'}",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "recharge_os_smart_card",
+    "replacement_pattern": "['1201974419','63793845','1200146452','7226428','40778051','145875304','7226428']",
+    "is_full_replacement": false,
+    "is_muted": false
+  }
+]

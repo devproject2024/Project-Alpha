@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+    <ImageView android:id="@+id/imax_movie_pager_img" android:background="@drawable/light_white_border" android:layout_width="match_parent" android:layout_height="192dp" android:src="@drawable/android_movie_placeholder_bg" android:scaleType="fitXY"/>
+    <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/imax_movie_pager_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/gift_card_dummy_header" android:maxLines="3" android:fontFamily="@string/font_family_roboto_medium"/>
+    <Button android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/imax_pager_button" android:background="@drawable/imax_bg_btn_blue" android:layout_width="119dp" android:layout_height="32dp" android:layout_marginTop="8dp" android:text="@string/book_tickets"/>
+</LinearLayout>

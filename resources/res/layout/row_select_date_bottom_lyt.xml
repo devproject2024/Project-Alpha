@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="@dimen/dimen_52dp" android:layout_height="@dimen/dimen_48dp" android:layout_marginTop="@dimen/dimen_10dp">
+    <LinearLayout android:gravity="center" android:id="@+id/lyt_day_date_container" android:background="@drawable/date_bg_drawable" android:layout_width="@dimen/dimen_52dp" android:layout_height="@dimen/dimen_48dp">
+        <TextView android:textSize="@dimen/dimen_14dp" android:textStyle="normal" android:textColor="#222222" android:gravity="center_horizontal" android:id="@+id/txt_day_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+</RelativeLayout>

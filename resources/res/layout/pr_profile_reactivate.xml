@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_deactivate" android:tag="layout/pr_profile_reactivate_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+    <LinearLayout android:layout_width="match_parent" style="@style/pr_profile_header">
+        <TextView android:id="@+id/tvAccountStatus" style="@style/pr_profile_section_header_text"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#182233" android:id="@+id/tvStatusMsg" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pr_deactivate_account_subtext" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+    <com.paytm.business.merchantprofile.widget.ShimmerFrameLayout android:id="@+id/shimmer_deactivate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" app:shimmer_auto_start="true">
+        <com.business.common_module.view.widget.CustomTextView android:textSize="14sp" android:background="@color/hint_grey" android:paddingTop="8dp" android:layout_width="300dp" android:layout_height="wrap_content" android:lineSpacingExtra="4sp" app:custom_tv_font_name="7"/>
+    </com.paytm.business.merchantprofile.widget.ShimmerFrameLayout>
+    <include android:id="@+id/view_display_deactivation_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/ll_disp_name" layout="@layout/pr_view_edit_change_in_progress_new"/>
+    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#00b9f5" android:id="@+id/tv_deactivate_account" android:background="?attr/selectableItemBackgroundBorderless" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pr_deactivate_my_account" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+</LinearLayout>

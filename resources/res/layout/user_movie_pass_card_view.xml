@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:clipChildren="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_9dp" android:text="Active Movie Pass" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/activePassBg" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignLeft="@+id/llCardHolder" android:layout_alignTop="@+id/llCardHolder" android:layout_alignRight="@+id/llCardHolder" android:layout_alignBottom="@+id/llCardHolder"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llCardHolder" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_24dp" android:paddingRight="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_20dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_6dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_6dp" android:elevation="6dp">
+            <com.paytm.utility.RoboTextView android:textSize="10sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/mp_card_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:letterSpacing="-0.01" app:fontType="2"/>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:weightSum="9">
+                <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+                    <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <com.paytm.utility.RoboTextView android:textSize="18sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/mp_card_tickets_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+                        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/mp_card_ticket_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/remaining" android:alpha="0.7" android:fontFamily="sans-serif" app:fontType="2"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <com.paytm.utility.RoboTextView android:textSize="18sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/mp_card_validity_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+                        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/mp_card_validity_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/validity" android:alpha="0.7" android:fontFamily="sans-serif" app:fontType="2"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+                    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/dimen_15dp">
+                        <com.paytm.utility.RoboTextView android:textSize="18sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/mp_small_card_price_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+                        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/mp_card_price_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/savings" android:alpha="0.7" android:fontFamily="sans-serif" app:fontType="2"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.paytm.utility.RoboTextView android:textSize="11sp" android:textStyle="italic" android:textColor="#999999" android:id="@+id/mp_small_card_bottom_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_9dp" android:fontFamily="sans-serif" app:fontType="5"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="14sp" android:textColor="@color/white" android:id="@+id/events_single_traveller_form_continue_button" android:background="@drawable/bg_btn_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="24dp" android:text="@string/events_continue_button" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>

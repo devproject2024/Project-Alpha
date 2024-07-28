@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+    <RelativeLayout android:id="@+id/top_bar_conatiner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <RelativeLayout android:id="@+id/bus_price_filter_recycler_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/horizontal_list_view_price_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/single_lady_lyt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/ladies_seat_info_layout">
+            <CheckBox android:textSize="@dimen/dimen_16sp" android:id="@+id/check_single_lady" android:background="@drawable/travel_res_bus_check_box" android:clickable="true" android:layout_width="@dimen/dimen_28dp" android:layout_height="@dimen/dimen_28dp" android:button="@android:color/transparent"/>
+            <TextView android:textSize="11sp" android:textStyle="normal" android:textColor="#818080" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:text="@string/single_lady_booking" android:layout_toRightOf="@+id/check_single_lady" android:fontFamily="sans-serif-medium"/>
+        </RelativeLayout>
+        <TextView android:textSize="10sp" android:textColor="@android:color/black" android:gravity="center_horizontal" android:id="@+id/txt_ladies_seat_info" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ladies_seat_info_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/bus_price_filter_recycler_layout">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:contentDescription="@string/app_name"/>
+                <TextView android:textSize="10sp" android:textColor="@color/cart_black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/bus_seat_ladies"/>
+            </LinearLayout>
+            <View android:id="@+id/ladies_seat_info_layout_divider" android:background="@color/bg_grid_grey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/bottom_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/lower_upper_root_layout" android:paddingBottom="@dimen/dimen_15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/lower_birth_selection" android:background="@drawable/travel_res_bus_left_selected" android:layout_width="112dp" android:layout_height="35dp" android:layout_marginLeft="8dp" android:text="@string/lower_deck" android:textAllCaps="false"/>
+                <TextView android:textSize="13sp" android:textColor="#4a4a4a" android:gravity="center" android:id="@+id/upper_birth_selection" android:background="@drawable/travel_res_bus_right_default" android:layout_width="112dp" android:layout_height="35dp" android:layout_marginRight="3dp" android:text="@string/upper_deck" android:textAllCaps="false"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_1dp" android:paddingRight="@dimen/dimen_1dp" android:paddingBottom="@dimen/dimen_1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_20_dp" android:layout_marginRight="@dimen/wallet_20_dp" android:layout_above="@+id/bottom_bar_layout" android:layout_below="@+id/bus_price_filter_recycler_layout">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager_select_seats" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/bottom_bar_layout">
+            <TextView android:textSize="10sp" android:textColor="@android:color/black" android:gravity="left" android:layout_gravity="left" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/txt_bottom_bus_error" android:background="@color/movie_select_seat_bottom_error_bg" android:padding="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_seat_error"/>
+        <RelativeLayout android:id="@+id/lyt_progress_bar" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/seat_loader_view" android:layout_width="@dimen/dimen_100dp" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

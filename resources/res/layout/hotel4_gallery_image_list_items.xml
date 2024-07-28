@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/hotel4_gallery_image_list_items_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_2dp">
+    <ImageView android:id="@+id/image_list_gallery" android:tag="binding_1" android:background="@color/h4_image_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_200dp" android:scaleType="center" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

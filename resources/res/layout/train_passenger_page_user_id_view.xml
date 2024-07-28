@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/user_id_container" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp">
+    <RelativeLayout android:id="@+id/user_id_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="normal" android:textColor="#999999" android:id="@+id/user_id_heading" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/irctc_user_id" android:layout_alignParentLeft="true" app:fontType="3"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/train_add_extra_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp" android:text="@string/edit" app:fontType="3"/>
+        </LinearLayout>
+        <com.paytm.utility.RoboTextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/user_id_text" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/user_id_heading" app:fontType="3"/>
+    </RelativeLayout>
+    <View android:id="@+id/user_id_divider" android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="5dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_below="@+id/user_id_layout"/>
+</RelativeLayout>

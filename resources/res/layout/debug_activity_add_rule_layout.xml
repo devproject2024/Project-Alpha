@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioGroup android:orientation="vertical" android:id="@+id/radio_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:checkedButton="@+id/string_search_replacement">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Select Rule Type"/>
+        <RadioButton android:id="@+id/string_search_replacement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="String Search Replacement"/>
+        <RadioButton android:id="@+id/gtm_value_override" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="GTM Value Override"/>
+    </RadioGroup>
+    <EditText android:id="@+id/search_string" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:hint="Search String"/>
+    <EditText android:id="@+id/replacement_string" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:hint="Replace With"/>
+    <CheckBox android:id="@+id/full_replace_selection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Select if entire url replacement is required"/>
+    <LinearLayout android:orientation="horizontal" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/cancel" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1"/>
+        <Button android:id="@+id/ok" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

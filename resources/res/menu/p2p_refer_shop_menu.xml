@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/p2p_choose_new" android:title="@string/p2p_choose_new" app:showAsAction="never"/>
+    <item android:id="@+id/p2p_take_new" android:title="@string/p2p_take_new" app:showAsAction="never"/>
+    <item android:id="@+id/p2p_delete" android:title="@string/delete" app:showAsAction="never"/>
+</menu>

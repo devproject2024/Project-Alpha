@@ -1,0 +1,13 @@
+package net.one97.paytm.passbook.beans.postpaid;
+
+public enum CJRPPApplicationStatusEnum {
+    NOT_YET_SUBMITTED,
+    KYC_SHARING_ACCEPTED,
+    APPLICATION_IN_PROGRESS,
+    APPLICATION_PENDING_APPROVAL,
+    APPLICATION_ACCEPTED,
+    APPLICATION_CONFIRMED,
+    APPLICATION_REJECTED,
+    DEACTIVE,
+    NONE
+}

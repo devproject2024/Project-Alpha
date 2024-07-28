@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/prime_bottom_pre_prime_bg"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/prime_bottom_pre_prime_bg"/>
+            <corners android:radius="3dp"/>
+            <padding android:left="@dimen/dimen_30dp" android:top="@dimen/dimen_7dp" android:right="@dimen/dimen_30dp" android:bottom="@dimen/dimen_7dp"/>
+        </shape>
+    </item>
+</selector>

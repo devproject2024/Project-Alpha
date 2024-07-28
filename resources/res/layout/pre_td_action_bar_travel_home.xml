@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/th_empty_view" android:background="@android:color/transparent" android:layout_width="@dimen/dimen_55dp" android:layout_height="@dimen/dimen_15dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp" android:layout_toLeftOf="@+id/th_empty_view" android:layout_toStartOf="@+id/th_empty_view">
+        <ImageView android:gravity="center" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_17dp" android:src="@drawable/pre_td_travel_home_icon" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/travel_subtitle" android:visibility="gone" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/wallet_40_dp" android:layout_alignParentRight="true">
+        <ImageView android:background="@drawable/help_24_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

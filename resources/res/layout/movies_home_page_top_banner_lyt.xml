@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1">
+    <net.one97.paytm.o2o.movies.common.customui.SlidingViewPager android:layout_gravity="center_horizontal" android:id="@+id/image_pager" android:background="@color/white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/moviepass_offers_lyt"/> //OTT 
+    <include android:id="@+id/ottLayout" layout="@layout/movies_home_ott"/>
+</LinearLayout>

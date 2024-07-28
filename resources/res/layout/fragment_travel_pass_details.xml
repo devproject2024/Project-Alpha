@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_travel_pass_details_0" android:background="@color/windowBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/about_info_container" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/view_passes_button"/>
+        <include android:id="@+id/view_passes_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/vh_travel_button"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/progress_container" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+    </RelativeLayout>
+    <include android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/tp_empty_screen_view"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/item_carosel_two_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dimen_12dp">
+    <ImageView android:layout_gravity="center" android:tag="binding_1" android:padding="@dimen/dimen_2dp" android:layout_width="175dp" android:layout_height="103dp" android:layout_marginTop="1dp" android:scaleType="fitXY"/>
+    <View android:id="@+id/separator" android:background="@color/filter_gray_color" android:paddingLeft="@dimen/dimen_5dp" android:paddingRight="@dimen/dimen_5dp" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginStart="@dimen/dimen_15dp"/>
+</LinearLayout>

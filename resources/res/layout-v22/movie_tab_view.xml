@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/parentLayout" android:background="@color/white" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/date_selection_lin_lay" android:background="@drawable/movie_date_selector" android:paddingLeft="17dp" android:paddingTop="9dp" android:paddingRight="17dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/ripple_simple_gray" android:paddingHorizontal="17dp" android:paddingVertical="9dp">
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tabTextday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" app:fontType="3"/>
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/tabTextdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tabTextday" app:fontType="3"/>
+    </RelativeLayout>
+</LinearLayout>

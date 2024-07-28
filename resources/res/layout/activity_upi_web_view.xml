@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/webview_lyt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <androidx.appcompat.widget.Toolbar android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:id="@+id/backArrow" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/dimen_4dp" android:clickable="true" android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp" android:src="@drawable/back_arrow" android:layout_marginStart="@dimen/dimen_12dp"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+        <WebView android:id="@+id/payment_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/webview_load_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/paytm_progress_blue"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

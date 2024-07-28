@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/dimen_3dp" android:paddingBottom="@dimen/dimen_3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/seperator" android:background="@color/color_FFEBEBEB" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginBottom="@dimen/dimen_15dp"/>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_11sp" android:typeface="normal" android:textColor="@color/color_FF222222" android:id="@+id/display_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/seperator" android:layout_alignParentLeft="true" app:fontType="3"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/expandable_frame_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/seperator" android:layout_alignParentRight="true">
+        <RelativeLayout android:id="@+id/expandable_arrow_lyt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_10dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/expandable_arrow" android:visibility="visible" android:layout_width="@dimen/dimen_15dp" android:layout_height="@dimen/dimen_10dp"/>
+        </RelativeLayout>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:typeface="normal" android:textColor="@color/color_FF222222" android:id="@+id/display_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="3"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/cancellation_charges_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/display_text">
+        <RelativeLayout android:paddingLeft="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:id="@+id/operator_cancellation_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:id="@+id/operator_cancellation_fare_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:textColor="@color/color_FF9B9B9B" android:id="@+id/cashback_already_credited_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:id="@+id/cashback_already_credited__amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/return_steps_ctr_bg_size" android:layout_marginLeft="@dimen/dimen_8dp">
+        <com.paytm.utility.RoboTextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/return_step" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_8dp" android:text="Step" android:fontFamily="sans-serif" app:fontType="3"/>
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/bg_vertical_dotted_line_fastag" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@+id/return_step_ctr_container" android:background="@drawable/bg_return_steps_ctr" android:layout_width="@dimen/return_steps_ctr_bg_size" android:layout_height="@dimen/return_steps_ctr_bg_size">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/return_step_ctr_text_font_size" android:textColor="@color/return_step_ctr_text_color" android:id="@+id/return_step_ctr" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="3"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textStyle="normal" android:textColor="#222222" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/return_step_heading" android:layout_width="match_parent" android:layout_height="@dimen/return_step_heading_height" android:layout_marginLeft="@dimen/return_step_heading_left_margin" android:lineSpacingExtra="9sp" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/return_steps_subtitles_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/return_steps_subtitles_container_top_margin">
+                <LinearLayout android:orientation="vertical" android:id="@+id/seller_address_container" android:background="@drawable/bg_refund_source_container_fastag" android:paddingLeft="@dimen/dimen_13dp" android:paddingTop="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp">
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/next_step_seller_address_heading_text_size" android:textColor="@color/seller_address_heading_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/string_seller_address" app:fontType="3"/>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/next_step_seller_address_name_text_size" android:textColor="@color/seller_address_heading_color" android:gravity="center_vertical" android:id="@+id/seller_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" app:fontType="3"/>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/next_step_seller_address_heading_text_size" android:textColor="@color/seller_address_complete_color" android:gravity="center_vertical" android:id="@+id/seller_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_3dp" app:fontType="3"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingLeft="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp">
+        <TextView android:textSize="@dimen/dimen_17sp" android:textStyle="normal" android:textColor="@color/color_323232" android:gravity="center_vertical" android:id="@+id/tvHeading" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginLeft="@dimen/dimen_24dp" android:text="@string/bus_bp_photos_title" android:fontFamily="sans-serif-medium"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivClose" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/tvHeading" android:layout_alignBottom="@+id/tvHeading" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="start" android:id="@+id/tvBoardingPoint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_24dp" android:maxLines="3" android:layout_toLeftOf="@+id/ivClose" android:layout_below="@+id/tvHeading" android:lineSpacingExtra="4.5sp"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/flContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-16dp" android:layout_marginTop="2dp" android:layout_marginRight="-16dp"/>
+</LinearLayout>

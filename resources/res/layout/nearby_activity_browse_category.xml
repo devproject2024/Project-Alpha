@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:gravity="center_vertical" android:id="@+id/nearby_tool_bar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="1dp" app:contentInsetEnd="0dp" app:contentInsetStart="0dp">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center" android:id="@+id/header_back_button" android:paddingLeft="20dp" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_5dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:onClick="onClick"/>
+                <com.paytm.utility.RoboTextView android:textSize="17dp" android:textColor="@color/black" android:id="@+id/toolbar_heading_toolbar" android:padding="@dimen/dimen_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/browse_category" android:layout_toRightOf="@+id/header_back_button" android:layout_centerVertical="true" android:layout_toEndOf="@+id/header_back_button" app:fontType="3"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <View android:id="@+id/divider" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/nearby_tool_bar"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/browse_category_rv_browse_categories" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/divider"/>
+    </RelativeLayout>
+</FrameLayout>

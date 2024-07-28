@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/viewPagerLayout" android:tag="layout/item_h1_banner_scroll_0" android:background="@android:color/transparent" android:focusableInTouchMode="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="500dp">
+    <com.paytmmall.clpartifact.view.adapter.SlidingViewPager android:layout_gravity="center_horizontal" android:id="@+id/mall_image_pager" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/slider_page_indicator" app:layout_scrollFlags="1"/>
+    <com.paytmmall.clpartifact.customViews.CirclePageIndicator android:id="@+id/slider_page_indicator" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

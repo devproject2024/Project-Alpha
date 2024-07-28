@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.paytm.notification.ui.inapp.view.BannerDismiss xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.paytm.notification.ui.inapp.view.BoundedLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/banner" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Paytm.InAppBanner.Layout.Bottom">
+        <View android:id="@+id/banner_pull_up" style="@style/Paytm.InAppBanner.Pull.Bottom"/>
+        <ViewStub android:id="@+id/content" android:inflatedId="@+id/ua_iam_banner_content_left_image" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </com.paytm.notification.ui.inapp.view.BoundedLayout>
+</com.paytm.notification.ui.inapp.view.BannerDismiss>

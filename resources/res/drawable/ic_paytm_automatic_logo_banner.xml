@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/color_ebfaff"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/dimen_12dp" android:top="@dimen/dimen_12dp" android:right="@dimen/dimen_12dp" android:bottom="@dimen/dimen_12dp">
+        <bitmap android:src="@drawable/ic_paytm_automatic_logo"/>
+    </item>
+</layer-list>

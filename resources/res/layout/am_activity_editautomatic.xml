@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/cons_layout_main" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/framelayout" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <RelativeLayout android:id="@+id/relativeLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <include android:id="@+id/lyt_wallet_loader" android:layout_width="match_parent" android:layout_height="40dp" layout="@layout/layout_wallet_loader"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:id="@+id/snackbarlayout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/am_snackbar_layout"/>
+    </LinearLayout>
+</FrameLayout>

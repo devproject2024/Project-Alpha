@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/taxbreakup_spinner_item_label_value" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    <TextView android:id="@+id/taxbreakup_spinner_item_label" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/taxbreakup_spinner_item_label_value" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

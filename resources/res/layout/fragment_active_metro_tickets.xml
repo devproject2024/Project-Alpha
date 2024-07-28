@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/tickets" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="150dp"/>
+    <androidx.cardview.widget.CardView android:id="@+id/progress_view" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignLeft="@+id/tickets" android:layout_alignTop="@+id/tickets" android:layout_alignRight="@+id/tickets" android:layout_alignBottom="@+id/tickets" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="3dp" app:cardElevation="3dp" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="#999999" android:gravity="center" android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:fontFamily="sans-serif"/>
+            <net.one97.paytm.recharge.widgets.widget.CJRRechargeLottieAnimationView android:id="@+id/loading_threedots_lav" android:layout_width="60dp" android:layout_height="20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

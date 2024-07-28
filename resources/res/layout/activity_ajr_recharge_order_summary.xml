@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/textView52" android:layout_width="0dp" android:layout_height="?attr/actionBarSize" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/content_recharge_toolbar"/>
+    <net.one97.paytm.recharge.ordersummary.widget.CJRBaseRechargeFooterNavigationView android:id="@+id/bottom_navigation" android:visibility="gone" android:layout_width="0dp" android:layout_height="@dimen/dimen_61dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <net.one97.paytm.recharge.widgets.widget.CJRRechargeLottieAnimationView android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="@dimen/width_os_lottie_progress" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/bottom_navigation" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/textView52" app:lottie_autoPlay="true" app:lottie_fileName="Payments-Loader.json" app:lottie_loop="true"/>
+    <FrameLayout android:id="@+id/container" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/bottom_navigation" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/textView52"/>
+    <FrameLayout android:id="@+id/lyt_progress_cst" android:background="@android:color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

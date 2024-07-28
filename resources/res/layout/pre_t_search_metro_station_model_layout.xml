@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:paddingBottom="@dimen/dimen_26dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/station_name_in_searched_station" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="2" android:layout_centerVertical="true" android:fontFamily="sans-serif-light"/>
+        <com.paytm.utility.RoboTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/station_id_in_searched_station" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:fontFamily="sans-serif-light"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="end" android:orientation="vertical" android:id="@+id/line_recyclerview_searched_station" android:paddingTop="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

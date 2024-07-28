@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/recharge_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="20dp">
+        <RelativeLayout android:id="@+id/thumbnail_layout_recharge" android:layout_width="67dp" android:layout_height="67dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_centerVertical="true">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/loading_recharge" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_large_holo" android:layout_centerInParent="true"/>
+            <net.one97.paytm.common.widgets.RoundedImageView android:id="@+id/operator_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/thumbnail_layout_recharge" android:layout_centerVertical="true">
+            <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_000000" android:ellipsize="end" android:gravity="left" android:layout_gravity="center" android:id="@+id/operator_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" app:fontType="3"/>
+            <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_000000" android:gravity="left" android:id="@+id/recharge_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" app:fontType="4"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/operator_offer_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_below="@+id/recharge_layout">
+        <include android:id="@+id/offer_promo_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_centerVertical="true" layout="@layout/promo_code_layout"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#4a4a4a" android:gravity="left" android:layout_gravity="center" android:id="@+id/offer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/offer_promo_layout" android:layout_centerVertical="true" app:fontType="2"/>
+    </RelativeLayout>
+</RelativeLayout>

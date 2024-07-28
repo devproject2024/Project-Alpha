@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/dimen_25dp" android:layout_width="@dimen/dimen_100dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp">
+    <RelativeLayout android:id="@+id/rl_container" android:background="@drawable/placeholder_quick_default" android:layout_width="@dimen/dimen_55dp" android:layout_height="@dimen/dimen_55dp">
+        <ImageView android:id="@+id/grid_img" android:layout_width="@dimen/dimen_48dp" android:layout_height="@dimen/dimen_48dp" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+        <LinearLayout android:id="@+id/other_default_lyt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <View android:id="@+id/indicator_1" android:background="@drawable/circle_bg" android:layout_width="@dimen/dimen_6dp" android:layout_height="@dimen/dimen_6dp"/>
+            <View android:id="@+id/indicator_2" android:background="@drawable/circle_bg" android:layout_width="@dimen/dimen_6dp" android:layout_height="@dimen/dimen_6dp" android:layout_marginLeft="@dimen/dimen_3dp"/>
+            <View android:id="@+id/indicator_3" android:background="@drawable/circle_bg" android:layout_width="@dimen/dimen_6dp" android:layout_height="@dimen/dimen_6dp" android:layout_marginLeft="@dimen/dimen_3dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="#8f969c" android:gravity="center_horizontal" android:id="@+id/grid_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:maxLines="2" android:fontFamily="sans-serif-medium"/>
+</LinearLayout>

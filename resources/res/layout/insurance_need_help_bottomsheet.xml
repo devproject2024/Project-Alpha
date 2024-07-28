@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/shape_bg_need_help_bottom_sheet" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/close_button" android:layout_width="@dimen/dimen_33dp" android:layout_height="@dimen/dimen_33dp" android:layout_marginTop="30dp" android:src="@drawable/cross_icon_with_circle" android:layout_alignParentRight="true" android:layout_marginEnd="20dp"/>
+    <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/need_help_empty" android:layout_toLeftOf="@+id/close_button" android:layout_alignTop="@+id/close_button" android:lineSpacingExtra="9sp" android:fontFamily="sans-serif" android:layout_marginStart="20dp" android:layout_marginEnd="40dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_30dp" android:minHeight="@dimen/dimen_30dp" android:layout_below="@+id/title"/>
+    <FrameLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/recycler_view" android:layout_alignTop="@+id/recycler_view" android:layout_alignRight="@+id/recycler_view" android:layout_alignBottom="@+id/recycler_view">
+        <ProgressBar android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:indeterminate="true"/>
+    </FrameLayout>
+</RelativeLayout>

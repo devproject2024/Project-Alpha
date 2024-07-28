@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/textView6" android:background="@color/color_d8d8d8" android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_4dp" android:layout_marginBottom="@dimen/dimen_16dp" app:layout_constraintBottom_toTopOf="@+id/selected_date_tv" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <TextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/selected_date_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" android:fontFamily="sans-serif" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:id="@+id/textView9" android:background="@color/color_ededed" android:layout_width="@dimen/dimen_0dp" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_16dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/selected_date_tv"/>
+    <net.one97.paytm.common.views.ShimmerFrameLayout android:id="@+id/shimmer_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/textView9">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/pre_t_train_avalibility_list_item_placeholder"/>
+            <include layout="@layout/pre_t_train_avalibility_list_item_placeholder"/>
+            <include layout="@layout/pre_t_train_avalibility_list_item_placeholder"/>
+            <include layout="@layout/pre_t_train_avalibility_list_item_placeholder"/>
+        </LinearLayout>
+    </net.one97.paytm.common.views.ShimmerFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/class_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/textView9" app:layout_constraintVertical_bias="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

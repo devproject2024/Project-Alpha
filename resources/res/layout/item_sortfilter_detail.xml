@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/item_sortfilter_detail_0" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+    <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/clp_color_2222222" android:id="@+id/sortFilterName" android:tag="binding_1" android:padding="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <View android:background="@color/clp_light_grey_border" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

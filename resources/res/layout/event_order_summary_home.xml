@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/search_toolabar" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/back_arrow" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true" android:paddingStart="5dp" android:paddingEnd="20dp"/>
+            <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_de000000" android:ellipsize="end" android:id="@+id/top_title" android:padding="2dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ticket Summary" android:singleLine="true" android:layout_centerVertical="true" android:layout_toEndOf="@+id/back_arrow" app:fontType="3"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <include layout="@layout/event_no_network_layout"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/search_toolabar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/event_order_summary_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+    <ImageView android:id="@+id/zoomed_qr_image" android:background="@color/color_70000000" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/id_event_summary_fragment_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/progress_bar_container" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/event_order_summary_progress_bar" android:focusable="true" android:clickable="true" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:indeterminateDrawable="@drawable/progress_large_holo"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/frame_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp" android:minHeight="@dimen/dimen_10dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

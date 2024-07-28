@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/action_add_money" android:visible="false" android:title="@string/pay_send_menu_add_money"/>
+    <item android:id="@+id/action_show_code" android:title="@string/pay_send_menu_show_code_scan_only"/>
+    <item android:id="@+id/action_open_gallery" android:title="@string/pay_send_menu_scan"/>
+    <item android:id="@+id/action_pay_via_merchant_id" android:visible="false" android:title="@string/pay_send_menu_pay_by_merchant_id"/>
+</menu>

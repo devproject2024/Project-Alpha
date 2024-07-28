@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scrollview_container" android:background="@color/color_fafafa" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/expanded_imageview" android:layout_width="@dimen/dimen_19dp" android:layout_height="@dimen/dimen_19dp" android:layout_marginTop="@dimen/dimen_2dp" android:layout_marginRight="@dimen/dimen_10dp"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_25sp" android:textStyle="normal" android:textColor="@color/color_323232" android:id="@+id/expanded_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" app:fontType="2"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarThumbVertical="@drawable/pre_f_flight_scollbar_lightgrey" android:id="@+id/recycler_view_fare_rules" android:background="@color/white" android:paddingBottom="@dimen/dimen_12dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="true"/>
+        <View android:background="@color/color_fafafa" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10dp"/>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/second_minirule_lyt" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/second_minirule_imageview" android:layout_width="@dimen/dimen_19dp" android:layout_height="@dimen/dimen_19dp" android:layout_marginTop="@dimen/dimen_3dp"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_17sp" android:textStyle="normal" android:textColor="@color/color_323232" android:id="@+id/second_minirule_textview" android:paddingLeft="@dimen/dimen_19dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/second_minirule_imageview" android:fontFamily="sans-serif" app:fontType="2"/>
+                <View android:background="@color/color_ececec" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_17dp" android:layout_below="@+id/second_minirule_imageview"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/third_minirule_lyt" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_14dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/third_minirule_imageview" android:layout_width="@dimen/dimen_19dp" android:layout_height="@dimen/dimen_19dp" android:layout_marginTop="@dimen/dimen_3dp"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_17sp" android:textStyle="normal" android:textColor="@color/color_323232" android:id="@+id/third_minirule_textview" android:paddingLeft="@dimen/dimen_19dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/third_minirule_imageview" android:fontFamily="sans-serif" app:fontType="2"/>
+                <View android:background="@color/color_ececec" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_17dp" android:layout_below="@+id/third_minirule_imageview"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/fourth_minirule_lyt" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_14dp" android:paddingBottom="@dimen/dimen_13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/fourth_minirule_imageview" android:layout_width="@dimen/dimen_19dp" android:layout_height="@dimen/dimen_19dp" android:layout_marginTop="@dimen/dimen_3dp"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_17sp" android:textStyle="normal" android:textColor="@color/color_323232" android:id="@+id/fourth_minirule_textview" android:paddingLeft="@dimen/dimen_19dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/fourth_minirule_imageview" android:fontFamily="sans-serif" app:fontType="2"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.travel.flight.views.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/shimmer_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="5dp">
+    <LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/flight_srp_loading_place_holder"/>
+        <include layout="@layout/flight_srp_loading_place_holder"/>
+        <include layout="@layout/flight_srp_loading_place_holder"/>
+        <include layout="@layout/flight_srp_loading_place_holder"/>
+        <include layout="@layout/flight_srp_loading_place_holder"/>
+        <include layout="@layout/flight_srp_loading_place_holder"/>
+        <include layout="@layout/flight_srp_loading_place_holder"/>
+        <include layout="@layout/flight_srp_loading_place_holder"/>
+        <include layout="@layout/flight_srp_loading_place_holder"/>
+    </LinearLayout>
+</com.travel.flight.views.ShimmerFrameLayout>

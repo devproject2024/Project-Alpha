@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/content_thumbnail" android:layout_width="117dp" android:layout_height="117dp" android:layout_marginRight="3dp" android:layout_marginBottom="3dp" android:scaleType="centerCrop"/>
+    <RelativeLayout android:id="@+id/moreItemsLyt" android:visibility="gone" android:clickable="true" android:layout_width="117dp" android:layout_height="117dp" android:layout_marginRight="3dp" android:layout_marginBottom="3dp">
+        <View android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.5"/>
+        <com.paytm.utility.RoboTextView android:textSize="27sp" android:textColor="#ffffff" android:id="@+id/moreItemsTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+24" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ProgressBar android:id="@+id/image_progress_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress_medium_holo" android:layout_above="@+id/product_details_root_tag" android:layout_centerInParent="true"/>
+</RelativeLayout>

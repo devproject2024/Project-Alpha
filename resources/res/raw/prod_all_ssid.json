@@ -1,0 +1,32 @@
+{
+  "wifiProviders": [
+    {
+      "name": "CCD WIFI",
+      "pID": "231032421",
+      "vendorIcon": "https://assetscdn1.paytm.com/images/catalog/product/R/RE/RECCCD-WIFICCD-1000874D6286BF7/2.png",
+      "ssids": [
+        "shouut_test_wc",
+        "shouut_test_wc1",
+        "CCD_WORK_CAFE"
+      ]
+    },
+    {
+      "name": "KUMBH WIFI",
+      "pID": "231032422",
+      "vendorIcon": "https://assetscdn1.paytm.com/images/catalog/product/R/RE/RECKUMBH-WIFICCD-1000874C36C5CFF/a_3.png",
+      "ssids": [
+        "HO_PRIVATE",
+        "HO_KUMBH_PRIVATE"
+      ]
+    },
+    {
+      "name": "Shouut Paytm",
+      "pID": "233078914",
+      "vendorIcon": "http://paytmimg.s3-ap-southeast-1.amazonaws.com/games/Recharge/demosquarelogo.jpg&sa=D&source=hangouts&ust=1550126075910000&usg=AFQjCNHA0CRYiEDDBDG1prJxa3vqkX9iEw",
+      "ssids": [
+        "Free_Shouut_Paytm",
+        "FREE_SHOUUT_PAYTM"
+      ]
+    }
+  ]
+}

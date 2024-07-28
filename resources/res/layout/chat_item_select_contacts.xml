@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/cl_pic_bg" android:layout_width="52dp" android:layout_height="58dp">
+        <com.paytm.android.chat.view.ChatHeadView android:layout_gravity="center_vertical" android:id="@+id/img_item_black_message_invite" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="4dp" android:layout_centerVertical="true" android:layout_marginStart="4dp"/>
+        <ImageView android:id="@+id/img_selected" android:layout_width="16dp" android:layout_height="16dp" android:src="@mipmap/chat_icon_delete_contacts" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="10sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/tv_item_black_message_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxWidth="40dp" android:maxLines="1" android:layout_below="@+id/cl_pic_bg" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

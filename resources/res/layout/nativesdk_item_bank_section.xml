@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/nativesdk_item_bank_section_0" android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="25dp" android:layout_marginRight="@dimen/dimen_20dp">
+    <net.one97.paytm.nativesdk.widget.RoboTextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_222222" android:gravity="center_vertical" android:id="@+id/tv_section_label" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_22dp" android:lineSpacingExtra="5.2sp" android:layout_marginStart="@dimen/dimen_22dp"/>
+</LinearLayout>

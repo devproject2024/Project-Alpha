@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_lyt" android:background="@drawable/pre_t_train_train_date_bg_unselect" android:layout_width="@dimen/dimen_71dp" android:layout_height="@dimen/dimen_41dp" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/dimen_10sp" android:textStyle="bold" android:textColor="@color/color_979797" android:layout_gravity="center_horizontal" android:id="@+id/txt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:lineSpacingExtra="@dimen/dimen_1.5sp" android:fontFamily="sans-serif"/>
+        <TextView android:textSize="@dimen/dimen_10sp" android:textStyle="normal" android:textColor="@color/color_979797" android:layout_gravity="center_horizontal" android:id="@+id/txt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Monday" android:lineSpacingExtra="@dimen/dimen_1.5sp" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+</RelativeLayout>

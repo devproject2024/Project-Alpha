@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/webView1" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/travelHelper_upper_view" android:background="#939399" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:weightSum="3">
+                <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/leftTravelHelperView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/password_text" android:maxLines="1"/>
+                </LinearLayout>
+                <View android:background="#9e9ea5" android:layout_width="2dp" android:layout_height="match_parent"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/centerTravelHelperView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/easypay_hide_password"/>
+                </LinearLayout>
+                <View android:background="#9e9ea5" android:layout_width="2dp" android:layout_height="match_parent"/>
+                <LinearLayout android:gravity="right" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/rightTravelHelperView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/reset_password_text"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@+id/overlay_webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

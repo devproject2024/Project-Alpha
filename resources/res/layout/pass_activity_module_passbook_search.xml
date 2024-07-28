@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="18sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/toolbar_title" android:paddingLeft="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:layout_centerVertical="true" style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/list_filter_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_5_dp" android:layout_below="@+id/toolbar">
+        <RelativeLayout android:id="@+id/lyt_close_filter" android:padding="3dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/wallet_13_sp" android:textColor="@color/excl_color_00b9f5" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear_all"/>
+        </RelativeLayout>
+        <net.one97.paytm.common.widgets.CJRHorizontalListView android:id="@+id/list_filter_by" android:layout_width="match_parent" android:layout_height="50sp" android:layout_toLeftOf="@+id/lyt_close_filter"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/no_internet_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/pass_no_internet"/>
+        <TextView android:textSize="16sp" android:textColor="@color/payment_success_text_grey" android:gravity="center" android:padding="20sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/payment_request_net_error_message" android:layout_below="@+id/image" android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/scroll_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/list_filter_container">
+        <include android:id="@+id/passbook_search" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/pass_passbook_module_search_layout"/>
+    </ScrollView>
+    <RelativeLayout android:id="@+id/passbook_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/scroll_parent">
+        <ProgressBar android:id="@+id/nearby_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/pass_paytm_progress" android:layout_centerInParent="true"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:src="@color/merchant_pay_divider_color" android:layerType="software"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/passbook_wallet_viewpager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar"/>
+        <include android:id="@+id/id_error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar" layout="@layout/pass_error_layout"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/payment_success_text_grey" android:gravity="center" android:id="@+id/tvNoData" android:padding="20sp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/search_no_tran" android:layout_centerInParent="true"/>
+</RelativeLayout>

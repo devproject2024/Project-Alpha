@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/h5_trans_web_content" android:background="@color/h5_transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/h5_tf_nav_ly" android:layout_width="wrap_content" android:layout_height="48dp">
+        <ImageView android:id="@+id/h5_tf_nav_back" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="3dp" android:src="@drawable/h5_trans_titlebar_back" android:scaleType="center" android:contentDescription="@string/h5_backward"/>
+    </LinearLayout>
+</RelativeLayout>

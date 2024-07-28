@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/empty_div" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/trust_icon" android:layout_width="80dp" android:layout_height="80dp" android:layout_margin="15dp" android:src="@drawable/pre_t_paytm_trust" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/trust_icon" android:layout_centerVertical="true">
+                <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#9b9b9b" android:gravity="left" android:id="@+id/contact_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paytm_trust_text" app:fontType="2"/>
+                <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#00b9f5" android:gravity="left" android:id="@+id/contact_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_us_text_train" app:fontType="3"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

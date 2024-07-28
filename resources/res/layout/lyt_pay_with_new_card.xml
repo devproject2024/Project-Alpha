@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_pay_with_new_card" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/color_00b9f5" android:id="@+id/tv_pay_with_new_debit_card" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.5dp" android:text="@string/pay_with_new_debit_card" android:fontFamily="sans-serif"/>
+    <include android:id="@+id/lyt_new_card" android:visibility="gone" layout="@layout/lyt_debit_credit_card"/>
+</LinearLayout>

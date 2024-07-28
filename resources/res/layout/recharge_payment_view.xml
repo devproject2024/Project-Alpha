@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parentLayout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_toolbar" android:background="#f4f7f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/native_paytm_header_logo" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/recharge_tab_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:contentDescription="@string/app_name"/>
+    <WebView android:id="@+id/payment_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_toolbar"/>
+    <FrameLayout android:id="@+id/easypayBrowserFragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <ProgressBar android:id="@+id/payment_load_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_large_holo" android:layout_centerInParent="true"/>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_toolbar" layout="@layout/dialog_ajr_payment_web_progress"/>
+    <ImageView android:id="@+id/iv_back_arrow_ajr" android:padding="@dimen/dimen_5dp" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:src="@drawable/back_arrow" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/dimen_10dp" android:layout_alignParentStart="true"/>
+    <ImageView android:id="@+id/img_debug_info" android:padding="@dimen/dimen_4dp" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="@dimen/dimen_8dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/ic_perm_device_information_black_24dp"/>
+    <include android:layout_below="@+id/img_debug_info" layout="@layout/layout_debug_request_info"/>
+    <TextView android:id="@+id/tv_loggedOut" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="You have been logged out. Please wait..." android:layout_centerInParent="true" android:textAlignment="center"/>
+</RelativeLayout>

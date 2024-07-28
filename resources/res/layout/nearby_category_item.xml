@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_category_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp">
+        <com.paytm.utility.RoboTextView android:textSize="15dp" android:textColor="#666666" android:id="@+id/category_item_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fontType="2"/>
+        <ImageView android:id="@+id/category_img_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_check" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

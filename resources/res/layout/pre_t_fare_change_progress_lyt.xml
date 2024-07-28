@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/detail_close" android:background="@drawable/pre_t_train_close" android:visibility="gone" android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" android:layout_marginBottom="20dp" android:layout_above="@+id/class_container_layout" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/class_container_layout" android:background="@drawable/pre_t_train_train_fare_fragment_round_corner" android:paddingTop="33dp" android:paddingBottom="@dimen/dimen_33dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.airbnb.lottie.LottieAnimationView android:id="@+id/wallet_loader" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="10dp" android:adjustViewBounds="true" app:amount="4" app:animationDirectionbundle="-1" app:circleSize="5" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+            <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:text="Recalculating fare…" android:lineSpacingExtra="5.2sp" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

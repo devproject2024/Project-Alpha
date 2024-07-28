@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/feed_live_tv_category_item_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/channel_image_container" android:background="@drawable/feed_channel_border" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/channel_image" android:tag="binding_1" android:layout_width="@dimen/feed_channel_width_height" android:layout_height="@dimen/feed_channel_width_height"/>
+    </FrameLayout>
+    <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="#222222" android:gravity="center" android:id="@+id/channel_name" android:tag="binding_2" android:layout_width="@dimen/feed_channel_name_width" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/channel_image_container" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-medium"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <it.sephiroth.android.library.imagezoom.ImageViewTouch android:id="@+id/image_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/fl_group_chat_down_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.paytm.android.chat.view.CircleProgressBar android:layout_gravity="center" android:id="@+id/circle_progress" android:layout_width="55dp" android:layout_height="55dp" app:draw_progress_text="false" app:progress_background_color="#ffffff" app:progress_end_color="#00b9f5" app:progress_start_color="#00b9f5" app:progress_stroke_cap="0" app:progress_stroke_width="2dp" app:style="2"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/image_group_chat_image_down" android:layout_width="19dp" android:layout_height="26dp" android:src="@drawable/chat_icon_chat_image_file_down"/>
+    </FrameLayout>
+</FrameLayout>

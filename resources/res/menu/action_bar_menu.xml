@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_action_search" android:id="@+id/action_search" android:title="@string/search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="never|always|collapseActionView"/>
+    <item android:icon="@android:drawable/ic_menu_share" android:id="@+id/action_share" android:visible="true" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_cart_dark_smiley" android:id="@+id/action_notifivation" app:actionViewClass="net.one97.paytm.widget.NotificationView" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_cart_dark_smiley" android:id="@+id/action_edit" app:actionViewClass="net.one97.paytm.widget.EditView" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_cart_dark_smiley" android:id="@+id/action_sign_in" app:actionViewClass="net.one97.paytm.landingpage.widgets.SignInMenuView" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_cart_dark_smiley" android:id="@+id/action_menu_icon" app:actionViewClass="net.one97.paytm.landingpage.widgets.IconMenuView" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_qr" android:id="@+id/qr_img" app:showAsAction="always"/>
+    <item android:icon="@drawable/inbox_invite" android:id="@+id/inbox_share" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_profile" android:id="@+id/profile" app:showAsAction="always"/>
+    <item android:id="@+id/action_updates_notification" android:visible="false" app:actionViewClass="net.one97.paytm.widget.NotificationView" app:showAsAction="always"/>
+    <item android:icon="@drawable/qr_code" android:id="@+id/more_info_img" android:visible="false" app:showAsAction="always"/>
+    <item android:id="@+id/action_bbps" android:visible="false" app:actionViewClass="net.one97.paytm.landingpage.widgets.IconMenuView" app:showAsAction="always"/>
+</menu>

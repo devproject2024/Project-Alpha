@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/sheroes_swipeRefreshContainer" android:background="@color/sheroes_feed_back_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/sheroes_feed" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ProgressBar android:theme="@style/Theme.Sheroes" android:layout_gravity="center" android:id="@+id/sheroes_loader_gif" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <include android:visibility="gone" layout="@layout/no_sheroes_internet_connection_layout"/>
+            <include layout="@layout/empty_sheroes_list_view"/>
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/sheroes_fab" android:visibility="gone" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:backgroundTint="@color/colorAccent" app:srcCompat="@drawable/vector_sheroes_plus" app:useCompatPadding="true" style="@style/FabStyle"/>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <exfilepicker.ui.view.FilesListToolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize"/>
+    <androidx.appcompat.widget.Toolbar android:id="@+id/top_toolbar" android:layout_width="match_parent" android:layout_height="80dp" android:minHeight="80dp" android:layout_alignParentTop="true" app:contentInsetStart="0dp" app:contentInsetStartWithNavigation="0dp" app:navigationIcon="@drawable/chat_ic_arrow_left_black" app:subtitle="@string/chat_module_subtitle_tap_to_select" app:subtitleTextAppearance="@style/tool_bar_subtitle" app:title="@string/chat_module_documents" app:titleTextAppearance="@style/tool_bar_title"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_toolbar"/>
+    <FrameLayout android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <TextView android:textSize="30sp" android:textColor="@color/zhihu_album_empty_view" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty_view_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_module_efp__empty_directory" android:drawableTop="@drawable/chat_ic_empty_documents" android:drawablePadding="37dp" android:fontFamily="sans-serif-thin"/>
+    </FrameLayout>
+</RelativeLayout>

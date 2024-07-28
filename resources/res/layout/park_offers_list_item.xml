@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_vertical" android:background="@color/white" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/apply_promo_layout_train" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@+id/apply_promo_layout_train">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/color_000000" android:id="@+id/offer_code_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TRA10" app:fontType="2"/>
+        <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/train_txt_gray" android:id="@+id/offer_desc_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Get 10 % cashback on all bookings on Rajshani Express. Offer valid for this week." app:fontType="2"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/apply_promo_layout_train" android:background="@drawable/bg_btn_coupon_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_width="70dp" android:layout_height="30dp">
+            <ImageView android:id="@+id/apply_tick_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tick_white" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/paytm_blue" android:id="@+id/apply_text" android:padding="8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apply" android:layout_centerInParent="true" app:fontType="2"/>
+    </RelativeLayout>
+</RelativeLayout>

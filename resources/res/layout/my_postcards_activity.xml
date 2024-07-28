@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabs" android:background="@color/color_fafbfb" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabBackground="@color/color_fafbfb" app:tabGravity="0" app:tabIndicatorColor="@color/color_5b8efa" app:tabMode="1" app:tabSelectedTextColor="@color/color_5b8efa" app:tabTextAppearance="@style/TextAppearance.Widget.TabWidget" app:tabTextColor="@color/color_5b8efa"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/mypostcards_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

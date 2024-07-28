@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:padding="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="330dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/h5_material_background" android:background="@drawable/h5_dialog_card" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/h5_contentView" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="23dp" android:textColor="#de000000" android:id="@+id/title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_marginTop="20dp" android:layout_marginRight="24dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/h5_message_content_view" android:paddingLeft="24dp" android:paddingRight="23dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="15dp" android:textColor="#8a000000" android:id="@+id/h5_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:maxLines="15" android:singleLine="false" android:lineSpacingMultiplier="1.3"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/h5_buttonLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

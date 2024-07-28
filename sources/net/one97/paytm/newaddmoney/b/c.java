@@ -1,0 +1,12 @@
+package net.one97.paytm.newaddmoney.b;
+
+public enum c {
+    MAKE_PAYMENT,
+    GIFT_PAYTM_CASH,
+    SEND_MONEY_TO_BANK,
+    SETUP_AUTOMATIC,
+    NEARBY_CASH_DEPOSIT_POINTS,
+    SET_PAYMENT_REMINDER,
+    VIEW_SPEND_ANALYTICS,
+    REQUEST_WALLET_STATEMENT
+}

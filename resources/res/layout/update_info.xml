@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/light_grey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:gravity="center_horizontal" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_left_default" android:layout_marginRight="@dimen/margin_right_default">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/update_info" android:adjustViewBounds="true"/>
+                <TextView android:textSize="19sp" android:textStyle="bold" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/offers_updated_more"/>
+                <View android:layout_gravity="center" android:background="@color/paytm_blue" android:layout_width="100dp" android:layout_height="4dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="18sp" android:textColor="@color/paytm_blue" android:gravity="center" android:layout_gravity="top" android:background="@drawable/circle_blue" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="6dp" android:text="1"/>
+                    <TextView android:textSize="16sp" android:paddingLeft="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keep_up_with_best_offer"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="18sp" android:textColor="@color/paytm_blue" android:gravity="center" android:layout_gravity="top" android:background="@drawable/circle_blue" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="6dp" android:text="2"/>
+                    <TextView android:textSize="16sp" android:paddingLeft="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/place_order_with_us"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+                    <TextView android:textSize="18sp" android:textColor="@color/paytm_blue" android:gravity="center" android:layout_gravity="top" android:background="@drawable/circle_blue" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="6dp" android:text="3"/>
+                    <TextView android:textSize="16sp" android:paddingLeft="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_message_from_seller"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <Button android:textSize="18sp" android:textColor="@color/white" android:background="@drawable/bg_btn_blue" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/updates_log_in" android:layout_weight="1" android:textAllCaps="false" style="@style/BlueButton"/>
+                <Button android:textSize="18sp" android:textColor="@color/white" android:background="@drawable/bg_btn_blue" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:text="@string/updates_sign_up" android:layout_weight="1" android:textAllCaps="false" style="@style/BlueButton"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

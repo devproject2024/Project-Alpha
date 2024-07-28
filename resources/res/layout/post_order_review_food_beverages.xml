@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parent_most_rel_lyt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/review_food_details_toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/activiy_back_btn" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_000000" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/review_order" android:layout_toRightOf="@+id/activiy_back_btn" android:layout_centerVertical="true" app:fontType="3"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@+id/divider_top" android:background="@color/order_summary_bg" android:layout_width="match_parent" android:layout_height="8dp" android:layout_below="@+id/review_food_details_toolbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/root_llt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="4dp" android:layout_marginRight="16dp" android:layout_below="@+id/divider_top">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/color_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/price_breakdown" app:fontType="3"/>
+        <View android:background="@color/order_summary_bg" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="6dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/food_list_llt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+        <View android:background="@color/order_summary_bg" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="6dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/color_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total" app:fontType="3"/>
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/color_000000" android:gravity="right" android:id="@+id/total_footer_price_tv" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontType="3"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="4dp" android:layout_below="@+id/root_llt">
+        <RelativeLayout android:id="@+id/foor_bev_list_linear_lyt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/foor_bev_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/proceed_rel_lyt" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/total_amount_lyt">
+                <View android:id="@+id/shadow_sep" android:background="@color/movie_seat_separator_bg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginTop="11dp" android:layout_marginRight="20dp" android:layout_marginBottom="5dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/promocode_ban_linear_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="65dp" android:layout_below="@+id/shadow_sep">
+                    <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/more_flights_available" android:gravity="center_horizontal" android:id="@+id/promocodes_bank_offers" android:background="?attr/selectableItemBackground" android:paddingLeft="14dp" android:paddingTop="5dp" android:paddingRight="14dp" android:paddingBottom="5dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/have_a_promocode" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lyt_promo_applied" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="13dp" android:layout_marginBottom="5dp">
+                        <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/movies_promo_text_color" android:gravity="center_vertical" android:id="@+id/txt_applied_promo_info" android:background="@drawable/movie_promo_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="11sp" android:textColor="@color/movie_cashback_color" android:ellipsize="end" android:id="@+id/txt_cash_back_info" android:paddingLeft="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4" android:layout_toLeftOf="@+id/img_remove_promo" android:layout_toRightOf="@+id/txt_applied_promo_info" android:layout_centerVertical="true"/>
+                        <ImageView android:id="@+id/img_remove_promo" android:paddingLeft="7dp" android:paddingRight="7dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/movie_seat_promo_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <View android:background="@color/movie_seat_separator_bg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp"/>
+                    <CheckBox android:theme="@style/BlueCheckBoxTheme" android:textSize="13sp" android:textColor="@color/paytm_blue" android:gravity="center_vertical" android:id="@+id/check_box_fast_forward" android:paddingTop="5dp" android:paddingRight="14dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginBottom="5dp" android:text="@string/fast_forward"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/book_post_order_footer_rlt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="55dp" android:layout_alignParentBottom="true" android:elevation="8dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_centerVertical="true">
+            <com.paytm.utility.RoboTextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/footer_total_price_rtv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="4"/>
+            <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/metalic_blue" android:id="@+id/footer_total_item_count_rtv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/footer_total_price_rtv" app:fontType="4"/>
+        </RelativeLayout>
+        <com.paytm.utility.RoboTextView android:textColor="@color/white" android:gravity="center" android:id="@+id/pay_btn_rtv" android:background="@drawable/btn_paytm_blue_round_rectangle" android:layout_width="142dp" android:layout_height="44dp" android:layout_marginRight="10dp" android:text="@string/footer_make_payment" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontType="3"/>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_medium_holo" android:layout_centerInParent="true"/>
+</RelativeLayout>

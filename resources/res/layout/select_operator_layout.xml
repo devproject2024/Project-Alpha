@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <include android:id="@+id/search_layout" layout="@layout/search_layout"/>
+    <net.one97.paytm.common.views.ShimmerFrameLayout android:id="@+id/shimmer_layout_operator" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:fontFamily="sans-serif-medium"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/operator_recycler_view" android:background="@android:color/transparent" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:layout_below="@+id/search_layout" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            <TextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/color_929292" android:gravity="center" android:id="@+id/nomatches_found" android:background="@color/color_ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_matches_found" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+    </net.one97.paytm.common.views.ShimmerFrameLayout>
+</merge>

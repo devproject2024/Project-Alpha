@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@android:color/white"/>
+    <item android:top="40dp">
+        <bitmap android:gravity="top|center_vertical|center_horizontal|center" android:src="@drawable/splash_top_logos"/>
+    </item>
+    <item android:bottom="35dp">
+        <bitmap android:gravity="center" android:src="@drawable/splash_center_logo_new"/>
+    </item>
+    <item android:bottom="@dimen/dimen_35dp">
+        <bitmap android:gravity="bottom" android:src="@drawable/bottom_logos"/>
+    </item>
+    <item>
+        <bitmap android:gravity="bottom|left|right|center_vertical|center_horizontal|fill_horizontal|center" android:src="@drawable/splash_bottom_strip1"/>
+    </item>
+</layer-list>

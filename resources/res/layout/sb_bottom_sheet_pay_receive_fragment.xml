@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/activity_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_gravity="top" android:id="@+id/toolbar_start_ap" android:background="@color/color_ffffff" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_30dp" android:paddingRight="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true">
+            <com.paytm.utility.RoboTextView android:textSize="21sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vietnam Trip" android:layout_alignParentLeft="true" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/cross_btn" android:padding="5dp" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/sb_ic_close_splitbill_bottom_sheet"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/total_rev" android:paddingLeft="20dp" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/color_21c17a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_receivable" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:letterSpacing="0.08" app:fontType="3"/>
+                <com.paytm.utility.RoboTextView android:textSize="17sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/total_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:text="₹890" android:fontFamily="sans-serif-light" app:fontType="4"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/color_fd5c5c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_payable" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:letterSpacing="0.08" app:fontType="3"/>
+                <com.paytm.utility.RoboTextView android:textSize="17sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/total_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:text="₹700" android:fontFamily="sans-serif-light" app:fontType="4"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/totalReceivableRV" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_weight="1"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/totalPayableRV" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

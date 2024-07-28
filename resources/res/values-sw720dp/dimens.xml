@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_default">12dp</dimen>
+    <dimen name="height_action_bar">60dp</dimen>
+    <dimen name="margin_default">12dp</dimen>
+    <dimen name="padding_btn">20dp</dimen>
+</resources>

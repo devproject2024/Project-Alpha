@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/automatic_recharge_lyt" android:background="@android:color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/paytm_automatic_header_lyt"/>
+            <ImageView android:id="@+id/sep_1" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/separators" android:contentDescription="@string/app_name"/>
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/gray" android:id="@+id/automatic_recharge_money_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/automatic_recharge_money_desc_part_1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fontType="2"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/saved_card_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_large_holo" android:layout_centerInParent="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/saved_cards_lyt" android:background="@drawable/tomorrow_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <net.one97.paytm.widget.PaytmAutomaticSavedCardsListview android:id="@+id/saved_card_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_selector" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:headerDividersEnabled="true" android:footerDividersEnabled="true"/>
+                <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/paytm_blue" android:gravity="center" android:layout_gravity="center" android:id="@+id/add_card" android:clickable="true" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/add_credit_card" android:layout_centerVertical="true" android:onClick="onAddCardClicked" app:fontType="2"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="bottom" android:id="@+id/lyt_save_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <net.one97.paytm.common.widgets.RoboButton android:textSize="20sp" android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/bg_btn_blue" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/save" android:onClick="onSaveClick" android:textAllCaps="false" app:fontType="2"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="61dp" android:paddingStart="20dp">
+    <ImageView android:id="@+id/item_blocked_userlist_img" android:layout_width="40dp" android:layout_height="40dp" android:src="@mipmap/chat_ic_launcher" android:layout_centerVertical="true"/>
+    <TextView android:textSize="14sp" android:gravity="center" android:id="@+id/item_blocked_userlist_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/chat_module_title" android:layout_toRightOf="@+id/item_blocked_userlist_img" android:layout_centerVertical="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/color_00B9F5" android:layout_gravity="center" android:id="@+id/item_blocked_userlist_unblock" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/chat_module_btn_unblock" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:background="@color/split_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

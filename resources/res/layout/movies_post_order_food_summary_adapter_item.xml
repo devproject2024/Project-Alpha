@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/top_img_lyt" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_100dp" android:layout_marginTop="22dp" android:layout_marginBottom="22dp">
+        <ImageView android:id="@+id/id_food_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/id_food_specs_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14dp" android:layout_marginTop="22dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_marginBottom="22dp" android:layout_toRightOf="@+id/id_food_img">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@+id/food_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50dp" android:maxLines="3" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:fontType="2"/>
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/color_999999" android:id="@+id/food_item_description" android:paddingTop="@dimen/dimen_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/food_name"/>
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/color_999999" android:id="@+id/food_quantity" android:paddingTop="@dimen/dimen_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/food_item_description"/>
+        <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_222222" android:id="@+id/food_price" android:paddingTop="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/food_quantity" app:fontType="3"/>
+    </RelativeLayout>
+</LinearLayout>

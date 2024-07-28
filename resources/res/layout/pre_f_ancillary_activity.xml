@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:gravity="top" android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/back_arrow" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="17sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="Add Baggage" android:singleLine="true" android:layout_toRightOf="@+id/back_arrow" app:fontType="3" style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@+id/view1" android:background="@color/light_grey_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/toolbar"/>
+    <FrameLayout android:orientation="vertical" android:id="@+id/flight_fragment_container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/relative_review_payment_layout" android:layout_below="@+id/view1"/>
+    <include android:id="@+id/relative_review_payment_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/pre_f_flight_review_itinerary_payment_button"/>
+    <RelativeLayout android:id="@+id/lyt_flight_reprice_grey_bg" android:background="#80000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/lyt_flight_fare_rules_grey_bg" android:background="#80000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/pre_f_flight_student_baggage_dialog"/>
+    <RelativeLayout android:id="@+id/fare_rules_anim_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/relative_review_payment_layout">
+        <FrameLayout android:id="@+id/frame_fare_rules" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

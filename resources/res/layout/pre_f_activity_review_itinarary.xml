@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/main_lyt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinater_lyt" android:background="@color/color_f9f9f9" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="3">
+                <ImageView android:id="@+id/background_image_view" android:background="@color/flight_translucent_black" android:layout_width="match_parent" android:layout_height="@dimen/dimen_135dp" android:scaleType="fitXY" android:tint="@color/color_6F000000" android:alpha="0.8" app:srcCompat="@drawable/pre_f_flight_review_iternary_default"/>
+                <androidx.appcompat.widget.Toolbar android:gravity="top" android:id="@+id/toolbar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetEnd="@dimen/dimen_0dp" app:contentInsetLeft="@dimen/dimen_0dp" app:contentInsetRight="@dimen/dimen_0dp" app:contentInsetStart="@dimen/dimen_10dp" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:id="@+id/back_arrow" android:padding="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_toRightOf="@+id/back_arrow" layout="@layout/pre_f_flight_review_itenarary_actionbar_lyt"/>
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <RelativeLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_overlapTop="@dimen/dimen_45dp" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarThumbVertical="@drawable/pre_f_flight_scollbar_lightgrey" android:id="@+id/recycler_view_review_itinarary" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_60dp"/>
+            <RelativeLayout android:id="@+id/lyt_flight_fare_rules_grey_bg" android:background="@color/color_80000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <com.travel.flight.views.FlightFareBreakupBottomSheetView android:id="@+id/bottom_sheet" android:layout_width="match_parent" android:layout_height="wrap_content" app:behavior_hideable="true" app:behavior_peekHeight="0dp" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include android:id="@+id/relative_review_payment_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/pre_f_flight_review_itinerary_bottom_lyt_revamp"/>
+    <include android:id="@+id/snack_bar_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6dp" android:layout_marginRight="@dimen/dimen_6dp" android:layout_marginBottom="@dimen/dimen_8dp" android:layout_above="@+id/relative_review_payment_layout" layout="@layout/lyt_custom_flight_review_snack"/>
+    <RelativeLayout android:id="@+id/fare_rules_anim_layout" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/back_arrow_mini_rule_rule" android:padding="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="?attr/actionBarSize" android:layout_marginLeft="@dimen/dimen_10dp"/>
+        <FrameLayout android:id="@+id/frame_fare_rules" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/back_arrow_mini_rule_rule"/>
+    </RelativeLayout>
+</RelativeLayout>

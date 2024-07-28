@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/pb_ca_bsdf_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/buttonLayout" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="@dimen/dimen_28dp" android:layout_marginRight="40dp" android:fontFamily="@string/font_family_roboto_regular" android:letterSpacing="0.02"/>
+            <ImageView android:id="@+id/full_kyc_cross_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:src="@drawable/ic_close_minkyc" android:layout_alignParentRight="true"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/optionRv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_below="@+id/dialog_title"/>
+        </RelativeLayout>
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/wallet_loader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginTop="30dp" android:layout_marginBottom="30dp" android:layout_centerInParent="true" app:amount="5" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700" app:animationDirectionbundle="-1"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

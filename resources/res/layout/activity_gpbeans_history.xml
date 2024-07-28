@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white_ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/gp_header_height">
+        <ImageView android:id="@+id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gp_horizontal_margin" android:src="@drawable/games_back_arrow" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black_000000" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gp_horizontal_margin" android:text="@string/points_history" android:layout_centerVertical="true" android:layout_toEndOf="@+id/back"/>
+    </RelativeLayout>
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/magic_indicator" android:background="@color/white_ffffff" android:layout_width="match_parent" android:layout_height="@dimen/gp_magicindicator_hight" android:layout_marginLeft="@dimen/gp_padding_right"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager" android:background="@color/white_ffffff" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

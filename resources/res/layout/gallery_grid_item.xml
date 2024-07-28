@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.one97.paytm.upgradeKyc.editprofile.gallery.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0.5dp">
+    <com.google.android.material.card.MaterialCardView android:theme="@style/Theme.MaterialComponents.Light" android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="0dp" app:cardUseCompatPadding="false">
+        <RelativeLayout android:id="@+id/gridRl" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/image" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imagecamera" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</net.one97.paytm.upgradeKyc.editprofile.gallery.SquareLayout>

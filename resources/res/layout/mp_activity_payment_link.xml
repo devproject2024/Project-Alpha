@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinatorLayout" android:tag="layout/mp_activity_payment_link_0" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/toolbar" android:background="#002e91" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/back" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/mp_back" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/ic_arrow_back"/>
+            <com.business.common_module.view.widget.CustomTextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4sp" app:layout_constraintBottom_toBottomOf="@+id/back" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/back" app:mp_font_name="3"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/wallet_15_dp">
+        <TextView android:textSize="@dimen/wallet_17sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/receive_money_desc"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/activity_receive_money_lyt_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_30dp"/>
+    </LinearLayout>
+</ScrollView>

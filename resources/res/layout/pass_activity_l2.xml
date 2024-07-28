@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="net.one97.paytm.passbook.genericPassbook.fragment.PassbookL2Fragment" android:id="@+id/l2Fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:height="@dimen/wallet_7_dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/wallet_transfer_bank"/>
+        </shape>
+    </item>
+    <item android:height="@dimen/wallet_7_dp" android:top="@dimen/wallet_7_dp">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/dimen_10dp" android:bottomRightRadius="@dimen/dimen_10dp"/>
+            <solid android:color="@color/paytm_bottom_strip_dark"/>
+        </shape>
+    </item>
+</layer-list>

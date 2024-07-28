@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/cvv_help_layout_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager android:id="@+id/vp_cvv_help" android:layout_width="match_parent" android:layout_height="300dp" android:layout_margin="@dimen/dimen_20dp"/>
+    <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@+id/tab_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabBackground="@drawable/tab_selector" app:tabIndicatorHeight="@dimen/dimen_0dp"/>
+    <Button android:textColor="@color/white" android:id="@+id/btn_proceed" android:background="@drawable/nativesdk_button_click" android:paddingTop="@dimen/dimen_16dp" android:paddingBottom="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_20dp" android:text="@string/ok_got_it" style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+    <RelativeLayout android:id="@+id/rv_container" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_125dp" android:layout_marginTop="10dp">
+        <ImageView android:id="@+id/iv_banner_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+        <ProgressBar android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

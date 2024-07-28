@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/layout_bank_header_bar" layout="@layout/pb_layout_bank_header_without_divider"/>
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="30dp" android:layout_marginRight="100dp" android:text="@string/pb_ca_req_submitted_ica" android:layout_below="@+id/layout_bank_header_bar" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif" android:letterSpacing="0.03"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_payment_bank_large_motif" android:layout_alignParentRight="true"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/trackRv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/title"/>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_motif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_motif_classic" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    <ImageView android:id="@+id/iv_payment_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:src="@drawable/pb_ic_payments_bank_logo" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/iv_back_arrow" android:background="?android:attr/selectableItemBackground" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:src="@drawable/pb_ic_back" android:layout_marginStart="20dp"/>
+    <TextView android:textSize="13sp" android:textColor="#444444" android:gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_fixed_deposit" android:layout_below="@+id/iv_payment_logo" android:layout_centerInParent="true" android:textAllCaps="true" android:letterSpacing="0.23"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@+id/bottom_logo_view" android:layout_below="@+id/iv_motif">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/fragment_container_benefits" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:id="@+id/view_separator" android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginTop="40dp" android:layout_marginBottom="20dp" android:layout_below="@+id/fragment_container_benefits"/>
+            <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/view_separator"/>
+            <include android:id="@+id/view_bottom_lines" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" android:layout_below="@+id/fragment_container" layout="@layout/pb_base_bottom_paytm_line"/>
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar android:id="@+id/pb_progress" android:background="@color/wallet_progress_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:indeterminateDrawable="@drawable/pb_pb_paytm_progress"/>
+    <RelativeLayout android:id="@+id/fd_loader_lyt" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="left" android:id="@+id/fd_loader" android:layout_width="200dp" android:layout_height="30dp" android:layout_centerInParent="true" app:amount="3" app:circleSize="5" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700" app:animationDirectionbundle="-1"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/bottom_logo_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#b6c2cc" android:gravity="center" android:id="@+id/v_ftr_2" android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="62dp" android:text="@string/pb_in_collabration_with_induslnd" android:layout_below="@+id/tv_btm_heading" android:fontFamily="sans-serif"/>
+    </FrameLayout>
+</RelativeLayout>

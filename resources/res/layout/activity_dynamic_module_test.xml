@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/colorAccent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <Button android:id="@+id/btn_refresh_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Refresh Modules Status"/>
+        <Button android:id="@+id/btn_toggle_install_all" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Install All"/>
+        <Button android:id="@+id/btn_toggle_install_multiple" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Install Multiple (First 2)"/>
+        <TextView android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TIP: Multiple/All modules command will install modules one by one until user consent is not required and there will be no state update/callback for calling component."/>
+        <Switch android:id="@+id/sw_toggle_deffered_install" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="false" android:text="Enable Deffered install"/>
+        <TextView android:textSize="14sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_status" android:background="#37000000" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="Status"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_modules" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

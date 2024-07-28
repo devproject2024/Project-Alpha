@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="50dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/moviepass_offers_llt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+        <RelativeLayout android:id="@+id/moviepass_btn" android:background="@drawable/moviepass_homepage_btn" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_weight="1">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/paytm_blue" android:id="@+id/moviepass_btn_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/moviepass_btn_label" android:drawableLeft="@drawable/ic_home_moviepass_btn" android:drawablePadding="5dp" android:layout_centerInParent="true" android:translationX="-5dp" app:fontType="3"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/offers_btn" android:background="@drawable/offers_homepage_btn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_weight="1">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/offers_home_text" android:gravity="center" android:id="@+id/offers_btn_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/offers_btn_label" android:drawableLeft="@drawable/ic_offers_home_btn" android:drawablePadding="13dp" android:layout_centerInParent="true" android:translationX="-5dp" app:fontType="2"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

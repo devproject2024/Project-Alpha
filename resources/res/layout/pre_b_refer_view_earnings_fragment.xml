@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/root_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_15dp">
+        <TextView android:textSize="13sp" android:textColor="#4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refer_received" app:fontType="1"/>
+        <TextView android:textSize="13sp" android:textColor="#4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refer_earned" android:layout_alignParentRight="true" app:fontType="1"/>
+    </RelativeLayout>
+    <TextView android:textSize="13sp" android:textColor="#9b9b9b" android:id="@+id/no_booking_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_15dp" android:text="@string/no_booking_yet" android:layout_centerInParent="true" app:fontType="1"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/view_earnings_members_recycler" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/root_layout"/>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/search_toolabar" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/back_arrow" android:paddingLeft="5dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_de000000" android:ellipsize="end" android:id="@+id/top_title" android:padding="2dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ticket Summary" android:singleLine="true" android:layout_toLeftOf="@+id/search_icon_img" android:layout_toRightOf="@+id/back_arrow" android:layout_centerVertical="true" app:fontType="3"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <include layout="@layout/park_no_network_layout"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/search_toolabar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/event_order_summary_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+    <ImageView android:id="@+id/zoomed_qr_image" android:background="@color/color_70000000" android:visibility="invisible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/id_event_summary_fragment_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"/>
+    <ProgressBar android:id="@+id/event_order_summary_progress_bar" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:indeterminateDrawable="@drawable/amp_progress_large_holo" android:layout_centerInParent="true"/>
+</RelativeLayout>

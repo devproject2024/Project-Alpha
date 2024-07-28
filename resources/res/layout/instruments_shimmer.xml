@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.one97.paytm.nativesdk.Utils.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/shimmer_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/left_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/dimen_16dp"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/top_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/dimen_20dp"/>
+        <include android:id="@+id/first_instrument" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toRightOf="@+id/left_guideline" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/top_guideline" layout="@layout/instrument_shimmer_item"/>
+        <include android:id="@+id/second_instrument" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toRightOf="@+id/left_guideline" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/first_instrument" layout="@layout/instrument_shimmer_item"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</net.one97.paytm.nativesdk.Utils.ShimmerFrameLayout>

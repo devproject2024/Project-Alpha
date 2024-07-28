@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="24dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10dp" android:layout_marginRight="-10dp" android:src="@drawable/pb_ic_close_black_bank" android:layout_alignParentRight="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_heading_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#1d252d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_cw_now_withdraw_cash_at_a_nearby" android:lineSpacingExtra="10sp" android:fontFamily="sans-serif" android:letterSpacing="-0.02"/>
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#1d252d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/pb_cw_paytm_ka_atm" android:lineSpacingExtra="10sp" android:fontFamily="sans-serif" android:letterSpacing="-0.02"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#8ba6c1" android:background="#f5f8fa" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/pb_cw_steps_to_withdraw_cash" android:fontFamily="sans-serif-medium" android:letterSpacing="0.08"/>
+        <RelativeLayout android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_step_1"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_toRightOf="@+id/iv_image">
+                <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#506d85" android:id="@+id/tv_step" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_cw_step_1_title" android:lineSpacingExtra="0sp" android:fontFamily="sans-serif-medium" android:letterSpacing="0.1"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#1d252d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/pb_cw_step_1_desc" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="30dp" android:paddingRight="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_step_2"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_toRightOf="@+id/iv_image">
+                <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#506d85" android:id="@+id/tv_step" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_cw_step_2_title" android:lineSpacingExtra="0sp" android:fontFamily="sans-serif-medium" android:letterSpacing="0.1"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#1d252d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/pb_cw_step_2_desc" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="30dp" android:paddingRight="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_step_3"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_toRightOf="@+id/iv_image">
+                <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#506d85" android:id="@+id/tv_step" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_cw_step_3_title" android:lineSpacingExtra="0sp" android:fontFamily="sans-serif-medium" android:letterSpacing="0.1"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#1d252d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/pb_cw_step_3_desc" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/btn" android:background="@drawable/button_blue" android:paddingTop="20dp" android:paddingBottom="20dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_30dp" android:layout_marginRight="@dimen/dimen_20dp">
+            <TextView android:textSize="17sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_cw_ok_show_me_centers" android:lineSpacingExtra="0sp" android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

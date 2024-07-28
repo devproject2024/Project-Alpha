@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_12dp">
+        <View android:id="@+id/bullet" android:background="@drawable/grey_circle_re" android:layout_width="7dp" android:layout_height="7dp" android:layout_marginTop="5dp"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/offer_details_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14dp" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif" app:fontType="2"/>
+    </LinearLayout>
+</LinearLayout>

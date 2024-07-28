@@ -1,0 +1,928 @@
+{
+  "head": {
+    "requestId": null,
+    "responseTimestamp": "1564730428610",
+    "version": "v1"
+  },
+  "body": {
+    "resultInfo": {
+      "resultStatus": "S",
+      "resultCode": "0000",
+      "resultMsg": "Success"
+    },
+    "merchantDetails": {
+      "mcc": "5641",
+      "merchantVpa": null,
+      "merchantName": "TEST DQR"
+    },
+    "walletOnly": false,
+    "zeroCostEmi": false,
+    "pcfEnabled": false,
+    "nativeJsonRequestSupported": false,
+    "orderId": "201908021250280020",
+    "activeMerchant": true,
+    "onTheFlyKYCRequired": false,
+    "paymentFlow": "NONE",
+    "merchantPayOption": {
+      "paymentModes": [{
+        "displayName": "Paytm Balance",
+        "isDisabled": {
+          "status": "false",
+          "msg": null,
+          "userAccountExist": "true",
+          "merchantAccept": "true"
+        },
+        "payChannelOptions": [{
+          "isDisabled": {
+            "status": "false",
+            "msg": null,
+            "userAccountExist": "true",
+            "merchantAccept": "true"
+          },
+          "hasLowSuccess": {
+            "status": "false",
+            "msg": ""
+          },
+          "iconUrl": null,
+          "balanceInfo": {
+            "subWalletDetails": null,
+            "payerAccountExists": true,
+            "accountBalance": {
+              "currency": "INR",
+              "value": "65.00"
+            }
+          },
+          "isHybridDisabled": false
+        }],
+        "feeAmount": null,
+        "taxAmount": null,
+        "totalTransactionAmount": null,
+        "priority": "1",
+        "onboarding": false,
+        "paymentMode": "BALANCE",
+        "isHybridDisabled": false
+      }, {
+        "displayName": "GIFT_VOUCHER",
+        "isDisabled": {
+          "status": "false",
+          "msg": null,
+          "userAccountExist": "true",
+          "merchantAccept": "true"
+        },
+        "payChannelOptions": [{
+          "isDisabled": {
+            "status": "false",
+            "msg": null,
+            "userAccountExist": "true",
+            "merchantAccept": "true"
+          },
+          "hasLowSuccess": {
+            "status": "false",
+            "msg": ""
+          },
+          "iconUrl": null,
+          "balanceInfo": {
+            "subWalletDetails": null,
+            "accountBalance": {
+              "currency": "INR",
+              "value": "6.60"
+            },
+            "payerAccountExists": true
+          },
+          "templateId": "20181000000000000000000000000004",
+          "isHybridDisabled": true
+        }],
+        "feeAmount": null,
+        "taxAmount": null,
+        "totalTransactionAmount": null,
+        "priority": null,
+        "storeFrontUrl": "{storefronturl}?=kybidmocknull",
+        "onboarding": false,
+        "paymentMode": "GIFT_VOUCHER",
+        "isHybridDisabled": false
+      },
+        {
+          "displayName": "Paytm Postpaid",
+          "isDisabled": {
+            "status": "true",
+            "msg": null,
+            "userAccountExist": "false",
+            "merchantAccept": "false"
+          },
+          "payChannelOptions": [{
+            "isDisabled": {
+              "status": "true",
+              "msg": null,
+              "userAccountExist": "false",
+              "merchantAccept": "false"
+            },
+            "hasLowSuccess": {
+              "status": "false",
+              "msg": ""
+            },
+            "iconUrl": "https://staticgw3.paytm.in/native/bank/PAYTMCC.png",
+            "balanceInfo": null,
+            "isHybridDisabled": false
+          }],
+          "feeAmount": null,
+          "taxAmount": null,
+          "totalTransactionAmount": null,
+          "priority": "2",
+          "onboarding": false,
+          "paymentMode": "PAYTM_DIGITAL_CREDIT",
+          "isHybridDisabled": false
+        },
+        {
+          "displayName": "Credit Card",
+          "isDisabled": {
+            "status": "false",
+            "msg": ""
+          },
+          "payChannelOptions": [],
+          "feeAmount": null,
+          "taxAmount": null,
+          "totalTransactionAmount": null,
+          "priority": "16",
+          "onboarding": false,
+          "paymentMode": "CREDIT_CARD",
+          "isHybridDisabled": false
+        },
+        {
+          "displayName": "Debit Card",
+          "isDisabled": {
+            "status": "false",
+            "msg": ""
+          },
+          "payChannelOptions": [],
+          "feeAmount": null,
+          "taxAmount": null,
+          "totalTransactionAmount": null,
+          "priority": "17",
+          "onboarding": false,
+          "paymentMode": "DEBIT_CARD",
+          "isHybridDisabled": false
+        },
+        {
+          "displayName": "Net Banking",
+          "isDisabled": {
+            "status": "false",
+            "msg": ""
+          },
+          "payChannelOptions": [{
+            "isDisabled": {
+              "status": "false",
+              "msg": null
+            },
+            "hasLowSuccess": {
+              "status": "false",
+              "msg": ""
+            },
+            "iconUrl": "https://staticgw4.paytm.in/native/bank/HDFC.png",
+            "isHybridDisabled": false,
+            "channelCode": "HDFC",
+            "channelName": "HDFC Bank"
+          },
+            {
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "https://staticgw4.paytm.in/native/bank/ICICI.png",
+              "isHybridDisabled": false,
+              "channelCode": "ICICI",
+              "channelName": "ICICI Bank"
+            },
+            {
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "https://staticgw1.paytm.in/native/bank/AXIS.png",
+              "isHybridDisabled": false,
+              "channelCode": "AXIS",
+              "channelName": "Axis Bank"
+            },
+            {
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "https://staticgw3.paytm.in/native/bank/PNB.png",
+              "isHybridDisabled": false,
+              "channelCode": "PNB",
+              "channelName": "Punjab National Bank"
+            },
+            {
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "https://staticgw1.paytm.in/native/bank/NKMB.png",
+              "isHybridDisabled": false,
+              "channelCode": "NKMB",
+              "channelName": "Kotak Bank"
+            }
+          ],
+          "feeAmount": null,
+          "taxAmount": null,
+          "totalTransactionAmount": null,
+          "priority": "13",
+          "onboarding": false,
+          "paymentMode": "NET_BANKING",
+          "isHybridDisabled": false
+        },
+        {
+          "displayName": "EMI",
+          "isDisabled": {
+            "status": "false",
+            "msg": ""
+          },
+          "payChannelOptions": [{
+            "isDisabled": {
+              "status": "false",
+              "msg": null
+            },
+            "hasLowSuccess": {
+              "status": "false",
+              "msg": ""
+            },
+            "iconUrl": "https://staticgw1.paytm.in/native/bank/AXIS.png",
+            "minAmount": {
+              "currency": "INR",
+              "value": "3000.0"
+            },
+            "maxAmount": {
+              "currency": "INR",
+              "value": "999999.0"
+            },
+            "emiType": "CREDIT_CARD",
+            "isHybridDisabled": true,
+            "channelCode": "AXIS",
+            "channelName": "Axis Bank"
+          },
+            {
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "https://staticgw4.paytm.in/native/bank/CITI.png",
+              "minAmount": {
+                "currency": "INR",
+                "value": "3000.0"
+              },
+              "maxAmount": {
+                "currency": "INR",
+                "value": "999999.0"
+              },
+              "emiType": "CREDIT_CARD",
+              "isHybridDisabled": true,
+              "channelCode": "CITI",
+              "channelName": "Citibank"
+            },
+            {
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "https://staticgw3.paytm.in/native/bank/ICICI.png",
+              "minAmount": {
+                "currency": "INR",
+                "value": "1500.0"
+              },
+              "maxAmount": {
+                "currency": "INR",
+                "value": "999999.0"
+              },
+              "emiType": "CREDIT_CARD",
+              "isHybridDisabled": true,
+              "channelCode": "ICICI",
+              "channelName": "ICICI Bank"
+            },
+            {
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "https://staticgw2.paytm.in/native/bank/NKMB.png",
+              "minAmount": {
+                "currency": "INR",
+                "value": "500.0"
+              },
+              "maxAmount": {
+                "currency": "INR",
+                "value": "999999.0"
+              },
+              "emiType": "CREDIT_CARD",
+              "isHybridDisabled": true,
+              "channelCode": "NKMB",
+              "channelName": "Kotak Bank"
+            },
+            {
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "https://staticgw1.paytm.in/native/bank/RATN.png",
+              "minAmount": {
+                "currency": "INR",
+                "value": "500.0"
+              },
+              "maxAmount": {
+                "currency": "INR",
+                "value": "999999.0"
+              },
+              "emiType": "CREDIT_CARD",
+              "isHybridDisabled": true,
+              "channelCode": "RATN",
+              "channelName": "RBL Bank"
+            },
+            {
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "https://staticgw3.paytm.in/native/bank/YES.png",
+              "minAmount": {
+                "currency": "INR",
+                "value": "2500.0"
+              },
+              "maxAmount": {
+                "currency": "INR",
+                "value": "999999.0"
+              },
+              "emiType": "CREDIT_CARD",
+              "isHybridDisabled": true,
+              "channelCode": "YES",
+              "channelName": "Yes Bank"
+            }
+          ],
+          "feeAmount": null,
+          "taxAmount": null,
+          "totalTransactionAmount": null,
+          "priority": "14",
+          "onboarding": false,
+          "paymentMode": "EMI",
+          "isHybridDisabled": true
+        },
+        {
+          "displayName": "BHIM UPI",
+          "isDisabled": {
+            "status": "false",
+            "msg": ""
+          },
+          "payChannelOptions": [{
+            "isDisabled": {
+              "status": "false",
+              "msg": null
+            },
+            "hasLowSuccess": {
+              "status": "false",
+              "msg": ""
+            },
+            "iconUrl": "https://staticgw5.paytm.in/native/bank/UPI.png",
+            "isHybridDisabled": false,
+            "channelCode": "UPI",
+            "channelName": "Unified Payment Interace"
+          },
+            {
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "https://staticgw2.paytm.in/native/bank/UPIPUSH.png",
+              "isHybridDisabled": false,
+              "channelCode": "UPIPUSH",
+              "channelName": "Unified Payment Interface - PUSH"
+            },
+            {
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "https://staticgw3.paytm.in/native/bank/UPIPUSHEXPRESS.png",
+              "isHybridDisabled": false,
+              "channelCode": "UPIPUSHEXPRESS",
+              "channelName": "Unified Payment Interface - PUSH Express"
+            }
+          ],
+          "feeAmount": null,
+          "taxAmount": null,
+          "totalTransactionAmount": null,
+          "priority": "3",
+          "onboarding": false,
+          "paymentMode": "UPI",
+          "isHybridDisabled": false
+        },
+        {
+          "displayName": "Paytm Payments Bank",
+          "isDisabled": {
+            "status": "false",
+            "msg": null,
+            "userAccountExist": "true",
+            "merchantAccept": "true"
+          },
+          "payChannelOptions": [{
+            "isDisabled": {
+              "status": "false",
+              "msg": null,
+              "userAccountExist": "true",
+              "merchantAccept": "true"
+            },
+            "hasLowSuccess": {
+              "status": "false",
+              "msg": ""
+            },
+            "iconUrl": "https://staticgw2.paytm.in/native/bank/PPBL.png",
+            "balanceInfo": null,
+            "isHybridDisabled": false
+          }],
+          "feeAmount": null,
+          "taxAmount": null,
+          "totalTransactionAmount": null,
+          "priority": "18",
+          "onboarding": false,
+          "paymentMode": "PPBL",
+          "isHybridDisabled": false
+        }
+      ],
+      "savedInstruments": [{
+        "isDisabled": {
+          "status": "false",
+          "msg": null
+        },
+        "hasLowSuccess": {
+          "status": "false",
+          "msg": ""
+        },
+        "iconUrl": "https://staticgw1.paytm.in/25.1.0/images/web/merchant4/visa.png",
+        "cardDetails": {
+          "cardId": "100357217017",
+          "cardType": "DEBIT_CARD",
+          "expiryDate": null,
+          "firstSixDigit": "472254",
+          "lastFourDigit": "2670",
+          "status": "1",
+          "cvvLength": "3",
+          "cvvRequired": true
+        },
+        "issuingBank": "ICICI",
+        "isEmiAvailable": false,
+        "authModes": [
+          "otp"
+        ],
+        "displayName": "ICICI - Debit Card",
+        "priority": "4",
+        "paymentOfferDetails": null,
+        "isHybridDisabled": false,
+        "channelCode": "VISA",
+        "channelName": "Visa Inc.",
+        "isEmiHybridDisabled": false
+      },
+        {
+          "isDisabled": {
+            "status": "false",
+            "msg": null
+          },
+          "hasLowSuccess": {
+            "status": "false",
+            "msg": ""
+          },
+          "iconUrl": "https://staticgw2.paytm.in/25.1.0/images/web/merchant4/rupay.png",
+          "cardDetails": {
+            "cardId": "100357208663",
+            "cardType": "DEBIT_CARD",
+            "expiryDate": null,
+            "firstSixDigit": "608032",
+            "lastFourDigit": "5777",
+            "status": "1",
+            "cvvLength": "3",
+            "cvvRequired": true
+          },
+          "issuingBank": "PAYTM",
+          "isEmiAvailable": false,
+          "authModes": [
+            "otp"
+          ],
+          "displayName": "PAYTM - Debit Card",
+          "priority": "5",
+          "paymentOfferDetails": null,
+          "isHybridDisabled": false,
+          "channelCode": "RUPAY",
+          "channelName": "RuPay",
+          "isEmiHybridDisabled": false
+        },
+        {
+          "isDisabled": {
+            "status": "false",
+            "msg": null
+          },
+          "hasLowSuccess": {
+            "status": "false",
+            "msg": ""
+          },
+          "iconUrl": "https://staticgw1.paytm.in/25.1.0/images/web/merchant4/master.png",
+          "cardDetails": {
+            "cardId": "100336806621",
+            "cardType": "DEBIT_CARD",
+            "expiryDate": null,
+            "firstSixDigit": "541919",
+            "lastFourDigit": "8066",
+            "status": "1",
+            "cvvLength": "3",
+            "cvvRequired": true
+          },
+          "issuingBank": "HDFC",
+          "isEmiAvailable": false,
+          "authModes": [
+            "otp"
+          ],
+          "displayName": "HDFC - Debit Card",
+          "priority": "6",
+          "paymentOfferDetails": null,
+          "isHybridDisabled": false,
+          "channelCode": "MASTER",
+          "channelName": "MasterCard Inc.",
+          "isEmiHybridDisabled": false
+        },
+        {
+          "isDisabled": {
+            "status": "false",
+            "msg": null
+          },
+          "hasLowSuccess": {
+            "status": "false",
+            "msg": ""
+          },
+          "iconUrl": "https://staticgw3.paytm.in/25.1.0/images/web/merchant4/visa.png",
+          "cardDetails": {
+            "cardId": "100177408285",
+            "cardType": "DEBIT_CARD",
+            "expiryDate": null,
+            "firstSixDigit": "459200",
+            "lastFourDigit": "2058",
+            "status": "1",
+            "cvvLength": "3",
+            "cvvRequired": true
+          },
+          "issuingBank": "SBI",
+          "isEmiAvailable": false,
+          "authModes": [
+            "otp"
+          ],
+          "displayName": "SBI - Debit Card",
+          "priority": "7",
+          "paymentOfferDetails": null,
+          "isHybridDisabled": false,
+          "channelCode": "VISA",
+          "channelName": "Visa Inc.",
+          "isEmiHybridDisabled": false
+        },
+        {
+          "isDisabled": {
+            "status": "false",
+            "msg": null
+          },
+          "hasLowSuccess": {
+            "status": "false",
+            "msg": ""
+          },
+          "iconUrl": "https://staticgw3.paytm.in/25.1.0/images/web/merchant4/visa.png",
+          "cardDetails": {
+            "cardId": "100377213193",
+            "cardType": "CREDIT_CARD",
+            "expiryDate": null,
+            "firstSixDigit": "438628",
+            "lastFourDigit": "8473",
+            "status": "1",
+            "cvvLength": "3",
+            "cvvRequired": true
+          },
+          "issuingBank": "CITI",
+          "isEmiAvailable": true,
+          "authModes": [
+            "otp"
+          ],
+          "minAmount": {
+            "currency": "INR",
+            "value": "3000.0"
+          },
+          "maxAmount": {
+            "currency": "INR",
+            "value": "999999.0"
+          },
+          "displayName": "CITI - Credit Card",
+          "priority": "8",
+          "paymentOfferDetails": null,
+          "isHybridDisabled": false,
+          "channelCode": "VISA",
+          "channelName": "Visa Inc.",
+          "isEmiHybridDisabled": true
+        },
+        {
+          "isDisabled": {
+            "status": "false",
+            "msg": null
+          },
+          "hasLowSuccess": {
+            "status": "false",
+            "msg": ""
+          },
+          "iconUrl": "https://staticgw3.paytm.in/25.1.0/images/web/merchant4/visa.png",
+          "cardDetails": {
+            "cardId": "100366800195",
+            "cardType": "CREDIT_CARD",
+            "expiryDate": null,
+            "firstSixDigit": "451457",
+            "lastFourDigit": "4493",
+            "status": "1",
+            "cvvLength": "3",
+            "cvvRequired": true
+          },
+          "issuingBank": "AXIS",
+          "isEmiAvailable": true,
+          "authModes": [
+            "otp"
+          ],
+          "minAmount": {
+            "currency": "INR",
+            "value": "3000.0"
+          },
+          "maxAmount": {
+            "currency": "INR",
+            "value": "999999.0"
+          },
+          "displayName": "AXIS - Credit Card",
+          "priority": "9",
+          "paymentOfferDetails": null,
+          "isHybridDisabled": false,
+          "channelCode": "VISA",
+          "channelName": "Visa Inc.",
+          "isEmiHybridDisabled": true
+        },
+        {
+          "isDisabled": {
+            "status": "false",
+            "msg": null
+          },
+          "hasLowSuccess": {
+            "status": "false",
+            "msg": ""
+          },
+          "iconUrl": "https://staticgw2.paytm.in/25.1.0/images/web/merchant4/visa.png",
+          "cardDetails": {
+            "cardId": "100356868963",
+            "cardType": "CREDIT_CARD",
+            "expiryDate": null,
+            "firstSixDigit": "451457",
+            "lastFourDigit": "4857",
+            "status": "1",
+            "cvvLength": "3",
+            "cvvRequired": true
+          },
+          "issuingBank": "AXIS",
+          "isEmiAvailable": true,
+          "authModes": [
+            "otp"
+          ],
+          "minAmount": {
+            "currency": "INR",
+            "value": "3000.0"
+          },
+          "maxAmount": {
+            "currency": "INR",
+            "value": "999999.0"
+          },
+          "displayName": "AXIS - Credit Card",
+          "priority": "10",
+          "paymentOfferDetails": null,
+          "isHybridDisabled": false,
+          "channelCode": "VISA",
+          "channelName": "Visa Inc.",
+          "isEmiHybridDisabled": true
+        },
+        {
+          "isDisabled": {
+            "status": "false",
+            "msg": null
+          },
+          "hasLowSuccess": {
+            "status": "false",
+            "msg": ""
+          },
+          "iconUrl": "https://staticgw5.paytm.in/25.1.0/images/web/merchant4/master.png",
+          "cardDetails": {
+            "cardId": "100285470081",
+            "cardType": "CREDIT_CARD",
+            "expiryDate": null,
+            "firstSixDigit": "523950",
+            "lastFourDigit": "0177",
+            "status": "1",
+            "cvvLength": "3",
+            "cvvRequired": true
+          },
+          "issuingBank": "RATN",
+          "isEmiAvailable": true,
+          "authModes": [
+            "otp"
+          ],
+          "minAmount": {
+            "currency": "INR",
+            "value": "500.0"
+          },
+          "maxAmount": {
+            "currency": "INR",
+            "value": "999999.0"
+          },
+          "displayName": "RBL Bank - Credit Card",
+          "priority": "11",
+          "paymentOfferDetails": null,
+          "isHybridDisabled": false,
+          "channelCode": "MASTER",
+          "channelName": "MasterCard Inc.",
+          "isEmiHybridDisabled": true
+        },
+        {
+          "isDisabled": {
+            "status": "false",
+            "msg": null
+          },
+          "hasLowSuccess": {
+            "status": "false",
+            "msg": ""
+          },
+          "iconUrl": "https://staticgw2.paytm.in/25.1.0/images/web/merchant4/visa.png",
+          "cardDetails": {
+            "cardId": "100281634813",
+            "cardType": "CREDIT_CARD",
+            "expiryDate": null,
+            "firstSixDigit": "489377",
+            "lastFourDigit": "3825",
+            "status": "1",
+            "cvvLength": "3",
+            "cvvRequired": true
+          },
+          "issuingBank": "HDFC",
+          "isEmiAvailable": false,
+          "authModes": [
+            "otp"
+          ],
+          "displayName": "HDFC - Credit Card",
+          "priority": "12",
+          "paymentOfferDetails": null,
+          "isHybridDisabled": false,
+          "channelCode": "VISA",
+          "channelName": "Visa Inc.",
+          "isEmiHybridDisabled": false
+        }
+      ],
+      "userProfileSarvatra": {
+        "status": "success",
+        "response": {
+          "vpaDetails": [{
+            "name": "9991859810@paytm",
+            "defaultCredit": {
+              "bank": "HDFC BANK LTD",
+              "ifsc": "HDFC0004349",
+              "account": "50100147695312",
+              "accRefNumber": "50100147695312",
+              "accountType": "SAVINGS",
+              "credsAllowed": [{
+                "CredsAllowedDLength": "4",
+                "CredsAllowedDType": "Numeric",
+                "CredsAllowedSubType": "MPIN",
+                "CredsAllowedType": "PIN",
+                "dLength": "4"
+              },
+                {
+                  "CredsAllowedDLength": "4",
+                  "CredsAllowedDType": "Numeric",
+                  "CredsAllowedSubType": "ATMPIN",
+                  "CredsAllowedType": "PIN",
+                  "dLength": "4"
+                }
+              ],
+              "name": "HIMANSHU TUTEJA",
+              "mbeba": "Y",
+              "aeba": "N",
+              "accRefId": "65739023",
+              "maskedAccountNumber": "XXXXXXXXXX5312",
+              "mmid": null,
+              "invalidVpa": false
+            },
+            "defaultDebit": {
+              "bank": "HDFC BANK LTD",
+              "ifsc": "HDFC0004349",
+              "account": "50100147695312",
+              "accRefNumber": "50100147695312",
+              "accountType": "SAVINGS",
+              "credsAllowed": [{
+                "CredsAllowedDLength": "4",
+                "CredsAllowedDType": "Numeric",
+                "CredsAllowedSubType": "MPIN",
+                "CredsAllowedType": "PIN",
+                "dLength": "4"
+              },
+                {
+                  "CredsAllowedDLength": "4",
+                  "CredsAllowedDType": "Numeric",
+                  "CredsAllowedSubType": "ATMPIN",
+                  "CredsAllowedType": "PIN",
+                  "dLength": "4"
+                }
+              ],
+              "name": "HIMANSHU TUTEJA",
+              "mbeba": "Y",
+              "aeba": "N",
+              "accRefId": "65739023",
+              "maskedAccountNumber": "XXXXXXXXXX5312",
+              "mmid": null,
+              "invalidVpa": false
+            },
+            "primary": true
+          }],
+          "bankAccounts": [{
+            "bank": "HDFC BANK LTD",
+            "ifsc": "HDFC0004349",
+            "account": "50100147695312",
+            "accRefNumber": "50100147695312",
+            "accountType": "SAVINGS",
+            "credsAllowed": [{
+              "CredsAllowedDLength": "4",
+              "CredsAllowedDType": "Numeric",
+              "CredsAllowedSubType": "MPIN",
+              "CredsAllowedType": "PIN",
+              "dLength": "4"
+            },
+              {
+                "CredsAllowedDLength": "4",
+                "CredsAllowedDType": "Numeric",
+                "CredsAllowedSubType": "ATMPIN",
+                "CredsAllowedType": "PIN",
+                "dLength": "4"
+              }
+            ],
+            "name": "HIMANSHU TUTEJA",
+            "mbeba": "Y",
+            "aeba": "N",
+            "accRefId": "65739023",
+            "maskedAccountNumber": "XXXXXXXXXX5312",
+            "mmid": null,
+            "invalidVpa": false
+          }]
+        },
+        "priority": "15"
+      },
+      "activeSubscriptions": null
+    },
+    "addMoneyPayOption": {
+      "paymentModes": null,
+      "savedInstruments": [],
+      "userProfileSarvatra": null,
+      "activeSubscriptions": null
+    }
+  }
+}

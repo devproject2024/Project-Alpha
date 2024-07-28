@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/card_view" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" app:cardCornerRadius="@dimen/dimen_4dp" app:cardElevation="@dimen/dimen_3dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:textColor="@color/color_FF222222" android:paddingTop="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_order_summary_payment_details" android:singleLine="true" android:layout_centerVertical="true" app:fontType="3"/>
+            </RelativeLayout>
+            <View android:background="@color/color_f4f4f4" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_11dp"/>
+            <TableLayout android:id="@+id/lyt_fare_details" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableRow android:layout_marginTop="@dimen/dimen_10dp">
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_666666" android:gravity="left" android:id="@+id/lbl_base_fare" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/base_fare" android:singleLine="true" android:layout_weight="1" app:fontType="2"/>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_666666" android:gravity="right" android:id="@+id/text_base_fare" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+                </TableRow>
+                <TableRow android:id="@+id/dealHolderLayout" android:visibility="gone" android:layout_marginTop="@dimen/dimen_10dp">
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_666666" android:gravity="left" android:id="@+id/lbl_deal_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/deal_discount" android:layout_weight="1" app:fontType="2"/>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_494949" android:gravity="right" android:id="@+id/text_deal_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+                </TableRow>
+                <TableRow android:id="@+id/tbl_row_tax_fee" android:layout_marginTop="@dimen/dimen_10dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_666666" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_order_summary_taxes_and_fees" android:singleLine="true" app:fontType="2"/>
+                        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/convenience_fee_detail" android:paddingBottom="@dimen/dimen_3dp" android:visibility="gone" android:layout_width="@dimen/wallet_20_dp" android:layout_height="@dimen/wallet_20_dp" android:layout_marginLeft="@dimen/dimen_20dp" app:srcCompat="@drawable/travel_res_bus_have_an_issue"/>
+                    </LinearLayout>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_666666" android:gravity="right" android:id="@+id/text_taxes_fees" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+                </TableRow>
+                <TableRow android:id="@+id/tbl_row_gst_fee" android:visibility="gone" android:layout_marginTop="@dimen/dimen_10dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_666666" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_order_summary_gst" android:singleLine="true" app:fontType="2"/>
+                    </LinearLayout>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_666666" android:gravity="right" android:id="@+id/operator_gst_fee_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+                </TableRow>
+                <TableRow android:id="@+id/tbl_row_other_fee" android:visibility="gone" android:layout_marginTop="@dimen/dimen_10dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_666666" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_order_summary_other_fee" android:singleLine="true" app:fontType="2"/>
+                    </LinearLayout>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_666666" android:gravity="right" android:id="@+id/operator_other_fee_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+                </TableRow>
+                <TableRow android:id="@+id/flight_insurance_row" android:visibility="gone" android:layout_marginTop="@dimen/dimen_10dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/gray_color" android:gravity="left" android:id="@+id/label_insurance_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_order_summary_flight_travel_insurance" android:singleLine="true" app:fontType="2"/>
+                    </LinearLayout>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_494949" android:gravity="right" android:id="@+id/text_insurance_fee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+                </TableRow>
+                <TableRow android:visibility="gone" android:layout_marginTop="@dimen/dimen_10dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/gray_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_ancillary_meals_and_additional_baggage" android:singleLine="true" app:fontType="2"/>
+                    </LinearLayout>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_494949" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+                </TableRow>
+                <TableRow android:id="@+id/tbl_row_conv_fee" android:layout_marginTop="@dimen/dimen_10dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/gray_color" android:gravity="left" android:id="@+id/lbl_conv_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_order_summary_total_convience_fee" android:singleLine="true" app:fontType="2"/>
+                    </LinearLayout>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_494949" android:gravity="right" android:id="@+id/text_convience_fee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+                </TableRow>
+                <TableRow>
+                    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp" android:layout_weight="1">
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/flight_review_base_fare" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_insurance" android:singleLine="true" app:fontType="2"/>
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/flight_review_base_fare" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:id="@+id/tbl_row_bank_discount" android:visibility="gone" android:layout_marginTop="@dimen/dimen_10dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/gray_color" android:gravity="left" android:id="@+id/lbl_conv_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_order_summary_bank_discount" android:singleLine="true" app:fontType="2"/>
+                    </LinearLayout>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_494949" android:gravity="right" android:id="@+id/text_bank_discount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+                </TableRow>
+                <TableRow>
+                    <View android:background="@color/color_f4f4f4" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_weight="1"/>
+                </TableRow>
+                <TableRow android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp">
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/dark_black" android:gravity="left" android:id="@+id/lbl_total_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/flight_grand_total" android:layout_weight="1" app:fontType="3"/>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_494949" android:gravity="right" android:id="@+id/text_total_fare" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+                </TableRow>
+                <LinearLayout android:orientation="vertical" android:id="@+id/awesomeTextLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent" android:layout_height="2px" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_5dp" app:srcCompat="@color/bg_grey"/>
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/blue" android:layout_gravity="center_vertical" android:id="@+id/awesomeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_10dp" android:text="Awesome…! You will save     110 on this booking"/>
+                </LinearLayout>
+                <TableRow android:id="@+id/order_summary_transaction_layout" android:layout_marginBottom="@dimen/dimen_10dp">
+                    <LinearLayout android:orientation="vertical" android:layout_weight="1">
+                        <View android:id="@+id/payment_devider" android:background="@color/color_f4f4f4" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_weight="1"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/bank_offer_cashback_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+                                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/gray_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paytm_bus_bank_offer_cashback" android:layout_alignParentLeft="true" app:fontType="2"/>
+                                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_494949" android:id="@+id/paytm_bus_bank_offer_cashback_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/payment_type_paytm_cash_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+                                <com.paytm.utility.RoboTextView android:textSize="@dimen/bus_14sp" android:textColor="@color/color_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paytm_cash_label" android:layout_alignParentLeft="true" app:fontType="2"/>
+                                <com.paytm.utility.RoboTextView android:textSize="@dimen/bus_14sp" android:textColor="@color/color_666666" android:id="@+id/paytm_cash_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+                            </RelativeLayout>
+                            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_10sp" android:textColor="@color/color_666666" android:id="@+id/paytm_cash_transaction_details" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="1"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/payment_type_netbanking_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+                                <com.paytm.utility.RoboTextView android:textSize="@dimen/bus_14sp" android:textColor="@color/color_666666" android:id="@+id/order_summary_transaction_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" app:fontType="2"/>
+                                <com.paytm.utility.RoboTextView android:textSize="@dimen/bus_14sp" android:textColor="@color/color_666666" android:id="@+id/paytm_netbanking_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+                            </RelativeLayout>
+                            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_10sp" android:textColor="@color/color_666666" android:id="@+id/order_summary_netbanking_transaction" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/total_booking_layout_amount" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_666666" android:gravity="left" android:id="@+id/lbl_total_amount_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/flight_grand_total" android:layout_weight="1" app:fontType="3"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/color_666666" android:gravity="right" android:id="@+id/text_total_fare_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/promocode_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50dp" android:layout_marginTop="@dimen/dimen_10dp">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_10sp" android:textColor="@color/event_seat_type_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/flight_promocode" android:background="@drawable/movie_promo_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:fontType="3"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="center_vertical" android:id="@+id/paytm_cashback_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/flight_promocode" android:layout_centerVertical="true" app:fontType="2"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/bus_14sp" android:textColor="@color/color_00b9f5" android:layout_gravity="center" android:id="@+id/order_summary_show_more_minimized" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp" android:text="@string/show_less" android:singleLine="true" android:layout_below="@+id/main_layout" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:fontType="2"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

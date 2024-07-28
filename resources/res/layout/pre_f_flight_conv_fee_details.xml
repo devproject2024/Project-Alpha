@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableLayout android:id="@+id/lyt_fare_details" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TableRow android:paddingTop="5dp" android:paddingBottom="5dp">
+            <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="#ff4d4d4d" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/flight_conv_fee_breakup" android:singleLine="true" android:layout_weight="1" app:fontType="4"/>
+            <ImageView android:gravity="right" android:id="@+id/image_view_conv_fee_details_close_button" android:layout_width="@dimen/wallet_15_dp" android:layout_height="@dimen/wallet_15_dp" android:layout_marginLeft="@dimen/wallet_9_dp"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="12dp">
+            <View android:background="#ffefefef" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:layout_marginTop="25dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_15sp" android:textColor="#ff4a4a4a" android:gravity="left" android:id="@+id/txt_flight_conv_fee_adult_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Adult" android:singleLine="true" android:layout_weight="1" app:fontType="1"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_16sp" android:textColor="#ff4a4a4a" android:gravity="right" android:id="@+id/txt_flight_conv_fee_adult_price" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="1"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="15dp">
+            <View android:background="#ffefefef" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:id="@+id/table_row_child" android:layout_marginTop="12dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_15sp" android:textColor="#ff4a4a4a" android:gravity="left" android:id="@+id/txt_flight_conv_fee_child_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Child" android:singleLine="true" android:layout_weight="1" app:fontType="1"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_16sp" android:textColor="#ff4a4a4a" android:gravity="right" android:id="@+id/txt_flight_conv_fee_child_price" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="1"/>
+        </TableRow>
+        <TableRow android:id="@+id/table_row_child_divider" android:layout_marginTop="16dp">
+            <View android:background="#ffefefef" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:id="@+id/table_row_infant" android:layout_marginTop="12dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_15sp" android:textColor="#ff4a4a4a" android:gravity="left" android:id="@+id/txt_flight_conv_fee_infant_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Infant" android:singleLine="true" android:layout_weight="1" app:fontType="1"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_16sp" android:textColor="#ff4a4a4a" android:gravity="right" android:id="@+id/txt_flight_conv_fee_infant_price" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="1"/>
+        </TableRow>
+        <TableRow android:id="@+id/table_row_infant_divider" android:layout_marginTop="16dp">
+            <View android:background="#ffefefef" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="#ff9b9b9b" android:id="@+id/txt_flight_conv_fee_note" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginTop="@dimen/dimen_23dp" android:text="*note" android:layout_weight="1" app:fontType="2"/>
+</LinearLayout>

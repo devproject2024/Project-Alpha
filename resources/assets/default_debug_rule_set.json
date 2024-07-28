@@ -1,0 +1,23 @@
+[
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "qa_weex_baseurl",
+    "replacement_pattern": "http://assets.paytm.com/dexter/weex/",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "GTM Override",
+    "search_pattern": "qa_weex_version",
+    "replacement_pattern": "dev",
+    "is_full_replacement": false,
+    "is_muted": false
+  },
+  {
+    "rule_type": "String Override",
+    "search_pattern": "https://beta.paytmmall.com/",
+    "replacement_pattern": "https://beta.paytmmall.com/",
+    "is_full_replacement": false,
+    "is_muted": false
+  }
+]

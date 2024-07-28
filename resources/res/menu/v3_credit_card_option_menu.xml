@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:id="@+id/add_card_holder_name_group">
+        <item android:textSize="14sp" android:id="@+id/add_card_holder_name" android:title="@string/add_card_holder_name" android:fontFamily="Roboto-Medium"/>
+    </group>
+    <group android:id="@+id/stop_bill_reminders_group">
+        <item android:textSize="14sp" android:id="@+id/stop_bill_reminders" android:title="@string/stop_bill_reminders" android:fontFamily="Roboto-Medium"/>
+    </group>
+    <group android:id="@+id/delete_group">
+        <item android:textSize="14sp" android:id="@+id/delete" android:title="@string/recent_menu_item_delete" android:fontFamily="Roboto-Medium"/>
+    </group>
+</menu>

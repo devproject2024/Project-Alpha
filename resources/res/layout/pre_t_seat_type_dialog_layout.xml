@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="300dp" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/header_layout" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp" android:layout_marginTop="26dp" android:layout_alignLeft="@+id/radioLayout" android:layout_alignStart="@+id/radioLayout">
+        <com.paytm.utility.RoboTextView android:textSize="17sp" android:textColor="#0a0a0a" android:id="@+id/heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp" android:text="@string/train_filter_text" android:layout_centerVertical="true" app:fontType="3"/>
+        <RelativeLayout android:id="@+id/img_close" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_40dp" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/train_filter_close" android:background="@drawable/pre_t_train_filter_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontType="1"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/radioLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="25dp" android:layout_below="@+id/header_layout">
+        <RadioGroup android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/linear_radio2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:textSize="14sp" android:textColor="#000000" android:id="@+id/radio_non_ac" android:paddingLeft="10dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@drawable/btn_radio_holo_light" android:text="@string/train_show_non_ac_text" android:maxLines="1" android:singleLine="true"/>
+                <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#9b9b9b" android:id="@+id/non_ac_class_text" android:paddingLeft="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/train_show_non_ac_sub_text" android:layout_below="@+id/radio_non_ac"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/linear_radio3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_18dp">
+                <RadioButton android:textSize="14sp" android:textColor="#000000" android:id="@+id/radio_ac" android:paddingLeft="10dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@drawable/btn_radio_holo_light" android:text="@string/train_show_ac_text" android:maxLines="1" android:singleLine="true"/>
+                <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#9b9b9b" android:id="@+id/ac_class_text" android:paddingLeft="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/train_show_ac_sub_text" android:layout_below="@+id/radio_ac"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linear_radio1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_18dp">
+                <RadioButton android:textSize="14sp" android:textColor="#222222" android:id="@+id/radio_both_type" android:paddingLeft="10dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/btn_radio_holo_light" android:text="@string/train_show_ac_non_ac_text"/>
+            </LinearLayout>
+        </RadioGroup>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:layout_below="@+id/radioLayout">
+        <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="#00b9f5" android:id="@+id/text_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="25dp" android:text="@string/done" android:layout_alignParentRight="true" app:fontType="3"/>
+    </RelativeLayout>
+</RelativeLayout>

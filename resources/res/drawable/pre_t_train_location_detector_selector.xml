@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true" android:drawable="@drawable/ic_auto_detect_location_24_x_24"/>
+    <item android:drawable="@drawable/ic_auto_detect_location_selected_24_x_24"/>
+</selector>

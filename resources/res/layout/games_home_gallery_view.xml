@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/gallery_banner" android:background="@drawable/img_banner_bg" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <net.one97.paytm.games.view.pfg.banner.CycleViewPager android:id="@+id/home_banner_gallery" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

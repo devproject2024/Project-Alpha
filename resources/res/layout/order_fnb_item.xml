@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fnb_item_layout" android:paddingTop="1dp" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+    <View android:id="@+id/arrow_v" android:background="@drawable/order_summary_sub_item_arrow_right" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginTop="4dp"/>
+    <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/metalic_blue" android:id="@+id/txt_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="12dp" android:layout_toLeftOf="@+id/txt_value" android:layout_toRightOf="@+id/arrow_v" app:fontType="2"/>
+    <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/metalic_blue" android:id="@+id/txt_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+</RelativeLayout>

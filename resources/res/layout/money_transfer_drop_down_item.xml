@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="#222222" android:id="@+id/txt_account_number" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="3"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#444444" android:id="@+id/txt_bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/txt_account_number" app:fontType="2"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#444444" android:ellipsize="end" android:id="@+id/txt_account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/txt_bank_name" app:fontType="2"/>
+    </RelativeLayout>
+    <View android:background="@color/separators" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

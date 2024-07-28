@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/help_view" android:background="@drawable/offers_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_10dp">
+    <RelativeLayout android:id="@+id/imageview_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/video_thumbnail" android:layout_width="match_parent" android:layout_height="131dp" android:scaleType="centerCrop"/>
+        <Button android:id="@+id/video_button" android:layout_width="52dp" android:layout_height="52dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_222222" android:id="@+id/video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_20dp" android:lineSpacingExtra="4.5sp" app:fontType="3"/>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_444444" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_15dp" android:text="@string/on_paytm" android:lineSpacingExtra="4.5sp" app:fontType="2"/>
+</LinearLayout>

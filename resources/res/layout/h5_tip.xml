@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="#ccff6600" android:padding="5dp" android:layout_width="match_parent" android:layout_height="43dp">
+    <ImageView android:background="@drawable/h5_simple_tip_warn" android:paddingLeft="14dp" android:layout_width="24dp" android:layout_height="24dp"/>
+    <TextView android:textSize="16dp" android:textColor="#ffffff" android:id="@+id/h5_description" android:paddingLeft="14dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/h5_security_tips" android:layout_weight="1"/>
+    <Button android:id="@+id/h5_false_image" android:background="@drawable/h5_simple_toast_false" android:paddingRight="14dp" android:layout_width="16dp" android:layout_height="16dp"/>
+</LinearLayout>

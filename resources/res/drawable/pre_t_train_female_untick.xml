@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:gravity="center" android:height="@dimen/dimen_40dp" android:width="@dimen/dimen_40dp" android:drawable="@drawable/pre_t_female_untick" android:left="3dp" android:top="5dp" android:right="3dp" android:bottom="3.5dp"/>
+    <item android:gravity="center" android:height="@dimen/dimen_52dp" android:width="@dimen/dimen_50dp">
+        <color android:color="@android:color/transparent"/>
+    </item>
+</layer-list>

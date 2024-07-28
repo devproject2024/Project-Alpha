@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/request_money_container_cl" android:tag="layout/mp_fragment_request_money_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/request_money_layout" android:background="@color/white" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/merhcant_link_rv" android:background="@color/white" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_item_container" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/no_img" android:layout_width="@dimen/dimen_128dp" android:layout_height="@dimen/dimen_128dp" android:src="@drawable/mp_ic_no_data_image_tab" android:contentDescription="@string/mp_payment_link_empty_note"/>
+                <com.business.common_module.view.widget.CustomTextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/color_86a0c2" android:id="@+id/tv_no_data_text" android:paddingTop="@dimen/dimen_9dp" android:layout_width="@dimen/dimen_141dp" android:layout_height="wrap_content" android:text="@string/mp_payment_link_empty_note" android:lineSpacingExtra="@dimen/dimen_4sp" android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/progress_bar_lyt" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

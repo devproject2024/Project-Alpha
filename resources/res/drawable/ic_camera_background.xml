@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:height="64dp" android:width="64dp" android:drawable="@drawable/ic_profile_camera_bg"/>
+    <item android:gravity="center" android:height="32dp" android:width="32dp" android:drawable="@drawable/ic_camera_alt_24px"/>
+</layer-list>

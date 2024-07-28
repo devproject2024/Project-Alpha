@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:id="@+id/item_detail_item_image_container" android:paddingLeft="@dimen/item_detail_container_padding" android:paddingRight="@dimen/item_detail_container_padding" android:layout_width="@dimen/item_detail_item_image_container_width" android:layout_height="@dimen/item_detail_item_image_container_height" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/item_detail_item_image_container_margin">
+        <net.one97.paytm.common.widgets.CJRVolleyImageView android:id="@+id/item_detail_item_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside">
+            <requestFocus/>
+        </net.one97.paytm.common.widgets.CJRVolleyImageView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/item_desc_container" android:paddingLeft="@dimen/item_detail_container_padding" android:paddingRight="@dimen/item_detail_container_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14dp" android:layout_marginRight="@dimen/item_detail_item_desc_container_right_margin" android:layout_marginBottom="@dimen/item_detail_item_desc_container_bottom_margin" android:layout_toRightOf="@+id/item_detail_item_image_container">
+        <com.paytm.utility.RoboTextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/item_detail_status_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_detail_status_text_top_margin" android:lineSpacingExtra="0sp" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/view_item_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14dp" android:layout_marginTop="@dimen/dimen_12dp" android:layout_marginBottom="@dimen/dimen_12dp" android:weightSum="100" android:layout_below="@+id/item_desc_container">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="26"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_weight="74">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/view_item_detail" android:paddingRight="@dimen/item_detail_container_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/item_desc_container">
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/paytm_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="View item details" android:fontFamily="sans-serif-medium"/>
+                <ImageView android:id="@+id/arrow_image" android:background="@drawable/down_arrow_mall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginTop="@dimen/dimen_3dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/order_detail_product_description_view_ft"/>
+</RelativeLayout>

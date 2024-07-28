@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/pre_t_train_rounded_corner_metro_unselected" android:layout_width="@dimen/dimen_95dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_10dp" android:paddingTop="@dimen/dimen_8dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/route_info_title" android:background="@null" android:paddingBottom="2.5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rs 50"/>
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="normal" android:textColor="@color/color_999999" android:id="@+id/route_info_type" android:background="@null" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Fare"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/route_info_imageview" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_11dp" android:layout_marginRight="@dimen/dimen_11dp" android:layout_alignParentRight="true"/>
+</RelativeLayout>

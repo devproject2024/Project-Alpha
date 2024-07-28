@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="top" android:id="@+id/toolbar_start_ap" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40dp" android:layout_alignParentStart="true">
+        <ImageView android:gravity="bottom" android:id="@+id/split_back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:src="@drawable/back_arrow" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:text="Split Bill Activity" android:layout_below="@+id/toolbar_start_ap" android:fontFamily="sans-serif" android:letterSpacing="0.02"/>
+    <include android:id="@+id/sb_no_internet_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100dp" layout="@layout/sb_no_internet_layout"/>
+    <include android:id="@+id/sb_technical_issue_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100dp" layout="@layout/sb_technical_issue_layout"/>
+    <RelativeLayout android:id="@+id/lyt_list_and_loader" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="21dp">
+        <include android:id="@+id/shimmer_lyt" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/sb_shimmer_user_history"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/user_transaction_recycler" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/lav_lottie_loader" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginBottom="100dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+    </RelativeLayout>
+</LinearLayout>

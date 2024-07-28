@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/image">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cashback_fallback_color"/>
+            <corners android:radius="@dimen/dimen_10dp"/>
+        </shape>
+    </item>
+    <item android:id="@+id/overlay">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent_bg"/>
+            <corners android:radius="@dimen/dimen_10dp"/>
+        </shape>
+    </item>
+</layer-list>

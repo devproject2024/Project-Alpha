@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="auto_complete_preferred_item_height">44dp</dimen>
+    <dimen name="cart_14sp">12sp</dimen>
+    <dimen name="flight_dpi_10">10dp</dimen>
+    <dimen name="flight_dpi_17_5">17.5dp</dimen>
+    <dimen name="flight_dpi_18">18dp</dimen>
+    <dimen name="flight_dpi_19">19dp</dimen>
+    <dimen name="flight_dpi_20">20dp</dimen>
+    <dimen name="flight_dpi_3">3dp</dimen>
+    <dimen name="flight_dpi_30">30dp</dimen>
+    <dimen name="flight_dpi_35">35dp</dimen>
+    <dimen name="flight_dpi_5">5dp</dimen>
+    <dimen name="flight_dpi_55">55dp</dimen>
+    <dimen name="flight_dpi_7">7dp</dimen>
+    <dimen name="flight_dpi_8">8dp</dimen>
+    <dimen name="flight_dpi_80">80dp</dimen>
+    <dimen name="flight_spi_11">11sp</dimen>
+    <dimen name="flight_spi_12">12sp</dimen>
+    <dimen name="flight_spi_12_5">12.5sp</dimen>
+    <dimen name="flight_spi_14">14sp</dimen>
+    <dimen name="flight_spi_16">16sp</dimen>
+    <dimen name="flight_spi_17">17sp</dimen>
+    <dimen name="flight_spi_22">22sp</dimen>
+    <dimen name="flight_spi_30">30sp</dimen>
+    <dimen name="flight_spi_32">32sp</dimen>
+    <dimen name="offer_view_margin">16dp</dimen>
+</resources>

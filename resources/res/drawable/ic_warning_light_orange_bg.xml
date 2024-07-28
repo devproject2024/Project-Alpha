@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="32dp" android:width="32dp" android:viewportWidth="32" android:viewportHeight="32">
+    <path android:fillColor="#fff6e5" android:pathData="M16,1C7.72,1 1,7.72 1,16c0,8.28 6.72,15 15,15 8.28,0 15,-6.72 15,-15 0,-8.28 -6.72,-15 -15,-15z" android:strokeColor="#ff9d00" android:strokeWidth="1"/>
+    <group>
+        <clip-path android:pathData="M16,1C7.72,1 1,7.72 1,16c0,8.28 6.72,15 15,15 8.28,0 15,-6.72 15,-15 0,-8.28 -6.72,-15 -15,-15z"/>
+        <path android:fillColor="#ff9d00" android:pathData="M14.125,21.625c0,-0.758 0.457,-1.442 1.158,-1.732 0.7,-0.291 1.506,-0.13 2.042,0.406 0.536,0.536 0.698,1.343 0.406,2.043 -0.29,0.701 -0.974,1.158 -1.731,1.158 -1.035,0 -1.875,-0.84 -1.875,-1.875zM16,17.875c0.497,0 0.974,-0.198 1.325,-0.55 0.351,-0.351 0.55,-0.828 0.55,-1.325v-5.624c0,-1.036 -0.84,-1.876 -1.875,-1.876 -1.035,0 -1.875,0.84 -1.875,1.876V16c0,0.497 0.199,0.974 0.55,1.325 0.351,0.352 0.828,0.55 1.325,0.55z"/>
+    </group>
+</vector>

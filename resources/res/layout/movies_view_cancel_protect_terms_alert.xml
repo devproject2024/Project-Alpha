@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_5dp" android:src="@drawable/cross_black" android:tint="@color/movie_seat_selection_black" android:layout_alignParentRight="true"/>
+    <com.paytm.utility.RoboTextView android:textSize="20sp" android:textColor="@color/movie_seat_selection_black" android:id="@+id/alertTitle" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/movies_cancel_protect" android:layout_below="@+id/close_btn" app:fontType="3"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="300dp" android:layout_below="@+id/alertTitle">
+        <LinearLayout android:orientation="vertical" android:id="@+id/termsLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_16dp" android:layout_below="@+id/alertTitle"/>
+    </ScrollView>
+</RelativeLayout>

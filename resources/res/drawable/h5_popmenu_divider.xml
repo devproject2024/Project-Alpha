@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+    <item android:left="6dp" android:top="0px" android:right="6dp" android:bottom="0px">
+        <shape>
+            <solid android:color="@color/h5_nav_menu_divider"/>
+        </shape>
+    </item>
+</layer-list>

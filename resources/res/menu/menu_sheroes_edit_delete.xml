@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/vector_sheroes_share_black" android:id="@+id/sheroes_share" android:title="@string/sheroes_ID_SHARE"/>
+    <item android:icon="@drawable/vector_sheroes_create" android:id="@+id/sheroes_edit" android:title="@string/sheroes_ID_EDIT"/>
+    <item android:icon="@drawable/vector_sheroes_delete" android:id="@+id/sheroes_delete" android:title="@string/sheroes_delete"/>
+    <item android:id="@+id/sheroes_top_post" android:title="@string/sheroes_FEATURE_POST"/>
+</menu>

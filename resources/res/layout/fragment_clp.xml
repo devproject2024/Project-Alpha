@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_clp_0" android:layout_width="match_parent" android:layout_height="match_parent" app:elevation="@dimen/dimen_0dp">
+    <include android:id="@+id/toolBarClp" android:visibility="gone" layout="@layout/clp_toolbar_home"/>
+    <FrameLayout android:id="@+id/fragmentContainer" android:tag="binding_1" android:focusableInTouchMode="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/toolBarClp">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/page_background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_clp_root" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <include layout="@layout/clp_no_network_layout"/>
+        </RelativeLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CLPProgressBar"/>
+        <include android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/slid_up" android:visibility="gone" android:layout_width="@dimen/dimen_34dp" android:layout_height="@dimen/dimen_34dp" android:layout_marginBottom="@dimen/dimen_80dp" android:layout_alignParentBottom="true" layout="@layout/layout_slide_up"/>
+        <include android:layout_gravity="bottom" android:id="@+id/bottomCartLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_70dp" layout="@layout/cart_bottom_card_mall"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

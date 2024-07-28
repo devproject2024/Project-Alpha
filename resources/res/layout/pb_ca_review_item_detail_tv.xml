@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#506d85" android:id="@+id/details_title_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif"/>
+    <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#1d252d" android:id="@+id/details_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif-medium"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.one97.paytm.addmoney.utils.AddMoneyCardView android:id="@+id/source_card" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutFile="@layout/uam_open_view_title_layout" app:title="@string/bhim_upi"/>
+</LinearLayout>

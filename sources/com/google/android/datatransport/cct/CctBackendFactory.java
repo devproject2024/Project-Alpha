@@ -1,0 +1,11 @@
+package com.google.android.datatransport.cct;
+
+import com.google.android.datatransport.runtime.backends.d;
+import com.google.android.datatransport.runtime.backends.h;
+import com.google.android.datatransport.runtime.backends.m;
+
+public class CctBackendFactory implements d {
+    public m create(h hVar) {
+        return new d(hVar.a(), hVar.b(), hVar.c());
+    }
+}

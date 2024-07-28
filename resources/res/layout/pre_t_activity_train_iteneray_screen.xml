@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/review_details" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+    <include android:gravity="top" android:id="@+id/train_review_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/pre_t_train_common_tool_bar_layout"/>
+    <View android:id="@+id/view_separator_bottom" android:background="@color/train_tab_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/train_review_toolbar"/>
+    <FrameLayout android:orientation="vertical" android:id="@+id/fragment_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/view_separator_bottom"/>
+</RelativeLayout>

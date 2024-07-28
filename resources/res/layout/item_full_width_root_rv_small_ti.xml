@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_parent" android:tag="layout/item_full_width_root_rv_small_ti_0" android:focusableInTouchMode="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_5dp" android:layout_marginStart="@dimen/dimen_14dp">
+        <com.paytmmall.clpartifact.customViews.CLPRobotoTextView android:textSize="@dimen/dimen_18sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="left" android:id="@+id/viewName" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/flash_sale_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_12dp">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/clp_bg_flash_sale_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_24dp">
+                <TextView android:textSize="@dimen/dimen_11sp" android:textColor="#506d85" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/starts_in" android:paddingEnd="@dimen/dimen_4dp"/>
+                <com.paytmmall.clpartifact.common.FlashSaleView android:textSize="@dimen/dimen_11sp" android:textStyle="bold" android:textColor="#ff585d" android:layout_gravity="center_vertical" android:id="@+id/timer_view" android:paddingTop="@dimen/dimen_2dp" android:paddingBottom="@dimen/dimen_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="6dp"/>
+            </LinearLayout>
+            <ImageView android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp" android:src="@drawable/clp_ic_flash"/>
+        </FrameLayout>
+        <View android:layout_width="0dp" android:layout_height="@dimen/dimen_1dp" android:layout_weight="1"/>
+        <com.paytmmall.clpartifact.customViews.CLPRobotoTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/primaryBlue" android:gravity="right" android:layout_gravity="right" android:id="@+id/viewAll" android:tag="binding_3" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_5dp" android:text="@string/view_all"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_747D84" android:id="@+id/subTitle" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="1sp" android:fontFamily="@string/font_family_roboto_regular" android:layout_marginStart="@dimen/dimen_14dp"/>
+    <FrameLayout android:id="@+id/color_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/background_image" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/rvThinBanner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

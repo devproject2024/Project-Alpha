@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rly_selectbank_container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/paysend_toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/payments_bank_toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/toolbar_btn_back" android:paddingLeft="@dimen/dimen_5dp" android:paddingTop="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true" android:contentDescription="@string/back_button" android:paddingStart="@dimen/dimen_5dp" android:paddingEnd="@dimen/dimen_15dp"/>
+            <com.paytm.utility.RoboTextView android:textSize="17dp" android:textColor="@color/black" android:id="@+id/pay_send_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_mobile_no_to_pay" android:layout_toRightOf="@+id/toolbar_btn_back" android:layout_centerVertical="true" android:onClick="onClick" android:layout_toEndOf="@+id/toolbar_btn_back" app:fontType="3"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+</LinearLayout>

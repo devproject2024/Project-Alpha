@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <bool name="ga_autoActivityTracking">false
+    </bool>
+    <string name="sheroes_ga_trackingId">UA-43289318-4
+    </string>
+    <bool name="ga_reportUncaughtExceptions">false
+    </bool>
+</resources>

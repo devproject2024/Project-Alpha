@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <solid android:color="@color/notification_dot_color"/>
+    <corners android:topLeftRadius="@dimen/dimen_21dp" android:topRightRadius="@dimen/dimen_21dp" android:bottomLeftRadius="@dimen/dimen_21dp" android:bottomRightRadius="@dimen/dimen_21dp"/>
+    <stroke android:width="@dimen/dimen_2dp" android:color="@color/white"/>
+    <size android:height="@dimen/dimen_21dp" android:width="@dimen/dimen_21dp"/>
+</shape>

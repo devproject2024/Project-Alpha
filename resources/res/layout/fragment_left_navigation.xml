@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ExpandableListView android:id="@+id/ln_expandable_list_view" android:background="@color/white" android:paddingBottom="@dimen/dimen_40dp" android:visibility="gone" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@android:color/transparent" android:groupIndicator="@null" android:childDivider="@color/white" android:divider="@null" android:layout_weight="1"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/ln_left_nav_recycler_view" android:background="@color/color_fafafa" android:paddingBottom="@dimen/dimen_40dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:groupIndicator="@null" android:childDivider="@color/white" android:divider="@null"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/event_blue_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_6dp"/>
+            <View android:background="@color/paytm_dark_blue" android:layout_width="match_parent" android:layout_height="@dimen/dimen_6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/pb_share_upi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:indeterminateTint="@color/gray" style="?android:attr/progressBarStyle"/>
+</RelativeLayout>

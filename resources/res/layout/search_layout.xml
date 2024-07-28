@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/search_header" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="50dp">
+    <RelativeLayout android:id="@+id/search_header_root" android:background="@drawable/rounded_white_background_grey_border" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp">
+        <AutoCompleteTextView android:textSize="14sp" android:textColor="@android:color/black" android:id="@+id/search_operator" android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="43dp" android:singleLine="true" android:imeOptions="actionDone"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/img_search" android:clickable="true" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_search" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/cart_count_black" android:id="@+id/search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/searchlandingtitle" android:singleLine="true" android:layout_toRightOf="@+id/img_search" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

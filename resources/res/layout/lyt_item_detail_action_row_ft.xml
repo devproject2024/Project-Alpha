@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/action_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp">
+        <ImageView android:id="@+id/generic_action_image" android:layout_width="@dimen/dimen_35dp" android:layout_height="@dimen/dimen_35dp"/>
+        <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/paytm_blue" android:id="@+id/action_label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_weight="1" android:lineSpacingExtra="5sp" app:fontType="3"/>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/item_detail_action_icon_right_margin" android:src="@drawable/forward_copy_ft"/>
+    </LinearLayout>
+    <View android:id="@+id/seperator" android:background="@color/item_detail_auto_cancel_separator_bg_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+</LinearLayout>

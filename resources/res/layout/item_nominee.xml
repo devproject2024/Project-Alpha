@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_nominee" android:background="@color/white" android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_30dp" android:layout_width="match_parent" android:layout_height="@dimen/wallet_60_dp">
+    <ImageView android:id="@+id/iv_nominee_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_30dp" android:src="@drawable/pb_ic_nominee" android:layout_centerVertical="true"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_nominee_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/wallet_16_sp" android:textColor="@color/payment_bank_dark_grey" android:ellipsize="end" android:id="@+id/tv_nominee_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@string/font_family_roboto_light"/>
+        <TextView android:textSize="@dimen/wallet_13sp" android:textStyle="bold" android:textColor="@color/payment_bank_light_grey" android:ellipsize="end" android:id="@+id/tv_nominee_relationship" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@+id/tv_nominee_name" android:fontFamily="@string/font_family_roboto_regular"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_see_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_arrow_see_all" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

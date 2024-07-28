@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingTop="@dimen/ins_dimen_16dp" android:paddingBottom="@dimen/ins_dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/ivCategoryIcon" android:layout_width="@dimen/ins_dimen_32dp" android:layout_height="@dimen/ins_dimen_32dp" android:src="@drawable/ins_sad_smiley" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#222222" android:layout_gravity="center" android:id="@+id/tvCategoryName" android:paddingLeft="@dimen/ins_dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:maxLines="2" android:layout_weight="1" android:layout_toRightOf="@+id/ivCategoryIcon" android:layout_below="@+id/tvCategoryName" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:padding="4dp" android:layout_width="@dimen/ins_dimen_19dp" android:layout_height="@dimen/ins_dimen_19dp" android:src="@drawable/ins_forward_arrow_grey" android:layout_weight="0" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/ins_color_f3f7f8" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignLeft="@+id/tvCategoryName" android:layout_alignParentBottom="true"/>
+</LinearLayout>

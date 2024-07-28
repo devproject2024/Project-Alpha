@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_above="@+id/btn_proceed">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/appbar_layout" android:background="@color/color_ffffff" android:layout_width="match_parent" android:layout_height="@dimen/dimen_100dp">
+            <net.one97.paytm.recharge.common.widget.SubtitleCollapsingToolbarLayout android:id="@+id/toolbar_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:collapsedSubtitleTextAppearance="@style/MobileCollapsedSubTitleTextAppearance" app:collapsedTitleTextAppearance="@style/MobileCollapsedTitleTextAppearance" app:contentScrim="@color/color_ffffff" app:expandedSubtitleTextAppearance="@style/MobileExpandedSubTitleTextAppearance" app:expandedTitleMarginBottom="@dimen/dimen_16dp" app:expandedTitleMarginEnd="@dimen/dimen_10dp" app:expandedTitleMarginStart="@dimen/dimen_20dp" app:expandedTitleTextAppearance="@style/MobileExpandedTitleTextAppearance" app:layout_scrollFlags="13" app:toolbarId="@+id/toolbar">
+                <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetStartWithNavigation="@dimen/dimen_20dp" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+                <LinearLayout android:layout_gravity="end" android:id="@+id/bbpsLL" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="?attr/actionBarSize" android:layout_marginEnd="@dimen/dimen_15dp" app:layout_collapseMode="1">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/bbpsIV" android:layout_width="@dimen/dimen_40dp" android:layout_height="@dimen/dimen_18dp" app:layout_collapseMode="1"/>
+                </LinearLayout>
+            </net.one97.paytm.recharge.common.widget.SubtitleCollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <include layout="@layout/v8_content_mobile_landing"/>
+        <include layout="@layout/v8_fragment_enter_mobile_recharge_amount_shimmer"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <net.one97.paytm.recharge.widgets.widget.CJRProceedWidgetV8 android:textColor="@android:color/white" android:id="@+id/btn_proceed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_15dp" android:textAllCaps="false" android:transitionName="@string/transition_name_proceed_btn"/>
+        <include layout="@layout/v8_disclaimer_layout"/>
+    </LinearLayout>
+</LinearLayout>

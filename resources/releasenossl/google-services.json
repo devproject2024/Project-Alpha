@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "698748364405",
+    "firebase_url": "https://paytm-app-layer.firebaseio.com",
+    "project_id": "paytm-app-layer",
+    "storage_bucket": "paytm-app-layer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698748364405:android:57c23a8a903e5843",
+        "android_client_info": {
+          "package_name": "com.paytmmall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698748364405-9g8nj256kug07m3vfgqb8q23aarn6haf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLnkRKkO5SvI47kO9pFUsDxr4VhwJZ3_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698748364405-9mc4tudqg780d18hsob7bcj08a1said9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698748364405:android:39faf9b2fdb5d986",
+        "android_client_info": {
+          "package_name": "net.one97.paytm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698748364405-9g8nj256kug07m3vfgqb8q23aarn6haf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLnkRKkO5SvI47kO9pFUsDxr4VhwJZ3_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698748364405-9mc4tudqg780d18hsob7bcj08a1said9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

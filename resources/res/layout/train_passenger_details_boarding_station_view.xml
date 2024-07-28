@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rv_boarding_station_container" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/divider" android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="5dp"/>
+    <RelativeLayout android:id="@+id/boardingStationLyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/divider">
+        <com.paytm.utility.RoboTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/color_222222" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/boarding_point" android:layout_alignParentLeft="true" app:fontType="3"/>
+        <LinearLayout android:id="@+id/change_station_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/train_add_extra_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp" android:text="@string/change_station" app:fontType="3"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <Spinner android:id="@+id/boarding_station_spinner" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2dp" android:popupBackground="@android:color/white" android:layout_below="@+id/boardingStationLyt" android:dropDownWidth="match_parent" android:spinnerMode="dropdown" android:elevation="0dp" android:overlapAnchor="false" style="@style/spinner_style_quota"/>
+    <View android:id="@+id/boarding_station_divider" android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="5dp" android:layout_below="@+id/boarding_station_spinner"/>
+</RelativeLayout>

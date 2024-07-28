@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_netbanking_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/pg_instrument_header"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rec_bank_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp"/>
+    <RelativeLayout android:id="@+id/select_other_bank" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_26dp">
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/txt_other_bank" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp" android:text="@string/select_other_bank_list" android:layout_alignParentLeft="true" android:fontFamily="sans-serif" android:paddingStart="@dimen/dimen_15dp" android:paddingEnd="15dp" android:layout_marginStart="@dimen/dimen_5dp" android:layout_alignParentStart="true"/>
+        <ImageView android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_alignParentRight="true" android:contentDescription="TODO" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_right_chevron_dark"/>
+    </RelativeLayout>
+    <View android:id="@+id/divider" android:background="@color/color_f4f4f4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/dimen_35dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginStart="@dimen/dimen_35dp"/>
+</LinearLayout>

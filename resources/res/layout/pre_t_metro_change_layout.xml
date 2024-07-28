@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/metro_change_linear_layout" android:paddingLeft="@dimen/dimen_10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp">
+    <ImageView android:id="@+id/change_metro_icon" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/pre_t_train_rounded_corner_metro_unselected" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_25dp">
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/color_666666" android:gravity="center_vertical" android:id="@+id/change_here_textview" android:paddingLeft="@dimen/dimen_6dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/change_here" android:fontFamily="sans-serif-light"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@+id/line_change_text" android:paddingLeft="@dimen/dimen_5dp" android:paddingRight="@dimen/dimen_5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Yellow line)" android:fontFamily="sans-serif-light"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/circle" android:background="@drawable/create_fd_shimmer_view" android:layout_width="20dp" android:layout_height="20dp" app:layout_constraintStart_toStartOf="0"/>
+    <View android:id="@+id/view_2" android:background="@drawable/create_fd_shimmer_view" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginLeft="@dimen/dimen_50dp" android:layout_marginRight="@dimen/dimen_120dp" app:layout_constraintBottom_toBottomOf="@+id/circle" app:layout_constraintStart_toEndOf="@+id/circle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="#fafafa" android:paddingTop="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_14dp">
+    <TextView android:textSize="@dimen/dimen_11sp" android:textStyle="normal" android:textColor="#506d85" android:id="@+id/pay_using_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_using" android:fontFamily="sans-serif"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/pay_using_tv" android:paddingEnd="5dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="10.5sp" android:textStyle="normal" android:textColor="@color/paytm_blue" android:id="@+id/add_money_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scanner_add_money" android:lineSpacingExtra="1sp" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_5dp" android:layout_toEndOf="@+id/lyt_pay_using_wallet"/>
+        <RelativeLayout android:id="@+id/lyt_pay_using_wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_8dp" android:layout_toEndOf="@+id/lyt_pay_using_bank">
+            <LinearLayout android:gravity="center_horizontal" android:id="@+id/lyt_or" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dimen_8dp" android:layout_alignParentStart="true">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="10.6sp" android:textStyle="normal" android:textColor="#1d252d" android:id="@+id/or" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scanner_or" android:lineSpacingExtra="1sp" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lyt_pay_using_wallet_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@+id/lyt_or">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/wallet_iv" android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" app:srcCompat="@drawable/ic_scan_wallet_balance"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="10.6sp" android:textStyle="normal" android:textColor="#1d252d" android:id="@+id/wallet_balance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Paytm Balance ₹ -- " android:singleLine="true" android:lineSpacingExtra="1sp" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_8dp"/>
+            </LinearLayout>
+            <net.one97.paytm.common.views.ShimmerFrameLayout android:id="@+id/shimmer_wallet" android:visibility="visible" android:layout_width="@dimen/dimen_190dp" android:layout_height="@dimen/dimen_16dp" android:layout_marginStart="@dimen/dimen_20dp">
+                <View android:background="#dde5ed" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </net.one97.paytm.common.views.ShimmerFrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/lyt_pay_using_bank" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lyt_pay_using_bank_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/bank_account_iv" android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" app:srcCompat="@drawable/axis"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="10.6sp" android:textStyle="normal" android:textColor="#1d252d" android:id="@+id/bank_account_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Axis Bank a/c" android:singleLine="true" android:lineSpacingExtra="1sp" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_8dp"/>
+            </LinearLayout>
+            <net.one97.paytm.common.views.ShimmerFrameLayout android:id="@+id/shimmer_bank" android:visibility="visible" android:layout_width="123dp" android:layout_height="@dimen/dimen_16dp">
+                <View android:background="#dde5ed" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </net.one97.paytm.common.views.ShimmerFrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

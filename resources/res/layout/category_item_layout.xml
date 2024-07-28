@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/list_item" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:id="@+id/cat_item" android:background="@drawable/rounded_white_background_grey_border" android:layout_width="93.5dp" android:layout_height="45dp" android:layout_marginLeft="10dp" android:layout_marginTop="9dp">
+        <TextView android:textSize="14sp" android:textColor="#4a4a4a" android:gravity="center" android:id="@+id/cat_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shoes"/>
+    </LinearLayout>
+</LinearLayout>

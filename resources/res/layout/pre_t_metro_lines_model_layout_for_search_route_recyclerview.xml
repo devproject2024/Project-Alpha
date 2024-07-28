@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dimen_14dp" android:paddingBottom="@dimen/dimen_14dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="@dimen/dimen_30dp" android:layout_height="match_parent" android:adjustViewBounds="true">
+                <View android:id="@+id/metro_rail" android:background="@color/bright_yellow" android:layout_width="@dimen/dimen_17dp" android:layout_height="@dimen/dimen_17dp" android:layout_alignBottom="@+id/metro_rail_icon" android:layout_centerHorizontal="true"/>
+                <include android:id="@+id/metro_rail_icon" android:layout_width="@dimen/dimen_35dp" android:layout_height="@dimen/dimen_35dp" android:layout_marginTop="-6dp" android:layout_alignParentTop="true" android:layout_centerInParent="true" android:layout_centerVertical="true" layout="@layout/round_cardview"/>
+                <View android:id="@+id/middle_side_view" android:background="@color/bright_yellow" android:layout_width="@dimen/dimen_17dp" android:layout_height="@dimen/dimen_17dp" android:layout_below="@+id/metro_rail_icon" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <com.paytm.utility.RoboTextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@+id/source_station_in_metro_lines_model_layout" android:paddingLeft="@dimen/dimen_14dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="2" android:maxEms="7" android:fontFamily="sans-serif-light"/>
+            <FrameLayout android:paddingLeft="@dimen/dimen_6dp" android:paddingTop="@dimen/dimen_3dp" android:paddingRight="@dimen/dimen_6dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.paytm.utility.RoboTextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/line_color_source_station_in_metro_lines_model_layout" android:background="@drawable/pre_t_train_tags_rounded_corner_metro_line" android:paddingLeft="@dimen/dimen_8dp" android:paddingRight="@dimen/dimen_8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pink line" android:fontFamily="sans-serif-light"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.paytm.utility.RoboTextView android:textSize="10sp" android:textStyle="italic" android:textColor="@color/color_8f969c" android:ellipsize="end" android:gravity="end" android:layout_gravity="end" android:id="@+id/towards_textview_in_metro_lines_model_layout" android:visibility="visible" android:layout_width="@dimen/dimen_70dp" android:layout_height="wrap_content" android:maxLines="3" android:fontFamily="sans-serif-light"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dimen_60dp">
+            <FrameLayout android:layout_width="@dimen/dimen_30dp" android:layout_height="match_parent">
+                <View android:layout_gravity="center" android:id="@+id/initial_side_view" android:background="@color/bright_yellow" android:layout_width="@dimen/dimen_17dp" android:layout_height="@dimen/dimen_80dp"/>
+            </FrameLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/station_arrow" android:background="@drawable/pre_t_train_round_corner" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_30dp" android:layout_marginLeft="@dimen/dimen_16dp">
+                <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/color_666666" android:ellipsize="end" android:gravity="center" android:id="@+id/intermediate_station_count_in_metro_lines_model_layout" android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_6dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="3 Stations" android:maxLines="1" android:maxEms="7" android:fontFamily="sans-serif-light"/>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <ImageView android:layout_gravity="center" android:id="@+id/arrow_imageview" android:paddingLeft="@dimen/dimen_2dp" android:paddingTop="@dimen/dimen_2dp" android:paddingRight="@dimen/dimen_5dp" android:layout_width="@dimen/dimen_17dp" android:layout_height="@dimen/dimen_11dp" android:src="@drawable/pre_t_drop" android:tint="@color/color_8c8c8c"/>
+                </FrameLayout>
+            </LinearLayout>
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/color_999999" android:ellipsize="end" android:gravity="center" android:id="@+id/duration_in_metro_lines_model_layout" android:paddingLeft="@dimen/dimen_9dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="14 mins" android:maxLines="1" android:maxEms="7" android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/internal_stations_recyclerview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="@dimen/dimen_30dp" android:layout_height="match_parent">
+                <View android:id="@+id/end_side_view" android:background="@drawable/pre_t_train_corner_view_round" android:layout_width="@dimen/dimen_17dp" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                <View android:background="@drawable/pre_t_train_white_circle" android:paddingBottom="@dimen/dimen_1dp" android:layout_width="@dimen/dimen_15dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_1dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <com.paytm.utility.RoboTextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@+id/destination_station_in_metro_lines_model_layout" android:paddingLeft="@dimen/dimen_14dp" android:paddingTop="@dimen/dimen_12dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:maxEms="7" android:fontFamily="sans-serif-light"/>
+            <FrameLayout android:paddingLeft="@dimen/dimen_6dp" android:paddingTop="@dimen/dimen_8dp" android:paddingRight="@dimen/dimen_6dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.paytm.utility.RoboTextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/line_color_destination_station_in_metro_lines_model_layout" android:background="@drawable/pre_t_train_tags_rounded_corner_metro_line" android:paddingLeft="@dimen/dimen_8dp" android:paddingRight="@dimen/dimen_8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_7dp" android:text="Pink line" android:fontFamily="sans-serif-light"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/pre_t_metro_change_layout"/>
+</LinearLayout>

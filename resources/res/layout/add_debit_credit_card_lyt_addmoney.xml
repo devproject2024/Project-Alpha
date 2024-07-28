@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableRow android:gravity="center_vertical" android:id="@+id/header_row" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50dp" android:layout_marginLeft="@dimen/dimen_10dp">
+        <ImageView android:id="@+id/back_arrow" android:padding="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow"/>
+        <TextView android:textSize="@dimen/dimen_16sp" android:textStyle="bold" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="@string/add_a_new_card" android:fontFamily="sans-serif"/>
+    </TableRow>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/header_row">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_20dp">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/grey_background_with_border_addmoney" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/color_444444" android:id="@+id/tv_enter_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_card_number" android:fontFamily="sans-serif" app:fontType="2"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dp">
+                    <EditText android:textSize="16dp" android:textColor="@color/brandstore_tab_selected_color" android:id="@+id/editText" android:background="@drawable/white_background_with_border_addmoney" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone" android:letterSpacing="0.03"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_clear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="8dp" android:src="@drawable/close_msg_addmoney"/>
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_card_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/dimen_7dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginBottom="2dp" android:weightSum="2">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_expiry" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/color_444444" android:id="@+id/tv_expiry_validity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/expiry_validity_date" android:fontFamily="sans-serif" app:fontType="2"/>
+                        <EditText android:textSize="15sp" android:textColorHint="#999999" android:id="@+id/et_expiry_validity" android:background="@drawable/white_background_with_border_addmoney" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:hint="@string/format_mm_yy" android:inputType="number" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_new_card_cvv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_weight="1">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.paytm.utility.RoboTextView android:textSize="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cvv" android:fontFamily="sans-serif"/>
+                            <com.paytm.utility.RoboTextView android:textSize="11sp" android:textStyle="bold" android:textColor="@color/paytm_blue" android:id="@+id/tv_cvv_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help1" android:layout_alignParentRight="true" android:fontFamily="sans-serif"/>
+                        </RelativeLayout>
+                        <EditText android:textSize="16dp" android:textColorHint="#999999" android:id="@+id/et_new_card_cvv" android:background="@drawable/white_background_with_border_addmoney" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:inputType="numberPassword"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/tv_low_success" android:background="@color/color_fdfbd3" android:paddingLeft="12dp" android:paddingTop="12.5dp" android:paddingRight="6.5dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="dummy success text"/>
+            <LinearLayout android:id="@+id/ll_save_card_for_future" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <CheckBox android:enabled="false" android:id="@+id/cb_save_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:buttonTint="@color/paytm_blue"/>
+                <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/save_this_card_for_future_payment" android:fontFamily="sans-serif" app:fontType="2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@+id/rl_proceed_to_pay" android:background="@drawable/rectangle_blue_filled_round_corner_addmoney" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_10dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.5dp" android:paddingTop="10dp" android:paddingRight="12.5dp" android:paddingBottom="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="16sp" android:textColor="@color/white" android:paddingTop="6.5dp" android:paddingBottom="5.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.5dp" android:text="@string/save" android:singleLine="true" android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

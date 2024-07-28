@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/contact_us_card" android:background="@color/text_color_proceed_button" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:background="@color/text_color_proceed_button" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/movie_contact_us_card_subview"/>
+    </RelativeLayout>
+</LinearLayout>

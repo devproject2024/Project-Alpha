@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/dealContainer" android:background="@color/color_ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout android:id="@+id/dealTabs" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp" app:tabBackground="@color/white" app:tabGravity="0" app:tabIndicatorColor="@color/color_00b9f5" app:tabMode="0" app:tabSelectedTextColor="@color/color_222222" app:tabTextAppearance="@style/DealsTabTextView" app:tabTextColor="@color/color_b8c2cb"/>
+    <View android:id="@+id/divider" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/dealTabs"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/dealViewPager" android:background="@color/color_ffffff" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/divider"/>
+    <View android:id="@+id/overlay_view" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

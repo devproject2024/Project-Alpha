@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/lyt_header_section" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_setup_new_automatic_header_section"/>
+    <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="normal" android:textColor="@color/lightblack_506d85" android:id="@+id/tv_select_category_id" android:background="@color/grey_f5f8fa" android:paddingTop="@dimen/dimen_8dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" android:text="@string/label_select_category" android:lineSpacingExtra="@dimen/dimen_4sp" android:fontFamily="sans-serif-medium" android:paddingStart="@dimen/dimen_16dp" android:paddingEnd="0dp" app:layout_constraintTop_toBottomOf="@+id/lyt_header_section"/>
+    <ViewFlipper android:id="@+id/vf_add_new_bill" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" app:layout_constraintTop_toBottomOf="@+id/tv_select_category_id">
+        <net.one97.paytm.common.views.ShimmerFrameLayout android:id="@+id/shimmerLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_add_new_bill" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </net.one97.paytm.common.views.ShimmerFrameLayout>
+    </ViewFlipper>
+</androidx.constraintlayout.widget.ConstraintLayout>

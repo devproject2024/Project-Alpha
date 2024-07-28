@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_item_parent" android:layout_width="@dimen/carousel_root_horizontal_list_width" android:layout_height="@dimen/carousel_root_horizontal_list_height" android:layout_marginLeft="@dimen/wallet_20_dp"> &gt; 
+        <ImageView android:id="@+id/item_image" android:layout_width="@dimen/carousel_root_horizontal_list_width" android:layout_height="@dimen/carousel_root_horizontal_list_height" android:layout_margin="1dp" android:scaleType="fitXY"/>
+        <ProgressBar android:id="@+id/image_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress_medium_holo" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

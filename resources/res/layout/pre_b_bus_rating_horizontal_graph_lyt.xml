@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="20dp">
+    <com.paytm.utility.RoboTextView android:textSize="10sp" android:textColor="@color/color_999999" android:id="@+id/progress_value_name" android:layout_width="75dp" android:layout_height="wrap_content" android:layout_centerVertical="true" android:fontFamily="@string/fontFamily__roboto_medium"/>
+    <com.travel.bus.busticket.widgets.BusHorizontalProgress android:id="@+id/progress_value" android:layout_width="match_parent" android:layout_height="5dp" android:layout_toLeftOf="@+id/progress_value_text" android:layout_toRightOf="@+id/progress_value_name" android:layout_centerVertical="true"/>
+    <com.paytm.utility.RoboTextView android:textSize="7sp" android:id="@+id/progress_value_text" android:layout_width="15dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:fontFamily="@string/fontFamily__roboto_medium"/>
+</RelativeLayout>

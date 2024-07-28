@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:textSize="12dp" android:id="@+id/et1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Please enter the key" android:ems="10"/>
+    <Button android:id="@+id/queryBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Query the local config" android:onClick="queryBtn"/>
+    <EditText android:textSize="12dp" android:id="@+id/textView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="input to modify the config" android:inputType="textMultiLine"/>
+    <Button android:id="@+id/saveBtn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Modify the local config" android:onClick="saveBtn"/>
+    <EditText android:textSize="12dp" android:layout_gravity="center_horizontal" android:id="@+id/editText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="1、input the key to query config\102、If modification is needed, input the value and click modify button" android:ems="10" android:inputType="textMultiLine"/>
+</LinearLayout>

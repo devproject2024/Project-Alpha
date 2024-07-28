@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f5f9fe" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/vTopDivider" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="16dp"/>
+    <TextView android:textSize="@dimen/text_size_14sp" android:textStyle="bold" android:textColor="@color/pass_landing_page_items_color" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp" android:text="Today, 29 Jan 2017" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_17dp" android:layout_marginVertical="@dimen/dimen_10dp"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.one97.paytm.upi.util.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/swipe_layout_2" android:background="#fafbfb" android:layout_width="match_parent" android:layout_height="wrap_content" app:dragEdge="2" app:mode="oneLine">
+    <LinearLayout android:orientation="horizontal" android:background="#fafbfb" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/delete_group_tv" android:background="#fd5c5c" android:layout_width="@dimen/dimen_110dp" android:layout_height="match_parent" android:text="Delete Group" android:fontFamily="sans-serif" android:letterSpacing="0.06"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/frameLayout_group" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/sb_group_layout"/>
+    </FrameLayout>
+</net.one97.paytm.upi.util.SwipeRevealLayout>

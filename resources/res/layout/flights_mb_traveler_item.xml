@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/flights_mb_traveler_item_0" android:background="@color/white" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/icon" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:textSize="12sp" android:textColor="#0a0a0a" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="5.5sp" android:paddingStart="@dimen/dimen_10dp" android:paddingEnd="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@+id/icon" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

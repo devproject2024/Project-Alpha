@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_continue">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/wallet_10_dp" android:paddingRight="@dimen/wallet_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:theme="@style/PaytmExclusiveEditTextTheme" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_10_dp" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16sp" android:textColor="@android:color/black" android:textColorHint="@color/hint_grey" android:id="@+id/txt_select_bank" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/select_bank" android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:theme="@style/PaytmExclusiveEditTextTheme" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_10_dp" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16sp" android:textColor="@android:color/black" android:textColorHint="@color/hint_grey" android:id="@+id/txt_select_state" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/select_state" android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:theme="@style/PaytmExclusiveEditTextTheme" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_10_dp" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16sp" android:textColor="@android:color/black" android:textColorHint="@color/hint_grey" android:id="@+id/txt_select_city" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/select_city" android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:theme="@style/PaytmExclusiveEditTextTheme" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_10_dp" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16sp" android:textColor="@android:color/black" android:textColorHint="@color/hint_grey" android:id="@+id/txt_select_branch" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/select_branch" android:singleLine="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_c13100" android:id="@+id/txt_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="3"/>
+            <RelativeLayout android:id="@+id/ifsc_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+                <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="#909090" android:id="@+id/ifsc_code_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ifsc_code" android:layout_centerHorizontal="true"/>
+                <com.paytm.utility.RoboTextView android:textSize="24sp" android:textColor="#4a4a4a" android:id="@+id/ifsc_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/ifsc_code_heading" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_continue" android:background="@drawable/bg_btn_blue" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/wallet_10_dp" android:layout_marginRight="@dimen/wallet_10_dp" android:text="@string/continue_label" android:layout_alignParentBottom="true" android:textAllCaps="false" android:stateListAnimator="@null"/>
+</RelativeLayout>

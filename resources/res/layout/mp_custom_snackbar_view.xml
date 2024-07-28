@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/sb_view_ll" android:tag="layout/mp_custom_snackbar_view_0" android:paddingBottom="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.business.common_module.view.widget.CustomTextView android:textSize="@dimen/dimen_14sp" android:id="@+id/title_sb_tv" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginStart="@dimen/dimen_16dp"/>
+    <com.business.common_module.view.widget.CustomTextView android:textSize="@dimen/dimen_12sp" android:id="@+id/description_sb_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

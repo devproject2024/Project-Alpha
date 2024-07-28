@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/dimen_8dp" android:paddingRight="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_40dp">
+    <View android:id="@+id/status_line" android:layout_width="@dimen/dimen_2dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_8dp" android:layout_alignParentLeft="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_status_icon" android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_8dp" app:srcCompat="@drawable/ic_tick"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/color_222222" android:id="@+id/tv_stage_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16dp" android:layout_toRightOf="@+id/iv_status_icon" android:lineSpacingMultiplier="1.2" app:fontType="2"/>
+        <include android:id="@+id/lyt_gratification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp" android:layout_toRightOf="@+id/iv_status_icon" android:layout_below="@+id/tv_stage_title" layout="@layout/cashback_my_offers_detail_progress_multi_stage_item"/>
+    </RelativeLayout>
+</FrameLayout>

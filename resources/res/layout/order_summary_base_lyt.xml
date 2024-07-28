@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/order_summary_base_lyt" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/headerview" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/order_summary_new_layout"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/order_summary_listview" android:background="@color/white" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:layout_below="@+id/headerview" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/headerview"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar android:id="@+id/summary_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_large_holo" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/next_page_loading_progress" android:background="@color/ordersummary_btn_click" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/book_return_ticket_lyt" android:background="@color/paytm_blue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <net.one97.paytm.common.widgets.RoboButton android:textSize="16sp" android:layout_gravity="center" android:id="@+id/book_return_ticket_btn" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="50dp" android:text="Book return Ticket"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/book_return_ticket_close_btn" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="12dp" android:src="@drawable/close_filter"/>
+    </FrameLayout>
+</RelativeLayout>

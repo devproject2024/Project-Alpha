@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <Button android:textSize="@dimen/dimen_18sp" android:textStyle="normal" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/btn" android:background="@drawable/bg_recharge_rounded_corner_3dp_blue" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_52dp" android:text="@string/proceed_re" android:lineSpacingExtra="-1sp" android:textAllCaps="false" android:fontFamily="sans-serif-medium"/>
+    <net.one97.paytm.recharge.widgets.widget.CJRRechargeLottieAnimationView android:layout_gravity="center" android:id="@+id/loading_three_dots_lav" android:visibility="gone" android:layout_width="@dimen/dimen_60dp" android:layout_height="@dimen/dimen_52dp"/>
+</merge>

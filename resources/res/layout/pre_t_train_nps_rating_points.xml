@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+    <TextView android:textSize="@dimen/dimen_10sp" android:textStyle="normal" android:textColor="@color/nps_review_point_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/nps_review_point" android:background="@drawable/nps_rating_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="sans-serif-medium" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+</LinearLayout>

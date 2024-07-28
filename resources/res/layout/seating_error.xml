@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_rlt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/seat_error_bg_iv" android:padding="24dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" app:srcCompat="@drawable/bg_seat_error"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/parent_llt" android:background="@color/white" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+                <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_marginRight="15dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:srcCompat="@drawable/movie_seating_error"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8">
+                <com.paytm.utility.RoboTextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/seat_error_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:text="@string/movie_seat_api_error_title"/>
+                <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/black" android:id="@+id/seat_error_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="24dp" android:text="@string/movie_seat_api_error_desc"/>
+                <Button android:textColor="@color/white" android:id="@+id/seat_error_cta_btn" android:background="@drawable/btn_paytm_blue_round_rectangle" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/movie_seat_api_error_cta_btn"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

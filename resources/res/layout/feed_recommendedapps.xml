@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:tag="layout/feed_recommendedapps_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/feed_recommended_recyclerview" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.google.android.material.tabs.TabLayout android:layout_gravity="bottom" android:id="@+id/tabDots" android:layout_width="match_parent" android:layout_height="20dp" app:tabGravity="1" app:tabIndicatorHeight="0dp" app:tabPaddingEnd="0dp" app:tabPaddingStart="0dp"/>
+</FrameLayout>

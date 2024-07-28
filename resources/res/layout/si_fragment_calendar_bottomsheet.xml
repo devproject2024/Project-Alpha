@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/pb_rounded_corner_radius5" android:layout_width="match_parent" android:layout_height="460dp" app:layout_behavior="net.one97.paytm.paymentsBank.si.view.DynamicHeightBehaviour">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/calendar_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="23dp" android:layout_marginBottom="19dp" android:text="@string/si_calendar_start_title" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif"/>
+        <ImageView android:id="@+id/full_kyc_cross_iv" android:padding="10dp" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginTop="15dp" android:layout_marginRight="12dp" android:src="@drawable/ic_close_minkyc" android:layout_alignParentRight="true"/>
+        <com.squareup.timessquare.CalendarPickerView android:scrollbarStyle="outsideOverlay" android:id="@+id/calendar_view" android:background="@color/background_color" android:paddingBottom="16dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:layout_below="@+id/calendar_title_tv"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

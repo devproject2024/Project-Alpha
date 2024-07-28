@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_container_top_margin">
+    <TextView android:textSize="@dimen/text_size_item_heading" android:textColor="@color/text_color_item_heading" android:id="@+id/home_catalog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+    <LinearLayout android:background="@color/separators" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <net.one97.paytm.common.widgets.ExpandableHeightListView android:id="@+id/home_catalog_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:cacheColorHint="@color/cache_color_hint" android:divider="@color/separators" android:dividerHeight="1dp"/>
+    <View android:background="@color/separators" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

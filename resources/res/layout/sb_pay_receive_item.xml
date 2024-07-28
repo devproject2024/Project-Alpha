@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.one97.paytm.upi.util.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/swipe_layout_2" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" app:dragEdge="2" app:mode="oneLine">
+    <LinearLayout android:orientation="horizontal" android:background="#fafbfb" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv1" android:background="#ffa400" android:layout_width="@dimen/dimen_110dp" android:layout_height="match_parent" android:text="Send Reminder" android:fontFamily="sans-serif" android:letterSpacing="0.06"/>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv2" android:background="#fd5c5c" android:visibility="visible" android:layout_width="@dimen/dimen_110dp" android:layout_height="match_parent" android:text="Mark as Received" android:fontFamily="sans-serif" android:letterSpacing="0.06"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/frame_pay_receive" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/sb_pay_receive_layout"/>
+    </FrameLayout>
+</net.one97.paytm.upi.util.SwipeRevealLayout>

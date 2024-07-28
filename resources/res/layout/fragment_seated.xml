@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.one97.paytm.o2o.movies.widget.ObervableVerticalScrollView android:id="@+id/scroll_view_seat_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <net.one97.paytm.o2o.movies.widget.InterceptTouchLinearLayout android:orientation="vertical" android:id="@+id/movie_seat_parent_lyt" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </net.one97.paytm.o2o.movies.widget.ObervableVerticalScrollView>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/id_bird_view" android:background="@color/black" android:paddingLeft="2dp" android:paddingRight="2dp" android:paddingBottom="2dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.5"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/snack_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="-5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

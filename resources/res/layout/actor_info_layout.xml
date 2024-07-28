@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/hint_grey" android:id="@+id/labelTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+    <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/black" android:id="@+id/descriptionTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6dp" android:fontFamily="sans-serif-medium" app:fontType="2"/>
+    <View android:id="@+id/hDivider" android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_20dp"/>
+</LinearLayout>

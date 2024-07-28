@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/v3_rounded_white_background_radius_20dp" android:insetLeft="@dimen/dimen_41dp" android:insetRight="@dimen/dimen_41dp"/>

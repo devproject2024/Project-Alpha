@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mp_bw_settle_now_bank_account_max_width">137dp</dimen>
+    <dimen name="mp_bw_settle_now_bank_name_max_width">135dp</dimen>
+    <dimen name="mp_bw_settlement_bank_name_max_width">140dp</dimen>
+    <dimen name="mp_bw_settlement_message_max_width">220dp</dimen>
+    <dimen name="mp_header_bank_account_max_width">100dp</dimen>
+    <dimen name="mp_header_bank_name_max_width">160dp</dimen>
+    <dimen name="mp_settle_now_max_width">180dp</dimen>
+    <dimen name="mp_settlement_detail_bank_name_max_width">150dp</dimen>
+</resources>

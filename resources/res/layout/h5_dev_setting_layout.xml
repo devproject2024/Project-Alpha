@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <EditText android:textSize="20dp" android:id="@+id/h5_edit_appId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="input appId" android:layout_weight="1"/>
+        <Button android:textSize="20dp" android:id="@+id/h5_show_appInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="query version" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="20dp" android:id="@+id/h5_rpc" android:layout_width="200dp" android:layout_height="wrap_content" android:hint="force update"/>
+        <Button android:textSize="20dp" android:id="@+id/h5_do_app" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="check offline pkg"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="20dp" android:id="@+id/h5_startApp" android:layout_width="200dp" android:layout_height="wrap_content" android:hint="open offline pkg"/>
+        <EditText android:textSize="20dp" android:id="@+id/h5_load_app_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="input the url"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="20dp" android:id="@+id/h5_get_config" android:layout_width="200dp" android:layout_height="wrap_content" android:hint="check jsapi switch"/>
+        <Button android:textSize="20dp" android:id="@+id/h5_app_config" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="db config"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="20dp" android:id="@+id/h5_perf_tool" android:layout_width="200dp" android:layout_height="wrap_content" android:hint="open H5 perf tool"/>
+        <Button android:textSize="20dp" android:id="@+id/config_edit" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="switch config"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="20dp" android:id="@+id/h5_offline" android:layout_width="200dp" android:layout_height="wrap_content" android:hint="offline from appcenter"/>
+        <Button android:textSize="20dp" android:id="@+id/h5_copyDB" android:layout_width="200dp" android:layout_height="wrap_content" android:hint="copy db to pc"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="20dp" android:id="@+id/h5_test_case" android:layout_width="200dp" android:layout_height="wrap_content" android:hint="open test case"/>
+    </LinearLayout>
+</LinearLayout>

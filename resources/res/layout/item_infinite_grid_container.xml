@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:tag="layout/item_infinite_grid_container_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/dimen_18sp" android:textStyle="bold" android:textColor="@color/clp_color_2222222" android:layout_gravity="left" android:id="@+id/viewName" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_25dp" android:layout_marginTop="@dimen/dimen_4dp" android:layout_marginBottom="@dimen/dimen_16dp" android:text="@string/explore_our_collection" android:layout_marginStart="@dimen/dimen_16dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/filter_container" android:background="@color/gray_background_color" android:visibility="visible" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.paytmmall.clpartifact.customViews.InfiniteGridCustomRecyclerview android:orientation="vertical" android:id="@+id/grid_tabs_container" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="false" android:nestedScrollingEnabled="false"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/mainProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CLPProgressBar"/>
+        <ProgressBar android:layout_gravity="bottom" android:id="@+id/progressBar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_20dp" style="@style/CLPProgressBar"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/noNetworkLL" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/sf_no_internet"/>
+            <TextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/sf_no_network_heading"/>
+            <Button android:textSize="@dimen/dimen_12sp" android:textStyle="bold" android:textColor="@color/clp_white" android:layout_gravity="center" android:id="@+id/retryButton" android:background="@drawable/button_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/retry"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

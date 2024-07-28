@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#fffeeb" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="29dp" android:layout_marginRight="20dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <TextView android:id="@+id/added_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passbook_info_add_money"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/wallet_18_sp" android:textStyle="bold" android:textColor="#00b9f5" android:layout_gravity="right" android:id="@+id/passbooksendtobank_okgotit_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginRight="30dp" android:layout_marginBottom="30dp" android:text="@string/passbook_info_button" android:onClick="handleOKGotIt"/>
+</LinearLayout>

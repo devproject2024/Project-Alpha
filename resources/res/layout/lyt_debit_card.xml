@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_instrument" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/pg_instrument_header"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_card_expand" android:paddingRight="@dimen/dimen_20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:paddingEnd="@dimen/dimen_20dp"/>
+    <View android:id="@+id/divider" android:background="@color/color_f4f4f4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="40dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginStart="40dp"/>
+</LinearLayout>

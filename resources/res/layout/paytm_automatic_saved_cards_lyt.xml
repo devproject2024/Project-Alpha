@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="50dp">
+    <RelativeLayout android:id="@+id/card_lyt" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:textColor="@android:color/transparent" android:id="@+id/bank_name_radio_btn" android:background="@android:color/transparent" android:paddingRight="4dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="50dp" android:src="@drawable/btn_radio_on_holo_light" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:gravity="center" android:id="@+id/selectbank_txt_bankname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/bank_name_radio_btn" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:gravity="center" android:id="@+id/card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/selectbank_txt_bankname" android:layout_centerVertical="true"/>
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/card_img" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/sep_1" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/gray" android:layout_below="@+id/card_lyt" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name"/>
+</RelativeLayout>

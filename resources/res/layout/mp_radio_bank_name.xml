@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/mp_radio_bank_name_0" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioButton android:id="@+id/radio" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/color_1d2f54" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/top_text" android:paddingTop="@dimen/dimen_28dp" android:paddingBottom="@dimen/dimen_28dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_toRightOf="@+id/radio" android:layout_alignParentRight="true"/>
+    <View android:id="@+id/divier" android:background="#e8edf3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignBottom="@+id/top_text" android:layout_alignStart="@+id/top_text"/>
+</RelativeLayout>

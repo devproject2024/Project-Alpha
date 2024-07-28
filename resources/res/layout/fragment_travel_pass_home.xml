@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_travel_pass_home_0" android:background="#f6f8fc" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ProgressBar android:id="@+id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+    <include android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/recyclerView" layout="@layout/tp_empty_screen_view"/>
+    <include android:id="@+id/empty_image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/recyclerView" layout="@layout/tp_empty_screen_image_view"/>
+</RelativeLayout>

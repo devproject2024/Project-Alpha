@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/landingFragLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/headerLayout" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/header_layout"/>
+    <FrameLayout android:id="@+id/fragmentContainer" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/stripLayout" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/headerLayout"/>
+    <include android:id="@+id/stripLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" layout="@layout/cashback_bottom_bar_layout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

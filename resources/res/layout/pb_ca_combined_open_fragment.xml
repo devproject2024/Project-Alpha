@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/layout_bank_header_bar" layout="@layout/pb_layout_bank_header_without_divider"/>
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="39dp" android:layout_marginRight="160dp" android:text="@string/india_most_sincere_bank" android:layout_below="@+id/layout_bank_header_bar" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif" android:letterSpacing="0.03"/>
+    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="16dp" android:text="@string/pb_ca_suit_ur_need" android:layout_below="@+id/title" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif-medium"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_payment_bank_large_motif" android:layout_alignParentRight="true"/>
+    <ScrollView android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/subtitle">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/saving_lyt" android:background="@drawable/pb_ca_review_bg" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#1d252d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_ca_saving_account" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" app:srcCompat="@drawable/pb_ic_save_money"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/pb_sv_bank_promotion_title1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:text="@string/pb_bank_promotion_title1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" app:srcCompat="@drawable/ic_fd_wala_account"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/pb_sv_bank_promotion_title2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:text="@string/pb_bank_promotion_title2"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" app:srcCompat="@drawable/pb_ic_bank_promotion_upi"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:text="@string/pb_bank_promotion_title3"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" app:srcCompat="@drawable/pb_ic_bank_promotion_free_debit"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:text="@string/pb_bank_promotion_title4"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" app:srcCompat="@drawable/pb_ic_bank_promotion_lounge"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:text="@string/pb_bank_promotion_title5"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_sv_open" android:background="@drawable/pb_button_click" android:padding="17dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="@dimen/dimen_30dp" android:text="@string/open_your_savings_acc" android:textAllCaps="false" android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lyt_unexpanded" android:background="@drawable/pb_ca_review_bg" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#1d252d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pb_ca_current_account" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" app:srcCompat="@drawable/pb_ca_ic_save_money"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/pb_bank_promotion_title1_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:text="@string/pb_ca_info_one"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" app:srcCompat="@drawable/ic_zero_payment_ica_benefit"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/pb_bank_promotion_title2_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:text="@string/pb_ca_info_two"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" app:srcCompat="@drawable/pb_ca_ic_money_transfer"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:text="@string/pb_ca_info_three"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" app:srcCompat="@drawable/pb_ic_bank_promotion_free_debit"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:text="@string/pb_ca_info_four"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_ca_open" android:background="@drawable/pb_button_click" android:padding="17dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="@dimen/dimen_30dp" android:text="@string/pb_ca_open_ca" android:textAllCaps="false" android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_cityscape" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bank_cityscape" android:scaleType="fitXY" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

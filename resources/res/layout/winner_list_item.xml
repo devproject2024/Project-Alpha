@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/heading_lyout" android:background="#fff0f0f0" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp">
+    <RelativeLayout android:background="@color/white" android:paddingTop="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#ff222222" android:id="@+id/txt_subheading" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hi" android:layout_centerVertical="true" app:fontType="2"/>
+        <ImageView android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_17dp" android:src="@drawable/arrow_right_black" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:background="#fff0f0f0" android:layout_width="match_parent" android:layout_height="2dp"/>
+</LinearLayout>

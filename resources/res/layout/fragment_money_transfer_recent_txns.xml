@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_saved_accounts" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/saved_accounts_parent_layout" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_saved_heading" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="36dp">
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/color_999999" android:id="@+id/tv_saved_contacts" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="@string/money_transfer_saved_accounts" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:fontFamily="@string/font_family_roboto_medium" android:letterSpacing="0.04"/>
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/color_00b9f5" android:id="@+id/tv_add_new" android:padding="@dimen/dimen_5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp" android:text="@string/money_transfer_add_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="true" android:fontFamily="@string/font_family_roboto_regular"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/beneficiary_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_saved_heading"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_00b9f5" android:gravity="center" android:id="@+id/tv_view_all" android:background="@drawable/mt_view_all_bg" android:paddingLeft="@dimen/dimen_18dp" android:paddingTop="@dimen/dimen_9dp" android:paddingRight="@dimen/dimen_16dp" android:paddingBottom="@dimen/dimen_9dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_30dp" android:text="@string/money_transfer_view_all" android:drawableRight="@drawable/ic_down_arrow" android:drawablePadding="@dimen/dimen_10dp" android:layout_below="@+id/beneficiary_list" android:layout_centerHorizontal="true" android:fontFamily="@string/font_family_roboto_medium" android:letterSpacing="0.08"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/progress_layout_beneficiary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/dummy_beneficiary_list_view"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_self_accounts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/rl_saved_accounts">
+        <RelativeLayout android:id="@+id/self_accounts_parent_layout" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_self_heading" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="36dp">
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/color_999999" android:ellipsize="end" android:id="@+id/tv_self_accounts" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="@string/money_transfer_to_own_account_heading" android:maxLines="1" android:layout_toLeftOf="@+id/tv_add_new_self" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:textAllCaps="true" android:fontFamily="@string/font_family_roboto_medium" android:letterSpacing="0.04"/>
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/color_00b9f5" android:id="@+id/tv_add_new_self" android:padding="@dimen/dimen_5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp" android:text="@string/money_transfer_add_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="true" android:fontFamily="@string/font_family_roboto_regular"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/self_accounts_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_self_heading"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/progress_layout_self_account" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/dummy_self_accounts_view"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/loader_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/lyt_wallet_loader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_50dp" layout="@layout/layout_wallet_loader"/>
+    </RelativeLayout>
+</RelativeLayout>

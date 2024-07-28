@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/lyt_payment_status_sheet_0" android:background="#99000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/curved_popup_bg_lyt" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_36dp">
+            <TextView android:textSize="21sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/txt_transcation_status" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3sp" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/txt_amount" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_1dp" android:layout_below="@+id/txt_transcation_status" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="24sp" android:textColor="#222222" android:id="@+id/txt_decimal_amt" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_1dp" android:layout_toRightOf="@+id/txt_amount" android:layout_below="@+id/txt_transcation_status" android:fontFamily="sans-serif"/>
+            <ImageView android:id="@+id/icon_transcation_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_18dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_34dp"/>
+        <TextView android:textSize="17sp" android:textStyle="normal" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_34dp" android:text="We are redirecting you back to merchant app" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif-medium"/>
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/dot_progress_bar" android:paddingLeft="-30dp" android:layout_width="100dp" android:layout_height="25dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_35dp" android:layout_marginBottom="@dimen/dimen_45dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lyt_bottom_lines" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:background="@color/paytm_blue" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+            <View android:background="@color/paytm_dark_blue" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

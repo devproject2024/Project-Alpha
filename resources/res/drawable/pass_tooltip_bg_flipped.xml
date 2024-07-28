@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:top="18dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#dde5ed"/>
+            <corners android:radius="6dp"/>
+        </shape>
+    </item>
+    <item android:left="1.5dp" android:top="19.5dp" android:right="1.5dp" android:bottom="1.5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
+            <corners android:radius="6dp"/>
+        </shape>
+    </item>
+    <item android:gravity="top|left|center_vertical|center_horizontal|center" android:left="67dp" android:top="6dp">
+        <rotate android:fromDegrees="45" android:toDegrees="45" android:pivotX="50%" android:pivotY="50%">
+            <shape android:shape="rectangle">
+                <size android:height="24dp" android:width="24dp"/>
+                <corners android:bottomRightRadius="2dp"/>
+                <solid android:color="#dde5ed"/>` 
+            </shape>
+        </rotate>
+    </item>
+    <item android:gravity="top|left|center_vertical|center_horizontal|center" android:left="67dp" android:top="8dp">
+        <rotate android:fromDegrees="45" android:toDegrees="45" android:pivotX="50%" android:pivotY="50%">
+            <shape android:shape="rectangle">
+                <size android:height="24dp" android:width="24dp"/>
+                <corners android:bottomRightRadius="2dp"/>
+                <solid android:color="@color/white"/>` 
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

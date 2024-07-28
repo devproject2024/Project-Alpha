@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingRight="@dimen/major_attraction_item_right_padding" android:layout_width="@dimen/major_attraction_item_width" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/id_cardViewImg" android:layout_width="@dimen/major_attraction_card_width" android:layout_height="@dimen/major_attraction_card_height">
+        <ImageView android:id="@+id/item_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:id="@+id/image_progress_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/progress_medium_holo" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/major_attraction_14sp" android:textColor="@color/color_000000" android:id="@+id/id_rideName" android:paddingTop="@dimen/major_attraction_text_top_padding" android:paddingBottom="@dimen/major_attraction_text_top_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_below="@+id/id_cardViewImg" app:fontType="3"/>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/major_attraction_12sp" android:textColor="@color/event_text_gray_color" android:id="@+id/id_rideDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:includeFontPadding="false" android:layout_below="@+id/id_rideName" app:fontType="2"/>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/selected_date_lyt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="left" android:orientation="horizontal" android:id="@+id/header_lyt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/flight_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textStyle="normal" android:textColor="@color/color_4a4a4a" android:id="@+id/tab_item_title" android:paddingLeft="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="departure" android:fontFamily="sans-serif" app:fontType="2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp" android:layout_below="@+id/header_lyt">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:textStyle="normal" android:textColor="@color/color_323232" android:gravity="center_vertical" android:id="@+id/selected_date" android:padding="@dimen/dimen_5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_departure_date" android:fontFamily="sans-serif" app:fontType="2"/>
+            <RelativeLayout android:id="@+id/departure_lyt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_32sp" android:textStyle="normal" android:textColor="@color/color_323232" android:id="@+id/departure_date_textview" android:paddingRight="@dimen/dimen_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" app:fontType="2"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textStyle="normal" android:textColor="@color/color_323232" android:id="@+id/departure_month_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_toRightOf="@+id/departure_date_textview" android:fontFamily="sans-serif" app:fontType="2"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textStyle="bold" android:textColor="@color/color_323232" android:id="@+id/departure_week_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/departure_date_textview" android:layout_below="@+id/departure_month_textview" android:fontFamily="sans-serif" app:fontType="4"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

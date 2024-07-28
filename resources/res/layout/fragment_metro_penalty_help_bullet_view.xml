@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/bullet" android:background="@drawable/shape_recharge_metro_bullet_circle" android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_alignParentLeft="true"/>
+    <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="Scan Your QR ticket again by holding your device correctly over exit gate." android:layout_toRightOf="@+id/bullet" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif"/>
+</RelativeLayout>

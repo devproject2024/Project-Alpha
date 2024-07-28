@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/lyt_flight_close_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/no_of_traveller_container_layout"/>
+    <RelativeLayout android:id="@+id/no_of_traveller_container_layout" android:background="@drawable/pre_f_flight_rounded_top_corner" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/class_container_layout">
+        <LinearLayout android:orientation="vertical" android:id="@+id/flight_linear_home_container1" android:paddingLeft="@dimen/dimen_13dp" android:paddingRight="@dimen/dimen_18dp" android:paddingBottom="@dimen/dimen_40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_60dp" android:layout_marginBottom="@dimen/dimen_15dp">
+                <com.paytm.utility.RoboTextView android:textSize="17.5sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/label_travellers_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_label_travellers_name" android:layout_centerVertical="true" android:lineSpacingExtra="-1.6sp" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+                <RelativeLayout android:id="@+id/done_passenger_selection" android:layout_width="@dimen/dimen_100dp" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <com.paytm.utility.RoboTextView android:textSize="17.5sp" android:textStyle="normal" android:textColor="@color/paytm_blue_flight" android:gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:lineSpacingExtra="0.4sp" android:fontFamily="sans-serif" app:fontType="3"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_16sp" android:textStyle="normal" android:textColor="@color/color_4d4d4d" android:gravity="center_vertical" android:id="@+id/adults" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adults" android:fontFamily="sans-serif" app:fontType="2"/>
+                    <com.paytm.utility.RoboTextView android:textSize="11.5sp" android:textStyle="normal" android:textColor="@color/color_4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/twelve_plus_years" android:fontFamily="sans-serif" app:fontType="2"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:weightSum="3" android:layout_weight="1">
+                    <LinearLayout android:gravity="start" android:orientation="horizontal" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/adult_negative_lyt" android:background="@drawable/pre_f_flight_rounded_cornered_with_6dp_radius_grey_filled" android:layout_width="@dimen/dimen_46dp" android:layout_height="@dimen/dimen_37dp">
+                            <ImageView android:id="@+id/adult_nagative_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/pre_f_ic_negative_disbled"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.paytm.utility.RoboTextView android:textSize="27.5sp" android:textStyle="normal" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/adult_count_textview" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:text="1" android:layout_weight="1" android:fontFamily="sans-serif" app:fontType="2"/>
+                    <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/adult_positive_lyt" android:background="@drawable/pre_f_flight_rounded_cornered_with_6dp_radius_blue_filled" android:layout_width="@dimen/dimen_46dp" android:layout_height="@dimen/dimen_37dp">
+                            <ImageView android:id="@+id/adult_positive_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/pre_f_ic_positive_enbled"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/tp_gray_line_1" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_17dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dimen_21dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_16sp" android:textStyle="normal" android:textColor="@color/color_4d4d4d" android:gravity="center_vertical" android:id="@+id/children" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/children" android:fontFamily="sans-serif" app:fontType="2"/>
+                    <com.paytm.utility.RoboTextView android:textSize="11.5sp" android:textStyle="normal" android:textColor="@color/color_4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/two_to_twelve_years" android:fontFamily="sans-serif" app:fontType="2"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:weightSum="3" android:layout_weight="1">
+                    <LinearLayout android:gravity="start" android:orientation="horizontal" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/child_negative_lyt" android:background="@drawable/pre_f_flight_rounded_cornered_with_6dp_radius_grey_filled" android:layout_width="@dimen/dimen_46dp" android:layout_height="@dimen/dimen_37dp">
+                            <ImageView android:id="@+id/children_nagative_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/pre_f_ic_negative_disbled"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.paytm.utility.RoboTextView android:textSize="27.5sp" android:textStyle="normal" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/children_count_textview" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:text="0" android:layout_weight="1" android:fontFamily="sans-serif" app:fontType="2"/>
+                    <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/child_positive_lyt" android:background="@drawable/pre_f_flight_rounded_cornered_with_6dp_radius_blue_filled" android:layout_width="@dimen/dimen_46dp" android:layout_height="@dimen/dimen_37dp">
+                            <ImageView android:id="@+id/children_positive_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/pre_f_ic_positive_enbled"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/tp_gray_line_1" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_17dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dimen_21dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_16sp" android:textStyle="normal" android:textColor="@color/color_4d4d4d" android:gravity="center_vertical" android:id="@+id/infant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/infants" android:fontFamily="sans-serif" app:fontType="2"/>
+                    <com.paytm.utility.RoboTextView android:textSize="11.5sp" android:textStyle="normal" android:textColor="@color/color_4d4d4d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_to_two_years" android:fontFamily="sans-serif" app:fontType="2"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:weightSum="3" android:layout_weight="1">
+                    <LinearLayout android:gravity="start" android:orientation="horizontal" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/infant_negative_lyt" android:background="@drawable/pre_f_flight_rounded_cornered_with_6dp_radius_grey_filled" android:layout_width="@dimen/dimen_46dp" android:layout_height="@dimen/dimen_37dp">
+                            <ImageView android:id="@+id/infant_nagative_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/pre_f_ic_negative_disbled"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.paytm.utility.RoboTextView android:textSize="27.5sp" android:textStyle="normal" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/infant_count_textview" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:text="0" android:layout_weight="1" android:fontFamily="sans-serif" app:fontType="2"/>
+                    <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/infant_positive_lyt" android:background="@drawable/pre_f_flight_rounded_cornered_with_6dp_radius_blue_filled" android:layout_width="@dimen/dimen_46dp" android:layout_height="@dimen/dimen_37dp">
+                            <ImageView android:id="@+id/infant_positive_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/pre_f_ic_positive_enbled"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/flight_infants_error_msg_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_30dp">
+                <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/red" android:id="@+id/flight_infants_error_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_infants_error_msg" android:layout_centerVertical="true" app:fontType="2"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/class_container_layout" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/class_header_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14dp">
+            <com.paytm.utility.RoboTextView android:textSize="17.5sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/class_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_class" android:layout_centerVertical="true" android:lineSpacingExtra="-1.6sp" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+            <RelativeLayout android:id="@+id/done_class_selection" android:visibility="gone" android:layout_width="100dp" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/flight_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_done_tag" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontType="3"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/class_radio_group_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_29dp" android:layout_below="@+id/class_header_layout">
+            <RadioGroup android:orientation="vertical" android:id="@+id/trip_type" android:paddingLeft="@dimen/dimen_4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_22dp" android:layout_alignParentLeft="true">
+                <RadioButton android:textSize="17.5sp" android:textStyle="normal" android:textColor="@color/color_4d4d4d" android:id="@+id/radio_economy" android:paddingLeft="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_22dp" android:checked="false" android:button="@drawable/btn_radio_holo_light" android:text="@string/economy_flight" android:drawablePadding="@dimen/dimen_0dp" android:layout_alignParentLeft="true" android:fontFamily="sans-serif"/>
+                <RadioButton android:textSize="17.5sp" android:textStyle="normal" android:textColor="@color/color_4d4d4d" android:id="@+id/radio_premium_economy" android:paddingLeft="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="@dimen/dimen_22dp" android:checked="false" android:button="@drawable/btn_radio_holo_light" android:text="@string/premium_economy" android:drawablePadding="@dimen/dimen_0dp" android:layout_alignParentLeft="true" android:fontFamily="sans-serif"/>
+                <RadioButton android:textSize="17.5sp" android:textStyle="normal" android:textColor="@color/color_4d4d4d" android:id="@+id/radio_business" android:paddingLeft="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:checked="false" android:button="@drawable/btn_radio_holo_light" android:text="@string/business" android:drawablePadding="@dimen/dimen_0dp" android:layout_alignParentLeft="true" android:fontFamily="sans-serif"/>
+            </RadioGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

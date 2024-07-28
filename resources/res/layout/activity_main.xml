@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SSO TOKEN:"/>
+        <EditText android:id="@+id/et_sso_token" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="681e5f18-5dfd-448d-999d-c872cd2e2700"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phone No:"/>
+        <EditText android:id="@+id/et_phoneNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="8826088642"/>
+    </LinearLayout>
+    <Button android:id="@+id/btn_selectBankActivity" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Open Select Bank Activity"/>
+</LinearLayout>

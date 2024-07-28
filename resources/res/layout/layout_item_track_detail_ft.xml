@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_f3f7f8" android:paddingTop="@dimen/item_detail_seller_card_top_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_25dp">
+        <LinearLayout android:background="@drawable/item_detail_image_margin_ft" android:layout_width="@dimen/dimen_96dp" android:layout_height="@dimen/dimen_60dp">
+            <net.one97.paytm.common.widgets.CJRVolleyImageView android:layout_gravity="center_horizontal" android:id="@+id/item_detail_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside">
+                <requestFocus/>
+            </net.one97.paytm.common.widgets.CJRVolleyImageView>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_13dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/item_detail_auto_cancelled_text_font_size" android:textColor="@android:color/white" android:paddingLeft="@dimen/item_detail_auto_cancelled_text_padding" android:paddingTop="@dimen/dimen_6dp" android:paddingRight="@dimen/item_detail_auto_cancelled_text_padding" android:paddingBottom="@dimen/dimen_6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_detail_auto_cancelled_text_top_margin" android:text="@string/order_summary_delivered_txt" app:fontType="4"/>
+            <com.paytm.utility.RoboTextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="start" android:id="@+id/delivered_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="0sp" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

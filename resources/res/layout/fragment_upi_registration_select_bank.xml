@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/rounded_top_corner" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="vertical" android:padding="@dimen/dimen_24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/tv_personalise_paytm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/iv_close" android:lineSpacingExtra="8sp" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/tv_upi_offer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6dp" android:layout_below="@+id/tv_personalise_paytm" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_close" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:src="@drawable/ic_close_minkyc" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_24dp" android:layout_marginRight="@dimen/dimen_24dp">
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/tv_select_bank_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upi_select_your_bank" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:weightSum="3">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_bank_1" android:background="@drawable/bg_upi_select_bank" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_bank_1" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="@dimen/wallet_10_dp"/>
+                        <TextView android:textSize="@dimen/wallet_12_sp" android:textStyle="normal" android:textColor="@color/color_222222" android:gravity="center_horizontal" android:id="@+id/tv_bank_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_15_dp" android:lineSpacingExtra="1.9sp" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                    <androidx.legacy.widget.Space android:layout_width="@dimen/dimen_15dp" android:layout_height="match_parent"/>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_bank_2" android:background="@drawable/bg_upi_select_bank" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_bank_2" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="@dimen/wallet_10_dp"/>
+                        <TextView android:textSize="@dimen/wallet_12_sp" android:textStyle="normal" android:textColor="@color/color_222222" android:gravity="center_horizontal" android:id="@+id/tv_bank_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_15_dp" android:lineSpacingExtra="1.9sp" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                    <androidx.legacy.widget.Space android:layout_width="@dimen/dimen_15dp" android:layout_height="match_parent"/>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_bank_3" android:background="@drawable/bg_upi_select_bank" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_bank_3" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="@dimen/wallet_10_dp"/>
+                        <TextView android:textSize="@dimen/wallet_12_sp" android:textStyle="normal" android:textColor="@color/color_222222" android:gravity="center_horizontal" android:id="@+id/tv_bank_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_15_dp" android:lineSpacingExtra="1.9sp" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:weightSum="3">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_bank_4" android:background="@drawable/bg_upi_select_bank" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_bank_4" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="@dimen/wallet_10_dp"/>
+                        <TextView android:textSize="@dimen/wallet_12_sp" android:textStyle="normal" android:textColor="@color/color_222222" android:gravity="center_horizontal" android:id="@+id/tv_bank_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_15_dp" android:lineSpacingExtra="1.9sp" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                    <androidx.legacy.widget.Space android:layout_width="@dimen/dimen_15dp" android:layout_height="match_parent"/>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_bank_5" android:background="@drawable/bg_upi_select_bank" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_bank_5" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="@dimen/wallet_10_dp"/>
+                        <TextView android:textSize="@dimen/wallet_12_sp" android:textStyle="normal" android:textColor="@color/color_222222" android:gravity="center_horizontal" android:id="@+id/tv_bank_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_15_dp" android:lineSpacingExtra="1.9sp" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                    <androidx.legacy.widget.Space android:layout_width="@dimen/dimen_15dp" android:layout_height="match_parent"/>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_bank_6" android:background="@drawable/bg_upi_select_bank" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_bank_6" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="@dimen/wallet_10_dp"/>
+                        <TextView android:textSize="@dimen/wallet_12_sp" android:textStyle="normal" android:textColor="@color/color_222222" android:gravity="center_horizontal" android:id="@+id/tv_bank_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_15_dp" android:lineSpacingExtra="1.9sp" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/rl_select_bank" android:background="@drawable/bg_upi_select_bank" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_15_dp">
+                    <TextView android:textSize="@dimen/dimen_13sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/tv_select_other_banks" android:padding="@dimen/wallet_15_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upi_select_other_banks" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:fontFamily="@string/font_family_roboto_regular"/>
+                    <ImageView android:padding="@dimen/wallet_15_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_black" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <ProgressBar android:id="@+id/pb_get_banks" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:indeterminateDrawable="@drawable/paytm_progress" android:layout_centerInParent="true"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/wallet_11_sp" android:textStyle="normal" android:textColor="@color/color_999999" android:gravity="center_horizontal" android:id="@+id/tv_operator_note" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_24dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_24dp" android:layout_marginBottom="@dimen/dimen_12dp" android:text="@string/upi_operator_charges" android:lineSpacingExtra="5.3sp" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

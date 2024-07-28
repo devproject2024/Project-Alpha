@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="@dimen/dimen_6dp" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+    <include android:id="@+id/lyt_subscription_section" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_automatic_subscription_section"/>
+</androidx.cardview.widget.CardView>

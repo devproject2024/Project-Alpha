@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/movie_seat_normal_shape" android:left="@dimen/just_ticket_movie_seat_padding" android:top="@dimen/just_ticket_movie_seat_padding" android:right="@dimen/just_ticket_movie_seat_padding" android:bottom="@dimen/just_ticket_movie_seat_padding"/>
+</layer-list>

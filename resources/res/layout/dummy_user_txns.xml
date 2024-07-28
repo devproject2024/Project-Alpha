@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.one97.paytm.upi.common.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/contacts_shimmer_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:base_alpha="0.4" app:shimmer_duration="1300">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_txn_items" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/header_view">
+        <include layout="@layout/dummy_user_txn_list_item"/>
+        <include layout="@layout/dummy_user_txn_list_item"/>
+        <include layout="@layout/dummy_user_txn_list_item"/>
+        <include layout="@layout/dummy_user_txn_list_item"/>
+        <include layout="@layout/dummy_user_txn_list_item"/>
+        <include layout="@layout/dummy_user_txn_list_item"/>
+    </LinearLayout>
+</net.one97.paytm.upi.common.ShimmerFrameLayout>

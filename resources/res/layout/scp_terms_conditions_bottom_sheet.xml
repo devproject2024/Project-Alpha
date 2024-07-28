@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:background="#99000000" android:layout_width="match_parent" android:layout_height="wrap_content" app:behavior_hideable="true" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/terms_conditions_webview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </androidx.core.widget.NestedScrollView>
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/visa_tnc_webview_loader" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_centerInParent="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/close_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/dimen_10dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_close_dark_gray"/>
+</RelativeLayout>

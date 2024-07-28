@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="375" android:viewportHeight="220">
+    <path android:fillColor="#fff" android:pathData="M0,0h375v220H0z" android:fillType="1"/>
+    <path android:fillColor="@drawable/$card_rupay__0" android:pathData="M325.927,89L279.614,253.751l86.69,-82.376L325.926,89" android:strokeAlpha="0.151" android:fillAlpha="0.151" android:fillType="1"/>
+    <path android:fillColor="@drawable/$card_rupay__1" android:pathData="M297.69,89L251.376,253.751l86.69,-82.376L297.69,89" android:fillType="1"/>
+    <path android:fillColor="@drawable/$card_rupay__2" android:pathData="M208.895,44.917L332.994,-59.215A9,9 89.495,0 1,345.673 -58.105L345.673,-58.105A9,9 73.707,0 1,344.564 -45.426L220.465,58.706A9,9 116.801,0 1,207.785 57.597L207.785,57.597A9,9 94.927,0 1,208.895 44.917z" android:strokeAlpha="0.151" android:fillAlpha="0.151" android:fillType="1"/>
+    <path android:fillColor="@drawable/$card_rupay__3" android:pathData="M16.199,211.459L63.693,171.606A16.5,16.5 50.242,0 1,86.939 173.64L86.939,173.64A16.5,16.5 50.242,0 1,84.905 196.885L37.411,236.738A16.5,16.5 92.74,0 1,14.165 234.704L14.165,234.704A16.5,16.5 92.74,0 1,16.199 211.459z" android:strokeAlpha="0.151" android:fillAlpha="0.151" android:fillType="1"/>
+    <path android:fillColor="#fdf6ec" android:pathData="M-37.106,322.346L83.929,220.785A9,9 117.047,0 1,96.609 221.895L96.609,221.895A9,9 69.81,0 1,95.5 234.574L-25.535,336.135A9,9 119.346,0 1,-38.215 335.025L-38.215,335.025A9,9 109.288,0 1,-37.106 322.346z" android:fillType="1"/>
+    <path android:fillColor="@drawable/$card_rupay__4" android:pathData="M37.836,178.409L0.8,207.345A9,9 96.927,0 1,-11.833 205.794L-11.833,205.794A9,9 96.927,0 1,-10.282 193.161L26.754,164.225A9,9 129.27,0 1,39.387 165.776L39.387,165.776A9,9 129.27,0 1,37.836 178.409z" android:strokeAlpha="0.151" android:fillAlpha="0.151" android:fillType="1"/>
+</vector>

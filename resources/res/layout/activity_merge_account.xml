@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_layout">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/color_494949" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/merge_account_heading"/>
+            <View android:background="@color/divider_color" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_2dp" android:layout_marginTop="20dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_494949" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/merge_account_challenge1"/>
+            <com.google.android.material.textfield.TextInputLayout android:theme="@style/PaytmEditTextTheme" android:id="@+id/activity_merge_et_layout_card_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="@string/merge_account_enter_here">
+                <androidx.appcompat.widget.AppCompatEditText android:textSize="16sp" android:id="@+id/activity_merge_et_card_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="4" android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/small_or"/>
+            <TextView android:textSize="16sp" android:textColor="@color/color_494949" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/merge_account_challenge2"/>
+            <com.google.android.material.textfield.TextInputLayout android:theme="@style/PaytmEditTextTheme" android:id="@+id/activity_merge_et_layout_balance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="@string/merge_account_enter_here">
+                <androidx.appcompat.widget.AppCompatEditText android:textSize="16sp" android:id="@+id/activity_merge_et_balance" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/red" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/activity_merge_account_tv_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/bottom_layout" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/activity_merge_account_btn_merge" android:background="@drawable/bg_btn_blue" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="10dp" android:text="@string/merge_button" android:textAllCaps="false" android:textAlignment="gravity"/>
+    </LinearLayout>
+</RelativeLayout>

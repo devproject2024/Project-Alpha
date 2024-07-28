@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@+id/lyt_bottom_tab_bar" android:layout_width="match_parent" android:layout_height="60dp" layout="@layout/pb_lyt_main_bottom_tab_bar_new"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/paytm_strip">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_111dp">
+                <LinearLayout android:layout_width="@dimen/dimen_96dp" android:layout_height="@dimen/dimen_61dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_24dp">
+                    <include layout="@layout/snapshot_pdc_card"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_24dp">
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_15sp" android:textColor="@color/color_444444" android:id="@+id/pdc_arriving_by" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_5dp" android:text="@string/arriving_by" android:includeFontPadding="false" app:fontType="2"/>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_21sp" android:textColor="#222222" android:id="@+id/pdc_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" app:fontType="3"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/pdc_status_layout" android:background="@color/color_222222" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/fragment_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10dp"/>
+                <FrameLayout android:id="@+id/fragment_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/address_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp"/>
+                <FrameLayout android:id="@+id/address_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <include android:id="@+id/pdc_paytm_trust_layout" android:visibility="gone" layout="@layout/pb_paytm_trust_layout"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/paytm_strip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottom_bar">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/pb_bottom_paytm_line"/>
+    </LinearLayout>
+</RelativeLayout>

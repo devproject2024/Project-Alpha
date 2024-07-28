@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+    <FrameLayout android:id="@+id/frame_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/container" android:background="@drawable/gray_nb_circle" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp">
+            <ImageView android:id="@+id/bank_icon" android:layout_width="@dimen/dimen_23dp" android:layout_height="@dimen/dimen_23dp" android:layout_centerInParent="true" android:contentDescription="TODO"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="end" android:id="@+id/ic_tick" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_15dp" android:contentDescription="TODO" app:srcCompat="@drawable/ic_select"/>
+    </FrameLayout>
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#222222" android:gravity="center" android:id="@+id/bank_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:layout_below="@+id/frame_container" android:fontFamily="sans-serif"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/tooltip_pointer_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:srcCompat="@drawable/pre_f_tooltip_arrow_up_shadow"/>
+    <FrameLayout android:id="@+id/tooltip_contentholder" android:background="@drawable/pre_f_rectangle_popup" android:padding="@dimen/dimen_15dp" android:scrollbars="none" android:layout_width="@dimen/dimen_200dp" android:layout_height="wrap_content" android:layout_marginTop="-3dp" android:maxWidth="@dimen/wallet_150_dp" android:layout_below="@+id/tooltip_pointer_up">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dimen_15sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/tooltip_1" android:paddingRight="@dimen/dimen_7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@+id/tooltip_2"/>
+                <TextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/black" android:id="@+id/tooltip_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/dimen_13sp" android:textColor="@color/black" android:id="@+id/tooltip_contenttv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:id="@+id/tooltip_pointer_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3dp" android:layout_below="@+id/tooltip_contentholder" android:layout_centerHorizontal="true" app:srcCompat="@drawable/pre_f_tooltip_arrow_down_shadow"/>
+</RelativeLayout>

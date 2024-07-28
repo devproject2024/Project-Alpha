@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#5e5c5c" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textColor="@color/white" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/seat_share_tooltip_title"/>
+    <com.paytm.utility.RoboTextView android:textColor="@color/greyish" android:id="@+id/txt_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/seat_share_tooltip_msg"/>
+</LinearLayout>

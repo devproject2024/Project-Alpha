@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/menu_link_account" android:visible="false" android:title="@string/upi_link_account" app:showAsAction="never"/>
+    <item android:id="@+id/menu_add_vpa" android:visible="false" android:title="@string/upi_add_address" app:showAsAction="never"/>
+    <item android:id="@+id/menu_dynamic_qr" android:visible="false" android:title="@string/upi_generate_dynamic_qr" app:showAsAction="never"/>
+    <item android:id="@+id/menu_edit_upi_id" android:title="@string/edit_upi_id" app:showAsAction="never"/>
+    <item android:id="@+id/menu_show_qr" android:title="@string/upi_my_qr_code" app:showAsAction="never"/>
+    <item android:id="@+id/menu_spam_folder" android:title="@string/upi_spam_requests_folder" app:showAsAction="never"/>
+    <item android:id="@+id/menu_deregister_upi" android:title="@string/upi_disable_upi" app:showAsAction="never"/>
+</menu>

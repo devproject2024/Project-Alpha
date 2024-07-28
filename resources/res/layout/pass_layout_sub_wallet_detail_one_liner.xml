@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp">
+    <ImageView android:id="@+id/icon" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginTop="7dp" android:src="@drawable/pass_gree_tick_icon" android:tint="#8ba6c1"/>
+    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#1d252d" android:id="@+id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="Make payments for any offline or online food merchant" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+</RelativeLayout>

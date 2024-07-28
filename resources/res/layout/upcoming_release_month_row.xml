@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/ripple_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp">
+    <TextView android:textSize="15sp" android:textColor="#444444" android:gravity="center" android:id="@+id/price_txtvw" android:background="@drawable/bg_bright_sky_blue_3dp_rounded" android:layout_width="66dp" android:layout_height="44dp" android:layout_marginTop="10dp" android:maxLines="1" android:singleLine="true" android:fontFamily="@string/font_family_roboto_medium"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/promo_code_apply_layout" android:background="#f6f6f6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent">
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+    <RelativeLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/apply_btn" android:background="@color/color_33b5e5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apply" android:layout_alignParentRight="true" android:textAllCaps="false"/>
+        <net.one97.paytm.common.widgets.CustomEditText android:id="@+id/edit_promo_code" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toLeftOf="@+id/promo_code_clear_" android:layout_alignBottom="@+id/apply_btn" android:layout_alignParentLeft="true" app:hint="@string/promo_code_hint" app:textSize="15"/>
+        <Button android:id="@+id/promo_code_clear_" android:background="@drawable/close_blue" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_toStartOf="@+id/apply_btn"/>
+    </RelativeLayout>
+</LinearLayout>

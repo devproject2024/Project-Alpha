@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:layout_marginRight="@dimen/dimen_24dp">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <net.one97.paytm.common.widgets.CircularImageView android:layout_gravity="center" android:id="@+id/circular_outer_bg" android:background="@drawable/mt_v4_theme_outer_white_circle" android:visibility="invisible" android:layout_width="@dimen/dimen_44dp" android:layout_height="@dimen/dimen_44dp" android:scaleType="fitCenter"/>
+        <RelativeLayout android:layout_gravity="center" android:id="@+id/inner_layout_icon" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:id="@+id/imag" android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" android:contentDescription="TODO"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView android:textSize="10sp" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tvTitle" android:visibility="gone" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:text="test" android:maxLines="1"/>
+</LinearLayout>

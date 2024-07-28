@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/v_divider" android:background="@color/light_grey" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/rl_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/v_divider">
+        <RelativeLayout android:id="@+id/imageLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="22dp" android:layout_marginBottom="22dp">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon" android:layout_width="24dp" android:layout_height="24dp" app:srcCompat="@drawable/svg_ill_withdraw_addmoney"/>
+        </RelativeLayout>
+        <RadioButton android:gravity="center" android:id="@+id/rb_select" android:clickable="false" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="25dp" android:layout_marginTop="22dp" android:layout_marginBottom="22dp" android:button="@drawable/uam_radio_selector"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="22dp" android:layout_toRightOf="@+id/rb_select">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/color_222222" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffa400" android:id="@+id/tv_fee_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/uam_transfer_fee" android:maxLines="2" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView android:id="@+id/lav_progress" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginRight="40dp" android:adjustViewBounds="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+                <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/color_666666" android:id="@+id/subTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="20dp" android:text="@string/uam_available_for_transfer" android:maxLines="2" app:fontType="2"/>
+                <ImageView android:id="@+id/iv_info" android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_toRightOf="@+id/subTitle" app:srcCompat="@drawable/uam_ic_info"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/detail_imv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="15dp" android:src="@drawable/ic_forward_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/item_open_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_content"/>
+</RelativeLayout>

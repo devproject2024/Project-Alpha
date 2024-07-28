@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:id="@+id/id_movie_summary_payment" android:paddingTop="21dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_movie_left_space" android:text="@string/payment_summary" app:fontType="3"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/id_summary_payment_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="@dimen/dimen_movie_right_space" android:layout_alignParentRight="true" app:srcCompat="@drawable/ic_movie_right_black"/>
+    <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/warm_grey" android:id="@+id/id_payment_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/id_summary_payment_arrow" app:fontType="2"/>
+    <View android:background="@color/color_e8f1f4" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="19dp" android:layout_below="@+id/id_payment_amount"/>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="thin_banner_height">112dp</dimen>
+    <dimen name="banner_2xn_height">185dp</dimen>
+    <dimen name="c1_square_banner_height">420dp</dimen>
+    <dimen name="collage3x_height">282dp</dimen>
+    <dimen name="collage5x_height">240dp</dimen>
+    <dimen name="collage5x_img1_height">116dp</dimen>
+    <dimen name="collage5x_img3_width">138dp</dimen>
+    <dimen name="collage5x_img4_height">140dp</dimen>
+    <dimen name="collage5x_img5_height">94dp</dimen>
+    <dimen name="lyt_3xn_banner_height">98.6dp</dimen>
+    <dimen name="search_bar_above_height">37dp</dimen>
+    <dimen name="search_bar_above_width">305dp</dimen>
+    <dimen name="thin_banner_height">112dp</dimen>
+</resources>

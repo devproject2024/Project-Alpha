@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginEnd="@dimen/dimen_10dp">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:id="@+id/txt_radio_icon" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:drawableStart="@drawable/icon_hotel_radio_off" app:fontType="2"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/color_323232" android:gravity="center" android:id="@+id/txt_promo_code" android:background="@drawable/rr_review_offers_tag" android:layout_width="wrap_content" android:layout_height="22.5dp" android:paddingStart="@dimen/dimen_5dp" android:paddingEnd="@dimen/dimen_10dp" android:layout_marginStart="@dimen/dimen_10dp" app:fontType="3"/>
+    </LinearLayout>
+    <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/color_323232" android:id="@+id/txt_promo_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="@dimen/dimen_15dp" android:layout_marginEnd="@dimen/dimen_10dp" app:fontType="2"/>
+    <View android:id="@+id/horizontal_sep" android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

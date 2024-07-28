@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+    <TextView android:textSize="@dimen/wallet_13sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_35dp" android:layout_marginLeft="@dimen/dimen_10dp" android:text="@string/cancellation_policy" app:fontType="3"/>
+    <View android:id="@+id/v_title_divider" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_below="@+id/tv_title"/>
+    <com.travel.train.widget.CJRCustomRecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_title"/>
+</RelativeLayout>

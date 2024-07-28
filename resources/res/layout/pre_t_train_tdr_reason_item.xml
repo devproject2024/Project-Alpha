@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linear_radio2" android:paddingTop="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/reason_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/train_ic_radio_button_deselected"/>
+        <TextView android:textSize="11sp" android:textStyle="normal" android:textColor="#666666" android:layout_gravity="center" android:id="@+id/reason_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <View android:id="@+id/view_separator_bottom_2" android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/dimen_30dp" android:layout_marginTop="12dp" android:layout_below="@+id/linear_radio2"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="36dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/titleTv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_20dp" app:fontType="3"/>
+        <View android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/paytm_movie_blue" android:id="@+id/viewAllTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_20dp" android:text="VIEW ALL" app:fontType="3"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/listRv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/titleTv" android:nestedScrollingEnabled="false"/>
+    <View android:id="@+id/divider" android:background="@color/color_F3F7F8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/listRv"/>
+</LinearLayout>

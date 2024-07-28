@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/dimen_5dp" android:paddingRight="@dimen/dimen_5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/ticket_options" android:background="@drawable/product_cards_metro" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingTop="24dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/circular_iv" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="@dimen/dimen_10dp"/>
+            <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/name_value_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_11dp" android:layout_toRightOf="@+id/circular_iv" android:layout_alignTop="@+id/circular_iv" android:fontFamily="sans-serif-medium"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/desc_value_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_11dp" android:layout_marginTop="@dimen/dimen_6dp" android:layout_marginRight="@dimen/dimen_60dp" android:layout_toRightOf="@+id/circular_iv" android:layout_below="@+id/name_value_tv" android:layout_alignParentRight="true" android:lineSpacingExtra="2sp" android:fontFamily="sans-serif"/>
+            <ImageView android:id="@+id/right_arrow_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_20dp" android:src="@drawable/card_forward_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

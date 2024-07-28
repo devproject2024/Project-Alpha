@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@+id/resizelayout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.paytm.android.chat.view.MoveUpwardBehaviour">
+        <LinearLayout android:id="@+id/network_error" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="Network connection lost. Please try again."/>
+        </LinearLayout>
+        <include layout="@layout/chat_ui_activity_chat_msglist_layout"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/bottom_container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0">
+            <include layout="@layout/chat_atom_ui_activity_chat_input_layout"/>
+            <include layout="@layout/chat_single_chat_bottom_view"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

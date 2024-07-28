@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="Hybrid Debug Setting" android:key="h5_bugme_hybrid_category">
+        <CheckBoxPreference android:title="Enable Hybrid Debug" android:key="h5_bug_me_debug_switch" android:summary="Take effect after modification"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Auxiliary Function">
+        <CheckBoxPreference android:title="Enable vorlon Dom Debug" android:key="h5_bug_me_dom_debug" android:summary="use vorlon, may influence the performance"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Laboratory Function" android:key="h5_bugme_advance_category">
+        <CheckBoxPreference android:title="Forbid UC host network" android:key="h5_disable_alipay_network" android:summary="Take effect immediately"/>
+        <CheckBoxPreference android:title="Force to close Bugme Dump" android:key="h5_bug_me_force_no_dump" android:summary="Take effect after killing process"/>
+        <CheckBoxPreference android:title="Jet Special" android:key="h5_bug_me_debug_switch_keep" android:summary="Jet special"/>
+        <CheckBoxPreference android:title="Enable H5Trace" android:key="h5_trace_debug_switch" android:summary="Take effect immediately"/>
+    </PreferenceCategory>
+</PreferenceScreen>

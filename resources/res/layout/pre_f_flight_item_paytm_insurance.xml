@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+    <RelativeLayout android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/relative_indurance_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16dp">
+            <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="#ff4a4a4a" android:id="@+id/flight_insurance_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_travel_insurance" android:layout_centerVertical="true" app:fontType="3"/>
+            <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/electricity_info_color" android:id="@+id/flight_insurance_sold_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_3dp" android:text="@string/flight_sold_by" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontType="2"/>
+        </RelativeLayout>
+        <CheckBox android:id="@+id/flight_insurance_checkbox" android:background="@drawable/pre_f_flight_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:button="@android:color/transparent" android:layout_below="@+id/relative_indurance_header"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/linear_insurance_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="4dp" android:layout_marginRight="12dp" android:layout_toRightOf="@+id/flight_insurance_checkbox" android:layout_below="@+id/relative_indurance_header">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/cart_black" android:id="@+id/flight_insurance_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

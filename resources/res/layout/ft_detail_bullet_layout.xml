@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/bullet" android:background="@drawable/text_view_bullet_fastag" android:layout_width="@dimen/dimen_6dp" android:layout_height="@dimen/dimen_6dp" android:layout_marginTop="@dimen/dimen_15dp"/>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:textColor="@color/color_444444" android:layout_gravity="center_vertical" android:id="@+id/tv_fasttag_detail" android:padding="@dimen/dimen_10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp" android:text="zsfasfasfgasfgasgasgf" android:lineSpacingExtra="@dimen/dimen_4sp" app:fontType="1"/>
+</LinearLayout>

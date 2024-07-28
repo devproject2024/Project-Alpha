@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_0dp">
+    <View android:id="@+id/top_divider" android:background="@color/color_f9f9f9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dimen_15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/flight_cancelation_protect_checkbox" android:background="@drawable/pre_f_flight_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@android:color/transparent" android:layout_below="@+id/relative_indurance_header"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/color_FF3063ad" android:layout_gravity="center_vertical" android:id="@+id/flight_cancel_insurance_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:text="@string/flight_cancellation_protect" app:fontType="3"/>
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_FF666666" android:layout_gravity="center_vertical" android:id="@+id/flight_insurance_details_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_32dp" android:layout_marginRight="@dimen/dimen_80dp" android:text="" app:fontType="2"/>
+            <ImageView android:id="@+id/flight_cancel_protect_insurance_benefits_image" android:visibility="gone" android:layout_width="@dimen/dimen_45dp" android:layout_height="@dimen/dimen_25dp" android:scaleType="fitStart" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/relative_cancel_protect_tooltip" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/devider" android:background="#ffefefef" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_8dp"/>
+            <ImageView android:id="@+id/flight_insurance_tool_tip_icon" android:background="@android:color/white" android:layout_width="@dimen/dimen_17dp" android:layout_height="@dimen/dimen_19dp" android:scaleType="fitCenter" android:layout_below="@+id/devider" android:layout_centerVertical="true" app:srcCompat="@drawable/pre_f_tip"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_11sp" android:textColor="@color/color_FF666666" android:layout_gravity="center_vertical" android:id="@+id/flight_insurance_tooltip_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14dp" android:text="" android:layout_toRightOf="@+id/flight_insurance_tool_tip_icon" android:layout_below="@+id/devider" app:fontType="2"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/bottom_divider" android:background="@color/color_f9f9f9" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10dp"/>
+</LinearLayout>

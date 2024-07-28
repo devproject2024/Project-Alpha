@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/img_star" android:layout_width="@dimen/dimen_25dp" android:layout_height="@dimen/dimen_25dp"/>
+</LinearLayout>

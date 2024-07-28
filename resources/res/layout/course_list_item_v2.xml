@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/operator_image_v2" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_20dp" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="#222222" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/operator_name_v2" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="60dp" android:layout_weight="1" android:fontFamily="sans-serif-medium"/>
+            <TextView android:textColor="@color/color_222222" android:id="@+id/tv_utilities_coming_soon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16dp" android:text="@string/coming_soon"/>
+            <ImageView android:id="@+id/ic_next_selection" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/color_979797" android:layout_marginEnd="25dp" app:srcCompat="@drawable/ic_metro_ticket_forward_arrow"/>
+        </LinearLayout>
+        <View android:layout_gravity="center" android:id="@+id/view_divider" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1dp" android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lyt_text_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@drawable/pre_f_flight_flight_tab_selector" android:id="@+id/txt_title" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/departure" android:singleLine="true" app:fontType="2"/>
+        <ImageView android:id="@+id/img_toggle_order" android:paddingLeft="0dp" android:paddingRight="8dp" android:visibility="invisible" android:layout_width="18dp" android:layout_height="18dp" android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+    <View android:id="@+id/view_separator_time" android:background="@color/flight_tab_divider_color" android:layout_width="1dp" android:layout_height="24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

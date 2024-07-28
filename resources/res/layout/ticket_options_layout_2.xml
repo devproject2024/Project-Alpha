@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:background="@drawable/shape_card_bg_recharge_need_help_bottom_sheet_metro" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/toolbar_lyt" android:background="@color/color_fafbfb" android:paddingTop="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow_re" android:layout_centerInParent="true" android:layout_marginStart="16dp" android:layout_alignParentStart="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/drop_down_clickable_lyt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/metro_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="sans-serif-medium" android:textAlignment="center"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/down_arrow_in_toolbar_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/down_arrow_hide" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@+id/metro_selection_main_lyt" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar_lyt" layout="@layout/activity_ticket_option_v2"/>
+    <include android:id="@+id/metro_selection_drop_down_lyt" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar_lyt" layout="@layout/operator_selector_dialog_lyt"/>
+    <ProgressBar android:id="@+id/progress_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

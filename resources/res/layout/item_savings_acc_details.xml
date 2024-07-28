@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/pb_border_transparent_debit_card" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/lyt_bank_detail" android:background="@drawable/pb_border_debit_card" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_motif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_payment_bank_motif" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/wallet_10_dp">
+            <TextView android:textSize="@dimen/cart_13sp" android:textColor="@color/black" android:id="@+id/heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_10_dp" android:text="@string/bank_saving_acc_details"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/item_savings_acc_details_lyt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_17dp" android:layout_below="@+id/heading">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/text_size_15sp" android:textColor="@color/black" android:id="@+id/name" android:background="@null" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/bank_name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dimen_9dp" android:layout_marginBottom="@dimen/dimen_9dp"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/item_savings_acc_details_lyt_acc_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/item_savings_acc_details_lyt_name">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/text_size_15sp" android:textColor="@color/color_222222" android:id="@+id/acc_number" android:background="@null" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/account_number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dimen_9dp" android:layout_marginBottom="@dimen/dimen_9dp"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/item_savings_acc_details_lyt_acc_ifsc_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/item_savings_acc_details_lyt_acc_num">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/text_size_15sp" android:textColor="@color/color_222222" android:id="@+id/ifsc_code" android:background="@null" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/ifsc_code"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dimen_13sp" android:textColor="@color/paytm_blue" android:id="@+id/item_savings_acc_details_tv_share" android:padding="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/wallet_10_dp" android:text="@string/share_account_details" android:layout_below="@+id/layout" android:layout_alignParentRight="true"/>
+        <View android:layout_width="match_parent" android:layout_height="30dp" android:layout_below="@+id/item_savings_acc_details_tv_share"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/bottom_strip" android:background="@drawable/pb_bottom_border_debit_card" android:layout_width="match_parent" android:layout_height="14dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

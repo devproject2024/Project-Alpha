@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="end" android:id="@+id/crossIcon" android:layout_width="@dimen/dimen_34dp" android:layout_height="@dimen/dimen_34dp" android:layout_marginTop="@dimen/dimen_20dp" android:src="@drawable/clp_mall_ic_close" android:layout_marginEnd="@dimen/dimen_20dp"/>

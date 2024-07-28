@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_75dp" android:layout_marginLeft="@dimen/dimen_18dp" android:layout_marginRight="@dimen/dimen_22dp">
+        <com.paytm.utility.RoboTextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/pricePerItem" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="3"/>
+        <RelativeLayout android:id="@+id/minus_view" android:background="@drawable/tp_rounded_disabled" android:layout_width="@dimen/dimen_35dp" android:layout_height="@dimen/dimen_28dp" android:layout_toLeftOf="@+id/quantity">
+            <ImageView android:id="@+id/minus_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/remove_disabled"/>
+        </RelativeLayout>
+        <com.paytm.utility.RoboTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/color_444444" android:id="@+id/quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp" android:text="9" android:layout_toLeftOf="@+id/plus_view" app:fontType="3"/>
+        <RelativeLayout android:id="@+id/plus_view" android:background="@drawable/tp_rounded_enabled" android:layout_width="@dimen/dimen_35dp" android:layout_height="@dimen/dimen_28dp" android:layout_marginBottom="0dp" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/plus_icon" android:padding="@dimen/dimen_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/add_enabled"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="#0a000000" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_80dp" android:layout_marginLeft="@dimen/dimen_18dp" android:layout_marginRight="@dimen/dimen_22dp">
+        <com.paytm.utility.RoboTextView android:textSize="18sp" android:textColor="@color/color_444444" android:id="@+id/total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total" app:fontType="3"/>
+        <com.paytm.utility.RoboTextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/color_444444" android:id="@+id/total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999" android:layout_alignParentRight="true" app:fontType="3"/>
+    </RelativeLayout>
+    <View android:background="#0a000000" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_80dp" android:layout_marginLeft="@dimen/dimen_18dp" android:layout_marginRight="@dimen/dimen_22dp">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_979797" android:id="@+id/start_date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:text="Start Date:" app:fontType="2"/>
+        <com.paytm.utility.RoboTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/start_date_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12 May 2019" android:layout_below="@+id/start_date_text" app:fontType="3"/>
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_979797" android:id="@+id/end_date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:text="Valid Till:" android:layout_alignParentRight="true" app:fontType="2"/>
+        <com.paytm.utility.RoboTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/end_date_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12 June 2019" android:layout_below="@+id/end_date_text" android:layout_alignParentRight="true" app:fontType="3"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/operator_content" android:paddingBottom="@dimen/dimen_5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_18dp" android:layout_marginRight="@dimen/dimen_22dp">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_979797" android:id="@+id/applicable_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Applicable on:" app:fontType="2"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10" android:layout_below="@+id/applicable_id">
+            <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/operator_values" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="8"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/color_00baf2" android:gravity="right" android:layout_gravity="right" android:id="@+id/tnc_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:text="T&amp;C" android:layout_weight="2"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#0a000000" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:textStyle="bold" android:textColor="@color/color_00baf2" android:gravity="center" android:id="@+id/promo" android:layout_width="match_parent" android:layout_height="@dimen/dimen_45dp" android:text="@string/tp_have_a_promo_code" android:layout_below="@+id/end_date_text" app:fontType="2"/>
+    <View android:background="#0a000000" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+    <RelativeLayout android:id="@+id/promo_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_18dp" android:layout_marginRight="@dimen/dimen_22dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/promo_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_10dp">
+            <TextView android:textSize="@dimen/cart_15sp" android:textStyle="bold" android:textColor="@color/textColor_222222" android:id="@+id/promocode_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="right" android:id="@+id/promo_cancel_btn" android:padding="@dimen/dimen_6dp" android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp" android:layout_weight="0"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_3232321" android:id="@+id/promo_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16dp" android:layout_below="@+id/promo_header"/>
+    </RelativeLayout>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_16sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/proceedToPay" android:background="@color/color_00b9f5" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55dp" android:text="@string/proceed_to_text" android:layout_below="@+id/end_date_text" app:fontType="4"/>
+</LinearLayout>

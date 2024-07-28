@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:paddingTop="@dimen/item_detail_seller_card_top_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/item_detail_container_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="100">
+        <LinearLayout android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_weight="27">
+            <net.one97.paytm.common.widgets.CJRVolleyImageView android:layout_gravity="center_horizontal" android:id="@+id/item_detail_item_image" android:layout_width="@dimen/item_detail_auto_cancel_image_width" android:layout_height="@dimen/item_detail_auto_cancel_image_height" android:scaleType="centerInside" android:layout_weight="25">
+                <requestFocus/>
+            </net.one97.paytm.common.widgets.CJRVolleyImageView>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_weight="73">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/item_detail_auto_cancelled_text_font_size" android:textColor="@android:color/white" android:paddingLeft="@dimen/item_detail_auto_cancelled_text_padding" android:paddingTop="@dimen/dimen_6dp" android:paddingRight="@dimen/item_detail_auto_cancelled_text_padding" android:paddingBottom="@dimen/dimen_6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_detail_auto_cancelled_text_top_margin" android:text="@string/order_summary_delivered_txt" app:fontType="4"/>
+            <com.paytm.utility.RoboTextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="start" android:id="@+id/delivered_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="0sp" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:weightSum="100">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="30"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_weight="70">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/view_item_detail" android:paddingRight="@dimen/item_detail_container_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/item_desc_container">
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/paytm_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="View item details" android:fontFamily="sans-serif-medium"/>
+                <ImageView android:id="@+id/arrow_image" android:background="@drawable/down_arrow_mall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp" android:layout_marginTop="@dimen/dimen_3dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/order_detail_product_description_view_ft"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/rnr_container" android:paddingLeft="@dimen/item_detail_container_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_detail_auto_cancelled_separator_top_margin">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/item_detail_auto_cancelation_text_font_size" android:textColor="@color/item_detail_auto_cancelation_reason_text_color" android:ellipsize="end" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/item_detail_auto_cancelation_text_bottom_margin" android:text="@string/post_delivered_text" app:fontType="2"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/rnr_font_size" android:textColor="@color/return_replace_clr" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/rnr" android:background="@drawable/bg_return_replace_text_ft" android:paddingLeft="@dimen/dimen_30dp" android:paddingTop="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_30dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_25dp" android:text="@string/rnr" app:fontType="2"/>
+    </LinearLayout>
+</LinearLayout>

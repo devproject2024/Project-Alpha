@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rlContainer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/title" android:paddingLeft="@dimen/dimen_21dp" android:paddingTop="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/dimen_15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_right_arrow_black"/>
+    <View android:id="@+id/hDivider" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/title"/>
+</RelativeLayout>

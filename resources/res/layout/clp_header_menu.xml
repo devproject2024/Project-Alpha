@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/menuList" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:visibility="visible" android:layout_width="170dp" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dimen_15dp">
+        <ImageView android:layout_gravity="end" android:id="@+id/top_arrow" android:layout_width="20dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginBottom="-8dp" android:src="@drawable/clp_ic_arrow_notifications" android:layout_marginEnd="@dimen/dimen_10dp"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/clp_menu_rounded_corner" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/home_menu_list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_26dp" android:layout_marginEnd="@dimen/dimen_3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

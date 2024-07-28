@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/no_voucher_view" android:paddingTop="@dimen/dimen_40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+    <ImageView android:gravity="center" android:layout_width="240dp" android:layout_height="200dp" android:src="@drawable/clp_group_45"/>
+    <TextView android:textSize="@dimen/dimen_20sp" android:textStyle="bold" android:textColor="@color/clp_color_2222222" android:gravity="center" android:id="@+id/no_vouchers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_stores"/>
+    <TextView android:textSize="@dimen/dimen_14sp" android:textColor="#666666" android:gravity="center" android:paddingTop="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_40dp" android:text="@string/no_store_text" android:paddingStart="@dimen/dimen_20dp" android:paddingEnd="@dimen/dimen_20dp"/>
+</LinearLayout>

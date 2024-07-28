@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="36dp" android:width="36dp" android:viewportWidth="36" android:viewportHeight="36">
+    <path android:fillColor="@drawable/$ic_vector_first_recharge__0" android:pathData="M18,18m-18,0a18,18 0,1 1,36 0a18,18 0,1 1,-36 0" android:strokeAlpha="0.6" android:fillAlpha="0.6" android:fillType="1"/>
+    <path android:fillColor="#07448e" android:pathData="M12,33h10a4.003,4.003 0,0 0,3.998 -3.977h-2A2.002,2.002 0,0 1,22 31H12c-1.103,0 -2,-0.897 -2,-2V9c0,-1.103 0.897,-2 2,-2h10c1.103,0 2,0.897 2,2v8.023h2V9c0,-2.206 -1.794,-4 -4,-4H12C9.794,5 8,6.794 8,9v20c0,2.206 1.794,4 4,4" android:fillType="1"/>
+    <path android:fillColor="#07448e" android:pathData="M17.007,26.525a1.5,1.5 0,1 0,0 3.001,1.5 1.5,0 0,0 0,-3" android:fillType="1"/>
+    <path android:fillColor="#51d5f4" android:pathData="M23.102,18.023l-2.366,6.166h3.215l-1.514,3.834 6.676,-6.166H25.83l1.515,-3.834z" android:fillType="1"/>
+    <path android:fillColor="#07448e" android:pathData="M18.14,8.384h-2.28a1,1 0,1 0,0 2h2.28a1,1 0,1 0,0 -2" android:fillType="1"/>
+</vector>

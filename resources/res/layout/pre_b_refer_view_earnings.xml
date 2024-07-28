@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/root_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/color_f1f6fc" android:layout_width="match_parent" android:layout_height="@dimen/dimen_170dp">
+            <TextView android:textSize="13sp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="Total Earnings" app:fontType="1"/>
+            <com.paytm.utility.RoboTextView android:textSize="25sp" android:textColor="@color/color_222222" android:id="@+id/view_earnings_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000" app:fontType="2"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_15dp">
+                <TextView android:textSize="11sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/view_earnings_current_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current month" android:layout_alignParentLeft="true" app:fontType="1"/>
+                <TextView android:textSize="13sp" android:textColor="#222222" android:id="@+id/view_earnings_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20,000 / 20,000" android:layout_alignParentRight="true" app:fontType="1"/>
+            </RelativeLayout>
+            <ProgressBar android:id="@+id/progressBarHorizontal" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/dimen_15dp" android:progress="1" android:indeterminate="false" style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView android:textSize="11sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@+id/reached_max_limit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_40dp" android:layout_marginTop="@dimen/dimen_13dp" android:layout_marginRight="@dimen/dimen_40dp" android:layout_marginBottom="@dimen/dimen_17dp" app:fontType="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/view_earnings_frg_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/progressBar_cyclic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50dp" android:minHeight="50dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

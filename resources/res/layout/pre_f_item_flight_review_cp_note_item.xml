@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_parent_view" android:paddingLeft="@dimen/dimen_12dp" android:paddingTop="@dimen/dimen_7dp" android:paddingRight="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_cancellation_and_more_sellers" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_tab_blue" android:ellipsize="end" android:id="@+id/fare_rules" android:paddingBottom="@dimen/dimen_7dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/flight_view_cancellation" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/cart_12sp" android:textColor="@color/flight_tab_blue" android:ellipsize="end" android:id="@+id/txt_more_sellers" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_more_sellers" android:singleLine="true"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/cart_12sp" android:textColor="@color/flight_sold_by" android:id="@+id/txt_traveller_note" android:paddingBottom="@dimen/dimen_8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

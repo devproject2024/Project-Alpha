@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/offer_promo_code_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/offer_img_left" android:background="@drawable/yellow_band_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+    <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#012b72" android:ellipsize="end" android:gravity="center" android:id="@+id/offer_promo_text" android:background="@drawable/yellow_band_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:text="@string/cashback_test_50" android:maxLines="1" app:fontType="3"/>
+    <ImageView android:id="@+id/offer_img_right" android:background="@drawable/yellow_band_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+</LinearLayout>

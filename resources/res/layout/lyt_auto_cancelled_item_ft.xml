@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/scroll_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_detail_auto_cancelled_item_card" android:background="@color/item_cards_seperator_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/lyt_item_detail_auto_cancelled_item_card_ft"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/seller_card_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/courier_card_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/exchange_card_layout" android:background="@color/item_cards_seperator_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_10dp">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/lyt_item_detail_exchange_card_ft"/>
+            <androidx.legacy.widget.Space android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_2dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_detail_refund_desc_card" android:background="@color/item_cards_seperator_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/lyt_item_detail_refund_desc_card_ft"/>
+            <androidx.legacy.widget.Space android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_detail_seller_card" android:background="@color/item_cards_seperator_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/lyt_item_detail_seller_card_ft"/>
+            <androidx.legacy.widget.Space android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_detail_promo_card" android:background="@color/item_cards_seperator_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_10dp">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/lyt_item_detail_promo_card_ft"/>
+            <androidx.legacy.widget.Space android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_2dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_detail_zero_cost_emi_card" android:background="@color/item_cards_seperator_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_10dp">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/lyt_item_detail_zero_emi_layout_ft"/>
+            <androidx.legacy.widget.Space android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_2dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_detail_delivery_address_card" android:background="@color/item_cards_seperator_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/lyt_item_detail_delivery_address_card_ft"/>
+            <androidx.legacy.widget.Space android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+        </LinearLayout>
+        <View android:background="@color/item_detail_auto_cancel_separator_bg_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/generic_actions_container" android:background="@android:color/white" android:paddingLeft="@dimen/item_detail_container_padding" android:paddingRight="@dimen/item_detail_container_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/item_cards_seperator_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

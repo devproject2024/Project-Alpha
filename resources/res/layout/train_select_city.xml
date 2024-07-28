@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinateLyt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/select_train_lyt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:gravity="right" android:layout_gravity="end" android:id="@+id/back_button" android:background="@android:color/transparent" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                    <EditText android:textSize="16dp" android:id="@+id/city_search" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:singleLine="true" android:layout_toLeftOf="@+id/close_icon" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone"/>
+                    <ImageButton android:id="@+id/close_icon" android:background="@android:color/transparent" android:padding="@dimen/dimen_15dp" android:visibility="gone" android:layout_width="@dimen/dimen_33dp" android:layout_height="@dimen/dimen_33dp" android:src="@drawable/pre_t_train_claer_recent" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <ImageButton android:id="@+id/voice_icon" android:background="@android:color/transparent" android:padding="@dimen/dimen_8dp" android:visibility="visible" android:layout_width="@dimen/dimen_33dp" android:layout_height="@dimen/dimen_33dp" android:layout_marginRight="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/movie_seat_separator_bg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginTop="10dp"/>
+            <TextView android:textSize="13sp" android:textColor="@color/red" android:id="@+id/station_same_error_message" android:background="@android:color/transparent" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/selected_destination_is_same_as_origin"/>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/gps_location_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50dp">
+                <ImageView android:id="@+id/ic_gps_location" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_centerVertical="true"/>
+                <TextView android:textSize="13sp" android:textColor="@color/color_0a0a0a" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:text="@string/show_nearby_station" android:layout_toRightOf="@+id/ic_gps_location" android:layout_centerVertical="true" app:fontType="2"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/suggestion_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/color_000000" android:id="@+id/no_suggestions_found" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pre_t_train_no_suggetions" app:fontType="4"/>
+                <TextView android:textSize="15sp" android:textColor="@color/dark_gray" android:id="@+id/message_verify_text" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pre_t_train_confirm_suggetion_msg" android:layout_below="@+id/no_suggestions_found"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/typed_list_rel_lyt" android:background="@color/color_fafafa" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/suggestion_lyt">
+                <LinearLayout android:orientation="vertical" android:id="@+id/title_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view_train_after_search" android:background="@color/white" android:paddingBottom="10dp" android:visibility="visible" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_container"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/recent_popular_rel_lyt" android:background="@color/paytm_default" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view_train" android:background="@color/white" android:paddingBottom="10dp" android:visibility="visible" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/lottieAnim" android:visibility="visible" android:layout_width="@dimen/dimen_75dp" android:layout_height="@dimen/dimen_25dp" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="8" app:duration="@android:integer/config_mediumAnimTime"/>
+            <TextView android:textSize="15sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/train_loading_stations"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/pre_t_layout_voice_bottomsheet"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

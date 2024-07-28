@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@color/color_f4f4f4" android:padding="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/flight_itenarary_layover_time" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fare_breakup" android:singleLine="true" app:fontType="2"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_13sp" android:textColor="@color/flight_itenarary_layover_time" android:gravity="right" android:id="@+id/txt_passenger_details" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" app:fontType="2"/>
+    </LinearLayout>
+    <TableLayout android:id="@+id/lyt_fare_details" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TableRow android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone"/>
+        <TableRow android:layout_marginTop="17dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/base_fare" android:singleLine="true" android:layout_weight="1" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="right" android:id="@+id/text_base_fare" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="12dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/taxes_and_fees" android:singleLine="true" android:layout_weight="1" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="right" android:id="@+id/text_taxes_fees" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+        </TableRow>
+        <TableRow android:layout_marginTop="12dp">
+            <View android:background="#ffefefef" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:layout_marginTop="12dp" android:layout_marginBottom="0dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Airfare" android:layout_weight="1" app:fontType="3"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="right" android:id="@+id/text_total_air_fare" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="3"/>
+        </TableRow>
+        <TableRow android:id="@+id/lineAboveNotes" android:visibility="gone" android:layout_marginTop="@dimen/dimen_12dp">
+            <View android:background="#ffefefef" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:id="@+id/insurance_row" android:visibility="gone" android:layout_marginTop="@dimen/dimen_12dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/insurance_view" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/color_323232" android:id="@+id/travelInsuranceHeader" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5" app:fontType="2"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="#afafaf" android:id="@+id/insurance_rate_per_traveller" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_travel_insurance" app:fontType="1"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/color_323232" android:gravity="right" android:id="@+id/total_insurance" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.5" app:fontType="2"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:id="@+id/cancel_protect_insurance_row" android:visibility="gone" android:layout_marginTop="@dimen/dimen_12dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/cancel_protect_insurance_view" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/color_323232" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_cancellation_protect" android:singleLine="true" app:fontType="2"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="#afafaf" android:id="@+id/cancel_protect_insurance_rate_per_traveller" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_travel_insurance" app:fontType="1"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/color_323232" android:gravity="right" android:id="@+id/cancel_protect_total_insurance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:id="@+id/table_row_flight_bundle" android:visibility="gone" android:layout_marginTop="@dimen/dimen_12dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="left" android:id="@+id/txt_package_header" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/package_header" android:singleLine="true" android:layout_weight="1" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="right" android:id="@+id/txt_package_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+        </TableRow>
+        <TableRow android:id="@+id/table_row_flight_convfee" android:layout_marginTop="@dimen/dimen_12dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/color_323232" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_convience_fee" android:singleLine="true" app:fontType="2"/>
+                <ImageView android:id="@+id/image_view_conv_fee_info" android:paddingTop="@dimen/dimen_2dp" android:layout_width="@dimen/dimen_13dp" android:layout_height="@dimen/dimen_13dp" android:layout_marginLeft="@dimen/dimen_5dp" app:srcCompat="@drawable/pre_f_fare_info_icon"/>
+            </LinearLayout>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/color_323232" android:gravity="right" android:id="@+id/text_convience_fee" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+        </TableRow>
+        <TableRow android:id="@+id/seat_amount_row" android:layout_marginTop="12dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/seats" android:singleLine="true" android:layout_weight="1" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="right" android:id="@+id/text_seat_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+        </TableRow>
+        <TableRow android:id="@+id/table_row_flight_modification" android:visibility="gone" android:layout_marginTop="@dimen/dimen_12dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/color_323232" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Modification Charges" android:singleLine="true" app:fontType="2"/>
+            </LinearLayout>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/color_323232" android:gravity="right" android:id="@+id/text_modification_fee" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+        </TableRow>
+        <TableRow android:id="@+id/table_row_flight_ancillary" android:visibility="gone" android:layout_marginTop="@dimen/dimen_12dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/color_323232" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_ancillary_meals_and_additional_baggage" android:singleLine="true" app:fontType="2"/>
+                <ImageView android:id="@+id/image_view_ancillary_info" android:layout_width="@dimen/wallet_15_dp" android:layout_height="@dimen/wallet_15_dp" android:layout_marginLeft="@dimen/wallet_9_dp" app:srcCompat="@drawable/pre_f_fare_info_icon"/>
+            </LinearLayout>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/color_323232" android:gravity="right" android:id="@+id/text_ancillary_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+        </TableRow>
+        <TableRow android:id="@+id/tr_instant_discount_container" android:visibility="gone" android:layout_marginTop="12dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="left" android:id="@+id/tv_paytm_instant_discount" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/flight_instant_discount" android:layout_weight="1" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/cashback_color" android:gravity="right" android:id="@+id/tv_paytm_instant_discount_value" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+        </TableRow>
+        <TableRow android:id="@+id/table_row_flight_line" android:layout_marginTop="@dimen/dimen_12dp">
+            <View android:background="#ffefefef" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+        </TableRow>
+        <TableRow android:id="@+id/table_row_flight_grandTotal" android:layout_marginTop="12dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_15sp" android:textColor="@color/flight_review_base_fare" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Total to be paid" android:layout_weight="1" app:fontType="4"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_15sp" android:textColor="@color/flight_review_base_fare" android:gravity="right" android:id="@+id/text_total_fare" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="4"/>
+        </TableRow>
+        <TableRow android:id="@+id/tr_bank_cash_back_container" android:visibility="gone" android:layout_marginTop="12dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="left" android:id="@+id/tv_bank_cashback" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/flight_bank_cashback" android:layout_weight="1" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/cashback_color" android:gravity="right" android:id="@+id/tv_bank_cashback_value" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+        </TableRow>
+        <TableRow android:id="@+id/tv_cash_back_container" android:layout_marginTop="12dp" android:layout_marginBottom="12dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/flight_review_base_fare" android:gravity="left" android:id="@+id/tv_paytm_cashback" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/paytm_cashback" android:layout_weight="1" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/cashback_color" android:gravity="right" android:id="@+id/tv_paytm_cashback_value" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontType="2"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linear_exclude_flight_conv_fee" android:background="@color/color_f2f7fc" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_37dp" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_12dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_flight_note_icon" android:padding="@dimen/dimen_2dp" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginRight="@dimen/dimen_12dp"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_666666" android:id="@+id/txt_flight_exclude_conv_fee_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_4dp" android:text="@string/fare_breakup" app:fontType="2"/>
+    </LinearLayout>
+</LinearLayout>

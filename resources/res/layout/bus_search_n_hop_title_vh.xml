@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/black_222222" android:id="@+id/txt_from_route_name" android:padding="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Via routes to North Goa" app:fontType="3"/>
+</LinearLayout>

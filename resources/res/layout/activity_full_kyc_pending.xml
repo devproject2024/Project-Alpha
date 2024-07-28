@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/upgrade_kyc_lyt_parent_sv" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/activity_upgrade_kyc_lyt_kyc" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/upgrade_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp"/>
+        <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_000000" android:gravity="center" android:id="@+id/kyc_upgradewallet_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_below="@+id/tv_awesome" android:layout_centerHorizontal="true"/>
+        <Button android:textSize="17sp" android:textStyle="normal" android:textColor="@android:color/white" android:id="@+id/activity_upgrade_kyc_button_home" android:background="@color/paytm_light_blue" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30dp" android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>

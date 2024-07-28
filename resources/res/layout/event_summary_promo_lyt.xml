@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/movie_promo_text_image" android:background="@drawable/event_promo_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#012b72" android:gravity="center" android:layout_gravity="center" android:id="@+id/movie_promo_code_badge_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" app:fontType="2"/>
+    </LinearLayout>
+    <com.paytm.utility.RoboTextView android:textSize="10sp" android:textColor="#909090" android:id="@+id/movie_promo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:includeFontPadding="false" android:layout_toRightOf="@+id/movie_promo_text_image" android:layout_alignTop="@+id/movie_promo_text_image" android:lineSpacingExtra="0.3sp" app:fontType="2"/>
+</RelativeLayout>

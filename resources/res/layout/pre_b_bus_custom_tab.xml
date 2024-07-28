@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/dimen_13dp" android:textStyle="bold" android:textColor="#8b95a3" android:gravity="center" android:id="@+id/tab_title" android:background="@drawable/travel_res_bus_bg_rounded_rectangle_4dp_radius" android:paddingLeft="14dp" android:paddingTop="10dp" android:paddingRight="14dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bus_cancellation_policy_text" android:maxLines="1" android:fontFamily="sans-serif"/>
+</LinearLayout>

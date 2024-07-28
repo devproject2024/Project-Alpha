@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/color_323232" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:text="Add Passengers" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="@dimen/dimen_16dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/adult_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/cart_17sp" android:textColor="#5d6d85" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/city_bus_adult" android:fontFamily="@string/font_family_roboto_regular"/>
+            <TextView android:textSize="@dimen/cart_15sp" android:textColor="@color/black" android:id="@+id/adult_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="@dimen/dimen_10dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/adult_minus" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/minus"/>
+            <TextView android:textSize="@dimen/dimen_18sp" android:textColor="#323232" android:layout_gravity="center" android:id="@+id/adult_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/adult_plus" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/plus"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/student_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/cart_17sp" android:textColor="#5d6d85" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/city_bus_student" android:fontFamily="@string/font_family_roboto_regular"/>
+            <TextView android:textSize="@dimen/cart_15sp" android:textColor="@color/black" android:id="@+id/student_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="@dimen/dimen_10dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/student_minus" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/minus"/>
+            <TextView android:textSize="@dimen/dimen_18sp" android:textColor="#323232" android:layout_gravity="center" android:id="@+id/student_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/student_plus" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/plus"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/senior_citizen_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/cart_17sp" android:textColor="#5d6d85" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/city_bus_senior_citizen" android:fontFamily="@string/font_family_roboto_regular"/>
+            <TextView android:textSize="@dimen/cart_15sp" android:textColor="@color/black" android:id="@+id/senior_citizen_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="@dimen/dimen_10dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/sc_minus" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/minus"/>
+            <TextView android:textSize="@dimen/dimen_18sp" android:textColor="#323232" android:layout_gravity="center" android:id="@+id/sc_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/sc_plus" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/plus"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/child_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/cart_17sp" android:textColor="#5d6d85" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/city_bus_child" android:fontFamily="@string/font_family_roboto_regular"/>
+            <TextView android:textSize="@dimen/cart_15sp" android:textColor="@color/black" android:id="@+id/child_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="@dimen/dimen_10dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/child_minus" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/minus"/>
+            <TextView android:textSize="@dimen/dimen_18sp" android:textColor="#323232" android:layout_gravity="center" android:id="@+id/child_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/child_plus" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/plus"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/differently_abled_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/cart_17sp" android:textColor="#5d6d85" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/city_bus_differently_abled" android:fontFamily="@string/font_family_roboto_regular"/>
+            <TextView android:textSize="@dimen/cart_15sp" android:textColor="@color/black" android:id="@+id/differently_abled_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="@dimen/dimen_10dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/differently_abled_minus" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/minus"/>
+            <TextView android:textSize="@dimen/dimen_18sp" android:textColor="#323232" android:layout_gravity="center" android:id="@+id/differently_abled_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="@string/font_family_roboto_medium" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/differently_abled_plus" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/plus"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

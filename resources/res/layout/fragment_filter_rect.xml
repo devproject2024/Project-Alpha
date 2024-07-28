@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_filter_rect_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/lyt_search" android:background="@drawable/clp_round_sqaure" android:visibility="gone" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/dimen_10dp" android:backgroundTint="@color/clp_light_grey_border">
+        <ImageView android:layout_gravity="center" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:src="@drawable/ic_search_32"/>
+        <EditText android:textSize="@dimen/dimen_12sp" android:layout_gravity="center_vertical" android:id="@+id/searchTxt" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/search_by_brand"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_filter_values" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_10dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_manage_toll_tags" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_15sp" android:textStyle="normal" android:textColor="@color/color_00b9f5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manage_fastag" android:layout_centerVertical="true" android:lineSpacingExtra="1sp" android:fontFamily="sans-serif-light"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_20dp" android:src="@drawable/pass_ic_arrow_forward_passbook" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginLeft="@dimen/dimen_25dp" android:layout_marginTop="@dimen/dimen_15dp"/>
+    <RelativeLayout android:id="@+id/rl_download_statement_toll_tags" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25dp" android:layout_marginTop="15dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_15sp" android:textStyle="normal" android:textColor="@color/color_00b9f5" android:id="@+id/tv_fastag_download_statement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fastag_download_statement" android:layout_centerVertical="true" android:lineSpacingExtra="1sp" android:fontFamily="sans-serif-light"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_20dp" android:src="@drawable/pass_ic_arrow_forward_passbook" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="normal" android:textColor="@color/metro_ticket_purchase_tnc_text" android:id="@+id/change_operator_text" android:paddingRight="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_city" android:layout_centerInParent="true" android:title="@string/change_city" android:lineSpacingExtra="@dimen/dimen_12sp" android:textAllCaps="false" android:fontFamily="sans-serif-medium"/>
+</RelativeLayout>

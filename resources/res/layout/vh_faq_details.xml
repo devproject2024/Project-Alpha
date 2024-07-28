@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/vh_faq_details_0" android:background="@color/white" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_10dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dimen_16sp" android:textStyle="bold" android:textColor="@color/textColor_222222" android:id="@+id/header_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_faq_details" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

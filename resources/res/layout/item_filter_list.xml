@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/item_filter_list_0" android:layout_width="match_parent" android:layout_height="39dp">
+    <View android:background="@color/expand_tree_text" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linearRectItem" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="39dp">
+        <View android:id="@+id/selectedView" android:background="@color/primaryBlue" android:visibility="gone" android:layout_width="4dp" android:layout_height="wrap_content"/>
+        <com.paytmmall.clpartifact.customViews.CLPRobotoTextView android:textSize="13sp" android:textColor="@color/filter_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/filterTextView" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:maxLines="2" android:lines="2" android:fontFamily="Roboto-Medium"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/image_selected_filter" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:src="@drawable/clp_ic_selcted"/>
+    </LinearLayout>
+    <View android:background="@color/filter_gray_color" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+</LinearLayout>

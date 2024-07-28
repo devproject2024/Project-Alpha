@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/vh_travel_passes_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="260dp">
+        <com.one97.travelpass.custom.SlidingViewPager android:layout_gravity="center_horizontal" android:id="@+id/viewpager_image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="40dp"/>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/viewpager_dots1" android:background="@color/blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_alignParentBottom="true" app:tabBackground="@drawable/tp_travel_dot_selector" app:tabIndicatorHeight="0dp" app:tabPaddingEnd="6dp" app:tabPaddingStart="6dp" app:tabGravity="1"/>
+    </RelativeLayout>
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_heading" android:paddingLeft="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pass Details"/>
+</LinearLayout>

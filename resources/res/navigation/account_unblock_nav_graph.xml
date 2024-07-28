@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/account_unblock_nav_graph" app:startDestination="@+id/accountUnblockMobileNumberFragment">
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountUnblockMobileNumberFragment" android:id="@+id/accountUnblockMobileNumberFragment">
+        <argument android:name="mobileNumber" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/navActionAccountUnblockVerifyOtp" app:destination="@+id/accountUnblockVerifyOtpFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+        <action android:id="@+id/navActionAccountBlockTerminal" app:destination="@+id/accountUnblockTerminalPage" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountUnblockVerifyOtpFragment" android:id="@+id/accountUnblockVerifyOtpFragment">
+        <argument android:name="verifierId" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="mobile" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="stateCode" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/navActionAccountBlockTerminal" app:destination="@+id/accountUnblockTerminalPage" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+        <action android:id="@+id/navActionAccountUnblockSavedCard" app:destination="@+id/accountUnblockSavedCardFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountBlockUnblockTerminalFragment" android:id="@+id/accountUnblockTerminalPage">
+        <argument android:name="isAccountBlockCase" android:defaultValue="false" app:argType="boolean" app:nullable="false"/>
+        <argument android:name="net.one97.paytm.oauth.utils.TerminalPageState" android:defaultValue="DEFAULT" app:argType="net.one97.paytm.oauth.utils.TerminalPageState" app:nullable="false"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountUnblockSavedCardFragment" android:id="@+id/accountUnblockSavedCardFragment">
+        <argument android:name="stateCode" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="mobile" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="verifierId" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="lastFourDigit" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/navActionAccountBlockTerminal" app:destination="@+id/accountUnblockTerminalPage" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+        <action android:id="@+id/navActionAccountUnblockSuccessFragment" app:destination="@+id/accountUnblockSuccessFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountUnblockSuccessFragment" android:id="@+id/accountUnblockSuccessFragment">
+        <argument android:name="mobile" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+    </fragment>
+</navigation>

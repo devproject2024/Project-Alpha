@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/events_empty_view_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_80dp"/>
+    <ViewFlipper android:id="@+id/view_switcher_events_end" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_width="match_parent" android:layout_height="@dimen/dimen_64dp"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_64dp">
+            <ProgressBar android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp" android:layout_marginTop="@dimen/dimen_8dp"/>
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/loading_more_events"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:text="@string/loading_events"/>
+        </LinearLayout>
+    </ViewFlipper>
+</LinearLayout>

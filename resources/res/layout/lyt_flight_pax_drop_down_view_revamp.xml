@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_18dp">
+    <com.google.android.material.textfield.TextInputLayout android:theme="@style/flight_text_input_layout_theme_revamp" android:id="@+id/text_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6dp">
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:textSize="@dimen/cart_17sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/child_view" android:background="@drawable/transparent_border" android:paddingTop="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:editable="true" android:dropDownSelector="@drawable/list_selector" android:inputType="none|text|textNoSuggestions|textEmailAddress" android:imeOptions="actionDone" android:dropDownVerticalOffset="@dimen/dimen_8dp" android:fontFamily="sans-serif" app:fontType="2"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <View android:background="@color/color_efefef" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_6dp" android:layout_marginBottom="@dimen/dimen_5dp"/>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:textColor="@color/red" android:ellipsize="end" android:id="@+id/error_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lyt_student_baggage" android:background="@color/color_f2f7fc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/baggage_icon" android:padding="@dimen/dimen_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="@color/color_3063ad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_student_baggage" android:layout_toRightOf="@+id/baggage_icon" android:layout_centerVertical="true" app:fontType="3"/>
+            <LinearLayout android:id="@+id/icon_close_student_baggage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:padding="@dimen/dimen_12dp" android:layout_width="@dimen/dimen_37dp" android:layout_height="@dimen/dimen_37dp" app:srcCompat="@drawable/close_icon_image_zoom"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_11sp" android:textColor="@color/color_666666" android:ellipsize="end" android:id="@+id/txt_baggage_content" android:paddingLeft="@dimen/dimen_12dp" android:paddingRight="@dimen/dimen_12dp" android:paddingBottom="@dimen/dimen_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/baggage_icon" app:fontType="2"/>
+    </LinearLayout>
+</LinearLayout>

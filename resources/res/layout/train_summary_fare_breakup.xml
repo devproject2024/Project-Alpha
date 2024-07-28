@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_000000" android:gravity="left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fare_breakup" android:layout_weight="1" app:fontType="4"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/ticket_fare" android:layout_weight="1"/>
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.5"/>
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/paytm_service_fee" android:layout_weight="1"/>
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/bg_grid_grey" android:contentDescription="@string/app_name"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/total" android:layout_weight="1"/>
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/train_pg_charges_label" android:layout_weight="1"/>
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/bg_grid_grey" android:contentDescription="@string/app_name"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="left" android:id="@+id/grand_total_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grand_total" android:layout_weight="1"/>
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/movie_select_seat_bottom_error_bg" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_toRightOf="@+id/grand_total_label"/>
+    </RelativeLayout>
+</LinearLayout>

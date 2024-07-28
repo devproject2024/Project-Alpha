@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/scan_webview_toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <RelativeLayout android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/toolbar_btn_back" android:paddingLeft="@dimen/dimen_5dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true" android:contentDescription="TODO" android:paddingStart="@dimen/dimen_5dp" android:paddingEnd="15dp"/>
+                <HorizontalScrollView android:id="@+id/hscrollView" android:background="@drawable/rectangle_grey_stroke_rounded_corner" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/toolbar_share_btn" android:layout_toRightOf="@+id/toolbar_btn_back" android:layout_centerVertical="true" android:layout_marginEnd="5dp" android:layout_toStartOf="@+id/toolbar_share_btn" android:layout_toEndOf="@+id/toolbar_btn_back">
+                    <com.paytm.utility.RoboTextView android:textSize="17dp" android:textColor="@android:color/black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="3"/>
+                </HorizontalScrollView>
+                <ImageView android:id="@+id/toolbar_share_btn" android:background="@drawable/share_button_selector" android:paddingLeft="@dimen/dimen_5dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="TODO" android:paddingStart="@dimen/dimen_5dp" android:paddingEnd="15dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <View android:id="@+id/seperator" android:background="@color/smart_list_divider_grey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentTop="true"/>
+        <WebView android:id="@+id/webiew" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/lyt_progress_bar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_large_holo" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

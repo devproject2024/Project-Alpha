@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="11sp" android:textColor="#999999" android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:lineSpacingExtra="7sp"/>
+    <TextView android:textSize="14sp" android:textColor="#222222" android:id="@+id/tv_transferred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/pb_fd_transferred" android:layout_below="@+id/tv_date" android:lineSpacingExtra="4sp"/>
+    <TextView android:textSize="14sp" android:textColor="#222222" android:gravity="end" android:id="@+id/tv_transferred_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/tv_date" android:layout_alignParentRight="true"/>
+    <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_below="@+id/tv_transferred_amount"/>
+</RelativeLayout>

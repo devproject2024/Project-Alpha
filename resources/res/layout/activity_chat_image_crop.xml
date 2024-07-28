@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.paytm.android.chat.utils.imagecropper.CropImageView android:id="@+id/crop_view_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="80dp" android:layout_marginRight="30dp" android:layout_marginBottom="20dp" android:layout_above="@+id/crop_cta_btn_flt" android:layout_centerInParent="true" app:scv_crop_mode="6" app:scv_frame_color="@color/paytm_blue" app:scv_guide_color="@color/paytm_blue" app:scv_handle_color="@color/paytm_blue" app:scv_handle_size="15dp"/>
+    <ProgressBar android:id="@+id/crop_progress_bar" android:visibility="invisible" android:layout_width="50dp" android:layout_height="50dp" android:indeterminate="true" android:layout_centerInParent="true" android:indeterminateTint="@color/paytm_blue"/>
+    <FrameLayout android:id="@+id/crop_cta_btn_flt" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/ic_chat_crop"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/back_button_crop_activity_flt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="50dp">
+        <View android:background="@drawable/chat_ic_back_arrow" android:layout_width="20dp" android:layout_height="20dp"/>
+    </FrameLayout>
+</RelativeLayout>

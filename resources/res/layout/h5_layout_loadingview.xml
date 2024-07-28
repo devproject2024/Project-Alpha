@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/h5_rl_loading_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/h5_ltv_loading" android:visibility="visible" android:layout_width="60dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

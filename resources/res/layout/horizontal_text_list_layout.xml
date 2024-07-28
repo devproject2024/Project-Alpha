@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_container_top_margin">
+    <RelativeLayout android:id="@+id/lyt_horizontal_links_header" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="20dp" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_item_heading" android:textColor="@color/text_color_item_heading" android:id="@+id/txt_horizontal_links_title" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true"/>
+            <View android:background="@color/separators" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <net.one97.paytm.common.widgets.CJRHorizontalListView android:id="@+id/horizontal_text_list" android:layout_width="match_parent" android:layout_height="120dp" android:layout_below="@+id/lyt_horizontal_links_header"/>
+</RelativeLayout>

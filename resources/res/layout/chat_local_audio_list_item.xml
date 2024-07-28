@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="80dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:paddingTop="8dp" android:layout_width="48dp" android:layout_height="56dp" android:layout_marginLeft="15dp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+            <com.paytm.android.chat.view.RoundCornerImageView android:background="@drawable/chat_ic_local_audio_thumbnail_bg" android:layout_width="40dp" android:layout_height="40dp" app:radius="6dp"/>
+            <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="5dp" android:src="@drawable/chat_ic_local_audio_thumbnail_default" android:scaleType="fitCenter"/>
+            <com.paytm.android.chat.view.RoundCornerImageView android:id="@+id/thumbnail" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" app:radius="6dp"/>
+            <RelativeLayout android:id="@+id/icon_checked" android:layout_width="16dp" android:layout_height="16dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <ImageView android:background="@drawable/chat_ic_local_audio_checked_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <ImageView android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/chat_ic_local_audio_checked_src" android:scaleType="fitCenter"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="#000" android:ellipsize="end" android:id="@+id/tv_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="#808080" android:id="@+id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:01 • 3.7MB"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/play_button_wrap" android:layout_width="60dp" android:layout_height="match_parent" android:layout_marginRight="15dp">
+            <exfilepicker.ui.view.CircleProgressPlayButton android:id="@+id/play_button" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginLeft="15dp"/>
+</LinearLayout>

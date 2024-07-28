@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/select_locale_dialog_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_190dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="48dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/title1_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="नमस्ते!"/>
+            <TextView android:textSize="21dp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/title2_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="अब आपकी पेटीएम ऐप हिंदी में भी "/>
+        </LinearLayout>
+        <ImageView android:id="@+id/close_imv" android:padding="10dp" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/ic_close_black_bank" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:alpha="0.5"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/choose_lang_ll" android:background="@drawable/rectangle_blue_filled_round_corner" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp">
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/choose_lang_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="हिंदी भाषा चुनिए"/>
+                <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/change_lang_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+            <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="#00b9f5" android:gravity="center_horizontal" android:id="@+id/choose_another_language_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30dp" android:text="Choose another language" android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

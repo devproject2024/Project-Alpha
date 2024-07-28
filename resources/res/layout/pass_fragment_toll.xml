@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/nsv_wallet" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include android:id="@+id/toll_date_heading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/wallet_50_dp" android:layout_below="@+id/tl_transaction_tabs" layout="@layout/pass_passbook_entry_row_heading"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/toll_passbook_recycler" android:paddingBottom="@dimen/dimen_55dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/noresult_toll_passagehistory" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp">
+                <ImageView android:id="@+id/image_noresult_toll_passagehistory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pass_no_entry_passbook" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="16sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/wallet_16_sp" android:text="@string/toll_psg_hstry_empty_msg" android:layout_below="@+id/image_noresult_toll_passagehistory" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/loader_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_120dp">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/wallet_loader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:adjustViewBounds="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+    </LinearLayout>
+</RelativeLayout>

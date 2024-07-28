@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ImageView android:id="@+id/sheroes_ImageView_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" android:adjustViewBounds="true"/>
+    <com.sheroes.final_sdk.appliedlife.pvtltd.SHEROES.views.cutomeviews.CropOverlayView android:id="@+id/sheroes_CropOverlayView" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:theme="@style/Theme.Sheroes" android:layout_gravity="center" android:id="@+id/sheroes_CropProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</merge>

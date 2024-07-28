@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <View android:layout_gravity="center_horizontal" android:id="@+id/dotted_line1" android:background="@drawable/pre_t_train_train_view_route_bg" android:layout_width="@dimen/dimen_4dp" android:layout_height="@dimen/dimen_7dp" android:layout_marginRight="@dimen/dimen_1dp"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:textSize="@dimen/dimen_18sp" android:layout_gravity="center_horizontal" android:id="@+id/station_number" android:layout_width="@dimen/dimen_12dp" android:layout_height="wrap_content" android:src="@drawable/pre_t_img_circle"/>
+            <View android:layout_gravity="center_horizontal" android:id="@+id/dotted_line" android:background="@drawable/pre_t_train_train_view_route_bg" android:layout_width="@dimen/dimen_4dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_3dp" android:layout_marginRight="@dimen/dimen_1dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dimen_37dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_15sp" android:textColor="@android:color/black" android:id="@+id/station_name" android:paddingBottom="@dimen/dimen_9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="trainname" app:fontType="2"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_19dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:textColor="@color/train_search_time_color" android:id="@+id/train_arrivale_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" app:fontType="1"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:textColor="@color/train_search_time_color" android:id="@+id/train_departure_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="--" app:fontType="1"/>
+        </LinearLayout>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:textColor="@color/train_search_time_color" android:id="@+id/train_stop_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--" app:fontType="1"/>
+    </LinearLayout>
+</LinearLayout>

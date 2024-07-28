@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="bottom" android:id="@+id/grid_tabs_container" android:background="@color/white" android:paddingLeft="@dimen/dimen_10dp" android:paddingTop="@dimen/dimen_12dp" android:paddingRight="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_10dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/infinite_tab_border" android:background="@color/background_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10dp"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tip_info_layout" android:background="@color/color_f1f6fc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimens_39dp" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/tip_info_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/pre_t_train_info_image" android:layout_centerVertical="true"/>
+        <com.paytm.utility.RoboTextView android:textSize="10sp" android:id="@+id/tip_info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="@string/train_ticket_status_info" android:layout_toRightOf="@+id/tip_info_icon" android:layout_centerVertical="true" app:fontType="3"/>
+        <LinearLayout android:id="@+id/tip_info_close_btn" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:src="@drawable/pre_t_close_grey"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@+id/timer_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tip_info_layout" layout="@layout/pre_t_train_order_timer_bar_layout"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:background="@android:color/transparent" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/timer_lyt"/>
+    <FrameLayout android:id="@+id/floating_nav_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_30dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

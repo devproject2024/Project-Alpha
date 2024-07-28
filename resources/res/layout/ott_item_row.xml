@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/constraintLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/ripple_simple_gray">
+    <androidx.cardview.widget.CardView android:id="@+id/cardView" android:layout_width="@dimen/dimen_60dp" android:layout_height="@dimen/dimen_60dp" app:cardCornerRadius="@dimen/dimen_5dp">
+        <ImageView android:id="@+id/ottImage" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+    <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/emiTermsColor" android:id="@+id/ottName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/cardView" android:layout_centerHorizontal="true" app:fontType="3"/>
+</RelativeLayout>

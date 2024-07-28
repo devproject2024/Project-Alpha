@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sheroes.final_sdk.appliedlife.pvtltd.SHEROES.views.cutomeviews.TouchImageViewNew android:id="@+id/sheroes_imgDisplay" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <ProgressBar android:theme="@style/Theme.Sheroes" android:id="@+id/sheroes_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <TextView android:textColor="@color/sheroes_white" android:id="@+id/sheroes_footer" android:background="@color/sheroes_transparent_dark" android:padding="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

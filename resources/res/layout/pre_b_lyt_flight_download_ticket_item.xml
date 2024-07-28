@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_root" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/travel_res_bus_rounded_rect_with_3dp_grey_radius" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_11sp" android:textStyle="normal" android:textColor="@color/color_00b9f5" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@+id/item_text" android:paddingLeft="@dimen/dimen_8dp" android:paddingTop="@dimen/dimen_12dp" android:paddingRight="@dimen/dimen_8dp" android:paddingBottom="@dimen/dimen_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="1" android:fontFamily="sans-serif" app:fontType="2"/>
+    </LinearLayout>
+</LinearLayout>

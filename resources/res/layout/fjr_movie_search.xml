@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/movie_recycler_view" android:paddingBottom="10dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:id="@+id/movies_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/no_movies_err_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/translucent_black" android:gravity="center" android:id="@+id/error_text_quote" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_movies_found" app:fontType="3"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_4dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_refund_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_11sp" android:typeface="normal" android:textColor="@color/color_FF222222" android:id="@+id/heading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="3"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:typeface="normal" android:textColor="@color/color_FF222222" android:gravity="end" android:id="@+id/heading_value" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontType="3"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/acc_no_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_c_no" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:id="@+id/acc_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_5dp" app:fontType="2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/name_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/name_refund_breakup" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_5dp" app:fontType="2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/status_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_5dp" app:fontType="2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/expected_date_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/expected_date" android:fontFamily="sans-serif" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:id="@+id/expected_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_5dp" app:fontType="2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ref_no_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reference_number" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_12sp" android:typeface="normal" android:textColor="@color/color_FF9B9B9B" android:id="@+id/ref_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_5dp" app:fontType="2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/policy_content_view" android:background="@color/white" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_12dp">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/policy_icon_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/policy_icon_view" android:layout_width="@dimen/dimen_18dp" android:layout_height="@dimen/dimen_14dp" android:layout_marginTop="@dimen/dimen_4dp" android:layout_marginRight="@dimen/dimen_2dp" android:layout_marginBottom="@dimen/dimen_5dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/policy_container_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_toRightOf="@+id/policy_icon_view_container" android:layout_toEndOf="@+id/policy_icon_view_container">
+        <LinearLayout android:orientation="horizontal" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_15sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/policy_member_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp" android:text="" android:maxLines="1" android:fontFamily="sans-serif" app:fontType="2"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/policy_gender_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_5dp" android:text="" android:layout_toRightOf="@+id/policy_member_header"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/sub_policy_container" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_toRightOf="@+id/policy_gender_container"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/policy_notes_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/policy_container_lyt"/>
+</RelativeLayout>

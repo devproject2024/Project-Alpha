@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/title_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="20dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ancillary_pax_name_container" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dimen_13dp" android:paddingTop="@dimen/dimen_11dp" android:paddingRight="@dimen/dimen_13dp" android:paddingBottom="@dimen/dimen_14sp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@+id/pax_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pname " android:maxLines="1" app:fontType="3"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/img_group_icon" android:background="@drawable/pre_f_ancillary_group_open" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6dp" android:layout_marginRight="@dimen/dimen_6dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="#d7d7d7" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/pax_name"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ancillary_pax_child_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

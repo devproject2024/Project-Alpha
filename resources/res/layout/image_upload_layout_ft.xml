@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/upload_image_boarder" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="7dp"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/initial_layout" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="12.5sp" android:textStyle="normal" android:textColor="#999999" android:layout_gravity="center_horizontal" android:id="@+id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/front_photo_of_rc" android:fontFamily="sans-serif"/>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#0db9f5" android:gravity="end" android:layout_gravity="center_horizontal" android:id="@+id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/upload" android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/image_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/sent_to_pic_imv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="15dp" android:scaleType="centerInside"/>
+        <ImageView android:id="@+id/cross_imv" android:paddingLeft="10dp" android:paddingBottom="10dp" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_bank_close" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/progress_bar_layout" android:background="#66ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/error_layout" android:background="#66ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="25dp" android:layout_marginRight="25dp">
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/red" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/err_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/failed_tap_to_retry" android:layout_centerInParent="true" android:fontFamily="sans-serif-medium"/>
+    </RelativeLayout>
+</FrameLayout>

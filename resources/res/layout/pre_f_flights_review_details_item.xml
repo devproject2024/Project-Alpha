@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/additional_info_lyt" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_8dp" app:cardCornerRadius="@dimen/dimen_4dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/flight_card_left_view" android:layout_width="@dimen/dimen_2dp" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/iv_flight_additional_revamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_13_5dp" android:layout_marginTop="@dimen/dimen_13_5dp"/>
+            <TextView android:textSize="@dimen/cart_12sp" android:textStyle="normal" android:textColor="@color/color_000000" android:id="@+id/additional_info_txt" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:id="@+id/additional_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/wallet_7_5_dp">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/pre_f_item_additional_info_flight_review"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/journey_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_10dp">
+        <TextView android:textSize="@dimen/dimen_11sp" android:textColor="@color/color_8c8c8c" android:id="@+id/journey_type_txt" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/dimen_11sp" android:textColor="@color/color_8c8c8c" android:id="@+id/journey_type_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView android:orientation="vertical" android:id="@+id/card_lyt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dimen_5dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_7_5_dp" android:layout_marginRight="@dimen/wallet_7_5_dp">
+            <RelativeLayout android:id="@+id/lyt_flight_place" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44dp">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_15sp" android:textColor="@color/color_000000" android:ellipsize="end" android:id="@+id/flight_name_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bangalore" android:maxLines="1" android:layout_centerVertical="true" app:fontType="3"/>
+                <ImageButton android:id="@+id/image_arrow" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_toRightOf="@+id/flight_name_from" android:layout_centerVertical="true" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:layout_toEndOf="@+id/flight_name_from"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_15sp" android:textColor="@color/color_000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/flight_name_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bangalore" android:singleLine="true" android:layout_toRightOf="@+id/image_arrow" android:layout_centerVertical="true" android:layout_toEndOf="@+id/image_arrow" app:fontType="3"/>
+                <View android:id="@+id/line_brake" android:background="@color/light_grey_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lyt_journey_details" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:id="@+id/divider_end" android:background="@color/flight_itenerary_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_15dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/seller_refundable_container" android:paddingTop="@dimen/dimen_12dp" android:paddingBottom="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/flight_sold_by" android:gravity="center_vertical" android:id="@+id/txt_refundable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="refundable" android:layout_alignParentLeft="true" app:fontType="2"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/provider_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/flight_sold_by" android:id="@+id/txt_sold_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sold_by" app:fontType="2"/>
+                        <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/flight_sold_by" android:gravity="center_vertical" android:id="@+id/txt_seller_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text=" : Easy trip" app:fontType="2"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/flight_sold_by" android:id="@+id/txt_traveller_note" android:paddingBottom="@dimen/dimen_12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp"/>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:id="@+id/divider_end_note" android:background="@color/flight_itenerary_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_2dp" android:layout_marginBottom="@dimen/dimen_2dp"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/outermost_container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/toolbar_start_ap" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40dp" android:layout_alignParentStart="true">
+        <ImageView android:gravity="bottom" android:id="@+id/split_back_button" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:src="@drawable/back_arrow" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <com.paytm.utility.RoboTextView android:textSize="20sp" android:textStyle="bold" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="20dp" android:text="Your Bills" android:fontFamily="sans-serif" android:letterSpacing="0.02"/>
+    <RelativeLayout android:id="@+id/lyt_no_group_expenses" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="100dp">
+            <ImageView android:background="@drawable/sb_ic_ill_non_group_splitbill" android:layout_width="@dimen/dimen_200dp" android:layout_height="@dimen/dimen_200dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <com.paytm.utility.RoboTextView android:textSize="18sp" android:textStyle="bold" android:textColor="#222222" android:gravity="center_horizontal" android:id="@+id/empty_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="You do not have any bills at the moment" android:layout_below="@+id/image" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+    </RelativeLayout>
+    <include android:id="@+id/sb_no_internet_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100dp" layout="@layout/sb_no_internet_layout"/>
+    <include android:id="@+id/sb_technical_issue_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100dp" layout="@layout/sb_technical_issue_layout"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="21dp">
+        <include android:id="@+id/shimmer_lyt" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/sb_shimmer_bill_listing"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/data_history_widget_rv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/lav_lottie_loader" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginBottom="100dp" android:layout_below="@+id/tv_message" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+    </RelativeLayout>
+</LinearLayout>

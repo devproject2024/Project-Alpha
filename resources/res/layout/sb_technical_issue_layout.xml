@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/sb_ic_technical_error" android:layout_width="150dp" android:layout_height="150dp"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#222222" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="We are facing a technical issue" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="8dp" android:layout_marginRight="15dp" android:text="Information could not be fetched as there is technical issue at the moment" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif"/>
+        <Button android:textSize="15sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/technical_error_try_again" android:background="@drawable/sb_button_blue" android:layout_width="176dp" android:layout_height="44dp" android:layout_marginTop="24dp" android:text="Retry" android:fontFamily="sans-serif" android:letterSpacing="0.05"/>
+    </LinearLayout>
+</RelativeLayout>

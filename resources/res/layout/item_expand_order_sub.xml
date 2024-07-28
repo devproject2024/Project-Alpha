@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp">
+    <ImageView android:id="@+id/image_game" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/icon_beans_earn"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_000000" android:ellipsize="end" android:id="@+id/des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="@dimen/dimen_80dp" android:text="@string/beans_credited_by_gpl_battle" android:singleLine="true" android:layout_toRightOf="@+id/image_game" android:fontFamily="@font/roboto_medium"/>
+    <TextView android:textSize="12sp" android:textColor="@color/gray_878788" android:id="@+id/times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/last_played_today" android:layout_toRightOf="@+id/image_game" android:layout_below="@+id/des"/>
+    <TextView android:textSize="14sp" android:textColor="@color/red_e81111" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="+198" android:layout_alignParentRight="true" android:fontFamily="@font/roboto_medium"/>
+    <View android:background="@color/gray_ebecee" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="12dp" android:layout_below="@+id/image_game"/>
+</RelativeLayout>

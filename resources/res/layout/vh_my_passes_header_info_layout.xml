@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_20dp">
+    <RelativeLayout android:id="@+id/info_container" android:background="@drawable/button_gradient" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/white" android:id="@+id/info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="18dp" android:text="2 Active Passes    Rs 400 cashbackearned" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

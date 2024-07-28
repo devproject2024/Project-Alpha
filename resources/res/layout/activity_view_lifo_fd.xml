@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_back_arrow" android:background="?android:attr/selectableItemBackground" android:padding="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_12dp" android:src="@drawable/back_arrow" android:layout_centerVertical="true"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/tv_toolbar_title" android:paddingTop="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/select_bank" android:layout_toRightOf="@+id/iv_back_arrow"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:id="@+id/ll_parent_content" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <include layout="@layout/pb_si_layout_wallet_loader"/>
+        <include layout="@layout/pb_error_layout_retry"/>
+        <androidx.core.widget.NestedScrollView android:id="@+id/ns_parent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="140dp" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp" android:text="@string/fd_redeem_fixed_deposits" android:lineSpacingExtra="11sp" android:fontFamily="sans-serif"/>
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/tv_header_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_20dp" android:text="@string/fd_redeem_lifo_msg" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_fd_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp" android:nestedScrollingEnabled="false"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/ll_action_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/white" android:id="@+id/btn_proceed" android:background="@drawable/bg_btn_blue_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:minHeight="@dimen/dimen_56dp" android:text="@string/fd_redeem_fixed_deposit" android:textAllCaps="false" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#999999" android:gravity="center_horizontal" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tv_redeem_tds_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_40dp" android:layout_marginTop="18dp" android:layout_marginRight="@dimen/dimen_40dp" android:layout_marginBottom="@dimen/dimen_12dp" android:text="@string/fd_redeem_current_value_note" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/fl_progress_bar" android:background="@color/wallet_progress_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/pb_pb_paytm_progress"/>
+    </FrameLayout>
+</RelativeLayout>

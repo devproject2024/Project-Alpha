@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_filter_page_layout_heading" android:textColor="@color/text_color_filter_page_layout_heading" android:id="@+id/txt_filter_title" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <Switch android:id="@+id/btn_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:background="@color/separators" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp" android:layout_below="@+id/btn_toggle"/>
+</RelativeLayout>

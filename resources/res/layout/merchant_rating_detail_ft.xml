@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="@dimen/dimen_13dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/merchant_details_rating_text_size" android:textColor="@color/color_666666" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/pdp_rating_desc" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5" app:fontType="2"/>
+    <LinearLayout android:gravity="right" android:paddingRight="@dimen/dimen_8dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="4">
+        <RatingBar android:id="@+id/rating_bar_detail_pdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.1" android:isIndicator="true" style="?android:attr/ratingBarStyleSmall"/>
+    </LinearLayout>
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/merchant_details_rating_text_size" android:textColor="@android:color/black" android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/pdp_rating_number" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" app:fontType="4"/>
+</LinearLayout>

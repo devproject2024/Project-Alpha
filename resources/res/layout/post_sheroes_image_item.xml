@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="82dp" android:layout_height="82dp">
+    <RelativeLayout android:id="@+id/sheroes_image_container" android:background="@drawable/background_sheroes_image_select_colorless" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginLeft="5dp" android:layout_marginTop="8dp" android:layout_marginRight="5dp">
+        <ImageView android:id="@+id/sheroes_image" android:layout_width="69dp" android:layout_height="69dp" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/sheroes_image_close" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/vector_sheroes_cancel_grey" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

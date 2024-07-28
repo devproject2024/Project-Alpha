@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.squareup.timessquare.MonthView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/dimen_5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center" android:background="@drawable/flight_holiday_list_bullet_icon" android:layout_width="@dimen/dimen_4dp" android:layout_height="@dimen/dimen_4dp" android:layout_marginRight="@dimen/dimen_8_5dp"/>
+        <TextView android:textSize="@dimen/dimen_11sp" android:textStyle="normal" android:textColor="@color/color_909090" android:id="@+id/holiday_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/dimen_4_4sp" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+</com.squareup.timessquare.MonthView>

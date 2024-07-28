@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/hop_devider" android:background="#ffefefef" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_container" android:paddingTop="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/color_222222" android:gravity="center_vertical" android:id="@+id/source_hop_ita" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BLR" android:singleLine="true" app:fontType="2"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/img_arrow_hops" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6dp" android:layout_marginRight="@dimen/dimen_6dp" app:srcCompat="@drawable/pre_f_flight_arrow_right_black"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/destination_hop_ita" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CCU" android:maxLines="1" app:fontType="2"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/item_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_0dp"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pin_view_text_size">15dp</dimen>
+    <dimen name="pin_view_text_width">12dp</dimen>
+    <dimen name="auto_complete_preferred_item_height">30dp</dimen>
+    <dimen name="cart_14sp">14sp</dimen>
+    <dimen name="passenger_no">20dp</dimen>
+    <dimen name="passenger_no_height">20dp</dimen>
+    <dimen name="action_bar_title_size">16sp</dimen>
+    <dimen name="amoount_payed">15sp</dimen>
+    <dimen name="auto_complete_preferred_item_height">30dp</dimen>
+    <dimen name="cart_14sp">14sp</dimen>
+    <dimen name="expand_margin_top">2dp</dimen>
+    <dimen name="kyc_pin_view_text_size">15dp</dimen>
+    <dimen name="kyc_pin_view_text_width">12dp</dimen>
+    <dimen name="passenger_no">20dp</dimen>
+    <dimen name="passenger_no_height">20dp</dimen>
+    <dimen name="progressbar_margin_top">4dp</dimen>
+    <dimen name="recharge_desc">14sp</dimen>
+    <dimen name="refer_webview_height">150dp</dimen>
+    <dimen name="smartlist_height">28px</dimen>
+    <dimen name="smartlist_width">36px</dimen>
+    <dimen name="timestamp">12sp</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/rl_loader_container" android:tag="layout/activity_prime_loader_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/blank_view" android:background="@color/prime_bg_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/prime_container_new" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/prime_dot_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_centerInParent="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+    <WebView android:id="@+id/prime_webview" android:background="@color/prime_bg_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_contacts" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/parent_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/heading_rl" android:background="@color/color_f3f7f8" android:visibility="visible" android:layout_width="match_parent" android:layout_height="36dp">
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/color_999999" android:id="@+id/tv_contacts" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="@string/request_money_contacts" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:fontFamily="@string/font_family_roboto_regular" android:letterSpacing="0.08"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/color_00b9f5" android:id="@+id/tv_search" android:padding="@dimen/dimen_5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp" android:text="@string/search" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="true" android:fontFamily="@string/font_family_roboto_regular"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/contact_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/heading_rl"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/progress_layout_contacts" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/upi_dummy_contact_list"/>
+    </FrameLayout>
+</RelativeLayout>

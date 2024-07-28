@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_bg_main_light" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_above="@+id/layout_group_chat_chatbox" app:layout_constraintBottom_toTopOf="@+id/bottom_container" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/network_error">
+    <FrameLayout android:id="@+id/fl_chat_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/lotti_animation" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:lottie_autoPlay="false" app:lottie_loop="false"/>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_layout_group_chat" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_group_chat" android:paddingTop="7dp" android:paddingBottom="20dp" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <TextView android:layout_gravity="bottom" android:id="@+id/text_group_chat_new_message" android:background="@drawable/chat_shape_f2_cor_4" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/chat_module_new_message" android:layout_marginStart="10dp"/>
+        <TextView android:layout_gravity="end" android:id="@+id/text_group_chat_un_read_message" android:background="@drawable/chat_shape_f2_cor_4" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:text="@string/chat_module_un_read_message" android:layout_marginStart="10dp"/>
+    </FrameLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/chat_rl_invite_view" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginStart="65dp" android:layout_marginEnd="65dp">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/chat_invite"/>
+            <TextView android:textSize="16sp" android:textColor="#1d2f54" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="This user is not on Paytm Chat"/>
+            <TextView android:textSize="12sp" android:textColor="#506d85" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Invite them to keep in touch, easily transfer money, and lots more. " android:lineHeight="17sp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/chat_text_invite_button" android:background="@drawable/chat_shape_new_chat_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:paddingBottom="@dimen/dimen_7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="7dp">
+                <LinearLayout android:layout_gravity="center" android:background="@drawable/chat_shape_new_chat_ic_bg" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="14dp">
+                    <ImageView android:padding="3.75dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/white" app:srcCompat="@drawable/chat_icon_msg_send"/>
+                </LinearLayout>
+                <TextView android:textSize="14sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Invite to chat" android:layout_marginStart="8dp" android:layout_marginEnd="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.paytm.android.chat.view.ReplyView android:id="@+id/layout_group_chat_reply_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/rv_new_chat_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.paytm.android.chat.view.ChatHeadView android:layout_gravity="center" android:id="@+id/image_group_chat_head_pic" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp"/>
+            <TextView android:textSize="20sp" android:textColor="#1d2f54" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:maxLines="1"/>
+            <TextView android:textSize="14sp" android:textColor="#506d85" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="1"/>
+            <TextView android:textSize="14sp" android:textColor="#1d2f54" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_action" android:background="@drawable/chat_bg_dotted_box" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Hello!"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

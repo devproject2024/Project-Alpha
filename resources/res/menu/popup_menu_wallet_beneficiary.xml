@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/wallet_item_pay" android:title="@string/pb_mb_pay"/>
+    <item android:id="@+id/wallet_item_money_transfer" android:title="@string/pb_mb_money_transfer"/>
+    <item android:id="@+id/wallet_item_edit" android:title="@string/pb_mb_edit_details"/>
+    <item android:id="@+id/wallet_item_delete" android:title="@string/pb_mb_delete"/>
+</menu>

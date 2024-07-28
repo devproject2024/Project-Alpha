@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/contact_us_container" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp" android:layout_marginTop="@dimen/dimen_0dp" android:layout_marginRight="@dimen/dimen_8dp" android:layout_marginBottom="@dimen/dimen_0dp">
+    <RelativeLayout android:id="@+id/need_help_header_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_000000" android:id="@+id/queries_clarifications" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24dp" android:text="@string/need_help_text" android:layout_centerVertical="true" app:fontType="2"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/cst_issues_recycler_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_24dp" android:nestedScrollingEnabled="false"/>
+    <View android:id="@+id/contact_us_bottom" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+</LinearLayout>

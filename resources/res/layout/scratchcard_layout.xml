@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/scratchCardLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:visibility="visible" layout="@layout/scratchcard_shimmer_layout"/>
+    <TextView android:textSize="@dimen/dimen_16sp" android:textStyle="bold" android:textColor="@color/color_1d2f54" android:id="@+id/scratchcardTitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_16dp" android:letterSpacing="0.02"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/scratchCardRV" android:paddingBottom="@dimen/dimen_20dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:layout_below="@+id/scratchcardTitle" android:nestedScrollingEnabled="true"/>
+</RelativeLayout>

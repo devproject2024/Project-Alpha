@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/travel_res_bus_feedback_rounded_rectangle" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dimen_10sp" android:textColor="@color/color_666666" android:gravity="center" android:layout_gravity="center" android:id="@+id/feedback_count_value" android:background="@drawable/travel_res_bus_feedback_circle_positive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="73" android:fontFamily="@string/font_family_roboto_regular"/>
+        <TextView android:textSize="@dimen/dimen_10sp" android:textColor="@color/color_666666" android:gravity="center" android:layout_gravity="center" android:id="@+id/feedback_text" android:paddingLeft="@dimen/dimen_5dp" android:paddingRight="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bus was clean" android:fontFamily="@string/font_family_roboto_regular"/>
+    </LinearLayout>
+</LinearLayout>

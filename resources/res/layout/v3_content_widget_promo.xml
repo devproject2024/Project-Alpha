@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <include layout="@layout/v3_content_widget_promo_disabled"/>
+    <include layout="@layout/v3_content_widget_promo_enabled"/>
+    <include layout="@layout/v3_content_widget_promo_applied"/>
+</merge>

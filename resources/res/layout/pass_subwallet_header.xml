@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1">
+    <LinearLayout android:orientation="vertical" android:id="@+id/topHeaderLayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/account_block_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" layout="@layout/pass_ppb_account_block_layout"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_15sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/tv_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25dp" android:layout_marginTop="@dimen/dimen_19dp" android:text="@string/pass_available_balance" android:fontFamily="sans-serif-medium" android:letterSpacing="0.03"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/wallet_36sp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25dp" android:text="₹ " android:fontFamily="sans-serif" app:fontType="1"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/wallet_36sp" android:textColor="@color/color_222222" android:id="@+id/tv_wallet_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/loader_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_vertical" android:id="@+id/wallet_loader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:adjustViewBounds="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_12sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/tv_next_toll_balance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25dp" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/toll_tag_payments" android:fontFamily="sans-serif" android:letterSpacing="0.03" app:fontType="2"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/single_sub_wallet_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/sub_wallet_header_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_25dp">
+                <include layout="@layout/pass_sub_wallet_header"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/saving_account_header_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_35dp" android:layout_marginBottom="@dimen/dimen_25dp">
+                <include layout="@layout/pass_saving_account_header"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/foodwallet_header_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25dp" android:layout_marginTop="@dimen/dimen_35dp" android:layout_marginBottom="@dimen/dimen_50dp">
+                <include layout="@layout/pass_foodwallet_header"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/gift_voucher_header_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/pass_gift_voucher_header"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/toll_header_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_35dp" android:layout_marginBottom="@dimen/dimen_25dp">
+                <include layout="@layout/pass_toll_wallet_header"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/gift_wallet_header_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25dp" android:layout_marginTop="@dimen/dimen_35dp" android:layout_marginBottom="@dimen/dimen_50dp">
+                <include layout="@layout/pass_foodwallet_header"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/postpaid_header_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_25dp">
+                <include layout="@layout/pass_postpaid_wallet_header"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/multiple_sub_wallet_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_25dp">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/multiple_sub_wallet_pager" android:layout_width="match_parent" android:layout_height="91dp"/>
+            <net.one97.paytm.passbook.utility.CirclePageIndicator android:id="@+id/page_indicator" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_25dp" android:layout_marginBottom="@dimen/dimen_20dp" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+        <ImageView android:background="@drawable/pass_splash_bottom_strip" android:layout_width="match_parent" android:layout_height="@dimen/dimen_12dp" android:layout_marginTop="@dimen/dimen_15dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/filter_layout_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_25dp">
+        <include layout="@layout/pass_passbook_filter_header"/>
+    </LinearLayout>
+</LinearLayout>

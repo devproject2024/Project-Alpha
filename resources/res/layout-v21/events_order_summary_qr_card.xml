@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/selector_event_qr" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/id_qr_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/id_image_qr" android:background="@color/light_grey" android:layout_width="70dp" android:layout_height="70dp" android:scaleType="fitXY"/>
+        <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/zoom" android:drawableLeft="@drawable/zoom_icon" android:layout_below="@+id/id_image_qr" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_999999" android:id="@+id/id_qr_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48dp" android:layout_marginTop="48dp" android:text="@string/redemtion_code" android:layout_alignTop="@+id/id_image_qr"/>
+    <com.paytm.utility.RoboTextView android:textSize="20sp" android:textColor="@color/black" android:id="@+id/id_short_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_below="@+id/id_qr_text" android:layout_alignLeft="@+id/id_qr_text" app:fontType="4"/>
+</RelativeLayout>

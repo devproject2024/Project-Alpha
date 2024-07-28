@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/toolbar_layout" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="56dp" android:animateLayoutChanges="true">
+        <ImageView android:id="@+id/iv_back_button" android:padding="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/title_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/iv_back_button">
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/search_layout" android:background="@color/color_f3f7f8" android:padding="8dp" android:layout_width="match_parent" android:layout_height="56dp" android:layout_below="@+id/toolbar_layout" android:animateLayoutChanges="true">
+        <RelativeLayout android:gravity="center" android:id="@+id/lyt_search" android:background="@drawable/bg_rounded_white_rect_5dp_radius" android:padding="@dimen/wallet_10_dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp" android:src="@drawable/search" android:layout_centerVertical="true"/>
+            <EditText android:textSize="15sp" android:textColor="@android:color/black" android:textColorHint="#7a797b" android:id="@+id/edit_search" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:hint="@string/search" android:singleLine="true" android:layout_toLeftOf="@+id/img_clear_text" android:layout_toRightOf="@+id/img_search" android:layout_centerVertical="true" android:inputType="textNoSuggestions" android:imeOptions="actionDone" android:fontFamily="@string/font_family_roboto_regular"/>
+            <ImageView android:id="@+id/img_clear_text" android:background="@android:color/transparent" android:paddingLeft="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_minkyc" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ListView android:id="@+id/list_banks" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:dividerHeight="0dp" android:layout_below="@+id/search_layout"/>
+</RelativeLayout>

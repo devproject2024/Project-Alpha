@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/activity_kyc_visit_lyt_bank_header" android:visibility="gone" layout="@layout/layout_bank_header"/>
+    <RelativeLayout android:id="@+id/kyc_center_parent_layout" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/activity_kyc_visit_lyt_bank_header">
+        <LinearLayout android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/activity_kyc_visit_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_nearrby_kyc_error" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rl_progress_bar" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:id="@+id/pb_nearby_kyc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/error_fragment_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

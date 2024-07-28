@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/visa_back_color" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/btn_proceed" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="normal" android:textColor="@color/aprb_text" android:id="@+id/view_disclaimer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_20dp" android:layout_marginEnd="@dimen/dimen_20dp"/>
+            <androidx.cardview.widget.CardView android:id="@+id/cc_card_view" android:layout_width="match_parent" android:layout_height="@dimen/dimen_200dp" android:layout_marginLeft="@dimen/dimen_13dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_13dp" android:layout_below="@+id/view_disclaimer" android:transitionName="@string/transition_name_cc_card" app:cardCornerRadius="@dimen/dimen_6dp" app:cardElevation="@dimen/dimen_5dp" app:cardUseCompatPadding="true">
+                <include layout="@layout/item_card_details_cc"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+    <net.one97.paytm.recharge.widgets.widget.CJRProceedWidgetV8 android:textColor="@android:color/white" android:id="@+id/btn_proceed" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_marginBottom="8dp" android:layout_alignParentBottom="true" android:textAllCaps="false" android:transitionName="@string/transition_name_cc_button"/>
+</RelativeLayout>

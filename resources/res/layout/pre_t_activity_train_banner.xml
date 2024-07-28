@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/bookNowView" android:background="@color/color_33b5e5" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_now" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bookNowView" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottomView">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/banner_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+                <ProgressBar android:id="@+id/bannerProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:background="@color/flight_banner_promo_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="70dp">
+                <TextView android:textSize="18sp" android:textColor="@color/cart_black" android:id="@+id/banner_promo_static" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Promocode:"/>
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/cart_black" android:id="@+id/banner_promo_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="FLIGHT"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/cart_16sp" android:textStyle="bold" android:textColor="@color/cart_black" android:id="@+id/teamsHeading" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="22dp" android:text="@string/view_terms_and_condtions_str"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_16sp" android:textStyle="bold" android:textColor="@color/cart_black" android:id="@+id/bannerDes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginTop="14dp" app:fontType="2"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

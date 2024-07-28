@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_all_bank_mandate_list_0" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/color_f3f7f8" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_18dp">
+            <ImageView android:id="@+id/iv_back_arrow" android:background="?android:attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_centerVertical="true" app:srcCompat="@drawable/back_arrow_black"/>
+            <net.one97.paytm.nativesdk.widget.RoboTextView android:textSize="@dimen/dimen_17sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/tv_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="@string/select_your_bank" android:layout_toRightOf="@+id/iv_back_arrow" android:layout_centerVertical="true" app:fontType="4"/>
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/bg_search_white_rr_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_19dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp">
+            <ImageView android:id="@+id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_5dp" app:srcCompat="@drawable/ic_search_icon"/>
+            <EditText android:id="@+id/searchView" android:background="@color/white" android:paddingLeft="@dimen/dimen_5dp" android:nextFocusLeft="@+id/searchView" android:nextFocusUp="@+id/searchView" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp" android:hint="@string/search" android:layout_toRightOf="@+id/imgSearch"/>
+            <ImageView android:id="@+id/img_edt_cross" android:padding="@dimen/dimen_5dp" android:visibility="gone" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/nativesdk_close"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_5dp">
+        <net.one97.paytm.nativesdk.instruments.netbanking.view.IndexFastScrollRecyclerView android:id="@+id/rv_bank_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/native_instrument_cashier_sheet_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/scrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_mainView" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/instruments_container" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                <LinearLayout android:orientation="vertical" android:id="@+id/logo_toolbar" android:background="#f4f7f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                        <ImageView android:id="@+id/iv_back_arrow" android:padding="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow_black" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_10dp"/>
+                        <ImageView android:id="@+id/iv_merchantLogo" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_32dp" android:src="@drawable/native_paytm_header_logo" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:orientation="horizontal" android:id="@+id/main_toolbar" android:paddingTop="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_21dp" android:layout_marginEnd="@dimen/dimen_20dp">
+                        <TextView android:textSize="@dimen/dimen_21sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif" android:layout_toStartOf="@+id/txt_amount" android:layout_alignParentStart="true"/>
+                        <TextView android:textSize="@dimen/dimen_21sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/txt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_2dp" android:layout_alignParentEnd="true"/>
+                        <TextView android:textSize="@dimen/dimen_11sp" android:textStyle="normal" android:textColor="@color/gray" android:id="@+id/tv_subs_zero_amount_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:text="@string/subs_amount_zero_label" android:layout_below="@+id/txt_amount" android:fontFamily="sans-serif" android:layout_alignParentEnd="true" app:layout_constraintRight_toRightOf="0"/>
+                        <TextView android:textSize="@dimen/dimen_13sp" android:textStyle="normal" android:textColor="#000000" android:id="@+id/txt_order_detail" android:background="?android:attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:text="@string/order_details" android:layout_below="@+id/tv_subs_zero_amount_label" android:fontFamily="sans-serif"/>
+                        <ImageView android:id="@+id/ivDownArrow" android:background="?android:attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6dp" android:src="@drawable/down_arrow_hide" android:layout_below="@+id/tv_subs_zero_amount_label" android:layout_marginStart="@dimen/dimen_12dp" android:layout_toEndOf="@+id/txt_order_detail"/>
+                    </RelativeLayout>
+                    <net.one97.paytm.nativesdk.paymethods.widgets.CustomInstrumentsToolbar android:id="@+id/custom_header_toolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4dp" android:layout_marginStart="@dimen/dimen_20dp" android:layout_marginEnd="@dimen/dimen_20dp"/>
+                </LinearLayout>
+                <include android:id="@+id/cl_bank_offers" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bank_offer_strip"/>
+                <View android:background="@color/other_option_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_5dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_pg_instruments" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <View android:id="@+id/v_emptyView" android:layout_width="match_parent" android:layout_height="@dimen/dimen_0dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/lyt_bottom_lines" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="bottom" android:id="@+id/iv_footer_logos" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_20dp" android:src="@drawable/pg_footer"/>
+                <View android:background="@color/paytm_blue" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+                <View android:background="@color/paytm_dark_blue" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/dot_progress_bar" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_25dp" android:layout_centerInParent="true"/>
+    <net.one97.paytm.nativesdk.instruments.wallet.widgets.StickyToolbar android:id="@+id/sticky_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</RelativeLayout>

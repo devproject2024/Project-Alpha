@@ -1,0 +1,15 @@
+package com.paytm.business.merchantprofile.profileotp;
+
+import android.view.View;
+
+public final class AddMobileOTPActivity$initUI$3 implements View.OnClickListener {
+    public final /* synthetic */ AddMobileOTPActivity this$0;
+
+    public AddMobileOTPActivity$initUI$3(AddMobileOTPActivity addMobileOTPActivity) {
+        this.this$0 = addMobileOTPActivity;
+    }
+
+    public final void onClick(View view) {
+        this.this$0.finish();
+    }
+}

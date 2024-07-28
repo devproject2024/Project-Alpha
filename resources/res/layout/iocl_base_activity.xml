@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/iocl_base_activity_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_container" android:tag="binding_1" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_10dp" android:layout_marginStart="@dimen/dimen_20dp" android:layout_marginEnd="@dimen/dimen_15dp">
+            <ImageView android:id="@+id/icon_back" android:tag="binding_2" android:background="@drawable/back_arrow" android:padding="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:tag="binding_3" android:background="@drawable/paytm_logo_bmtc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <ImageView android:tag="binding_4" android:background="@drawable/iocl_info" android:layout_width="@dimen/dimen_18dp" android:layout_height="@dimen/dimen_18dp" android:layout_marginTop="@dimen/dimen_4dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/iocl_screen_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ProgressBar android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/load_more_history_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_20dp"/>
+</FrameLayout>

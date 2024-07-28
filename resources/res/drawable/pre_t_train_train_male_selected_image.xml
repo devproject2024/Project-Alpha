@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:gravity="center" android:height="@dimen/dimen_29dp" android:width="@dimen/dimen_29dp" android:drawable="@drawable/pre_t_male_tick"/>
+    <item android:height="@dimen/dimen_30dp" android:width="@dimen/dimen_30dp">
+        <bitmap android:gravity="center" android:src="@drawable/pre_t_ic_gender_radio_button_selector"/>
+    </item>
+</layer-list>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/new_order_details_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/order_number_lyt" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/recharge_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_summary_order_number_txt" android:layout_alignParentLeft="true" app:fontType="2"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/recharge_desc" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/amount" android:layout_alignParentRight="true" app:fontType="2"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/lyt_order_no_and_amount" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/order_number_lyt">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/amoount_payed" android:id="@+id/order_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="6" android:layout_alignParentLeft="true" app:fontType="4"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/amoount_payed" android:gravity="left" android:id="@+id/txt_total_amount_payed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="2" android:layout_alignParentRight="true" app:fontType="4"/>
+        </RelativeLayout>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/timestamp" android:textColor="@color/semi_translucent_black" android:id="@+id/timestamp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/lyt_order_no_and_amount" android:layout_alignParentLeft="true" app:fontType="1"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/sep" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/separators" android:contentDescription="@string/app_name"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <RelativeLayout android:id="@+id/content_thumbnail_layout_automatic" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/automatic_img_loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_large_holo" android:layout_centerInParent="true"/>
+            <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center" android:id="@+id/content_thumbnail_automatic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/row_product_image"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/recharge_desc" android:id="@+id/automatic_recharge_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:includeFontPadding="false" android:layout_toRightOf="@+id/content_thumbnail_layout_automatic" app:fontType="2"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/automatic_change_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="16sp" android:id="@+id/next_due_recharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/change_automatic_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fontType="2"/>
+        <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/paytm_blue" android:gravity="center" android:id="@+id/change_automatic_btn" android:background="@drawable/action_button_bg" android:clickable="true" android:layout_width="95dp" android:layout_height="40dp" android:text="@string/change" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontType="2"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/retry_and_actions" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/recharge_desc" android:id="@+id/tap_action_radio_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontType="2"/>
+        <RelativeLayout android:id="@+id/actions_lyt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tap_action_radio_description">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:id="@+id/action_description" android:paddingTop="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontType="2"/>
+            <RelativeLayout android:id="@+id/actions_and_retry_lyt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/action" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/recharge_repeat_retry" android:layout_below="@+id/action_description">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/action_btn_lyt" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/paytm_blue" android:ellipsize="end" android:gravity="center" android:id="@+id/recharge_repeat_retry" android:background="@drawable/action_button_bg" android:visibility="gone" android:clickable="true" android:layout_width="90dp" android:layout_height="35dp" android:layout_marginRight="10dp" android:singleLine="true" android:drawablePadding="5dp" android:layout_below="@+id/action_description" android:layout_alignParentLeft="true" app:fontType="2"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/action_radio_lyt" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/action_btn_lyt">
+                    <RadioGroup android:id="@+id/action_grp_radio" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <net.one97.paytm.common.widgets.RoboButton android:textSize="20sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/action_proceed_btn" android:background="@drawable/bg_btn_blue" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="10dp" android:text="@string/order_summary_yes_do_that_txt" android:layout_below="@+id/action_grp_radio" android:textAllCaps="false" app:fontType="2"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:id="@+id/detailed_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/actions_and_retry_lyt" app:fontType="2"/>
+            <RelativeLayout android:id="@+id/lyt_tap_action" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/detailed_description">
+                <LinearLayout android:orientation="vertical" android:id="@+id/tap_action_btn_lyt" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <RelativeLayout android:id="@+id/tap_action_radio_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tap_action_btn_lyt">
+                    <RadioGroup android:id="@+id/tap_action_grp_radio" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <net.one97.paytm.common.widgets.RoboButton android:textSize="20sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tap_action_proceed_btn" android:background="@drawable/bg_btn_blue" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="10dp" android:text="@string/order_summary_yes_do_that_txt" android:layout_below="@+id/tap_action_grp_radio" android:textAllCaps="false" app:fontType="2"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/sep_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/separators" android:contentDescription="@string/app_name"/>
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/automatic_history" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fontType="4"/>
+        <ImageView android:id="@+id/sep_2" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/separators" android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+</LinearLayout>

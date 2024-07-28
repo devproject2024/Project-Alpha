@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fragment_chat_settings_lyt_main" android:background="@color/white" android:paddingBottom="?attr/actionBarSize" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/header_layout" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+        <ImageView android:id="@+id/back_image" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:src="@drawable/chat_ic_back_arrow" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/e_chating" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/header_layout">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/chat_color_2d2d2d" android:gravity="top" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="11dp" android:text="@string/chat_module_paytm_chat_settings_title"/>
+        <View android:background="@color/chat_bg_grid_grey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp" android:layout_marginTop="16dp"/>
+        <RelativeLayout android:id="@+id/lyt_blocked_contacts" android:paddingLeft="15dp" android:paddingTop="20dp" android:paddingBottom="20dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_blocked_contacts" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="20dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:srcCompat="@drawable/chat_ic_blocked_content"/>
+            <TextView android:textSize="16sp" android:textColor="@color/chat_black_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_blocked_contacts_text" android:layout_toRightOf="@+id/img_blocked_contacts" android:layout_centerVertical="true"/>
+            <ImageView android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/chat_settings_arrow_profile"/>
+        </RelativeLayout>
+        <View android:id="@+id/divider_below_blocked_contacts" android:background="@color/chat_bg_grid_grey" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" style="@style/chat_profile_category_divider"/>
+        <RelativeLayout android:id="@+id/lyt_media_download" android:paddingLeft="15dp" android:paddingTop="20dp" android:paddingBottom="20dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_media_download" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="20dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:srcCompat="@drawable/chat_ic_os_action_download"/>
+            <TextView android:textSize="16sp" android:textColor="@color/chat_black_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_media_download_text" android:layout_toRightOf="@+id/img_media_download" android:layout_centerVertical="true"/>
+            <ImageView android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/chat_settings_arrow_profile"/>
+        </RelativeLayout>
+        <View android:id="@+id/divider_below_lifafa" android:background="@color/chat_bg_grid_grey" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" style="@style/chat_profile_category_divider"/>
+    </LinearLayout>
+</RelativeLayout>

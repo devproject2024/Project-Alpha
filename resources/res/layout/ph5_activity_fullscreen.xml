@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="#0099cc" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.one97.paytm.h5paytmsdk.videoplayer.PaytmH5VideoPlayerImpl android:gravity="center" android:id="@+id/h5_vp" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true" app:phvp_autoPlay="true"/>
+</FrameLayout>

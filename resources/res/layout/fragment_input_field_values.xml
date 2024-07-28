@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_fafbfb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/search_layout"/>
+    <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_24dp" android:layout_marginTop="@dimen/dimen_8dp" android:lineSpacingExtra="7sp"/>
+    <RelativeLayout android:id="@+id/grid_header" android:background="@color/color_fafbfb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/search_header">
+        <ListView android:id="@+id/utility_list_listview" android:background="@android:color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp"/>
+    </RelativeLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/search_header" layout="@layout/content_apartment_not_found"/>
+    <TextView android:textSize="16sp" android:textColor="#929292" android:gravity="center" android:id="@+id/nomatches_found" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_matches_found" android:layout_centerInParent="true"/>
+</RelativeLayout>

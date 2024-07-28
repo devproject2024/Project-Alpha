@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rl_kyc_center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_kyc_center_info_container" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_25dp" android:layout_marginBottom="@dimen/dimen_15dp" android:layout_weight="1" android:layout_toLeftOf="@+id/action" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_17dp" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="left" android:id="@+id/tv_kyc_center_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_1dp" android:layout_alignParentLeft="true" android:marqueeRepeatLimit="marquee_forever" app:fontType="3"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_2sp" android:textColor="@color/color_222222" android:id="@+id/tv_kyc_center_address" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="3"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_2sp" android:textColor="@color/color_999999" android:id="@+id/tv_kyc_center_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_7dp" android:layout_marginBottom="@dimen/dimen_1dp" app:fontType="2"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/actions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_28dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_call" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp" app:srcCompat="@drawable/ic_call_black_24_px"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_10sp" android:textColor="@color/color_999999" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6dp" android:layout_marginBottom="@dimen/dimen_1dp" android:text="@string/call" app:fontType="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_kyc_center_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25dp">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp" app:srcCompat="@drawable/ic_directions_black_24_px_1"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_10sp" android:textColor="@color/color_999999" android:layout_gravity="center_horizontal" android:id="@+id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6dp" android:layout_marginBottom="@dimen/dimen_1dp" android:text="@string/directions" app:fontType="2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/bottom_separator" android:background="@color/color_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp" android:layout_below="@+id/rl_kyc_center"/>
+    <RelativeLayout android:id="@+id/rl_progress_bar" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/pb_nearby_kyc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

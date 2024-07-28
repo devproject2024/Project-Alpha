@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/clp_food_item_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16dp" android:paddingEnd="@dimen/dimen_16dp">
+        <View android:enabled="true" android:id="@+id/food_tag" android:background="@drawable/clp_bg_food_tag" android:layout_width="@dimen/dimen_14dp" android:layout_height="@dimen/dimen_14dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_12dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="bold" android:textColor="@color/clp_color_2222222" android:id="@+id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+                <TextView android:textColor="@color/expand_tree_text" android:id="@+id/item_description" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="bold" android:textColor="@color/clp_color_2222222" android:id="@+id/offer_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/dimen_2dp"/>
+                    <TextView android:textSize="@dimen/dimen_12sp" android:textColor="#506d85" android:id="@+id/actual_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/dimen_2dp"/>
+                    <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/primaryBlue" android:id="@+id/discount_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/dimen_2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/add_to_cart_container" android:tag="binding_1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_4dp">
+                <include android:id="@+id/addToCartLayout" layout="@layout/layout_add_to_cart"/>
+                <include android:id="@+id/editCartLayout" android:visibility="gone" layout="@layout/layout_edit_cart"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray_background_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>
+</LinearLayout>

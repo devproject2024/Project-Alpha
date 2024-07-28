@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lyt_tab_container" android:background="@color/tc_transparent" android:paddingLeft="@dimen/dimen_3dp" android:paddingTop="@dimen/dimen_8dp" android:paddingRight="@dimen/dimen_3dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/tag_container" android:background="@color/tc_transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/ic_raises" android:background="@color/tc_transparent" android:paddingBottom="@dimen/dimen_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_3dp" android:src="@drawable/pre_td_raises" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="@dimen/dimen_10dp" android:textColor="#222222" android:gravity="center" android:id="@+id/txt_tag" android:background="@drawable/pre_td_travel_tag_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6dp" android:layout_marginRight="@dimen/dimen_18dp" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_tab" android:layout_width="@dimen/dimen_27dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginBottom="@dimen/dimen_7dp"/>
+        <TextView android:textSize="@dimen/dimen_13sp" android:textColor="@drawable/pre_td_travel_tab_bar_text_selector" android:layout_gravity="center_horizontal" android:id="@+id/txt_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="bottom" android:background="@color/npci_text_primary_dark" android:layout_width="match_parent" android:layout_height="56dp">
+        <Button android:textSize="14sp" android:textColor="#ffff00" android:gravity="center" android:id="@+id/popup_button" android:background="?attr/selectableItemBackground" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/dismiss" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/npci_text_primary_light" android:gravity="center_vertical" android:id="@+id/popup_text" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="2" android:layout_toLeftOf="@+id/popup_button" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+</LinearLayout>

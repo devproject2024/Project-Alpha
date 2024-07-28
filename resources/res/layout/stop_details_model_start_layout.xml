@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginStart="@dimen/dimen_16dp">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imageView9" android:layout_width="@dimen/dimen_8dp" android:layout_height="@dimen/dimen_8dp" app:srcCompat="@drawable/best_circle_point"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/dotted_path_imageview" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_32dp" app:srcCompat="@drawable/pre_b_dotted_path"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/station_arrow" android:background="@drawable/pre_t_citybus_round_corner" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_32dp" android:layout_marginStart="@dimen/dimen_24dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_10sp" android:textColor="#5d6d85" android:ellipsize="end" android:gravity="center" android:id="@+id/start_station_count" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="3 Stops" android:maxLines="1" android:maxEms="7" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_8dp" android:layout_marginEnd="@dimen/dimen_8dp"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="@dimen/dimen_2dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/arrow_imageview" android:layout_width="8dp" android:layout_height="8dp" android:tint="#5d6d85" app:srcCompat="@drawable/arrow_down"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

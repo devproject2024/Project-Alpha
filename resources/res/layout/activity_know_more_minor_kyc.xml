@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/kyc_right_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="@dimen/dimen_15dp"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/kyc_left_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/dimen_15dp"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/kyc_upper_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="32dp"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/kyc_bottom_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="@dimen/dimen_20dp"/>
+        <TextView android:textSize="@dimen/dimen_22sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/know_more_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/know_more_kyc" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif" app:layout_constraintLeft_toLeftOf="@+id/kyc_left_guideline" app:layout_constraintRight_toLeftOf="@+id/cross_iv" app:layout_constraintTop_toBottomOf="@+id/kyc_upper_guideline"/>
+        <TextView android:textStyle="normal" android:textColor="#222222" android:id="@+id/know_more_mino_desc" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:text="@string/know_more_minor_kyc_desc" android:fontFamily="sans-serif" app:layout_constraintEnd_toStartOf="@+id/kyc_right_guideline" app:layout_constraintStart_toStartOf="@+id/kyc_left_guideline" app:layout_constraintTop_toBottomOf="@+id/know_more_tv"/>
+        <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" app:cardElevation="3dp" app:cardUseCompatPadding="true" app:layout_constraintEnd_toStartOf="@+id/kyc_right_guideline" app:layout_constraintStart_toStartOf="@+id/kyc_left_guideline" app:layout_constraintTop_toBottomOf="@+id/know_more_mino_desc">
+            <LinearLayout android:orientation="vertical" android:id="@+id/llAadhar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/base_fragment_sub_header_ll">
+                <LinearLayout android:orientation="vertical" android:background="@color/kyc_grey_out_heading" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0.1dp">
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_16sp" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_aadhaar_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" app:fontType="4"/>
+                        <View android:background="@color/red" android:layout_width="match_parent" android:layout_height="5dp" android:layout_marginTop="10dp"/>
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:weightSum="4">
+                            <ImageView android:id="@+id/image1" android:layout_width="0dp" android:layout_height="35dp" android:layout_marginLeft="10dp" android:layout_weight="1" app:srcCompat="@drawable/ic_logo_aadhaar"/>
+                            <ImageView android:layout_gravity="left" android:id="@+id/image2" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:src="@drawable/img_govt_india" android:layout_weight="3"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/minor_base_fragment_aadhar_detail_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_30dp" android:layout_marginRight="@dimen/dimen_20dp" android:weightSum="4">
+                            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="@color/color_747474" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:text="@string/name_kyc" android:singleLine="false" android:layout_weight="1.5" app:fontType="2"/>
+                            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="@color/color_747474" android:id="@+id/tv_name" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp" android:singleLine="false" android:layout_weight="2.5" app:fontType="2"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/minor_base_fragment_aadhar_address_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4">
+                                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="@color/color_747474" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/address" android:singleLine="false" android:layout_weight="1.5" app:fontType="2"/>
+                                <LinearLayout android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_weight="2.5">
+                                    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:id="@+id/tv_co" android:background="@drawable/kyc_minor_oval_highlighter" android:padding="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" app:fontType="4"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_20dp" android:weightSum="4">
+                                <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="bold" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="false" android:layout_weight="1.5" app:fontType="2"/>
+                                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textStyle="bold" android:id="@+id/tv_address" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp" android:singleLine="false" android:layout_weight="2.5" app:fontType="2"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

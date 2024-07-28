@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/lyt_operator_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/lyt_operator_text" android:background="@drawable/bg_circle" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+                <TextView android:textSize="12dp" android:textColor="@color/refresh_red_color" android:ellipsize="end" android:id="@+id/txt_operator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <net.one97.paytm.common.widgets.CJRVolleyImageView android:id="@+id/img_operator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/lyt_operator_root" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@+id/fav_name_number_lyt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/txt_amount" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="16dp" android:ellipsize="end" android:id="@+id/txt_label" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/lyt_operator_root"/>
+                <TextView android:textSize="16dp" android:textColor="@color/gray" android:ellipsize="end" android:id="@+id/txt_mobile" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@+id/txt_label" android:layout_alignLeft="@+id/txt_label"/>
+            </RelativeLayout>
+            <TextView android:textSize="16dp" android:textStyle="bold" android:id="@+id/txt_amount" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28dp" android:layout_toLeftOf="@+id/lyt_menu" android:layout_alignTop="@+id/fav_name_number_lyt" android:layout_alignParentRight="true"/>
+            <LinearLayout android:gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/lyt_menu" android:paddingLeft="10dp" android:paddingRight="10dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/txt_amount" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/img_pop_up" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dot_icon"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+</RelativeLayout>

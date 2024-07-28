@@ -1,0 +1,23 @@
+package com.google.android.gms.dynamite;
+
+import android.content.Context;
+import com.google.android.gms.dynamite.DynamiteModule;
+
+final class a implements DynamiteModule.b {
+    a() {
+    }
+
+    public final DynamiteModule.b.a a(Context context, String str, DynamiteModule.b.C0134b bVar) throws DynamiteModule.a {
+        DynamiteModule.b.a aVar = new DynamiteModule.b.a();
+        aVar.f9018b = bVar.a(context, str, true);
+        if (aVar.f9018b != 0) {
+            aVar.f9019c = 1;
+        } else {
+            aVar.f9017a = bVar.a(context, str);
+            if (aVar.f9017a != 0) {
+                aVar.f9019c = -1;
+            }
+        }
+        return aVar;
+    }
+}

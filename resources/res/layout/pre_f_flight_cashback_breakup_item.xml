@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="3dp">
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/fl_cb_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:fontFamily="sans-serif" android:layout_alignParentStart="true"/>
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="normal" android:textColor="#222222" android:gravity="end" android:id="@+id/fl_cb_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:fontFamily="sans-serif" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/iv_cashback_applied" android:layout_width="@dimen/dimen_15dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/fl_cb_item_value" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_toStartOf="@+id/fl_cb_item_value"/>
+    </RelativeLayout>
+    <com.paytm.utility.RoboTextView android:textSize="10sp" android:textStyle="normal" android:textColor="#9b9b9b" android:id="@+id/cb_pax_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+</LinearLayout>

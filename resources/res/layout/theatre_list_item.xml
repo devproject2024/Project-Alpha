@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_theater_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="6dp" android:layout_toLeftOf="@+id/ll_theater_distance_info" android:layout_alignParentLeft="true">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/color_de000000" android:id="@+id/txt_theatre_name" android:paddingTop="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="3"/>
+            <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/movie_language_color" android:ellipsize="end" android:id="@+id/txt_Langauage" android:paddingLeft="6dp" android:paddingTop="17dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" app:fontType="2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_theater_distance_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="6dp" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/sortByDistanceImg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_13dp" app:srcCompat="@drawable/ic_direction_black_arrow"/>
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/color_444444" android:gravity="center_vertical" android:id="@+id/txt_theatre_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" app:fontType="3"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/movie_offer_rel_lyt" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_theater_info">
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center_vertical" android:id="@+id/movie_offer_amount" android:background="@drawable/offer_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium"/>
+            <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="#999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/movie_offer_desc" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="5dp" android:maxLines="2" android:layout_toRightOf="@+id/movie_offer_amount" android:fontFamily="sans-serif"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="fill" android:id="@+id/slots_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+    <View android:id="@+id/line_divider" android:background="@color/movie_separator" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp"/>
+    <View android:id="@+id/bottom_space" android:background="@color/transparent_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="15dp"/>
+</LinearLayout>

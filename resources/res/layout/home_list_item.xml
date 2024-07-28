@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_item_list_home_page" android:textColor="@color/paytm_blue" android:layout_gravity="center_horizontal" android:id="@+id/home_text_link" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

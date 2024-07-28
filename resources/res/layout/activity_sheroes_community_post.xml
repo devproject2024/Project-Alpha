@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/sheroes_appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include android:id="@+id/sheroes_toolbar" layout="@layout/toolbar_sheroes_community_post"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ProgressBar android:theme="@style/Theme.Sheroes" android:id="@+id/sheroes_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/sheroes_upload_image_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/sheroes_anonymous" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/sheroes_view_anonymous" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginLeft="@dimen/sheroes_dp_size_30"/>
+            <CheckBox android:textSize="14sp" android:textColor="#878787" android:id="@+id/sheroes_anonymous_select" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sheroes_dp_size_16" android:text="@string/sheroes_post_anonymous" android:layout_centerVertical="true" android:defaultValue="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/sheroes_image_upload_view" android:background="@color/sheroes_background_color_project_number" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.sheroes.final_sdk.appliedlife.pvtltd.SHEROES.views.cutomeviews.RippleViewLinear android:gravity="center" android:orientation="horizontal" android:id="@+id/sheroes_add_image" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vector_sheroes_photo_grey"/>
+                <TextView android:textSize="16sp" android:textColor="@color/sheroes_light_grey" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/sheroes_add_photo" android:textAllCaps="true"/>
+            </com.sheroes.final_sdk.appliedlife.pvtltd.SHEROES.views.cutomeviews.RippleViewLinear>
+            <com.sheroes.final_sdk.appliedlife.pvtltd.SHEROES.views.cutomeviews.RippleViewLinear android:gravity="center" android:orientation="horizontal" android:id="@+id/sheroes_camera" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vector_sheroes_camera_grey_24dp" android:tint="@color/sheroes_grey_600"/>
+                <TextView android:textSize="16sp" android:textColor="@color/sheroes_light_grey" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/sheroes_camera"/>
+            </com.sheroes.final_sdk.appliedlife.pvtltd.SHEROES.views.cutomeviews.RippleViewLinear>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/sheroes_upload_image_container" android:layout_below="@+id/sheroes_appbar_layout">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:id="@+id/sheroes_user_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp">
+                <ImageView android:id="@+id/sheroes_user_pic" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="10dp"/>
+                <ImageView android:id="@+id/sheroes_user_drop_down" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="36dp" android:layout_marginTop="28dp" android:src="@drawable/vector_sheroes_post_as_community_17dp"/>
+                <TextView android:textSize="16sp" android:textColor="#3c3c3c" android:id="@+id/sheroes_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sheroes_anonymous" android:layout_toRightOf="@+id/sheroes_user_pic" android:inputType="none|text|textCapWords|textEmailAddress|textShortMessage|textPersonName"/>
+                <TextView android:textSize="14sp" android:textColor="@color/sheroes_toolbar_title_text" android:layout_gravity="center" android:id="@+id/sheroes_community_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sheroes_choose_community_option" android:drawableRight="@drawable/vector_sheroes_down_arrow_red_14dp" android:layout_toRightOf="@+id/sheroes_user_pic" android:layout_below="@+id/sheroes_user_name"/>
+            </RelativeLayout>
+            <EditText android:textSize="20sp" android:gravity="top" android:id="@+id/sheroes_et_default_hint_text" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sheroes_dp_size_16" android:layout_marginTop="@dimen/sheroes_dp_size_5" android:scrollHorizontally="false" android:layout_below="@+id/sheroes_user_container" android:inputType="none|text|textCapSentences|textMultiLine"/>
+            <androidx.cardview.widget.CardView android:id="@+id/sheroes_card_link_render" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/sheroes_dp_size_10" android:layout_below="@+id/sheroes_et_default_hint_text" android:elevation="@dimen/sheroes_dp_size_5">
+                <LinearLayout android:orientation="vertical" android:layout_width="@dimen/sheroes_dp_size_320" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sheroes_dp_size_5">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sheroes_dp_size_10">
+                        <ImageView android:layout_gravity="top" android:id="@+id/sheroes_iv_link_thumbnail" android:visibility="gone" android:layout_width="@dimen/sheroes_dp_size_70" android:layout_height="@dimen/sheroes_dp_size_80" android:layout_marginLeft="@dimen/sheroes_dp_size_5"/>
+                        <ProgressBar android:theme="@style/Theme.Sheroes" android:layout_gravity="top" android:id="@+id/sheroes_progress_bar_link" android:layout_width="@dimen/sheroes_dp_size_70" android:layout_height="@dimen/sheroes_dp_size_70" android:layout_marginLeft="@dimen/sheroes_dp_size_5" android:backgroundTint="@color/sheroes_added_member_text"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sheroes_dp_size_10">
+                            <TextView android:textSize="@dimen/sheroes_sp_size_16" android:textColor="@color/sheroes_pure_black" android:id="@+id/sheroes_tv_link_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/sheroes_ID_ROBOTO_MEDIUM"/>
+                            <TextView android:textSize="@dimen/sheroes_sp_size_14" android:textColor="@color/sheroes_detail_page_text" android:ellipsize="end" android:id="@+id/sheroes_tv_link_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sheroes_dp_size_4" android:maxLines="@integer/int_value_for_line_3" android:fontFamily="@string/sheroes_ID_ROBOTO_REGULAR"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/sheroes_card_link_render">
+                <TextView android:textSize="14sp" android:id="@+id/sheroes_image_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="50dp" android:layout_marginRight="16dp" android:text="0/5" android:layout_alignParentRight="true"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/sheroes_image_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/sheroes_image_count"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

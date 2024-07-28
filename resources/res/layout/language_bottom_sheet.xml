@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" app:behavior_hideable="false">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36dp">
+        <com.paytm.utility.RoboTextView android:textSize="21sp" android:textColor="#222222" android:id="@+id/tv_please_wait" android:paddingLeft="21dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:fontType="4"/>
+        <ImageView android:id="@+id/close_button" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:src="@drawable/lang_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="10dp">
+        <ImageView android:id="@+id/icon" android:layout_width="90dp" android:layout_height="90dp" android:layout_marginRight="10dp" android:src="@drawable/lang_change_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_toLeftOf="@+id/icon" android:layout_alignParentLeft="true">
+            <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="#222222" android:id="@+id/tv_download_language_status" android:paddingLeft="20dp" android:paddingRight="@dimen/dimen_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:fontType="2"/>
+            <net.one97.paytm.locale.SlantingProgressbar android:id="@+id/progressbar_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="15dp" android:layout_marginLeft="20dp" android:layout_marginTop="40dp" android:layout_alignParentLeft="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.paytm.utility.RoboTextView android:textSize="17sp" android:textColor="#00b9f5" android:id="@+id/tv_cancel_download" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginBottom="30dp" android:layout_centerVertical="true"/>
+</LinearLayout>

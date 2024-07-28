@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/faq_container" android:tag="layout/vh_travel_faq_items_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@android:color/white" android:paddingTop="@dimen/dimen_8dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/header_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:layout_marginBottom="@dimen/dimen_8dp">
+            <ImageView android:id="@+id/plus_icon" android:layout_width="@dimen/dimen_25dp" android:layout_height="@dimen/dimen_25dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/ic_add_black_24dp"/>
+            <TextView android:textSize="@dimen/dimen_16sp" android:textStyle="normal" android:textColor="@color/textColor_222222" android:id="@+id/tv_question" android:paddingRight="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignLeft="@+id/plus_icon" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/dimen_16sp" android:textStyle="normal" android:textColor="@color/textColor_222222" android:id="@+id/tv_ans" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/header_container"/>
+    </RelativeLayout>
+    <View android:id="@+id/seperator" android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

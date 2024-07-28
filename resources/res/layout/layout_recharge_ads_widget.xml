@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/container_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="30dp">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <net.one97.paytm.common.widgets.CirclePageIndicator android:id="@+id/view_page_indicator" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/viewPager"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

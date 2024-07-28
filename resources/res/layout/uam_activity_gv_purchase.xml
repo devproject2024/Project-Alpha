@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rootview" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/toolbar_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="90dp" app:collapsedTitleGravity="51" app:expandedTitleGravity="3" app:expandedTitleMarginStart="20dp" app:layout_scrollFlags="3">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="2">
+                <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="right" android:id="@+id/expandedImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_motif_classic" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back_arrow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_18dp" app:layout_collapseMode="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/back_arrow"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" layout="@layout/layout_gv_scrolling_content"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/bottomView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_16dp" android:text="Issued by Paytm Payments Bank"/>
+        <View android:id="@+id/bottomLineBlue" android:background="#00aced" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+        <View android:id="@+id/bottomLineDarkBlue" android:background="#002f6c" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragmentContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

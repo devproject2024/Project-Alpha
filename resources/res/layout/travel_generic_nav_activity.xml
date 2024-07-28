@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parent_container" android:tag="layout/travel_generic_nav_activity_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:gravity="top" android:id="@+id/toolbar" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/back_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:srcCompat="@drawable/sales_back_button"/>
+            <TextView android:textSize="@dimen/dimen_16sp" android:textStyle="bold" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/header_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@+id/shadow_separator" android:background="@drawable/td_toolbar_dropshadow" android:visibility="visible" android:layout_width="match_parent" android:layout_height="3dp" android:layout_below="@+id/toolbar"/>
+    <FrameLayout android:orientation="vertical" android:id="@+id/generic_fragment_container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/shadow_separator"/>
+</RelativeLayout>

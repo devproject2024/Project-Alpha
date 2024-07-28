@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_fafafa" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="16dp">
+        <RelativeLayout android:layout_gravity="center" android:id="@+id/events_success_card_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/text_color_proceed_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="26dp">
+                <ImageView android:id="@+id/success_order_status_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/order_successful" android:scaleType="center" android:layout_centerHorizontal="true"/>
+                <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/success_recharge_badge" android:background="@drawable/summary_successful_background" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/events_booking_success" android:layout_below="@+id/success_order_status_icon" android:layout_centerHorizontal="true" app:fontType="3"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

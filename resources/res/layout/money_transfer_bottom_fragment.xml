@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginBottom="@dimen/dimen_15dp"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/transferToMobile" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <RelativeLayout android:id="@+id/rl1" android:background="@drawable/blue_circle" android:padding="8dp" android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_alignParentLeft="true">
+            <ImageView android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_mobile"/>
+        </RelativeLayout>
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/transfer_to_mobile_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:text="@string/money_transfer_to_new_no" android:layout_toLeftOf="@+id/transfer_to_mobile_arrow" android:layout_toRightOf="@+id/rl1" android:layout_centerVertical="true" android:fontFamily="sans-serif"/>
+        <ImageView android:id="@+id/transfer_to_mobile_arrow" android:background="@drawable/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/border_1" android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/dimen_72dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/transferToMobile"/>
+    <RelativeLayout android:id="@+id/paymentHistory" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl2" android:background="@drawable/blue_circle" android:padding="8dp" android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_alignParentLeft="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/mt_passbook"/>
+        </RelativeLayout>
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:text="@string/upi_payment_history" android:layout_toLeftOf="@+id/payment_history_arrow" android:layout_toRightOf="@+id/rl2" android:layout_centerVertical="true" android:fontFamily="sans-serif"/>
+        <ImageView android:id="@+id/payment_history_arrow" android:background="@drawable/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/border_2" android:background="#f3f7f8" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginLeft="@dimen/dimen_72dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/paymentHistory"/>
+    <RelativeLayout android:id="@+id/upiOffers" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_30dp">
+        <RelativeLayout android:id="@+id/rl3" android:background="@drawable/blue_circle" android:padding="8dp" android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" android:layout_marginLeft="@dimen/dimen_20dp">
+            <ImageView android:background="@drawable/cashback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:text="@string/upi_cashback_offers" android:layout_toRightOf="@+id/rl3" android:layout_centerVertical="true"/>
+        <ImageView android:background="@drawable/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <fragment android:name="net.one97.paytm.moneytransfer.view.fragments.MoneyTransferInviteFragment" android:id="@+id/invite_fragment" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <include layout="@layout/footer_blue_lines"/>
+</LinearLayout>

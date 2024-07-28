@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/offer_code_item_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="6dp">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/arrow_icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="12dp" android:src="@drawable/expand_down_arrow" android:layout_alignParentRight="true" android:layout_marginEnd="12dp" android:layout_alignParentEnd="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/dark_gray" android:id="@+id/offer_item_label" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_marginBottom="5dp"/>
+                <TextView android:textSize="16sp" android:textColor="@android:color/black" android:id="@+id/offer_item_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_marginBottom="5dp"/>
+                <TextView android:textSize="15sp" android:textColor="@color/gray" android:id="@+id/offer_item_hint_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:textSize="12sp" android:textColor="@color/gray" android:orientation="vertical" android:id="@+id/order_datails_linear" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+    <View android:background="@color/bg_grid_grey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp" android:layout_marginTop="@dimen/offer_view_margin" android:layout_marginBottom="2dp" android:layout_below="@+id/offer_code_item_view"/>
+</RelativeLayout>

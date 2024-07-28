@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/passbook_detail_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/actionbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetStart="0dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/back_arrow" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pass_back_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/share" android:padding="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pass_sahre_filled" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_17sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/header" android:paddingRight="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@+id/share" android:layout_toRightOf="@+id/back_arrow" android:layout_centerVertical="true" android:layout_toStartOf="@+id/share" android:layout_toEndOf="@+id/back_arrow" app:fontType="3"/>
+            <ImageView android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:src="@color/bg_grey" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <include android:id="@+id/paytm_strip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/pass_bottom_paytm_line"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/paytm_strip" android:layout_below="@+id/actionbar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/passbook_details_parent_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_20dp"/>
+    </ScrollView>
+</RelativeLayout>

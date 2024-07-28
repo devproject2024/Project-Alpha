@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/color_fafbfb" android:paddingLeft="@dimen/dimen_24dp" android:paddingTop="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_14dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_money_refund_lbl" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:fontType="3"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:padding="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_add_icon" android:layout_width="@dimen/wallet_50_dp" android:layout_height="@dimen/wallet_50_dp" android:src="@drawable/add_money_circular"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/add_money_refund_setting_lbl" android:layout_toRightOf="@+id/iv_add_icon" android:layout_centerVertical="true" app:fontType="3"/>
+        <Switch android:id="@+id/refund_toggle_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

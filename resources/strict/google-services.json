@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "72943469767",
+    "firebase_url": "https://paytmconsumerapptesting.firebaseio.com",
+    "project_id": "paytmconsumerapptesting",
+    "storage_bucket": "paytmconsumerapptesting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72943469767:android:39faf9b2fdb5d986",
+        "android_client_info": {
+          "package_name": "net.one97.paytm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72943469767-usjv42eogs9gn7ff6al94lcflfpk9lv1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.one97.paytm",
+            "certificate_hash": "84bf4b1a5edce80ecfda63e1dc02f5c254549cfa"
+          }
+        },
+        {
+          "client_id": "72943469767-19eet5afsph904chof8qck49jkp3pua4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfl6oFApBEz1vdxeJEtEG5C30wpJ64PJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72943469767-19eet5afsph904chof8qck49jkp3pua4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "72943469767-br50a8nu01ialejcfmdav29gpi7cgt01.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.one97.paytm.all"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

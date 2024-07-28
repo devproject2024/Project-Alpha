@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/image_lyt" android:background="#ebfbff" android:padding="@dimen/dimen_30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/cancellation_popup_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/dimen_10dp" android:paddingTop="@dimen/dimen_8dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="210dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_190dp">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/image" android:layout_width="@dimen/dimen_8dp" android:layout_height="@dimen/dimen_8dp" android:layout_alignParentLeft="true" app:srcCompat="@drawable/travel_res_bus_checkbox_button"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp" android:layout_toRightOf="@+id/image" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/dimen_5dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_cancellation"/>
+                <TextView android:textSize="@dimen/dimen_5dp" android:id="@+id/cancellation_desc" android:paddingTop="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_a_nominal_amount_and_get_a_guarenteed_refund_on"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/color_efefef" android:layout_width="match_parent" android:layout_height="2dp" android:layout_below="@+id/image_lyt" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    <TextView android:textSize="@dimen/dimen_15dp" android:textColor="@color/color_00b9f5" android:id="@+id/ok_got_it" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_35dp" android:text="@string/order_summary_got_it_txt" android:layout_below="@+id/image_lyt" android:layout_alignParentRight="true"/>
+</RelativeLayout>

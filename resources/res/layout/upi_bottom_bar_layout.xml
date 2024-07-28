@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/separator" android:background="#dde5ed" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+    <RelativeLayout android:id="@+id/lyt_back_to_home" android:background="@color/white" android:padding="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/separator">
+        <Button android:textSize="@dimen/dimen_16sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/back_to_home_bt" android:background="@drawable/universal_money_transfer_button_bg" android:layout_width="match_parent" android:layout_height="52dp" android:text="@string/upi_back_to_home" android:textAllCaps="false" android:fontFamily="@string/font_family_roboto_regular"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/toolbarMenuTheme" android:id="@+id/emiplanToolbar" android:background="@color/cardview_light_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24dp" android:weightSum="3" android:layout_below="@+id/emiplanToolbar">
+        <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black" android:gravity="left" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="@dimen/dimen_20dp" android:text="Select EMI Plan" android:layout_weight="3"/>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/showOrderDetailImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="@dimen/dimen_5dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/dimen_16dp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="right" android:id="@+id/PlantotalPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="$90000"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_down_arrow_24"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_sub_header" android:background="@color/emiheaderColor" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:layout_marginRight="20dp" android:layout_below="@+id/ll_header">
+        <TextView android:textSize="10dp" android:gravity="left" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="DURATION" android:layout_weight="1"/>
+        <TextView android:textSize="10dp" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EMI PER MONTH" android:layout_weight="1"/>
+        <TextView android:textSize="10dp" android:gravity="right" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TOTAL COST" android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp" android:fillViewport="true" android:layout_above="@+id/ll_button" android:layout_below="@+id/ll_sub_header" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/emiplanRecyclerview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/tncLayout" android:background="@color/emiplanheadercolor" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                <TextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_12dp" android:text="Things to Note :"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:id="@+id/ll_button" android:background="@drawable/background_shadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_18dp" android:layout_alignParentBottom="true" android:elevation="0dp">
+        <Button android:textSize="16dp" android:textStyle="bold" android:textColor="@color/cardview_light_background" android:gravity="center" android:layout_gravity="center" android:id="@+id/proceedButton" android:background="@drawable/rounded_corner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="13dp" android:text="Proceed"/>
+    </LinearLayout>
+</RelativeLayout>

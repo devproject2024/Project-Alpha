@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_search_list" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" style="@style/RUToolbarStyle"/>
+    <include layout="@layout/search_layout"/>
+    <RelativeLayout android:id="@+id/rl_search_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/search_header">
+        <ExpandableListView android:id="@+id/expandable_search_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/cache_color_hint" android:groupIndicator="@null" android:childDivider="#00000000" android:divider="@color/color_ebebeb" android:dividerHeight="1dp"/>
+    </RelativeLayout>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/search_header" layout="@layout/content_apartment_not_found"/>
+</LinearLayout>

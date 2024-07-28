@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="176dp" android:layout_height="70dp" android:layout_marginTop="@dimen/dimen_20dp" android:src="@drawable/cashback_header_logo" android:layout_centerHorizontal="true" android:elevation="4dp"/>
+    <androidx.cardview.widget.CardView android:id="@+id/scratch_card_cv" android:visibility="visible" android:layout_width="280dp" android:layout_height="280dp" android:layout_margin="@dimen/dimen_50dp" android:layout_centerHorizontal="true" app:cardCornerRadius="@dimen/dimen_10dp" app:cardElevation="@dimen/dimen_3dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/scratch_view_behind" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/mt_cashback_card_data_view"/>
+            <com.jackpocket.scratchoff.views.ScratchableLinearLayout android:orientation="vertical" android:id="@+id/scratch_view" android:background="@drawable/mt_scratch_card_bg" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="@+id/scratch_view_behind" app:layout_constraintEnd_toEndOf="@+id/scratch_view_behind" app:layout_constraintStart_toStartOf="@+id/scratch_view_behind" app:layout_constraintTop_toTopOf="@+id/scratch_view_behind"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

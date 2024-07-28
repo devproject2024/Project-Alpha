@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppThemeNoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="?0x1010586">1</item>
+        <item name="colorAccent">@color/phoenixColorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AutomaticTitleTextStyle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:fontFamily">@string/font_family_roboto_medium</item>
+    </style>
+    <style name="Base.Theme.AppCompat">
+    </style>
+    <style name="Base.Theme.AppCompat.Light">
+    </style>
+    <style name="Base.V14.ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:backgroundDimAmount">0.32</item>
+        <item name="android:checkedTextViewStyle">@style/Widget.MaterialComponents.CheckedTextView</item>
+        <item name="?0x1010571">@null</item>
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.MaterialComponents</item>
+        <item name="buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.MaterialComponents.Body.Text</item>
+    </style>
+    <style name="Base.V28.Theme.AppCompat">
+        <item name="dialogCornerRadius">?unknown_attr_ref: 1010571</item>
+    </style>
+    <style name="Base.V28.Theme.AppCompat.Light">
+        <item name="dialogCornerRadius">?unknown_attr_ref: 1010571</item>
+    </style>
+    <style name="BottomSheetDialogTheme">
+        <item name="colorAccent">@color/paytm_blue</item>
+        <item name="colorPrimary">@color/paytm_bottom_strip_dark</item>
+        <item name="colorPrimaryDark">@color/paytm_bottom_strip_dark</item>
+    </style>
+    <style name="CashbackOffersTabStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="CstEditTextTheme">
+        <item name="android:textColorHint">@color/hint_grey</item>
+        <item name="android:colorAccent">@color/hint_grey</item>
+        <item name="colorAccent">@color/hint_grey</item>
+        <item name="colorControlActivated">@color/hint_grey</item>
+        <item name="colorControlHighlight">@color/divider_color</item>
+        <item name="colorControlNormal">@color/divider_color</item>
+    </style>
+    <style name="HotelTheme">
+    </style>
+    <style name="InsuranceTextInputLayoutTheme">
+        <item name="colorAccent">@color/color_999999</item>
+        <item name="colorControlActivated">@color/color_999999</item>
+        <item name="colorControlHighlight">@color/color_999999</item>
+        <item name="colorControlNormal">@color/color_999999</item>
+    </style>
+    <style name="JarvisAppBaseTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:colorPrimaryDark">@color/app_theme_color</item>
+    </style>
+    <style name="TextInputLayoutFixTheme">
+        <item name="android:colorAccent">@color/paytm_blue</item>
+        <item name="colorAccent">@color/paytm_blue</item>
+        <item name="colorControlActivated">@color/paytm_blue</item>
+        <item name="colorControlHighlight">@color/paytm_blue</item>
+        <item name="colorControlNormal">@color/divider_color</item>
+        <item name="textColorError">@color/irctc_verification_error</item>
+    </style>
+    <style name="TitleTextStyleBold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="TransparentActivity">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:background">#33000000</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="cashback_active_head">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@string/font_family_roboto_regular</item>
+    </style>
+    <style name="cashback_claim_desc">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#444444</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:fontFamily">@string/font_family_roboto_regular</item>
+    </style>
+    <style name="cashback_offer_details">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#00b9f5</item>
+        <item name="android:fontFamily">@string/font_family_roboto_medium</item>
+    </style>
+    <style name="vip_cashback_def_text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:fontFamily">@string/font_family_roboto_regular</item>
+    </style>
+    <style name="vip_cashback_history">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_00b9f5</item>
+        <item name="android:fontFamily">@string/font_family_roboto_regular</item>
+    </style>
+    <style name="vip_cashback_loading_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:lineSpacingExtra">7sp</item>
+        <item name="android:fontFamily">@string/font_family_roboto_regular</item>
+    </style>
+    <style name="vip_cashback_offer_card_txt">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:fontFamily">@string/font_family_roboto_regular</item>
+    </style>
+    <style name="vip_cashback_offer_duration_txt">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/color_f5a109</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:fontFamily">@string/font_family_roboto_regular</item>
+    </style>
+    <style name="vip_cashback_options">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:fontFamily">@string/font_family_roboto_regular</item>
+    </style>
+    <style name="vip_cashback_options_medium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@string/font_family_roboto_medium</item>
+    </style>
+    <style name="vip_cashback_sub_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/paytm_dark_blue</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:fontFamily">@string/font_family_roboto_medium</item>
+    </style>
+    <style name="vip_cashback_title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@string/font_family_roboto_regular</item>
+    </style>
+</resources>

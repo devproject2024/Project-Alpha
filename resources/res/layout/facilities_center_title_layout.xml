@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/imageLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/circularImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_circular_facility_icon_bg"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/pb_svg_ill_withdraw"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_toRightOf="@+id/imageLayout" android:layout_centerVertical="true">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/wallet_15sp" android:textColor="@color/color_222222" android:id="@+id/facility_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fd_wala_account" app:fontType="3"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/wallet_12_sp" android:textColor="@color/color_444444" android:id="@+id/facility_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_7dp" android:maxWidth="215dp" app:fontType="2"/>
+    </LinearLayout>
+</RelativeLayout>

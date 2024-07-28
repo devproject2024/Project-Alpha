@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_back_arrow" android:background="?android:attr/selectableItemBackground" android:padding="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_12dp" android:src="@drawable/back_arrow" android:layout_centerVertical="true"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/tv_toolbar_title" android:paddingTop="15dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/select_bank" android:layout_toRightOf="@+id/iv_back_arrow"/>
+            <ImageView android:id="@+id/iv_ppb_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_payment_bank" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@+id/toolbar_divider" android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:gravity="top" android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/back_arrow" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="5dp" android:layout_marginRight="40dp" android:layout_toRightOf="@+id/back_arrow">
+                <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="@color/color_000000" android:id="@+id/tittle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="action_title" android:includeFontPadding="false" app:fontType="3"/>
+                <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/color_4a4a4a" android:id="@+id/subtittle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="sample" android:includeFontPadding="false" android:layout_below="@+id/tittle" app:fontType="2"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout android:id="@+id/rv_promo_divider_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <View android:id="@+id/view_separator_bottom" android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="10dp"/>
+        <include android:id="@+id/promo_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_1dp" layout="@layout/promotion_textview"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fragment_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_1dp" android:layout_below="@+id/rv_promo_divider_container"/>
+</RelativeLayout>

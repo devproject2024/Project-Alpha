@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/scroll_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_detail_returned_item_card" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/lyt_item_detail_desc_card_ft"/>
+            <RelativeLayout android:id="@+id/replacement_order_action" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_12dp">
+                <View android:id="@+id/separator" android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginBottom="@dimen/dimen_12dp"/>
+                <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/tomato" android:id="@+id/view_replacement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_5dp" android:text="@string/your_order_replacement" android:layout_below="@+id/separator" android:layout_centerVertical="true" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif-medium"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_13dp" android:src="@drawable/forward_copy_ft" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:id="@+id/separator2" android:background="@color/color_ebebeb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_12dp" android:layout_below="@+id/view_replacement"/>
+            </RelativeLayout>
+            <LinearLayout android:id="@+id/return_card_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <androidx.legacy.widget.Space android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_detail_refund_desc_card" android:background="@color/item_cards_seperator_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/dimen_10dp"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/lyt_item_detail_refund_desc_card_ft"/>
+            <androidx.legacy.widget.Space android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_6dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_detail_seller_card" android:background="@color/item_cards_seperator_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/lyt_item_detail_seller_card_ft"/>
+            <androidx.legacy.widget.Space android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_6dp"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/item_detail_delivery_address_card" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/lyt_item_detail_delivery_address_card_ft"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/return_steps_template" android:background="@color/white" android:paddingRight="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25dp">
+                <com.paytm.utility.RoboTextView android:textSize="16sp" android:textStyle="bold" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="85dp" android:layout_marginTop="@dimen/item_detail_container_padding" android:layout_marginBottom="@dimen/item_detail_refund_details_text_top_margin" android:text="@string/step_to_return_to_seller" android:lineSpacingExtra="-5sp" android:fontFamily="sans-serif" app:fontType="4"/>
+            </LinearLayout>
+            <View android:background="@color/item_cards_seperator_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_6dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <View android:background="@color/item_detail_auto_cancel_separator_bg_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginRight="10dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/generic_actions_container" android:background="@android:color/white" android:paddingLeft="@dimen/item_detail_container_padding" android:paddingRight="@dimen/item_detail_container_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/item_cards_seperator_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

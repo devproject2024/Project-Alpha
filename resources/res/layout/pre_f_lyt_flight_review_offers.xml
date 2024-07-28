@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/color_f9f9f9" android:layout_width="match_parent" android:layout_height="@dimen/dimen_4dp"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_12dp" android:paddingRight="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/lyt_offers" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/pre_f_lyt_flight_offers_card"/>
+        <include android:id="@+id/lyt_promo_applied" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/pre_f_lyt_flight_applied_promo_card"/>
+    </LinearLayout>
+</LinearLayout>

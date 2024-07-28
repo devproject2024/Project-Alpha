@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <net.one97.paytm.o2o.movies.moviepass.widgets.CJRMoviePassCardView android:id="@+id/city_movie_pass" android:layout_width="match_parent" android:layout_height="wrap_content" android:transitionName="movie_pass_card_transition"/>
+</FrameLayout>

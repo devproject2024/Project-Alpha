@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/cancellation_fr_icon_divider" android:background="@color/color_efefef" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_8dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_19dp">
+        <ImageView android:id="@+id/fr_icon_view" android:visibility="visible" android:layout_width="@dimen/dimen_15dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_4dp"/>
+        <ImageView android:id="@+id/cancellation_fr_icon_view" android:visibility="gone" android:layout_width="@dimen/dimen_10dp" android:layout_height="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_4dp"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:textStyle="normal" android:textColor="@color/color_222222" android:layout_gravity="center" android:id="@+id/fr_icon_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginRight="@dimen/dimen_12dp" android:fontFamily="sans-serif" app:fontType="3"/>
+    </LinearLayout>
+    <View android:id="@+id/fr_icon_divider" android:background="@color/color_efefef" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginTop="@dimen/dimen_12dp" android:layout_below="@+id/fr_icon_message"/>
+</LinearLayout>

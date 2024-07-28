@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+    <com.google.android.material.textfield.TextInputLayout android:theme="@style/recharge_text_input_layout_theme" android:id="@+id/events_passenger_form_textinputlayout" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="24dp"/>
+    <View android:id="@+id/divider1" android:background="@color/events_passenger_page_title_background" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginRight="24dp"/>
+    <com.paytm.utility.RoboTextView android:textSize="10sp" android:textColor="@color/red" android:id="@+id/events_passenger_form_textview_error_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="24dp" app:fontType="2"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/menuLatout" android:background="@drawable/clp_menu_list_selected" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp" android:layout_marginBottom="@dimen/dimen_1dp">
+        <ImageView android:id="@+id/menuImage" android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:layout_marginTop="@dimen/dimen_2dp" android:contentDescription="TODO" android:layout_marginStart="16dp" app:srcCompat="@drawable/clp_ic_notification_unread"/>
+        <ImageView android:id="@+id/notificationImg" android:visibility="gone" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="-9dp" android:layout_marginTop="-3dp" android:src="@drawable/clp_notification_count"/>
+        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="#1d252d" android:id="@+id/menuText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2dp" android:maxLines="2" android:singleLine="false" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_10dp" android:layout_marginEnd="@dimen/dimen_12dp"/>
+        <View android:id="@+id/viewLayout" android:background="@drawable/clp_menu_list_selected" android:layout_width="@dimen/dimen_2dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView android:id="@+id/empty_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_26dp"/>
+</LinearLayout>

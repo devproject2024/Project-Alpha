@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/search_toolabar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/back_arrow" android:background="@drawable/ripple_grey_white_bkgrnd" android:paddingLeft="5dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true"/>
+            <EditText android:textSize="13sp" android:textColor="@color/color_de000000" android:textColorHint="@color/color_4a4a4a" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/event_search_edit_txt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:hint="@string/search_event" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@+id/back_arrow" android:layout_centerVertical="true" android:imeOptions="actionDone" app:fontType="2"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView android:id="@+id/image_devider" android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/divider_color" android:layout_below="@+id/search_toolabar"/>
+    <RelativeLayout android:id="@+id/search_toolbar" android:background="@color/color_e8e8e8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/image_devider">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/events_search_editText_lyt" android:background="@drawable/movies_location_border" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_search"/>
+            <EditText android:textSize="17sp" android:textColor="@color/color_de000000" android:textColorHint="@color/color_4a4a4a" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/event_search_edit_txt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:hint="@string/search" android:maxLines="1" android:singleLine="true" android:imeOptions="actionDone" app:fontType="2"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/pick_location_lyt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/search_toolbar">
+        <RelativeLayout android:id="@+id/city_list_lyt" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:id="@+id/event_search_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_marginRight="0dp" android:listSelector="@drawable/list_selector" android:cacheColorHint="@android:color/transparent" android:divider="@color/color_ebebeb" android:dividerHeight="1dp" android:choiceMode="singleChoice"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_suggestion_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/movie_error_icon"/>
+                <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/color_000000" android:gravity="center" android:layout_gravity="center" android:id="@+id/error_text_quote" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="@string/movies_err_msg" android:lineSpacingExtra="3dp" app:fontType="2"/>
+                <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="@color/cart_oos_text" android:gravity="center" android:id="@+id/error_text" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/movie_search_error_msg" app:fontType="2"/>
+            </LinearLayout>
+            <ProgressBar android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/relative_page_loading_progress" android:background="@color/color_30000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <include layout="@layout/park_no_network_layout"/>
+    </LinearLayout>
+</RelativeLayout>

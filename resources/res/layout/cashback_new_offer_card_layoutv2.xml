@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/new_offer_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:transitionName="@string/transition_cashback_card" app:cardCornerRadius="@dimen/dimen_6dp" app:cardElevation="@dimen/dimen_0dp">
+    <RelativeLayout android:id="@+id/offer_rl" android:background="@drawable/cashback_default_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/titleIconRl" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <net.one97.paytm.common.widgets.CircularImageView android:id="@+id/offer_type_iv" android:layout_width="@dimen/dimen_90dp" android:layout_height="@dimen/dimen_90dp" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_0dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+            <TextView android:id="@+id/cashback_offer_txt" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_24dp" android:layout_toLeftOf="@+id/offer_type_iv" android:layout_alignParentLeft="true" style="@style/vip_cashback_offer_card_txt"/>
+            <TextView android:textSize="@dimen/dimen_12sp" android:id="@+id/offer_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_toLeftOf="@+id/offer_type_iv" android:layout_below="@+id/cashback_offer_txt" android:layout_alignParentLeft="true" style="@style/vip_cashback_options"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_4dp" android:layout_below="@+id/titleIconRl">
+            <RelativeLayout android:id="@+id/activateRL" android:background="@drawable/white_background_rounded_cashback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_8dp" android:layout_marginBottom="@dimen/dimen_8dp">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <com.airbnb.lottie.LottieAnimationView android:id="@+id/activateLoader" android:visibility="gone" android:layout_width="@dimen/dimen_60dp" android:layout_height="@dimen/dimen_30dp" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_00b9f5" android:id="@+id/activate_offer" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_8dp" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cb_merchant_activiate" android:layout_centerVertical="true" style="@style/vip_cashback_options"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_activated_offer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <LinearLayout android:paddingLeft="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:layout_gravity="center" android:layout_width="@dimen/dimen_14dp" android:layout_height="@dimen/dimen_14dp" android:src="@drawable/availble_click_image"/>
+                        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_21c17a" android:gravity="center" android:paddingLeft="@dimen/dimen_5dp" android:paddingTop="@dimen/dimen_8dp" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cb_merchant_activiated" android:layout_centerInParent="true" style="@style/vip_cashback_options_medium"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.airbnb.lottie.LottieAnimationView android:id="@+id/activate_loader_sparcle" android:visibility="visible" android:layout_width="@dimen/dimen_150dp" android:layout_height="@dimen/dimen_80dp" android:layout_marginLeft="-8dp" android:layout_marginTop="-8dp" android:layout_marginBottom="-20dp" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:scaleX="1.8" android:scaleY="1.8"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

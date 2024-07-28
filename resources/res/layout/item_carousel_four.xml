@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/item_carousel_four_0" android:layout_width="66dp" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dimen_12dp">
+    <ImageView android:layout_gravity="center" android:id="@+id/image1" android:tag="binding_1" android:layout_width="66dp" android:layout_height="66dp" android:scaleType="fitXY"/>
+    <com.paytmmall.clpartifact.customViews.CLPRobotoTextView android:textSize="12.5sp" android:textColor="@color/expand_tree_text" android:gravity="center" android:layout_gravity="center" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="66dp" android:layout_marginTop="@dimen/dimen_1dp" android:hint="jbvhjbvjdfbv" android:maxLines="2"/>
+</LinearLayout>

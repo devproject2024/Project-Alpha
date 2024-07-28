@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/seperator" android:background="@color/smart_list_divider_grey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentTop="true"/>
+    <WebView android:id="@+id/order_datails_webiew" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/seperator"/>
+    <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/travel_res_bus_progress_large_holo" android:layout_centerInParent="true"/>
+</RelativeLayout>

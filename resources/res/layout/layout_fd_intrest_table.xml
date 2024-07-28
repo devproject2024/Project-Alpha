@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@drawable/rounded_bottomsheet" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:paddingTop="@dimen/dimen_36dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/it_table_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_19dp" android:text="@string/pb_fd_new_interest_table" android:fontFamily="sans-serif" android:letterSpacing="0.02"/>
+            <ImageView android:id="@+id/cross_btn" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:layout_marginRight="@dimen/dimen_19dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:srcCompat="@drawable/pb_ic_close_black_bank"/>
+            <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/it_table_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_19dp" android:layout_marginTop="@dimen/dimen_7dp" android:layout_marginBottom="@dimen/dimen_28dp" android:text="@string/fd_rates_effective_from" android:layout_below="@+id/it_table_label" android:fontFamily="sans-serif"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_it_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/it_table_msg"/>
+            <ProgressBar android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/pb_progress_itab" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_100dp" android:indeterminateDrawable="@drawable/pb_pb_paytm_progress" android:layout_centerInParent="true"/>
+            <TextView android:textSize="@dimen/dimen_16sp" android:textStyle="bold" android:id="@+id/tv_no_item" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

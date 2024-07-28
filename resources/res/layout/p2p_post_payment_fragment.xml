@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.one97.paytm.utils.CJRCustomRecyclerView android:id="@+id/rv_main" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/lyt_bottom_tab_bar" android:layout_alignParentTop="true"/>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="bottom" android:id="@+id/rv_fixed_header" android:background="@color/white" android:paddingLeft="@dimen/dimen_10dp" android:paddingTop="@dimen/dimen_12dp" android:paddingRight="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_10dp" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/infinite_tab_border" android:background="@color/background_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10dp" android:layout_below="@+id/rv_fixed_header"/>
+    <include android:id="@+id/lyt_bottom_tab_bar" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true" layout="@layout/lyt_main_bottom_tab_bar_new"/>
+</RelativeLayout>

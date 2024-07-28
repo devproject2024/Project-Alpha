@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="25dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_21sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Paytm Gift Voucher" android:layout_centerVertical="true" android:lineSpacingExtra="-6sp" android:fontFamily="sans-serif" app:fontType="4"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/uam_close_cross" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <include android:id="@+id/i_gift_card" android:layout_width="match_parent" android:layout_height="@dimen/dimen_210dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/title_tv" layout="@layout/gift_voucher_preview_card"/>
+    <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#8ba6c1" android:id="@+id/expiry_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_12dp" android:text="Expiry: 25 Sep 2021" android:fontFamily="@string/font_family_roboto_regular"/>
+    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btn_proceed" android:background="@drawable/uam_gv_blue_bg_button_rect_corner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_40dp" android:layout_marginRight="@dimen/dimen_20dp" android:text="Proceed to Send Gift Voucher" android:lineSpacingExtra="0sp" android:textAllCaps="false" android:fontFamily="sans-serif-medium"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <View android:id="@+id/bottomLineBlue" android:background="#00aced" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+        <View android:id="@+id/bottomLineDarkBlue" android:background="#002f6c" android:layout_width="match_parent" android:layout_height="@dimen/dimen_8dp"/>
+    </LinearLayout>
+</LinearLayout>

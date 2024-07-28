@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="#99000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/curve_pop_lyt" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unverified_verified_p2m" android:lineSpacingExtra="-6sp" android:fontFamily="sans-serif"/>
+            <ImageView android:id="@+id/close" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:layout_marginLeft="@dimen/dimen_25dp" android:layout_alignParentRight="true" android:contentDescription="TODO" android:layout_marginStart="@dimen/dimen_25dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_close_dark_gray"/>
+        </RelativeLayout>
+        <LinearLayout android:background="@drawable/curved_bg_merchant_status" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40dp" android:paddingEnd="10dp">
+            <LinearLayout android:gravity="center" android:background="@drawable/white_bg_circle" android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp">
+                <ImageView android:layout_width="@dimen/dimen_18dp" android:layout_height="@dimen/dimen_18dp" android:contentDescription="TODO" app:srcCompat="@drawable/ic_verified_p2m"/>
+            </LinearLayout>
+            <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#666666" android:layout_gravity="center" android:paddingRight="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verified_merchant_p2m" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:paddingEnd="@dimen/dimen_10dp"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/verified_merchant_desc" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif"/>
+        <LinearLayout android:background="@drawable/curved_bg_merchant_status" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:paddingEnd="10dp">
+            <LinearLayout android:gravity="center" android:background="@drawable/white_bg_circle" android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp">
+                <ImageView android:layout_width="@dimen/dimen_18dp" android:layout_height="@dimen/dimen_18dp" android:contentDescription="TODO" app:srcCompat="@drawable/ic_unverified_p2m"/>
+            </LinearLayout>
+            <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#666666" android:layout_gravity="center" android:paddingRight="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unverified_merchant_p2m" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:paddingEnd="@dimen/dimen_10dp"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/unverified_merchant_desc" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+</LinearLayout>

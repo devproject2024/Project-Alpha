@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/search_toolabar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/back_arrow" android:paddingLeft="5dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="@color/color_de000000" android:ellipsize="end" android:id="@+id/top_title" android:padding="2dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_title_book_tickets" android:singleLine="true" android:layout_toLeftOf="@+id/search_icon_img" android:layout_toRightOf="@+id/back_arrow" android:layout_centerVertical="true" app:fontType="3"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView android:id="@+id/event_traveller_activity_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:id="@+id/event_traveller_detail_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <gradient android:startColor="@color/sf_color_0488E3" android:endColor="@color/sf_color_0488E3" android:angle="270" android:centerColor="@color/sf_color_1061cc"/>
+            <stroke android:color="@color/sf_color_19000000"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/sf_bg_pattern" android:tileMode="repeat"/>
+    </item>
+</layer-list>

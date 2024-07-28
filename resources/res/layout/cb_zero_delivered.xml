@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/row" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="#999999" android:id="@+id/no_cb_tv" android:padding="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_40dp" android:layout_marginRight="@dimen/dimen_40dp" android:text="@string/no_delievered_cb" android:lineSpacingExtra="0sp" android:fontFamily="sans-serif"/>
+</RelativeLayout>

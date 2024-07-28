@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/lyt_row" android:background="@color/white" android:layout_width="match_parent" android:layout_height="52dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/traveller_name_lyt" android:layout_width="match_parent" android:layout_height="51dp" android:layout_centerVertical="true">
+        <TextView android:textSize="14sp" android:textColor="@color/color_4a4a4a" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/txt_traveller_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="xcvcxvnxcnbvbxcmnvbmnxcbvbnxcbvbxcnvbvc" android:singleLine="true" android:layout_weight="7" android:layout_alignParentLeft="true"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/btn_delete_traveller" android:padding="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/delete_traveller_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/lyt_delete_traveller" android:background="#ecfbff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="51dp" android:animateLayoutChanges="true">
+        <TextView android:textSize="12sp" android:textColor="@color/color_4a4a4a" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/txt_delete_traveller_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="Are you sure you want to delete this contact ?" android:maxLines="2" android:layout_weight="8" android:layout_alignParentLeft="true"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+            <TextView android:textSize="13sp" android:textColor="@color/color_9b9b9b" android:id="@+id/btn_delete_traveller_yes" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes"/>
+            <TextView android:textSize="13sp" android:textColor="@color/color_9b9b9b" android:id="@+id/btn_delete_traveller_no" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/view_divider" android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

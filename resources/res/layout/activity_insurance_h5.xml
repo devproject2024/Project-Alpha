@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#f4f7f8" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <ImageView android:layout_width="wrap_content" android:layout_height="20dp" android:src="@drawable/insurance_paytm_logo" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

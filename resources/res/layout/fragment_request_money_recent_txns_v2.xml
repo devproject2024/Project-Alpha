@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_recent_txn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_recent_txn_parent_layout" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_saved_heading" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="36dp">
+                <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/color_999999" android:id="@+id/tv_recent_txn" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="@string/request_money_recents" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:fontFamily="@string/font_family_roboto_regular" android:letterSpacing="0.08"/>
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/color_00b9f5" android:id="@+id/tv_view_all" android:padding="@dimen/dimen_5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp" android:text="@string/money_transfer_view_all" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:fontFamily="@string/font_family_roboto_regular"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_recent_txn_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_saved_heading"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/progress_layout_recent_txn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/upi_dummy_beneficiary_list_view"/>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

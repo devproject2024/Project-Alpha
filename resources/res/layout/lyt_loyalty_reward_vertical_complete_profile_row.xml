@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="333dp" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dimen_5dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="158dp">
+            <ImageView android:id="@+id/iv_loyalty_card" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <RelativeLayout android:layout_gravity="center" android:id="@+id/rl_loyalty_logo_wrapper" android:background="@drawable/bg_white_loyalty" android:visibility="visible" android:layout_width="100dp" android:layout_height="100dp">
+                <ImageView android:id="@+id/iv_loyalty_logo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="center" android:padding="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/tv_loyalty_card_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/tv_loyalty_card_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+                <TextView android:textSize="14.3sp" android:textStyle="normal" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Points" android:lineSpacingExtra="3.7sp" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

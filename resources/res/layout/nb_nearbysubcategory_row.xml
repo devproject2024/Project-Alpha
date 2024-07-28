@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="#f4f4f4" android:padding="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="15dp" android:textColor="#333333" android:id="@+id/subcategory_item_name_tv" android:background="@drawable/sub_category_button_bg" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+</LinearLayout>

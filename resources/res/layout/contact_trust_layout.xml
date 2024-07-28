@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="@dimen/dimen_27dp" android:paddingTop="@dimen/wallet_24_dp" android:paddingRight="@dimen/dimen_27dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_12_dp">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/paytm_square" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stamp" android:scaleType="center"/>
+    <TextView android:gravity="center_vertical" android:id="@+id/paytm_trust_tv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="19dp" android:text="@string/paytm_trust_text" android:fontFamily="@string/font_family_roboto_light"/>
+    <View android:id="@+id/blank_space_contact_us" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/wallet_24_dp" android:layout_alignParentBottom="true"/>
+</LinearLayout>

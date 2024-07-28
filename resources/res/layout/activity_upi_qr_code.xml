@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/iv_back_arrow" android:padding="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+                    <ImageView android:gravity="center" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_bhim_upi_logo"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <FrameLayout android:padding="@dimen/dimen_24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_content" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <net.one97.paytm.upi.common.RoboTextView android:textSize="18sp" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_20_dp" android:layout_marginRight="@dimen/wallet_20_dp" android:fontFamily="sans-serif-medium"/>
+                    <net.one97.paytm.upi.common.RoboTextView android:textSize="@dimen/dimen_24sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@+id/tv_vpa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6dp" android:fontFamily="sans-serif"/>
+                    <View android:background="@color/color_e2ebee" android:layout_width="@dimen/dimen_30dp" android:layout_height="2dp" android:layout_marginTop="@dimen/dimen_12dp"/>
+                    <net.one97.paytm.upi.common.RoboTextView android:textSize="14sp" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/tv_scan_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_20_dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/wallet_20_dp" android:text="@string/upi_scan_qr"/>
+                    <FrameLayout android:gravity="center" android:id="@+id/qr_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:transitionName="qr">
+                        <ImageView android:layout_gravity="center" android:id="@+id/iv_qr_code" android:layout_width="204dp" android:layout_height="204dp"/>
+                        <ImageView android:layout_gravity="center" android:id="@+id/iv_bhim_upi" android:background="@drawable/bg_white_circular_stroke" android:padding="4dp" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" android:src="@drawable/ic_bhim"/>
+                    </FrameLayout>
+                    <net.one97.paytm.upi.common.RoboTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_qr_amount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+                </LinearLayout>
+                <include layout="@layout/error_layout"/>
+                <ProgressBar android:layout_gravity="center" android:id="@+id/pb_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <RelativeLayout android:id="@+id/rl_share_qr" android:background="@drawable/white_selector_bg" android:paddingLeft="@dimen/dimen_24dp" android:paddingTop="16dp" android:paddingRight="@dimen/dimen_24dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_56dp">
+                <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_00b9f5" android:id="@+id/tv_add_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upi_add_amount" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:lineSpacingExtra="2sp"/>
+                <TextView android:textSize="@dimen/dimen_15sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4dp" android:text="@string/upi_optional_amount" android:layout_toRightOf="@+id/tv_add_amount"/>
+                <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_00b9f5" android:id="@+id/tv_share_qr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upi_share_qr" android:layout_toRightOf="@+id/img_wishlist" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:lineSpacingExtra="2sp"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_00b9f5" android:layout_gravity="center" android:id="@+id/tv_share_qr_centre" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upi_share_qr" android:layout_toRightOf="@+id/img_wishlist" android:lineSpacingExtra="2sp"/>
+            <RelativeLayout android:id="@+id/rl_enter_amount" android:paddingLeft="@dimen/dimen_32dp" android:paddingTop="@dimen/dimen_16dp" android:paddingRight="@dimen/dimen_32dp" android:paddingBottom="@dimen/dimen_16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_24dp">
+                <com.google.android.material.textfield.TextInputLayout android:theme="@style/UpiEditTextTheme" android:textColorHint="@color/color_999999" android:id="@+id/til_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16dp" android:hint="@string/upi_amount" android:layout_toLeftOf="@+id/tv_done">
+                    <net.one97.paytm.upi.common.CustomAmountTextInputEditText android:textSize="@dimen/wallet_17sp" android:textColor="@color/color_222222" android:textColorHint="@color/hint_grey" android:id="@+id/edt_amount" android:focusable="true" android:longClickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerHorizontal="true" android:inputType="numberDecimal" android:imeOptions="actionDone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView android:textColor="@color/white" android:id="@+id/tv_done" android:background="@drawable/upi_bg_rect_light_blue" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <include android:layout_gravity="bottom" android:id="@+id/paytm_strip" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bottom_paytm_line"/>
+    </FrameLayout>
+</ScrollView>

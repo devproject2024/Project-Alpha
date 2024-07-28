@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/list_item_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="15dp" android:textColor="#000" android:gravity="center" android:id="@+id/version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginTop="10dp" android:text="version" android:singleLine="true"/>
+        <TextView android:textSize="15dp" android:textColor="#000" android:gravity="center" android:id="@+id/delete_appInfo" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginTop="10dp" android:text="deleteAppInfo" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="15dp" android:textColor="#000" android:gravity="center" android:id="@+id/delete_app_install" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginTop="10dp" android:text="deleteAppfile" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="15dp" android:textColor="#000" android:gravity="center" android:id="@+id/download" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginTop="5dp" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="15dp" android:textColor="#000" android:gravity="center" android:id="@+id/install" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginTop="5dp" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

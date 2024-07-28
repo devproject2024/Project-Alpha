@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/tb_activity" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp" app:layout_collapseMode="1">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/iv_back_arrow" android:background="?android:attr/selectableItemBackground" android:padding="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_12dp" android:src="@drawable/back_arrow" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/ll_options" android:layout_toRightOf="@+id/iv_back_arrow" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/dimen_17sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="left" android:id="@+id/tv_toolbar_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/upi_select_bank" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/tv_toolbar_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/ll_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <androidx.appcompat.widget.SearchView android:id="@+id/searchView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:iconifiedByDefault="true" android:queryHint="Search" android:textCursorDrawable="@drawable/hotel_blue_cursor" style="@style/UpiSearchViewStyle"/>
+                    <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="#00b9f5" android:layout_gravity="center_vertical" android:id="@+id/tv_skip" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/upi_skip" android:fontFamily="sans-serif-medium" android:letterSpacing="0.02"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_favBanks" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_56dp" app:layout_collapseMode="1" app:layout_scrollFlags="d"/>
+            <FrameLayout android:id="@+id/fl_banksListContainer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/pb_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

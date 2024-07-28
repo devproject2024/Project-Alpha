@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/pb_ba_vdc_round_white_bg" android:layout_width="330dp" android:layout_height="198dp">
+    <RelativeLayout android:id="@+id/db_card_layout_root" android:layout_width="324dp" android:layout_height="192dp">
+        <ImageView android:id="@+id/iv_payment_bank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/wallet_10_dp" android:src="@drawable/pb_ic_payments_bank_logo"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_payment_bank_motif" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="16dp" android:textColor="@color/payment_bank_dark_grey" android:id="@+id/tv_card_holder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="18dp" android:layout_below="@+id/iv_payment_bank" android:fontFamily="@string/font_family_roboto_regular"/>
+        <TextView android:textSize="18dp" android:textColor="@color/payment_bank_dark_grey" android:id="@+id/tv_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/tv_card_holder_name" android:fontFamily="@string/font_family_roboto_regular"/>
+        <ImageView android:id="@+id/iv_copy" android:padding="@dimen/dimen_5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp" android:src="@drawable/pb_copy" android:layout_toRightOf="@+id/tv_card_number" android:layout_alignTop="@+id/tv_card_number"/>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="6dp" android:layout_below="@+id/tv_card_number">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/color_00b9f5" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_card_action" android:background="@drawable/pb_bkg_debit_card_action_button" android:layout_width="136dp" android:layout_height="@dimen/dimen_35dp" android:text="@string/action_view_manage_card" android:fontFamily="@string/font_family_roboto_medium"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_card_details" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/payment_bank_light_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/expiry_date" android:textAllCaps="true" android:fontFamily="@string/font_family_roboto_regular"/>
+                        <TextView android:textSize="18dp" android:textColor="@color/payment_bank_dark_grey" android:id="@+id/tv_expiry_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_family_roboto_regular"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_40_dp">
+                        <TextView android:textSize="11dp" android:textColor="@color/payment_bank_light_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cvv" android:fontFamily="@string/font_family_roboto_regular"/>
+                        <TextView android:textSize="18dp" android:textColor="@color/payment_bank_dark_grey" android:id="@+id/tv_cvv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_family_roboto_regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <ImageView android:layout_gravity="right" android:id="@+id/iv_card_type_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_rupay_logo" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/bottom_strip" android:background="@drawable/pb_bottom_border_debit_card" android:layout_width="match_parent" android:layout_height="14dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_blocked_card_mask" android:background="@drawable/pb_border_mask_debit_card" android:visibility="gone" android:layout_width="324dp" android:layout_height="192dp"/>
+</FrameLayout>

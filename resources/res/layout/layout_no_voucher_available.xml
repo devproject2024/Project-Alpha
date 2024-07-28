@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/clp_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_voucher_view" android:paddingTop="@dimen/dimen_40dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:gravity="center" android:layout_width="240dp" android:layout_height="200dp" android:src="@drawable/clp_ic_no_vouchers"/>
+        <TextView android:textSize="@dimen/dimen_20sp" android:textColor="@color/clp_color_2222222" android:gravity="center" android:id="@+id/no_vouchers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_vouchers_available"/>
+        <TextView android:textSize="@dimen/dimen_14sp" android:textColor="#666666" android:paddingTop="@dimen/dimen_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_40dp" android:text="@string/please_check_back_later" android:layout_below="@+id/no_vouchers"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="@dimen/dimen_120dp" android:layout_below="@+id/no_voucher_view" android:layout_centerHorizontal="true" android:paddingStart="@dimen/dimen_16dp" android:paddingEnd="@dimen/dimen_16dp">
+        <View android:background="@drawable/clp_blue_dash" android:layout_width="@dimen/dimen_60dp" android:layout_height="@dimen/dimen_2dp" android:layout_marginBottom="@dimen/dimen_20dp"/>
+        <TextView android:textSize="@dimen/dimen_18sp" android:textColor="@color/clp_color_2222222" android:paddingBottom="@dimen/dimen_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/how_it_works"/>
+        <ImageView android:layout_width="300dp" android:layout_height="wrap_content" android:src="@drawable/clp_ic_vouchers_work"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_12sp" android:gravity="center" android:layout_width="0dp" android:layout_height="60dp" android:text="@string/Instant_Cashback" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/dimen_12sp" android:gravity="center" android:layout_width="0dp" android:layout_height="60dp" android:text="@string/Visit_Nearby_Store" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/dimen_12sp" android:gravity="center" android:paddingLeft="@dimen/dimen_20dp" android:layout_width="0dp" android:layout_height="60dp" android:text="@string/Show_your_vocher" android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/primaryBlue" android:gravity="center" android:id="@+id/view_store" android:padding="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_stores"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="mobile_number_length">10</integer>
+    <integer name="frame_delay">100</integer>
+    <integer name="pament_success_delay">42</integer>
+    <integer name="anim_length">800</integer>
+    <integer name="anim_length_half">400</integer>
+    <integer name="mechant_id_length">12</integer>
+    <integer name="accordion_row_text_size_top">16</integer>
+    <integer name="accordion_row_text_size_normal">15</integer>
+
+    <integer name="grid_page_image_fade_duration">500</integer>
+    <integer name="card_6_digits">6</integer>
+    <integer name="card_month_digits">2</integer>
+    <integer name="card_year_digits">2</integer>
+    <integer name="bottom_sheet_slide_duration">220</integer>
+    <integer name="bmtc_route_text_line">1</integer>
+</resources>

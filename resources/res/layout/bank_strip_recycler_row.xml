@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/controller_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/firstLayout" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/bank_home_options_item"/>
+    <include android:id="@+id/secondLauout" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/bank_home_options_item"/>
+    <include android:id="@+id/thirdLayout" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/bank_home_options_item"/>
+    <include android:id="@+id/forthLayout" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/bank_home_options_item"/>
+</LinearLayout>

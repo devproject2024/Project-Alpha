@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fl_web_info" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/img_close" android:padding="@dimen/dimen_28dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_arrow_blue"/>
+        <TextView android:textSize="@dimen/dimen_24sp" android:textColor="@color/green" android:id="@+id/tv_deviceIfo" android:padding="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24dp" android:fontFamily="sans-serif-condensed"/>
+        <TextView android:textSize="@dimen/dimen_24sp" android:textColor="@color/green" android:id="@+id/tv_networkInfo" android:padding="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:fontFamily="sans-serif-condensed"/>
+        <TextView android:textSize="@dimen/dimen_24sp" android:textColor="@color/green" android:id="@+id/tv_webInfo" android:padding="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:fontFamily="sans-serif-condensed"/>
+        <EditText android:textSize="@dimen/cart_16sp" android:textColor="@color/black" android:id="@+id/et_url_checker" android:background="@color/transparent" android:padding="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint=" enter base url for caching "/>
+        <Button android:layout_gravity="center" android:id="@+id/but_set_url" android:padding="@dimen/dimen_18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Set URL"/>
+    </LinearLayout>
+</FrameLayout>

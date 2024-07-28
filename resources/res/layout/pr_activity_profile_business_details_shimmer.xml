@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.paytm.business.merchantprofile.widget.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/s_bf_container" android:tag="layout/pr_activity_profile_business_details_shimmer_0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/shmr_rl_parent_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <com.paytm.business.merchantprofile.widget.CircularImageView android:layout_width="124dp" android:layout_height="124dp" android:scaleType="centerCrop" app:civ_border="true" app:civ_border_color="#e1ecfc" app:srcCompat="@drawable/pr_business_placeholder"/>
+                <View android:background="#f5f9fe" android:layout_width="160dp" android:layout_height="30dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+            <View android:background="@drawable/pr_border_rounded_grey_6dp" android:layout_width="200dp" android:layout_height="40dp" android:foreground="#f5f9fe"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/shmr_rl_business_details_container_1" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <RelativeLayout android:id="@+id/ll_business_name_header_1" style="@style/pr_profile_header">
+                    <View android:layout_width="140dp" android:layout_height="30dp" android:layout_marginLeft="16dp"/>
+                    <View android:layout_width="120dp" android:layout_height="30dp" android:layout_marginRight="16dp" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_business_name_header_1">
+                    <View android:background="#f5f9fe" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginLeft="16dp"/>
+                    <View android:background="#f5f9fe" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginRight="16dp" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/shmr_rl_business_details_container_2" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/shmr_rl_business_details_container_1">
+                <RelativeLayout android:id="@+id/ll_business_name_header_2" style="@style/pr_profile_header">
+                    <View android:layout_width="140dp" android:layout_height="30dp" android:layout_marginLeft="16dp"/>
+                    <View android:layout_width="120dp" android:layout_height="30dp" android:layout_marginRight="16dp" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_business_name_header_2">
+                    <View android:background="#f5f9fe" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginLeft="16dp"/>
+                    <View android:background="#f5f9fe" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginRight="16dp" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#506d85" android:gravity="center" android:background="@drawable/pr_border_rounded_grey_6dp" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="42dp" android:foreground="?attr/selectableItemBackground" android:text="@string/pr_logout_spaced" android:layout_alignParentBottom="true" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+        </RelativeLayout>
+    </LinearLayout>
+</com.paytm.business.merchantprofile.widget.ShimmerFrameLayout>

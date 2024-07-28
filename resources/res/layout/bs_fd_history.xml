@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/rounded_bottomsheet" android:layout_width="match_parent" android:layout_height="wrap_content"> xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; /&gt; 
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="30dp" android:paddingRight="@dimen/dimen_16dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10dp" android:layout_marginRight="-10dp" android:src="@drawable/pb_ic_close_black_bank" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="12sp" android:textColor="#222222" android:id="@+id/tv_fd_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_below="@+id/tv_amount"/>
+            <TextView android:textSize="24sp" android:textColor="#222222" android:id="@+id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_fd_detail" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_progress_bar_wrapper" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/pb_progress" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_100dp" android:indeterminateDrawable="@drawable/pb_pb_paytm_progress" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

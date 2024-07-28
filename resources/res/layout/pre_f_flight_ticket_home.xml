@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroll_view_flight_home" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/pre_f_flight_home_fragment_lyt"/>
+            <FrameLayout android:id="@+id/framelayout_storefront" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/bus_fragment_container"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:id="@+id/lyt_progress_bar_flight_home" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

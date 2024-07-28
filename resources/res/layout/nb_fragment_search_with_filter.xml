@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_back_button" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_20dp" android:paddingRight="@dimen/dimen_5dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:onClick="onClick"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/nearby_title_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_back_button" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_back_button">
+            <com.paytm.utility.RoboTextView android:textSize="17dp" android:textColor="@color/color_222222" android:id="@+id/tv_toolbar_title" android:padding="@dimen/dimen_17dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nearby_heading_name" android:layout_centerVertical="true" app:fontType="3"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_down_menu_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/arrow_down"/>
+        </LinearLayout>
+        <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ProgressBar android:id="@+id/progress_nearbyLoader" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_weight="0.5" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/nearbyfragment_error_layout_id" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/nearby_subcategory_recycler_list" android:background="#f4f4f4" android:padding="7dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/nearby_recycler_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_bottom_bar" android:layout_below="@+id/nearby_subcategory_recycler_list"/>
+    <RelativeLayout android:id="@+id/rl_bottom_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50dp" android:layout_alignParentBottom="true">
+        <View android:id="@+id/view_divider" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/view_divider" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_666666" android:id="@+id/tv_sort_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nearby_sort_by" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_333333" android:id="@+id/tv_refine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_3dp" android:text="@string/nearby_pay_with_paytm" android:layout_toRightOf="@+id/tv_sort_by" android:fontFamily="sans-serif"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_7dp" android:src="@drawable/toggle_grey_arrow_up" android:layout_toRightOf="@+id/tv_refine"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

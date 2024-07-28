@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/app_task_pop_bg" android:layout_width="260dp" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="15dp" android:layout_width="260dp" android:layout_height="wrap_content" android:layout_marginTop="120dp">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@+id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp"/>
+        <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="#0eb912" android:gravity="center" android:id="@+id/bonus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:paddingStart="24dp" android:paddingEnd="24dp"/>
+        <TextView android:textSize="12sp" android:textColor="#ff808080" android:gravity="center" android:id="@+id/message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:paddingStart="24dp" android:paddingEnd="24dp"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/btn_okay" android:background="@drawable/shape_solid_yellow" android:visibility="gone" android:layout_width="212dp" android:layout_height="44dp" android:layout_marginTop="25dp" android:layout_marginBottom="9dp" android:singleLine="true" android:paddingStart="2dp" android:paddingEnd="2dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/image" android:layout_width="120dp" android:layout_height="120dp" android:src="@drawable/task_pop_prize"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lyt_title" android:background="@color/light_grey" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="16sp" android:id="@+id/display_name" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontType="4"/>
+        <com.paytm.utility.RoboTextView android:textSize="16sp" android:id="@+id/description" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontType="2"/>
+    </LinearLayout>
+    <View android:id="@+id/separator_1" android:background="@color/separators" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/lyt_title"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/switch_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/separator_1"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/h5_web_content" android:background="@color/h5_provider" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/h5_ly_provider_layout" android:background="@color/h5_transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="true">
+        <TextView android:textColor="@color/h5_provider_text" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/h5_tv_provider_domain" android:background="@color/h5_transparent" android:paddingTop="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="5dp"/>
+        <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/h5_ly_providerLayout" android:background="@color/h5_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="true">
+            <TextView android:textColor="@color/h5_provider_text" android:gravity="center" android:id="@+id/h5_tv_provider_uclogo" android:background="@color/h5_transparent" android:paddingTop="1dp" android:layout_width="16dp" android:layout_height="16dp" android:lineSpacingExtra="5dp"/>
+            <TextView android:textColor="@color/h5_provider_text" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/h5_tv_provider_uc" android:background="@color/h5_transparent" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.alipay.mobile.nebula.refresh.H5PullContainer android:id="@+id/h5_pc_container" android:background="@color/h5_transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/h5_h_divider" android:background="@color/h5_nav_bar_bottomline" android:layout_width="match_parent" android:layout_height="1px"/>
+    <com.alipay.mobile.nebula.view.H5Progress android:id="@+id/h5_pb_progress" android:layout_width="match_parent" android:layout_height="3dp" android:max="100" android:progress="0" android:secondaryProgress="0" android:indeterminate="false" android:layout_alignParentTop="true" style="@style/h5_wb_progress"/>
+    <com.alipay.mobile.nebula.view.H5LoadingView android:id="@+id/h5_loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

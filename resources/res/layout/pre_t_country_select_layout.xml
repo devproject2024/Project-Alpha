@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/select_train_lyt" android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/pre_t_train_train_rounded_corner" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                <ImageView android:id="@+id/back_button" android:padding="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_5dp" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                <EditText android:textSize="16sp" android:id="@+id/country_search" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/seacrh_country" android:singleLine="true" android:layout_toRightOf="@+id/back_button" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone" android:layout_toStartOf="@+id/close_icon" android:layout_toEndOf="@+id/back_button"/>
+                <ImageButton android:id="@+id/close_icon" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/pre_t_ic_close_promo_popup" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/light_grey_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/suggestion_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/color_000000" android:id="@+id/no_suggestions_found" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_suggestions_found" app:fontType="4"/>
+            <TextView android:textSize="15sp" android:textColor="@color/dark_gray" android:id="@+id/message_verify_text" android:background="@android:color/transparent" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/make_sure_your_search_is_spelled_correctly_or_try_a_different_search" android:layout_below="@+id/no_suggestions_found"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/suggestion_lyt">
+            <ListView android:id="@+id/country_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/most_visited"/>
+            <ProgressBar android:id="@+id/progress_city" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

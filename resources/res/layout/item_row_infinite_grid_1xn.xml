@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/item_row_infinite_grid_1xn_0" android:paddingTop="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16dp" android:paddingEnd="@dimen/dimen_16dp">
+    <ImageView android:id="@+id/product_image" android:tag="binding_1" android:layout_width="90dp" android:layout_height="@dimen/list_image_height" android:scaleType="fitCenter"/>
+    <TextView android:textStyle="bold" android:textColor="@color/clp_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/item_addTag" android:tag="binding_2" android:background="@drawable/clp_bg_ad_tag" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" android:text="@string/clp_sponsored_ad" android:layout_marginStart="-30dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_18dp">
+        <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="bold" android:textColor="@color/clp_home_bs1" android:ellipsize="end" android:id="@+id/BrandNameTV" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/filter_text_color" android:ellipsize="end" android:id="@+id/productNameTV" android:tag="binding_4" android:paddingBottom="@dimen/dimen_4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/price_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="@color/clp_label2" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/dimen_4dp"/>
+            <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/filter_text_color" android:id="@+id/actualPriceTV" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/dimen_4dp"/>
+            <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/green_text_color" android:id="@+id/discountPercentTV" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dimen_12sp" android:id="@+id/offerPriceTV" android:paddingTop="@dimen/dimen_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=",mnfd,snbds,gae"/>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:tag="binding_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_14dp">
+            <include android:id="@+id/variantLayout" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/dimen_12dp" layout="@layout/layout_variant_box"/>
+            <FrameLayout android:id="@+id/cart_container" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:id="@+id/addToCartLayout" android:visibility="gone" layout="@layout/layout_add_to_cart"/>
+                <include android:id="@+id/editCartLayout" android:visibility="visible" layout="@layout/layout_edit_cart"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/star" android:tag="binding_10" android:layout_width="@dimen/dimen_12dp" android:layout_height="@dimen/dimen_12dp" android:src="@drawable/clp_star_icon"/>
+            <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="bold" android:textColor="#eac945" android:gravity="center" android:id="@+id/rating" android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+            <TextView android:textSize="@dimen/dimen_12sp" android:textColor="#8ba6c1" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="@dimen/dimen_2dp"/>
+            <View android:layout_gravity="center" android:id="@+id/badgeSeparator" android:background="#a7afb6" android:layout_width="@dimen/dimen_1dp" android:layout_height="@dimen/dimen_12dp" android:layout_marginStart="@dimen/dimen_8dp" android:layout_marginEnd="@dimen/dimen_8dp"/>
+            <ImageView android:id="@+id/badgeIV" android:layout_width="@dimen/dimen_12dp" android:layout_height="@dimen/dimen_12dp" android:scaleType="fitCenter" android:layout_marginEnd="@dimen/dimen_8dp"/>
+            <TextView android:textSize="@dimen/dimen_12sp" android:textColor="#173062" android:id="@+id/badgeTV" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Brand Authorized" android:includeFontPadding="false" android:layout_weight="1"/>
+            <ImageView android:id="@+id/item_heart" android:tag="binding_13" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

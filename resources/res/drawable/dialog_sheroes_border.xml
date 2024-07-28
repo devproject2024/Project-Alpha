@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <solid android:color="@color/sheroes_white"/>
+    <stroke android:width="@dimen/sheroes_dp_size_0.5" android:color="#dcdcdc"/>
+    <corners android:topLeftRadius="@dimen/sheroes_dp_size_6" android:topRightRadius="@dimen/sheroes_dp_size_6" android:bottomLeftRadius="@dimen/sheroes_dp_size_6" android:bottomRightRadius="@dimen/sheroes_dp_size_6"/>
+</shape>

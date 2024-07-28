@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="18sp" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/row_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:layout_marginTop="10dp" android:text="Events" android:fontFamily="sans-serif-medium"/>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/events_carousel_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginBottom="8dp" android:layout_below="@+id/row_title_tv"/>
+</RelativeLayout>

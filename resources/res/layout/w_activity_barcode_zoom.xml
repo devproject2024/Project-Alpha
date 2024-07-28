@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/ll_balance_header">
+    <androidx.appcompat.widget.Toolbar android:gravity="center" android:id="@+id/activity_show_code_toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/activity_show_code_btn_back" android:padding="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true" android:contentDescription="TODO"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/activity_show_code_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_5dp" android:layout_centerHorizontal="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_bar_logo_paytm" android:contentDescription="TODO"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/color_f3f7f8" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/activity_show_code_header">
+        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_222222" android:id="@+id/activity_show_code_heading2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p2b_wallet_rs"/>
+        <TextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_00b9f5" android:id="@+id/tv_add_money" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:text="@string/add_money" android:layout_marginStart="1dp"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/wallet_17sp" android:textColor="@color/heading_color_show_code_heading" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="27dp" android:layout_marginRight="@dimen/dimen_10dp" android:text="@string/offline_show_code_heading_new" android:fontFamily="@string/font_family_roboto_medium"/>
+    <ImageView android:id="@+id/activity_barcode_zoom_iv_barcode" android:layout_width="150dp" android:layout_height="match_parent" android:layout_margin="20dp" android:contentDescription="TODO"/>
+</LinearLayout>

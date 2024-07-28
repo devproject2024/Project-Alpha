@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_fafafa" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/top_toolabar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/back_arrow" android:paddingLeft="5dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="16sp" android:textColor="#ff191919" android:ellipsize="end" android:id="@+id/top_title" android:padding="2dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_location" android:singleLine="true" android:layout_toLeftOf="@+id/search_icon_img" android:layout_toRightOf="@+id/back_arrow" android:layout_centerVertical="true" app:fontType="3"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:id="@+id/location_map" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="#ff494949" android:ellipsize="end" android:id="@+id/txt_view_full_map_address_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/full_map_address_header_left_margin" android:layout_marginTop="@dimen/full_map_address_header_top_margin" android:layout_marginRight="@dimen/dimen_10dp" app:fontType="4"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="#ff494949" android:id="@+id/txt_view_full_map_address_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/full_map_address_text_left_margin" android:layout_marginTop="@dimen/full_map_address_text_top_margin" android:layout_marginRight="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/full_map_address_text_bottom_margin" android:lineSpacingExtra="2dp"/>
+    </LinearLayout>
+</LinearLayout>

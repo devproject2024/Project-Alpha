@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/searchLayout" layout="@layout/search_layout_recharge_v3"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_24dp" android:layout_below="@+id/searchLayout"/>
+    <View android:id="@+id/dummySpaceView" android:visibility="gone" android:layout_width="@dimen/dimen_10dp" android:layout_height="@dimen/dimen_80dp" android:layout_marginTop="@dimen/dimen_34dp" android:layout_below="@+id/searchLayout"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/alphabetRV" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24dp" android:layout_below="@+id/dummySpaceView" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

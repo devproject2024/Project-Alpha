@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/bottom_sheet" android:background="@drawable/pb_fg_bottom_sheet_rectangle" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/tv_manage_fd_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_19dp" android:layout_marginTop="@dimen/dimen_37dp" android:text="@string/pb_fg_manage_fixed_deposit" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_19dp"/>
+        <ImageView android:id="@+id/iv_close" android:background="@drawable/pb_fg_close" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="@dimen/dimen_37dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/tds_lyt" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#00b9f5" android:id="@+id/tv_tds_certificate" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/pb_tds_page_title" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif-medium"/>
+        <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/dimen_20dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/interest_lyt" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#00b9f5" android:id="@+id/interest_certificate" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pb_coi_page_title" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif-medium"/>
+        <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/dimen_20dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/submit_fg_lyt" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp">
+        <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#00b9f5" android:id="@+id/tv_submit_form15g" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Submit Form 15G" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="11sp" android:textStyle="normal" android:textColor="#444444" android:gravity="center" android:id="@+id/tv_form_status" android:background="@drawable/pb_fg_background_round" android:paddingLeft="@dimen/dimen_12dp" android:paddingTop="@dimen/dimen_3dp" android:paddingRight="@dimen/dimen_12dp" android:paddingBottom="@dimen/dimen_3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+</LinearLayout>

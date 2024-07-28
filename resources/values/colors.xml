@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mt_post_payment_pending">#ff9c56</color>
+    <color name="mt_grey_color">#999999</color>
+    <color name="mt_blue_paytm">#00b9f5</color>
+    <color name="mt_swipe_settings">#009bce</color>
+    <color name="mt_neft_hint_color">#ffad00</color>
+    <color name="mt_current_account_label_color">#506d85</color>
+    <color name="mt_beneficiary_bg_outline">#f5f8fa</color>
+    <color name="mt_beneficiary_view_all_blue">#00aced</color>
+    <color name="mt_shimmer">#f5f8fa</color>
+
+
+    <color name="color_2cce86">#2cce86</color>
+    <color name="color_6c7cff">#6c7cff</color>
+    <color name="color_ffa400">#ffa400</color>
+    <color name="color_b069ec">#b069ec</color>
+    <color name="color_40cdd8">#40cdd8</color>
+    <color name="color_fd5c7f">#fd5c7f</color>
+    <color name="color_f2c110">#f2c110</color>
+    <color name="color_f36bb4">#f36bb4</color>
+    <color name="color_3ab6f4">#3ab6f4</color>
+    <color name="color_a6b7be">#a6b7be</color>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:tag="layout/item_collage_5xn_0" android:focusableInTouchMode="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:tag="binding_1" android:layout_width="110dp" android:layout_height="110dp" android:scaleType="fitXY"/>
+        <ImageView android:tag="binding_2" android:layout_width="110dp" android:layout_height="110dp" android:layout_marginTop="@dimen/dimen_5dp" android:scaleType="fitXY"/>
+    </LinearLayout>
+    <ImageView android:tag="binding_3" android:layout_width="115dp" android:layout_height="225dp" android:scaleType="fitXY" android:layout_marginStart="5.5dp" android:layout_marginEnd="5.5dp" cornerRadius="2dp"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:tag="binding_4" android:layout_width="110dp" android:layout_height="134dp" android:scaleType="fitXY"/>
+        <ImageView android:tag="binding_5" android:layout_width="110dp" android:layout_height="86dp" android:layout_marginTop="@dimen/dimen_6dp" android:scaleType="fitXY"/>
+    </LinearLayout>
+</LinearLayout>

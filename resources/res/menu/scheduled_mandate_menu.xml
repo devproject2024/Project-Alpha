@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/edit_mandate" android:visible="false" android:title="@string/upi_mandate_edit" app:showAsAction="never"/>
+    <item android:id="@+id/pause_payment" android:visible="false" android:title="@string/mandate_pause_payment" app:showAsAction="never"/>
+    <item android:id="@+id/resume_payment" android:visible="false" android:title="@string/mandate_resume_payment" app:showAsAction="never"/>
+    <item android:id="@+id/cancel_mandate" android:visible="false" android:title="@string/upi_mandate_cancel" app:showAsAction="never"/>
+    <item android:id="@+id/view_invoice" android:visible="false" android:title="@string/upi_mandate_view_invoice" app:showAsAction="never"/>
+    <item android:id="@+id/need_help" android:visible="true" android:title="@string/upi_need_help" app:showAsAction="never"/>
+</menu>

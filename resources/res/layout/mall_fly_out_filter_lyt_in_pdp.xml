@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/lyt_filter_overlay" android:background="@color/creamy_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/lyt_filter_overlay_item_1" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/lyt_filter_overlay_item_1_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@android:color/black" android:gravity="left" android:id="@+id/filter_type_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/filter_type_1_expand"/>
+                <TextView android:textColor="@android:color/black" android:id="@+id/filter_type_1_expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <com.paytmmall.artifact.widget.CJRFlowLayout android:id="@+id/lyt_filter_type_1_options_container" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/lyt_filter_overlay_item_1_header"/>
+        </RelativeLayout>
+        <View android:id="@+id/separator_filter_overlay" android:background="@color/separators" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/lyt_filter_overlay_item_1"/>
+        <RelativeLayout android:id="@+id/lyt_filter_overlay_item_2" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/separator_filter_overlay">
+            <RelativeLayout android:id="@+id/lyt_filter_overlay_item_2_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@android:color/black" android:gravity="left" android:id="@+id/filter_type_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/filter_type_2_expand"/>
+                <TextView android:textColor="@android:color/black" android:id="@+id/filter_type_2_expand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  +" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <com.paytmmall.artifact.widget.CJRFlowLayout android:id="@+id/lyt_filter_type_2_options_container" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/lyt_filter_overlay_item_2_header"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

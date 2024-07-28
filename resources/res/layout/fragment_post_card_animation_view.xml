@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/postcard_landing_scr_bg" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/ll_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_25dp">
+        <ImageView android:id="@+id/iv_back_button" android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="@dimen/dimen_15dp" android:src="@drawable/ic_arrow_back_white_24dp" android:contentDescription="TODO"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/animation_ll" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/loading_lifafa_lav" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/open_lifafa_lav" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/error_ll" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/envelope_close" android:contentDescription="TODO"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/error_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="TODO"/>
+        </FrameLayout>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_15sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/error_tv" android:padding="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_50dp" android:fontFamily="@string/font_family_roboto_regular"/>
+        <TextView android:textSize="@dimen/cart_13sp" android:textColor="@color/white" android:id="@+id/go_back_tv" android:background="@drawable/lifafa_go_back_drawable" android:paddingLeft="@dimen/dimen_27dp" android:paddingTop="@dimen/dimen_7dp" android:paddingRight="@dimen/dimen_27dp" android:paddingBottom="@dimen/dimen_7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30dp" android:text="@string/go_back"/>
+    </LinearLayout>
+</LinearLayout>

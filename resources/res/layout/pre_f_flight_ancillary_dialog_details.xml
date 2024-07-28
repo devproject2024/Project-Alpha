@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TableLayout android:id="@+id/lyt_fare_details" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <TableRow android:paddingTop="5dp" android:paddingBottom="5dp">
+                    <com.paytm.utility.RoboTextView android:textSize="15sp" android:textColor="#ff4d4d4d" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/flight_ancillary_addons" android:singleLine="true" android:layout_weight="1" app:fontType="4"/>
+                    <ImageView android:gravity="right" android:id="@+id/image_view_conv_fee_details_close_button" android:layout_width="@dimen/wallet_15_dp" android:layout_height="@dimen/wallet_15_dp" android:layout_marginLeft="@dimen/wallet_9_dp"/>
+                </TableRow>
+                <TableRow android:layout_marginTop="12dp">
+                    <View android:background="#ffefefef" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_weight="1"/>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/linear_meal_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp">
+                <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="#ff1a1a1a" android:id="@+id/ancillary_title" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp" android:text="@string/flight_meal" android:layout_centerVertical="true" app:fontType="3"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/meals_item_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp"/>
+                <View android:background="#ffefefef" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_15dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/linear_baggage_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp">
+                <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="#ff1a1a1a" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_10dp" android:text="@string/flight_baggage" android:layout_centerVertical="true" app:fontType="3"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/baggage_item_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

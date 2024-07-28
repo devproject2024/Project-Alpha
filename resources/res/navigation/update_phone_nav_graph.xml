@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/sim_changed_nav_graph" app:startDestination="@+id/selectIssueFragment">
+    <fragment android:name="net.one97.paytm.oauth.fragment.SelectIssueFragment" android:id="@+id/selectIssueFragment">
+        <action android:id="@+id/navActionEmailEnterOtp" app:destination="@+id/verifyEmailPhoneOtpFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+        <action android:id="@+id/navActionForgotPwd" app:destination="@+id/forgotPasswordActivity" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+        <action android:id="@+id/navActionSavedCardList" app:destination="@+id/savedCardListFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+        <action android:id="@+id/navConfirm" app:destination="@+id/confirmUpdatePhoneFragment"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.SavedCardListFragment" android:id="@+id/savedCardListFragment">
+        <argument android:name="stateToken" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="verifierId" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="previous_screen_name" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/navActionEnterNewNumber" app:destination="@+id/enterNewNumberFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.VerifyEmailPhoneOtpFragment" android:id="@+id/verifyEmailPhoneOtpFragment">
+        <argument android:name="meta" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="stateToken" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="mobileNo" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="mode" android:defaultValue="email" app:argType="string" app:nullable="false"/>
+        <argument android:name="is_update_email" android:defaultValue="false" app:argType="boolean" app:nullable="false"/>
+        <argument android:name="previous_screen_name" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/navActionEnterNewNumber" app:destination="@+id/enterNewNumberFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+        <action android:id="@+id/navActionEmailOtp" app:destination="@+id/verifyEmailPhoneOtpFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+        <action android:id="@+id/navActionSavedCardList" app:destination="@+id/savedCardListFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.EnterNewNumberFragment" android:id="@+id/enterNewNumberFragment">
+        <argument android:name="stateToken" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="previous_screen_name" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="verifyFlow" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/navActionEnterOtp" app:destination="@+id/mobileEnterOtpFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.NewNumberOtpFragment" android:id="@+id/mobileEnterOtpFragment">
+        <argument android:name="mobileNo" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="previous_screen_name" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="stateToken" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="verifyFlow" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/navNumberUpdateSuccess" app:destination="@+id/numberUpdateSuccessFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.NumberUpdateSuccessFragment" android:id="@+id/numberUpdateSuccessFragment">
+        <argument android:name="mobileNo" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="previous_screen_name" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="verifyFlow" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.UpdatePhoneConfirmBottomFragment" android:id="@+id/confirmUpdatePhoneFragment"/>
+    <activity android:label="Forgot Password" android:name="net.one97.paytm.oauth.activity.ForgotPasswordContainerActivity" android:id="@+id/forgotPasswordActivity"/>
+</navigation>

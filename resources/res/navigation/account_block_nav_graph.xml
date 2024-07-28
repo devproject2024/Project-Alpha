@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/account_block_nav_graph" app:startDestination="@+id/accountBlockReasonFragment">
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountBlockReasonFragment" android:id="@+id/accountBlockReasonFragment">
+        <argument android:name="meta" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="state" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="logout" android:defaultValue="false" app:argType="Boolean"/>
+        <action android:id="@+id/navActionAccountBlockConfirmed" app:destination="@+id/accountBlockConfirmedFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.AccountBlockConfirmedFragment" android:id="@+id/accountBlockConfirmedFragment">
+        <argument android:name="meta" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="logout" android:defaultValue="false" app:argType="Boolean"/>
+    </fragment>
+</navigation>

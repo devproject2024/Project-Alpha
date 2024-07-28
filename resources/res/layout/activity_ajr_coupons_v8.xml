@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/dealsAppBar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/dealsCollapsingToolbar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:collapsedTitleTextAppearance="@style/CollapseTextView" app:expandedTitleGravity="50" app:expandedTitleMarginBottom="@dimen/dimen_12dp" app:expandedTitleMarginStart="@dimen/dimen_20dp" app:expandedTitleTextAppearance="@style/ExpandTextView" app:layout_scrollFlags="3">
+            <FrameLayout android:id="@+id/dealsFrameLayout" android:background="@color/color_ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/rechargeInfoLayout" android:background="@color/color_f3f7f8" android:paddingBottom="@dimen/dimen_19dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_44dp" android:layout_marginBottom="@dimen/dimen_42dp">
+                    <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/rechargeDetail" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dimen_15sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/tvRechargeNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_17dp" android:layout_marginRight="@dimen/dimen_20dp" android:lineSpacingExtra="@dimen/dimen_4sp" android:fontFamily="sans-serif" android:layout_toStartOf="@+id/tvRechargeAmount" android:layout_alignParentStart="true"/>
+                        <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/tvRechargeDetails" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_below="@+id/tvRechargeNumber" android:fontFamily="sans-serif" android:layout_toStartOf="@+id/tvRechargeAmount" android:layout_alignParentStart="true"/>
+                        <TextView android:textSize="@dimen/dimen_15sp" android:textStyle="bold" android:textColor="@color/color_222222" android:gravity="right" android:id="@+id/tvRechargeAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_22dp" android:layout_marginRight="@dimen/dimen_20dp" android:text="@string/xxxx" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:fontFamily="sans-serif-medium"/>
+                        <net.one97.paytm.recharge.coupons.widget.CJRDealSelectWidgetV8 android:id="@+id/widgetSelectDeal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/tvRechargeDetails"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/expandWidget" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_30dp" android:layout_marginBottom="@dimen/dimen_30dp">
+                    <ImageView android:id="@+id/expandMenu" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" app:srcCompat="@drawable/ic_expand_collapse"/>
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/transparent_view_1" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_44dp"/>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/dealsToolbar" android:background="@color/color_f3f7f8" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_44dp" app:layout_collapseMode="1" app:layout_scrollFlags="5"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_40dp" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include layout="@layout/content_coupons_v8"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:id="@+id/proceedLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/v8_apply_promo_coupons"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/transparent_view_2" android:visibility="gone" android:scrollbars="none" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/wallet_Fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-15dp" app:layout_constraintBottom_toBottomOf="0"/>
+    <RelativeLayout android:id="@+id/relativeLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <include android:id="@+id/lyt_wallet_loader" android:layout_width="match_parent" android:layout_height="40dp" layout="@layout/layout_wallet_loader"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

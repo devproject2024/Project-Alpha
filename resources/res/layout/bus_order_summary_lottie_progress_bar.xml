@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/lyt_progress_bar" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:translationZ="@dimen/dimen_10dp">
+    <com.airbnb.lottie.LottieAnimationView android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_25dp" android:layout_centerInParent="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="12" app:duration="@android:integer/config_mediumAnimTime" app:lottie_autoPlay="true" app:lottie_fileName="Payments-Loader.json" app:lottie_loop="true"/>
+</RelativeLayout>

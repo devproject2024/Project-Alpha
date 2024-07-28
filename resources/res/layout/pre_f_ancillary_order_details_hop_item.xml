@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_container" android:paddingTop="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/color_222222" android:gravity="center_vertical" android:id="@+id/source_hop_ita" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BLR" android:singleLine="true" app:fontType="2"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/img_arrow_hops" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6dp" android:layout_marginRight="@dimen/dimen_6dp" app:srcCompat="@drawable/pre_f_flight_arrow_right_black"/>
+        <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/destination_hop_ita" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CCU" android:maxLines="1" app:fontType="2"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/linear_meal_header" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_13dp">
+        <ImageView android:id="@+id/flight_meal_ancillary_icon" android:layout_width="@dimen/dimen_18dp" android:layout_height="@dimen/dimen_21dp" android:layout_marginBottom="@dimen/dimen_5dp" android:scaleType="fitCenter"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="#ff1a1a1a" android:id="@+id/ancillary_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_meal" android:layout_centerVertical="true" app:fontType="3"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/meals_item_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/lyt_baggage_header" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_13dp" android:layout_marginBottom="@dimen/dimen_20dp">
+        <ImageView android:id="@+id/flight_baggage_ancillary_icon" android:layout_width="@dimen/dimen_18dp" android:layout_height="@dimen/dimen_21dp" android:layout_marginBottom="@dimen/dimen_5dp" android:scaleType="fitCenter"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp">
+            <com.paytm.utility.RoboTextView android:textSize="14sp" android:textColor="#ff1a1a1a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flight_baggage" android:layout_centerVertical="true" app:fontType="3"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/baggage_item_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="#ffefefef" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_7dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

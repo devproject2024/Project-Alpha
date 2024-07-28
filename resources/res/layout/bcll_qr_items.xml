@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/white_qr_bg" android:padding="@dimen/dimen_1dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/e_qr_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rel_bus_count" android:padding="@dimen/dimen_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_8dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_999999" android:ellipsize="end" android:id="@+id/text_view_filter_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:fontType="1"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/rel_sortby_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12dp" android:layout_marginRight="@dimen/dimen_12dp" android:layout_alignParentEnd="true">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_11sp" android:textColor="@color/color_bebebe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sorted_by"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_11sp" android:textColor="@color/color_8c8c8c" android:id="@+id/tv_sortby_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_3dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rel_bus_count">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_bus_search" android:background="#f9f9f9" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lin_reset_your_filter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp" android:layout_below="@+id/list_bus_search" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/dimen_11sp" android:textColor="@color/color_8c8c8c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_more_bus_text"/>
+            <TextView android:textSize="@dimen/dimen_11sp" android:textColor="@color/color_00b9f5" android:id="@+id/reset_your_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reset_your_filters" android:layout_marginStart="@dimen/dimen_3dp"/>
+        </LinearLayout>
+        <include android:id="@+id/sticky_header_group_layout" layout="@layout/pre_b_srp_operator_header_layout"/>
+        <FrameLayout android:id="@+id/review_fragment_container" android:background="#d9989898" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:id="@+id/review_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <TextView android:textColor="@color/cart_black" android:gravity="center" android:id="@+id/travels_name" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/name"/>
+                    <View android:id="@+id/divider" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/travels_name"/>
+                    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/divider">
+                        <TextView android:textColor="@color/cart_black" android:id="@+id/no_reviews" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_reviews" android:layout_centerInParent="true"/>
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/bus_review_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+                        <ProgressBar android:id="@+id/bus_review_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

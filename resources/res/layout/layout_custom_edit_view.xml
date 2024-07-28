@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/lyt_custom_edit_view" android:background="@android:color/transparent" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_floating_hint" android:id="@+id/floating_hint" android:background="@null" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+    <EditText android:id="@+id/edit_view" android:background="@null" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@+id/floating_hint"/>
+    <View android:id="@+id/image_underline" android:background="@drawable/edit_view_divider" android:clickable="false" android:layout_width="match_parent" android:layout_height="4dp" android:layout_below="@+id/edit_view" android:contentDescription="@string/app_name"/>
+</LinearLayout>

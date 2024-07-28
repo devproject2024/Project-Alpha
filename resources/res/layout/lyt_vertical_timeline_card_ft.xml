@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/vertical_tl_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <net.one97.paytm.marketplace.widgets.CJRVerticalStateProgressView android:id="@+id/vertical_tl_view_expanded" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <net.one97.paytm.marketplace.widgets.CJRVerticalStateProgressView android:id="@+id/vertical_tl_view_collapsed" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/status_details_container" android:background="@drawable/ft_rectangle" android:visibility="gone" android:layout_width="@dimen/dimen_240dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_20dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_15sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_12dp" app:fontType="3"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:textColor="@color/color_4a4a4a" android:id="@+id/vertical_tl_details" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_12dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_5dp" app:fontType="2"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/action_buttons_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_17dp"/>
+        <View android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dimen_17dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/arrow_exp_coll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/arrow_down_black_ft" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

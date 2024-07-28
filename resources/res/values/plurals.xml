@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="numberOfAnswers">
+        <item quantity="zero">Answer</item>
+        <item quantity="one">Answer</item>
+        <item quantity="other">Answers</item>
+    </plurals>
+    <plurals name="numberOfComments">
+        <item quantity="zero">Comments</item>
+        <item quantity="one">Comment</item>
+        <item quantity="other">Comments</item>
+    </plurals>
+    <plurals name="numberOfLikes">
+        <item quantity="zero">Likes</item>
+        <item quantity="one">Like</item>
+        <item quantity="other">Likes</item>
+    </plurals>
+    <plurals name="numberOfMembers">
+        <item quantity="zero">Member</item>
+        <item quantity="one">Member</item>
+        <item quantity="other">Members</item>
+    </plurals>
+    <plurals name="bus_duration_hrs">
+        <item quantity="one">%dH</item>
+        <item quantity="other">%dH</item>
+    </plurals>
+    <plurals name="bus_duration_mins">
+        <item quantity="one">%dM</item>
+        <item quantity="other">%dM</item>
+    </plurals>
+    <plurals name="bus_rating_str">
+        <item quantity="one">Rating</item>
+        <item quantity="other">Ratings</item>
+    </plurals>
+    <plurals name="cart_item">
+        <item quantity="zero">(%1$d item)</item>
+        <item quantity="one">(%1$d item)</item>
+        <item quantity="other">(%1$d items)</item>
+    </plurals>
+    <plurals name="chat_numberOfDays">
+        <item quantity="one">%d Day Ago</item>
+        <item quantity="other">%d Days Ago</item>
+    </plurals>
+    <plurals name="chat_numberOfHours">
+        <item quantity="one">%d Hour Ago</item>
+        <item quantity="other">%d Hours Ago</item>
+    </plurals>
+    <plurals name="chat_numberOfMinutes">
+        <item quantity="one">%d Minute Ago</item>
+        <item quantity="other">%d Minutes Ago</item>
+    </plurals>
+    <plurals name="chat_numberOfSeconds">
+        <item quantity="one">%d Second Ago</item>
+        <item quantity="other">%d Seconds Ago</item>
+    </plurals>
+    <plurals name="count_channel_placeholder">
+        <item quantity="one">(1 channel)</item>
+        <item quantity="other">@string/count_channels</item>
+    </plurals>
+    <plurals name="coupon_deal">
+        <item quantity="one">1 Deal</item>
+        <item quantity="other">%1$d Deals</item>
+    </plurals>
+    <plurals name="feedback_rate_message">
+        <item quantity="one">You have rated 1 star</item>
+        <item quantity="other">You have rated %1$d stars</item>
+    </plurals>
+    <plurals name="inbox_notification_title">
+        <item quantity="one">1 New Message</item>
+        <item quantity="other">%d New Messages </item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+</resources>

@@ -1,0 +1,3197 @@
+{
+  "page_id": 8125,
+  "page_name": "Homepage Icons",
+  "context": {
+    "user": {},
+    "request_id": "214c5330-352e-11eb-ae45-e942a6aba2e4"
+  },
+  "page": [
+    {
+      "id": 300661,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 300661,
+          "title": "Featured",
+          "items": [
+            {
+              "id": 667096,
+              "priority": 2,
+              "name": "Paytm Postpaid",
+              "title": "PP_Icon_Featured_Default",
+              "subtitle": "Paytm Postpaid",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/667096/1603515455672.png",
+              "url_type": "embed",
+              "url": "paytmmp://paytm-postpaid",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://paytm-postpaid",
+              "reason": "D:FF"
+            },
+            {
+              "id": 676003,
+              "priority": 13,
+              "name": "Mobiles & Electronics",
+              "title": "Women's Fashion",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/676003/1604482942539.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/grand-gadget-diwali-sale?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 55581,
+              "ga_category": "Mall-Consumer Electronics",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "url_key": "grand-gadget-diwali-sale",
+              "seourl": "https://storefront.paytm.com/v2/h/grand-gadget-diwali-sale?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/grand-gadget-diwali-sale-clpid-55581?src=store&from=storefront",
+              "reason": "D:FF"
+            },
+            {
+              "id": 676004,
+              "priority": 20,
+              "name": "Fashion",
+              "title": "Women's Fashion",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/676004/1604483024403.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/brand-store/fashion-sale?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 165,
+              "ga_category": "Mall-Fashion",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "url_key": "brand-store/fashion-sale",
+              "seourl": "https://storefront.paytm.com/v2/h/brand-store/fashion-sale?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/fashion-sale-clpid-165?src=store&from=storefront",
+              "reason": "D:FF"
+            },
+            {
+              "id": 602320,
+              "priority": 23,
+              "name": "Movie Tickets",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/602320/1594887323819.png",
+              "url_type": "movietickets",
+              "url": "https://paytm.com/movies",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Movies",
+              "layout": {},
+              "seourl": "https://paytm.com/movies",
+              "reason": "D:FF"
+            },
+            {
+              "id": 602321,
+              "priority": 24,
+              "name": "Events",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/602321/1594887454443.png",
+              "url_type": "events",
+              "url": "https://paytm.com/events",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Events",
+              "layout": {},
+              "seourl": "https://paytm.com/events",
+              "reason": "D:FF"
+            },
+            {
+              "id": 604416,
+              "priority": 26,
+              "name": "Nearby Stores",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/604416/1605875600259.png",
+              "url_type": "embed",
+              "url": "paytmmp://nearbuy?h5_url=https://mystore.paytmstores.com",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Deals",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://nearbuy?h5_url=https://mystore.paytmstores.com",
+              "reason": "D:FF"
+            },
+            {
+              "id": 554789,
+              "priority": 31,
+              "name": "E-newspaper",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/554789/1596006407787.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/newspaper?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 55149,
+              "ga_category": "Others",
+              "layout": {},
+              "url_key": "newspaper",
+              "seourl": "https://storefront.paytm.com/v2/h/newspaper?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/newspaper-clpid-55149?src=store&from=storefront",
+              "reason": "D:FF"
+            },
+            {
+              "id": 554794,
+              "priority": 68,
+              "name": "Free Credit Score",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/554794/1596034196954.png",
+              "url_type": "embed",
+              "url": "paytmmp://fs-cir",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://fs-cir",
+              "reason": "D:FF"
+            },
+            {
+              "id": 554851,
+              "priority": 69,
+              "name": "Paytm First",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/554851/1590738756032.png",
+              "url_type": "embed",
+              "url": "paytmmp://joinprime",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://joinprime",
+              "reason": "D:FF"
+            },
+            {
+              "id": 685532,
+              "priority": 72,
+              "name": "Order Food",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/685532/1606202192518.png",
+              "url_type": "embed",
+              "url": "paytmmp://nearbuy?h5_url=https://mystore.paytmstores.com/delhi-ncr/clp/food-and-drink",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://nearbuy?h5_url=https://mystore.paytmstores.com/delhi-ncr/clp/food-and-drink",
+              "reason": "F:FF"
+            },
+            {
+              "id": 687736,
+              "priority": 83,
+              "name": "Online Shopping",
+              "title": "Online Shopping",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/687736/1606728670440.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/home?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 318,
+              "ga_category": "Cross Category",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "valid_from": "2020-11-28 00:00:00",
+              "valid_upto": "2020-12-05 23:59:00",
+              "layout": {},
+              "url_key": "home",
+              "seourl": "https://storefront.paytm.com/v2/h/home?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/home-clpid-318?src=store&from=storefront",
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 300661,
+              "container_id": 22053091,
+              "container_instance_id": "00000001CF0663D970D8E8E993A25A5FD06EC508"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": ""
+          },
+          "auto_scroll": "False"
+        }
+      ]
+    },
+    {
+      "id": 48387,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 48387,
+          "title": "Loans & Credit Card",
+          "items": [
+            {
+              "id": 667097,
+              "priority": 1,
+              "name": "Paytm Postpaid",
+              "title": "PP_Icon_L&I_Default",
+              "subtitle": "Paytm Postpaid",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/667097/1603515496394.png",
+              "url_type": "embed",
+              "url": "paytmmp://paytm-postpaid",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://paytm-postpaid",
+              "display_metadata": {
+                "subtitle": "Paytm Postpaid",
+                "name": "Paytm Postpaid",
+                "url": "paytmmp://paytm-postpaid",
+                "landing_page_type": "embed",
+                "id": 667097,
+                "created_at": "2020-10-24T04:58:04",
+                "metadata": {},
+                "title": "PP_Icon_L&I_Default",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1603515493648_1599647175171logo1paytmpostpaid.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 520618,
+              "priority": 12,
+              "name": "Free Credit Score",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/520618/1592486104377.png",
+              "url_type": "embed",
+              "url": "paytmmp://fs-cir",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Credit Card",
+              "layout": {},
+              "seourl": "paytmmp://fs-cir",
+              "display_metadata": {
+                "name": "Free Credit Score",
+                "url": "paytmmp://fs-cir",
+                "landing_page_type": "embed",
+                "id": 520618,
+                "created_at": "2020-02-27T11:04:26",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1582801411469_creditscore.png"
+              },
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 48387,
+              "container_id": 22045128,
+              "container_instance_id": "00000001872ABB521A9C57B1321792FE2313DF6D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 304042,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 304042,
+          "title": "Insurance",
+          "items": [
+            {
+              "id": 673645,
+              "priority": 1,
+              "name": "Insurance",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/673645/1604156522772.jpg",
+              "url_type": "utility",
+              "url": "https://catalog.paytm.com/v1/mobile/getproductlist/64739?group=brand&buyInsuranceEnabled=true",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Insurance",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1/mobile/getproductlist/64739?group=brand&buyInsuranceEnabled=true",
+              "reason": "D:FF"
+            },
+            {
+              "id": 673648,
+              "priority": 3,
+              "name": "Mobile Protection",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/673648/1604156976007.png",
+              "url_type": "embed",
+              "url": "paytmmp://groupinsurance?insurance_type=133",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Insurance",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://groupinsurance?insurance_type=133",
+              "reason": "D:FF"
+            },
+            {
+              "id": 673649,
+              "priority": 4,
+              "name": "Coronavirus Insurance",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/673649/1604158746338.png",
+              "url_type": "embed",
+              "url": "paytmmp://groupinsurance?insurance_type=134",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Insurance",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://groupinsurance?insurance_type=134",
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 304042,
+              "container_id": 22053812,
+              "container_instance_id": "000000014F44B4A65709EC794E76066E9430B430"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": "",
+            "bg_gradient": []
+          },
+          "auto_scroll": "False",
+          "is_bg_active": false
+        }
+      ]
+    },
+    {
+      "id": 59397,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 59397,
+          "title": "Online Shopping",
+          "items": [
+            {
+              "id": 687739,
+              "priority": 3,
+              "name": "Online Shopping",
+              "title": "Online Shopping",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/687739/1606481801943.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/home?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 318,
+              "ga_category": "Cross Category",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "valid_from": "2020-11-28 00:00:00",
+              "valid_upto": "2020-12-05 23:59:00",
+              "layout": {
+                "label": "Flat 8% Cashback"
+              },
+              "url_key": "home",
+              "seourl": "https://storefront.paytm.com/v2/h/home?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/home-clpid-318?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Online Shopping",
+                "landing_page_type": "homepage1",
+                "id": 687739,
+                "created_at": "2020-11-27T12:56:13",
+                "metadata": {},
+                "title": "Online Shopping",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1606476905979_payday128x128.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 675712,
+              "priority": 7,
+              "name": "Gadget Store",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/675712/1604470885954.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/grand-gadget-diwali-sale?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 55581,
+              "ga_category": "Mall-Consumer Electronics",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {
+                "label": "Flat 20%"
+              },
+              "url_key": "grand-gadget-diwali-sale",
+              "seourl": "https://storefront.paytm.com/v2/h/grand-gadget-diwali-sale?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/grand-gadget-diwali-sale-clpid-55581?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Gadget Store",
+                "landing_page_type": "homepage1",
+                "id": 675712,
+                "created_at": "2020-11-04T06:20:29",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1604468081736_mobileselectronicsshoponmall4.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 549821,
+              "priority": 8,
+              "name": "Electronics",
+              "title": "Electronics",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/549821/1599484674197.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/electronics?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 68,
+              "ga_category": "Mall-Consumer Electronics",
+              "layout": {},
+              "url_key": "electronics",
+              "seourl": "https://storefront.paytm.com/v2/h/electronics?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/electronics-clpid-68?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Electronics",
+                "landing_page_type": "homepage1",
+                "id": 549821,
+                "created_at": "2020-05-19T15:06:02",
+                "metadata": {},
+                "title": "Electronics",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1582047054369_electronics2c4.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 623837,
+              "priority": 12,
+              "name": "Mobiles",
+              "title": "mobiles",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/623837/1602511833563.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/mobiles-tablets?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 6942,
+              "ga_category": "Mall-Mobiles",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "url_key": "mobiles-tablets",
+              "seourl": "https://storefront.paytm.com/v2/h/mobiles-tablets?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/mobiles-tablets-clpid-6942?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Mobiles",
+                "landing_page_type": "homepage1",
+                "id": 623837,
+                "created_at": "2020-09-04T07:21:17",
+                "metadata": {},
+                "title": "mobiles",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599830644831_mobiles.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 623841,
+              "priority": 13,
+              "name": "Laptops",
+              "title": "Laptops",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/623841/1602166718508.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/laptops?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 1272,
+              "ga_category": "Mall-Laptops and PC",
+              "shareable": "1",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "url_key": "laptops",
+              "seourl": "https://storefront.paytm.com/v2/h/laptops?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/laptops-clpid-1272?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Laptops",
+                "landing_page_type": "homepage1",
+                "id": 623841,
+                "created_at": "2020-09-04T07:22:46",
+                "metadata": {},
+                "title": "Laptops",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599120095255_laptops8.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 517661,
+              "priority": 14,
+              "name": "Men's Fashion",
+              "title": "Men's Fashion",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517661/1599633750743.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/men?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 48,
+              "ga_category": "Mall-Fashion",
+              "layout": {},
+              "url_key": "men",
+              "seourl": "https://storefront.paytm.com/v2/h/men?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/men-fashion-clpid-48?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Men's Fashion",
+                "landing_page_type": "homepage1",
+                "id": 517661,
+                "created_at": "2020-02-18T18:16:25",
+                "metadata": {},
+                "title": "Men's Fashion",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599633650879_menfashion.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 517662,
+              "priority": 15,
+              "name": "Women's Fashion",
+              "title": "Men's Fashion",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517662/1599633811463.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/women?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 80,
+              "ga_category": "Mall-Fashion",
+              "layout": {},
+              "url_key": "women",
+              "seourl": "https://storefront.paytm.com/v2/h/women?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/women-fashion-clpid-80?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Women's Fashion",
+                "landing_page_type": "homepage1",
+                "id": 517662,
+                "created_at": "2020-02-18T18:17:48",
+                "metadata": {},
+                "title": "Men's Fashion",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599633773818_womeenfashion.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 631332,
+              "priority": 16,
+              "name": "Beauty & Grooming",
+              "title": "Electronics",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/631332/1601293662479.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/214391?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 214391,
+              "ga_category": "Mall-FMCG",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "url_key": "general-store/grooming-range",
+              "seourl": "https://middleware.paytmmall.com/v1/g/general-store/grooming-range?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/Grooming-Range-bpc-list-llpid-214391?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "name": "Beauty & Grooming",
+                "landing_page_type": "list_grid",
+                "id": 631332,
+                "created_at": "2020-09-07T13:05:09",
+                "metadata": {},
+                "title": "Electronics",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599552023805_personalcarec4edit.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 549819,
+              "priority": 17,
+              "name": "Grocery & Health",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/549819/1599762663317.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/provision-store?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 5409,
+              "ga_category": "Mall-FMCG",
+              "layout": {},
+              "url_key": "provision-store",
+              "seourl": "https://storefront.paytm.com/v2/h/provision-store?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/provision-store-clpid-5409?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Grocery & Health",
+                "landing_page_type": "homepage1",
+                "id": 549819,
+                "created_at": "2020-05-19T15:04:19",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599115038423_groceryc41.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 616860,
+              "priority": 23,
+              "name": "Brand Vouchers",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/616860/1597902834484.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/vouchers?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 9209,
+              "ga_category": "Deals",
+              "layout": {},
+              "url_key": "vouchers",
+              "seourl": "https://storefront.paytm.com/v2/h/vouchers?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/v2/h/vouchers?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Brand Vouchers",
+                "landing_page_type": "homepage1",
+                "id": 616860,
+                "created_at": "2020-08-17T16:06:01",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1597680344154_1575354231288brandvouchershomepage.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 549822,
+              "priority": 26,
+              "name": "Home & Kitchen",
+              "title": "Home & Kitchen",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/549822/1598515743213.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/home-and-kitchen?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 81,
+              "ga_category": "Mall-Home and Kitchen",
+              "layout": {},
+              "url_key": "home-and-kitchen",
+              "seourl": "https://storefront.paytm.com/v2/h/home-and-kitchen?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/home-and-kitchen-clpid-81?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Home & Kitchen",
+                "landing_page_type": "homepage1",
+                "id": 549822,
+                "created_at": "2020-05-19T15:06:37",
+                "metadata": {},
+                "title": "Home & Kitchen",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1598515650459_1588528506755homekitchen2c4.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 678592,
+              "priority": 29,
+              "name": "Fire TV Stick",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/678592/1605077031866.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/270061?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 270061,
+              "ga_category": "Mall-Large Appliances",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "url_key": "large-appliances/fire-tvv-stick",
+              "seourl": "https://middleware.paytmmall.com/v1/g/large-appliances/fire-tvv-stick?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/amazon-fire-tv-stick-large-aliances-llpid-270061?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "name": "Fire TV Stick",
+                "landing_page_type": "list_grid",
+                "id": 678592,
+                "created_at": "2020-11-11T06:43:40",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1605013334680_1600349320796firestickc4640x640.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 617693,
+              "priority": 32,
+              "name": "Kid's Fashion",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/617693/1599633661501.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/202639?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 202639,
+              "ga_category": "Mall-Apparel",
+              "layout": {},
+              "url_key": "kids-apparel/kids-full-fashion-collection",
+              "seourl": "https://middleware.paytmmall.com/v1/g/kids-apparel/kids-full-fashion-collection?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/Kids_Full_Fashion_Collection-llpid-202639?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "name": "Kid's Fashion",
+                "landing_page_type": "list_grid",
+                "id": 617693,
+                "created_at": "2020-08-20T07:40:43",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599633623850_kidsfashion2.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 619939,
+              "priority": 33,
+              "name": "Baby, Kids & Toys",
+              "title": "Kids' Watches",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/619939/1600073484684.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/196001?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 196001,
+              "ga_category": "Mall-General Merchandise",
+              "layout": {},
+              "url_key": "baby-kids-toys-store/baby-kids-toys-top-seller",
+              "seourl": "https://middleware.paytmmall.com/v1/g/baby-kids-toys-store/baby-kids-toys-top-seller?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/Baby_Kids_Toys_Top_Seller-llpid-196001?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "name": "Baby, Kids & Toys",
+                "landing_page_type": "list_grid",
+                "id": 619939,
+                "created_at": "2020-08-28T04:16:33",
+                "metadata": {},
+                "title": "Kids' Watches",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1600073380561_c4baby2.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 631547,
+              "priority": 34,
+              "name": "Bags & Luggage",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/631547/1599569443141.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/8996?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 8996,
+              "ga_category": "Mall-Fashion Accessories",
+              "layout": {},
+              "url_key": "men/bags",
+              "seourl": "https://middleware.paytmmall.com/v1/g/men/bags?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/men-bags-luggage-glpid-8996?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "name": "Bags & Luggage",
+                "landing_page_type": "list_grid",
+                "id": 631547,
+                "created_at": "2020-09-08T08:01:34",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599493162601_c4icon1.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 633095,
+              "priority": 35,
+              "name": "Footwear",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/633095/1599742128957.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/208835?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 208835,
+              "ga_category": "Mall-Footwear",
+              "layout": {},
+              "url_key": "footwear/footwear-collection-home",
+              "seourl": "https://middleware.paytmmall.com/v1/g/footwear/footwear-collection-home?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/Footwear_Collection_Home-llpid-208835?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "name": "Footwear",
+                "landing_page_type": "list_grid",
+                "id": 633095,
+                "created_at": "2020-09-10T12:48:11",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1597823142602_sportsshoesicon.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 675631,
+              "priority": 36,
+              "name": "Smart Watches",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/675631/1605701828346.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/198964?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 198964,
+              "ga_category": "Mall-Fashion Accessories",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "url_key": "watches/branded-smart-watches",
+              "seourl": "https://middleware.paytmmall.com/v1/g/watches/branded-smart-watches?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/branded_smart_watches-llpid-198964?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "name": "Smart Watches",
+                "landing_page_type": "list_grid",
+                "id": 675631,
+                "created_at": "2020-11-04T04:35:47",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1605701805417_smartwatches128x128showmore.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 675632,
+              "priority": 38,
+              "name": "T-Shirts",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/675632/1605701938599.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/271833?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 271833,
+              "ga_category": "Mall-Fashion",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "url_key": "all-fashion/t-shirts-collection",
+              "seourl": "https://middleware.paytmmall.com/v1/g/all-fashion/t-shirts-collection?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/T-shirtsCollection-llpid-271833?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "name": "T-Shirts",
+                "landing_page_type": "list_grid",
+                "id": 675632,
+                "created_at": "2020-11-04T04:36:25",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1605701915747_tshirts128x128showmore.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 624163,
+              "priority": 40,
+              "name": "Auto Accessories",
+              "title": "Auto Accessories",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/624163/1600149148397.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/207236?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 207236,
+              "ga_category": "Mall-General Merchandise",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "url_key": "general-merchandise/auto-accessories-products",
+              "seourl": "https://middleware.paytmmall.com/v1/g/general-merchandise/auto-accessories-products?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/auto-accessories-products-llpid-207236?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "name": "Auto Accessories",
+                "landing_page_type": "list_grid",
+                "id": 624163,
+                "created_at": "2020-09-04T13:23:06",
+                "metadata": {},
+                "title": "Auto Accessories",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1600149109618_autoaccessoriesshoponmall223xn.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 617696,
+              "priority": 41,
+              "name": "Cars & Bikes",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/617696/1597909464399.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/cars-bikes?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 836,
+              "ga_category": "Mall-Cars & Bikes",
+              "layout": {},
+              "url_key": "cars-bikes",
+              "seourl": "https://storefront.paytm.com/v2/h/cars-bikes?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/cars-bikes-clpid-836?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Cars & Bikes",
+                "landing_page_type": "homepage1",
+                "id": 617696,
+                "created_at": "2020-08-20T07:42:53",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1597899557886_bikesscooterc4.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 631336,
+              "priority": 42,
+              "name": "Sports & Fitness",
+              "title": "Electronics",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/631336/1599549082191.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/208020?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 208020,
+              "ga_category": "Mall-FMCG",
+              "layout": {},
+              "url_key": "general-store/health-fitness",
+              "seourl": "https://middleware.paytmmall.com/v1/g/general-store/health-fitness?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/Health-Fitness-psp-list-llpid-208020?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "name": "Sports & Fitness",
+                "landing_page_type": "list_grid",
+                "id": 631336,
+                "created_at": "2020-09-07T13:10:37",
+                "metadata": {},
+                "title": "Electronics",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599227600961_sportsfitnessc41.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 620057,
+              "priority": 56,
+              "name": "Save with Friends",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/620057/1604470899618.png",
+              "url_type": "embed",
+              "url": "paytmmp://product?url=https://paytmmall.com/socom",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Mall-General Merchandise",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "valid_from": "2020-11-01 14:13:00",
+              "valid_upto": "2021-01-31 23:59:00",
+              "layout": {},
+              "seourl": "paytmmp://product?url=https://paytmmall.com/socom",
+              "display_metadata": {
+                "name": "Save with Friends",
+                "url": "paytmmp://product?url=https://paytmmall.com/socom",
+                "landing_page_type": "embed",
+                "id": 620057,
+                "created_at": "2020-08-28T08:39:47",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1602519521147_showmore128x1282.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 617156,
+              "priority": 59,
+              "name": "Big Bazaar",
+              "title": "Big Bazaar",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/617156/1597754751077.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/big-bazaar-top-brands?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 7097,
+              "ga_category": "Deals",
+              "layout": {},
+              "url_key": "big-bazaar-top-brands",
+              "seourl": "https://storefront.paytm.com/v2/h/big-bazaar-top-brands?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/big-bazaar-top-brands-clpid-7097?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Big Bazaar",
+                "landing_page_type": "homepage1",
+                "id": 617156,
+                "created_at": "2020-08-18T12:44:10",
+                "metadata": {},
+                "title": "Big Bazaar",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1597754028522_bigbazaar.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 499151,
+              "priority": 60,
+              "name": "My Store",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/499151/1589901109574.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/mystore-reseller?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 53832,
+              "ga_category": "Mall-Others",
+              "layout": {},
+              "url_key": "mystore-reseller",
+              "seourl": "https://storefront.paytm.com/v2/h/mystore-reseller?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/mystore-reseller-clpid-53832?src=store&from=storefront",
+              "display_metadata": {
+                "name": "My Store",
+                "landing_page_type": "homepage1",
+                "id": 499151,
+                "created_at": "2020-01-09T14:44:29",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1564479669146_xxxhdpimystore2copy.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 631339,
+              "priority": 67,
+              "name": "Health Devices",
+              "title": "Electronics",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/631339/1599549201320.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/175236?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 175236,
+              "ga_category": "Mall-FMCG",
+              "layout": {},
+              "url_key": "supermarket/health-devices-psp",
+              "seourl": "https://middleware.paytmmall.com/v1/g/supermarket/health-devices-psp?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/Health-Devices-PSP-llpid-175236?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "name": "Health Devices",
+                "landing_page_type": "list_grid",
+                "id": 631339,
+                "created_at": "2020-09-07T13:12:45",
+                "metadata": {},
+                "title": "Electronics",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599227486954_healthdevicesc4.png"
+              },
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 59397,
+              "container_id": 22047309,
+              "container_instance_id": "00000001A878FD9A2233AE4A247E02C80603DFEF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 303804,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 303804,
+          "title": "Stocks & Wealth",
+          "items": [
+            {
+              "id": 664193,
+              "priority": 1,
+              "name": "Mutual Funds",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/664193/1603198002986.png",
+              "url_type": "paytmmoney",
+              "url": "https://pytm.my/",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Paytm Money",
+              "layout": {},
+              "seourl": "https://pytm.my/",
+              "reason": "D:FF"
+            },
+            {
+              "id": 664194,
+              "priority": 3,
+              "name": "Trade Stocks",
+              "title": "bull_more",
+              "subtitle": "stocks",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/664194/1605024910598.png",
+              "url_type": "paytmmoney",
+              "url": "https://pytm.my/eq_home",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Paytm Money",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "https://pytm.my/eq_home",
+              "reason": "D:FF"
+            },
+            {
+              "id": 664195,
+              "priority": 5,
+              "name": "Paytm Gold",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/664195/1603032609555.png",
+              "url_type": "gold",
+              "url": "https://paytm.com/digitalgold",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Gold",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "https://paytm.com/digitalgold",
+              "reason": "D:FF"
+            },
+            {
+              "id": 664208,
+              "priority": 7,
+              "name": "NPS",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/664208/1603171466212.jpeg",
+              "url_type": "paytmmoney",
+              "url": "https://pytm.my/NPS_benefits",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Paytm Money",
+              "layout": {},
+              "seourl": "https://pytm.my/NPS_benefits",
+              "reason": "D:FF"
+            },
+            {
+              "id": 664709,
+              "priority": 8,
+              "name": "Tax Saver",
+              "subtitle": "More",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/664709/1603175342700.png",
+              "url_type": "paytmmoney",
+              "url": "https://pytm.my/elss",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Paytm Money",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "https://pytm.my/elss",
+              "reason": "D:FF"
+            },
+            {
+              "id": 676009,
+              "priority": 9,
+              "name": "ETFs",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/676009/1606811538670.png",
+              "url_type": "paytmmoney",
+              "url": "https://pytm.my/equity_home",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Paytm Money",
+              "layout": {},
+              "seourl": "https://pytm.my/equity_home",
+              "reason": "D:FF"
+            },
+            {
+              "id": 673155,
+              "priority": 10,
+              "name": "Depository Payments",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/673155/1604122630643.png",
+              "url_type": "utility",
+              "url": "paytmmp://utility?url=https://digitalcatalog.paytm.com/v1/mobile/getproductlist/211363",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://digitalcatalog.paytm.com/v1/mobile/getproductlist/211363",
+              "reason": "D:FF"
+            },
+            {
+              "id": 688292,
+              "priority": 2,
+              "name": "Apply for IPO",
+              "title": "Apply for IPO",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/688292/1606884540378.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=8cc7a6ac4e344a17a7b3ff069929b557&data=ewogICJwYXJhbXMiOiAiP3N0c0Jhckh0PXRydWUiLAogICJwYXRoIjogIiIsCiAgInNwYXJhbXMiOiB7CiAgICAic2hvd1RpdGxlQmFyIjogZmFsc2UsCiAgICAiY2FuUHVsbERvd24iOiBmYWxzZQogICAgfQp9Cg==",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Paytm Money",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "valid_from": "2020-11-30 12:57:00",
+              "valid_upto": "2020-12-31 23:59:00",
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=8cc7a6ac4e344a17a7b3ff069929b557&data=ewogICJwYXJhbXMiOiAiP3N0c0Jhckh0PXRydWUiLAogICJwYXRoIjogIiIsCiAgInNwYXJhbXMiOiB7CiAgICAic2hvd1RpdGxlQmFyIjogZmFsc2UsCiAgICAiY2FuUHVsbERvd24iOiBmYWxzZQogICAgfQp9Cg==",
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 303804,
+              "container_id": 22053927,
+              "container_instance_id": "00000001537BFE105D330C71D6E98365FD0D37E3"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 48385,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 48385,
+          "title": "Travel",
+          "items": [
+            {
+              "id": 521971,
+              "priority": 1,
+              "name": "Flight Tickets",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/521971/1605687857356.png",
+              "url_type": "flightticket",
+              "url": "https://paytm.com/flights",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Bus",
+              "layout": {
+                "label": "FLY1000"
+              },
+              "seourl": "https://paytm.com/flights",
+              "display_metadata": {
+                "name": "Flight Tickets",
+                "url": "https://paytm.com/flights",
+                "landing_page_type": "flightticket",
+                "id": 521971,
+                "created_at": "2020-03-02T05:40:04",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1589450835157_flight.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 522005,
+              "priority": 15,
+              "name": "Bus Tickets",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/522005/1589450790536.png",
+              "url_type": "busticket",
+              "url": "https://paytm.com/bus-tickets",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Bus",
+              "layout": {},
+              "seourl": "https://paytm.com/bus-tickets",
+              "display_metadata": {
+                "name": "Bus Tickets",
+                "url": "https://paytm.com/bus-tickets",
+                "landing_page_type": "busticket",
+                "id": 522005,
+                "created_at": "2020-03-02T06:02:05",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1589450773289_bus.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 632981,
+              "priority": 23,
+              "name": "Trains",
+              "title": "Trains",
+              "subtitle": "Trains",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/632981/1599727911419.png",
+              "url_type": "trainticketv2",
+              "url": "https://paytm.com/train-tickets",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Trains",
+              "layout": {},
+              "seourl": "https://paytm.com/train-tickets",
+              "display_metadata": {
+                "subtitle": "Trains",
+                "name": "Trains",
+                "url": "https://paytm.com/train-tickets",
+                "landing_page_type": "trainticketv2",
+                "id": 632981,
+                "created_at": "2020-09-10T08:49:49",
+                "metadata": {},
+                "title": "Trains",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599726770960_trainsicon.png"
+              },
+              "reason": "F:FF"
+            },
+            {
+              "id": 521980,
+              "priority": 40,
+              "name": "Hotels",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/521980/1594379120231.png",
+              "url_type": "hotel-booking",
+              "url": "paytmmp://hotel-booking",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Flights",
+              "layout": {},
+              "seourl": "paytmmp://hotel-booking",
+              "display_metadata": {
+                "name": "Hotels",
+                "url": "paytmmp://hotel-booking",
+                "landing_page_type": "hotel-booking",
+                "id": 521980,
+                "created_at": "2020-03-02T05:45:17",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1589450658901_hotal.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 501954,
+              "priority": 53,
+              "name": "Travel pass",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/501954/1582006198555.jpg",
+              "url_type": "embed",
+              "url": "paytmmp://travelpass",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Flights",
+              "layout": {},
+              "seourl": "paytmmp://travelpass",
+              "display_metadata": {
+                "name": "Travel pass",
+                "url": "paytmmp://travelpass",
+                "landing_page_type": "embed",
+                "id": 501954,
+                "created_at": "2020-01-18T12:13:47",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1581659236554_icon2.jpg"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 553021,
+              "priority": 62,
+              "name": "Travel Guidelines",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/553021/1590153467434.png",
+              "url_type": "embed",
+              "url": "https://paytm.com/offer/flight/covid-19-travel-advisory/",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Flights",
+              "layout": {},
+              "seourl": "https://paytm.com/offer/flight/covid-19-travel-advisory/",
+              "display_metadata": {
+                "name": "Travel Guidelines",
+                "url": "https://paytm.com/offer/flight/covid-19-travel-advisory/",
+                "landing_page_type": "embed",
+                "id": 553021,
+                "created_at": "2020-05-22T13:14:44",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1590152171888_airtravelguidelines.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 586494,
+              "priority": 64,
+              "name": "Ola Cabs",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/586494/1601358211568.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=b41faf389d1b6c4f5ca2a4f67c4b7a5f857bd138&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfX0=",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=b41faf389d1b6c4f5ca2a4f67c4b7a5f857bd138&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfX0=",
+              "display_metadata": {
+                "name": "Ola Cabs",
+                "url": "paytmmp://mini-app?aId=b41faf389d1b6c4f5ca2a4f67c4b7a5f857bd138&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfX0=",
+                "landing_page_type": "embed",
+                "id": 586494,
+                "created_at": "2020-06-18T04:09:54",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1592417352819_inappiconola.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 588288,
+              "priority": 65,
+              "name": "Travel Accessories",
+              "title": "Travel Accessories",
+              "subtitle": "Travel Accessories",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/588288/1594127498339.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/g/promo-campaigns-central-mall/accessories-more?use_mw=1&src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Mall-Fashion Accessories",
+              "layout": {},
+              "seourl": "https://middleware.paytmmall.com/v1/g/promo-campaigns-central-mall/accessories-more?use_mw=1&src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/Accessories-More-llpid-224564?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "subtitle": "Travel Accessories",
+                "name": "Travel Accessories",
+                "landing_page_type": "smart_list",
+                "id": 588288,
+                "created_at": "2020-06-22T06:39:24",
+                "title": "Travel Accessories",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1594035820909_travelaccessories21.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 615547,
+              "priority": 72,
+              "name": "Travel Wear",
+              "title": "Travel Wear",
+              "subtitle": "Travel Wear",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/615547/1597318538508.png",
+              "url_type": "grid",
+              "url": "https://middleware.paytmmall.com/v1/mobile/grid/207881?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 207881,
+              "ga_category": "Mall-Apparel",
+              "layout": {},
+              "url_key": "all-fashion/combined-vacation-wear-40-70-off",
+              "seourl": "https://middleware.paytmmall.com/v1/g/all-fashion/combined-vacation-wear-40-70-off?src=store&from=storefront",
+              "newurl": "https://middleware.paytmmall.com/Combined_Vacation_Wear-llpid-207881?use_mw=1&src=store&from=storefront",
+              "display_metadata": {
+                "subtitle": "Travel Wear",
+                "name": "Travel Wear",
+                "landing_page_type": "list_grid",
+                "id": 615547,
+                "created_at": "2020-08-13T11:33:15",
+                "title": "Travel Wear",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1597316681394_tshirthat.png"
+              },
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 48385,
+              "container_id": 22042760,
+              "container_instance_id": "00000001A36EF484DBE4BD1417A38568A3250E9E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 294339,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 294339,
+          "title": "Movies & Events",
+          "items": [
+            {
+              "id": 474692,
+              "priority": 2,
+              "name": "Movie Tickets",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/474692/1606472019484.png",
+              "url_type": "movietickets",
+              "url": "https://paytm.com/movies",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Movies",
+              "layout": {},
+              "seourl": "https://paytm.com/movies",
+              "display_metadata": {
+                "name": "Movie Tickets",
+                "url": "https://paytm.com/movies",
+                "landing_page_type": "movietickets",
+                "id": 474692,
+                "created_at": "2019-10-24T12:41:28",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1605416159172_genmovieicon.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 659282,
+              "priority": 15,
+              "name": "Cinema Guidelines",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/659282/1602607855729.png",
+              "url_type": "embed",
+              "url": "paytmmp://embed?url=https://paytm.com/offer/movies/cinema-reopening-guidelines/",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Movies",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://embed?url=https://paytm.com/offer/movies/cinema-reopening-guidelines/",
+              "display_metadata": {
+                "name": "Cinema Guidelines",
+                "url": "paytmmp://embed?url=https://paytm.com/offer/movies/cinema-reopening-guidelines/",
+                "landing_page_type": "embed",
+                "id": 659282,
+                "created_at": "2020-10-13T16:18:31",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1602601658317_movieguidelines1.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 594459,
+              "priority": 23,
+              "name": "Event Tickets",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/594459/1593757666016.png",
+              "url_type": "events",
+              "url": "https://paytm.com/events",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Movies",
+              "layout": {},
+              "seourl": "https://paytm.com/events",
+              "display_metadata": {
+                "name": "Event Tickets",
+                "url": "https://paytm.com/events",
+                "landing_page_type": "events",
+                "id": 594459,
+                "created_at": "2020-07-03T06:26:47",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1593757589112_1576647062080icevent.png"
+              },
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 294339,
+              "container_id": 22051468,
+              "container_instance_id": "000000010FC925CCD1FFCE4A577D42CCEA4A56F0"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 303635,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 303635,
+          "title": "Wallet",
+          "items": [
+            {
+              "id": 660295,
+              "priority": 1,
+              "name": "Add Money",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/660295/1602769074503.png",
+              "url_type": "embed",
+              "url": "paytmmp://cash_wallet?featuretype=add_money",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "valid_from": "2020-10-15 23:59:00",
+              "valid_upto": "2020-12-31 23:59:00",
+              "layout": {},
+              "seourl": "paytmmp://cash_wallet?featuretype=add_money",
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 303635,
+              "container_id": 22053781,
+              "container_instance_id": "0000000143AEC14D5E6C4CB810BF7D96D2154698"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": "",
+            "bg_gradient": []
+          },
+          "auto_scroll": "False",
+          "is_bg_active": false
+        }
+      ]
+    },
+    {
+      "id": 295935,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 295935,
+          "title": "Recharge & Pay Bills",
+          "items": [
+            {
+              "id": 527711,
+              "priority": 1,
+              "name": "Prepaid/Postpaid",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/527711/1602132902222.png",
+              "url_type": "mobile-prepaid",
+              "url": "https://catalog.paytm.com/v1/mobile/mobile-prepaid/17",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Mobile Prepaid",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1/mobile/mobile-prepaid/17",
+              "display_metadata": {
+                "name": "Prepaid/Postpaid",
+                "url": "https://catalog.paytm.com/v1/mobile/mobile-prepaid/17",
+                "landing_page_type": "mobile-prepaid",
+                "id": 527711,
+                "created_at": "2020-03-19T09:05:40",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1580456416811_15783195115811576648411556icmobilerecharge.png"
+              },
+              "reason": "F:FF"
+            },
+            {
+              "id": 517703,
+              "priority": 30,
+              "name": "DTH",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517703/1582091706697.png",
+              "url_type": "DTH",
+              "url": "https://catalog.paytm.com/v1/mobile/DTH/18",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Cable TV",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1/mobile/DTH/18",
+              "display_metadata": {
+                "name": "DTH",
+                "url": "https://catalog.paytm.com/v1/mobile/DTH/18",
+                "landing_page_type": "DTH",
+                "id": 517703,
+                "created_at": "2020-02-19T05:35:44",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1553595775710_201903252.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 517709,
+              "priority": 37,
+              "name": "Metro",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517709/1599410520755.png",
+              "url_type": "utility",
+              "url": "https://catalog.paytm.com/v1/mobile/getproductlist/77409?group=brand",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Trains",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1/mobile/getproductlist/77409?group=brand",
+              "display_metadata": {
+                "name": "Metro",
+                "url": "https://catalog.paytm.com/v1/mobile/getproductlist/77409?group=brand",
+                "landing_page_type": "utility",
+                "id": 517709,
+                "created_at": "2020-02-19T05:43:40",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1574406350480_1542109711122.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 487918,
+              "priority": 39,
+              "name": "Electricity",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/487918/1582091712623.png",
+              "url_type": "utility",
+              "url": "https://catalog.paytm.com/v1/mobile/getproductlist/26?group=brand",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Electricity",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1/mobile/getproductlist/26?group=brand",
+              "display_metadata": {
+                "name": "Electricity",
+                "url": "https://catalog.paytm.com/v1/mobile/getproductlist/26?group=brand",
+                "landing_page_type": "utility",
+                "id": 487918,
+                "created_at": "2019-12-07T07:18:25",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1576652323499_iceletricity.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 554924,
+              "priority": 48,
+              "name": "Book a Cylinder",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/554924/1593776233947.png",
+              "url_type": "utility",
+              "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/166690",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Gas",
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/166690",
+              "display_metadata": {
+                "name": "Book a Cylinder",
+                "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/166690",
+                "landing_page_type": "utility",
+                "id": 554924,
+                "created_at": "2020-05-29T13:55:55",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1578907120175_1576648821813icgasbill.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 517056,
+              "priority": 56,
+              "name": "Broadband / Landline",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517056/1602141551319.png",
+              "url_type": "utility",
+              "url": "https://catalog.paytm.com/v1/mobile/getproductlist/75505?group=brand",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Landline",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1/mobile/getproductlist/75505?group=brand",
+              "display_metadata": {
+                "name": "Broadband / Landline",
+                "url": "https://catalog.paytm.com/v1/mobile/getproductlist/75505?group=brand",
+                "landing_page_type": "utility",
+                "id": 517056,
+                "created_at": "2020-02-17T10:49:57",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1581936582181_1579009244629.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 490053,
+              "priority": 59,
+              "name": "Credit Card Payment",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/490053/1600359054127.png",
+              "url_type": "utility_creditcard",
+              "url": "paytmmp://utility_creditcard?url=https://catalog.paytm.com/v2/mobile/getproductlist/156705",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Credit Card",
+              "layout": {},
+              "seourl": "paytmmp://utility_creditcard?url=https://catalog.paytm.com/v2/mobile/getproductlist/156705",
+              "display_metadata": {
+                "name": "Credit Card Payment",
+                "url": "paytmmp://utility_creditcard?url=https://catalog.paytm.com/v2/mobile/getproductlist/156705",
+                "landing_page_type": "utility_creditcard",
+                "id": 490053,
+                "created_at": "2019-12-12T07:24:43",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1554450811701_1554441443483.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 503921,
+              "priority": 62,
+              "name": "Insurance/LIC Premium",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/503921/1582091799652.png",
+              "url_type": "utility",
+              "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/64739$product_id=158299676",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Insurance",
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/64739$product_id=158299676",
+              "display_metadata": {
+                "name": "Insurance/LIC Premium",
+                "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/64739$product_id=158299676",
+                "landing_page_type": "utility",
+                "id": 503921,
+                "created_at": "2020-01-24T11:22:09",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1560518974610_1543408407689.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 637551,
+              "priority": 63,
+              "name": "Rent Payment",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/637551/1605630144777.png",
+              "url_type": "embed",
+              "url": "paytmmp://mymonthlypayment",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {
+                "label": "Introducing"
+              },
+              "seourl": "paytmmp://mymonthlypayment",
+              "display_metadata": {
+                "name": "Rent Payment",
+                "url": "paytmmp://mymonthlypayment",
+                "landing_page_type": "embed",
+                "id": 637551,
+                "created_at": "2020-09-14T06:47:06",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1600065296126_houserent.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 503938,
+              "priority": 67,
+              "name": "Pay Loan",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/503938/1600358256271.png",
+              "url_type": "loan",
+              "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/37217",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Loan",
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/37217",
+              "display_metadata": {
+                "name": "Pay Loan",
+                "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/37217",
+                "landing_page_type": "loan",
+                "id": 503938,
+                "created_at": "2020-01-24T12:26:00",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1575965227152_icloan.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 517059,
+              "priority": 68,
+              "name": "Piped Gas",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517059/1602132539939.png",
+              "url_type": "utility",
+              "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/78640",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Gas",
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/78640",
+              "display_metadata": {
+                "name": "Piped Gas",
+                "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/78640",
+                "landing_page_type": "utility",
+                "id": 517059,
+                "created_at": "2020-02-17T10:52:26",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1575705200047_1548077783620.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 517061,
+              "priority": 73,
+              "name": "Apartments",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517061/1581949481998.png",
+              "url_type": "embed",
+              "url": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/101950",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/101950",
+              "display_metadata": {
+                "name": "Apartments",
+                "url": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/101950",
+                "landing_page_type": "embed",
+                "id": 517061,
+                "created_at": "2020-02-17T10:55:08",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1581937185484_1579515098645.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 594486,
+              "priority": 77,
+              "name": "FASTag Recharge",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/594486/1593759604582.png",
+              "url_type": "embed",
+              "url": "paytmmp://fastag-recharge",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Fastag",
+              "layout": {},
+              "seourl": "paytmmp://fastag-recharge",
+              "display_metadata": {
+                "name": "FASTag Recharge",
+                "url": "paytmmp://fastag-recharge",
+                "landing_page_type": "embed",
+                "id": 594486,
+                "created_at": "2020-07-03T06:54:13",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1593759243039_1585641910105fastagrecharge.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 615754,
+              "priority": 79,
+              "name": "Subscriptions",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/615754/1605690692322.png",
+              "url_type": "embed",
+              "url": "paytmmp://ottsubscription-recharge",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {
+                "label": "Fitpass LIVE"
+              },
+              "seourl": "paytmmp://ottsubscription-recharge",
+              "display_metadata": {
+                "name": "Subscriptions",
+                "url": "paytmmp://ottsubscription-recharge",
+                "landing_page_type": "embed",
+                "id": 615754,
+                "created_at": "2020-08-14T06:42:03",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1597387276926_subscriptioniconpopup.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 517098,
+              "priority": 81,
+              "name": "Challan",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517098/1581949505354.png",
+              "url_type": "challan",
+              "url": "https://catalog.paytm.com/v2/mobile/getproductlist/104154",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Challan",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v2/mobile/getproductlist/104154",
+              "display_metadata": {
+                "name": "Challan",
+                "url": "https://catalog.paytm.com/v2/mobile/getproductlist/104154",
+                "landing_page_type": "challan",
+                "id": 517098,
+                "created_at": "2020-02-17T11:03:39",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1581937403529_1576757138477.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 517065,
+              "priority": 85,
+              "name": "Water",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517065/1581949495296.png",
+              "url_type": "utility",
+              "url": "https://catalog.paytm.com/v1//mobile/getproductlist/68869?group=brand",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Water",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1//mobile/getproductlist/68869?group=brand",
+              "display_metadata": {
+                "name": "Water",
+                "url": "https://catalog.paytm.com/v1//mobile/getproductlist/68869?group=brand",
+                "landing_page_type": "utility",
+                "id": 517065,
+                "created_at": "2020-02-17T11:01:09",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1575704908411_1542108541893.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 517103,
+              "priority": 89,
+              "name": "Education",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517103/1602141828175.png",
+              "url_type": "embed",
+              "url": "paytmmp://edu-open-h5",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Fees",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://edu-open-h5",
+              "display_metadata": {
+                "name": "Education",
+                "url": "paytmmp://edu-open-h5",
+                "landing_page_type": "embed",
+                "id": 517103,
+                "created_at": "2020-02-17T11:12:23",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1581937919913_1576653104685.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 490122,
+              "priority": 92,
+              "name": "Municipal Tax",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/490122/1602141788844.png",
+              "url_type": "utility",
+              "url": "https://catalog.paytm.com/v2/mobile/getproductlist/107730",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Muncipal Payments",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v2/mobile/getproductlist/107730",
+              "display_metadata": {
+                "name": "Municipal Tax",
+                "url": "https://catalog.paytm.com/v2/mobile/getproductlist/107730",
+                "landing_page_type": "utility",
+                "id": 490122,
+                "created_at": "2019-12-12T08:35:23",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1576653154690_icmuncipalpayments.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 594507,
+              "priority": 97,
+              "name": "Cable TV",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/594507/1597386634271.png",
+              "url_type": "utility",
+              "url": "https://catalog.paytm.com/v2/mobile/getproductlist/123988",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Cable TV",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v2/mobile/getproductlist/123988",
+              "display_metadata": {
+                "name": "Cable TV",
+                "url": "https://catalog.paytm.com/v2/mobile/getproductlist/123988",
+                "landing_page_type": "utility",
+                "id": 594507,
+                "created_at": "2020-07-03T07:15:01",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1575705416931_1542108584541.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 594504,
+              "priority": 99,
+              "name": "Data Card",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/594504/1602132560458.png",
+              "url_type": "datacard-prepaid",
+              "url": "https://catalog.paytm.com/v1/mobile/datacard-prepaid/19",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Data Card",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1/mobile/datacard-prepaid/19",
+              "display_metadata": {
+                "name": "Data Card",
+                "url": "https://catalog.paytm.com/v1/mobile/datacard-prepaid/19",
+                "landing_page_type": "datacard-prepaid",
+                "id": 594504,
+                "created_at": "2020-07-03T07:09:06",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1581938136477_1576648746904.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 517113,
+              "priority": 100,
+              "name": "Manage FASTag",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517113/1599121856961.png",
+              "url_type": "homepage",
+              "url": "https://storefront.paytm.com/v2/h/fastag-sample?src=store&from=storefront",
+              "source": "bp-reco-v1",
+              "item_id": 55475,
+              "ga_category": "Fastag",
+              "layout": {},
+              "url_key": "fastag-sample",
+              "seourl": "https://storefront.paytm.com/v2/h/fastag-sample?src=store&from=storefront",
+              "newurl": "https://storefront.paytm.com/fastag-sample-clpid-55475?src=store&from=storefront",
+              "display_metadata": {
+                "name": "Manage FASTag",
+                "landing_page_type": "homepage1",
+                "id": 517113,
+                "created_at": "2020-02-17T11:24:07",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1581938691224_1580455654693.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 517117,
+              "priority": 103,
+              "name": "Donations",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/517117/1589803501269.png",
+              "url_type": "embed",
+              "url": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/132935",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Donation",
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/132935",
+              "display_metadata": {
+                "name": "Donations",
+                "url": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/132935",
+                "landing_page_type": "embed",
+                "id": 517117,
+                "created_at": "2020-02-17T11:31:32",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1581939079383_1580480564983.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 521044,
+              "priority": 106,
+              "name": "Toll",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/521044/1592204757308.png",
+              "url_type": "utility",
+              "url": "https://catalog.paytm.com/v1/mobile/getproductlist/100253?group=brand",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Offline Toll",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1/mobile/getproductlist/100253?group=brand",
+              "display_metadata": {
+                "name": "Toll",
+                "url": "https://catalog.paytm.com/v1/mobile/getproductlist/100253?group=brand",
+                "landing_page_type": "utility",
+                "id": 521044,
+                "created_at": "2020-02-28T06:27:21",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1581938526463_1579499781391.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 569809,
+              "priority": 107,
+              "name": "IOCL Rewards",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/569809/1602132633117.png",
+              "url_type": "embed",
+              "url": "paytmmp://iocl-pointsv2",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Offline Petrol",
+              "layout": {},
+              "seourl": "paytmmp://iocl-pointsv2",
+              "display_metadata": {
+                "name": "IOCL Rewards",
+                "url": "paytmmp://iocl-pointsv2",
+                "landing_page_type": "embed",
+                "id": 569809,
+                "created_at": "2020-06-01T06:07:15",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1590991870360_15605186668831543928423783.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 490126,
+              "priority": 109,
+              "name": "Co-living Spaces",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/490126/1603345772224.png",
+              "url_type": "utility",
+              "url": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/205763",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Challan",
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/205763",
+              "display_metadata": {
+                "name": "Co-living Spaces",
+                "url": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/205763",
+                "landing_page_type": "utility",
+                "id": 490126,
+                "created_at": "2019-12-12T08:41:11",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1581948738774_1580391369925.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 657431,
+              "priority": 112,
+              "name": "Depository Services",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/657431/1603345752955.png",
+              "url_type": "utility",
+              "url": "paytmmp://utility?url=https://digitalcatalog.paytm.com/v1/mobile/getproductlist/211363",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://digitalcatalog.paytm.com/v1/mobile/getproductlist/211363",
+              "display_metadata": {
+                "name": "Depository Services",
+                "url": "paytmmp://utility?url=https://digitalcatalog.paytm.com/v1/mobile/getproductlist/211363",
+                "landing_page_type": "utility",
+                "id": 657431,
+                "created_at": "2020-10-08T07:47:35",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1591787532303_shcilicon1.png"
+              },
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 295935,
+              "container_id": 22051904,
+              "container_instance_id": "00000001F6379FD0063D5877DB89C4565987D929"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 293901,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 293901,
+          "title": "Discover with Paytm",
+          "items": [
+            {
+              "id": 476139,
+              "priority": 1,
+              "name": "Mini App Store",
+              "title": "All Mini Apps",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/476139/1601835952342.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=66d29aa574e3c99d9a2e4340c9e41b89a5493eb6&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfX0=",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=66d29aa574e3c99d9a2e4340c9e41b89a5493eb6&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfX0=",
+              "display_metadata": {
+                "name": "Mini App Store",
+                "url": "paytmmp://mini-app?aId=66d29aa574e3c99d9a2e4340c9e41b89a5493eb6&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfX0=",
+                "landing_page_type": "embed",
+                "id": 476139,
+                "created_at": "2019-11-01T10:55:53",
+                "metadata": {},
+                "title": "All Mini Apps",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1590496442305_miniprograms.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 553779,
+              "priority": 4,
+              "name": "Ola Cabs",
+              "title": "DocsApp",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/553779/1602576976866.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=b41faf389d1b6c4f5ca2a4f67c4b7a5f857bd138&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfX0=",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=b41faf389d1b6c4f5ca2a4f67c4b7a5f857bd138&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfX0=",
+              "display_metadata": {
+                "name": "Ola Cabs",
+                "url": "paytmmp://mini-app?aId=b41faf389d1b6c4f5ca2a4f67c4b7a5f857bd138&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfX0=",
+                "landing_page_type": "embed",
+                "id": 553779,
+                "created_at": "2020-05-26T12:36:08",
+                "metadata": {},
+                "title": "DocsApp",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1590496606217_ola1.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 605367,
+              "priority": 6,
+              "name": "Domino's Pizza",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/605367/1606108999521.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=1bdc7c1791b71da037b5272e57dc72a0bd4b4be7&data=eyJwYXJhbXMiOiI/dXRtX3NvdXJjZT1QQVlUTSJ9",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {
+                "label": "Up to ₹1,000"
+              },
+              "seourl": "paytmmp://mini-app?aId=1bdc7c1791b71da037b5272e57dc72a0bd4b4be7&data=eyJwYXJhbXMiOiI/dXRtX3NvdXJjZT1QQVlUTSJ9",
+              "display_metadata": {
+                "name": "Domino's Pizza",
+                "url": "paytmmp://mini-app?aId=1bdc7c1791b71da037b5272e57dc72a0bd4b4be7&data=eyJwYXJhbXMiOiI/dXRtX3NvdXJjZT1QQVlUTSJ9",
+                "landing_page_type": "embed",
+                "id": 605367,
+                "created_at": "2020-07-21T14:25:06",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1595332700081_inapp.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 648876,
+              "priority": 9,
+              "name": "Food Delivery",
+              "title": "Food Delivery",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/648876/1601835640362.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=66d29aa574e3c99d9a2e4340c9e41b89a5493eb6&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfSwicGFyYW1zIjoiP3NGSUQ9aXBsLWZvb2Qtc3BlY2lmaWMifQ==",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=66d29aa574e3c99d9a2e4340c9e41b89a5493eb6&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfSwicGFyYW1zIjoiP3NGSUQ9aXBsLWZvb2Qtc3BlY2lmaWMifQ==",
+              "display_metadata": {
+                "name": "Food Delivery",
+                "url": "paytmmp://mini-app?aId=66d29aa574e3c99d9a2e4340c9e41b89a5493eb6&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfSwicGFyYW1zIjoiP3NGSUQ9aXBsLWZvb2Qtc3BlY2lmaWMifQ==",
+                "landing_page_type": "embed",
+                "id": 648876,
+                "created_at": "2020-09-23T04:16:04",
+                "metadata": {},
+                "title": "Food Delivery",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1600869472123_logofoodo.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 641300,
+              "priority": 10,
+              "name": "Order Medicines",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/641300/1601835509087.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=66d29aa574e3c99d9a2e4340c9e41b89a5493eb6&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfSwicGFyYW1zIjoiP3NGSUQ9aGVhbHRoY2FyZS1zcGVjaWZpYyJ9",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=66d29aa574e3c99d9a2e4340c9e41b89a5493eb6&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfSwicGFyYW1zIjoiP3NGSUQ9aGVhbHRoY2FyZS1zcGVjaWZpYyJ9",
+              "display_metadata": {
+                "name": "Order Medicines",
+                "url": "paytmmp://mini-app?aId=66d29aa574e3c99d9a2e4340c9e41b89a5493eb6&data=eyJzcGFyYW1zIjp7ImNhblB1bGxEb3duIjpmYWxzZSwicHVsbFJlZnJlc2giOmZhbHNlLCJzaG93VGl0bGVCYXIiOmZhbHNlfSwicGFyYW1zIjoiP3NGSUQ9aGVhbHRoY2FyZS1zcGVjaWZpYyJ9",
+                "landing_page_type": "embed",
+                "id": 641300,
+                "created_at": "2020-09-18T08:09:44",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1600414310610_ordermedicinesonline3copy.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 658880,
+              "priority": 27,
+              "name": "60% Clearance Sale",
+              "title": "Decathlon",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/658880/1602577112527.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=6d18f9e9ac2dfa5e9008f559f64cbcebc4633da6&data=eyJwYXJhbXMiOiAiP3V0bV9jYW1wYWlnbj1OZXdXYXlzT2ZTZWxsaW5nJnV0bV9zb3VyY2U9UGF5dG0mdXRtX21lZGl1bT1TaG9wSW5TaG9wJnV0bV9jb250ZW50PVBheXRtIn0=&url=https://www.decathlon.in/",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=6d18f9e9ac2dfa5e9008f559f64cbcebc4633da6&data=eyJwYXJhbXMiOiAiP3V0bV9jYW1wYWlnbj1OZXdXYXlzT2ZTZWxsaW5nJnV0bV9zb3VyY2U9UGF5dG0mdXRtX21lZGl1bT1TaG9wSW5TaG9wJnV0bV9jb250ZW50PVBheXRtIn0=&url=https://www.decathlon.in/",
+              "display_metadata": {
+                "name": "60% Clearance Sale",
+                "url": "paytmmp://mini-app?aId=6d18f9e9ac2dfa5e9008f559f64cbcebc4633da6&data=eyJwYXJhbXMiOiAiP3V0bV9jYW1wYWlnbj1OZXdXYXlzT2ZTZWxsaW5nJnV0bV9zb3VyY2U9UGF5dG0mdXRtX21lZGl1bT1TaG9wSW5TaG9wJnV0bV9jb250ZW50PVBheXRtIn0=&url=https://www.decathlon.in/",
+                "landing_page_type": "embed",
+                "id": 658880,
+                "created_at": "2020-10-13T08:16:19",
+                "metadata": {},
+                "title": "Decathlon",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1602576445504_decathlon.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 618713,
+              "priority": 29,
+              "name": "50% OFF* on Meals",
+              "title": "Box8",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/618713/1601554792506.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=fb60bbc960aee1e437907d804e3970701f0d5778",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=fb60bbc960aee1e437907d804e3970701f0d5778",
+              "display_metadata": {
+                "name": "50% OFF* on Meals\t",
+                "url": "paytmmp://mini-app?aId=fb60bbc960aee1e437907d804e3970701f0d5778",
+                "landing_page_type": "embed",
+                "id": 618713,
+                "created_at": "2020-08-24T14:35:54",
+                "metadata": {},
+                "title": "Box8",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1592981919596_box8.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 545564,
+              "priority": 36,
+              "name": "1mg",
+              "title": "1mg",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/545564/1597048135558.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=48d1dd1651e8e938906c6748bda40fe58b2a6747",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=48d1dd1651e8e938906c6748bda40fe58b2a6747",
+              "display_metadata": {
+                "name": "1mg",
+                "url": "paytmmp://mini-app?aId=48d1dd1651e8e938906c6748bda40fe58b2a6747",
+                "landing_page_type": "embed",
+                "id": 545564,
+                "created_at": "2020-05-02T07:13:07",
+                "metadata": {},
+                "title": "1mg",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1590496757173_1mg.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 623916,
+              "priority": 39,
+              "name": "Pizza at ₹59",
+              "title": "La Pino'z Pizza",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/623916/1601274671887.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=9adf6ab34d7c046739a7a0804b91a70484191cbd&url=https://pwa.uen.io",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=9adf6ab34d7c046739a7a0804b91a70484191cbd&url=https://pwa.uen.io",
+              "display_metadata": {
+                "name": "Pizza at ₹59",
+                "url": "paytmmp://mini-app?aId=9adf6ab34d7c046739a7a0804b91a70484191cbd&url=https://pwa.uen.io",
+                "landing_page_type": "embed",
+                "id": 623916,
+                "created_at": "2020-09-04T08:19:41",
+                "metadata": {
+                  "version": "8.7.2"
+                },
+                "title": "La Pino'z Pizza",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1599205645566_pinzzo.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 633517,
+              "priority": 43,
+              "name": "Coolwinks",
+              "title": "Coolwinks-Search",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/633517/1601438666367.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=c6fad8e1ccfe8fd5936fbf5f5e15b52fdc7ec8a1",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=c6fad8e1ccfe8fd5936fbf5f5e15b52fdc7ec8a1",
+              "display_metadata": {
+                "name": "Coolwinks",
+                "url": "paytmmp://mini-app?aId=c6fad8e1ccfe8fd5936fbf5f5e15b52fdc7ec8a1",
+                "landing_page_type": "embed",
+                "id": 633517,
+                "created_at": "2020-09-11T09:38:55",
+                "metadata": {},
+                "title": "Coolwinks-Search",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1592981824969_coolwinks.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 618714,
+              "priority": 47,
+              "name": "Hindi Panchang",
+              "title": "Hindi Panchang",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/618714/1598280651182.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=97a4f4ec8210711a0cba66767906d99fb9ddce31&url=https://www.astrorobo.com/phpc/",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=97a4f4ec8210711a0cba66767906d99fb9ddce31&url=https://www.astrorobo.com/phpc/",
+              "display_metadata": {
+                "name": "Hindi Panchang",
+                "url": "paytmmp://mini-app?aId=97a4f4ec8210711a0cba66767906d99fb9ddce31&url=https://www.astrorobo.com/phpc/",
+                "landing_page_type": "embed",
+                "id": 618714,
+                "created_at": "2020-08-24T14:48:53",
+                "metadata": {},
+                "title": "Hindi Panchang",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1598280028029_15956015118991590488647934logohpccircular.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 658881,
+              "priority": 48,
+              "name": "Spencers",
+              "title": "Spencers",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/658881/1602577126192.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=61be3c32de38773b4991615f9f877c5de0081825&data=eyJwYXJhbXMiOiI/dXRtX3NvdXJjZT1QYXl0bSZ1dG1fbWVkaXVtPVBheXRtJnV0bV9jYW1wYWlnbj1wYXl0bSJ9&url=https://www.spencers.in/",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=61be3c32de38773b4991615f9f877c5de0081825&data=eyJwYXJhbXMiOiI/dXRtX3NvdXJjZT1QYXl0bSZ1dG1fbWVkaXVtPVBheXRtJnV0bV9jYW1wYWlnbj1wYXl0bSJ9&url=https://www.spencers.in/",
+              "display_metadata": {
+                "name": "Spencers",
+                "url": "paytmmp://mini-app?aId=61be3c32de38773b4991615f9f877c5de0081825&data=eyJwYXJhbXMiOiI/dXRtX3NvdXJjZT1QYXl0bSZ1dG1fbWVkaXVtPVBheXRtJnV0bV9jYW1wYWlnbj1wYXl0bSJ9&url=https://www.spencers.in/",
+                "landing_page_type": "embed",
+                "id": 658881,
+                "created_at": "2020-10-13T08:16:45",
+                "metadata": {
+                  "version": "8.7.2"
+                },
+                "title": "Spencers",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1602576577668_spencers.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 633518,
+              "priority": 53,
+              "name": "MagicPin",
+              "title": "MagicPin",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/633518/1600265354063.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=b7f4d64e3f4b3b4a0fb6c8a05c40bab5936222d0&url=https://magicpin.in/paytm/inappview",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=b7f4d64e3f4b3b4a0fb6c8a05c40bab5936222d0&url=https://magicpin.in/paytm/inappview",
+              "display_metadata": {
+                "name": "MagicPin",
+                "url": "paytmmp://mini-app?aId=b7f4d64e3f4b3b4a0fb6c8a05c40bab5936222d0&url=https://magicpin.in/paytm/inappview",
+                "landing_page_type": "embed",
+                "id": 633518,
+                "created_at": "2020-09-11T09:39:39",
+                "metadata": {
+                  "version": "8.7.2"
+                },
+                "title": "MagicPin",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1598327774166_1590131932836magicpinfavicon.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 633516,
+              "priority": 55,
+              "name": "Consult @50% OFF*",
+              "title": "DocsApp-Search",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/633516/1601554759540.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=41d4567b3572d56eb394fbfbe24c65a819a5faee",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=41d4567b3572d56eb394fbfbe24c65a819a5faee",
+              "display_metadata": {
+                "name": "Consult @50% OFF*",
+                "url": "paytmmp://mini-app?aId=41d4567b3572d56eb394fbfbe24c65a819a5faee",
+                "landing_page_type": "embed",
+                "id": 633516,
+                "created_at": "2020-09-11T09:37:46",
+                "metadata": {},
+                "title": "DocsApp-Search",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1592980774659_docsapp.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 618709,
+              "priority": 58,
+              "name": "Dainik Bhaskar",
+              "title": "Dainik Bhaskar",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/618709/1598279677690.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=705080675f6dc423c6744c2199931a7dbb2159d4&url=https://paytm.bhaskarhindi.com/?utm_source=PaytmApp&utm_medium=link&utm_campaign=PaytmApp",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=705080675f6dc423c6744c2199931a7dbb2159d4&url=https://paytm.bhaskarhindi.com/?utm_source=PaytmApp&utm_medium=link&utm_campaign=PaytmApp",
+              "display_metadata": {
+                "name": "Dainik Bhaskar",
+                "url": "paytmmp://mini-app?aId=705080675f6dc423c6744c2199931a7dbb2159d4&url=https://paytm.bhaskarhindi.com/?utm_source=PaytmApp&utm_medium=link&utm_campaign=PaytmApp",
+                "landing_page_type": "embed",
+                "id": 618709,
+                "created_at": "2020-08-24T14:32:44",
+                "metadata": {
+                  "version": "8.7.2"
+                },
+                "title": "Dainik Bhaskar",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1598277898809_1590610456464640x640.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 641301,
+              "priority": 59,
+              "name": "MyGov",
+              "title": "MyGov",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/641301/1600416784005.jpg",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=9ea72462af86b2e89769c8a41c848a25b3085d6c&url=https://www.mygov.in/covid-19",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=9ea72462af86b2e89769c8a41c848a25b3085d6c&url=https://www.mygov.in/covid-19",
+              "display_metadata": {
+                "name": "MyGov ",
+                "url": "paytmmp://mini-app?aId=9ea72462af86b2e89769c8a41c848a25b3085d6c&url=https://www.mygov.in/covid-19",
+                "landing_page_type": "embed",
+                "id": 641301,
+                "created_at": "2020-09-18T08:11:09",
+                "metadata": {},
+                "title": "MyGov",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1600415049887_mygov.jpg"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 661505,
+              "priority": 61,
+              "name": "MFine-Lab Tests",
+              "title": "MFine- Lab Tests",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/661505/1602830333220.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=1237bca9840849b4a17c9be4afd07f5d&url=https://www.mfine.co/channel/home-paytm/",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=1237bca9840849b4a17c9be4afd07f5d&url=https://www.mfine.co/channel/home-paytm/",
+              "display_metadata": {
+                "name": "MFine-Lab Tests",
+                "url": "paytmmp://mini-app?aId=1237bca9840849b4a17c9be4afd07f5d&url=https://www.mfine.co/channel/home-paytm/",
+                "landing_page_type": "embed",
+                "id": 661505,
+                "created_at": "2020-10-16T06:38:40",
+                "metadata": {
+                  "version": "8.7.2"
+                },
+                "title": "MFine- Lab Tests",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1602829820643_15996368621861594196269710mfine.png"
+              },
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 293901,
+              "container_id": 22051315,
+              "container_instance_id": "00000001E68FE32BF9716DA995FCE0AC4BD09294"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 302512,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 302512,
+          "title": "Explore Nearby",
+          "items": [
+            {
+              "id": 623928,
+              "priority": 1,
+              "name": "Nearby stores",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/623928/1605084693300.png",
+              "url_type": "embed",
+              "url": "paytmmp://nearbuy?h5_url=https://mystore.paytmstores.com",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://nearbuy?h5_url=https://mystore.paytmstores.com",
+              "reason": "D:FF"
+            },
+            {
+              "id": 685535,
+              "priority": 2,
+              "name": "Order Food",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/685535/1606202151174.png",
+              "url_type": "embed",
+              "url": "paytmmp://nearbuy?h5_url=https://mystore.paytmstores.com/delhi-ncr/clp/food-and-drink",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://nearbuy?h5_url=https://mystore.paytmstores.com/delhi-ncr/clp/food-and-drink",
+              "reason": "F:FF"
+            },
+            {
+              "id": 657586,
+              "priority": 7,
+              "name": "Nearby KYC Points",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/657586/1603516626766.png",
+              "url_type": "nearby",
+              "url": "paytmmp://nearby",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://nearby",
+              "reason": "D:FF"
+            },
+            {
+              "id": 623930,
+              "priority": 8,
+              "name": "Starbucks",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/623930/1604906384188.png",
+              "url_type": "embed",
+              "url": "paytmmp://nearbuy?h5_url=https://mystore.paytmstores.com/Starbucks",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://nearbuy?h5_url=https://mystore.paytmstores.com/Starbucks",
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 302512,
+              "container_id": 22053530,
+              "container_instance_id": "00000001206DBDAA77C8B93A21BDD68108E0DE57"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": "",
+            "bg_gradient": []
+          },
+          "auto_scroll": "False",
+          "is_bg_active": false
+        }
+      ]
+    },
+    {
+      "id": 48386,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 48386,
+          "title": "Other Services",
+          "items": [
+            {
+              "id": 490080,
+              "priority": 18,
+              "name": "Nearby WiFi Hotspots",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/490080/1578906966426.png",
+              "url_type": "embed",
+              "url": "paytmmp://paytm_wifi?featuretype=launchwifi",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://paytm_wifi?featuretype=launchwifi",
+              "display_metadata": {
+                "name": "Nearby WiFi Hotspots",
+                "url": "paytmmp://paytm_wifi?featuretype=launchwifi",
+                "landing_page_type": "embed",
+                "id": 490080,
+                "created_at": "2019-12-12T08:00:55",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1560947524523_unnamed.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 528672,
+              "priority": 21,
+              "name": "Chat",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/528672/1586951223351.png",
+              "url_type": "embed",
+              "url": "paytmmp://chat?featuretype=start_chat",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Gas",
+              "layout": {},
+              "seourl": "paytmmp://chat?featuretype=start_chat",
+              "display_metadata": {
+                "name": "Chat",
+                "url": "paytmmp://chat?featuretype=start_chat",
+                "landing_page_type": "embed",
+                "id": 528672,
+                "created_at": "2020-03-23T16:26:28",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1586951217817_chatv1.png"
+              },
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 48386,
+              "container_id": 22044226,
+              "container_instance_id": "00000001620B8D1B4F1D8531BC1CD895431A9641"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 122147,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 122147,
+          "title": "Travel, Entertainment & Food",
+          "items": [],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 122147,
+              "container_id": 22048749,
+              "container_instance_id": "-1"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": 296690,
+      "views": [
+        {
+          "type": "smart-icon-list",
+          "id": 296690,
+          "title": "Monthly Bills",
+          "items": [
+            {
+              "id": 683432,
+              "priority": 1,
+              "name": "Electricity",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/683432/1605698806008.png",
+              "url_type": "utility",
+              "url": "https://catalog.paytm.com/v1/mobile/getproductlist/26?group=brand",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Electricity",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1/mobile/getproductlist/26?group=brand",
+              "display_metadata": {
+                "name": "Electricity",
+                "url": "https://catalog.paytm.com/v1/mobile/getproductlist/26?group=brand",
+                "landing_page_type": "utility",
+                "id": 683432,
+                "created_at": "2020-11-18T11:25:41",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1605698778672_1576652323499iceletricity.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 683433,
+              "priority": 2,
+              "name": "DTH",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/683433/1605698871955.png",
+              "url_type": "DTH",
+              "url": "https://catalog.paytm.com/v1/mobile/DTH/18",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Cable TV",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1/mobile/DTH/18",
+              "display_metadata": {
+                "name": "DTH",
+                "url": "https://catalog.paytm.com/v1/mobile/DTH/18",
+                "landing_page_type": "DTH",
+                "id": 683433,
+                "created_at": "2020-11-18T11:27:22",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1553595775710_201903252.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 682409,
+              "priority": 3,
+              "name": "Book a Cylinder",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/682409/1605518653542.png",
+              "url_type": "utility",
+              "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/166690",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Gas",
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/166690",
+              "display_metadata": {
+                "name": "Book a Cylinder",
+                "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/166690",
+                "landing_page_type": "utility",
+                "id": 682409,
+                "created_at": "2020-11-16T09:23:41",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1578907120175_1576648821813icgasbill.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 683434,
+              "priority": 7,
+              "name": "Credit Card Bill",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/683434/1605699016053.png",
+              "url_type": "utility_creditcard",
+              "url": "paytmmp://utility_creditcard?url=https://catalog.paytm.com/v2/mobile/getproductlist/156705",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Credit Card",
+              "layout": {},
+              "seourl": "paytmmp://utility_creditcard?url=https://catalog.paytm.com/v2/mobile/getproductlist/156705",
+              "display_metadata": {
+                "name": "Credit Card Bill",
+                "url": "paytmmp://utility_creditcard?url=https://catalog.paytm.com/v2/mobile/getproductlist/156705",
+                "landing_page_type": "utility_creditcard",
+                "id": 683434,
+                "created_at": "2020-11-18T11:29:36",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1554450811701_1554441443483.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 682411,
+              "priority": 9,
+              "name": "Rent Payment",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/682411/1605699461181.png",
+              "url_type": "embed",
+              "url": "paytmmp://mymonthlypayment",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {
+                "label": "Introducing"
+              },
+              "seourl": "paytmmp://mymonthlypayment",
+              "display_metadata": {
+                "name": "Rent Payment",
+                "url": "paytmmp://mymonthlypayment",
+                "landing_page_type": "embed",
+                "id": 682411,
+                "created_at": "2020-11-16T09:27:39",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1600065296126_houserent.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 683436,
+              "priority": 10,
+              "name": "Broadband / Landline",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/683436/1605699225959.png",
+              "url_type": "utility",
+              "url": "https://catalog.paytm.com/v1/mobile/getproductlist/75505?group=brand",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Landline",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1/mobile/getproductlist/75505?group=brand",
+              "display_metadata": {
+                "name": "Broadband / Landline",
+                "url": "https://catalog.paytm.com/v1/mobile/getproductlist/75505?group=brand",
+                "landing_page_type": "utility",
+                "id": 683436,
+                "created_at": "2020-11-18T11:33:13",
+                "metadata": {},
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1581936582181_1579009244629.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 682436,
+              "priority": 11,
+              "name": "Apartments",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/682436/1605699291175.png",
+              "url_type": "embed",
+              "url": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/101950",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/101950",
+              "display_metadata": {
+                "name": "Apartments",
+                "url": "paytmmp://utility?url=https://catalog.paytm.com/v2/mobile/getproductlist/101950",
+                "landing_page_type": "embed",
+                "id": 682436,
+                "created_at": "2020-11-16T09:50:47",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1575967570975_icapartment.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 682438,
+              "priority": 13,
+              "name": "Water",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/682438/1605520552712.png",
+              "url_type": "utility",
+              "url": "https://catalog.paytm.com/v1//mobile/getproductlist/68869?group=brand",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Water",
+              "layout": {},
+              "seourl": "https://catalog.paytm.com/v1//mobile/getproductlist/68869?group=brand",
+              "display_metadata": {
+                "name": "Water",
+                "url": "https://catalog.paytm.com/v1//mobile/getproductlist/68869?group=brand",
+                "landing_page_type": "utility",
+                "id": 682438,
+                "created_at": "2020-11-16T09:55:24",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1575704908411_1542108541893.png"
+              },
+              "reason": "D:FF"
+            },
+            {
+              "id": 682413,
+              "priority": 14,
+              "name": "Piped Gas",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/682413/1605699494841.png",
+              "url_type": "utility",
+              "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/78640",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Gas",
+              "layout": {},
+              "seourl": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/78640",
+              "display_metadata": {
+                "name": "Piped Gas",
+                "url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/78640",
+                "landing_page_type": "utility",
+                "id": 682413,
+                "created_at": "2020-11-16T09:30:28",
+                "image_url": "https://map-cma-images-production.s3-ap-south-1.amazonaws.com/en-creatives/1575705200047_1548077783620.png"
+              },
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 296690,
+              "container_id": 22052142,
+              "container_instance_id": "000000014B06DA01052B6639AEA4960494AECF4A"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": ""
+          }
+        }
+      ]
+    }
+  ],
+  "footer_image_url": "https://assetscdn1.paytm.com/images/catalog/category/5165/footer1.png",
+  "placeholder_image_url": "https://assetscdn1.paytm.com/images/catalog/category/5165/placeholder.png",
+  "ga_key": "/h/homepage-icons-clpid-8125",
+  "entity_type": "category",
+  "redirect": false,
+  "contextParams": {},
+  "layout": {}
+}

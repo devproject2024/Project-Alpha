@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/feed_tv_category_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/BlackToolbarTheme" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize">
+        <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="@color/feed_black" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_live_tv" android:fontFamily="sans-serif-medium" style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/channels_recyclerview_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar"/>
+    <TextView android:gravity="center" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/NoInternet"/>
+    <ProgressBar android:id="@+id/feed_loading_progress" android:tag="binding_2" android:layout_width="64dp" android:layout_height="64dp" android:layout_centerInParent="true" android:indeterminateTint="@color/feed_colorAccent"/>
+</RelativeLayout>

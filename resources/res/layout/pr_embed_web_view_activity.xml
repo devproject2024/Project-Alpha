@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/pr_embed_web_view_activity_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:contentInsetStartWithNavigation="0dp" app:popupTheme="@style/AppTheme.PopupOverlay">
+        <com.business.common_module.view.widget.CustomTextView android:textSize="22sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/tv_title" android:paddingLeft="4dp" android:layout_width="match_parent" android:layout_height="match_parent" app:custom_tv_font_name="8"/>
+    </androidx.appcompat.widget.Toolbar>
+    <WebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar"/>
+    <ProgressBar android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/sf_blue_strip_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-1dp">
+    <View android:id="@+id/view" android:background="@color/sf_footer_top_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_6dp"/>
+    <View android:id="@+id/view1" android:background="@color/sf_footer_bottom_color" android:layout_width="match_parent" android:layout_height="@dimen/dimen_6dp"/>
+</LinearLayout>

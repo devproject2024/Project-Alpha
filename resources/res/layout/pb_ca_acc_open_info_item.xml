@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/infoview_iv" android:layout_width="@dimen/dimen_36dp" android:layout_height="@dimen/dimen_36dp" app:srcCompat="@drawable/pb_ic_save_money"/>
+    <TextView android:textSize="@dimen/wallet_15sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@+id/infoview_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:text="@string/pb_bank_promotion_title1"/>
+</LinearLayout>

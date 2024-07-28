@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+    <TextView android:textSize="16sp" android:textColor="@color/event_text_gray_color" android:id="@+id/row_item_label" android:paddingRight="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shipping_charge" android:includeFontPadding="false" android:layout_toLeftOf="@+id/row_item_price" android:layout_alignParentLeft="true" app:fontType="2"/>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/event_text_color_black" android:id="@+id/row_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:fontType="2"/>
+</RelativeLayout>

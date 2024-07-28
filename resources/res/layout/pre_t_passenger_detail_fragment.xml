@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/traveller_scroll_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/train_passenger_page_user_id_view"/>
+        <include layout="@layout/train_passenger_details_boarding_station_view"/>
+        <include layout="@layout/train_passenger_details_travellers_view"/>
+        <include layout="@layout/train_additional_preferance_view"/>
+        <include layout="@layout/pre_t_trains_gst_details_layout"/>
+        <include layout="@layout/train_passenger_details_contact_view"/>
+        <include layout="@layout/train_passenger_destination_details_view"/>
+        <include layout="@layout/train_passenger_details_insurance_policy_view"/>
+        <include layout="@layout/train_passenger_details_refund_policy_view"/>
+        <Button android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/detail_detail_proceed_button" android:background="@drawable/pre_t_train_rectangle_blue_filled" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="@dimen/dimen_20dp" android:text="@string/train_proceed_to_book" android:layout_below="@+id/relative_refund_policy" android:textAllCaps="false" android:stateListAnimator="@null" app:fontType="2"/>
+    </LinearLayout>
+</ScrollView>

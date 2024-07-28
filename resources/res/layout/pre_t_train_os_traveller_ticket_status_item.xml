@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_16dp">
+        <ImageView android:id="@+id/traveller_icon" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:layout_centerVertical="true" app:srcCompat="@drawable/pre_t_male_tick"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_toRightOf="@+id/traveller_icon" android:layout_centerInParent="true" android:layout_centerVertical="true">
+            <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/traveller_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="5.2sp" android:fontFamily="sans-serif-medium"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/traveller_title">
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#979797" android:layout_gravity="center" android:id="@+id/traveller_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/senior_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginTop="1dp" android:src="@drawable/pre_t_train_circle_blue_train_order" android:layout_below="@+id/traveller_title"/>
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/color_3063ad" android:gravity="center" android:id="@+id/senior_citizen_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/senior_citizen_bullet" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:id="@+id/cancel_ticket_lyt" android:paddingLeft="@dimen/dimen_6dp" android:paddingRight="@dimen/dimen_6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#00b9f5" android:id="@+id/cancel_ticket_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel Ticket" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/color_21c17a" android:id="@+id/refunded_text" android:background="@drawable/pre_t_train_rounded_rect_border_green" android:paddingLeft="@dimen/dimen_12dp" android:paddingTop="2dp" android:paddingRight="@dimen/dimen_12dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="sans-serif"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ticket_status_lyt_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_16dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#979797" android:id="@+id/ticket_status_key_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ticket Status" android:fontFamily="sans-serif"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/ticket_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Confirmed" android:fontFamily="sans-serif"/>
+                <ImageView android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="15dp" android:src="@drawable/pre_t_station_tick" android:layout_toRightOf="@+id/ticket_status_text" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_toRightOf="@+id/ticket_status_lyt">
+            <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#979797" android:id="@+id/coach_key_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Coach" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/coach_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="--" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_toRightOf="@+id/ticket_status_lyt">
+            <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#979797" android:id="@+id/berth_key_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Berth" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/berth_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="24" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_toRightOf="@+id/ticket_status_lyt">
+            <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#979797" android:id="@+id/berth_type_key_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Berth Type" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/berth_type_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Middle" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ticket_status_lyt_2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_16dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ticket_status_lyt" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#979797" android:id="@+id/ticket_status_key1_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/ticket_status1_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+                <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/previous_status_text" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ticket_status1_text" android:layout_centerVertical="true" android:fontFamily="sans-serif"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/prediction_lyt" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_weight="1" android:layout_toRightOf="@+id/ticket_status_lyt">
+            <FrameLayout android:layout_gravity="center" android:layout_width="33dp" android:layout_height="33dp" android:layout_centerHorizontal="true">
+                <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="#222222" android:layout_gravity="center" android:id="@+id/prediction_value_text" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="sans-serif"/>
+                <com.travel.train.widget.TrainRatingProgress android:id="@+id/prediction_value_bar_circular" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent" app:backgroundColor="#e2ebee" app:primaryCapVisibility="false" app:progress="23" app:progressColor="#09ac63" app:showProgressText="true" app:strokeWidthProgress="2dp" app:strokeWidth="2dp"/>
+            </FrameLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_weight="1">
+                    <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#979797" android:id="@+id/prediction_key_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+                    <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/prediction_key_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/place_holder_lyt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_16dp">
+        <ImageView android:id="@+id/note_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16dp"/>
+        <TextView android:textSize="11sp" android:textStyle="normal" android:textColor="#666666" android:layout_gravity="center_vertical" android:id="@+id/note_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <View android:id="@+id/separator_view" android:background="#e3e3e3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp">
+    <RelativeLayout android:id="@+id/rel_pager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_15dp">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/imageviewPager" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_20dp" android:nestedScrollingEnabled="false"/>
+        <net.one97.paytm.common.widgets.CirclePageIndicator android:id="@+id/deals_banner_nearby_view_page_indicator" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_below="@+id/imageviewPager"/>
+    </RelativeLayout>
+</RelativeLayout>

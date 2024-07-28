@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:gravity="top" android:id="@+id/train_view_route_toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:weightSum="10">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="10" android:layout_alignParentLeft="true">
+                <com.paytm.utility.RoboTextView android:textSize="17sp" android:textColor="@color/color_000000" android:id="@+id/train_view_route_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_route" android:includeFontPadding="false" app:fontType="3"/>
+                <EditText android:textSize="14sp" android:id="@+id/edtSearch" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" android:imeOptions="actionSearch"/>
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center" android:id="@+id/search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pre_t_ic_action_search"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@+id/view_separator_bottom" android:background="@color/train_tab_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/train_view_route_toolbar"/>
+    <FrameLayout android:id="@+id/train_route_fragment_lyt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/view_separator_bottom"/>
+</RelativeLayout>

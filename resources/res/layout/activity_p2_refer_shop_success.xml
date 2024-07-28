@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/tool_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TableRow android:gravity="center_vertical" android:paddingRight="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/dimen_20dp">
+            <ImageView android:id="@+id/p2p_back_arrow_iv" android:paddingLeft="5dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true" android:contentDescription="TODO" android:paddingStart="5dp" android:paddingEnd="20dp"/>
+            <androidx.legacy.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ptop_lending_logo" android:contentDescription="TODO"/>
+            <androidx.legacy.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <ImageView android:id="@+id/p2p_share_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/upi_share_black" android:contentDescription="TODO"/>
+        </TableRow>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/bottom" android:layout_below="@+id/tool_bar">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/main_content" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1">
+                <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/dimen_25dp" android:paddingTop="@dimen/dimen_35dp" android:paddingBottom="@dimen/dimen_20dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.7" android:paddingStart="@dimen/dimen_25dp">
+                    <TextView android:textSize="24sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/tv_received" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uni_p2p_thank_you" android:layout_alignParentLeft="true" android:fontFamily="@string/font_family_roboto_medium" android:layout_alignParentStart="true"/>
+                    <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/color_222222" android:gravity="left" android:id="@+id/tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_25dp" android:text="@string/uni_p2p_refer_info" android:layout_below="@+id/tv_received" android:layout_alignParentLeft="true" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif" android:layout_alignParentStart="true"/>
+                    <View android:layout_gravity="center_horizontal" android:id="@+id/divider_failed" android:background="#f3f7f8" android:layout_width="30dp" android:layout_height="2dp" android:layout_marginTop="25dp" android:layout_marginBottom="25dp" android:layout_below="@+id/tv_info"/>
+                    <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unii_shopkeeper_details" android:layout_below="@+id/divider_failed" android:lineSpacingExtra="-0.6sp" android:fontFamily="@string/font_family_roboto_regular"/>
+                    <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/tv_shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/label" android:layout_alignParentLeft="true" android:fontFamily="@string/font_family_roboto_regular" android:layout_alignParentStart="true"/>
+                    <TextView android:textSize="17sp" android:textStyle="normal" android:textColor="@color/color_444444" android:id="@+id/tv_shopkeeper_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:layout_below="@+id/tv_shop_name" android:layout_alignParentLeft="true" android:fontFamily="sans-serif" android:layout_alignParentStart="true"/>
+                    <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#444444" android:id="@+id/tv_shopkeeper_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6dp" android:layout_below="@+id/tv_shopkeeper_no" android:lineSpacingExtra="5.5sp" android:fontFamily="sans-serif"/>
+                    <TextView android:textSize="12sp" android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_35dp" android:layout_below="@+id/tv_shopkeeper_address" android:lineSpacingExtra="2.4sp"/>
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="@dimen/dimen_10dp" android:paddingTop="@dimen/dimen_45dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.3" android:paddingStart="@dimen/dimen_10dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_success_tick" android:contentDescription="TODO"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30dp" android:layout_below="@+id/main_content" android:layout_alignParentBottom="true">
+                <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="113dp" android:scaleType="fitXY" android:contentDescription="TODO" app:srcCompat="@drawable/p2p_refer_shop_bg"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@+id/paytm_strip" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bottom_paytm_line"/>
+    </RelativeLayout>
+</RelativeLayout>

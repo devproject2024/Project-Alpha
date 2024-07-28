@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#666666" android:id="@+id/textView55" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/paytm_trust_text_re" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif-light" android:layout_marginStart="20dp" android:layout_marginEnd="30dp" app:layout_constraintBottom_toBottomOf="@+id/textView54" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/textView54" app:layout_constraintTop_toTopOf="@+id/textView54"/>
+    <ImageView android:id="@+id/textView54" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="30dp" android:src="@drawable/stamp_re" android:layout_marginStart="30dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_100dp" android:layout_marginRight="@dimen/dimen_15dp" android:layout_marginEnd="@dimen/dimen_15dp">
+    <ImageView android:id="@+id/img_carousal" android:background="@drawable/fb_carousal_grey_border" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:id="@+id/ll_more" android:background="@color/opaq_grey_70" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/img_carousal" android:layout_alignTop="@+id/img_carousal" android:layout_alignRight="@+id/img_carousal" android:layout_alignBottom="@+id/img_carousal" android:layout_alignStart="@+id/img_carousal" android:layout_alignEnd="@+id/img_carousal">
+        <TextView android:textSize="@dimen/dimen_10sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/txv_more_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5dp" android:layout_marginRight="@dimen/dimen_3dp" android:layout_marginStart="5dp" android:layout_marginEnd="@dimen/dimen_3dp"/>
+    </LinearLayout>
+</RelativeLayout>

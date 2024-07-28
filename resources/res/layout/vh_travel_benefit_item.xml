@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/image_item" android:background="@drawable/border_travel_benefit" android:layout_width="@dimen/dimen_130" android:layout_height="@dimen/dimen_161" android:layout_marginRight="@dimen/dimen_14dp">
+    <ImageView android:id="@+id/offer_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/offer_image" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/partner_image" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+        <LinearLayout android:gravity="center" android:id="@+id/promo_container" android:background="@drawable/background_rounded_f6f8fc" android:paddingLeft="@dimen/dimen_5dp" android:paddingRight="@dimen/dimen_5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dimen_40dp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/theme_accent_color" android:gravity="center" android:id="@+id/tv_promocode" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="View Promocode" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

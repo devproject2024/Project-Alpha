@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:id="@+id/th_progress_bar_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <ScrollView android:id="@+id/header_main_layout" android:background="@color/white" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:id="@+id/header_main_layout_1" android:background="@color/color_f1f6fc" android:layout_width="match_parent" android:layout_height="@dimen/dimen_130dp" android:weightSum="2">
+                <LinearLayout android:orientation="vertical" android:background="@color/color_f1f6fc" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/color_222222" android:id="@+id/referral_content_header" android:padding="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="2"/>
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/view_earnings" android:layout_width="@dimen/dimen_100dp" android:layout_height="30dp" android:layout_marginLeft="@dimen/dimen_15dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/color_f1f6fc" android:paddingRight="@dimen/dimen_10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_10dp" android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/referral_header_image" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/header_main_layout_1">
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/color_999999" android:padding="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/referral_how_it_works" app:fontType="2"/>
+                <LinearLayout android:paddingLeft="@dimen/dimen_30dp" android:paddingRight="@dimen/dimen_30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_35dp" android:weightSum="5">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="@dimen/dimen_25dp"/>
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_012b72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/referral_invite" app:fontType="2"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="1.5dp" android:layout_weight="1" app:srcCompat="@color/referral_separator"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_012b72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/referral_book" app:fontType="2"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="1.5dp" android:layout_weight="1" app:srcCompat="@color/referral_separator"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_012b72" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/referral_cashback" app:fontType="2"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:paddingLeft="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_4a4a4a" android:gravity="center" android:id="@+id/inviteText" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_weight="1" app:fontType="2"/>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_4a4a4a" android:gravity="center" android:id="@+id/bookText" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_weight="1" app:fontType="2"/>
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_4a4a4a" android:gravity="center" android:id="@+id/cashbackText" android:layout_width="@dimen/dimen_0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:layout_weight="1" app:fontType="2"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_45dp">
+                    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:textColor="@color/color_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/referral_unique_text_code_text" app:fontType="2"/>
+                    <EditText android:textSize="15sp" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@+id/referEditText" android:background="@drawable/travel_res_bus_travel_referral_promocode_selector" android:padding="@dimen/dimen_10dp" android:paddingLeft="5dp" android:focusable="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:singleLine="true" android:editable="false"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+                    <Button android:textColor="@android:color/white" android:id="@+id/invite_friend_button" android:background="@drawable/travel_res_bus_referral_page_invite_friend_image" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <RelativeLayout android:id="@+id/terms_and_condition" android:layout_width="match_parent" android:layout_height="@dimen/dimen_30dp" android:layout_marginTop="@dimen/dimen_12dp">
+                        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_12sp" android:textColor="@color/flight_tab_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gift_card_terms_condition" android:layout_centerInParent="true" app:fontType="2"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

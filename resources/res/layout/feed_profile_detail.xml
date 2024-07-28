@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/profile_maincontent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar" android:background="@color/feed_white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:background="@color/feed_white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="300dp" app:layout_scrollFlags="3" app:titleEnabled="false">
+            <include android:id="@+id/profile_header" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="2" layout="@layout/feed_profile"/>
+            <androidx.appcompat.widget.Toolbar android:theme="@style/ProfileActivity" android:layout_gravity="top" android:id="@+id/profile__toolbar" android:background="@color/feed_white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_marginBottom="48dp" app:layout_collapseMode="1">
+                <TextView android:textSize="20sp" android:textColor="@color/feed_black" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="18dp" android:layout_marginEnd="18dp"/>
+            </androidx.appcompat.widget.Toolbar>
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/profile_tabs" android:background="@color/feed_white" android:layout_width="wrap_content" android:layout_height="?attr/actionBarSize" app:tabBackground="@android:color/transparent" app:tabGravity="1" app:tabIndicatorHeight="0dp" app:tabMode="1" app:tabPaddingBottom="0dp" app:tabPaddingEnd="0dp" app:tabPaddingStart="0dp" app:tabPaddingTop="0dp"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/profile_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

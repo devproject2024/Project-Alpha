@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/metro_operator_bg_1" android:layout_width="match_parent" android:layout_height="96dp">
+    <ImageView android:id="@+id/operator_bg_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/operator_image_v2" android:layout_width="@dimen/dimen_40dp" android:layout_height="@dimen/dimen_40dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_centerVertical="true"/>
+    <TextView android:textSize="15sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/operator_name_v2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_toRightOf="@+id/operator_image_v2" android:layout_centerVertical="true" android:lineSpacingExtra="9sp" android:fontFamily="sans-serif-medium"/>
+    <ImageView android:id="@+id/ic_next_selection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/color_979797" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp" app:srcCompat="@drawable/ic_metro_landing_page_arrow"/>
+</RelativeLayout>

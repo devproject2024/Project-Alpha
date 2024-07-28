@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/card_view" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_marginRight="@dimen/dimen_10dp" app:cardCornerRadius="@dimen/dimen_4dp" app:cardElevation="@dimen/dimen_3dp">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_13sp" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/bus_cancellation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp" android:text="@string/bus_cancellation_policy_revamp" android:lineSpacingExtra="6.5sp" app:fontType="3"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/close_icon_action" android:padding="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" app:srcCompat="@drawable/bus_close_normal"/>
+        </RelativeLayout>
+        <View android:background="@color/color_f4f4f4" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/bus_cancellation_recycler_view" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ListView android:id="@+id/cancellation_policy_listview" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_10sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/price_cal_message" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:lineSpacingExtra="@dimen/dimen_2sp" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

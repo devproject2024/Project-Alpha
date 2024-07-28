@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/mp_payments_loader_layout_0" android:layout_width="match_parent" android:layout_height="185dp">
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/animation_view" android:layout_width="100dp" android:layout_height="25dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:lottie_autoPlay="true" app:lottie_fileName="blue_dotted_progress.json" app:lottie_loop="true"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

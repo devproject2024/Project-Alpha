@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:paddingTop="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16dp">
+    <ImageView android:id="@+id/listItemImage" android:layout_width="@dimen/dimen_24dp" android:layout_height="@dimen/dimen_24dp" android:layout_alignParentStart="true"/>
+    <TextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="@color/cashback_title_color" android:id="@+id/listItemTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="5.2sp" android:layout_marginStart="@dimen/dimen_16dp" android:layout_toEndOf="@+id/listItemImage" android:letterSpacing="0.03"/>
+    <View android:id="@+id/dividerView" android:background="@color/cb_item_stroke_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_16dp" android:layout_below="@+id/listItemImage" android:layout_toEndOf="@+id/listItemImage"/>
+</RelativeLayout>

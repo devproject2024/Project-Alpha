@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <CheckBox android:theme="@style/BlueCheckBoxTheme" android:textSize="13sp" android:textColor="@color/paytm_blue" android:id="@+id/utility_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/txt_rupee_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rupees"/>
+            <EditText android:textSize="15sp" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

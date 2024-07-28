@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.one97.paytm.quickpay.utilities.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/swipe_layout_2" android:background="#fafbfb" android:layout_width="match_parent" android:layout_height="wrap_content" app:dragEdge="2" app:mode="oneLine">
+    <LinearLayout android:orientation="horizontal" android:background="#fafbfb" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/recent_automatic_tv" android:background="#21c17a" android:visibility="gone" android:layout_width="@dimen/dimen_110dp" android:layout_height="match_parent" android:text="@string/recent_action_setup_automatic" android:fontFamily="sans-serif" android:letterSpacing="0.06"/>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/more_qp_tv" android:background="#21c17a" android:layout_width="@dimen/dimen_110dp" android:layout_height="match_parent" android:text="More" android:fontFamily="sans-serif" android:letterSpacing="0.06"/>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/delete_tv" android:background="#fd5c5c" android:layout_width="@dimen/dimen_110dp" android:layout_height="match_parent" android:text="@string/delete" android:fontFamily="sans-serif" android:letterSpacing="0.06"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/ffp_vertical_list_row"/>
+    </FrameLayout>
+</net.one97.paytm.quickpay.utilities.SwipeRevealLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.one97.paytm.utils.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/shimmer_loader" android:layout_width="match_parent" android:layout_height="wrap_content" app:base_alpha="0.4" app:shimmer_duration="1300">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_200dp" android:layout_height="@dimen/dimen_25dp"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp">
+                        <com.paytm.utility.RoboTextView android:id="@+id/dummy1" android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_120dp" android:layout_height="@dimen/dimen_25dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/dummy1" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_200dp" android:layout_height="@dimen/dimen_25dp"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp">
+                        <com.paytm.utility.RoboTextView android:id="@+id/dummy2" android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_120dp" android:layout_height="@dimen/dimen_25dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/dummy2" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_200dp" android:layout_height="@dimen/dimen_25dp"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp">
+                        <com.paytm.utility.RoboTextView android:id="@+id/dummy3" android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_120dp" android:layout_height="@dimen/dimen_25dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/dummy3" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_200dp" android:layout_height="@dimen/dimen_25dp"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp">
+                        <com.paytm.utility.RoboTextView android:id="@+id/dummy4" android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_120dp" android:layout_height="@dimen/dimen_25dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/dummy4" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_200dp" android:layout_height="@dimen/dimen_25dp"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp">
+                        <com.paytm.utility.RoboTextView android:id="@+id/dummy5" android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_120dp" android:layout_height="@dimen/dimen_25dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/dummy5" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_200dp" android:layout_height="@dimen/dimen_25dp"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_100dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_12_8dp">
+                    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp">
+                        <com.paytm.utility.RoboTextView android:id="@+id/dummy6" android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_120dp" android:layout_height="@dimen/dimen_25dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        <com.paytm.utility.RoboTextView android:background="@color/dummy_items_background" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_10dp" android:layout_below="@+id/dummy6" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</net.one97.paytm.utils.ShimmerFrameLayout>

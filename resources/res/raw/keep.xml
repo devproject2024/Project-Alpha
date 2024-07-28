@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/back,@drawable/down_arrow,@drawable/ic_action_refresh,@drawable/ic_action_scan,@drawable/location,
+            @drawable/minus_blue,@drawable/minus_gray,@drawable/minus,@drawable/nearbuy*,@drawable/plus_blue,@drawable/plus_gray,
+            @drawable/plus,@drawable/search,@drawable/sms_placeholder1,@drawable/sms_placeholder2,@drawable/sms_placeholder3,
+    @drawable/sms_paytm_logo_white,@drawable/sms_placeholder4,@drawable/sms_placeholder5,@drawable/ic_otp,@drawable/feed_ic_icon_report_spam,
+    @drawable/feed_ic_edit_comment,@drawable/feed_ic_delete_comment,@drawable/feed_ic_icon_report_spam"
+    tools:shrinkMode="strict" />
+
+

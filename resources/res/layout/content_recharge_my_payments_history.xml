@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/payment_history_title" android:background="@color/color_f3f7f8" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_13dp" android:paddingRight="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#444444" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_history" android:layout_weight="1" android:fontFamily="sans-serif" android:letterSpacing="0.06"/>
+        <TextView android:textSize="@dimen/automatic_history_text_x_small" android:textStyle="normal" android:textColor="#222222" android:id="@+id/txt_last_history_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="7sp" android:fontFamily="sans-serif-light" android:letterSpacing="0.02"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/transaction_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="?attr/actionBarSize" android:nestedScrollingEnabled="false" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

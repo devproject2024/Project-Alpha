@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/payment_tooltip" android:background="@drawable/combined_tooltip" android:padding="15dp" android:visibility="visible" android:layout_width="260dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_50dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="@dimen/dimen_5dp" android:layout_marginRight="@dimen/dimen_12dp" app:srcCompat="@drawable/bulb"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/tooltip_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2dp" android:layout_toRightOf="@+id/img">
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#3063ad" android:id="@+id/tooltip_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Payment tip" android:lineSpacingExtra="3sp" android:fontFamily="sans-serif" android:letterSpacing="0.01"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#666666" android:id="@+id/tooltip_contenttv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="15dp" android:layout_marginBottom="@dimen/dimen_20dp" android:text="@string/train_tool_tip_text" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/tooltip_close" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="@dimen/dimen_5dp" android:src="@drawable/close_icon_image_zoom" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

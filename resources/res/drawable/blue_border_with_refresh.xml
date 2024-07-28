@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/dimen_2dp" android:color="@color/paytm_blue"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/dimen_20dp" android:width="@dimen/dimen_20dp" android:drawable="@drawable/ic_refresh_icon" android:left="@dimen/dimen_5dp" android:top="@dimen/dimen_5dp" android:right="@dimen/dimen_5dp" android:bottom="@dimen/dimen_5dp"/>
+</layer-list>

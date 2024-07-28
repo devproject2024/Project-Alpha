@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/toolbar" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="80dp">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/top_toolbar" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentTop="true" app:contentInsetStartWithNavigation="0dp" app:navigationIcon="@drawable/chat_ic_arrow_left_black" app:subtitle="@string/chat_module_subtitle_tap_to_select" app:subtitleTextAppearance="@style/tool_bar_subtitle" app:title="@string/chat_module_audio_files" app:titleTextAppearance="@style/tool_bar_title"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/lv_local_audio_list" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <Button android:textSize="16sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/button_send" android:background="@drawable/chat_btn_local_audio_send_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="Send" android:textAllCaps="false"/>
+    <FrameLayout android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="30sp" android:textColor="@color/zhihu_album_empty_view" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty_view_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80dp" android:text="@string/chat_picker_empty_audio_text" android:drawableTop="@drawable/chat_ic_empty_audio" android:drawablePadding="37dp" android:fontFamily="sans-serif-thin"/>
+    </FrameLayout>
+</LinearLayout>

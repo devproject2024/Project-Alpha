@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <Preference android:title="Mock URL Settings" android:key="MockUrlActivity"/>
+    <Preference android:title="Mock Header Activity" android:key="MockHeaderActivity"/>
+    <Preference android:title="Clear Network Cache" android:key="ClearNetworkCache"/>
+    <Preference android:enabled="true" android:title="H5 Base URL" android:selectable="false" android:key="h5_url" android:summary=""/>
+</PreferenceScreen>

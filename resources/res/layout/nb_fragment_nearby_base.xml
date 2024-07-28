@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/wallet_loader" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_centerInParent="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="400" app:endColor="@color/light_blue_A400" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:startColor="@color/light_blue_A700"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/nearby_recycler_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:id="@+id/sv_error" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:nestedScrollingEnabled="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/nearbyfragment_error_layout_id" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+</RelativeLayout>

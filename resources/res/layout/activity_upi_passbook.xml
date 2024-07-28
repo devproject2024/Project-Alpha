@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentInsetStart="0dp" android:contentInsetEnd="0dp" android:contentInsetLeft="0dp" android:contentInsetRight="0dp" app:contentInsetEnd="0dp" app:contentInsetLeft="0dp" app:contentInsetRight="0dp" app:contentInsetStart="0dp">
+        <RelativeLayout android:id="@+id/rl_root_toolbar_container" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50dp">
+            <ImageView android:id="@+id/iv_back_button" android:padding="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:layout_centerVertical="true"/>
+            <TextView android:textSize="15sp" android:textColor="@color/color_00b9f5" android:layout_gravity="right" android:id="@+id/tv_spam_folder" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15dp" android:text="@string/upi_spam_folder_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:fontFamily="@string/font_family_roboto_regular"/>
+        </RelativeLayout>
+        <include layout="@layout/rq_header_layout_as_snack"/>
+        <RelativeLayout android:id="@+id/rl_header" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50dp">
+            <TextView android:textSize="@dimen/dimen_18sp" android:textStyle="bold" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:text="@string/upi_title_payments" android:maxLines="1" android:layout_toLeftOf="@+id/iv_refresh" android:layout_centerVertical="true" android:fontFamily="@string/font_family_roboto_regular"/>
+            <ImageView android:id="@+id/iv_refresh" android:padding="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_upi_refresh"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@+id/tl_upi_tabs" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="@dimen/wallet_60_dp" app:tabGravity="0" app:tabIndicatorColor="@color/color_00b9f5" app:tabMode="1" app:tabSelectedTextColor="@color/color_222222" app:tabTextAppearance="@style/TabLayoutTextStylePassbook" app:tabTextColor="@color/color_b8c2cb"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/vp_upi" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

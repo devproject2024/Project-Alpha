@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scroll_view" android:background="@color/color_ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/automatic_add_new_bill_title" android:paddingLeft="@dimen/dimen_23dp" android:paddingTop="@dimen/dimen_2dp" android:paddingRight="@dimen/dimen_23dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_18dp" android:layout_marginBottom="32dp" android:text="@string/automatic_add_new_bill_title" android:drawableRight="@drawable/ic_add_automatic" android:lineSpacingExtra="8sp" android:fontFamily="sans-serif"/>
+        <EditText android:id="@+id/scroll_empty_view" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="0.1dp" android:inputType="none|text|textNoSuggestions|number|phone"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/container_main" android:paddingTop="@dimen/dimen_16dp" android:paddingBottom="@dimen/dimen_24dp" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:layout_marginBottom="@dimen/dimen_21dp">
+            <net.one97.paytm.common.views.ShimmerFrameLayout android:id="@+id/shimmer_container_category_input_fields" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/container_category_input_fields" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp"/>
+            </net.one97.paytm.common.views.ShimmerFrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/container_recents" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <net.one97.paytm.common.views.ShimmerFrameLayout android:id="@+id/shimmer_lyt_recent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/v3_recent_mobile_item_view_shimmer"/>
+            </net.one97.paytm.common.views.ShimmerFrameLayout>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="bottom" android:id="@+id/container_footer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_weight="1">
+            <View android:id="@+id/clp_footer_height_controller" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/divider_footer" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <View android:id="@+id/divider_footer" android:background="@color/grey_f5f8fa" android:layout_width="match_parent" android:layout_height="@dimen/dimen_7dp" app:layout_constraintBottom_toTopOf="@+id/footer_menu"/>
+            <net.one97.paytm.recharge.mobile_v3.widget.CJRFooterViewWidgetV3 android:id="@+id/footer_menu" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/container_logo_bbps"/>
+            <FrameLayout android:id="@+id/container_logo_bbps" android:background="@color/recharge_divider_widgets" android:layout_width="match_parent" android:layout_height="@dimen/dimen_34dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_logo_bbps" android:layout_width="@dimen/dimen_52dp" android:layout_height="@dimen/dimen_29dp" android:scaleType="fitCenter"/>
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

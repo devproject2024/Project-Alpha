@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/nested_scroll_view" android:background="@color/white" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_25dp" android:paddingRight="@dimen/dimen_15dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/metro_logo_imageview" android:padding="@dimen/dimen_1dp" android:visibility="invisible" android:layout_width="@dimen/dimen_17dp" android:layout_height="@dimen/dimen_18dp" android:scaleType="fitXY"/>
+                <com.paytm.utility.RoboTextView android:textSize="12.5sp" android:textColor="@color/color_222222" android:gravity="top" android:id="@+id/metro_city_name" android:background="@null" android:paddingLeft="7dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:lineSpacingExtra="-8.7sp" android:fontFamily="sans-serif-medium"/>
+                <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="normal" android:textColor="@color/excl_color_00b9f5" android:gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/change_city_textview" android:background="@null" android:paddingLeft="7dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/change_city" android:lineSpacingExtra="-8.7sp"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/metro_home_strip_recyclerview" android:paddingTop="@dimen/dimen_19dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.airbnb.lottie.LottieAnimationView android:id="@+id/lottie_in_metro_home_fragment" android:visibility="invisible" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_25dp" android:layout_centerInParent="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="12" app:duration="@android:integer/config_mediumAnimTime" app:lottie_autoPlay="true" app:lottie_fileName="Payments-Loader.json" app:lottie_loop="true"/>
+            </RelativeLayout>
+            <include layout="@layout/pre_t_source_destination_layout_travel"/>
+            <net.one97.paytm.common.widgets.RoboButton android:textSize="18sp" android:textColor="@color/bus_ticket_white" android:gravity="center" android:id="@+id/search_route_btn" android:background="@drawable/pre_t_train_bg_btn_train_blue" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="@dimen/dimen_43dp" android:text="@string/search_route" android:textAllCaps="false" style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+            <FrameLayout android:id="@+id/framelayout_storefront_metro" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

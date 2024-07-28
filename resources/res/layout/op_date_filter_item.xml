@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" app:cardCornerRadius="6dp" app:cardElevation="@dimen/dimen_1dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/backgroundLL" android:background="@drawable/shape_rectangle_round_edges_grey_border" android:paddingLeft="14dp" android:paddingTop="14dp" android:paddingBottom="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="104dp">
+            <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/paytm_blue" android:id="@+id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" app:fontType="4"/>
+            <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/metalic_blue" android:id="@+id/subtitleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontType="3"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

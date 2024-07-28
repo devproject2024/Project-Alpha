@@ -1,0 +1,10 @@
+[
+  {
+    "rule_type" : "String Override",
+    "search_pattern" : "https://paytmmall.com/",
+    "replacement_pattern" : "https://beta.paytmmall.com/",
+    "is_full_replacement" : false,
+    "is_muted" : false
+  }
+]
+

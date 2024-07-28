@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/transparent" android:paddingLeft="@dimen/dimen_4dp" android:paddingRight="@dimen/dimen_4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shadow_item_bg" android:paddingLeft="@dimen/dimen_4dp" android:paddingRight="@dimen/dimen_4dp" android:paddingBottom="@dimen/dimen_16dp" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-16dp">
+        <include layout="@layout/ptxn_merchant_header"/>
+        <FrameLayout android:id="@+id/fl_feedback_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/ptxn_rate_experience"/>
+            <ViewAnimator android:id="@+id/singleChoice_animator" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <include layout="@layout/ptxn_multichoice_question"/>
+            <FrameLayout android:id="@+id/loadingContainer" android:background="@color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/wallet_loader" android:layout_width="wrap_content" android:layout_height="30dp" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="400" app:endColor="@color/light_blue_A400" app:layout_constraintBottom_toBottomOf="@+id/fl_feedback_content" app:layout_constraintEnd_toEndOf="@+id/fl_feedback_content" app:layout_constraintStart_toStartOf="@+id/fl_feedback_content" app:layout_constraintTop_toTopOf="@+id/fl_feedback_content" app:startColor="@color/light_blue_A700"/>
+            </FrameLayout>
+        </FrameLayout>
+        <net.one97.paytm.wallet.rateMerchant.utils.HorizontalStepView android:id="@+id/singlechoice_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginLeft="@dimen/dimen_4dp" android:layout_marginRight="@dimen/dimen_4dp"/>
+        <include layout="@layout/ptxn_feedback_success"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/ivClose" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginTop="16dp" android:layout_marginRight="20dp" android:contentDescription="TODO" android:layout_marginEnd="16dp" app:srcCompat="@drawable/ic_channels_close"/>
+</FrameLayout>

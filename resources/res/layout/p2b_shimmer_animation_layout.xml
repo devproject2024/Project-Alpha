@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:id="@+id/shimmer" android:background="@drawable/p2b_shimmer_bg" android:visibility="visible" android:layout_width="70dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_40dp" android:layout_marginTop="-10dp" android:layout_marginBottom="-10dp" android:rotation="8"/>
+</merge>

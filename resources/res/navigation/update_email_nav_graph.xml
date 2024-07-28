@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/update_email_nav_graph" app:startDestination="@+id/verifyPhoneOtpFragment">
+    <fragment android:name="net.one97.paytm.oauth.fragment.VerifyPhoneOtpFragment" android:id="@+id/verifyPhoneOtpFragment">
+        <argument android:name="meta" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="stateToken" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="email" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="mobile" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <action android:id="@+id/navActionEmailEnterOtp" app:destination="@+id/verifyEmailOtpFragment" app:enterAnim="@animator/slide_in_left" app:exitAnim="@animator/slide_out_left" app:popEnterAnim="@animator/slide_in_right" app:popExitAnim="@animator/nav_slide_out_right"/>
+    </fragment>
+    <fragment android:name="net.one97.paytm.oauth.fragment.VerifyEmailOtpFragment" android:id="@+id/verifyEmailOtpFragment">
+        <argument android:name="stateToken" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="email" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+        <argument android:name="previous_screen_name" android:defaultValue="@null" app:argType="string" app:nullable="true"/>
+    </fragment>
+</navigation>

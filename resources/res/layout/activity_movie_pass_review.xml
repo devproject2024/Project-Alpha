@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:weightSum="10">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="8">
+            <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:text="Order Summary" android:textAllCaps="true" android:fontFamily="sans-serif-medium" android:letterSpacing="0.08"/>
+            <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/mp_bottom_sheet_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="30dp" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/mp_bottom_sheet_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="8dp" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/close" android:layout_width="@dimen/dimen_0dp" android:layout_height="@dimen/information_close_icon_size" android:scaleType="center" android:layout_weight="2" android:layout_alignParentRight="true" app:srcCompat="@drawable/ic_close_new"/>
+    </LinearLayout>
+    <View android:background="@color/color_ebebeb" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp" android:weightSum="10">
+        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total" android:layout_weight="5" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="end" android:layout_gravity="center_vertical" android:id="@+id/mp_bottom_sheet_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="5" android:lineSpacingExtra="6sp"/>
+    </LinearLayout>
+    <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/mp_bottom_sheet_proceed_to_pay" android:background="@color/color_00b9f5" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="15dp" android:fontFamily="sans-serif"/>
+</LinearLayout>

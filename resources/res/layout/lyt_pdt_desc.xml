@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/lyt_attribute" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/seperatorr" android:background="@color/separators" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+        <TextView android:textColor="#6f6f6f" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textColor="#6f6f6f" android:id="@+id/value_for_map" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</LinearLayout>

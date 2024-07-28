@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="top" android:id="@+id/toolbar_start_ap" android:background="@color/color_ffffff" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_30dp" android:paddingRight="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true">
+        <com.paytm.utility.RoboTextView android:textSize="21sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vietnam Trip" android:layout_alignParentLeft="true" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/cross_btn" android:padding="5dp" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/sb_ic_close_splitbill_bottom_sheet"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/group_member_list_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp"/>
+</LinearLayout>

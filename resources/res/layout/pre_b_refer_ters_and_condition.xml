@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bookNowView" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottomView">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textColor="@color/color_222222" android:id="@+id/terms_condition_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/dimen_15dp" app:fontType="2"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

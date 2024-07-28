@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/devider" android:background="#ffefefef" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_7dp"/>
+    <com.paytm.utility.RoboTextView android:textSize="9sp" android:textColor="@color/color_222222" android:id="@+id/txt_name" android:paddingTop="@dimen/dimen_12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="name" android:layout_centerVertical="true" app:fontType="3"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/relative_indurance_header" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="#ff666666" android:gravity="center_vertical" android:id="@+id/txt_item_name" android:paddingTop="@dimen/dimen_10dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="" android:layout_weight="0.8" app:fontType="2"/>
+        <LinearLayout android:paddingTop="@dimen/dimen_10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.2">
+            <com.paytm.utility.RoboTextView android:textSize="11sp" android:textColor="@color/color_222222" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txt_item_price" android:paddingRight="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="100" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:fontType="2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

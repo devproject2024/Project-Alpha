@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/root_layout" android:layout_width="match_parent" android:layout_height="@dimen/dimen_65dp" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp">
+            <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Abhishek Rajan" app:fontType="3"/>
+            <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rs. 2000" android:layout_alignParentRight="true" app:fontType="3"/>
+        </RelativeLayout>
+        <TextView android:textSize="11sp" android:textColor="#222222" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="@dimen/dimen_10dp" android:text="Jan 2018" app:fontType="1"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/separator" android:background="#efefef" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp" android:layout_below="@+id/root_layout"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/filter_toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_scrollFlags="5">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_48dp">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/img_close_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:srcCompat="@drawable/bus_close_normal"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_00b9f5" android:id="@+id/text_reset_all_filter" android:padding="@dimen/dimen_6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear_all_text" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_17sp" android:textStyle="normal" android:textColor="@color/color_0a0a0a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filters_sort_text" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/dimen_10dp" app:fontType="3"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/filter_tab_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabMode="0"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/filter_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</LinearLayout>

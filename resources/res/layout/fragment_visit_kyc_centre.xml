@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.one97.paytm.common.widgets.EndlessScrollView android:orientation="vertical" android:id="@+id/sv_endless_scroller" android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_17sp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_8dp" android:text="@string/select_kyc_point" app:fontType="4"/>
+            <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/color_222222" android:id="@+id/aadhar_no" android:paddingRight="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_8dp" app:fontType="2"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_static_kyc_centres" android:padding="@dimen/dimen_10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <RelativeLayout android:id="@+id/rl_dynamic_kyc_centres" android:padding="@dimen/dimen_25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_kyc_center" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:gravity="center" android:id="@+id/ll_nearby_error" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </net.one97.paytm.common.widgets.EndlessScrollView>
+</LinearLayout>

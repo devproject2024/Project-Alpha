@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="60dp">
+        <RelativeLayout android:id="@+id/toolbar_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_marginTop="@dimen/dimen_11dp" android:layout_marginRight="@dimen/dimen_17dp">
+            <ImageView android:id="@+id/home" android:visibility="visible" android:layout_width="@dimen/dimen_30dp" android:layout_height="@dimen/dimen_30dp" android:layout_marginLeft="12dp" android:layout_alignTop="@+id/tv_fastag_share" android:layout_alignParentLeft="true" android:layout_marginStart="12dp" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_recharge_back_home_fastag"/>
+            <ImageView android:layout_width="80dp" android:layout_height="match_parent" android:src="@drawable/action_bar_logo_with_bg_fastag" android:layout_weight="1" android:layout_centerHorizontal="true"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/cart_14sp" android:textStyle="normal" android:textColor="@color/color_00b9f5" android:id="@+id/tv_fastag_share" android:padding="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:lineSpacingExtra="5.5sp" android:fontFamily="sans-serif-medium"/>
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView android:id="@+id/item_detail_scrollview" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/main_container_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="39dp">
+                <LinearLayout android:orientation="vertical" android:id="@+id/postpayment_screen_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/help_item_layout_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <FrameLayout android:id="@+id/tracking_info_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_15sp" android:textStyle="normal" android:textColor="@color/color_222222" android:id="@+id/payment_detail_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_25dp" android:text="@string/event_payment_details" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:id="@+id/seal_of_trust_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/item_deals_order_summary_seal_of_trust_for_ft"/>
+                </LinearLayout>
+                <View android:id="@+id/footer_strip" android:background="@drawable/shape_bg_recharge_footer_strip_ft" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_50dp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ll_success_layout" android:background="@color/color_21c17a" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp" android:layout_marginTop="@dimen/dimen_65dp">
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fastag_order_success_header" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+    </LinearLayout>
+    <include android:id="@+id/lyt_bottom_tab_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true" layout="@layout/lyt_main_bottom_tab_bar_new_ft"/>
+</RelativeLayout>

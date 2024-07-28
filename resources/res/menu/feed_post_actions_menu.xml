@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/feed_ic_icon_report_spam" android:id="@+id/Hide" android:title="@string/feed_hide_post" app:showAsAction="always"/>
+</menu>

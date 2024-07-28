@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/onward_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:background="@color/color_fafafa" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/color_999999" android:gravity="left" android:id="@+id/onward_layout_src_dest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Del - Bng" android:layout_weight="1" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_999999" android:gravity="right" android:id="@+id/onward_layout_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fri, 24 Feb" android:layout_weight="1" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/onward_passenger_name_container" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/return_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+        <LinearLayout android:layout_gravity="center" android:background="@color/color_fafafa" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/color_999999" android:gravity="left" android:id="@+id/return_layout_src_dest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Del - Bng" android:layout_weight="1" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/color_999999" android:gravity="right" android:id="@+id/return_layout_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fri, 24 Feb" android:layout_weight="1" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/return_passenger_name_container" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/order_summary_from_payment" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/order_state_imageview_1" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerInParent="true" app:srcCompat="@drawable/pre_f_order_summary_payment_pending"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:layout_centerInParent="true" app:srcCompat="@drawable/pre_f_order_summary_flight_icon"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/order_state_imageview_2" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="20dp" android:layout_centerInParent="true" app:srcCompat="@drawable/pre_f_order_summary_payment_pending"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_centerInParent="true" app:srcCompat="@drawable/pre_f_order_summary_flight_icon"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/order_state_imageview_3" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerInParent="true" app:srcCompat="@drawable/pre_f_order_summary_payment_pending"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingBottom="25dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3">
+                <RelativeLayout android:gravity="left" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+                    <TextView android:textSize="10sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:id="@+id/order_state_textview_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancellation_requested"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="10sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@+id/order_state_textview_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirming_cancellation_with_airline"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_weight="1">
+                    <TextView android:textSize="10sp" android:textColor="@color/color_666666" android:gravity="center" android:id="@+id/order_state_textview_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refund_process"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="3">
+                    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+                        <TextView android:textSize="10sp" android:textColor="@color/color_666666" android:gravity="center_vertical" android:id="@+id/cancellation_requested_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_sent_on_email_or_sms"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_weight="1">
+                        <TextView android:textSize="10sp" android:textColor="@color/color_666666" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/cancellation_process_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_sent_on_email_or_sms"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+                        <TextView android:textSize="10sp" android:textColor="@color/color_09ac63" android:gravity="center" android:id="@+id/refund_process_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_sent_on_email_or_sms"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

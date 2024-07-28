@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingBottom="@dimen/dimen_18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_20dp" android:paddingEnd="@dimen/dimen_20dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="#576c81" android:ellipsize="end" android:id="@+id/capacityTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20 gm" android:maxLines="1"/>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dimen_4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/clp_label2" android:id="@+id/offerPriceTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="39567" android:paddingEnd="@dimen/dimen_4dp"/>
+            <TextView android:textSize="@dimen/dimen_14sp" android:textColor="#506d85" android:id="@+id/actualPriceTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="40000" android:paddingEnd="@dimen/dimen_4dp"/>
+            <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/clp_green_teal" android:id="@+id/discountPercentTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-22%" android:paddingEnd="@dimen/dimen_4dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dimen_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iconIV" android:layout_width="@dimen/dimen_40dp" android:layout_height="@dimen/dimen_40dp" android:src="@drawable/picasso_default_placeholder"/>
+            <TextView android:textSize="@dimen/dimen_14sp" android:textColor="@color/clp_green_teal" android:ellipsize="end" android:id="@+id/offerTagTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cashback 2" android:maxLines="1" android:paddingStart="@dimen/dimen_8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@+id/addToCartLayout" android:visibility="gone" layout="@layout/layout_add_to_cart"/>
+        <include android:id="@+id/editCartLayout" android:visibility="visible" layout="@layout/layout_edit_cart"/>
+    </FrameLayout>
+</LinearLayout>

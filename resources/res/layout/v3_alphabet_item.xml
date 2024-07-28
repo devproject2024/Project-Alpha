@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="@dimen/dimen_12sp" android:textColor="@color/color_8ba6c1" android:gravity="center" android:id="@+id/letterTV" android:layout_width="@dimen/dimen_40dp" android:layout_height="@dimen/dimen_20dp"/>

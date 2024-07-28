@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:background="@drawable/webview_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dimen_17dp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:paddingTop="@dimen/dimen_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_to_share"/>
+</LinearLayout>

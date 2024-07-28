@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:enterFadeDuration="200" android:exitFadeDuration="200">
+    <item android:state_enabled="true" android:drawable="@drawable/chat_bg_btn_payment"/>
+    <item android:state_enabled="false" android:drawable="@drawable/chat_bg_btn_payment_disabled"/>
+    <item android:drawable="@drawable/chat_bg_btn_payment"/>
+</selector>

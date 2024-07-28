@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp">
+            <ImageView android:id="@+id/imax_back_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:src="@drawable/back_arrow" android:tint="@color/white" android:layout_centerVertical="true"/>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_imax_icon"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="center_vertical" android:id="@+id/imax_cities_tabs" android:background="@color/black" android:layout_width="match_parent" android:layout_height="48dp" app:tabIndicatorColor="@color/color_00b9f5" app:tabMinWidth="@dimen/dimen_100dp" app:tabSelectedTextColor="@color/color_00b9f5" app:tabTextAppearance="@style/EventTabTextAppearance" style="@style/AppTabLayout"/>
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView android:id="@+id/imax_scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/imax_parent_lyt_container" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" app:srcCompat="@drawable/ic_imax_movies"/>
+                <RelativeLayout android:layout_gravity="center" android:id="@+id/imax_movies_unavailable" android:visibility="gone" android:layout_width="match_parent" android:layout_height="192dp" android:layout_marginLeft="8dp" android:layout_marginTop="24dp" android:layout_marginRight="8dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/error_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="52dp" app:srcCompat="@drawable/ic_icon_unavailable"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/imax_unavailable_City" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/imax_movie_unavailable" android:layout_below="@+id/error_img" android:fontFamily="@string/font_family_roboto_regular"/>
+                </RelativeLayout>
+                <androidx.viewpager.widget.ViewPager android:layout_gravity="center" android:id="@+id/view_pager_imax_movies" android:layout_width="match_parent" android:layout_height="275dp" android:layout_marginLeft="8dp" android:layout_marginTop="24dp" android:layout_marginRight="8dp"/>
+                <net.one97.paytm.common.widgets.CirclePageIndicator android:layout_gravity="center" android:id="@+id/imax_movies_page_indicator" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+                <View android:background="@drawable/imax_gradient_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="39dp"/>
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" app:srcCompat="@drawable/ic_imax_cinemas"/>
+                <LinearLayout android:id="@+id/imax_cinema_list_lyt" android:background="@drawable/light_white_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="40dp" android:layout_marginRight="8dp">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/imax_cinema_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+                <View android:background="@drawable/imax_gradient_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="32dp"/>
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" app:srcCompat="@drawable/ic_imax_difference"/>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/light_white_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="40dp" android:layout_marginRight="8dp">
+                    <androidx.viewpager.widget.ViewPager android:layout_gravity="center" android:id="@+id/view_pager_imax_difference" android:layout_width="match_parent" android:layout_height="275dp"/>
+                </LinearLayout>
+                <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/imax_difference_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="32dp" android:layout_marginRight="24dp" android:text="@string/gift_card_dummy_header" android:maxLines="20" android:fontFamily="@string/font_family_roboto_regular"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/up_down_differences_imax" android:padding="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/down"/>
+                <net.one97.paytm.common.widgets.CirclePageIndicator android:layout_gravity="center" android:id="@+id/imax_difference_page_indicator" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+                <View android:background="@drawable/imax_gradient_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="39dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="39dp" android:text="@string/checkout_all_movies_in_your_city" android:fontFamily="@string/font_family_roboto_regular"/>
+                <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/goto_paytm_movies" android:background="@drawable/imax_bg_btn_blue" android:layout_width="240dp" android:layout_height="32dp" android:layout_marginTop="20dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/movie_active" android:tint="@color/white" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_to_paytm_movies" android:layout_centerInParent="true" android:fontFamily="@string/font_family_roboto_regular"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:src="@drawable/right_arrow_flight" android:tint="@color/white" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="40dp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/imax_progress_bar" android:clickable="true" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:indeterminateDrawable="@drawable/movie_progress_large_holo" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="56dp">
+        <ImageView android:id="@+id/iv_back_button" android:padding="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/upi_ic_back" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/menu_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp" android:src="@drawable/ic_context_menu" android:layout_alignParentRight="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/title_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/iv_back_button">
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/money_transfer_linked_accounts" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/toolbar_subtitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_back_button" android:layout_below="@+id/toolbar_title" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fl_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar_layout"/>
+</RelativeLayout>

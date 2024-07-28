@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_motif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_motif_classic" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+    <ImageView android:id="@+id/iv_back_arrow" android:background="?android:attr/selectableItemBackground" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="@dimen/dimen_32dp" android:layout_height="@dimen/dimen_32dp" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:src="@drawable/pb_ic_back" android:layout_marginStart="20dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@+id/view_bottom_lines" android:layout_below="@+id/iv_motif">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="540dp" android:layout_below="@+id/view_separator"/>
+        </RelativeLayout>
+    </ScrollView>
+    <include android:id="@+id/view_bottom_lines" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32dp" android:layout_alignParentBottom="true" layout="@layout/pb_base_bottom_paytm_line"/>
+</RelativeLayout>

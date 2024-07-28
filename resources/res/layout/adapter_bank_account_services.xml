@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_row_wrapper" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_image_wrapper" android:layout_width="32dp" android:layout_height="32dp">
+        <ImageView android:id="@+id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="#222222" android:id="@+id/tv_heading_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:text="Manage Debit &amp; ATM Card" android:layout_toLeftOf="@+id/arrow" android:layout_toRightOf="@+id/rl_image_wrapper" android:lineSpacingExtra="2sp" android:fontFamily="sans-serif-medium"/>
+    <TextView android:textSize="11sp" android:textStyle="normal" android:textColor="#8f969c" android:id="@+id/tv_heading_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="8dp" android:text="Card Details, Change ATM Card Pin" android:layout_toLeftOf="@+id/arrow" android:layout_toRightOf="@+id/rl_image_wrapper" android:layout_below="@+id/tv_heading_1" android:lineSpacingExtra="3sp" android:fontFamily="sans-serif"/>
+    <ImageView android:id="@+id/arrow" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/ic_drawer_forward_arrow"/>
+    <View android:id="@+id/v_seperator" android:background="#f3f7f8" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="22dp" android:layout_marginTop="15dp" android:layout_toRightOf="@+id/rl_image_wrapper" android:layout_below="@+id/tv_heading_2"/>
+</RelativeLayout>

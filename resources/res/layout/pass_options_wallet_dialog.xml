@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/pass_passbook_filter_sheet_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="25dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/text_size_21sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallet_filter_tran" android:layout_centerVertical="true" android:lineSpacingExtra="-6sp" android:fontFamily="sans-serif" app:fontType="4"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pass_pdp_close_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RadioGroup android:id="@+id/radioGropFilter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_25dp"/>
+    <View android:layout_width="match_parent" android:layout_height="40dp"/>
+</LinearLayout>

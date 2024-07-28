@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/title_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerHorizontal="true">
+        <com.paytm.utility.RoboTextView android:textSize="17sp" android:textColor="#222222" android:gravity="center_vertical" android:id="@+id/txt_row_title" android:padding="3dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" app:fontType="2"/>
+        <ImageView android:id="@+id/img_see_all_arrow" android:paddingTop="2dp" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="5dp" android:src="@drawable/arrow_see_all"/>
+    </LinearLayout>
+    <net.one97.paytm.common.widgets.CJRHorizontalListView android:id="@+id/row_product_list" android:drawingCacheQuality="auto" android:layout_width="match_parent" android:layout_height="@dimen/row_square_height" android:layout_marginTop="12dp" android:divider="@android:color/transparent" android:layout_below="@+id/title_container"/>
+    <View android:id="@+id/bottom_bar" android:background="@color/light_grey" android:visibility="visible" android:layout_width="match_parent" android:layout_height="11dp" android:layout_below="@+id/row_product_list" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

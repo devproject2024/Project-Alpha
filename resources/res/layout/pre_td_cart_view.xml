@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container_cart_icon" android:layout_width="48dp" android:layout_height="48dp">
+    <ImageView android:id="@+id/icon_cart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <TextView android:textSize="@dimen/dimen_10sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/txt_number_of_items_in_cart_decoy" android:background="@drawable/pre_td_bus_cart_count_decoy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="@dimen/dimen_10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/txt_number_of_items_in_cart" android:background="@drawable/pre_td_bus_cart_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

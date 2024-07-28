@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:height="@dimen/dimen_48dp" android:width="@dimen/dimen_280dp">
+        <shape>
+            <corners android:radius="@dimen/dimen_6dp"/>
+            <solid android:color="@color/shadow_color"/>
+        </shape>
+    </item>
+    <item android:gravity="end" android:height="@dimen/dimen_16dp" android:width="@dimen/dimen_16dp">
+        <rotate android:fromDegrees="45" android:pivotX="0" android:pivotY="0">
+            <shape>
+                <stroke android:width="@dimen/dimen_1dp" android:color="@color/color_DDE5ED"/>
+                <solid android:color="@color/white"/>
+            </shape>
+        </rotate>
+    </item>
+    <item android:height="@dimen/dimen_48dp" android:width="@dimen/dimen_280dp" android:top="@dimen/dimen_4dp">
+        <shape>
+            <stroke android:width="@dimen/dimen_1dp" android:color="@color/color_DDE5ED"/>
+            <solid android:color="@color/white"/>
+            <corners android:radius="@dimen/dimen_6dp"/>
+        </shape>
+    </item>
+    <item android:gravity="end" android:height="@dimen/dimen_16dp" android:width="@dimen/dimen_16dp" android:top="@dimen/dimen_1dp">
+        <rotate android:fromDegrees="45" android:pivotX="0" android:pivotY="0">
+            <shape>
+                <solid android:color="@color/white"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

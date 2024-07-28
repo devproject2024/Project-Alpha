@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="#222222" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="28dp" android:layout_marginRight="37dp" android:maxLines="2" android:layout_toLeftOf="@+id/iv_close" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_20dp"/>
+        <ImageView android:id="@+id/iv_close" android:background="@drawable/pb_fg_ic_success" android:layout_width="30dp" android:layout_height="@dimen/dimen_30dp" android:layout_marginTop="@dimen/dimen_36dp" android:layout_marginRight="@dimen/dimen_20dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="17sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/tv_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="15dp" android:text="@string/pb_tds_to_email" android:lineSpacingExtra="5sp" android:fontFamily="sans-serif"/>
+    <Button android:textSize="@dimen/wallet_17sp" android:textColor="@color/white" android:id="@+id/btn_done" android:background="@drawable/pb_button_click" android:layout_width="125dp" android:layout_height="52dp" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_25dp" android:layout_marginBottom="40dp" android:text="@string/done" android:textAllCaps="false"/>
+    <View android:background="#00b9f5" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <View android:background="#012b72" android:layout_width="match_parent" android:layout_height="8dp"/>
+</LinearLayout>

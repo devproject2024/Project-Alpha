@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <solid android:color="@color/primaryBlue"/>
+    <stroke android:width="3dp" android:color="@color/primaryBlue"/>
+    <corners android:radius="30dp"/>
+    <padding android:top="@dimen/follow_button_padding" android:bottom="@dimen/follow_button_padding"/>
+</shape>

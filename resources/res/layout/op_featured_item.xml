@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="280dp" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="280dp" android:layout_height="wrap_content" app:cardElevation="@dimen/dimen_10dp">
+        <RelativeLayout android:layout_width="280dp" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/featured_image" android:layout_width="280dp" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_movie_portrait_placeholder"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/op_featured_bg_scrim" android:paddingLeft="@dimen/dimen_15dp" android:paddingTop="@dimen/dimen_15dp" android:paddingRight="@dimen/dimen_15dp" android:paddingBottom="@dimen/dimen_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/featured_image" android:layout_alignRight="@+id/featured_image" android:layout_alignBottom="@+id/featured_image">
+                <com.paytm.utility.RoboTextView android:textSize="12sp" android:textStyle="bold" android:textColor="#00ab84" android:id="@+id/showTypeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" app:fontType="4"/>
+                <com.paytm.utility.RoboTextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/showNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:maxLines="2" app:fontType="4"/>
+                <com.paytm.utility.RoboTextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/showLocationTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:maxLines="1" app:fontType="3"/>
+                <com.paytm.utility.RoboTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/showCostTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" app:fontType="4"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

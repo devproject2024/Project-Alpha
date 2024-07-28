@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_group_channel_net_err" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="95dp" android:layout_marginBottom="57dp">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/chat_ic_empty_contacts"/>
+    </FrameLayout>
+    <TextView android:textSize="20sp" android:textColor="@color/black" android:id="@+id/tv_messages_say_hi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_module_settings_no_blocked_contacts"/>
+    <TextView android:textSize="14sp" android:textColor="@color/color_808080" android:gravity="center" android:id="@+id/tv_message_say_hi_context" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxWidth="300dp" android:text="@string/chat_module_settings_no_blocked_contacts_content"/>
+</LinearLayout>

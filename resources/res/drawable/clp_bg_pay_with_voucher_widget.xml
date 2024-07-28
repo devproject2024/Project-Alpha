@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="731dp" android:width="750dp" android:viewportWidth="750" android:viewportHeight="731">
+    <path android:fillColor="@drawable/$clp_bg_pay_with_voucher_widget__0" android:pathData="M0,0h750v731h-750z" android:fillAlpha="0.8"/>
+</vector>

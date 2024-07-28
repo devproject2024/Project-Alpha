@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <SurfaceView android:id="@+id/preview_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.google.zxing.client.android.ViewfinderView android:id="@+id/viewfinder_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/result_view" android:background="@color/result_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/standard_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:id="@+id/barcode_image_view" android:layout_width="160dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/half_padding" android:scaleType="centerInside" android:adjustViewBounds="true" android:maxWidth="160dp" android:maxHeight="160dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="@color/result_minor_text" android:paddingRight="@dimen/half_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_default_format"/>
+                    <TextView android:textColor="@color/result_minor_text" android:id="@+id/format_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="@color/result_minor_text" android:paddingRight="@dimen/half_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_default_type"/>
+                    <TextView android:textColor="@color/result_minor_text" android:id="@+id/type_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="@color/result_minor_text" android:paddingRight="@dimen/half_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_default_time"/>
+                    <TextView android:textColor="@color/result_minor_text" android:id="@+id/time_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="@color/result_minor_text" android:id="@+id/meta_text_view_label" android:paddingRight="@dimen/half_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_default_meta"/>
+                    <TextView android:textColor="@color/result_minor_text" android:id="@+id/meta_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="22sp" android:textColor="@color/result_text" android:textColorLink="@color/result_text" android:autoLink="web" android:id="@+id/contents_text_view" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true"/>
+                    <TextView android:textColor="@color/result_text" android:textColorLink="@color/result_text" android:autoLink="web" android:id="@+id/contents_supplement_text_view" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/result_button_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:visibility="gone" style="@style/ResultButton"/>
+            <Button android:visibility="gone" style="@style/ResultButton"/>
+            <Button android:visibility="gone" style="@style/ResultButton"/>
+            <Button android:visibility="gone" style="@style/ResultButton"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/qr_header_close_menu" android:paddingLeft="18dp" android:paddingTop="15dp" android:paddingRight="5dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow_header_qr" android:layout_alignParentLeft="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_icon" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/qr_header_flash_icon" android:paddingLeft="5dp" android:paddingTop="15dp" android:paddingRight="18dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="#88ffffff" android:layout_width="match_parent" android:layout_height="0.8dp"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/status_text" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/status_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_default_status"/>
+</merge>

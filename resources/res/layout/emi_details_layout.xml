@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/emi_details_layout_0" android:background="@drawable/bg_emi_layout_rounded" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:padding="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <net.one97.paytm.nativesdk.widget.RoboTextView android:textSize="21sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_an_emi_plan" android:fontFamily="sans-serif"/>
+        <TextView android:id="@+id/tnc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" android:layout_marginBottom="@dimen/dimen_10dp" android:text="@string/emi_tnc" android:layout_below="@+id/title"/>
+        <ImageView android:id="@+id/imgCross" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:srcCompat="@drawable/nativesdk_close"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/color_f9fafb" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:textSize="@dimen/dimen_16sp" android:gravity="bottom" android:id="@+id/rb_emi" android:background="@color/transparent" android:focusable="true" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_drawable" android:layout_centerVertical="true" android:fontFamily="sans-serif"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_20dp" android:layout_toRightOf="@+id/rb_emi" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dimen_20dp" android:layout_toEndOf="@+id/rb_emi">
+            <net.one97.paytm.nativesdk.widget.RoboTextView android:textSize="@dimen/dimen_11sp" android:textStyle="normal" android:textColor="#666666" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/duration" android:layout_weight="1" android:fontFamily="sans-serif-medium"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <net.one97.paytm.nativesdk.widget.RoboTextView android:textSize="@dimen/dimen_11sp" android:textStyle="normal" android:textColor="#666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/native_emi" android:fontFamily="sans-serif-medium"/>
+                <net.one97.paytm.nativesdk.widget.RoboTextView android:textSize="10sp" android:textStyle="normal" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/per_month" android:fontFamily="sans-serif" android:letterSpacing="0.03" app:fontType="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <net.one97.paytm.nativesdk.widget.RoboTextView android:textSize="@dimen/dimen_11sp" android:textStyle="normal" android:textColor="#666666" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/native_interest_rate_txt" android:fontFamily="sans-serif-medium"/>
+                <net.one97.paytm.nativesdk.widget.RoboTextView android:textSize="10sp" android:textStyle="normal" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/per_annum" android:fontFamily="sans-serif" android:letterSpacing="0.03" app:fontType="1"/>
+            </LinearLayout>
+            <net.one97.paytm.nativesdk.widget.RoboTextView android:textSize="@dimen/dimen_11sp" android:textStyle="normal" android:textColor="#666666" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/native_total" android:layout_weight="1" android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/min_height_layout" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="200dp">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/dot_progress_bar" android:layout_width="100dp" android:layout_height="25dp" android:layout_centerInParent="true"/>
+        <include android:id="@+id/list_empty_layout_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="200dp" layout="@layout/list_empty_layout"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_emi" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:layout_width="match_parent" android:layout_height="@dimen/dimen_15dp"/>
+</LinearLayout>

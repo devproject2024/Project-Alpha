@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_root" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/auto_complete_preferred_item_height">
+    <View android:background="@color/light_grey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lyt_item_auto_mobile_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:minHeight="@dimen/auto_complete_preferred_item_height">
+        <TextView android:textSize="14sp" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_value" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true"/>
+    </LinearLayout>
+</LinearLayout>

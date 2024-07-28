@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_16dp" android:paddingTop="@dimen/dimen_16dp" android:paddingRight="@dimen/dimen_16dp" android:paddingBottom="@dimen/dimen_5dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_36dp">
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/close_select_metro_fragment" android:paddingLeft="@dimen/dimen_6dp" android:paddingRight="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="@dimen/dimen_16sp" android:textStyle="normal" android:textColor="@color/color_222222" android:textColorHint="@color/color_adadad" android:id="@+id/station_edittext" android:background="@null" android:paddingTop="@dimen/dimen_26dp" android:paddingBottom="@dimen/dimen_14dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:inputType="textNoSuggestions" android:fontFamily="sans-serif-light"/>
+    </LinearLayout>
+    <View android:background="@color/color_979797" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:alpha="0.3"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/not_found_layout_in_select_stations" android:visibility="invisible" layout="@layout/pre_t_not_found_layout"/>
+        <RelativeLayout android:id="@+id/stations_recyclerview_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/lottie_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/lottie_in_search_recyclerview" android:visibility="visible" android:layout_width="@dimen/dimen_80dp" android:layout_height="@dimen/dimen_25dp" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="12" app:duration="@android:integer/config_mediumAnimTime" app:lottie_autoPlay="true" app:lottie_fileName="Payments-Loader.json" app:lottie_loop="true"/>
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/metro_searches_recyclerview" android:paddingTop="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="false"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="350dp" android:layout_height="170dp" android:layout_marginStart="20dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_18sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/disp_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_18dp" android:lineSpacingExtra="@dimen/dimen_13sp" android:fontFamily="sans-serif-medium" android:layout_marginStart="@dimen/dimen_18dp"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right" android:id="@+id/close_icon" android:padding="@dimen/dimen_5dp" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/bus_close_normal"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginLeft="@dimen/dimen_15dp" app:srcCompat="@drawable/travel_res_bus_alert_icon"/>
+        <com.paytm.utility.RoboTextView android:textSize="14sp" android:textStyle="normal" android:textColor="#3063ad" android:id="@+id/disp_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/concession_message" android:lineSpacingExtra="8sp" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/dimen_8dp" android:layout_marginEnd="@dimen/dimen_20dp" android:letterSpacing="-0.02"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_26dp" android:layout_marginBottom="@dimen/dimen_20dp" android:layout_marginEnd="@dimen/dimen_18dp">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="#00b9f5" android:id="@+id/change_seats" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_seats"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textStyle="bold" android:textColor="#00b9f5" android:id="@+id/ok_got_it" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok_got" android:layout_marginStart="@dimen/dimen_25dp"/>
+    </LinearLayout>
+</LinearLayout>

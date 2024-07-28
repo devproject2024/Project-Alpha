@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="false">
+    <ListView android:id="@+id/recharge_item_list_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginBottom="@dimen/dimen_2dp" android:layout_above="@+id/show_more_btn" android:nestedScrollingEnabled="false"/>
+    <Button android:textSize="16sp" android:textColor="@color/color_33b5e5" android:gravity="center" android:id="@+id/show_more_btn" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50dp" android:layout_marginBottom="@dimen/dimen_10dp" android:layout_alignParentBottom="true" android:textAllCaps="false"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/parent_linear_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+package com.paytmmall.artifact.order.entity;
+
+import com.google.gsonhtcfix.a.b;
+import com.paytm.network.model.IJRPaytmDataModel;
+
+public class CJROrderSummaryRefundToBank extends IJRPaytmDataModel {
+    private static final long serialVersionUID = 1;
+    @b(a = "bankRefund")
+    private boolean mBankRefundButtons;
+    @b(a = "message")
+    private String mMessage;
+    @b(a = "title")
+    private String mTitle;
+    @b(a = "walletGuId")
+    private String mWalletGuid;
+
+    public String getTitle() {
+        return this.mTitle;
+    }
+
+    public String getMessage() {
+        return this.mMessage;
+    }
+
+    public String getWalletGuid() {
+        return this.mWalletGuid;
+    }
+
+    public boolean getBankRefundButtons() {
+        return this.mBankRefundButtons;
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:elevation="0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/toolbar_close" android:padding="3dp" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:scaleType="centerInside" android:layout_alignParentLeft="true" app:srcCompat="@drawable/pb_toolbar_back_button"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_17sp" android:textColor="#222222" android:id="@+id/toolbarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debit_atm_card" android:layout_centerInParent="true" app:fontType="4"/>
+        <LinearLayout android:gravity="center" android:id="@+id/help_videos_layout" android:paddingRight="@dimen/dimen_10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/pb_help_videos_play_icon"/>
+            <com.paytm.utility.RoboTextView android:textColor="@color/paytm_blue" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

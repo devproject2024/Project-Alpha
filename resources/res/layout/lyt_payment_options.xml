@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_test" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_paytm_instruments" android:paddingLeft="@dimen/dimen_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_20dp"/>
+        <include android:id="@+id/loader_p2m" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_paytm_instruments" layout="@layout/p2m_shimmer_layout"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_pg_instruments" android:paddingLeft="@dimen/dimen_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:layout_below="@+id/ll_divider" android:paddingStart="@dimen/dimen_20dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_paytm_instruments">
+            <View android:id="@+id/divider_instruments" android:background="@color/color_f3f7f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="bottom" android:id="@+id/footer_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_parent" android:layout_alignParentBottom="true">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_70dp" layout="@layout/lyt_footer_view"/>
+    </LinearLayout>
+</RelativeLayout>

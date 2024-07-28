@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_4dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_15sp" android:textStyle="normal" android:textColor="@color/dark_black" android:layout_gravity="center" android:id="@+id/flight_city_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+            <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_10sp" android:textStyle="normal" android:textColor="@color/dark_black" android:id="@+id/flight_airpot_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/flight_city_name" android:fontFamily="sans-serif" app:fontType="2"/>
+        </RelativeLayout>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_16sp" android:textStyle="normal" android:textColor="@color/dark_black" android:gravity="center" android:id="@+id/city_code" android:background="@drawable/pre_f_flight_rounded_rect_with_2dp_radius_grey_stroke" android:layout_width="@dimen/dimen_55dp" android:layout_height="@dimen/dimen_30dp" android:layout_marginRight="@dimen/dimen_15dp" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:fontFamily="sans-serif-medium" app:fontType="3"/>
+    </RelativeLayout>
+</LinearLayout>

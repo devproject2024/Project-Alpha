@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+    <RelativeLayout android:id="@+id/error_msg_location_stng" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="7">
+        <ImageView android:id="@+id/error_no_location_image" android:layout_width="@dimen/dimen_400dp" android:layout_height="@dimen/dimen_400dp" android:src="@drawable/error_enablelocation" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/dimen_15dp" android:textStyle="bold" android:textColor="@color/color_000000" android:gravity="center" android:id="@+id/error_no_location_heading" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/err_enable_location_heading"/>
+    <TextView android:textSize="@dimen/dimen_15dp" android:gravity="center" android:id="@+id/error_no_location_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_10dp" android:text="@string/error_location_off"/>
+    <Button android:textColor="@color/white" android:id="@+id/btn_locationsetting" android:background="@color/paytm_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_10dp" android:minHeight="@dimen/dimen_50dp" android:text="@string/open_stng_btn" android:onClick="openLocationSetting"/>
+</LinearLayout>

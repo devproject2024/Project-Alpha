@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/tenurelistLayout" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/emiplanRadio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_18dp" style="@style/radionbutton"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_9dp" android:layout_marginRight="@dimen/dimen_9dp" android:layout_weight="3">
+                <TextView android:textSize="12dp" android:textColor="@color/tenurelistColor" android:gravity="left" android:layout_gravity="left" android:id="@+id/emiPlanInterval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3 Months" android:layout_weight="0.5"/>
+                <TextView android:textSize="12dp" android:textColor="@color/tenurelistColor" android:gravity="center" android:layout_gravity="center" android:id="@+id/emiPerMonth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="368899 (6% p.a)" android:layout_weight="1"/>
+                <TextView android:textSize="12dp" android:textColor="@color/tenurelistColor" android:gravity="right" android:layout_gravity="center" android:id="@+id/emiTotalCost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$3000000" android:layout_weight="0.5"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/openOrderDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="9dp">
+                <TextView android:textSize="12dp" android:textColor="@color/cashbackColor" android:id="@+id/totalCashback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2500 Cashback + 2500 Cashback "/>
+                <ImageView android:textSize="12dp" android:background="@drawable/ic_down_arrow_24_g" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="@dimen/dimen_6dp" android:layout_marginRight="@dimen/dimen_6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/tenureView" android:background="@color/viewColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_margin="@dimen/dimen_16dp"/>
+</LinearLayout>

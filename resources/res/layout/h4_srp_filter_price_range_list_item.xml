@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/h4_srp_filter_price_range_list_item_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12dp" android:layout_marginRight="@dimen/dimen_12dp">
+        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#506d85" android:gravity="end" android:tag="binding_2" android:paddingLeft="@dimen/dimen_16dp" android:paddingTop="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_16dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

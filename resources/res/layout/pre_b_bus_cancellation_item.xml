@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_60dp">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dimen_60dp" android:weightSum="1">
+        <com.paytm.utility.RoboTextView android:textColor="@color/color_222222" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/hours_before_departure" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_10dp" android:text="Time of Cancellation" android:layout_weight="0.6" android:fontFamily="@string/font_family_roboto_medium"/>
+        <com.paytm.utility.RoboTextView android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/refund_percentage" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:text="@string/refund_percentage_text" android:layout_weight="0.2" android:fontFamily="@string/font_family_roboto_medium"/>
+        <com.paytm.utility.RoboTextView android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/refund_amnt" android:layout_width="@dimen/dimen_0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/text_size_10sp" android:text="@string/refund_amount_text" android:layout_weight="0.2" android:fontFamily="@string/font_family_roboto_medium"/>
+    </LinearLayout>
+    <View android:background="@color/color_e8f1f4" android:layout_width="match_parent" android:layout_height="2dp"/>
+</LinearLayout>

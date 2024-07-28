@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/wallet_15_dp" android:layout_marginRight="@dimen/wallet_15_dp">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30dp" android:weightSum="3">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lyt_money_transfer" android:background="@drawable/pb_action_gray_button" android:padding="@dimen/wallet_10_dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_money_transfer"/>
+                <TextView android:textSize="@dimen/wallet_12_sp" android:textColor="@color/dark_blue" android:ellipsize="marquee" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_10_dp" android:text="@string/bank_money_transfer" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lyt_add_money" android:background="@drawable/pb_action_gray_button" android:padding="@dimen/wallet_10_dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_add_money"/>
+                <TextView android:textSize="@dimen/wallet_12_sp" android:textColor="@color/dark_blue" android:ellipsize="marquee" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_10_dp" android:text="@string/add_money" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lyt_receive_money" android:background="@drawable/pb_action_gray_button" android:padding="@dimen/wallet_10_dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_receive_money"/>
+                <TextView android:textSize="@dimen/wallet_12_sp" android:textColor="@color/dark_blue" android:ellipsize="marquee" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_10_dp" android:text="@string/receive_money" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/pb_action_gray_button" android:padding="@dimen/wallet_10_dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallet_15_dp" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_receive_money"/>
+                <TextView android:textSize="@dimen/wallet_12_sp" android:textColor="@color/dark_blue" android:ellipsize="marquee" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wallet_10_dp" android:text="@string/receive_money" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/activity_bank_acc_details_lyt_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_30dp"/>
+        <TextView android:textSize="@dimen/wallet_15sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_services"/>
+        <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dimen_16dp"/>
+        <RelativeLayout android:id="@+id/lyt_passbook" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_passbook" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/wallet_20_dp" android:src="@drawable/pb_ic_passbook" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/wallet_15sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passbook_acc_statement" android:layout_toRightOf="@+id/img_passbook" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_arrow_right_black" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <RelativeLayout android:id="@+id/lyt_cheque_demand_draft" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_cheque" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/wallet_20_dp" android:src="@drawable/cheque_book" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/wallet_15sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cheque_demand_draft" android:layout_toRightOf="@+id/img_cheque" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_arrow_right_black" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <RelativeLayout android:id="@+id/lyt_debit_card" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_debit_card" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/wallet_20_dp" android:src="@drawable/pb_ic_saved_cards" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/wallet_15sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debit_atm_card" android:layout_toRightOf="@+id/img_debit_card" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_arrow_right_black" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/wallet_15sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="43dp" android:text="@string/action_settings"/>
+        <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dimen_16dp"/>
+        <RelativeLayout android:id="@+id/lyt_acc_nominee" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_nominee" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/wallet_20_dp" android:src="@drawable/pb_nominee" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/wallet_15sp" android:textColor="@android:color/black" android:id="@+id/tv_nominee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/acc_nominee" android:layout_toRightOf="@+id/img_nominee" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_arrow_right_black" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <RelativeLayout android:id="@+id/lyt_govt_benefits" android:paddingTop="15dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_govt_benefits" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/wallet_20_dp" android:src="@drawable/pb_aadhar_card" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/wallet_15sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/govt_direct_benefits" android:layout_toRightOf="@+id/img_govt_benefits" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_arrow_right_black" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+</ScrollView>

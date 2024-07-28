@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/lav_progress" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="100dp" android:adjustViewBounds="true" app:amount="5" app:animationDirectionbundle="-1" app:circleSize="15" app:duration="@android:integer/config_mediumAnimTime" app:endColor="@color/light_blue_A400" app:startColor="@color/light_blue_A700"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_bank_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+        <View android:id="@+id/v_divider" android:background="@color/color_f3f7f8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_1dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp"/>
+        <RelativeLayout android:id="@+id/otherBankButton" android:background="@drawable/uam_other_bank_bg" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="25dp">
+            <TextView android:textSize="@dimen/dimen_15sp" android:textColor="@color/color_222222" android:id="@+id/otherbank_title" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/uam_select_from_other_bank" android:layout_centerVertical="true" android:lineSpacingExtra="2sp" android:fontFamily="@string/font_family_roboto_regular"/>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/arrow_right_black"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

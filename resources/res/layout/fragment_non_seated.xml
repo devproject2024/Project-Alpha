@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" android:layout_below="@+id/toolbar" android:animateLayoutChanges="true">
+    <TextView android:textColor="@color/just_tickets_open_seat_desc" android:id="@+id/txt_just_tickets_desc" android:paddingLeft="14dp" android:paddingTop="10dp" android:paddingRight="14dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/open_seat_desc"/>
+    <RelativeLayout android:background="@color/light_grey" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lyt_select_circle" android:padding="12dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp">
+            <TextView android:textColor="@color/color_33b5e5" android:id="@+id/txt_select_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/select_your_circle"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_toggle_select_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toggle_arrow_down"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/circle_extra_view" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_movie_circle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/dark_blue" android:background="@color/light_grey" android:paddingLeft="24dp" android:paddingTop="12dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_number_of_seats"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/lyt_seats_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lyt_seats" android:paddingLeft="7dp" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</LinearLayout>

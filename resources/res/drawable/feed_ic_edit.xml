@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="512" android:viewportHeight="512">
+    <path android:fillColor="@color/feed_white" android:pathData="M255.997,0 C397.38,0,511.994,114.614,511.994,255.997 C511.994,397.38,397.38,511.994,255.997,511.994 C114.614,511.994,0,397.38,0,255.997 C0,114.614,114.614,0,255.997,0 Z" android:strokeColor="@color/feed_statusbar" android:strokeWidth="5"/>
+    <path android:fillColor="#b3efff" android:pathData="M321.98,132.356 L379.015,186.532 L230.913,342.003 L173.877,287.829 Z" android:strokeColor="@color/feed_statusbar" android:strokeWidth="4"/>
+    <path android:fillColor="#b3efff" android:pathData="M350.424,159.369 L379.114,186.64 L230.936,342.068 L202.246,314.797 L350.424,159.369 Z" android:strokeColor="@color/feed_statusbar" android:strokeWidth="5"/>
+    <path android:fillColor="#00b6f0" android:pathData="M173.872,287.842 L230.936,342.068 L173.872,367.289 L151.645,346.166 L174.029,287.998 L173.872,287.842 Z" android:strokeColor="@color/feed_statusbar" android:strokeWidth="4"/>
+    <path android:fillColor="#00b6f0" android:pathData="M202.246,314.798 L230.936,342.069 L173.872,367.29 L162.68,356.57 L202.404,314.796 L202.246,314.796 L202.246,314.798 Z" android:strokeColor="@color/feed_statusbar" android:strokeWidth="4"/>
+    <path android:fillColor="@color/feed_statusbar" android:pathData="M366.502,113.498 L396.295,141.714 C404.019,148.965,402.443,163.152,392.985,173.083 L379.901,186.797 L379.743,186.955 L322.206,132.255 L322.364,132.097 L335.448,118.383 C344.906,108.452,359.094,106.087,366.66,113.496 L366.502,113.496 L366.502,113.498 Z"/>
+    <path android:fillColor="@color/feed_statusbar" android:pathData="M381.321,127.369 L396.296,141.714 C404.02,148.965,402.444,163.152,392.986,173.083 L379.902,186.797 L379.744,186.955 L350.739,159.526 L381.321,127.369 Z"/>
+    <path android:fillColor="@color/feed_statusbar" android:pathData="M173.872,367.291 L133.99,386.68 L151.645,346.168 L173.872,367.291 Z"/>
+    <path android:fillColor="@color/feed_statusbar" android:pathData="M173.872,367.291 L133.99,386.68 L162.68,356.571 L173.872,367.291 Z"/>
+</vector>

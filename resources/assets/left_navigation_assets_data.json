@@ -1,0 +1,417 @@
+{
+  "page_id": 7961,
+  "page_name": "FLYOUT",
+  "context": {
+    "user": {
+      "userFromAuthApi": true,
+      "fetchFromOauth": true
+    },
+    "request_id": "cfedc580-405b-11eb-a06f-f5861b3ed706"
+  },
+  "page": [
+    {
+      "id": 301933,
+      "views": [
+        {
+          "type": "list-small-ti",
+          "id": 301933,
+          "image_url": "https://assetscdn1.paytm.com/images/catalog/view/301933/1596706235865.jpg",
+          "seourl": "https://logout",
+          "items": [
+            {
+              "id": 656446,
+              "priority": 2,
+              "name": "24X7 Help & Support",
+              "subtitle": "Customer Support, Your Queries, Frequently Asked Questions",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/656446/1602218553083.jpg",
+              "url_type": "embed",
+              "url": "paytmmp://contactus",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://contactus",
+              "reason": "D:FF"
+            },
+            {
+              "id": 656702,
+              "priority": 4,
+              "name": "Preferred Language",
+              "subtitle": "Use Paytm in your preferred language",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/656702/1602218690091.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=109200364bd9adad098ce67c643bade349cd01d5&data=eyJwYXJhbXMiOiIiLCJwYXRoIjoiL2g1LXNldHRpbmdzL3ByZWZlcnJlZC1sYW5ndWFnZSIsInNwYXJhbXMiOnsicHVsbFJlZnJlc2giOmZhbHNlLCJjYW5QdWxsRG93biI6ZmFsc2UsInNob3dUaXRsZUJhciI6ZmFsc2V9fQ==&url=https://paytm.com",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=109200364bd9adad098ce67c643bade349cd01d5&data=eyJwYXJhbXMiOiIiLCJwYXRoIjoiL2g1LXNldHRpbmdzL3ByZWZlcnJlZC1sYW5ndWFnZSIsInNwYXJhbXMiOnsicHVsbFJlZnJlc2giOmZhbHNlLCJjYW5QdWxsRG93biI6ZmFsc2UsInNob3dUaXRsZUJhciI6ZmFsc2V9fQ==&url=https://paytm.com",
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 301933,
+              "container_id": 22053432,
+              "container_instance_id": "000000016E7B7F833DBDC9CD7D957B25F17CBF5D"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": ""
+          },
+          "auto_scroll": "False",
+          "is_bg_active": false
+        }
+      ]
+    },
+    {
+      "id": 304280,
+      "views": [
+        {
+          "type": "list-small-ti",
+          "id": 304280,
+          "image_url": "https://assetscdn1.paytm.com/images/catalog/view/304280/1605099903717.jpg",
+          "seourl": "https://user",
+          "items": [],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 304280,
+              "container_id": 22053854,
+              "container_instance_id": "00000001B243752C68DA04C52503F6C08D08288F"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": "",
+            "bg_gradient": []
+          },
+          "auto_scroll": "False",
+          "is_bg_active": false
+        }
+      ]
+    },
+    {
+      "id": 301934,
+      "views": [
+        {
+          "type": "list-small-ti",
+          "id": 301934,
+          "image_url": "https://assetscdn1.paytm.com/images/catalog/view/301934/1596706132216.jpg",
+          "seourl": "https://user",
+          "items": [
+            {
+              "id": 692223,
+              "priority": 5,
+              "name": "Orders & Bookings",
+              "subtitle": "Recharge, Bill Payments, Shopping, Movies, Travel & Others",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/692223/1607585342236.png",
+              "url_type": "embed",
+              "url": "paytmmp://my_orders",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://my_orders",
+              "reason": "F:FF"
+            },
+            {
+              "id": 692230,
+              "priority": 8,
+              "name": "Cashback & Offers",
+              "subtitle": "Stickers, Reward Points, Cashback Vouchers & Offers",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/692230/1607585467673.png",
+              "url_type": "embed",
+              "url": "paytmmp://cash_wallet?featuretype=vip&screen=homescreen",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://cash_wallet?featuretype=vip&screen=homescreen",
+              "reason": "F:FF"
+            },
+            {
+              "id": 656230,
+              "priority": 11,
+              "name": "Settings",
+              "subtitle": "Profile, Payment, Security, Language, Notifications & Reminders",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/656230/1607430565710.png",
+              "url_type": "embed",
+              "url": "paytmmp://myprofile",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://myprofile",
+              "reason": "F:FF"
+            },
+            {
+              "id": 692232,
+              "priority": 24,
+              "name": "Your Accounts",
+              "subtitle": "Profile, UPI, Wallet, Bank, Postpaid & Others",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/692232/1607585612604.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=109200364bd9adad098ce67c643bade349cd01d5&data=eyJwYXJhbXMiOiIiLCJwYXRoIjoiL2g1LXlvdXItYWNjb3VudCIsInNwYXJhbXMiOnsicHVsbFJlZnJlc2giOmZhbHNlLCJjYW5QdWxsRG93biI6ZmFsc2UsInNob3dUaXRsZUJhciI6ZmFsc2V9fQ==&url=https://paytm.com",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=109200364bd9adad098ce67c643bade349cd01d5&data=eyJwYXJhbXMiOiIiLCJwYXRoIjoiL2g1LXlvdXItYWNjb3VudCIsInNwYXJhbXMiOnsicHVsbFJlZnJlc2giOmZhbHNlLCJjYW5QdWxsRG93biI6ZmFsc2UsInNob3dUaXRsZUJhciI6ZmFsc2V9fQ==&url=https://paytm.com",
+              "reason": "F:FF"
+            },
+            {
+              "id": 692233,
+              "priority": 36,
+              "name": "24X7 Help & Support",
+              "subtitle": "Customer Support, Your Queries, Frequently Asked Questions",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/692233/1607585680972.png",
+              "url_type": "embed",
+              "url": "paytmmp://contactus",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "group_view_id": {
+                "icon_view_id": [],
+                "ticker_view_id": [],
+                "search_keywords": []
+              },
+              "layout": {},
+              "seourl": "paytmmp://contactus",
+              "reason": "F:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 301934,
+              "container_id": 22053433,
+              "container_instance_id": "00000001C7095213DEC87A7DF0CE7AE09634AC17"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": "",
+            "bg_gradient": []
+          },
+          "auto_scroll": "False",
+          "is_bg_active": false
+        }
+      ]
+    },
+    {
+      "id": 301935,
+      "views": [
+        {
+          "type": "list-small-ti",
+          "id": 301935,
+          "image_url": "https://assetscdn1.paytm.com/images/catalog/view/301935/1596775917647.jpg",
+          "seourl": "https://reseller",
+          "items": [
+            {
+              "id": 656488,
+              "priority": 1,
+              "name": "Orders & Bookings",
+              "subtitle": "Recharge, Bill Payments, Shopping, Movies, Travel & Others",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/656488/1602218877749.png",
+              "url_type": "embed",
+              "url": "paytmmp://my_orders",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Mall-Others",
+              "layout": {},
+              "seourl": "paytmmp://my_orders",
+              "reason": "D:FF"
+            },
+            {
+              "id": 656490,
+              "priority": 4,
+              "name": "Settings",
+              "subtitle": "Profile, Payment, Security, Language, Notifications & Reminders",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/656490/1602219008293.png",
+              "url_type": "embed",
+              "url": "paytmmp://mini-app?aId=109200364bd9adad098ce67c643bade349cd01d5&data=eyJwYXJhbXMiOiIiLCJwYXRoIjoiL2g1LXNldHRpbmdzIiwic3BhcmFtcyI6eyJwdWxsUmVmcmVzaCI6ZmFsc2UsImNhblB1bGxEb3duIjpmYWxzZSwic2hvd1RpdGxlQmFyIjpmYWxzZX19&url=https://paytm.com",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://mini-app?aId=109200364bd9adad098ce67c643bade349cd01d5&data=eyJwYXJhbXMiOiIiLCJwYXRoIjoiL2g1LXNldHRpbmdzIiwic3BhcmFtcyI6eyJwdWxsUmVmcmVzaCI6ZmFsc2UsImNhblB1bGxEb3duIjpmYWxzZSwic2hvd1RpdGxlQmFyIjpmYWxzZX19&url=https://paytm.com",
+              "reason": "D:FF"
+            },
+            {
+              "id": 656491,
+              "priority": 7,
+              "name": "Credit Score",
+              "subtitle": "Your credit health and eligibility for Postpaid, Credit Card and Loans",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/656491/1602219025246.png",
+              "url_type": "embed",
+              "url": "paytmmp://fs-cir",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://fs-cir",
+              "reason": "D:FF"
+            },
+            {
+              "id": 656492,
+              "priority": 9,
+              "name": "24X7 Help & Support",
+              "subtitle": "24X7 Agent support, Live trainings",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/656492/1602219044380.jpg",
+              "url_type": "embed",
+              "url": "paytmmp://cst_flow?featuretype=vertical_detail&verticalId=24",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://cst_flow?featuretype=vertical_detail&verticalId=24",
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 301935,
+              "container_id": 22053434,
+              "container_instance_id": "000000012A9F55CEFF0332D4CF7AD581B13C69D0"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": ""
+          },
+          "auto_scroll": "False",
+          "is_bg_active": false
+        }
+      ]
+    },
+    {
+      "id": 303473,
+      "views": [
+        {
+          "type": "list-small-ti",
+          "id": 303473,
+          "image_url": "https://assetscdn1.paytm.com/images/catalog/view/303473/1602667409638.jpg",
+          "seourl": "https://merchant",
+          "items": [
+            {
+              "id": 656493,
+              "priority": 1,
+              "name": "View QR",
+              "subtitle": "View, download or share your All in One payment QR",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/656493/1602655426682.png",
+              "url_type": "embed",
+              "url": "paytmmp://accept_money",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Mall-Others",
+              "layout": {},
+              "seourl": "paytmmp://accept_money",
+              "reason": "D:FF"
+            },
+            {
+              "id": 656494,
+              "priority": 2,
+              "name": "Payments & Settlement",
+              "subtitle": "View payments collected and amount settled to your account",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/656494/1602672293698.png",
+              "url_type": "embed",
+              "url": "paytmmp://accept_money",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://accept_money",
+              "reason": "D:FF"
+            },
+            {
+              "id": 656495,
+              "priority": 3,
+              "name": "Settlement Setting",
+              "subtitle": "Settlement to bank account, wallet and timing",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/656495/1602655858187.png",
+              "url_type": "embed",
+              "url": "paytmmp://accept_money?featuretype=settlement_setting",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://accept_money?featuretype=settlement_setting",
+              "reason": "D:FF"
+            },
+            {
+              "id": 656496,
+              "priority": 4,
+              "name": "Payment sources & Charges",
+              "subtitle": "Unlimited UPI payments, Paytm wallet and many more",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/656496/1602656020848.png",
+              "url_type": "embed",
+              "url": "paytmmp://accept_money?featuretype=limit_charges",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://accept_money?featuretype=limit_charges",
+              "reason": "D:FF"
+            },
+            {
+              "id": 659440,
+              "priority": 5,
+              "name": "24X7 Help & Support",
+              "subtitle": "Merchant Support, Your Queries & Frequently Asked Questions",
+              "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item/659440/1602661346269.png",
+              "url_type": "embed",
+              "url": "paytmmp://cst_flow?featuretype=vertical_detail&verticalId=25",
+              "source": "bp-reco-v1",
+              "item_id": 0,
+              "ga_category": "Others",
+              "layout": {},
+              "seourl": "paytmmp://cst_flow?featuretype=vertical_detail&verticalId=25",
+              "reason": "D:FF"
+            }
+          ],
+          "datasources": [
+            {
+              "type": "bp-reco-v1",
+              "list_id": 303473,
+              "container_id": 22053727,
+              "container_instance_id": "00000001BFB349697A6884EC005B51D45FE7A51C"
+            }
+          ],
+          "meta_layout": {
+            "bg_color": "",
+            "bg_gradient": []
+          },
+          "auto_scroll": "False",
+          "is_bg_active": false
+        }
+      ]
+    }
+  ],
+  "footer_image_url": "https://assetscdn1.paytm.com/images/catalog/category/5165/footer1.png",
+  "placeholder_image_url": "https://assetscdn1.paytm.com/images/catalog/category/5165/placeholder.png",
+  "ga_key": "/h/flyout",
+  "entity_type": "category",
+  "redirect": false,
+  "contextParams": {},
+  "layout": {}
+}

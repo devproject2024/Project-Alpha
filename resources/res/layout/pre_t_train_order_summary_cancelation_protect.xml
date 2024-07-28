@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+    <ImageView android:id="@+id/cancellation_protect_icon" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_22dp" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="@dimen/dimen_15dp" android:src="@drawable/pre_t_train_bulb_bigger_image"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginRight="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_20dp" android:layout_toRightOf="@+id/cancellation_protect_icon">
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_14sp" android:textStyle="normal" android:textColor="#3063ad" android:id="@+id/title_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontType="3"/>
+        <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_11sp" android:textColor="@color/more_seller_sort_by" android:id="@+id/subtitle_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5dp" app:fontType="2"/>
+    </LinearLayout>
+</RelativeLayout>

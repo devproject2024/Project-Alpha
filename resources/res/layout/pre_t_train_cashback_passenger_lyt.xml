@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="normal" android:textColor="#222222" android:id="@+id/pax_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentLeft="true" android:fontFamily="sans-serif"/>
+        <LinearLayout android:layout_width="@dimen/dimen_80dp" android:layout_height="wrap_content" android:weightSum="2" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/cashback_image" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/pre_t_cash_back" android:layout_weight="1"/>
+            <com.paytm.utility.RoboTextView android:textSize="13sp" android:textStyle="normal" android:textColor="#222222" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/cashback_value" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_weight="1" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <com.paytm.utility.RoboTextView android:textSize="10sp" android:textStyle="normal" android:textColor="#9b9b9b" android:id="@+id/credit_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_3dp" android:text="" android:layout_below="@+id/pax_name" android:fontFamily="sans-serif-light"/>
+        <View android:id="@+id/separator_line" android:background="#efefef" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_8dp" android:layout_below="@+id/credit_desc"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="left" android:id="@+id/toolbar_title" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView android:id="@+id/seal_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+</RelativeLayout>

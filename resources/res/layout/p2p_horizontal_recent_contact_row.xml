@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/p2p_recent_row_ll" android:layout_width="@dimen/dimen_80dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_2dp">
+    <RelativeLayout android:id="@+id/p2p_profile_RL" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/layer_contact_list_logo_rl" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/layer_contact_list_initials" android:background="@color/movie_yellow" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="Roboto-Regular"/>
+            <ImageView android:id="@+id/layer_contact_list_img" android:background="@color/gplus_color_2" android:padding="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ptop_mobile_icon" android:adjustViewBounds="true" android:layout_centerVertical="true"/>
+            <RelativeLayout android:id="@+id/layer_contact_list_backgrnd" android:background="@drawable/bg_rounded_corner_acc_page" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/p2p_profile_iv" android:background="@drawable/gold_profile_img" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:layout_margin="@dimen/dimen_10dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/p2m_profile_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <FrameLayout android:gravity="center" android:id="@+id/imageLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+            <net.one97.paytm.common.widgets.CircularImageView android:layout_gravity="center" android:id="@+id/p2m_profile_iv" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp"/>
+            <com.paytm.utility.RoboTextView android:textSize="21sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/p2m_image_name_tv" android:background="@drawable/transparent_gray_circle" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:fontFamily="@string/font_family_roboto_medium"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/dimen_12sp" android:textStyle="normal" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="center" android:id="@+id/layer_contact_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="13sp" android:textColor="@color/excl_color_00b9f5" android:gravity="center" android:id="@+id/passTypeTv" android:background="@drawable/shape_rectangle_round_edges_large_grey_border" android:paddingLeft="@dimen/dimen_12dp" android:paddingTop="@dimen/dimen_7dp" android:paddingRight="@dimen/dimen_12dp" android:paddingBottom="@dimen/dimen_7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80dp" app:fontType="2"/>
+</LinearLayout>

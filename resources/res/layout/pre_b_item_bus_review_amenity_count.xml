@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:customNS="http://schemas.android.com/apk/res/net.one97.paytm" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.paytm.utility.RoboTextView android:textSize="@dimen/dimen_15sp" android:textStyle="bold" android:textColor="@color/color_00b9f5" android:id="@+id/reviewAmenityCount" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+2" android:maxLines="1" app:fontType="2"/>
+</LinearLayout>

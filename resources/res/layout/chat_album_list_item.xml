@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/album_item_height">
+    <ImageView android:id="@+id/album_cover" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="16dp" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@+id/album_cover" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_toEndOf="@+id/album_cover">
+        <TextView android:textSize="16sp" android:textColor="?attr/album.dropdown.title.color" android:ellipsize="end" android:id="@+id/album_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="14sp" android:textColor="?attr/album.dropdown.count.color" android:ellipsize="end" android:id="@+id/album_media_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+</RelativeLayout>

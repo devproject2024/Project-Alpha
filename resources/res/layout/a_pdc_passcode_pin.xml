@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_fafafa" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_back" android:background="?android:attr/selectableItemBackground" android:padding="@dimen/dimen_8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:layout_marginTop="16dp" android:src="@drawable/pb_ic_back"/>
+    <ImageView android:id="@+id/iv_bank_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_23dp" android:layout_marginTop="@dimen/dimen_33dp" android:src="@drawable/pb_ic_payments_bank_logo" android:layout_below="@+id/iv_back"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_center_header_wrapper" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pb_ic_payments_bank_logo"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/container_framelayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_20dp" android:layout_below="@+id/iv_bank_logo"/>
+</RelativeLayout>

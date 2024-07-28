@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/error_msg_no_nearby_stng" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/error_no_nearby_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/error_nonearbyaddmoney"/>
+        <TextView android:textSize="@dimen/wallet_15_dp" android:textStyle="bold" android:textColor="@color/color_000000" android:gravity="center" android:id="@+id/error_no_nearby_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp" android:text="@string/err_no_nearby_heading" android:layout_below="@+id/error_no_nearby_image"/>
+        <TextView android:textSize="@dimen/wallet_15_dp" android:gravity="center" android:id="@+id/error_no_nearby_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_30dp" android:text="@string/err_nonearby_msg" android:layout_below="@+id/error_no_nearby_heading"/>
+    </LinearLayout>
+</RelativeLayout>
